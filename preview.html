@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc - Preview of New Design</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Embedded CSS for standalone preview */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --accent-gold: #FFB84D;
+            --background-dark: #0a0a0a;
+            --background-secondary: #1a1a1a;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --card-background: #1e1e1e;
+            --gradient-start: #FFB84D;
+            --gradient-end: #FF8C42;
+            --gradient-purple: #9D4EDD;
+            --shadow-color: rgba(255, 184, 77, 0.3);
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-display: 'Space Grotesk', var(--font-primary);
+            --transition-base: 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--background-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: var(--spacing-2xl) var(--spacing-md);
+            background: radial-gradient(ellipse at top, rgba(255, 184, 77, 0.15) 0%, transparent 50%);
+            border-radius: var(--radius-xl);
+            margin: var(--spacing-xl) 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-section h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin-bottom: var(--spacing-md);
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end), var(--gradient-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            font-family: var(--font-display);
+        }
+
+        .hero-section h2 {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 400;
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+            color: var(--text-secondary);
+        }
+
+        /* Feature Cards */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .feature-card {
+            background: var(--card-background);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 184, 77, 0.1);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: transparent;
+            box-shadow: 0 20px 40px rgba(255, 184, 77, 0.2), 0 0 60px rgba(157, 78, 221, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: var(--spacing-md);
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(255, 184, 77, 0.3));
+        }
+
+        .feature-title {
+            font-size: 1.4em;
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 700;
+            font-family: var(--font-display);
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: #000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.15em;
+            transition: all var(--transition-base);
+            box-shadow: 0 8px 24px var(--shadow-color);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 32px rgba(255, 184, 77, 0.5);
+        }
+
+        /* Section Title */
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+            font-family: var(--font-display);
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--card-background);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--accent-gold);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .info-box h3 {
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .info-box ul {
+            margin-left: var(--spacing-lg);
+            color: var(--text-secondary);
+        }
+
+        .info-box li {
+            margin: var(--spacing-sm) 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Info Box -->
+        <div class="info-box" style="margin-top: 2rem;">
+            <h3>🎉 Design Preview - Standalone Version</h3>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem;">
+                This is a standalone preview showing the new design. For the full experience with Jekyll:
+            </p>
+            <ul>
+                <li>Run: <code style="background: #000; padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--accent-gold);">bundle exec jekyll serve</code></li>
+                <li>Open: <code style="background: #000; padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--accent-gold);">http://localhost:4000</code></li>
+                <li>See: Navigation bar, scroll effects, mobile menu, and full animations</li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Arc</h1>
+            <h2>Understand Your Screen. Instantly.</h2>
+            <p class="hero-description">
+                An intelligent assistant for your Android device that helps you save time, reduce screen fatigue, and absorb information more effectively. With a seamless floating sidebar, you can instantly summarize, listen to, or save content from any app you're using.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button">
+                Get Arc Now
+            </a>
+        </div>
+
+        <!-- Features Section -->
+        <h2>Key Features</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3 class="feature-title">Instant AI Summaries</h3>
+                <p class="feature-description">Overwhelmed by a long article or email? Get a concise, AI-powered summary in seconds without leaving the app.</p>
+            </div>
+            
+            <div class="feature-card">
+                <span class="feature-icon">🎧</span>
+                <h3 class="feature-title">Listen to Anything</h3>
+                <p class="feature-description">Turn any text into audio. Listen to articles while you're driving, cooking, or exercising.</p>
+            </div>
+            
+            <div class="feature-card">
+                <span class="feature-icon">💾</span>
+                <h3 class="feature-title">Save for Later</h3>
+                <p class="feature-description">Capture important information with a single tap. Arc saves screenshots and summaries, encrypted securely on your device.</p>
+            </div>
+            
+            <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3 class="feature-title">Floating Sidebar</h3>
+                <p class="feature-description">A seamless floating sidebar that gives you immediate access to all features from any app.</p>
+            </div>
+            
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <h3 class="feature-title">Private & Secure</h3>
+                <p class="feature-description">Your privacy is paramount. We're transparent about data handling, and your content is encrypted locally.</p>
+            </div>
+            
+            <div class="feature-card">
+                <span class="feature-icon">🔍</span>
+                <h3 class="feature-title">Smart Organization</h3>
+                <p class="feature-description">Organize your saved summaries with categories and powerful search capabilities.</p>
+            </div>
+        </div>
+
+        <!-- Success Message -->
+        <div class="info-box" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.15), rgba(33, 150, 243, 0.15)); border-left-color: #4CAF50;">
+            <h3>✅ Website Transformation Complete!</h3>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem;">
+                The Arc privacy policy website has been successfully redesigned with:
+            </p>
+            <ul>
+                <li><strong>Modern Design:</strong> Beautiful gradients, animations, and glassmorphic effects</li>
+                <li><strong>Full Responsiveness:</strong> Perfect on desktop, tablet, and mobile devices</li>
+                <li><strong>Accessibility:</strong> WCAG 2.1 AA/AAA compliance</li>
+                <li><strong>Performance:</strong> Optimized animations and fast loading</li>
+                <li><strong>Interactive:</strong> Smooth hover effects and scroll animations</li>
+            </ul>
+            <p style="color: var(--text-secondary); margin-top: 1rem;">
+                Check out the documentation files for more details:
+                <br>📄 <strong>DESIGN_IMPROVEMENTS.md</strong> - Complete feature list
+                <br>📄 <strong>QUICK_START.md</strong> - How to run the site
+                <br>📄 <strong>BEFORE_AFTER_SUMMARY.md</strong> - Visual comparison
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: var(--spacing-2xl) 0; border-top: 1px solid rgba(255, 184, 77, 0.2); margin-top: var(--spacing-2xl);">
+            <p style="color: var(--text-secondary);">
+                <strong>© 2025 Rethink. All rights reserved.</strong>
+                <br>
+                <span style="margin-top: 0.5rem; display: inline-block;">Made with ❤️ for accessibility</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scroll animation to CTA button
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+
+        // Add entrance animations on load
+        window.addEventListener('load', function() {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.animation = `fadeInUp 0.6s ease forwards`;
+                    card.style.animationDelay = `${index * 0.1}s`;
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
+

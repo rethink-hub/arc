@@ -1,0 +1,54 @@
+# GitHub Pages Configuration for Arc
+
+# Site settings
+title: "Arc: AI Reader & Summary"
+description: "Understand Your Screen. Instantly. Arc: AI Reader & Summary is an intelligent assistant for Android that helps you save time and absorb information more effectively."
+author: "Rethink"
+
+# Theme selection
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+lang: en-US
+url: "https://chouguleds.github.io" # Your GitHub Pages URL
+baseurl: "/arc-privacy-policy" # Repository name as subdirectory
+
+# Social and contact info (for SEO)
+social:
+  name: Rethink
+  links: []
+
+# Google Analytics (optional - add your tracking ID if needed)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Exclude files from build
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - LOCAL_PREVIEW.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Include files
+include:
+  - _pages
+  - privacy.md
+  - assets
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
