@@ -22,8 +22,8 @@ Open `preview.html` in your browser for an instant preview of the new design!
 ## 🌐 Live Website
 
 The Arc website is available at:
-- **Landing Page:** [https://chouguleds.github.io/arc-privacy-policy/](https://chouguleds.github.io/arc-privacy-policy/)
-- **Privacy Policy:** [https://chouguleds.github.io/arc-privacy-policy/privacy.html](https://chouguleds.github.io/arc-privacy-policy/privacy.html)
+- **Landing Page:** [https://rethink-hub.github.io/arc/](https://rethink-hub.github.io/arc/)
+- **Privacy Policy:** [https://rethink-hub.github.io/arc/privacy.html](https://rethink-hub.github.io/arc/privacy.html)
 
 ---
 
@@ -221,7 +221,7 @@ The site will auto-reload when you make changes!
 
 Once deployed, integrate the URLs into your Android app:
 
-1. Add the **privacy policy URL** (`https://chouguleds.github.io/arc-privacy-policy/privacy.html`) to your app's configuration
+1. Add the **privacy policy URL** (`https://rethink-hub.github.io/arc/privacy.html`) to your app's configuration
 2. Link from Settings → Privacy Policy
 3. Include in Google Play Store listing (Data Safety section)
 4. Reference in onboarding flows (optional)
