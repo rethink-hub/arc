@@ -93,10 +93,6 @@ Arc is fully functional without an account. However, to enable optional features
   - Friends list or contacts
   - Files from your Google Drive
 
-#### **Anonymous Technical Data**
-
-To fix bugs and improve the app, we collect anonymous, non-personal data like device model, OS version, and crash logs. This data is not linked to your identity.
-
 ---
 
 ## Third-Party Services & Data Sharing
