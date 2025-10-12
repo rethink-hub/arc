@@ -43,7 +43,7 @@ Arc is an Android accessibility application that provides the following core fea
 
 **🎧 AI Read:** Converts on-screen text to speech using your device's built-in Text-to-Speech engine
 
-**💾 Save Content:** Captures and stores summaries and optional screenshots locally with encryption (requires explicit consent for screenshots, Android 11+ only)
+**💾 Save Content:** Captures and stores summaries and optional screenshots securely in local device storage (requires explicit consent for screenshots, Android 11+ only)
 
 **🔍 Organization:** Search, categorize, and manage your saved summaries
 
@@ -121,13 +121,13 @@ We strive for reliable service but cannot guarantee 100% uptime. We may modify, 
 
 ## 10. Google Drive Backup
 
-Optional feature requiring explicit permission. Encrypted backups are stored in your Drive's app-specific folder. Only you can access them. Delete anytime via Arc settings or Google Account settings. Subject to [Google's Terms](https://policies.google.com/terms).
+Optional feature requiring explicit permission. Backups are stored securely in your Drive's app-specific folder. Only you can access them. Delete anytime via Arc settings or Google Account settings. Subject to [Google's Terms](https://policies.google.com/terms).
 
 ---
 
 ## 11. Privacy & Security
 
-All data is encrypted in transit and at rest. See our [Privacy Policy](privacy.html) for details. You can access, export, and delete your data anytime. We implement industry-standard security but cannot guarantee 100% security. Breach notifications will be provided as required by law.
+All data is encrypted in transit using HTTPS/TLS. Local data is protected by Android's app sandbox security. See our [Privacy Policy](privacy.html) for complete security details. You can access, export, and delete your data anytime. We implement industry-standard security but cannot guarantee 100% security. Breach notifications will be provided as required by law.
 
 ---
 
@@ -205,7 +205,7 @@ We may update these Terms for legal changes or new features. Material changes wi
 
 * ✅ Use Arc responsibly and respect others' rights
 * ✅ We process content only when you tap (never in background)
-* ✅ Your data is encrypted and belongs to you
+* ✅ Your data is securely stored and belongs to you
 * ✅ AI summaries aren't perfect - verify important info
 * ✅ Delete your account anytime
 * ✅ Questions? Contact us: **everythingrethink@gmail.com**

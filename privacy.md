@@ -25,7 +25,7 @@ Arc is built to be private by design. Our fundamental promise to you is:
 
 * **You Are in Control:** The app only accesses screen content when you explicitly tap an action in the floating sidebar. It never monitors your screen in the background.
 * **Content is Processed, Never Stored on Servers:** When we process your on-screen text for summaries, it is handled ephemerally and is **never stored, saved, or logged on our servers.**
-* **Your Data Stays Yours:** Any content you explicitly save is stored **encrypted only on your local device.** We cannot see or access this data.
+* **Your Data Stays Yours:** Any content you explicitly save is stored **securely on your local device only.** Protected by Android's app sandbox, this data is accessible only to Arc and cannot be seen or accessed by us or other apps.
 
 ---
 
@@ -39,9 +39,9 @@ When you interact with the floating sidebar, here is exactly what happens with y
 
 * **For "Save Content":**
     1.  **Consent Required:** When you first tap "Save Content", you'll be asked for permission to capture screenshots. You can grant or deny this permission, and change your choice later in Settings.
-    2.  **Screenshot Capture (if permitted):** If you grant permission, a screenshot of your current screen is captured and saved **encrypted to your local device only**. Screenshots are never taken automatically or in the background.
+    2.  **Screenshot Capture (if permitted):** If you grant permission, a screenshot of your current screen is captured and saved **securely to your local device only**. Screenshots are never taken automatically or in the background.
     3.  **Text Processing:** The on-screen text is processed for an AI summary (same as the "AI Summary" action).
-    4.  **Local Storage:** Both the screenshot and summary are saved **encrypted only on your device**. They are never uploaded to our servers unless you choose to back them up to Google Drive.
+    4.  **Local Storage:** Both the screenshot and summary are saved **securely on your device in Android's protected app storage**. They are never uploaded to our servers unless you choose to back them up to Google Drive.
     5.  **Full Control:** You can delete saved content at any time from within the app, and you can change your screenshot permission in Settings.
 
 ---
@@ -91,7 +91,7 @@ Arc is fully functional without an account. However, to enable optional features
   - Profile picture
   - Any other profile information
   - Friends list or contacts
-  - Files from your Google Drive (except encrypted backups you explicitly create)
+  - Files from your Google Drive
 
 #### **Anonymous Technical Data**
 
@@ -133,7 +133,10 @@ Both features are completely optional and can be used independently or not at al
 
 ## Data Security & Retention
 
-* **Encryption:** All data is encrypted in transit using HTTPS/TLS. All data you save on your device and any account information on our servers are encrypted at rest.
+* **Security Measures:** 
+  - **Data in Transit:** All network communications use HTTPS/TLS encryption to protect data while it travels between your device and our servers.
+  - **Local Device Storage:** Data saved on your device is protected by Android's app sandbox security model, which isolates your app data and makes it accessible only to Arc (not to us, other apps, or other users of your device).
+  - **Server Storage:** Account information stored on our AWS servers is protected by AWS security measures and access controls.
 * **Retention:** On-screen text for summaries is never retained. Your local data remains until you delete it. Your account information is retained as long as your account is active.
 
 ---
