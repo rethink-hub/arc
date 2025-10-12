@@ -9,7 +9,8 @@ title: Privacy Policy - Arc: AI Reader & Summary
 
 <div class="privacy-header">
   <h1>Privacy Policy for Arc: AI Reader & Summary</h1>
-  <p><strong>Effective Date:</strong> October 7, 2025</p>
+  <p><strong>Effective Date:</strong> October 12, 2025</p>
+  <p><strong>Last Updated:</strong> October 12, 2025</p>
 </div>
 
 ---
@@ -67,6 +68,14 @@ We want to be completely transparent about how screenshots work in Arc:
 * **In-app control:** Go to Settings > General Settings > Screenshot Permission to enable or disable
 * **System settings:** You can also revoke the accessibility service permission in your phone's Settings
 
+### Where Are Screenshots Stored?
+
+* **Location:** Stored securely in your device's internal storage (`/data/data/com.rethink.arc/files/screenshots/`)
+* **Security:** Protected by Android's app sandbox; only accessible by Arc app
+* **Visibility:** Not visible in your Gallery or to other apps
+* **Backups:** Only included in Google Drive backups if you explicitly enable that feature
+* **Management:** You can view and delete individual screenshots anytime in the app
+
 ---
 
 ## Information We Handle for Other Features
@@ -75,7 +84,14 @@ We want to be completely transparent about how screenshots work in Arc:
 
 Arc is fully functional without an account. However, to enable optional features like Google Drive backup and prepare for future premium services, you can choose to create an account using Google Sign-In.
 
-* **Google Account Information:** If you sign in, we collect your **Google ID** and **Email Address**. This is stored securely on our backend servers (hosted on AWS) to identify your account. We **do not** collect your full name or profile picture.
+* **What We Collect:** If you sign in, we collect only your **Google ID** and **Email Address**. This minimal data is stored securely on our backend servers (hosted on AWS) to identify your account.
+
+* **What We DON'T Collect:** We explicitly do NOT collect or store:
+  - Your full name
+  - Profile picture
+  - Any other profile information
+  - Friends list or contacts
+  - Files from your Google Drive (except encrypted backups you explicitly create)
 
 #### **Anonymous Technical Data**
 
@@ -87,12 +103,31 @@ To fix bugs and improve the app, we collect anonymous, non-personal data like de
 
 We use reputable third-party services and only share the minimum data necessary:
 
-* **Google Gemini API & OpenAI (Fallback):** For generating AI summaries. ([Google Privacy Policy](https://policies.google.com/privacy), [OpenAI Privacy Policy](https://openai.com/policies/privacy-policy))
-* **Amazon Web Services (AWS):** Our backend, which handles AI requests and stores account information, is hosted on AWS. ([AWS Privacy Policy](https://aws.amazon.com/privacy/))
+* **Google Gemini API & OpenAI (Fallback):** For generating AI summaries. When you use the Summary or Read features, we send the on-screen text to Gemini's servers for processing. **This text is used only to generate your summary and is not stored by us or Google.** ([Google Privacy Policy](https://policies.google.com/privacy), [OpenAI Privacy Policy](https://openai.com/policies/privacy-policy))
+* **Amazon Web Services (AWS):** Our backend, which handles AI requests and stores account information, is hosted on AWS in the **us-east-1** region (Virginia, USA). All data transmission uses encrypted connections (HTTPS/TLS). ([AWS Privacy Policy](https://aws.amazon.com/privacy/))
 * **Google Services:** For optional Sign-In and Drive Backup features.
 * **Google AdMob:** To display banner ads to non-paying users. ([Google Ad Policy](https://policies.google.com/technologies/ads))
 
 **We will never sell your personal information.**
+
+---
+
+## Google OAuth Scopes
+
+We use Google Sign-In for two separate, optional features:
+
+**1. Account Authentication (Optional):**
+- **Scopes:** `openid`, `email`
+- **Purpose:** Create and authenticate your account
+- **Access:** Email address only (no profile, no Drive access)
+
+**2. Google Drive Backup (Optional - Requires Separate Consent):**
+- **Scope:** `https://www.googleapis.com/auth/drive.appdata`
+- **Purpose:** Backup and restore your saved summaries
+- **Access:** ONLY the app-specific hidden folder (appDataFolder)
+- **Limitation:** Cannot access any other files in your Drive or other apps' data
+
+Both features are completely optional and can be used independently or not at all.
 
 ---
 
@@ -109,6 +144,46 @@ You have full control over your data. You can manage and delete your locally sto
 
 ---
 
+## Data Deletion
+
+### How to Delete Your Data
+
+**Local Data (Saved Summaries & Screenshots):**
+
+To delete all local app data:
+1. Go to your device's **Settings**
+2. Navigate to **Apps** or **Applications**
+3. Find and select **Arc**
+4. Tap **Storage**
+5. Tap **Clear Storage** or **Clear Data**
+6. Confirm deletion
+
+*Note: This will permanently delete all your saved summaries and screenshots from your device.*
+
+**Account Data (Google Sign-In):**
+
+To delete your account and all associated data from our servers:
+1. Email us at **everythingrethink@gmail.com** with subject: "Account Deletion Request"
+2. Include your registered email address
+3. We will delete your account within 7 business days
+4. You will receive confirmation once deletion is complete
+
+**Google Drive Backups:**
+
+To delete backups stored in Google Drive:
+1. Go to your **Google Account settings**
+2. Navigate to "Manage your data & privacy"
+3. Under "Apps with account access", find **Arc**
+4. Click "Remove access" to revoke permissions
+5. Backups in Drive AppData will be automatically deleted when access is revoked
+
+**Data Deletion Timeline:**
+- Local data: Immediate upon deletion via device settings
+- Account data: Within 7 business days of request
+- Backup data: Automatically deleted when Drive access is revoked
+
+---
+
 ## Permissions Explained
 
 Arc requests certain permissions to provide its features. Here's why we need them:
@@ -120,6 +195,19 @@ Arc requests certain permissions to provide its features. Here's why we need the
 | **Internet / Network State**| To communicate with AI services, our backend, and load ads.                                             |
 | **Foreground Service** | To keep the floating sidebar available and responsive while you use other apps.                         |
 | **Receive Boot Completed** | To optionally restart the sidebar service when you reboot your device, so you don't have to open the app again. |
+| **Wake Lock** | Required by Android's WorkManager for background tasks (automatic backups and version checks) to complete even when your device goes to sleep. |
+| **Post Notifications** | To show notifications for the foreground service (required by Android) and backup status updates in your notification tray. |
+
+---
+
+## Children's Privacy (COPPA Compliance)
+
+Arc is **not intended for and does not knowingly collect information from children under 13 years of age**.
+
+* We do not market to children
+* We do not knowingly collect personal information from children under 13
+* If we discover we have collected data from a child under 13, we will delete it immediately
+* Parents who believe their child has provided us with information should contact us immediately at **everythingrethink@gmail.com**
 
 ---
 
@@ -127,10 +215,12 @@ Arc requests certain permissions to provide its features. Here's why we need the
 
 If you have any questions about this policy, please contact us at: **everythingrethink@gmail.com**
 
+**Response Time:** We aim to respond to all inquiries within 7 business days.
+
 ---
 
 <div class="footer-section">
-  <p><em>This privacy policy is effective as of October 7, 2025.</em></p>
+  <p><em>This privacy policy is effective as of October 12, 2025.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
     <a href="index.html">← Back to Home</a>
     <a href="terms.html">📋 Terms of Service</a>

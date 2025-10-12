@@ -197,7 +197,7 @@ We may update these Terms for legal changes or new features. Material changes wi
 ## 21. Contact
 
 **Email:** everythingrethink@gmail.com  
-**Response Time:** 2-3 business days
+**Response Time:** Up to 7 business days
 
 ---
 

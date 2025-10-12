@@ -235,8 +235,8 @@ For questions or data requests related to this privacy policy:
 
 ## ⚖️ Legal
 
-- **Effective Date:** October 5, 2025
-- **Last Updated:** October 5, 2025
+- **Effective Date:** October 12, 2025
+- **Last Updated:** October 12, 2025
 - **Applies to:** Arc (AI Summary) Android app
 - **Jurisdiction:** United States
 
@@ -360,8 +360,8 @@ arc/
 © 2025 Rethink. All rights reserved.
 
 **Privacy Policy Status:**
-- Effective Date: October 5, 2025
-- Last Updated: October 5, 2025
+- Effective Date: October 12, 2025
+- Last Updated: October 12, 2025
 - Applies to: Arc (AI Summary) Android app
 - Jurisdiction: United States
 
@@ -383,5 +383,5 @@ arc/
 
 **Made with ❤️ for accessibility** 🌟
 
-*Last Updated: October 7, 2025*
+*Last Updated: October 12, 2025*
 

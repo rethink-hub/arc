@@ -88,6 +88,24 @@ title: Arc: AI Reader & Summary - Understand Your Screen. Instantly.
 
 ---
 
+<div class="section-highlight">
+  <h2>⚠️ Important: AI-Generated Content</h2>
+  <p>
+    Arc uses AI (Google Gemini) to generate summaries. While we strive for accuracy, AI-generated summaries:
+  </p>
+  <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
+    <li>May contain errors or miss important details</li>
+    <li>Should not be relied upon for critical decisions</li>
+    <li>Are for informational purposes only</li>
+    <li>Are not a substitute for reading the original content</li>
+  </ul>
+  <p style="font-weight: 600;">
+    Always verify important information from the original source.
+  </p>
+</div>
+
+---
+
 <div class="accessibility-section">
   <h2>♿ Designed for Everyone</h2>
   <p>
@@ -115,7 +133,7 @@ title: Arc: AI Reader & Summary - Understand Your Screen. Instantly.
 <div class="download-section">
   <h2>Download Arc Today</h2>
   <p style="font-size: 1.1em; color: var(--text-secondary); margin-bottom: 30px;">
-    Join thousands of users who are making their screens more accessible and productive
+    Join users who are making their screens more accessible and productive
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc">
     <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="250">
