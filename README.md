@@ -79,7 +79,7 @@ Open `preview.html` in your browser to see the design immediately!
 
 ```bash
 # Navigate to directory
-cd arc-privacy-policy
+cd arc
 
 # Install dependencies
 bundle install
@@ -122,7 +122,7 @@ The site will auto-reload when you make changes!
 
 3. **Wait for deployment:**
    - GitHub will automatically build and deploy the site
-   - Your site will be available at: `https://[username].github.io/arc-privacy-policy/`
+   - Your site will be available at: `https://[username].github.io/arc/`
    - Deployment typically takes 1-2 minutes
 
 4. **Verify deployment:**
@@ -319,7 +319,7 @@ This website represents a complete transformation from a basic privacy policy pa
 
 ### File Structure
 ```
-arc-privacy-policy/
+arc/
 ├── _layouts/
 │   └── default.html          # Custom HTML layout
 ├── assets/
