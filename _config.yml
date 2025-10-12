@@ -18,8 +18,8 @@ plugins:
 
 # SEO settings
 lang: en-US
-url: "https://chouguleds.github.io" # Your GitHub Pages URL
-baseurl: "/arc-privacy-policy" # Repository name as subdirectory
+url: "https://rethink-hub.github.io" # Your GitHub Pages URL
+baseurl: "/arc" # Repository name as subdirectory
 
 # Social and contact info (for SEO)
 social:
