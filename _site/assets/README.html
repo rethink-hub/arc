@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understand Your Screen. Instantly. Arc: AI Reader & Summary is an intelligent assistant for Android that helps you save time and absorb information more effectively.">
+    <meta name="author" content="Rethink">
+    <meta name="google-site-verification" content="uasxVvwHB2RKEkZYh15-z6cjzqrGbJPM4DCoubNk5Y8" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Assets Directory">
+    <meta property="og:description" content="Understand Your Screen. Instantly. Arc: AI Reader & Summary is an intelligent assistant for Android that helps you save time and absorb information more effectively.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Assets Directory">
+    <meta property="twitter:description" content="Understand Your Screen. Instantly. Arc: AI Reader & Summary is an intelligent assistant for Android that helps you save time and absorb information more effectively.">
+    
+    <title>Assets Directory</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/arc/assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/arc/assets/images/arc-logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/arc/">
+                    <img src="/arc/assets/images/arc-logo.png" alt="Arc Logo" class="logo-image">
+                    <span class="logo-text">Arc: AI Reader & Summary</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/arc/" class="nav-link">Home</a>
+                <a href="/arc/privacy.html" class="nav-link">Privacy</a>
+                <a href="/arc/terms.html" class="nav-link">Terms</a>
+                <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="nav-link nav-cta">Get Arc</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 id="assets-directory">Assets Directory</h1>
+
+<p>This directory contains custom assets for the Arc GitHub Pages website.</p>
+
+<h2 id="directory-structure">Directory Structure</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>assets/
+└── css/
+    └── style.scss    # Custom CSS styling for Arc website
+</code></pre></div></div>
+
+<h2 id="custom-css-stylescss">Custom CSS (style.scss)</h2>
+
+<p>This SCSS file extends the Cayman theme with custom styling:</p>
+
+<h3 id="features">Features</h3>
+<ul>
+  <li><strong>Brand Colors:</strong> Arc’s signature gold (#FFB84D) and dark theme</li>
+  <li><strong>Gradient Effects:</strong> Animated text and button gradients</li>
+  <li><strong>Card Layouts:</strong> Feature cards with hover effects</li>
+  <li><strong>Responsive Design:</strong> Mobile-first approach</li>
+  <li><strong>Animations:</strong> Smooth transitions and effects</li>
+  <li><strong>Typography:</strong> Optimized readability</li>
+</ul>
+
+<h3 id="how-it-works">How It Works</h3>
+<p>Jekyll automatically processes this SCSS file and includes it in your pages. The file:</p>
+<ol>
+  <li>Imports the base Cayman theme</li>
+  <li>Adds custom variables and styles</li>
+  <li>Is compiled to CSS by GitHub Pages</li>
+</ol>
+
+<h2 id="adding-more-assets">Adding More Assets</h2>
+
+<p>You can add more assets to enhance your site:</p>
+
+<h3 id="images">Images</h3>
+<p>Create an <code class="language-plaintext highlighter-rouge">images/</code> folder:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>assets/
+├── css/
+└── images/
+    ├── logo.png
+    ├── screenshot1.png
+    └── app-icon.png
+</code></pre></div></div>
+
+<p>Use in markdown:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Arc Logo</span><span class="p">](</span><span class="sx">assets/images/logo.png</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="javascript">JavaScript</h3>
+<p>Create a <code class="language-plaintext highlighter-rouge">js/</code> folder:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>assets/
+├── css/
+└── js/
+    └── custom.js
+</code></pre></div></div>
+
+<p>Include in your layout or page:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/arc/assets/js/custom.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h3 id="fonts">Fonts</h3>
+<p>Download and add custom fonts:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>assets/
+├── css/
+└── fonts/
+    ├── CustomFont-Regular.woff2
+    └── CustomFont-Bold.woff2
+</code></pre></div></div>
+
+<h2 id="performance-tips">Performance Tips</h2>
+
+<ol>
+  <li><strong>Optimize images</strong> - Use compressed PNG/JPG or WebP</li>
+  <li><strong>Minimize CSS</strong> - Jekyll does this automatically</li>
+  <li><strong>Use SVG for icons</strong> - Better than raster images</li>
+  <li><strong>Lazy load images</strong> - For better initial page load</li>
+</ol>
+
+<h2 id="customization">Customization</h2>
+
+<p>To customize the colors, edit the CSS variables in <code class="language-plaintext highlighter-rouge">style.scss</code>:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+  <span class="na">--accent-gold</span><span class="p">:</span> <span class="mh">#FFB84D</span><span class="p">;</span>        <span class="cm">/* Your primary color */</span>
+  <span class="na">--background-dark</span><span class="p">:</span> <span class="mh">#1a1a1a</span><span class="p">;</span>    <span class="cm">/* Background */</span>
+  <span class="na">--text-primary</span><span class="p">:</span> <span class="mh">#FFFFFF</span><span class="p">;</span>       <span class="cm">/* Main text */</span>
+  <span class="na">--text-secondary</span><span class="p">:</span> <span class="mh">#B0B0B0</span><span class="p">;</span>     <span class="cm">/* Secondary text */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p>See <a href="../CUSTOM_STYLING_GUIDE.md">CUSTOM_STYLING_GUIDE.md</a> for complete styling documentation.</p>
+
+
+        </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>
+                        <img src="/arc/assets/images/arc-logo.png" alt="Arc Logo" class="footer-logo">
+                        Arc: AI Reader & Summary
+                    </h3>
+                    <p>Understand Your Screen. Instantly.</p>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Quick Links</h4>
+                    <a href="/arc/">Home</a>
+                    <a href="/arc/privacy.html">Privacy Policy</a>
+                    <a href="/arc/terms.html">Terms of Service</a>
+                    <a href="mailto:everythingrethink@gmail.com">Contact</a>
+                </div>
+                <div class="footer-download">
+                    <h4>Get Arc</h4>
+                    <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="footer-cta">
+                        Download on Google Play
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rethink. All rights reserved.</p>
+                <p class="footer-made-with">Made with ❤️ for accessibility</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        });
+
+        // Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.feature-card, .step, .section-highlight, .accessibility-section, .hero-section');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+
+        // Add smooth scroll behavior to all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
+
