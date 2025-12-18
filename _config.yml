@@ -1,9 +1,10 @@
 # GitHub Pages Configuration for Arc
 
 # Site settings
-title: "Arc: AI Reader & Summary"
-description: "Understand Your Screen. Instantly. Arc: AI Reader & Summary is an intelligent assistant for Android that helps you save time and absorb information more effectively."
+title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
+description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. Free AI productivity app with custom AI actions for Android."
 author: "Rethink"
+tagline: "Understand Your Screen. Instantly."
 
 # Theme selection
 theme: jekyll-theme-cayman
@@ -24,16 +25,46 @@ baseurl: "/arc" # Repository name as subdirectory
 # Social and contact info (for SEO)
 social:
   name: Rethink
-  links: []
+  links:
+    - https://play.google.com/store/apps/details?id=com.rethink.arc
 
-# Google Analytics (optional - add your tracking ID if needed)
-# google_analytics: UA-XXXXXXXXX-X
+# Additional SEO metadata
+keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI Android, AI reading assistant, Android accessibility AI, AI automation, AI fact checker, free AI assistant, AI actions"
+
+# App-specific metadata
+app:
+  name: "Arc: AI Screen Assistant"
+  package: "com.rethink.arc"
+  category: "Productivity"
+  platform: "Android"
+  price: "Free"
+  features:
+    - "AI-powered text summarization"
+    - "Text-to-speech with language detection"
+    - "AI chat for any screen content"
+    - "Custom AI workflow automation"
+    - "Community AI actions"
+    - "Privacy-focused design"
+
+# Google Analytics 4 (add your tracking ID when ready)
+# google_analytics: G-XXXXXXXXXX
+
+# Webmaster verification codes
+webmaster_verifications:
+  google: "uasxVvwHB2RKEkZYh15-z6cjzqrGbJPM4DCoubNk5Y8"
+  # bing: "BING_VERIFICATION_CODE"
+  # yandex: "YANDEX_VERIFICATION_CODE"
 
 # Exclude files from build
 exclude:
   - README.md
   - DEPLOYMENT.md
   - LOCAL_PREVIEW.md
+  - SEO-IMPLEMENTATION-COMPLETE.md
+  - DEPLOY-AND-TEST.md
+  - VERIFICATION-REPORT.md
+  - FINAL-STATUS.md
+  - assets/images/SOCIAL-SHARE-IMAGE-GUIDE.md
   - .gitignore
   - Gemfile
   - Gemfile.lock

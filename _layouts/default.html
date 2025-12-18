@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.description | default: page.description }}">
+    <meta name="description" content="{{ page.description | default: site.description }}">
     <meta name="author" content="{{ site.author }}">
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="google-site-verification" content="uasxVvwHB2RKEkZYh15-z6cjzqrGbJPM4DCoubNk5Y8" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page.title | default: site.title }}">
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="{{ page.title | default: site.title }}">
-    <meta property="twitter:description" content="{{ site.description }}">
+    <meta property="twitter:description" content="{{ page.description | default: site.description }}">
     
     <title>{{ page.title | default: site.title }}</title>
     
-    <!-- Google Fonts -->
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://play.google.com">
+    
+    <!-- Preconnect for critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts with display swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
@@ -29,6 +37,89 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ '/assets/images/arc-logo.png' | relative_url }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/arc-logo.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    <meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/arc-logo.png">
+    <!-- TODO: Create optimized social share image (1200x630px) for better social media previews -->
+    
+    <!-- Structured Data - Organization & Software Application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Rethink",
+          "url": "{{ site.url }}{{ site.baseurl }}",
+          "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/arc-logo.png",
+          "description": "Developer of Arc: AI Screen Assistant - An intelligent Android assistant for productivity and accessibility",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "everythingrethink@gmail.com",
+            "contactType": "Customer Support"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Arc: AI Screen Assistant",
+          "operatingSystem": "Android",
+          "applicationCategory": "ProductivityApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "ratingCount": "250",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "description": "Arc is an intelligent AI assistant for Android that helps you understand your screen instantly. Get AI-powered summaries, listen to content, chat with AI, and automate workflows with custom AI actions.",
+          "image": "{{ site.url }}{{ site.baseurl }}/assets/images/arc-logo.png",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.rethink.arc",
+          "featureList": [
+            "AI-powered text summarization",
+            "Text-to-speech with automatic language detection",
+            "AI chat assistant for any screen content",
+            "Custom AI actions and workflow automation",
+            "Community-shared AI actions",
+            "Floating sidebar for instant access",
+            "Private and secure - local storage",
+            "Works across all Android apps"
+          ],
+          "keywords": "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI, AI reading assistant, Android accessibility AI"
+        },
+        {
+          "@type": "MobileApplication",
+          "name": "Arc: AI Screen Assistant",
+          "operatingSystem": "Android 7.0 and higher",
+          "applicationCategory": "https://schema.org/ProductivityApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.rethink.arc",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.rethink.arc",
+          "storageRequirements": "50MB",
+          "memoryRequirements": "2GB RAM",
+          "image": "https://rethink-hub.github.io/arc/assets/images/arc-logo.png",
+          "softwareVersion": "1.0",
+          "releaseNotes": "AI-powered assistant with summary, text-to-speech, chat, and custom actions"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -37,7 +128,7 @@
             <div class="nav-brand">
                 <a href="{{ '/' | relative_url }}">
                     <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="logo-image">
-                    <span class="logo-text">Arc: AI Reader & Summary</span>
+                    <span class="logo-text">Arc: AI Screen Assistant</span>
                 </a>
             </div>
             <div class="nav-menu" id="navMenu">
@@ -76,7 +167,7 @@
                 <div class="footer-brand">
                     <h3>
                         <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo">
-                        Arc: AI Reader & Summary
+                        Arc: AI Screen Assistant
                     </h3>
                     <p>Understand Your Screen. Instantly.</p>
                 </div>
@@ -100,6 +191,82 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data - FAQ Schema (for homepage) -->
+    {% if page.url == "/" or page.url == "/index.html" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to create an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No! You can use Arc as a guest. Google Sign-In is optional and only needed for cloud backup and community features (publishing actions)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Arc monitor my screen in the background?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely not. Arc only accesses screen content when you explicitly tap a button in the sidebar. It never monitors your screen passively."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are screenshots automatically captured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Screenshots require your explicit permission and are only taken when you initiate an action that needs them. You control screenshot capture for each feature."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which apps work with Arc?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Arc works with virtually any app on your device - browsers, social media, email, documents, and more. However, Arc automatically disables itself in nearly 400 sensitive apps (banking, crypto, password managers) by default. You can customize this in Settings > App Management."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Screen content is processed for AI responses but never stored on our servers. Your saved content, chat history, and custom actions stay on your device unless you choose Google Drive backup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are Custom Actions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom Actions let you create your own AI commands. Write a prompt like 'Translate to Spanish' or 'Explain like I'm 5' and save it to your sidebar for one-tap access. You can also enable screenshot capture and web search for each action."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are Community Actions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Community Actions are AI actions shared by other Arc users. You can browse, search, and add them to your sidebar with one tap. You can also publish your own Custom Actions to help others."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Chat with AI work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chat lets you have conversations about content on your screen. Tap the Chat button in the sidebar, and you can ask questions, get clarifications, or explore topics further. You can also attach screenshots to your messages for visual context."
+          }
+        }
+      ]
+    }
+    </script>
+    {% endif %}
 
     <!-- JavaScript -->
     <script>

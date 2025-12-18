@@ -1,0 +1,35 @@
+# robots.txt for Arc: AI Screen Assistant
+# https://rethink-hub.github.io/arc/
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Disallow crawling of specific directories if needed
+Disallow: /vendor/
+Disallow: /.git/
+
+# Crawl delay (polite crawling - optional, can be removed for faster indexing)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://rethink-hub.github.io/arc/sitemap.xml
+
