@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "Terms of Service - Arc: AI Reader & Summary"
+title: "Terms of Service - Arc AI: Android AI Assistant"
+description: "Terms of Service for Arc AI Android assistant app. Understand usage terms, AI features, and conditions for our free AI productivity application."
+keywords: "Arc AI terms, Android AI app terms of service"
 ---
 
 <div class="privacy-nav">
@@ -8,7 +10,7 @@ title: "Terms of Service - Arc: AI Reader & Summary"
 </div>
 
 <div class="privacy-header">
-  <h1>Terms of Service for Arc: AI Reader & Summary</h1>
+  <h1>Terms of Service for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 2, 2025</p>
 </div>
 
@@ -16,7 +18,7 @@ title: "Terms of Service - Arc: AI Reader & Summary"
 
 ## Welcome to Arc
 
-Thank you for choosing Arc: AI Reader & Summary ("Arc", "we", "our", or "the App"). These Terms of Service ("Terms") govern your access to and use of Arc, our floating sidebar application that provides AI-powered summaries, text-to-speech, content saving, custom AI actions, and chat features for Android devices.
+Thank you for choosing Arc: AI Screen Assistant ("Arc", "we", "our", or "the App"). These Terms of Service ("Terms") govern your access to and use of Arc, our floating sidebar application that provides AI-powered summaries, text-to-speech, content saving, custom AI actions, and chat features for Android devices.
 
 **By downloading, installing, or using Arc, you agree to be bound by these Terms.** If you do not agree to these Terms, please do not use the App.
 

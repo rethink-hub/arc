@@ -1,16 +1,18 @@
 ---
 layout: default
-title: "Arc: AI Reader & Summary - Understand Your Screen. Instantly."
+title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
+description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. Free AI productivity app with custom AI actions for Android."
+keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant"
 ---
 
 <div class="hero-section">
-  <h1>Arc: AI Reader & Summary</h1>
+  <h1>Arc AI: Your Intelligent Android AI Assistant</h1>
   <h2>Understand Your Screen. Instantly.</h2>
   <p class="hero-description">
-    An intelligent assistant for your Android device that helps you save time, reduce screen fatigue, and absorb information more effectively. With a seamless floating sidebar, you can instantly summarize, listen to, chat about, or save content from any app you're using.
+    Arc AI is a powerful <strong>Android AI assistant</strong> that transforms how you interact with your device. Get instant <strong>AI summaries</strong>, text-to-speech reading, intelligent AI chat, and <strong>AI workflow automation</strong> with custom actions. This free <strong>AI productivity app</strong> works seamlessly across all your Android apps with a floating sidebar that puts AI assistance at your fingertips.
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button">
-    Get Arc Now
+    Download Free Android AI App
   </a>
 </div>
 
@@ -18,17 +20,21 @@ title: "Arc: AI Reader & Summary - Understand Your Screen. Instantly."
 
 ## Key Features
 
+<p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">
+  Explore our specialized features: <a href="ai-summary.html">AI Summary</a> | <a href="ai-workflow-automation.html">Workflow Automation</a> | <a href="ai-text-reader.html">Text Reader</a>
+</p>
+
 <div class="features-grid">
   <div class="feature-card">
     <span class="feature-icon">⚡</span>
     <h3 class="feature-title">Instant AI Summaries</h3>
-    <p class="feature-description">Overwhelmed by a long article or email? Get a concise, AI-powered summary in seconds without leaving the app.</p>
+    <p class="feature-description">Transform long articles, emails, and documents into concise <strong>AI summaries</strong> in seconds. Our <strong>AI text reader</strong> intelligently extracts key information without leaving your current app. <a href="ai-summary.html">Learn more →</a></p>
   </div>
   
   <div class="feature-card">
     <span class="feature-icon">🎧</span>
-    <h3 class="feature-title">Listen to Anything</h3>
-    <p class="feature-description">Turn any text into audio with automatic language detection. Listen to articles while you're driving, cooking, or exercising.</p>
+    <h3 class="feature-title">AI Text-to-Speech Reader</h3>
+    <p class="feature-description">Turn any text into natural audio with our advanced <strong>AI text reader</strong> and automatic language detection. Perfect <strong>screen reader AI</strong> for accessibility, multitasking, or learning on the go. <a href="ai-text-reader.html">Learn more →</a></p>
   </div>
   
   <div class="feature-card">
@@ -39,14 +45,14 @@ title: "Arc: AI Reader & Summary - Understand Your Screen. Instantly."
   
   <div class="feature-card">
     <span class="feature-icon">💬</span>
-    <h3 class="feature-title">Chat with AI</h3>
-    <p class="feature-description">Have conversations about any content on your screen. Ask follow-up questions and get instant AI-powered answers.</p>
+    <h3 class="feature-title">AI Chat Assistant</h3>
+    <p class="feature-description">Chat with our intelligent <strong>AI assistant</strong> about any content on your screen. Ask questions, get clarifications, verify facts with our <strong>AI fact checker</strong>, and explore topics in depth.</p>
   </div>
   
   <div class="feature-card">
     <span class="feature-icon">✨</span>
-    <h3 class="feature-title">Custom Actions</h3>
-    <p class="feature-description">Create personalized AI actions tailored to your workflow. Translate, simplify, extract key points, or build your own.</p>
+    <h3 class="feature-title">AI Workflow Automation</h3>
+    <p class="feature-description">Create custom <strong>AI actions</strong> tailored to your needs. Automate repetitive tasks, translate content, fact-check information, or build your own <strong>AI workflow automation</strong> with one-tap access. <a href="ai-workflow-automation.html">Learn more →</a></p>
   </div>
   
   <div class="feature-card">
@@ -159,12 +165,12 @@ title: "Arc: AI Reader & Summary - Understand Your Screen. Instantly."
 ---
 
 <div class="accessibility-section">
-  <h2>♿ Designed for Everyone</h2>
+  <h2>♿ AI Accessibility for Everyone</h2>
   <p>
-    While <strong>Arc</strong> is a powerful productivity tool for everyone, it was built on a foundation of accessibility. It serves as an essential assistive tool for users with dyslexia, low vision, and other reading challenges by making digital content more digestible and audible.
+    Arc AI is a powerful <strong>Android accessibility AI app</strong> designed for everyone. Our <strong>AI reading assistant</strong> serves as an essential tool for users with dyslexia, low vision, and reading challenges, making digital content more digestible and audible with advanced <strong>screen reader AI</strong> technology.
   </p>
   <p>
-    We believe that by building for accessibility first, we create a product that is more robust and useful for all.
+    By building for accessibility first with AI-powered features, we've created a <strong>productivity assistant</strong> that benefits all users - from students and professionals to anyone seeking a smarter way to consume information on Android.
   </p>
 </div>
 

@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "Privacy Policy - Arc: AI Reader & Summary"
+title: "Privacy Policy - Arc AI: Android AI Assistant"
+description: "Arc AI privacy policy for our Android AI assistant app. Learn how we protect your data, handle AI summaries, and ensure privacy in our AI productivity tool."
+keywords: "Arc AI privacy, Android AI app privacy, AI assistant privacy policy"
 ---
 
 <div class="privacy-nav">
@@ -8,7 +10,7 @@ title: "Privacy Policy - Arc: AI Reader & Summary"
 </div>
 
 <div class="privacy-header">
-  <h1>Privacy Policy for Arc: AI Reader & Summary</h1>
+  <h1>Privacy Policy for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 7, 2025</p>
   <p><strong>Last Updated:</strong> December 7, 2025</p>
 </div>
@@ -17,7 +19,7 @@ title: "Privacy Policy - Arc: AI Reader & Summary"
 
 ## Introduction
 
-Welcome to Arc: AI Reader & Summary. This policy explains how we handle your data with transparency and care. Our goal is to provide powerful features while respecting your privacy at every step.
+Welcome to Arc: AI Screen Assistant. This policy explains how we handle your data with transparency and care. Our goal is to provide powerful features while respecting your privacy at every step.
 
 ## Our Core Privacy Promise
 
