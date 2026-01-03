@@ -198,6 +198,29 @@ Arc is fully functional without an account. However, to enable optional features
 
 ---
 
+## Analytics & Crash Reporting
+
+To improve Arc and fix issues, we use the following services:
+
+* **Google Analytics for Firebase:** We collect **anonymous usage data** to understand how features are used and improve the app. This includes:
+  - Which features you use (e.g., AI Summary, AI Read, Save Content)
+  - Screen navigation patterns
+  - Settings preferences (without the actual values)
+  - App performance metrics
+  
+  **What we DON'T collect:** Your screen content, personal information, or any text you process.
+
+* **Firebase Crashlytics:** We collect **anonymous crash reports** to identify and fix bugs. This includes:
+  - Crash stack traces and error logs
+  - Device model and OS version
+  - App version and build information
+  
+  **What we DON'T collect:** Your screen content or personal data. Crash reports contain only technical diagnostic information.
+
+Both services collect data anonymously and do not identify you personally. You can review Google's data practices at [Google Privacy Policy](https://policies.google.com/privacy).
+
+---
+
 ## Third-Party Services & Data Sharing
 
 We use reputable third-party services and only share the minimum data necessary:
@@ -215,6 +238,10 @@ We use reputable third-party services and only share the minimum data necessary:
 * **ML Kit Language ID:** On-device language detection. No data is sent to external servers.
 
 * **Google Play In-App Review:** We use Google's In-App Review API to occasionally prompt for app reviews. This is handled entirely by Google Play and we do not collect any data about your review.
+
+* **Google Analytics for Firebase:** Anonymous usage analytics to improve the app experience. ([Firebase Privacy](https://firebase.google.com/support/privacy))
+
+* **Firebase Crashlytics:** Anonymous crash reporting to identify and fix bugs. ([Firebase Privacy](https://firebase.google.com/support/privacy))
 
 **We will never sell your personal information.**
 
