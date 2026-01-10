@@ -12,6 +12,7 @@ keywords: "Arc AI terms, Android AI app terms of service"
 <div class="privacy-header">
   <h1>Terms of Service for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 2, 2025</p>
+  <p><strong>Last Updated:</strong> January 10, 2026</p>
 </div>
 
 ---
@@ -84,6 +85,7 @@ Arc requires specific Android permissions to function. We are transparent about 
 | **Receive Boot Completed** | Optionally restart sidebar service after device reboot | Only if you enable auto-start in settings |
 | **Media Projection (Android 11+)** | Capture screenshots when you tap "Save Content" or enable screenshots for custom actions/chat | **Only when you grant explicit screenshot permission** and initiate the action. Never automatic. |
 | **Query All Packages** | Display list of installed apps in App Management settings | Used locally only to let you enable/disable Arc for specific apps. This data never leaves your device. |
+| **Post Notifications** | Show foreground service notifications, backup status updates, and optional feature announcements | Foreground notification always shown when sidebar is active. Push notifications for updates are optional (Android 13+ can skip during onboarding). |
 
 **Important:** We never monitor your screen in the background. Text extraction and screenshot capture occur **only** when you explicitly tap an action button in the sidebar. You maintain complete control.
 
@@ -284,7 +286,7 @@ We may update these Terms for legal changes or new features. Material changes wi
 ---
 
 <div class="footer-section">
-  <p><em>These Terms of Service are effective as of December 2, 2025.</em></p>
+  <p><em>These Terms of Service are effective as of December 2, 2025. Last updated January 10, 2026.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
     <a href="index.html">← Back to Home</a>
     <a href="privacy.html">🔒 Privacy Policy</a>

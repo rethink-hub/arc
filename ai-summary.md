@@ -103,7 +103,7 @@ keywords: "AI summary app, AI text summarization, Android summary app, AI powere
 Our advanced AI analyzes the structure, context, and importance of content to generate accurate summaries that capture the essence of the original text.
 
 ### **Multi-Language Support**
-Arc AI can summarize content in multiple languages, automatically detecting the source language and providing summaries accordingly.
+Arc AI supports 9 languages for both the app interface and AI responses: English, Spanish, German, French, Portuguese (Brazil & Portugal), Korean, Japanese, and Indonesian. The AI automatically detects the source language and provides summaries accordingly.
 
 ### **Customizable Length**
 Choose between brief overviews or more detailed summaries based on your needs and time constraints.
@@ -196,7 +196,8 @@ Unlike simple extraction tools, Arc AI maintains the context and relationships b
 <div class="footer-section">
   <p style="color: var(--text-secondary); margin-top: 20px;">
     <strong>Arc AI:</strong> Your intelligent Android AI assistant for productivity and accessibility<br>
-    © 2025 Rethink. All rights reserved.
+    © 2026 Rethink. All rights reserved.
   </p>
 </div>
+
 

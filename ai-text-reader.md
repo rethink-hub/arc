@@ -176,7 +176,7 @@ Continue listening even when Arc AI is in the background. Control playback from 
 Play, pause, and control audio without interrupting your workflow.
 
 ### **Multiple Languages**
-Supports reading in dozens of languages with automatic detection and natural native pronunciation.
+Arc's app interface and AI features support 9 languages: English, Spanish, German, French, Portuguese (Brazil & Portugal), Korean, Japanese, and Indonesian. Text-to-speech supports dozens of additional languages with automatic detection and natural native pronunciation.
 
 ### **Integration with AI Summary**
 Combine with AI summarization - get a summary first, then listen to the detailed version if needed.
@@ -236,7 +236,8 @@ Combine with AI summarization - get a summary first, then listen to the detailed
 <div class="footer-section">
   <p style="color: var(--text-secondary); margin-top: 20px;">
     <strong>Arc AI:</strong> Intelligent AI text reader and screen reader for Android<br>
-    © 2025 Rethink. All rights reserved.
+    © 2026 Rethink. All rights reserved.
   </p>
 </div>
+
 

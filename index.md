@@ -78,6 +78,12 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
     <h3 class="feature-title">Smart Organization</h3>
     <p class="feature-description">Organize your saved summaries with categories and powerful search capabilities.</p>
   </div>
+  
+  <div class="feature-card">
+    <span class="feature-icon">🌍</span>
+    <h3 class="feature-title">Multi-Language Support</h3>
+    <p class="feature-description">Use Arc in 9 languages: English, Spanish, German, French, Portuguese (Brazil & Portugal), Korean, Japanese, and Indonesian. Both app interface and AI responses are fully localized.</p>
+  </div>
 </div>
 
 ---
@@ -259,6 +265,6 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
   </div>
   <p style="color: var(--text-secondary); margin-top: 20px;">
     <strong>Developer:</strong> Rethink<br>
-    © 2025 Rethink. All rights reserved.
+    © 2026 Rethink. All rights reserved.
   </p>
 </div>

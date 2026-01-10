@@ -174,7 +174,7 @@ While each action runs independently, you can create multiple specialized action
 Create action templates for common tasks and customize them for specific situations with minimal effort.
 
 ### **Multi-Language Support**
-AI actions work across languages. Create translation workflows, multilingual summaries, or language-specific processing.
+Arc's app interface and AI features support 9 languages: English, Spanish, German, French, Portuguese (Brazil & Portugal), Korean, Japanese, and Indonesian. AI actions work seamlessly across these languages for translation workflows, multilingual summaries, and language-specific processing.
 
 ### **Data Processing**
 Extract structured data, parse information, reorganize content, or transform unstructured text into organized formats.
@@ -234,7 +234,8 @@ Extract structured data, parse information, reorganize content, or transform uns
 <div class="footer-section">
   <p style="color: var(--text-secondary); margin-top: 20px;">
     <strong>Arc AI:</strong> Powerful AI workflow automation for Android<br>
-    © 2025 Rethink. All rights reserved.
+    © 2026 Rethink. All rights reserved.
   </p>
 </div>
+
 
