@@ -44,21 +44,51 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
   </div>
   
   <div class="feature-card">
+    <span class="feature-icon">✍️</span>
+    <h3 class="feature-title">AI Writer</h3>
+    <p class="feature-description">Rewrite text in any tone, fix grammar, generate contextual replies, or create posts for social media — all from any app. Use <strong>My Info Vault</strong> to personalize AI responses with your own context, and access your previous responses anytime.</p>
+  </div>
+  
+  <div class="feature-card">
     <span class="feature-icon">💬</span>
     <h3 class="feature-title">AI Chat Assistant</h3>
-    <p class="feature-description">Chat with our intelligent <strong>AI assistant</strong> about any content on your screen. Ask questions, get clarifications, verify facts with our <strong>AI fact checker</strong>, and explore topics in depth.</p>
+    <p class="feature-description">Chat with our intelligent <strong>AI assistant</strong> about any content on your screen. Ask questions, get clarifications, verify facts with our <strong>AI fact checker</strong>, copy AI responses, and explore topics in depth.</p>
+  </div>
+  
+  <div class="feature-card">
+    <span class="feature-icon">🧠</span>
+    <h3 class="feature-title">Flashcards</h3>
+    <p class="feature-description">Generate AI-powered study flashcards from any screen content. Preview before saving, build a flashcard library, and review with spaced repetition to retain what you learn.</p>
+  </div>
+  
+  <div class="feature-card">
+    <span class="feature-icon">📞</span>
+    <h3 class="feature-title">AI Call Insights</h3>
+    <p class="feature-description">Analyze call recordings with two modes: <strong>Manual Upload</strong> to pick and process individual recordings, or <strong>Auto Analysis</strong> to automatically monitor folders you choose and process new recordings as they appear. Get transcriptions, summaries, action items, and key insights.</p>
+  </div>
+  
+  <div class="feature-card">
+    <span class="feature-icon">📋</span>
+    <h3 class="feature-title">Smart Extract</h3>
+    <p class="feature-description">Extract actionable items from any screen — events, reminders, contacts, meeting links, verification codes, and more. One tap to add to your calendar, contacts, or clipboard.</p>
+  </div>
+  
+  <div class="feature-card">
+    <span class="feature-icon">📊</span>
+    <h3 class="feature-title">Home Screen & Statistics</h3>
+    <p class="feature-description">Track your reading progress with streaks and engagement statistics. Manage your unread queue of saved summaries, flashcards, and call insights all in one place.</p>
   </div>
   
   <div class="feature-card">
     <span class="feature-icon">✨</span>
     <h3 class="feature-title">AI Workflow Automation</h3>
-    <p class="feature-description">Create custom <strong>AI actions</strong> tailored to your needs. Automate repetitive tasks, translate content, fact-check information, or build your own <strong>AI workflow automation</strong> with one-tap access. <a href="ai-workflow-automation.html">Learn more →</a></p>
+    <p class="feature-description">Create custom <strong>AI actions</strong> tailored to your needs. Automate repetitive tasks, translate content, fact-check information, or build your own <strong>AI workflow automation</strong> with one-tap access. Select specific screen regions for screenshot capture. <a href="ai-workflow-automation.html">Learn more →</a></p>
   </div>
   
   <div class="feature-card">
     <span class="feature-icon">🌐</span>
     <h3 class="feature-title">Community Actions</h3>
-    <p class="feature-description">Discover AI actions created by the community. Browse, add to your sidebar, or publish your own creations.</p>
+    <p class="feature-description">Discover AI actions created by the community. Browse, filter by language, category, or recently added, and add to your sidebar or publish your own creations.</p>
   </div>
   
   <div class="feature-card">
@@ -76,13 +106,13 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
   <div class="feature-card">
     <span class="feature-icon">🔍</span>
     <h3 class="feature-title">Smart Organization</h3>
-    <p class="feature-description">Organize your saved summaries with categories and powerful search capabilities.</p>
+    <p class="feature-description">Organize your saved summaries with categories, powerful search, and filters by app or category.</p>
   </div>
   
   <div class="feature-card">
     <span class="feature-icon">🌍</span>
     <h3 class="feature-title">Multi-Language Support</h3>
-    <p class="feature-description">Use Arc in 9 languages: English, Spanish, German, French, Portuguese (Brazil & Portugal), Korean, Japanese, and Indonesian. Both app interface and AI responses are fully localized.</p>
+    <p class="feature-description">Use Arc in 10 languages: English, Spanish, German, French, Portuguese (Brazil & Portugal), Korean, Japanese, Indonesian, and Arabic. Both app interface and AI responses are fully localized.</p>
   </div>
 </div>
 
@@ -154,7 +184,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 <div class="section-highlight">
   <h2>⚠️ Important: AI-Generated Content</h2>
   <p>
-    Arc uses AI (Google Gemini) to generate summaries, chat responses, and custom action results. While we strive for accuracy, AI-generated content:
+    Arc uses AI (Google Gemini) to generate summaries, chat responses, custom action results, flashcards, call insights, smart extractions, and AI Writer outputs. While we strive for accuracy, AI-generated content:
   </p>
   <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
     <li>May contain errors or miss important details</li>
@@ -185,7 +215,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 <div class="section-highlight">
   <h2>🔒 Privacy First</h2>
   <p>
-    Your data belongs to you. Arc ONLY accesses screen content when you tap a sidebar button (AI Summary, AI Read, Save Content, Custom Action, or Chat) - never in the background. Screen text is processed for AI responses but never stored on our servers. All saved content, chat history, and custom actions are stored securely in protected local storage on your device. Optional Google Drive backup gives you complete control over your data.
+    Your data belongs to you. Arc ONLY accesses screen content when you tap a sidebar button (AI Summary, AI Read, Save Content, Custom Action, Chat, AI Writer, Flashcards, Smart Extract, or Call Insights) - never in the background. Screen text is processed for AI responses but never stored on our servers. All saved content, chat history, flashcards, call insights, Info Vault, and custom actions are stored securely in protected local storage on your device. Optional Google Drive backup gives you complete control over your data.
   </p>
   <p style="margin-top: 15px;">
     <strong>App Management:</strong> Arc automatically blocks itself in nearly 400 sensitive apps (banking, crypto, password managers) by default. You can customize which apps Arc works with in Settings.
@@ -249,7 +279,27 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 
   <details style="margin: 20px auto; max-width: 800px; text-align: left;">
     <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">How does Chat with AI work?</summary>
-    <p style="padding: 10px 20px; color: var(--text-secondary);">Chat lets you have conversations about content on your screen. Tap the Chat button in the sidebar, and you can ask questions, get clarifications, or explore topics further. You can also attach screenshots to your messages for visual context.</p>
+    <p style="padding: 10px 20px; color: var(--text-secondary);">Chat lets you have conversations about content on your screen. Tap the Chat button in the sidebar, and you can ask questions, get clarifications, or explore topics further. You can also attach screenshots to your messages for visual context and copy any AI response.</p>
+  </details>
+
+  <details style="margin: 20px auto; max-width: 800px; text-align: left;">
+    <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">What is AI Writer?</summary>
+    <p style="padding: 10px 20px; color: var(--text-secondary);">AI Writer helps you write, edit, and respond to messages across any app. It has four modes: Rewrite (change tone), Fix Grammar (one-click proofreading), Reply (generate contextual responses), and Create Post (generate posts for social media platforms). You can also store personal context in My Info Vault to personalize AI responses, and access your previous AI Writer responses anytime.</p>
+  </details>
+
+  <details style="margin: 20px auto; max-width: 800px; text-align: left;">
+    <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">How do Flashcards work?</summary>
+    <p style="padding: 10px 20px; color: var(--text-secondary);">Tap the Flashcards button in the sidebar and Arc will generate study flashcards from the content on your screen. You can preview the flashcards before saving them, build a library of flashcard sets, and review them anytime to retain what you learn.</p>
+  </details>
+
+  <details style="margin: 20px auto; max-width: 800px; text-align: left;">
+    <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">What is AI Call Insights?</summary>
+    <p style="padding: 10px 20px; color: var(--text-secondary);">AI Call Insights analyzes your call recordings to provide transcriptions, summaries, action items, and key insights. It offers two modes: <strong>Manual Upload</strong> lets you pick and process individual audio files, while <strong>Auto Analysis</strong> monitors folders you explicitly select and processes new recordings automatically. Auto Analysis only works when you set it up and can only read folders you grant access to — it cannot access files outside those folders. Audio files are processed via AI and never stored on our servers. Requires audio file access permission on Android 13+.</p>
+  </details>
+
+  <details style="margin: 20px auto; max-width: 800px; text-align: left;">
+    <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">What is Smart Extract?</summary>
+    <p style="padding: 10px 20px; color: var(--text-secondary);">Smart Extract scans your screen and intelligently extracts actionable items like events, reminders, deadlines, contacts, meeting links, locations, verification codes, phone numbers, and email addresses. You can then take action on each item with one tap — add to calendar, set a reminder, save a contact, and more.</p>
   </details>
 
 </div>

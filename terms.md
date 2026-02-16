@@ -12,14 +12,14 @@ keywords: "Arc AI terms, Android AI app terms of service"
 <div class="privacy-header">
   <h1>Terms of Service for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 2, 2025</p>
-  <p><strong>Last Updated:</strong> January 10, 2026</p>
+  <p><strong>Last Updated:</strong> February 9, 2026</p>
 </div>
 
 ---
 
 ## Welcome to Arc
 
-Thank you for choosing Arc: AI Screen Assistant ("Arc", "we", "our", or "the App"). These Terms of Service ("Terms") govern your access to and use of Arc, our floating sidebar application that provides AI-powered summaries, text-to-speech, content saving, custom AI actions, and chat features for Android devices.
+Thank you for choosing Arc: AI Screen Assistant ("Arc", "we", "our", or "the App"). These Terms of Service ("Terms") govern your access to and use of Arc, our floating sidebar application that provides AI-powered summaries, text-to-speech, content saving, custom AI actions, chat, AI writing assistance, flashcards, call insights, and smart extraction features for Android devices.
 
 **By downloading, installing, or using Arc, you agree to be bound by these Terms.** If you do not agree to these Terms, please do not use the App.
 
@@ -58,9 +58,21 @@ Arc is an Android accessibility application that provides the following core fea
 
 **💬 Chat with AI:** Have contextual conversations about screen content, summaries, or custom action results
 
+**✍️ AI Writer:** AI-powered text assistance with Rewrite (change tone), Fix Grammar, Reply (contextual responses), and Create Post (social media/review generation) modes accessible from any app
+
+**🗂️ My Info Vault:** Secure local storage for personal information used to personalize AI Writer responses
+
+**🧠 Flashcards:** AI-generated study flashcards from any screen content with a flashcard library and review system
+
+**📞 AI Call Insights:** Automatic analysis of call recordings for transcriptions, summaries, action items, and key insights (requires audio file access permission)
+
+**📋 Smart Extract:** Extract actionable items from screen content — events, reminders, contacts, meeting links, verification codes, phone numbers, and email addresses — with one-tap actions
+
+**📊 Home Screen:** Statistics dashboard showing reading progress, engagement streaks, and an unread queue for saved content, flashcards, and call insights
+
 **📱 App Management:** Control which apps Arc can work with, with nearly 400 sensitive apps blocked by default
 
-**Minimum Requirements:** Android 5.0 (Lollipop) or higher. Screenshot feature requires Android 11+.
+**Minimum Requirements:** Android 5.0 (Lollipop) or higher. Screenshot feature requires Android 11+. Call Insights requires Android 13+ for audio file access.
 
 ---
 
@@ -85,7 +97,9 @@ Arc requires specific Android permissions to function. We are transparent about 
 | **Receive Boot Completed** | Optionally restart sidebar service after device reboot | Only if you enable auto-start in settings |
 | **Media Projection (Android 11+)** | Capture screenshots when you tap "Save Content" or enable screenshots for custom actions/chat | **Only when you grant explicit screenshot permission** and initiate the action. Never automatic. |
 | **Query All Packages** | Display list of installed apps in App Management settings | Used locally only to let you enable/disable Arc for specific apps. This data never leaves your device. |
-| **Post Notifications** | Show foreground service notifications, backup status updates, and optional feature announcements | Foreground notification always shown when sidebar is active. Push notifications for updates are optional (Android 13+ can skip during onboarding). |
+| **Post Notifications** | Show foreground service notifications, backup status updates, unread content reminders, and optional feature announcements | Foreground notification always shown when sidebar is active. Push notifications and unread nudges are optional (Android 13+ can skip during onboarding). |
+| **Read Media Audio (Android 13+)** | Access call recording audio files for AI Call Insights (Manual Upload and Auto Analysis) | For Manual Upload: when you select a file. For Auto Analysis: only when you explicitly set it up and only reads files from folders you grant access to — cannot access files outside those folders. |
+| **Request Ignore Battery Optimizations** | Prevent aggressive OEM battery management from killing the sidebar service | Only requested on devices with aggressive battery policies. Does not access any personal data. |
 
 **Important:** We never monitor your screen in the background. Text extraction and screenshot capture occur **only** when you explicitly tap an action button in the sidebar. You maintain complete control.
 
@@ -101,11 +115,11 @@ Arc requires specific Android permissions to function. We are transparent about 
 
 ## 6. AI Services & Disclaimers
 
-We use Google Gemini API for summaries, chat, and custom actions, and your device's Text-to-Speech for audio.
+We use Google Gemini API for summaries, chat, custom actions, AI Writer, flashcards, call insights, and smart extraction, and your device's Text-to-Speech for audio.
 
 **Important AI Disclaimers:**
 
-* AI-generated content (summaries, chat responses, custom action results) may not be 100% accurate
+* AI-generated content (summaries, chat responses, custom action results, AI Writer outputs, flashcards, call transcriptions, and smart extractions) may not be 100% accurate
 * AI outputs are for **informational purposes only** - not professional, legal, medical, or financial advice
 * Always verify important information from original sources before relying on it
 * Web search grounding (when enabled) provides real-time information but may also contain inaccuracies
@@ -137,6 +151,7 @@ Arc features a community where users can share AI actions.
 **Publishing Actions:**
 * Publishing is voluntary and requires Google Sign-In
 * When you publish, your action's name, icon, prompt, and **your email address** become publicly visible
+* Published actions are reviewed by AI for content quality and may be rejected if deemed harmful or nonsensical
 * Published actions are stored on our servers
 * You can unpublish your actions at any time
 * Actions added from the community cannot be re-published (prevents duplicates)
@@ -167,9 +182,65 @@ Arc allows you to have AI-powered conversations about content.
 
 ---
 
-## 10. Prohibited Uses
+## 10. AI Writer
 
-You agree **not to**:
+Arc provides AI-powered text assistance accessible from the floating sidebar.
+
+**AI Writer Terms:**
+* AI Writer outputs (rewrites, grammar fixes, replies, posts) are subject to the same AI disclaimers as summaries
+* You are responsible for reviewing and verifying generated text before using it
+* **My Info Vault:** Personal information stored in Info Vault is kept locally on your device and only sent to AI services when you explicitly use AI Writer. You are responsible for the information you store
+* **Create Post:** Content generated for social media platforms is your responsibility to review before posting
+* **Previous Responses:** AI Writer response history is stored locally on your device and can be deleted at any time
+* AI Writer requires active Accessibility Service permission to extract and insert text
+
+---
+
+## 11. Flashcards
+
+Arc generates AI-powered study flashcards from on-screen content.
+
+**Flashcard Terms:**
+* Flashcard content is generated by AI and subject to accuracy disclaimers — always verify important information
+* Flashcards are stored locally on your device only
+* You can preview flashcards before saving them to your library
+* You can delete flashcards and flashcard sets at any time
+
+---
+
+## 12. AI Call Insights
+
+Arc can analyze call recordings to provide transcriptions, summaries, and action items. Two modes are available:
+
+* **Manual Upload:** Select and process individual audio files on demand
+* **Auto Analysis:** Optionally set up automatic monitoring of folders you explicitly select. Auto Analysis only works when you set it up and can only read folders you grant access to — it cannot access files outside those folders
+
+**Call Insights Terms:**
+* Requires audio file access permission (`READ_MEDIA_AUDIO` on Android 13+)
+* **You are responsible** for complying with all applicable laws regarding call recording in your jurisdiction, including obtaining consent from all parties where required
+* Audio content is processed via AI and subject to accuracy disclaimers — transcriptions and insights may contain errors
+* Call recordings are never stored on our servers; only the locally-generated transcripts and insights are saved on your device
+* Auto Analysis can only access folders you explicitly authorize via Android's document picker — it has no ability to read files outside those folders
+* You can switch between Manual Upload and Auto Analysis, configure which folders to monitor, and disable automatic analysis at any time
+* Arc is not responsible for the accuracy of call transcriptions or insights
+
+---
+
+## 13. Smart Extract
+
+Arc can extract actionable items from on-screen content.
+
+**Smart Extract Terms:**
+* Extracted items (events, contacts, reminders, etc.) are generated by AI and may not be 100% accurate
+* You are responsible for verifying extracted information before acting on it (e.g., before adding events to your calendar or saving contacts)
+* Smart Extract uses system intents to interact with other apps (calendar, contacts, phone, maps) — these interactions are subject to those apps' terms
+* Arc is not responsible for actions taken based on AI-extracted information
+
+---
+
+## 14. Prohibited Uses
+
+You agree **not to** (including through any AI feature — AI Writer, Flashcards, Call Insights, Smart Extract, Custom Actions, or Chat):
 
 * Use Arc to violate any laws, regulations, or third-party rights
 * Access or attempt to access copyrighted, proprietary, or confidential content without authorization
@@ -184,25 +255,25 @@ You agree **not to**:
 
 ---
 
-## 11. Service Availability
+## 15. Service Availability
 
 We strive for reliable service but cannot guarantee 100% uptime. We may modify, suspend, or discontinue features at any time. Material changes to these Terms will be communicated through the app. Continued use means you accept the updated Terms.
 
 ---
 
-## 12. Google Drive Backup
+## 16. Google Drive Backup
 
 Optional feature requiring explicit permission. Backups are stored securely in your Drive's app-specific folder. Only you can access them. Delete anytime via Arc settings or Google Account settings. Subject to [Google's Terms](https://policies.google.com/terms).
 
 ---
 
-## 13. Privacy & Security
+## 17. Privacy & Security
 
 All data is encrypted in transit using HTTPS/TLS. Local data is protected by Android's app sandbox security. See our [Privacy Policy](privacy.html) for complete security details. You can access, export, and delete your data anytime. We implement industry-standard security but cannot guarantee 100% security. Breach notifications will be provided as required by law.
 
 ---
 
-## 14. Disclaimers & Liability
+## 18. Disclaimers & Liability
 
 **"AS IS" Service:** Arc is provided without warranties of any kind. We don't guarantee error-free operation or continuous availability.
 
@@ -210,7 +281,7 @@ All data is encrypted in transit using HTTPS/TLS. Local data is protected by And
 
 ---
 
-## 15. Indemnification
+## 19. Indemnification
 
 You agree to indemnify, defend, and hold harmless Rethink, its developers, affiliates, and partners from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:
 
@@ -222,13 +293,13 @@ You agree to indemnify, defend, and hold harmless Rethink, its developers, affil
 
 ---
 
-## 16. Accessibility
+## 20. Accessibility
 
 Arc was built accessibility-first, supporting users with dyslexia, low vision, and reading challenges. We continuously improve accessibility features and welcome feedback at **everythingrethink@gmail.com**.
 
 ---
 
-## 17. Children's Privacy
+## 21. Children's Privacy
 
 Arc is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we discover that we have inadvertently collected such information, we will delete it immediately.
 
@@ -236,13 +307,13 @@ Parents or guardians who believe their child has provided us with personal infor
 
 ---
 
-## 18. International Use
+## 22. International Use
 
 Arc is available worldwide but subject to U.S. laws. You must comply with export laws. Some features may vary by region.
 
 ---
 
-## 19. Termination
+## 23. Termination
 
 **By You:** Uninstall the app or request account deletion anytime.
 
@@ -252,21 +323,21 @@ Arc is available worldwide but subject to U.S. laws. You must comply with export
 
 ---
 
-## 20. Disputes
+## 24. Disputes
 
 Contact us at **everythingrethink@gmail.com** to resolve issues informally first. Unresolved disputes go to binding arbitration (no jury trials or class actions). Small claims court is still available.
 
 ---
 
-## 21. General Terms
+## 25. General Terms
 
 If any provision is unenforceable, the rest remains valid. These Terms and our Privacy Policy constitute the entire agreement.
 
-## 22. Updates
+## 26. Updates
 
 We may update these Terms for legal changes or new features. Material changes will be announced in-app. Continued use means acceptance.
 
-## 23. Contact
+## 27. Contact
 
 **Email:** everythingrethink@gmail.com  
 **Response Time:** Up to 7 business days
@@ -278,15 +349,16 @@ We may update these Terms for legal changes or new features. Material changes wi
 * ✅ Use Arc responsibly and respect others' rights
 * ✅ We process content only when you tap (never in background)
 * ✅ Your data is securely stored and belongs to you
-* ✅ AI summaries and chat aren't perfect - verify important info
-* ✅ Custom actions and community content are your responsibility
+* ✅ AI-generated content (summaries, chat, flashcards, call insights, smart extractions, AI Writer) aren't perfect - verify important info
+* ✅ Custom actions, community content, and AI Writer outputs are your responsibility
+* ✅ You are responsible for complying with call recording laws when using AI Call Insights
 * ✅ Delete your account anytime
 * ✅ Questions? Contact us: **everythingrethink@gmail.com**
 
 ---
 
 <div class="footer-section">
-  <p><em>These Terms of Service are effective as of December 2, 2025. Last updated January 10, 2026.</em></p>
+  <p><em>These Terms of Service are effective as of December 2, 2025. Last updated February 9, 2026.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
     <a href="index.html">← Back to Home</a>
     <a href="privacy.html">🔒 Privacy Policy</a>

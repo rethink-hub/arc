@@ -12,7 +12,7 @@ keywords: "Arc AI privacy, Android AI app privacy, AI assistant privacy policy"
 <div class="privacy-header">
   <h1>Privacy Policy for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 7, 2025</p>
-  <p><strong>Last Updated:</strong> January 10, 2026</p>
+  <p><strong>Last Updated:</strong> February 9, 2026</p>
 </div>
 
 ---
@@ -38,6 +38,12 @@ When you interact with the floating sidebar, here is exactly what happens with y
 * **For "AI Summary":** The text content from your screen is sent securely through our backend to the Google Gemini API to generate a summary. This data is used only for this purpose and is immediately discarded.
 
 * **For "AI Read":** The text content is processed in the same way as "AI Summary" to generate a summary first. The resulting summary text is then converted to speech **entirely on your device** using Android's built-in Text-to-Speech (TTS) engine. Your data does not leave your device for the TTS function.
+
+* **For "AI Writer":** When you tap the AI Writer button, Arc extracts text from your currently focused input field (if any) and captures surrounding conversation context from the screen. This text is sent securely to our AI service to generate rewritten text, grammar fixes, replies, or posts. The processed text is **used only to generate your response and is immediately discarded.** Generated responses are stored **locally on your device only** so you can access previous responses. If you use My Info Vault, your vault content is included in the AI prompt to personalize responses — vault data is stored locally and only sent as part of AI Writer prompts when you explicitly activate the feature.
+
+* **For "Flashcards":** The text content from your screen is sent securely to the Google Gemini API to generate study flashcards (question/hint/answer format). This data is used only for this purpose and is immediately discarded. Generated flashcards are stored **locally on your device only** in your flashcard library.
+
+* **For "Smart Extract":** The text content from your screen is sent securely to the Google Gemini API to identify actionable items (events, reminders, contacts, meeting links, verification codes, phone numbers, email addresses, etc.). This data is used only for extraction and is immediately discarded. Extracted items are displayed for you to act on (e.g., add to calendar, save contact) — they are **not stored on our servers**.
 
 * **For "Save Content":**
     1.  **Consent Required:** When you first tap "Save Content", you'll be asked for permission to capture screenshots. You can grant or deny this permission, and change your choice later in Settings.
@@ -67,6 +73,38 @@ Arc allows you to have conversations about content on your screen through our Ch
 * **Screen Chat:** Discusses content currently on your screen
 * **Summary Chat:** Asks follow-up questions about generated summaries
 * **Custom Action Chat:** Discusses results from custom AI actions
+
+---
+
+## AI Call Insights
+
+Arc can analyze your call recordings to provide transcriptions, summaries, action items, and key insights. It offers two modes of operation:
+
+### Two Modes of Operation
+
+1. **Manual Upload:** You can manually select and upload individual audio files for analysis at any time. This mode requires no background setup — you simply pick a file and Arc processes it.
+
+2. **Auto Analysis:** You can optionally set up automatic monitoring of specific folders for new call recordings. **This mode only works when you explicitly set it up** in Call Insight Settings. Arc can **only read files from folders you grant access to** via Android's document picker — it cannot access files outside those folders. This uses Android's scoped storage permissions, meaning Arc has no ability to browse or read any files beyond what you explicitly authorize.
+
+### How Call Insight Data is Handled
+
+* **Audio File Access:** Arc uses the `READ_MEDIA_AUDIO` permission (Android 13+) or `READ_EXTERNAL_STORAGE` (Android 12 and below) to access call recording audio files. For Auto Analysis, access is further restricted to **only the specific folders you explicitly configure** via Android's document picker.
+* **Audio Processing:** Audio content is sent securely through our backend to the Google Gemini API for transcription and analysis. This audio data is **processed ephemerally and never stored on our servers.**
+* **Local Storage:** Call transcripts, summaries, and extracted insights are stored **locally on your device only**.
+* **Background Monitoring (Auto Analysis only):** When Auto Analysis is enabled, Arc uses Android's WorkManager to periodically check your configured folders for new recordings. This monitoring only reads file metadata (name, date, size) to detect new files — it does not access audio content until processing. It cannot access any folders or files beyond what you have explicitly authorized.
+* **User Control:** You can enable/disable Auto Analysis, choose which folders to monitor, set file size limits, and switch to Manual Upload only at any time in Call Insight Settings. You can delete any call insight from the app at any time.
+
+---
+
+## My Info Vault
+
+Arc includes a secure local vault where you can store personal or professional information to personalize AI Writer responses.
+
+### How Info Vault Data is Handled
+
+* **Local Storage Only:** All Info Vault entries (title and content) are stored **securely on your device in Android's protected app storage**. They are never uploaded to our servers independently.
+* **AI Writer Context:** When you activate AI Writer with Info Vault enabled, your selected vault items are included as context in the AI prompt to generate personalized responses. This data is sent to the AI service **only when you explicitly use AI Writer** and is processed ephemerally.
+* **User Control:** You control what information you store in the vault, and you can add, edit, or delete entries at any time.
 
 ---
 
@@ -101,6 +139,7 @@ When you choose to **publish** a custom action to the community:
 
 * **What Becomes Public:** Your action's name, icon, and prompt template become publicly visible to all Arc users.
 * **Your Identity:** Your email address is displayed as the creator of the action.
+* **AI Content Review:** When you publish an action, it is reviewed by our AI service (Google Gemini) to assess whether it is meaningful and appropriate. Actions that are clearly harmful or nonsensical may be rejected. Actions where the assessment is uncertain are added with a pending approval status. Your action's name and prompt are sent to the AI for this review.
 * **Server Storage:** Published actions are stored on our servers (AWS DynamoDB) to make them available to the community.
 * **Upvotes:** Other users can upvote your actions. Upvote counts are tracked on our servers.
 
@@ -143,6 +182,10 @@ We want to be completely transparent about how screenshots work in Arc:
 * **Only with explicit permission:** You must grant screenshot permission when you first use a feature that requires it
 * **Only when you tap the button:** Screenshots are never captured automatically or in the background
 * **You can deny or revoke permission:** If you deny permission, content is still saved but without screenshots
+
+### Screenshot Region Selection
+
+When capturing screenshots for Custom Actions or Smart Extract, you can optionally select a specific region of the screen to capture instead of the full screen. This uses a draggable rectangle overlay. The selected region preference can be remembered for future use. Region selection data stays entirely on your device.
 
 ### Screenshot Consent Levels
 
@@ -244,6 +287,15 @@ Arc uses Firebase Cloud Messaging (FCM) to send optional push notifications abou
 * **No Personal Data:** Notifications contain only general announcement content - no personal information.
 * **Frequency:** We send notifications occasionally (not daily or weekly) - only when there's something meaningful to share.
 
+### Unread Nudge Notifications (Local Reminders)
+
+Arc can send local reminder notifications to encourage you to revisit unread saved content (summaries, flashcards, and call insights).
+
+* **Entirely Local:** These notifications are scheduled and triggered **entirely on your device** using Android's WorkManager. No data is sent to our servers.
+* **Throttled:** Nudge notifications are limited to a maximum of 2 per week with at least a 3-day gap between notifications.
+* **Conditions:** Notifications are sent only when your reading streak is at risk (3+ days inactive) or when you have unread content piling up (3+ items older than 2 days).
+* **User Control:** You can disable these notifications via Android Settings > Apps > Arc > Notifications.
+
 ### Data Handling
 
 * **Anonymous Analytics:** We track notification types received (e.g., "feature_announcement") for analytics purposes only.
@@ -310,6 +362,10 @@ Both features are completely optional and can be used independently or not at al
   - On-screen text for summaries: Never retained
   - Chat conversations: Local only, until you delete them
   - Custom actions: Local only, until you delete them
+  - Flashcards: Local only, until you delete them
+  - Call insights and transcripts: Local only, until you delete them
+  - Info Vault entries: Local only, until you delete them
+  - AI Writer previous responses: Local only, until you delete them
   - Published community actions: Server-stored until you unpublish
   - Your local data: Remains until you delete it
   - Your account information: Retained as long as your account is active
@@ -326,7 +382,7 @@ You have full control over your data. You can manage and delete your locally sto
 
 ### How to Delete Your Data
 
-**Local Data (Saved Summaries, Screenshots, Chat History, Custom Actions):**
+**Local Data (Saved Summaries, Screenshots, Chat History, Custom Actions, Flashcards, Call Insights, Info Vault, AI Writer Responses):**
 
 To delete all local app data:
 1. Go to your device's **Settings**
@@ -336,7 +392,7 @@ To delete all local app data:
 5. Tap **Clear Storage** or **Clear Data**
 6. Confirm deletion
 
-*Note: This will permanently delete all your saved summaries, screenshots, chat history, and custom actions from your device.*
+*Note: This will permanently delete all your saved summaries, screenshots, chat history, custom actions, flashcards, call insights, Info Vault entries, and AI Writer responses from your device.*
 
 **Account Data (Google Sign-In):**
 
@@ -385,6 +441,8 @@ Arc requests certain permissions to provide its features. Here's why we need the
 | **Wake Lock** | Required by Android's WorkManager for background tasks (automatic backups and version checks) to complete even when your device goes to sleep. |
 | **Post Notifications** | To show notifications for the foreground service (required by Android), backup status updates, and optional push notifications about new features and updates. On Android 13+, you can skip this permission during onboarding. |
 | **Query All Packages** | To display a list of installed apps in App Management settings, allowing you to enable/disable Arc for specific apps. This data never leaves your device. |
+| **Read Media Audio (Android 13+)** | To access call recording audio files for AI Call Insights (Manual Upload and Auto Analysis). For Auto Analysis, only reads files from folders you explicitly grant access to via Android's document picker — cannot access files outside those folders. Audio content is processed for transcription and insights via AI and never stored on our servers. On Android 12 and below, Read External Storage is used instead. |
+| **Request Ignore Battery Optimizations** | To request that Android exempts Arc from aggressive battery optimization, preventing the floating sidebar service from being killed on devices with aggressive OEM battery management. This permission is only shown on devices where it is needed and does not access any personal data. |
 
 ---
 
@@ -408,7 +466,7 @@ If you have any questions about this policy, please contact us at: **everythingr
 ---
 
 <div class="footer-section">
-  <p><em>This privacy policy is effective as of December 7, 2025. Last updated January 10, 2026.</em></p>
+  <p><em>This privacy policy is effective as of December 7, 2025. Last updated February 9, 2026.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
     <a href="index.html">← Back to Home</a>
     <a href="terms.html">📋 Terms of Service</a>
