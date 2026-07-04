@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
-description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. Free AI productivity app with custom AI actions for Android."
+description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with free trial and custom AI actions for Android."
 keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant"
 ---
 
@@ -9,10 +9,10 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
   <h1>Arc AI: Your Intelligent Android AI Assistant</h1>
   <h2>Understand Your Screen. Instantly.</h2>
   <p class="hero-description">
-    Arc AI is a powerful <strong>Android AI assistant</strong> that transforms how you interact with your device. Get instant <strong>AI summaries</strong>, text-to-speech reading, intelligent AI chat, and <strong>AI workflow automation</strong> with custom actions. This free <strong>AI productivity app</strong> works seamlessly across all your Android apps with a floating sidebar that puts AI assistance at your fingertips.
+    Arc AI is a powerful <strong>Android AI assistant</strong> that transforms how you interact with your device. Get instant <strong>AI summaries</strong>, text-to-speech reading, intelligent AI chat, and <strong>AI workflow automation</strong> with custom actions. This <strong>AI productivity app</strong> works seamlessly across all your Android apps with a floating sidebar that puts AI assistance at your fingertips.
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button">
-    Download Free Android AI App
+    Download on Google Play
   </a>
 </div>
 
@@ -119,9 +119,12 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 ---
 
 <div class="section-highlight" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1)); border: 1px solid rgba(76, 175, 80, 0.3);">
-  <h2>💎 Free to Use</h2>
+  <h2>💎 Subscription & Free Trial</h2>
   <p>
-    Arc is <strong>completely free</strong> with optional Google Sign-In. Use as a guest or sign in for cloud backup and community features.
+    Arc offers a <strong>free trial</strong> so you can experience all features before committing. After the trial, a <strong>subscription</strong> unlocks full access to all AI features. Use as a guest or sign in for cloud backup and community features.
+  </p>
+  <p>
+    <strong>⚠️ Please be sure before purchasing or opting for a promo coupon — we do not give refunds.</strong>
   </p>
 </div>
 

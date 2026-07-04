@@ -241,6 +241,17 @@ Arc is fully functional without an account. However, to enable optional features
 
 ---
 
+## Subscription & Billing Information
+
+Arc operates on a subscription model with a free trial. Subscription billing is handled entirely through **Google Play Billing**.
+
+* **What We Collect:** We do not collect or store your payment card information. Billing, payment processing, and subscription management are all handled by Google Play.
+* **Subscription Status:** We may receive notification from Google Play about your subscription status (active, cancelled, expired) to manage your access to premium features.
+* **No Payment Data:** All financial information is processed by Google Play and is subject to [Google's Privacy Policy](https://policies.google.com/privacy). We never see or store your credit card details, bank accounts, or other payment instruments.
+* **Promo Coupons:** If you use a promotional coupon or discount code, the transaction is processed through Google Play. We do not store any coupon-related payment information.
+
+---
+
 ## Analytics & Crash Reporting
 
 To improve Arc and fix issues, we use the following services:

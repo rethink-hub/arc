@@ -264,7 +264,7 @@ The privacy policy covers:
 
 ### Build & Deployment  
 - **Jekyll** - Static site generator
-- **GitHub Pages** - Free hosting with automatic SSL
+- **GitHub Pages** - Hosting with automatic SSL
 - **Git** - Version control
 
 ### CSS Features

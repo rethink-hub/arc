@@ -2,7 +2,7 @@
 
 # Site settings
 title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
-description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. Free AI productivity app with custom AI actions for Android."
+description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with free trial and custom AI actions for Android."
 author: "Rethink"
 tagline: "Understand Your Screen. Instantly."
 
@@ -29,7 +29,7 @@ social:
     - https://play.google.com/store/apps/details?id=com.rethink.arc
 
 # Additional SEO metadata
-keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI Android, AI reading assistant, Android accessibility AI, AI automation, AI fact checker, free AI assistant, AI actions"
+keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI Android, AI reading assistant, Android accessibility AI, AI automation, AI fact checker, AI actions"
 
 # App-specific metadata
 app:
@@ -37,7 +37,7 @@ app:
   package: "com.rethink.arc"
   category: "Productivity"
   platform: "Android"
-  price: "Free"
+  price: "Subscription with free trial"
   features:
     - "AI-powered text summarization"
     - "Text-to-speech with language detection"

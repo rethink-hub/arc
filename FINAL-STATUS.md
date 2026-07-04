@@ -98,7 +98,7 @@
 ✅ AI automation  
 ✅ AI fact checker  
 ✅ custom AI actions  
-✅ free AI assistant  
+✅ AI assistant  
 ✅ AI actions  
 
 **15+ keywords strategically integrated**

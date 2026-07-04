@@ -22,7 +22,7 @@ Currently using the app logo (`arc-logo.png`) as the social share image. For opt
   - Text-to-Speech
   - Workflow Automation
   - AI Chat
-- Call-to-action: "Free on Google Play"
+- Call-to-action: "Available on Google Play"
 - Modern gradient background (gold/orange/purple theme)
 
 **Option 2: Benefit-Focused**
@@ -55,7 +55,7 @@ Currently using the app logo (`arc-logo.png`) as the social share image. For opt
 - **Canva:** Easy template-based design (recommended for non-designers)
 - **Figma:** Professional design tool
 - **Adobe Photoshop:** Advanced image editing
-- **GIMP:** Free open-source alternative
+- **GIMP:** Open-source alternative
 
 ### After Creating the Image
 1. Save as `arc-social-share.png` in `/arc/assets/images/`

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Terms of Service - Arc AI: Android AI Assistant"
-description: "Terms of Service for Arc AI Android assistant app. Understand usage terms, AI features, and conditions for our free AI productivity application."
+description: "Terms of Service for Arc AI Android assistant app. Understand usage terms, AI features, and conditions for our AI productivity application."
 keywords: "Arc AI terms, Android AI app terms of service"
 ---
 
@@ -76,7 +76,34 @@ Arc is an Android accessibility application that provides the following core fea
 
 ---
 
-## 3. User Accounts
+## 3. Subscription, Billing & Refunds
+
+Arc operates on a **subscription model** with a free trial period.
+
+**Free Trial:** New users receive a free trial to explore all features. The trial duration is displayed in the app at the time of sign-up. No payment is required during the trial period.
+
+**Subscription:** After the free trial ends, a subscription is required to continue using premium AI features. Subscription details, pricing, and billing cycles are displayed within the app and on the Google Play Store listing.
+
+**Billing:** Subscriptions are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
+
+**Refund Policy:**
+
+**⚠️ Please be sure before purchasing or opting for a promo coupon — we do not give refunds.**
+
+* All subscription payments are **final and non-refundable**
+* Promo coupons and discount offers are also **non-refundable** — once a promo purchase is made, it cannot be reversed or refunded
+* We do not offer refunds for partial billing periods, unused subscription time, or change of mind
+* If you cancel your subscription, you will continue to have access until the end of your current billing period
+* Refunds for defective purchases or Google Play's refund policies may apply separately under Google Play's terms — contact Google Play support for app-specific refund requests within their eligible window
+* By purchasing a subscription or using a promo coupon, you acknowledge and agree to this no-refund policy
+
+**Price Changes:** We may adjust subscription pricing with reasonable advance notice. Existing subscribers will be notified before any price change takes effect.
+
+**Promo Coupons:** From time to time, we may offer promotional coupons or discount codes. These are provided as-is and have no cash value. Purchases made with promo coupons are subject to the same no-refund policy.
+
+---
+
+## 4. User Accounts
 
 **Guest Mode:** Use core features without an account.
 
@@ -84,7 +111,7 @@ Arc is an Android accessibility application that provides the following core fea
 
 ---
 
-## 4. Permissions and Data Access
+## 5. Permissions and Data Access
 
 Arc requires specific Android permissions to function. We are transparent about what we request and why:
 
@@ -105,7 +132,7 @@ Arc requires specific Android permissions to function. We are transparent about 
 
 ---
 
-## 5. Content & Intellectual Property
+## 6. Content & Intellectual Property
 
 **Your Content:** You own all content you create or save. By using AI features, you grant us temporary rights to process your on-screen text solely for generating summaries and responses. Backup content is subject to Google's terms.
 
@@ -113,7 +140,7 @@ Arc requires specific Android permissions to function. We are transparent about 
 
 ---
 
-## 6. AI Services & Disclaimers
+## 7. AI Services & Disclaimers
 
 We use Google Gemini API for summaries, chat, custom actions, AI Writer, flashcards, call insights, and smart extraction, and your device's Text-to-Speech for audio.
 
@@ -127,7 +154,7 @@ We use Google Gemini API for summaries, chat, custom actions, AI Writer, flashca
 
 ---
 
-## 7. Custom Actions
+## 8. Custom Actions
 
 Arc allows you to create personalized AI actions with custom prompts.
 
@@ -144,7 +171,7 @@ Arc allows you to create personalized AI actions with custom prompts.
 
 ---
 
-## 8. Community Actions
+## 9. Community Actions
 
 Arc features a community where users can share AI actions.
 
@@ -169,7 +196,7 @@ Arc features a community where users can share AI actions.
 
 ---
 
-## 9. Chat Feature
+## 10. Chat Feature
 
 Arc allows you to have AI-powered conversations about content.
 
@@ -182,7 +209,7 @@ Arc allows you to have AI-powered conversations about content.
 
 ---
 
-## 10. AI Writer
+## 11. AI Writer
 
 Arc provides AI-powered text assistance accessible from the floating sidebar.
 
@@ -196,7 +223,7 @@ Arc provides AI-powered text assistance accessible from the floating sidebar.
 
 ---
 
-## 11. Flashcards
+## 12. Flashcards
 
 Arc generates AI-powered study flashcards from on-screen content.
 
@@ -208,7 +235,7 @@ Arc generates AI-powered study flashcards from on-screen content.
 
 ---
 
-## 12. AI Call Insights
+## 13. AI Call Insights
 
 Arc can analyze call recordings to provide transcriptions, summaries, and action items. Two modes are available:
 
@@ -226,7 +253,7 @@ Arc can analyze call recordings to provide transcriptions, summaries, and action
 
 ---
 
-## 13. Smart Extract
+## 14. Smart Extract
 
 Arc can extract actionable items from on-screen content.
 
@@ -238,7 +265,7 @@ Arc can extract actionable items from on-screen content.
 
 ---
 
-## 14. Prohibited Uses
+## 15. Prohibited Uses
 
 You agree **not to** (including through any AI feature — AI Writer, Flashcards, Call Insights, Smart Extract, Custom Actions, or Chat):
 
@@ -255,25 +282,25 @@ You agree **not to** (including through any AI feature — AI Writer, Flashcards
 
 ---
 
-## 15. Service Availability
+## 16. Service Availability
 
 We strive for reliable service but cannot guarantee 100% uptime. We may modify, suspend, or discontinue features at any time. Material changes to these Terms will be communicated through the app. Continued use means you accept the updated Terms.
 
 ---
 
-## 16. Google Drive Backup
+## 17. Google Drive Backup
 
 Optional feature requiring explicit permission. Backups are stored securely in your Drive's app-specific folder. Only you can access them. Delete anytime via Arc settings or Google Account settings. Subject to [Google's Terms](https://policies.google.com/terms).
 
 ---
 
-## 17. Privacy & Security
+## 18. Privacy & Security
 
 All data is encrypted in transit using HTTPS/TLS. Local data is protected by Android's app sandbox security. See our [Privacy Policy](privacy.html) for complete security details. You can access, export, and delete your data anytime. We implement industry-standard security but cannot guarantee 100% security. Breach notifications will be provided as required by law.
 
 ---
 
-## 18. Disclaimers & Liability
+## 19. Disclaimers & Liability
 
 **"AS IS" Service:** Arc is provided without warranties of any kind. We don't guarantee error-free operation or continuous availability.
 
@@ -281,7 +308,7 @@ All data is encrypted in transit using HTTPS/TLS. Local data is protected by And
 
 ---
 
-## 19. Indemnification
+## 20. Indemnification
 
 You agree to indemnify, defend, and hold harmless Rethink, its developers, affiliates, and partners from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:
 
@@ -293,13 +320,13 @@ You agree to indemnify, defend, and hold harmless Rethink, its developers, affil
 
 ---
 
-## 20. Accessibility
+## 21. Accessibility
 
 Arc was built accessibility-first, supporting users with dyslexia, low vision, and reading challenges. We continuously improve accessibility features and welcome feedback at **everythingrethink@gmail.com**.
 
 ---
 
-## 21. Children's Privacy
+## 22. Children's Privacy
 
 Arc is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we discover that we have inadvertently collected such information, we will delete it immediately.
 
@@ -307,13 +334,13 @@ Parents or guardians who believe their child has provided us with personal infor
 
 ---
 
-## 22. International Use
+## 23. International Use
 
 Arc is available worldwide but subject to U.S. laws. You must comply with export laws. Some features may vary by region.
 
 ---
 
-## 23. Termination
+## 24. Termination
 
 **By You:** Uninstall the app or request account deletion anytime.
 
@@ -323,21 +350,21 @@ Arc is available worldwide but subject to U.S. laws. You must comply with export
 
 ---
 
-## 24. Disputes
+## 25. Disputes
 
 Contact us at **everythingrethink@gmail.com** to resolve issues informally first. Unresolved disputes go to binding arbitration (no jury trials or class actions). Small claims court is still available.
 
 ---
 
-## 25. General Terms
+## 26. General Terms
 
 If any provision is unenforceable, the rest remains valid. These Terms and our Privacy Policy constitute the entire agreement.
 
-## 26. Updates
+## 27. Updates
 
 We may update these Terms for legal changes or new features. Material changes will be announced in-app. Continued use means acceptance.
 
-## 27. Contact
+## 28. Contact
 
 **Email:** everythingrethink@gmail.com  
 **Response Time:** Up to 7 business days
@@ -353,6 +380,7 @@ We may update these Terms for legal changes or new features. Material changes wi
 * ✅ Custom actions, community content, and AI Writer outputs are your responsibility
 * ✅ You are responsible for complying with call recording laws when using AI Call Insights
 * ✅ Delete your account anytime
+* ✅ Subscriptions are non-refundable — please be sure before purchasing or using promo coupons
 * ✅ Questions? Contact us: **everythingrethink@gmail.com**
 
 ---
