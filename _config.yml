@@ -2,7 +2,7 @@
 
 # Site settings
 title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
-description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with free trial and custom AI actions for Android."
+description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with freemium features and custom AI actions for Android."
 author: "Rethink"
 tagline: "Understand Your Screen. Instantly."
 
@@ -37,7 +37,7 @@ app:
   package: "com.rethink.arc"
   category: "Productivity"
   platform: "Android"
-  price: "Subscription with free trial"
+  price: "Freemium with subscription"
   features:
     - "AI-powered text summarization"
     - "Text-to-speech with language detection"

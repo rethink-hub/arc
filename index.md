@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
-description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with free trial and custom AI actions for Android."
+description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with freemium features and custom AI actions for Android."
 keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant"
 ---
 
@@ -119,9 +119,9 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 ---
 
 <div class="section-highlight" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1)); border: 1px solid rgba(76, 175, 80, 0.3);">
-  <h2>💎 Subscription & Free Trial</h2>
+  <h2>💎 Freemium & Subscription</h2>
   <p>
-    Arc offers a <strong>free trial</strong> so you can experience all features before committing. After the trial, a <strong>subscription</strong> unlocks full access to all AI features. Use as a guest or sign in for cloud backup and community features.
+    Arc is <strong>freemium</strong> — core features are available for free, with a <strong>subscription</strong> that unlocks full access to all premium AI features. Use as a guest or sign in for cloud backup and community features.
   </p>
   <p>
     <strong>⚠️ Please be sure before purchasing or opting for a promo coupon — we do not give refunds.</strong>

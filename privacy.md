@@ -243,7 +243,7 @@ Arc is fully functional without an account. However, to enable optional features
 
 ## Subscription & Billing Information
 
-Arc operates on a subscription model with a free trial. Subscription billing is handled entirely through **Google Play Billing**.
+Arc operates on a **freemium** model with optional subscription. Subscription billing is handled entirely through **Google Play Billing**.
 
 * **What We Collect:** We do not collect or store your payment card information. Billing, payment processing, and subscription management are all handled by Google Play.
 * **Subscription Status:** We may receive notification from Google Play about your subscription status (active, cancelled, expired) to manage your access to premium features.

@@ -78,11 +78,11 @@ Arc is an Android accessibility application that provides the following core fea
 
 ## 3. Subscription, Billing & Refunds
 
-Arc operates on a **subscription model** with a free trial period.
+Arc operates on a **freemium model** — core features are available for free, with a subscription that unlocks full access to all premium AI features.
 
-**Free Trial:** New users receive a free trial to explore all features. The trial duration is displayed in the app at the time of sign-up. No payment is required during the trial period.
+**Freemium:** Arc provides core features at no cost. A subscription is required to unlock premium AI features, with details, pricing, and billing cycles displayed within the app and on the Google Play Store listing.
 
-**Subscription:** After the free trial ends, a subscription is required to continue using premium AI features. Subscription details, pricing, and billing cycles are displayed within the app and on the Google Play Store listing.
+**Subscription:** Subscriptions are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
 
 **Billing:** Subscriptions are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
 
