@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "AI Summary App for Android | Arc AI - Instant Text Summarization"
-description: "Arc AI provides instant AI-powered summaries for any text on your Android device. Best AI summary app with freemium features and intelligent text summarization across all apps."
+title: "AI Summary App for Android | Free Text Summarizer | Arc"
+description: "Free AI-powered summary app for Android. Instantly summarize articles, emails, and documents from any app. Intelligent text summarization with Arc AI."
 keywords: "AI summary app, AI text summarization, Android summary app, AI powered summary, automatic text summary"
 ---
 
@@ -196,7 +196,7 @@ Unlike simple extraction tools, Arc AI maintains the context and relationships b
 <div class="footer-section">
   <p style="color: var(--text-secondary); margin-top: 20px;">
     <strong>Arc AI:</strong> Your intelligent Android AI assistant for productivity and accessibility<br>
-    © 2026 Rethink. All rights reserved.
+    © 2026 Mamata. All rights reserved.
   </p>
 </div>
 

@@ -1,9 +1,9 @@
 # GitHub Pages Configuration for Arc
 
 # Site settings
-title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
-description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with freemium features and custom AI actions for Android."
-author: "Rethink"
+title: "Free AI Screen Assistant for Android | Arc AI"
+description: "Arc AI is a free Android AI assistant that provides instant summaries, text-to-speech, AI chat, and workflow automation. Works on any screen with custom AI actions."
+author: "Mamata"
 tagline: "Understand Your Screen. Instantly."
 
 # Theme selection
@@ -12,9 +12,8 @@ theme: jekyll-theme-cayman
 # Build settings
 markdown: kramdown
 
-# Plugins
+# Plugins — removed jekyll-sitemap, using custom sitemap.xml instead
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
 
 # SEO settings
@@ -24,9 +23,10 @@ baseurl: "/arc" # Repository name as subdirectory
 
 # Social and contact info (for SEO)
 social:
-  name: Rethink
+  name: Mamata
   links:
     - https://play.google.com/store/apps/details?id=com.rethink.arc
+    - https://x.com/rethink_hub
 
 # Additional SEO metadata
 keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI Android, AI reading assistant, Android accessibility AI, AI automation, AI fact checker, AI actions"
@@ -37,7 +37,7 @@ app:
   package: "com.rethink.arc"
   category: "Productivity"
   platform: "Android"
-  price: "Freemium with subscription"
+  price: "Free with subscription"
   features:
     - "AI-powered text summarization"
     - "Text-to-speech with language detection"
@@ -52,10 +52,8 @@ app:
 # Webmaster verification codes
 webmaster_verifications:
   google: "uasxVvwHB2RKEkZYh15-z6cjzqrGbJPM4DCoubNk5Y8"
-  # bing: "BING_VERIFICATION_CODE"
-  # yandex: "YANDEX_VERIFICATION_CODE"
 
-# Exclude files from build
+# Exclude files from build — prevent junk pages in sitemap
 exclude:
   - README.md
   - DEPLOYMENT.md
@@ -64,11 +62,15 @@ exclude:
   - DEPLOY-AND-TEST.md
   - VERIFICATION-REPORT.md
   - FINAL-STATUS.md
+  - QUICK-DEPLOY.sh
   - assets/images/SOCIAL-SHARE-IMAGE-GUIDE.md
+  - assets/README.md
   - .gitignore
   - Gemfile
   - Gemfile.lock
   - vendor
+  - node_modules
+  - .DS_Store
 
 # Include files
 include:
@@ -82,4 +84,7 @@ defaults:
       path: ""
     values:
       layout: default
-
+  - scope:
+      path: "assets"
+    values:
+      layout: null

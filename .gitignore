@@ -1,0 +1,22 @@
+# Jekyll build output
+_site/
+
+# OS files
+.DS_Store
+.DS_Store?
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Ruby
+vendor/
+Gemfile.lock
+
+# Node
+node_modules/
+
+# Misc
+*.log
+.env

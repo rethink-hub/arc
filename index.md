@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Arc AI: Android AI Assistant for Workflow Automation & AI Summary"
-description: "Arc AI is a powerful Android AI assistant that provides instant AI summaries, text-to-speech, AI chat, and workflow automation. AI productivity app with freemium features and custom AI actions for Android."
+title: "Free AI Screen Assistant for Android | Arc AI"
+description: "Free Android AI assistant that summarizes, reads aloud, and chats about any screen content. Custom AI actions and workflow automation. Works on every app."
 keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant"
 ---
 
@@ -21,7 +21,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 ## Key Features
 
 <p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">
-  Explore our specialized features: <a href="ai-summary.html">AI Summary</a> | <a href="ai-workflow-automation.html">Workflow Automation</a> | <a href="ai-text-reader.html">Text Reader</a>
+  Explore our specialized features: <a href="/arc/ai-summary.html">AI Summary</a> | <a href="/arc/ai-workflow-automation.html">Workflow Automation</a> | <a href="/arc/ai-text-reader.html">Text Reader</a>
 </p>
 
 <div class="features-grid">
@@ -119,9 +119,9 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 ---
 
 <div class="section-highlight" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1)); border: 1px solid rgba(76, 175, 80, 0.3);">
-  <h2>💎 Freemium & Subscription</h2>
+  <h2>💎 Free & Subscription</h2>
   <p>
-    Arc is <strong>freemium</strong> — core features are available for free, with a <strong>subscription</strong> that unlocks full access to all premium AI features. Use as a guest or sign in for cloud backup and community features.
+    Arc is <strong>free</strong> — core features are available for free, with a <strong>subscription</strong> that unlocks full access to all premium AI features. Use as a guest or sign in for cloud backup and community features.
   </p>
   <p>
     <strong>⚠️ Please be sure before purchasing or opting for a promo coupon — we do not give refunds.</strong>

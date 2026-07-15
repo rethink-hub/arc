@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "AI Text Reader & Screen Reader for Android | Arc AI Text-to-Speech"
-description: "Arc AI text reader converts any screen content to natural speech on Android. Best AI-powered screen reader with automatic language detection and accessibility features."
+title: "AI Text Reader for Android | Free Screen Reader AI | Arc"
+description: "Free AI text reader for Android. Convert any screen content to natural speech with language detection. Best AI screen reader for accessibility."
 keywords: "AI text reader, screen reader AI, text to speech AI Android, AI reading assistant, Android screen reader, AI voice reader"
 ---
 
@@ -236,7 +236,7 @@ Combine with AI summarization - get a summary first, then listen to the detailed
 <div class="footer-section">
   <p style="color: var(--text-secondary); margin-top: 20px;">
     <strong>Arc AI:</strong> Intelligent AI text reader and screen reader for Android<br>
-    © 2026 Rethink. All rights reserved.
+    © 2026 Mamata. All rights reserved.
   </p>
 </div>
 

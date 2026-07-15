@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "AI Workflow Automation for Android | Arc AI - Custom AI Actions"
-description: "Automate your Android workflows with Arc AI's custom AI actions. Create personalized AI automation for productivity, translations, fact-checking, and more."
+title: "AI Workflow Automation for Android | Custom AI Actions | Arc"
+description: "Automate Android workflows with Arc AI's custom AI actions. Create personalized AI automation for productivity, translations, fact-checking, and more."
 keywords: "AI workflow automation, AI automation, custom AI actions, Android automation, AI productivity automation, workflow AI"
 ---
 
@@ -234,7 +234,7 @@ Extract structured data, parse information, reorganize content, or transform uns
 <div class="footer-section">
   <p style="color: var(--text-secondary); margin-top: 20px;">
     <strong>Arc AI:</strong> Powerful AI workflow automation for Android<br>
-    © 2026 Rethink. All rights reserved.
+    © 2026 Mamata. All rights reserved.
   </p>
 </div>
 

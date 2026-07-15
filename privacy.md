@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Privacy Policy - Arc AI: Android AI Assistant"
-description: "Arc AI privacy policy for our Android AI assistant app. Learn how we protect your data, handle AI summaries, and ensure privacy in our AI productivity tool."
+description: "Arc AI privacy policy for our Android AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
 keywords: "Arc AI privacy, Android AI app privacy, AI assistant privacy policy"
 ---
 
