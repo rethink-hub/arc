@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI Text Reader for Android | Free Screen Reader AI | Arc"
-description: "Free AI text reader for Android. Convert any screen content to natural speech with language detection. Best AI screen reader for accessibility."
+description: "Freemium AI text reader for Android. 7 free requests/week. Convert screen content to natural speech with language detection. Premium unlocks unlimited access."
 keywords: "AI text reader, screen reader AI, text to speech AI Android, AI reading assistant, Android screen reader, AI voice reader"
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Free AI Screen Assistant for Android | Arc AI"
-description: "Free Android AI assistant that summarizes, reads aloud, and chats about any screen content. Custom AI actions and workflow automation. Works on every app."
+description: "Freemium Android AI assistant — 7 free requests/week on basic features. Premium subscription unlocks summaries, TTS, AI chat, and workflow automation."
 keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant"
 ---
 
@@ -119,9 +119,9 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 ---
 
 <div class="section-highlight" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1)); border: 1px solid rgba(76, 175, 80, 0.3);">
-  <h2>💎 Free & Subscription</h2>
+  <h2>💎 Freemium & Subscription</h2>
   <p>
-    Arc is <strong>free</strong> — core features are available for free, with a <strong>subscription</strong> that unlocks full access to all premium AI features. Use as a guest or sign in for cloud backup and community features.
+    Arc is <strong>freemium</strong> — get 7 free requests per week on basic features (summary, text reader, chat). A <strong>subscription</strong> unlocks unlimited access, custom AI actions, community actions, and all premium features. Use as a guest or sign in for cloud backup.
   </p>
   <p>
     <strong>⚠️ Please be sure before purchasing or opting for a promo coupon — we do not give refunds.</strong>

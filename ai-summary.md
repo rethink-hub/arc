@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI Summary App for Android | Free Text Summarizer | Arc"
-description: "Free AI-powered summary app for Android. Instantly summarize articles, emails, and documents from any app. Intelligent text summarization with Arc AI."
+description: "Freemium AI summary app for Android. 7 free requests/week. Summarize articles, emails, and documents from any app. Premium unlocks unlimited use."
 keywords: "AI summary app, AI text summarization, Android summary app, AI powered summary, automatic text summary"
 ---
 

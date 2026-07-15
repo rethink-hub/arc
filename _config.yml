@@ -2,7 +2,7 @@
 
 # Site settings
 title: "Free AI Screen Assistant for Android | Arc AI"
-description: "Arc AI is a free Android AI assistant that provides instant summaries, text-to-speech, AI chat, and workflow automation. Works on any screen with custom AI actions."
+description: "Freemium Android AI assistant — 7 free requests/week on basic features. Premium subscription unlocks summaries, TTS, AI chat, and workflow automation."
 author: "Mamata"
 tagline: "Understand Your Screen. Instantly."
 
@@ -37,7 +37,7 @@ app:
   package: "com.rethink.arc"
   category: "Productivity"
   platform: "Android"
-  price: "Free with subscription"
+  price: "Freemium with subscription"
   features:
     - "AI-powered text summarization"
     - "Text-to-speech with language detection"
