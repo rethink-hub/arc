@@ -1212,3 +1212,36 @@ button:focus {
   background: linear-gradient(135deg, var(--gradient-end), var(--gradient-start));
 }
 
+
+/* Blog Styles */
+.blog-index { max-width: 800px; margin: 0 auto; }
+.blog-index-header { text-align: center; padding: 2rem 1rem; }
+.blog-index-header h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.5rem; }
+.blog-index-header p { color: var(--text-secondary); font-size: 1.1rem; }
+.blog-list { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+.blog-card { background: var(--card-background); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,184,77,0.1); transition: all var(--transition-base); }
+.blog-card:hover { border-color: rgba(255,184,77,0.3); transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+.blog-card h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+.blog-card h2 a { color: var(--text-primary); text-decoration: none; }
+.blog-card h2 a:hover { color: var(--accent-gold); }
+.blog-excerpt { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.blog-meta { font-size: 0.85rem; color: var(--text-secondary); opacity: 0.7; }
+.blog-post { max-width: 800px; margin: 0 auto; }
+.blog-header { text-align: center; padding: 2rem 1rem 1rem; }
+.blog-header h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.5rem; }
+.blog-meta { display: flex; justify-content: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; }
+.blog-content { line-height: 1.8; }
+.blog-content h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+.blog-content h3 { margin-top: 2rem; margin-bottom: 0.75rem; }
+.blog-content p { color: var(--text-secondary); margin-bottom: 1rem; }
+.blog-content img { max-width: 100%; height: auto; border-radius: var(--radius-md); margin: 1.5rem auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+.blog-content .img-row { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin: 1.5rem 0; }
+.blog-content .img-row img { max-width: 280px; }
+.blog-content blockquote { border-left: 4px solid var(--accent-gold); padding: 0.5rem 1rem; margin: 1.5rem 0; background: rgba(255,184,77,0.05); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.blog-content blockquote p { margin-bottom: 0; color: var(--text-primary); }
+.blog-content ul, .blog-content ol { color: var(--text-secondary); }
+.blog-content strong { color: var(--text-primary); }
+.blog-content a { color: var(--accent-gold); }
+.blog-nav { text-align: center; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(255,184,77,0.1); }
+.back-home { color: var(--accent-gold); text-decoration: none; font-weight: 600; }
+.back-home:hover { color: var(--gradient-end); }

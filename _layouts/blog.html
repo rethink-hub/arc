@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="blog-post">
+    <header class="blog-header">
+        <h1>{{ page.title }}</h1>
+        <div class="blog-meta">
+            <span>By {{ page.author | default: "Mamata" }}</span>
+            <span>·</span>
+            <time>{{ page.date | date: "%B %d, %Y" }}</time>
+        </div>
+    </header>
+
+    <div class="blog-content">
+        {{ content }}
+    </div>
+
+    <nav class="blog-nav">
+        <a href="/arc/" class="back-home">← Back to Home</a>
+    </nav>
+</article>
