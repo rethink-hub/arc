@@ -317,7 +317,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
     <a href="terms.html">📋 Terms of Service</a>
   </div>
   <p style="color: var(--text-secondary); margin-top: 20px;">
-    <strong>Developer:</strong> Rethink<br>
-    © 2026 Rethink. All rights reserved.
+    <strong>Developer:</strong> Mamata<br>
+    © 2026 Mamata. All rights reserved.
   </p>
 </div>
