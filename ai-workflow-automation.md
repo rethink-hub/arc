@@ -3,6 +3,17 @@ layout: default
 title: "AI Workflow Automation for Android | Custom AI Actions | Arc"
 description: "Automate Android workflows with Arc AI's custom AI actions. Create personalized AI automation for productivity, translations, fact-checking, and more."
 keywords: "AI workflow automation, AI automation, custom AI actions, Android automation, AI productivity automation, workflow AI"
+faq:
+  - question: "How do I create a custom AI action?"
+    answer: "Open Arc AI settings, go to Custom Actions, and tap 'Create New Action'. Write a clear prompt describing what you want the AI to do (e.g., 'Translate to French' or 'Extract all dates'). You can enable screenshot capture and web search if needed. Save it and it appears in your sidebar."
+  - question: "Can I share my custom actions?"
+    answer: "Yes! You can publish your custom actions to the Community Actions library where other Arc AI users can discover and use them. Sign in with Google to publish actions."
+  - question: "Are there limits on custom actions?"
+    answer: "You can create unlimited custom actions. The only limit is your imagination! Actions can be simple one-line prompts or complex multi-step instructions."
+  - question: "How accurate is the AI fact checker?"
+    answer: "The AI fact checker uses advanced language models with web search capabilities to verify information. While highly effective, always verify critical information from authoritative sources. Think of it as a helpful first-pass fact-checking assistant."
+  - question: "Can actions work without internet?"
+    answer: "Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup."
 ---
 
 <div class="hero-section">

@@ -3,6 +3,17 @@ layout: default
 title: "AI Summary App for Android | Free Text Summarizer | Arc"
 description: "Freemium AI summary app for Android. 7 free requests/week. Summarize articles, emails, and documents from any app. Premium unlocks unlimited use."
 keywords: "AI summary app, AI text summarization, Android summary app, AI powered summary, automatic text summary"
+faq:
+  - question: "How accurate are the AI summaries?"
+    answer: "Arc AI uses advanced language models (Google Gemini) to provide highly accurate summaries. However, AI-generated content should be verified for critical decisions. The summaries capture key points and main ideas very effectively."
+  - question: "What types of content can be summarized?"
+    answer: "Arc AI can summarize virtually any text content: articles, emails, PDFs, web pages, social media posts, documents, messages, and more. It works across all Android apps."
+  - question: "Is there a limit to summary length?"
+    answer: "Arc AI can handle very long documents. The summary length adapts based on the source content, providing concise overviews while capturing all essential information."
+  - question: "Can I edit or customize summaries?"
+    answer: "Yes! You can save summaries and add your own notes, organize them into categories, and search through your saved summaries anytime."
+  - question: "Does summarization work offline?"
+    answer: "Arc AI requires an internet connection to generate summaries as it uses cloud-based AI models. However, saved summaries are available offline."
 ---
 
 <div class="hero-section">

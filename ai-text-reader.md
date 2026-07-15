@@ -3,6 +3,17 @@ layout: default
 title: "AI Text Reader for Android | Free Screen Reader AI | Arc"
 description: "Freemium AI text reader for Android. 7 free requests/week. Convert screen content to natural speech with language detection. Premium unlocks unlimited access."
 keywords: "AI text reader, screen reader AI, text to speech AI Android, AI reading assistant, Android screen reader, AI voice reader"
+faq:
+  - question: "What languages does the AI text reader support?"
+    answer: "Arc AI supports text-to-speech in dozens of languages including English, Spanish, French, German, Italian, Portuguese, Japanese, Chinese, Korean, Arabic, Hindi, and many more. Language is detected automatically."
+  - question: "Can I control playback speed?"
+    answer: "Currently, Arc AI provides natural-paced narration optimized for comprehension. Playback speed controls are planned for future updates based on user feedback."
+  - question: "Does it work offline?"
+    answer: "Arc AI text-to-speech requires an internet connection to generate high-quality AI voices. This ensures the best natural-sounding speech quality across all languages."
+  - question: "How is this different from Android's built-in TalkBack?"
+    answer: "TalkBack is a full screen reader that reads all UI elements. Arc AI focuses specifically on content reading - it intelligently extracts and reads only the text you want to hear with natural AI voices, making it perfect for consuming written content."
+  - question: "Can I listen to PDFs and ebooks?"
+    answer: "Yes! Arc AI can read content from PDF readers, ebook apps, and any app that displays text on your Android screen."
 ---
 
 <div class="hero-section">
