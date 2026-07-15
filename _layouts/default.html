@@ -31,8 +31,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Google Fonts — reduced weights for performance -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -163,12 +163,12 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-brand">
                 <a href="{{ '/' | relative_url }}">
                     <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="logo-image">
-                    <span class="logo-text">Arc: AI Screen Assistant</span>
+                    <span class="logo-text">Arc</span>
                 </a>
             </div>
             <div class="nav-menu" id="navMenu">
@@ -176,7 +176,6 @@
                 <a href="{{ '/ai-summary.html' | relative_url }}" class="nav-link">Summary</a>
                 <a href="{{ '/ai-text-reader.html' | relative_url }}" class="nav-link">Text Reader</a>
                 <a href="{{ '/ai-workflow-automation.html' | relative_url }}" class="nav-link">Automation</a>
-                <a href="{{ '/privacy.html' | relative_url }}" class="nav-link">Privacy</a>
                 <a href="{{ '/terms.html' | relative_url }}" class="nav-link">Terms</a>
                 <a href="{{ '/blog.html' | relative_url }}" class="nav-link">Blog</a>
                 <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="nav-link nav-cta">Get Arc</a>
@@ -194,9 +193,7 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container">
-            {{ content }}
-        </div>
+        {{ content }}
     </main>
 
     <!-- Floating Back to Top Button -->
@@ -206,37 +203,35 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>
-                        <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo">
-                        Arc: AI Screen Assistant
-                    </h3>
-                    <p>Understand Your Screen. Instantly.</p>
-                </div>
-                <div class="footer-links-section">
-                    <h4>Quick Links</h4>
-                    <a href="{{ '/' | relative_url }}">Home</a>
-                    <a href="{{ '/ai-summary.html' | relative_url }}">AI Summary</a>
-                    <a href="{{ '/ai-text-reader.html' | relative_url }}">AI Text Reader</a>
-                    <a href="{{ '/ai-workflow-automation.html' | relative_url }}">Workflow Automation</a>
-                    <a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a>
-                    <a href="{{ '/terms.html' | relative_url }}">Terms of Service</a>
-                    <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-                    <a href="mailto:everythingrethink@gmail.com">Contact</a>
-                </div>
-                <div class="footer-download">
-                    <h4>Get Arc</h4>
-                    <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="footer-cta">
-                        Download on Google Play
-                    </a>
-                </div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>
+                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo">
+                    Arc: AI Screen Assistant
+                </h3>
+                <p>Understand Your Screen. Instantly.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Mamata. All rights reserved.</p>
-                <p class="footer-made-with">Made with ❤️ for accessibility</p>
+            <div class="footer-links-section">
+                <h4>Quick Links</h4>
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/ai-summary.html' | relative_url }}">AI Summary</a>
+                <a href="{{ '/ai-text-reader.html' | relative_url }}">AI Text Reader</a>
+                <a href="{{ '/ai-workflow-automation.html' | relative_url }}">Workflow Automation</a>
+                <a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a>
+                <a href="{{ '/terms.html' | relative_url }}">Terms of Service</a>
+                <a href="{{ '/blog.html' | relative_url }}">Blog</a>
+                <a href="mailto:everythingrethink@gmail.com">Contact</a>
             </div>
+            <div class="footer-download">
+                <h4>Get Arc</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="footer-cta">
+                    Download on Google Play
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mamata. All rights reserved.</p>
+            <p class="footer-made-with">Made with ❤️ for accessibility</p>
         </div>
     </footer>
 
@@ -361,10 +356,10 @@
             });
         });
 
-        // Intersection Observer for Animations
+        // Intersection Observer for Scroll Animations
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -60px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -375,13 +370,15 @@
             });
         }, observerOptions);
 
-        // Observe elements
+        // Observe all animatable elements
         document.addEventListener('DOMContentLoaded', () => {
-            const animatedElements = document.querySelectorAll('.feature-card, .step, .section-highlight, .accessibility-section, .hero-section');
+            const animatedElements = document.querySelectorAll(
+                '.feature-card, .step, .section-highlight, .accessibility-section, .hero-section, .audience-card, .download-section, .blog-card'
+            );
             animatedElements.forEach(el => observer.observe(el));
         });
 
-        // Add smooth scroll behavior to all internal links
+        // Smooth scroll for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -395,16 +392,28 @@
             });
         });
 
-        // Navbar background on scroll
-        const navbar = document.querySelector('.navbar');
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 20) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
         });
+
+        // Parallax effect for hero visual (desktop only)
+        if (window.innerWidth > 968) {
+            const heroVisual = document.querySelector('.hero-visual');
+            if (heroVisual) {
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset;
+                    if (scrolled < 800) {
+                        heroVisual.style.transform = `translateY(${scrolled * 0.15}px)`;
+                    }
+                });
+            }
+        }
     </script>
 </body>
 </html>
-
