@@ -16,7 +16,7 @@ faq:
     answer: "Arc AI requires an internet connection to generate summaries as it uses cloud-based AI models. However, saved summaries are available offline."
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-simple">
   <h1>AI Summary App for Android</h1>
   <h2>Transform Long Content into Concise AI Summaries</h2>
   <p class="hero-description">
@@ -157,35 +157,35 @@ Unlike simple extraction tools, Arc AI maintains the context and relationships b
 ## Frequently Asked Questions
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">How accurate are the AI summaries?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Arc AI uses advanced language models (Google Gemini) to provide highly accurate summaries. However, AI-generated content should be verified for critical decisions. The summaries capture key points and main ideas very effectively.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">How accurate are the AI summaries?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Arc AI uses advanced language models (Google Gemini) to provide highly accurate summaries. However, AI-generated content should be verified for critical decisions. The summaries capture key points and main ideas very effectively.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">What types of content can be summarized?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Arc AI can summarize virtually any text content: articles, emails, PDFs, web pages, social media posts, documents, messages, and more. It works across all Android apps.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">What types of content can be summarized?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Arc AI can summarize virtually any text content: articles, emails, PDFs, web pages, social media posts, documents, messages, and more. It works across all Android apps.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Is there a limit to summary length?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Arc AI can handle very long documents. The summary length adapts based on the source content, providing concise overviews while capturing all essential information.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Is there a limit to summary length?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Arc AI can handle very long documents. The summary length adapts based on the source content, providing concise overviews while capturing all essential information.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Can I edit or customize summaries?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Yes! You can save summaries and add your own notes, organize them into categories, and search through your saved summaries anytime.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can I edit or customize summaries?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Yes! You can save summaries and add your own notes, organize them into categories, and search through your saved summaries anytime.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Does summarization work offline?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Arc AI requires an internet connection to generate summaries as it uses cloud-based AI models. However, saved summaries are available offline.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Does summarization work offline?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Arc AI requires an internet connection to generate summaries as it uses cloud-based AI models. However, saved summaries are available offline.</p>
 </details>
 
 ---
 
 <div class="download-section">
   <h2>Try AI Summary Today</h2>
-  <p style="font-size: 1.1em; color: var(--text-secondary); margin-bottom: 30px;">
+  <p style="font-size: 1.1em; color: var(--text-2); margin-bottom: 30px;">
     Join thousands using Arc AI to save time and understand content faster
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc">
@@ -205,7 +205,7 @@ Unlike simple extraction tools, Arc AI maintains the context and relationships b
 ---
 
 <div class="footer-section">
-  <p style="color: var(--text-secondary); margin-top: 20px;">
+  <p style="color: var(--text-2); margin-top: 20px;">
     <strong>Arc AI:</strong> Your intelligent Android AI assistant for productivity and accessibility<br>
     © 2026 Mamata. All rights reserved.
   </p>

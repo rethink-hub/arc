@@ -16,7 +16,7 @@ faq:
     answer: "Yes! Arc AI can read content from PDF readers, ebook apps, and any app that displays text on your Android screen."
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-simple">
   <h1>AI Text Reader for Android</h1>
   <h2>Listen to Any Content with AI-Powered Voice</h2>
   <p class="hero-description">
@@ -197,35 +197,35 @@ Combine with AI summarization - get a summary first, then listen to the detailed
 ## Frequently Asked Questions
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">What languages does the AI text reader support?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Arc AI supports text-to-speech in dozens of languages including English, Spanish, French, German, Italian, Portuguese, Japanese, Chinese, Korean, Arabic, Hindi, and many more. Language is detected automatically.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">What languages does the AI text reader support?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Arc AI supports text-to-speech in dozens of languages including English, Spanish, French, German, Italian, Portuguese, Japanese, Chinese, Korean, Arabic, Hindi, and many more. Language is detected automatically.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Can I control playback speed?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Currently, Arc AI provides natural-paced narration optimized for comprehension. Playback speed controls are planned for future updates based on user feedback.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can I control playback speed?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Currently, Arc AI provides natural-paced narration optimized for comprehension. Playback speed controls are planned for future updates based on user feedback.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Does it work offline?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Arc AI text-to-speech requires an internet connection to generate high-quality AI voices. This ensures the best natural-sounding speech quality across all languages.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Does it work offline?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Arc AI text-to-speech requires an internet connection to generate high-quality AI voices. This ensures the best natural-sounding speech quality across all languages.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">How is this different from Android's built-in TalkBack?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">TalkBack is a full screen reader that reads all UI elements. Arc AI focuses specifically on content reading - it intelligently extracts and reads only the text you want to hear (articles, emails, documents) with natural AI voices, making it perfect for consuming written content.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">How is this different from Android's built-in TalkBack?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">TalkBack is a full screen reader that reads all UI elements. Arc AI focuses specifically on content reading - it intelligently extracts and reads only the text you want to hear (articles, emails, documents) with natural AI voices, making it perfect for consuming written content.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Can I listen to PDFs and ebooks?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Yes! Arc AI can read content from PDF readers, ebook apps, and any app that displays text on your Android screen.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can I listen to PDFs and ebooks?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Yes! Arc AI can read content from PDF readers, ebook apps, and any app that displays text on your Android screen.</p>
 </details>
 
 ---
 
 <div class="download-section">
   <h2>Start Listening with AI Today</h2>
-  <p style="font-size: 1.1em; color: var(--text-secondary); margin-bottom: 30px;">
+  <p style="font-size: 1.1em; color: var(--text-2); margin-bottom: 30px;">
     Transform any text into natural speech with Arc AI text reader
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc">
@@ -245,7 +245,7 @@ Combine with AI summarization - get a summary first, then listen to the detailed
 ---
 
 <div class="footer-section">
-  <p style="color: var(--text-secondary); margin-top: 20px;">
+  <p style="color: var(--text-2); margin-top: 20px;">
     <strong>Arc AI:</strong> Intelligent AI text reader and screen reader for Android<br>
     © 2026 Mamata. All rights reserved.
   </p>

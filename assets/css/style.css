@@ -111,7 +111,7 @@ em { font-style: italic; }
 /* ============================================
    Layout
    ============================================ */
-.container { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--lg); }
+.container { max-width: var(--max-w-wide); margin: 0 auto; padding: 0 var(--lg); }
 .container-wide { max-width: var(--max-w-wide); margin: 0 auto; padding: 0 var(--lg); }
 .main-content { padding-top: var(--nav-h); min-height: 100vh; }
 
@@ -169,14 +169,31 @@ em { font-style: italic; }
 /* Progress Bar */
 .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: var(--grad-brand); z-index: 1001; transition: width 0.1s; width: 0; box-shadow: 0 0 8px rgba(108,49,255,0.4); }
 
-/* ============================================
-   Hero — Two-column with gradient mesh background
-   ============================================ */
+/* Hero — full width breakout */
 .hero-section {
   position: relative;
   padding: var(--4xl) var(--lg) var(--3xl);
   background: var(--grad-hero);
   overflow: hidden;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  margin-right: calc(-1 * (100vw - 100%) / 2);
+  width: 100vw;
+}
+/* Simple hero (feature pages — no phone mockup) */
+.hero-section.hero-simple {
+  text-align: center;
+}
+.hero-section.hero-simple .hero-description {
+  margin-left: auto; margin-right: auto;
+}
+.hero-section.hero-simple h1 {
+  background: linear-gradient(135deg, var(--text) 0%, var(--brand-dark) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--sm);
+}
+.hero-section.hero-simple .cta-button {
+  margin-top: var(--lg);
 }
 .hero-section::before {
   content: '';

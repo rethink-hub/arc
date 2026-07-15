@@ -16,7 +16,7 @@ faq:
     answer: "Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup."
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-simple">
   <h1>AI Workflow Automation for Android</h1>
   <h2>Automate Tasks with Custom AI Actions</h2>
   <p class="hero-description">
@@ -195,35 +195,35 @@ Extract structured data, parse information, reorganize content, or transform uns
 ## Frequently Asked Questions
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">How do I create a custom AI action?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Open Arc AI settings, go to Custom Actions, and tap "Create New Action". Write a clear prompt describing what you want the AI to do (e.g., "Translate to French" or "Extract all dates"). You can enable screenshot capture and web search if needed. Save it and it appears in your sidebar.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">How do I create a custom AI action?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Open Arc AI settings, go to Custom Actions, and tap "Create New Action". Write a clear prompt describing what you want the AI to do (e.g., "Translate to French" or "Extract all dates"). You can enable screenshot capture and web search if needed. Save it and it appears in your sidebar.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Can I share my custom actions?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Yes! You can publish your custom actions to the Community Actions library where other Arc AI users can discover and use them. Sign in with Google to publish actions.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can I share my custom actions?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Yes! You can publish your custom actions to the Community Actions library where other Arc AI users can discover and use them. Sign in with Google to publish actions.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Are there limits on custom actions?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">You can create unlimited custom actions. The only limit is your imagination! Actions can be simple one-line prompts or complex multi-step instructions.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Are there limits on custom actions?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">You can create unlimited custom actions. The only limit is your imagination! Actions can be simple one-line prompts or complex multi-step instructions.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">How accurate is the AI fact checker?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">The AI fact checker uses advanced language models with web search capabilities to verify information. While highly effective, always verify critical information from authoritative sources. Think of it as a helpful first-pass fact-checking assistant.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">How accurate is the AI fact checker?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">The AI fact checker uses advanced language models with web search capabilities to verify information. While highly effective, always verify critical information from authoritative sources. Think of it as a helpful first-pass fact-checking assistant.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--accent-gold);">Can actions work without internet?</summary>
-  <p style="padding: 10px 20px; color: var(--text-secondary);">Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup.</p>
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can actions work without internet?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup.</p>
 </details>
 
 ---
 
 <div class="download-section">
   <h2>Start Automating with AI Today</h2>
-  <p style="font-size: 1.1em; color: var(--text-secondary); margin-bottom: 30px;">
+  <p style="font-size: 1.1em; color: var(--text-2); margin-bottom: 30px;">
     Build your personalized AI automation toolkit and boost productivity
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc">
@@ -243,7 +243,7 @@ Extract structured data, parse information, reorganize content, or transform uns
 ---
 
 <div class="footer-section">
-  <p style="color: var(--text-secondary); margin-top: 20px;">
+  <p style="color: var(--text-2); margin-top: 20px;">
     <strong>Arc AI:</strong> Powerful AI workflow automation for Android<br>
     © 2026 Mamata. All rights reserved.
   </p>
