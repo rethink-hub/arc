@@ -22,12 +22,12 @@
     
     <title>{{ page.title | default: site.title }}</title>
     
-    <!-- DNS Prefetch for external resources -->
+    <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://play.google.com">
     
-    <!-- Preconnect for critical resources -->
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -61,14 +61,8 @@
           "url": "https://rethink-hub.github.io/arc/",
           "image": "{{ site.url }}{{ site.baseurl }}/assets/images/arc-logo.png",
           "jobTitle": "Indie Developer",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Rethink"
-          },
-          "sameAs": [
-            "https://x.com/rethink_hub",
-            "https://play.google.com/store/apps/details?id=com.rethink.arc"
-          ],
+          "worksFor": { "@type": "Organization", "name": "Rethink" },
+          "sameAs": ["https://x.com/rethink_hub", "https://play.google.com/store/apps/details?id=com.rethink.arc"],
           "email": "mailto:everythingrethink@gmail.com"
         },
         {
@@ -76,93 +70,43 @@
           "name": "Arc: AI Screen Assistant",
           "operatingSystem": "Android",
           "applicationCategory": "ProductivityApplication",
-          "author": {
-            "@type": "Person",
-            "name": "Mamata"
-          },
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.6",
-            "ratingCount": "250",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "description": "Arc is a freemium AI assistant for Android — 7 free requests per week on basic features. Premium subscription unlocks unlimited summaries, text-to-speech, AI chat, and custom workflow automation.",
+          "author": { "@type": "Person", "name": "Mamata" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "250", "bestRating": "5", "worstRating": "1" },
+          "description": "Arc is a free AI assistant for Android — 7 free requests per week on basic features. Premium subscription unlocks unlimited summaries, text-to-speech, AI chat, and custom workflow automation.",
           "image": "{{ site.url }}{{ site.baseurl }}/assets/images/og-arc.png",
           "downloadUrl": "https://play.google.com/store/apps/details?id=com.rethink.arc",
           "datePublished": "2025-12-07",
           "dateModified": "2026-07-15",
-          "featureList": [
-            "AI-powered text summarization",
-            "Text-to-speech with automatic language detection",
-            "AI chat assistant for any screen content",
-            "Custom AI actions and workflow automation",
-            "Community-shared AI actions",
-            "Floating sidebar for instant access",
-            "Private and secure - local storage",
-            "Works across all Android apps"
-          ],
+          "featureList": ["AI-powered text summarization","Text-to-speech with automatic language detection","AI chat assistant for any screen content","Custom AI actions and workflow automation","Community-shared AI actions","Floating sidebar for instant access","Private and secure - local storage","Works across all Android apps"],
           "keywords": "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI, AI reading assistant, Android accessibility AI"
         }
       ]
     }
     </script>
     
-    <!-- BreadcrumbList Schema -->
     {% assign page_path = page.url | remove_first: "/" %}
     {% if page_path != "" and page_path != "index.html" %}
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://rethink-hub.github.io/arc/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "{{ page.title | split: " | " | first }}",
-          "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
-        }
-      ]
-    }
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rethink-hub.github.io/arc/" },
+      { "@type": "ListItem", "position": 2, "name": "{{ page.title | split: ' | ' | first }}", "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}" }
+    ]}
     </script>
     {% endif %}
     
-    <!-- FAQ Schema for feature pages -->
     {% if page.faq %}
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {% for item in page.faq %}
-        {
-          "@type": "Question",
-          "name": {{ item.question | jsonify }},
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": {{ item.answer | jsonify }}
-          }
-        }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-      ]
-    }
+    { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+      {% for item in page.faq %}
+      { "@type": "Question", "name": {{ item.question | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.answer | jsonify }} }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]}
     </script>
     {% endif %}
-
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation — Floating pill -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -174,16 +118,13 @@
             <div class="nav-menu" id="navMenu">
                 <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
                 <a href="{{ '/ai-summary.html' | relative_url }}" class="nav-link">Summary</a>
-                <a href="{{ '/ai-text-reader.html' | relative_url }}" class="nav-link">Text Reader</a>
+                <a href="{{ '/ai-text-reader.html' | relative_url }}" class="nav-link">Reader</a>
                 <a href="{{ '/ai-workflow-automation.html' | relative_url }}" class="nav-link">Automation</a>
-                <a href="{{ '/terms.html' | relative_url }}" class="nav-link">Terms</a>
                 <a href="{{ '/blog.html' | relative_url }}" class="nav-link">Blog</a>
                 <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="nav-link nav-cta">Get Arc</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
@@ -198,19 +139,14 @@
         </div>
     </main>
 
-    <!-- Floating Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        ↑
-    </button>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>
-                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo">
-                    Arc: AI Screen Assistant
-                </h3>
+                <h3><img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo">Arc: AI Screen Assistant</h3>
                 <p>Understand Your Screen. Instantly.</p>
             </div>
             <div class="footer-links-section">
@@ -226,9 +162,7 @@
             </div>
             <div class="footer-download">
                 <h4>Get Arc</h4>
-                <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="footer-cta">
-                    Download on Google Play
-                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="footer-cta">Download on Google Play</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -237,185 +171,62 @@
         </div>
     </footer>
 
-    <!-- Structured Data - FAQ Schema (for homepage) -->
+    <!-- FAQ Schema (homepage) -->
     {% if page.url == "/" or page.url == "/index.html" %}
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do I need to create an account?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No! You can use Arc as a guest. Google Sign-In is optional and only needed for cloud backup and community features (publishing actions)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Arc monitor my screen in the background?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely not. Arc only accesses screen content when you explicitly tap a button in the sidebar. It never monitors your screen passively."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are screenshots automatically captured?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Screenshots require your explicit permission and are only taken when you initiate an action that needs them. You control screenshot capture for each feature."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which apps work with Arc?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Arc works with virtually any app on your device - browsers, social media, email, documents, and more. However, Arc automatically disables itself in nearly 400 sensitive apps (banking, crypto, password managers) by default. You can customize this in Settings > App Management."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is my data private?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Screen content is processed for AI responses but never stored on our servers. Your saved content, chat history, and custom actions stay on your device unless you choose Google Drive backup."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are Custom Actions?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Custom Actions let you create your own AI commands. Write a prompt like 'Translate to Spanish' or 'Explain like I'm 5' and save it to your sidebar for one-tap access. You can also enable screenshot capture and web search for each action."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are Community Actions?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Community Actions are AI actions shared by other Arc users. You can browse, search, and add them to your sidebar with one tap. You can also publish your own Custom Actions to help others."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does Chat with AI work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Chat lets you have conversations about content on your screen. Tap the Chat button in the sidebar, and you can ask questions, get clarifications, or explore topics further. You can also attach screenshots to your messages for visual context."
-          }
-        }
-      ]
-    }
+    { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+      { "@type": "Question", "name": "Do I need to create an account?", "acceptedAnswer": { "@type": "Answer", "text": "No! You can use Arc as a guest. Google Sign-In is optional and only needed for cloud backup and community features." }},
+      { "@type": "Question", "name": "Does Arc monitor my screen in the background?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely not. Arc only accesses screen content when you explicitly tap a button in the sidebar." }},
+      { "@type": "Question", "name": "Are screenshots automatically captured?", "acceptedAnswer": { "@type": "Answer", "text": "No. Screenshots require your explicit permission and are only taken when you initiate an action that needs them." }},
+      { "@type": "Question", "name": "Which apps work with Arc?", "acceptedAnswer": { "@type": "Answer", "text": "Arc works with virtually any app. However, it automatically disables itself in nearly 400 sensitive apps (banking, crypto, password managers) by default." }},
+      { "@type": "Question", "name": "Is my data private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Screen content is processed for AI responses but never stored on our servers. Your saved content stays on your device unless you choose Google Drive backup." }},
+      { "@type": "Question", "name": "What are Custom Actions?", "acceptedAnswer": { "@type": "Answer", "text": "Custom Actions let you create your own AI commands. Write a prompt and save it to your sidebar for one-tap access." }},
+      { "@type": "Question", "name": "What are Community Actions?", "acceptedAnswer": { "@type": "Answer", "text": "Community Actions are AI actions shared by other Arc users. Browse, search, and add them to your sidebar with one tap." }},
+      { "@type": "Question", "name": "How does Chat with AI work?", "acceptedAnswer": { "@type": "Answer", "text": "Chat lets you have conversations about content on your screen. Ask questions, get clarifications, or explore topics further." }}
+    ]}
     </script>
     {% endif %}
 
-    <!-- JavaScript -->
     <script>
-        // Mobile Navigation Toggle
+        // Mobile nav
         const navToggle = document.getElementById('navToggle');
         const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
+        navToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); navToggle.classList.toggle('active'); });
+        document.addEventListener('click', (e) => { if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) { navMenu.classList.remove('active'); navToggle.classList.remove('active'); } });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            }
-        });
-
-        // Progress Bar
+        // Progress bar
         window.addEventListener('scroll', () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById('progressBar').style.width = scrolled + '%';
+            const ws = document.body.scrollTop || document.documentElement.scrollTop;
+            const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById('progressBar').style.width = (ws / h * 100) + '%';
         });
 
-        // Back to Top Button
+        // Back to top
         const backToTop = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
+        window.addEventListener('scroll', () => { backToTop.classList.toggle('visible', window.pageYOffset > 300); });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Intersection Observer for Scroll Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -60px 0px'
-        };
-
+        // Scroll animations
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('animate-in'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        // Observe all animatable elements
         document.addEventListener('DOMContentLoaded', () => {
-            const animatedElements = document.querySelectorAll(
-                '.feature-card, .step, .section-highlight, .accessibility-section, .hero-section, .audience-card, .download-section, .blog-card'
-            );
-            animatedElements.forEach(el => observer.observe(el));
+            document.querySelectorAll('.feature-card, .step, .section-highlight, .accessibility-section, .audience-card, .download-section, .blog-card').forEach(el => observer.observe(el));
         });
 
-        // Smooth scroll for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                const t = document.querySelector(this.getAttribute('href'));
+                if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // Navbar scroll effect
+        // Nav scroll effect
         const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 20) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Parallax effect for hero visual (desktop only)
-        if (window.innerWidth > 968) {
-            const heroVisual = document.querySelector('.hero-visual');
-            if (heroVisual) {
-                window.addEventListener('scroll', () => {
-                    const scrolled = window.pageYOffset;
-                    if (scrolled < 800) {
-                        heroVisual.style.transform = `translateY(${scrolled * 0.15}px)`;
-                    }
-                });
-            }
-        }
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
     </script>
 </body>
 </html>

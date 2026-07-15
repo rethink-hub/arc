@@ -23,7 +23,7 @@ faq:
     Arc AI's intelligent <strong>AI summary feature</strong> helps you understand any content instantly. Get AI-powered summaries of articles, emails, documents, and web pages without leaving your current app. Perfect for busy professionals, students, and anyone who wants to save time and absorb information faster.
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button">
-    Download on Google Play
+    ⬇ Get on Google Play
   </a>
 </div>
 

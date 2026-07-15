@@ -23,7 +23,7 @@ faq:
     Arc AI revolutionizes Android productivity with powerful <strong>AI workflow automation</strong>. Create custom <strong>AI actions</strong> tailored to your specific needs - translate text, fact-check information, simplify complex content, extract data, or build any AI-powered workflow you can imagine. One-tap access to your personalized <strong>AI automation</strong> from any app.
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button">
-    Download on Google Play
+    ⬇ Get on Google Play
   </a>
 </div>
 

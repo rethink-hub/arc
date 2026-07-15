@@ -23,7 +23,7 @@ faq:
     Arc AI's intelligent <strong>text reader</strong> transforms any text on your Android screen into natural-sounding speech. Our advanced <strong>screen reader AI</strong> features automatic language detection, natural voices, and works across all your apps. Perfect <strong>AI reading assistant</strong> for accessibility, multitasking, learning, and anyone who prefers listening to reading.
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button">
-    Download on Google Play
+    ⬇ Get on Google Play
   </a>
 </div>
 
