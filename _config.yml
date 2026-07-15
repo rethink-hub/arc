@@ -7,7 +7,7 @@ author: "Mamata"
 tagline: "Understand Your Screen. Instantly."
 
 # Theme selection
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman  # Removed: custom _layouts override theme
 
 # Build settings
 markdown: kramdown
