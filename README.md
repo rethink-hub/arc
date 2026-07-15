@@ -44,7 +44,7 @@ The Arc website is available at:
   - Responsive footer
 
 ### Custom Styling
-- **[assets/css/style.scss](assets/css/style.scss)** - Complete CSS (1,147 lines) with:
+- **[assets/css/style.css](assets/css/style.css)** - Complete CSS (1,147 lines) with:
   - CSS variables for easy theming
   - Modern animations and transitions
   - Responsive grid and flexbox layouts
@@ -190,7 +190,7 @@ The site will auto-reload when you make changes!
 ### Design Updates
 
 **To change colors:**
-1. Edit `assets/css/style.scss`
+1. Edit `assets/css/style.css`
 2. Modify CSS variables at the top:
    ```css
    :root {
@@ -324,7 +324,7 @@ arc/
 │   └── default.html          # Custom HTML layout
 ├── assets/
 │   └── css/
-│       └── style.scss         # Main stylesheet (1,147 lines)
+│       └── style.css         # Main stylesheet (1,147 lines)
 ├── index.md                   # Landing page content
 ├── privacy.md                 # Privacy policy content
 ├── preview.html               # Standalone preview
