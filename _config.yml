@@ -12,7 +12,7 @@ tagline: "Understand Your Screen. Instantly."
 # Build settings
 markdown: kramdown
 
-# Plugins — removed jekyll-sitemap, using custom sitemap.xml instead
+# Plugins — using custom sitemap.xml (jekyll-sitemap not loaded)
 plugins:
   - jekyll-seo-tag
 
