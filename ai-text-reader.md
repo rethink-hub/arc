@@ -16,7 +16,17 @@ faq:
     answer: "Yes! Arc AI can read content from PDF readers, ebook apps, and any app that displays text on your Android screen."
 ---
 
-<div class="hero-section hero-simple">
+<div class="hero-section hero-simple hero-with-mockup">
+  <div class="hero-mockup-wrap hero-mockup-small">
+    <div class="iphone-frame">
+      <div class="iphone-notch"></div>
+      <div class="iphone-screen">
+        <img src="{{ '/assets/images/screenshots/00_home_screen_dashboard.jpg' | relative_url }}" alt="Arc AI home dashboard on an Android screen" loading="eager">
+        <div class="iphone-reflection"></div>
+      </div>
+    </div>
+  </div>
+
   <h1>AI Text Reader for Android</h1>
   <h2>Listen to Any Content with AI-Powered Voice</h2>
   <p class="hero-description">

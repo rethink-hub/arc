@@ -16,7 +16,17 @@ faq:
     answer: "Arc AI requires an internet connection to generate summaries as it uses cloud-based AI models. However, saved summaries are available offline."
 ---
 
-<div class="hero-section hero-simple">
+<div class="hero-section hero-simple hero-with-mockup">
+  <div class="hero-mockup-wrap hero-mockup-small">
+    <div class="iphone-frame">
+      <div class="iphone-notch"></div>
+      <div class="iphone-screen">
+        <img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="Arc AI summary result on an Android screen" loading="eager">
+        <div class="iphone-reflection"></div>
+      </div>
+    </div>
+  </div>
+
   <h1>AI Summary App for Android</h1>
   <h2>Transform Long Content into Concise AI Summaries</h2>
   <p class="hero-description">

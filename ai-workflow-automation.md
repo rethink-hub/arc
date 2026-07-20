@@ -16,7 +16,17 @@ faq:
     answer: "Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup."
 ---
 
-<div class="hero-section hero-simple">
+<div class="hero-section hero-simple hero-with-mockup">
+  <div class="hero-mockup-wrap hero-mockup-small">
+    <div class="iphone-frame">
+      <div class="iphone-notch"></div>
+      <div class="iphone-screen">
+        <img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Arc AI custom workflow actions on an Android screen" loading="eager">
+        <div class="iphone-reflection"></div>
+      </div>
+    </div>
+  </div>
+
   <h1>AI Workflow Automation for Android</h1>
   <h2>Automate Tasks with Custom AI Actions</h2>
   <p class="hero-description">
