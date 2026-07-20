@@ -3,7 +3,7 @@ layout: blog
 title: "Arc AI Screen Assistant Mod APK? Read This First"
 description: "Looking for a modded version of Arc AI? Here's what you need to know — from the indie developer who built it, why there's no mod APK, and how little the real thing actually costs."
 date: 2026-07-20
-author: Mamata
+author: Rethink
 tags: ["mod-apk", "arc", "premium", "indie-developer", "android"]
 ---
 
@@ -13,7 +13,7 @@ But there's no mod APK here. And honestly? You don't need one. Let me explain wh
 
 ## I'm Not a Big Company
 
-My name is Mamata. I'm a solo developer building Arc AI Screen Assistant — an Android app that lets you summarize, extract text, and chat with AI on any screen using a floating sidebar.
+I'm a solo developer building Arc AI Screen Assistant — an Android app that lets you summarize, extract text, and chat with AI on any screen using a floating sidebar.
 
 There's no team. No investors. No office. It's just me, my laptop, and a lot of late nights writing Kotlin and debugging accessibility service issues at 2 AM.
 
@@ -64,7 +64,7 @@ When you subscribe to Arc Premium, here's where your money goes:
 - **Development**: New features, bug fixes, Android version compatibility updates. Android 17 is coming with bubbles and new accessibility restrictions — I need to be ready.
 - **Server costs**: The backend that handles user accounts, syncs settings, and routes AI requests.
 
-What's left after that is what I live on. It's not a lot, but it's enough to keep going. And every new subscriber genuinely makes a difference — it tells me someone out there values what I'm building enough to pay for it.
+What's left after that is what I live on. This is my full-time job — I make my living building Arc. It's not a lot, but it's enough to keep going. And every new subscriber genuinely makes a difference — it tells me someone out there values what I'm building enough to pay for it.
 
 ## The Real Cost of Piracy for Small Developers
 
@@ -91,4 +91,4 @@ If it's not useful, just uninstall it. No harm done. But if it is — and for 60
 
 ---
 
-*Have questions about Arc, the pricing, or the features? Email me at mamata@appsrethink.com — I read every message.*
+*Have questions about Arc, the pricing, or the features? Email me at everythingrethink@gmail.com — I read every message.*
