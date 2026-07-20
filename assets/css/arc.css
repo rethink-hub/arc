@@ -683,18 +683,49 @@ em { font-style: italic; }
   transform: translateY(-4px);
 }
 .feature-icon {
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  border-radius: var(--r-md);
-  background: var(--bg-gray);
+  border-radius: 16px;
   margin-bottom: var(--md);
+  position: relative;
   transition: all var(--t-bounce);
+  transform-style: preserve-3d;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
 }
+.feature-icon svg {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  z-index: 1;
+  transition: transform var(--t-bounce);
+}
+
+/* Feature icon gradient backgrounds — Sider.ai style soft color blobs */
+.icon-summary { color: #7C3AED; background: linear-gradient(135deg, #EDE9FE 0%, #DDD6FE 100%); }
+.icon-reader { color: #2563EB; background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); }
+.icon-chat { color: #4F46E5; background: linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 100%); }
+.icon-writer { color: #DB2777; background: linear-gradient(135deg, #FCE7F3 0%, #FBCFE8 100%); }
+.icon-actions { color: #D97706; background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); }
+.icon-community { color: #0D9488; background: linear-gradient(135deg, #CCFBF1 0%, #99F6E4 100%); }
+.icon-privacy { color: #059669; background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%); }
+.icon-languages { color: #0284C7; background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 100%); }
+.icon-free { color: #7C3AED; background: linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 100%); }
+
+/* Hover animations — each icon gets a distinct playful Sider-style motion */
 .feature-card:hover .feature-icon { transform: scale(1.08); }
+.feature-card:hover .icon-summary svg { animation: iconSpin 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.feature-card:hover .icon-reader .wave-1 { animation: wavePulse 0.55s ease-in-out infinite; }
+.feature-card:hover .icon-reader .wave-2 { animation: wavePulse 0.55s ease-in-out 0.15s infinite; }
+.feature-card:hover .icon-chat svg { animation: iconBounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.feature-card:hover .icon-writer svg { animation: iconWiggle 0.55s ease-in-out; }
+.feature-card:hover .icon-actions svg { animation: iconFlash 0.5s ease-in-out; }
+.feature-card:hover .icon-community svg { animation: iconPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.feature-card:hover .icon-privacy svg { animation: iconShield 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.feature-card:hover .icon-languages svg { animation: iconSpinSoft 0.8s ease-in-out; }
+.feature-card:hover .icon-free svg { animation: iconWiggle 0.6s ease-in-out; }
 .feature-title { font-size: 1.08rem; color: var(--text); margin-bottom: var(--xs); font-weight: 700; }
 .feature-description { font-size: 0.92rem; color: var(--text-light); line-height: 1.6; margin-bottom: 0; }
 .feature-description a { font-weight: 500; }
@@ -764,9 +795,34 @@ em { font-style: italic; }
   box-shadow: var(--shadow-md);
   transform: translateY(-3px);
 }
-.audience-card .audience-icon { font-size: 1.8rem; margin-bottom: var(--sm); }
-.audience-card h4 { font-size: 1rem; margin-bottom: var(--xs); color: var(--text); }
-.audience-card p { font-size: 0.85rem; color: var(--text-light); margin: 0; }
+.audience-icon {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  margin: 0 auto var(--md);
+  transition: all var(--t-bounce);
+  transform-style: preserve-3d;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+}
+.audience-icon svg {
+  width: 24px;
+  height: 24px;
+  transition: transform var(--t-bounce);
+}
+.icon-professionals { color: #3B82F6; background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); }
+.icon-students { color: #8B5CF6; background: linear-gradient(135deg, #EDE9FE 0%, #DDD6FE 100%); }
+.icon-accessibility { color: #059669; background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%); }
+.icon-multilingual { color: #0284C7; background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 100%); }
+.audience-card:hover .audience-icon { transform: scale(1.08); }
+.audience-card:hover .icon-professionals svg { animation: iconBuilding 0.6s ease-in-out; }
+.audience-card:hover .icon-students svg { animation: iconGraduate 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.audience-card:hover .icon-accessibility svg { animation: iconReach 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.audience-card:hover .icon-multilingual svg { animation: iconSpinSoft 0.8s ease-in-out; }
+.audience-card h3 { font-size: 1.1rem; margin-bottom: var(--xs); color: var(--text); }
+.audience-card p { font-size: 0.88rem; color: var(--text-light); margin: 0; }
 
 /* ============================================
    Cross-device CTA — Dark spotlight section
@@ -1105,6 +1161,76 @@ a:focus, button:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
 @keyframes spotlightPulse {
   0%, 100% { opacity: 0.85; transform: translateX(-50%) scale(1); }
   50% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+}
+
+/* Feature icon hover animations — Sider.ai playful micro-interactions */
+@keyframes iconSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes iconSpinSoft {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-15deg); }
+  75% { transform: rotate(375deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes wavePulse {
+  0%, 100% { transform: scaleX(1); opacity: 1; }
+  50% { transform: scaleX(1.35) translateX(1px); opacity: 0.7; }
+}
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-5px); }
+  60% { transform: translateY(2px); }
+  80% { transform: translateY(-2px); }
+}
+@keyframes iconWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-12deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-6deg); }
+  80% { transform: rotate(3deg); }
+}
+@keyframes iconFlash {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  25% { transform: scale(1.2) rotate(-5deg); opacity: 0.85; }
+  50% { transform: scale(0.95) rotate(3deg); opacity: 1; }
+  75% { transform: scale(1.1) rotate(-2deg); opacity: 0.9; }
+}
+@keyframes iconPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.18); }
+  60% { transform: scale(0.96); }
+  80% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+@keyframes iconShield {
+  0% { transform: scale(1) translateY(0); }
+  30% { transform: scale(1.12) translateY(-3px); }
+  50% { transform: scale(1.05) translateY(1px); }
+  70% { transform: scale(1.1) translateY(-2px); }
+  100% { transform: scale(1) translateY(0); }
+}
+@keyframes iconBuilding {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-5px); }
+  60% { transform: translateY(2px); }
+  100% { transform: translateY(0); }
+}
+@keyframes iconGraduate {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-6px) rotate(-8deg); }
+  50% { transform: translateY(0) rotate(4deg); }
+  75% { transform: translateY(-3px) rotate(-3deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+@keyframes iconReach {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.15) translateY(-2px); }
+  45% { transform: scale(0.96) translateY(1px); }
+  65% { transform: scale(1.1) translateY(-1px); }
+  100% { transform: scale(1); }
 }
 
 .animate-in { animation: fadeInUp var(--t-slow) cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
