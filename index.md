@@ -63,7 +63,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
     <span class="highlight-label">Arc Summary</span>
     <h2>Understand any content, right on your screen.</h2>
     <p>Ask Arc about any page, article, or message using Google Gemini. It summarizes long reads, explains ideas, translates languages, and answers follow-ups — without leaving the app you're in.</p>
-    <a href="ai-summary.html" class="learn-more">Learn more</a>
+    <a href="{{ '/ai-summary-reader.html' | relative_url }}" class="learn-more">Learn more</a>
   </div>
   <div class="highlight-media">
     <div class="iphone-frame">
@@ -84,6 +84,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
     <span class="highlight-label">Arc Writer</span>
     <h2>Write smarter, everywhere you type.</h2>
     <p>Rewrite text in any tone, fix grammar, generate replies, or create social posts — all from the floating sidebar. Arc works inside any app, so you never have to copy-paste again.</p>
+    <a href="{{ '/ai-writer.html' | relative_url }}" class="learn-more">Learn more</a>
   </div>
   <div class="highlight-media">
     <div class="iphone-frame">

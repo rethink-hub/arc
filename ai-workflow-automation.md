@@ -246,9 +246,9 @@ Extract structured data, parse information, reorganize content, or transform uns
 
 ## Related Features
 
-- **[AI Summary App](/arc/ai-summary.html)** - Automatic text summarization
-- **[AI Text Reader](/arc/ai-text-reader.html)** - Text-to-speech for any content
-- **[AI Chat Assistant](/arc/)** - Conversational AI for deeper insights
+- **[AI Summary &amp; Reader]({{ '/ai-summary-reader.html' | relative_url }})** - Automatic text summarization and text-to-speech
+- **[AI Writer]({{ '/ai-writer.html' | relative_url }})** - Rewrite, reply, and polish text in any app
+- **[AI Chat Assistant]({{ '/' | relative_url }})** - Conversational AI for deeper insights
 - **[Home](/arc/)** - Discover all Arc AI features
 
 ---
