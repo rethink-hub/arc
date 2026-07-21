@@ -528,7 +528,7 @@ em { font-style: italic; }
    ============================================ */
 .hero-section {
   position: relative;
-  padding: calc(var(--4xl) + 20px) var(--lg) var(--3xl);
+  padding: calc(var(--2xl) + 20px) var(--lg) var(--3xl);
   background: var(--bg);
   text-align: center;
   margin-left: calc(-1 * (100vw - 100%) / 2);
