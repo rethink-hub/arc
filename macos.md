@@ -90,7 +90,7 @@ platform: macos
   <h2>Already available on Android</h2>
   <p>Can’t wait? Try Arc on Android today and be the first to know when the Mac app launches.</p>
   <div class="platform-links">
-    <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">
+    <a href="{{ '/android.html' | relative_url }}">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
       Get Arc for Android
     </a>

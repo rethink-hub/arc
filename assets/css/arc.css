@@ -275,9 +275,9 @@ em { font-style: italic; }
     0 0 0 1px rgba(0,0,0,0.06);
   padding: var(--md);
   display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   gap: 6px;
-  min-width: 540px;
+  min-width: 430px;
   z-index: 1002;
   transition: opacity var(--t), transform var(--t), visibility var(--t);
 }
@@ -330,7 +330,6 @@ em { font-style: italic; }
 .icon-macos { color: #555; background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%); }
 .icon-ios { color: #007AFF; background: linear-gradient(135deg, #E6F2FF 0%, #CCE4FF 100%); }
 .icon-windows { color: #0078D4; background: linear-gradient(135deg, #E6F4FC 0%, #CDE9F7 100%); }
-.icon-chrome { color: #F59E0B; background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); }
 .dropdown-status {
   font-size: 0.72rem;
   font-weight: 600;
@@ -359,7 +358,7 @@ em { font-style: italic; }
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: calc(var(--4xl) + 30px) var(--lg) var(--3xl);
+  padding: calc(var(--2xl) + 20px) var(--lg) var(--3xl);
   margin-left: calc(-1 * (100vw - 100%) / 2);
   margin-right: calc(-1 * (100vw - 100%) / 2);
   width: 100vw;
@@ -391,7 +390,6 @@ em { font-style: italic; }
   font-weight: 600;
   margin-bottom: var(--sm);
   border: 1px solid rgba(108,49,255,0.10);
-  order: 1;
 }
 .coming-soon-icon {
   width: 96px;
@@ -403,7 +401,6 @@ em { font-style: italic; }
   margin-top: var(--xl);
   margin-bottom: var(--xl);
   position: relative;
-  order: 2;
   animation: floatPhone 6s ease-in-out infinite;
 }
 .coming-soon-icon svg { width: 48px; height: 48px; }
@@ -419,17 +416,30 @@ em { font-style: italic; }
 .coming-soon-hero h1 {
   max-width: 720px;
   margin: 0 auto var(--md);
-  order: 3;
 }
 .coming-soon-hero .hero-subtitle {
   max-width: 560px;
   margin: 0 auto var(--2xl);
   color: var(--text-light);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
-  order: 4;
 }
-.coming-soon-hero .notify-form {
-  order: 5;
+.coming-soon-hero .notify-form,
+.coming-soon-hero .hero-cta-group {
+  margin-top: var(--md);
+}
+.android-hero-download {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: calc(-1 * var(--xl));
+  margin-bottom: var(--2xl);
+  position: relative;
+  z-index: 2;
+}
+.android-hero-download .cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .coming-soon-features {
   margin: var(--2xl) 0 var(--4xl);
