@@ -343,12 +343,16 @@ em { font-style: italic; }
 /* Android icon inside nav/footer CTAs and small platform links */
 .nav-cta svg,
 .footer-cta svg,
+.cta-button svg,
 .platform-links a svg {
   width: 16px;
   height: 16px;
 }
 .nav-cta { display: inline-flex; align-items: center; gap: 6px; }
 .footer-cta { display: inline-flex; align-items: center; gap: 6px; }
+.cta-button svg { color: #3DDC84; }
+.nav-cta svg,
+.footer-cta svg { color: #3DDC84; }
 
 /* ============================================
    Coming Soon pages — macOS, iOS, Windows
@@ -863,7 +867,7 @@ em { font-style: italic; }
 }
 .iphone-frame-video .iphone-button.bottom { top: 150px; height: 60px; }
 .iphone-frame-video .iphone-button.left { right: auto; left: -2px; top: 120px; height: 34px; border-radius: 2px 0 0 2px; }
-.hero-with-mockup { padding-top: calc(var(--3xl) + 20px); }
+.hero-with-mockup { padding-top: calc(var(--2xl) + 10px); }
 .hero-with-mockup h1 { margin-top: var(--2xl); }
 .hero-mockup-small { max-width: 220px; }
 .hero-mockup-small .iphone-frame { max-width: 220px; }

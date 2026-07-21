@@ -9,7 +9,6 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 <div class="hero-section hero-with-live-demo">
   <div class="hero-content-row">
     <div class="hero-text-col">
-      <div class="hero-badge">📱 Android AI Screen Assistant</div>
       <h1>Your AI Agent<br>for Any Screen</h1>
       <p class="hero-subtitle">One floating sidebar for everything you do on your phone.</p>
 
