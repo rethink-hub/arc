@@ -4,6 +4,8 @@ title: "Arc for Android — AI Screen Assistant | Free Download"
 description: "Get Arc for Android. The free AI screen assistant that summarizes, reads aloud, chats, writes, and automates any screen on your phone."
 keywords: "Arc for Android, Android AI assistant, AI screen assistant Android, free Android AI app, AI summary app Android, Android text to speech AI"
 platform: android
+og_image: /assets/images/og-android.png
+product_page: true
 ---
 
 <!-- Hero -->

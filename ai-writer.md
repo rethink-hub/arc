@@ -3,6 +3,8 @@ layout: default
 title: "AI Writer for Android | Rewrite, Reply & Polish | Arc"
 description: "Freemium AI writer for Android. Rewrite, reply, translate, fix grammar, and create posts from any app. 7 free requests/week. Premium unlocks unlimited use."
 keywords: "AI writer Android, AI writing assistant, rewrite text AI, AI reply generator, grammar fix AI, translate text AI, AI content creator Android"
+og_image: /assets/images/og-ai-writer.png
+product_page: true
 faq:
   - question: "What can the AI Writer do?"
     answer: "Arc AI's writer can rewrite text in different tones, fix grammar and spelling, generate replies, translate between languages, and create social media posts — all from the floating sidebar inside any Android app."
@@ -24,7 +26,7 @@ faq:
         <div class="iphone-button left"></div>
         <div class="iphone-button"></div>
         <div class="iphone-button bottom"></div>
-        <video class="hero-video" src="{{ '/assets/videos/ai-writer.mp4' | relative_url }}" autoplay loop muted playsinline preload="auto" poster="{{ '/assets/images/screenshots/03_ai_writer_rewrite_result.jpg' | relative_url }}" onplay="this.removeAttribute('poster')"></video>
+        <video class="hero-video" src="{{ '/assets/videos/ai-writer.mp4' | relative_url }}" autoplay loop muted playsinline preload="metadata" poster="{{ '/assets/images/screenshots/03_ai_writer_rewrite_result.jpg' | relative_url }}" onplay="this.removeAttribute('poster')"></video>
       </div>
     </div>
   </div>
@@ -192,8 +194,8 @@ Get support forming clear sentences when writing is challenging.
   <p style="font-size: 1.1em; color: var(--text-2); margin-bottom: 30px;">
     Rewrite, reply, and polish text anywhere on Android with Arc AI Writer
   </p>
-  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc">
-    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Arc AI Writer App on Google Play" width="250">
+  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Arc AI Writer App on Google Play" width="250" height="83" loading="lazy">
   </a>
 </div>
 

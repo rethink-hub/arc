@@ -15,6 +15,7 @@ markdown: kramdown
 # Plugins — using custom sitemap.xml (jekyll-sitemap not loaded)
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 # SEO settings
 lang: en-US
@@ -63,6 +64,9 @@ exclude:
   - VERIFICATION-REPORT.md
   - FINAL-STATUS.md
   - QUICK-DEPLOY.sh
+  - Dockerfile
+  - docker-compose.yml
+  - generate-og-images.py
   - assets/images/SOCIAL-SHARE-IMAGE-GUIDE.md
   - assets/README.md
   - .gitignore

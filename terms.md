@@ -3,10 +3,11 @@ layout: default
 title: "Terms of Service - Arc AI: Android AI Assistant"
 description: "Terms of Service for Arc AI Android assistant app. Understand usage terms, AI features, and conditions for our AI productivity application."
 keywords: "Arc AI terms, Android AI app terms of service"
+og_image: /assets/images/og-arc.png
 ---
 
 <div class="privacy-nav">
-  <a href="index.html">← Back to Home</a>
+  <a href="{{ '/' | relative_url }}">← Back to Home</a>
 </div>
 
 <div class="privacy-header">
@@ -83,8 +84,6 @@ Arc operates on a **freemium model** — core features are available for free, w
 **Freemium:** Arc provides core features at no cost. A subscription is required to unlock premium AI features, with details, pricing, and billing cycles displayed within the app and on the Google Play Store listing.
 
 **Subscription:** Subscriptions are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
-
-**Billing:** Subscriptions are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
 
 **Refund Policy:**
 
@@ -388,7 +387,7 @@ We may update these Terms for legal changes or new features. Material changes wi
 <div class="footer-section">
   <p><em>These Terms of Service are effective as of December 2, 2025. Last updated February 9, 2026.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
-    <a href="index.html">← Back to Home</a>
+    <a href="{{ '/' | relative_url }}">← Back to Home</a>
     <a href="privacy.html">🔒 Privacy Policy</a>
     <a href="mailto:everythingrethink@gmail.com">📧 Contact Us</a>
   </div>

@@ -3,6 +3,8 @@ layout: default
 title: "AI Summary & Reader for Android | Summarize & Listen | Arc"
 description: "Freemium AI summary and text reader for Android. Summarize any content, then listen with natural text-to-speech. 7 free requests/week. Premium unlocks unlimited use."
 keywords: "AI summary app, AI text reader, screen reader AI, text to speech AI Android, AI reading assistant, Android summary app, AI powered summary"
+og_image: /assets/images/og-ai-summary-reader.png
+product_page: true
 faq:
   - question: "How accurate are the AI summaries?"
     answer: "Arc AI uses advanced language models (Google Gemini) to provide highly accurate summaries. However, AI-generated content should be verified for critical decisions. The summaries capture key points and main ideas very effectively."
@@ -34,7 +36,7 @@ faq:
         <div class="iphone-button left"></div>
         <div class="iphone-button"></div>
         <div class="iphone-button bottom"></div>
-        <video class="hero-video" src="{{ '/assets/videos/ai-summary.mp4' | relative_url }}" autoplay loop muted playsinline preload="auto" poster="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" onplay="this.removeAttribute('poster')"></video>
+        <video class="hero-video" src="{{ '/assets/videos/ai-summary.mp4' | relative_url }}" autoplay loop muted playsinline preload="metadata" poster="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" onplay="this.removeAttribute('poster')"></video>
       </div>
     </div>
   </div>
@@ -295,8 +297,8 @@ Turn articles and reports into podcasts while exercising, cooking, or driving.
   <p style="font-size: 1.1em; color: var(--text-2); margin-bottom: 30px;">
     Join thousands using Arc AI to save time and consume content the way you prefer
   </p>
-  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc">
-    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Arc AI Summary &amp; Reader App on Google Play" width="250">
+  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Arc AI Summary &amp; Reader App on Google Play" width="250" height="83" loading="lazy">
   </a>
 </div>
 

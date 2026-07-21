@@ -4,6 +4,7 @@ title: "Arc for iOS — AI Screen Assistant | Coming Soon"
 description: "Arc for iOS is coming soon. Summarize, read aloud, chat, and automate your iPhone screen with a powerful floating AI sidebar."
 keywords: "Arc for iOS, iPhone AI assistant, iOS AI screen assistant, iPhone AI summary app, iOS text to speech AI, iPhone workflow automation"
 platform: ios
+og_image: /assets/images/og-ios.png
 ---
 
 <!-- Hero -->

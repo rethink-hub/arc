@@ -6,9 +6,9 @@ layout: default
     <header class="blog-header">
         <h1>{{ page.title }}</h1>
         <div class="blog-meta">
-            <span>By {{ page.author | default: "Mamata" }}</span>
+            <span>By {{ page.author | default: site.author }}</span>
             <span>·</span>
-            <time>{{ page.date | date: "%B %d, %Y" }}</time>
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
         </div>
     </header>
 
@@ -17,6 +17,27 @@ layout: default
     </div>
 
     <nav class="blog-nav">
-        <a href="/arc/" class="back-home">← Back to Home</a>
+        <a href="{{ '/' | relative_url }}" class="back-home">← Back to Home</a>
     </nav>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author | default: site.author | jsonify }}
+  },
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "image": {{ page.og_image | default: '/assets/images/og-arc.png' | absolute_url | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page.url | absolute_url | jsonify }}
+  }
+}
+</script>

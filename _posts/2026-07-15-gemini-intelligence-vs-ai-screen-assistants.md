@@ -5,6 +5,7 @@ description: "Google's Gemini Intelligence brings on-screen AI to Android 17. Bu
 date: 2026-07-15
 author: Mamata
 tags: ["android", "ai", "gemini", "productivity", "screen-assistant"]
+og_image: /assets/images/og-blog-gemini.png
 ---
 
 Google I/O 2026 just dropped a wave of AI announcements for Android. Gemini Intelligence is the big one — Google is weaving AI deeper into the OS with on-screen awareness, task automation across apps, and proactive suggestions. It sounds like exactly what every Android user has been waiting for.
@@ -39,8 +40,8 @@ When you're reading an article and want a quick summary, you don't want to wait 
 OS-level AI features often have latency built in — they're designed to be thoughtful, contextual, and thorough. That's great for complex tasks. For the quick "summarize this for me right now" use case, lightweight and fast wins.
 
 <div class="img-row">
-<img src="/arc/assets/images/screenshots/02_ai_summary_result.jpg" alt="Arc AI summary result on Android" />
-<img src="/arc/assets/images/screenshots/02_ai_summary_chat_input.jpg" alt="Arc AI summary input" />
+<img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="Arc AI summary result on Android" width="800" height="1760" loading="lazy" />
+<img src="{{ '/assets/images/screenshots/02_ai_summary_chat_input.jpg' | relative_url }}" alt="Arc AI summary input" width="800" height="1760" loading="lazy" />
 </div>
 
 ### Customization Is Not a Luxury — It's the Feature
@@ -54,8 +55,8 @@ These are all real use cases from Arc users. And none of them are things Gemini 
 This is where custom AI actions come in. Instead of waiting for Google to support your specific workflow, you create it yourself — write a prompt, save it to your sidebar, and use it with one tap on any screen.
 
 <div class="img-row">
-<img src="/arc/assets/images/screenshots/06_custom_actions_create_form_empty.jpg" alt="Create a custom AI action" />
-<img src="/arc/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg" alt="Custom AI actions list" />
+<img src="{{ '/assets/images/screenshots/06_custom_actions_create_form_empty.jpg' | relative_url }}" alt="Create a custom AI action" width="800" height="1760" loading="lazy" />
+<img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Custom AI actions list" width="800" height="1760" loading="lazy" />
 </div>
 
 I built this because I needed it myself. I was constantly copying text between apps to run different AI prompts, and the friction killed the workflow. One-tap access to *your own* AI commands — that's the feature that turns AI from a novelty into a daily tool.
@@ -79,13 +80,13 @@ After a year of watching how 28,000+ people use on-screen AI, here's what I've l
 **One-tap access beats voice commands.** Voice is great for hands-free scenarios. But when you're reading an article on your phone, tapping a floating button is faster, more discrete, and more reliable than saying "Hey Google, summarize this page."
 
 <div class="img-row">
-<img src="/arc/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg" alt="Arc floating sidebar over Chrome" />
-<img src="/arc/assets/images/screenshots/00_home_screen_dashboard.jpg" alt="Arc home screen dashboard" />
+<img src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar over Chrome" width="800" height="1760" loading="lazy" />
+<img src="{{ '/assets/images/screenshots/00_home_screen_dashboard.jpg' | relative_url }}" alt="Arc home screen dashboard" width="800" height="1760" loading="lazy" />
 </div>
 
 **Community beats corporate.** Google decides what Gemini Intelligence can do. Arc users decide what Arc can do — they share custom AI actions through Community Actions, and the best ones surface organically. Someone in Japan created a kanji explanation action that's now used by thousands of learners. Google would never ship that feature, but a community does.
 
-<img src="/arc/assets/images/screenshots/07_community_actions_browse_with_filter.jpg" alt="Arc community actions browser" />
+<img src="{{ '/assets/images/screenshots/07_community_actions_browse_with_filter.jpg' | relative_url }}" alt="Arc community actions browser" width="800" height="1760" loading="lazy" />
 
 **Cross-app consistency beats OS integration.** Gemini Intelligence works differently in Google apps vs third-party apps. Arc works the same way everywhere — the same sidebar, the same actions, the same experience whether you're in Chrome, Gmail, a PDF reader, or a social media app.
 

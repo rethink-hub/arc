@@ -5,6 +5,7 @@ description: "Looking for a modded version of Arc AI? Here's what you need to kn
 date: 2026-07-20
 author: Rethink
 tags: ["mod-apk", "arc", "premium", "indie-developer", "android"]
+og_image: /assets/images/og-blog-mod-apk.png
 ---
 
 So you searched for "Arc AI Screen Assistant mod APK" and ended up here. I know why you're looking for it — you want the premium features without paying. I get it. I've been there too.

@@ -3,6 +3,8 @@ layout: default
 title: "Free AI Screen Assistant for Android | Arc AI"
 description: "Free Android AI assistant — 7 free requests/week on basic features. Premium subscription unlocks summaries, TTS, AI chat, and workflow automation."
 keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant"
+og_image: /assets/images/og-arc.png
+product_page: true
 ---
 
 <!-- Hero — Sider.ai style with live demo on right -->
@@ -48,7 +50,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
           <div class="iphone-button left"></div>
           <div class="iphone-button"></div>
           <div class="iphone-button bottom"></div>
-          <video class="hero-video" src="{{ '/assets/videos/ai-summary.mp4' | relative_url }}" autoplay loop muted playsinline preload="auto" poster="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}"></video>
+          <video class="hero-video" src="{{ '/assets/videos/ai-summary.mp4' | relative_url }}" autoplay loop muted playsinline preload="metadata" poster="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}"></video>
         </div>
       </div>
     </div>
@@ -69,7 +71,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="Arc AI summary result on an Android screen" loading="lazy">
+        <img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="Arc AI summary result on an Android screen" width="800" height="1760" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -90,7 +92,7 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/03_ai_writer_rewrite_result.jpg' | relative_url }}" alt="Arc AI writer rewrite result on an Android screen" loading="lazy">
+        <img src="{{ '/assets/images/screenshots/03_ai_writer_rewrite_result.jpg' | relative_url }}" alt="Arc AI writer rewrite result on an Android screen" width="800" height="1760" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -105,13 +107,13 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
     <span class="highlight-label">Arc Workflows</span>
     <h2>Build your own AI actions.</h2>
     <p>Create custom one-tap AI commands for the tasks you repeat every day. Or browse community actions made by other Arc users and add them to your sidebar in seconds.</p>
-    <a href="ai-workflow-automation.html" class="learn-more">Learn more</a>
+    <a href="{{ '/ai-workflow-automation.html' | relative_url }}" class="learn-more">Learn more</a>
   </div>
   <div class="highlight-media">
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Arc AI custom workflow actions on an Android screen" loading="lazy">
+        <img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Arc AI custom workflow actions on an Android screen" width="800" height="1760" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>

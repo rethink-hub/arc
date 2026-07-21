@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ page.description | default: site.description }}">
-    <meta name="author" content="{{ site.author }}">
+    <meta name="author" content="{{ page.author | default: site.author }}">
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+    {% if page.url == '/' or page.url == '/index.html' %}
     <meta name="google-site-verification" content="uasxVvwHB2RKEkZYh15-z6cjzqrGbJPM4DCoubNk5Y8" />
+    {% endif %}
     <meta name="theme-color" content="#6C31FF">
-    
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{% if page.layout == 'blog' %}article{% else %}website{% endif %}">
     <meta property="og:site_name" content="Arc AI — Screen Assistant for Android">
     <meta property="og:title" content="{{ page.title | default: site.title }}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
-    
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="{{ page.title | default: site.title }}">
-    <meta property="twitter:description" content="{{ page.description | default: site.description }}">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+
     <title>{{ page.title | default: site.title }}</title>
     
     <!-- DNS Prefetch -->
@@ -38,39 +40,43 @@
     <link rel="stylesheet" href="{{ '/assets/css/arc.css' | relative_url }}?v=2">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ '/assets/images/arc-logo.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/favicon-180x180.png' | relative_url }}">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
-    
+
+    {% assign page_og_image = page.og_image | default: '/assets/images/og-arc.png' %}
+    {% assign page_og_image_url = page_og_image | prepend: site.baseurl | prepend: site.url %}
     <!-- Open Graph Image -->
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-arc.png">
+    <meta property="og:image" content="{{ page_og_image_url }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-    <meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-arc.png">
-    
-    <!-- Structured Data - Person, Software Application -->
+    <meta name="twitter:image" content="{{ page_og_image_url }}">
+
+    <!-- Structured Data - Person (site-wide), Software Application (product pages only) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "Person",
-          "name": "Mamata",
+          "name": {{ site.author | jsonify }},
           "url": "https://rethink-hub.github.io/arc/",
           "image": "{{ site.url }}{{ site.baseurl }}/assets/images/arc-logo.png",
           "jobTitle": "Indie Developer",
           "worksFor": { "@type": "Organization", "name": "Rethink" },
           "sameAs": ["https://www.reddit.com/r/ArcAIAutomation/", "https://www.youtube.com/@rethinkhub", "https://x.com/rethink_hub", "https://www.instagram.com/pirate.coder_/", "https://www.tiktok.com/@pirate_coder", "https://play.google.com/store/apps/details?id=com.rethink.arc"],
           "email": "mailto:everythingrethink@gmail.com"
-        },
-        {
+        }
+        {% if page.product_page %}
+        ,{
           "@type": "SoftwareApplication",
           "name": "Arc: AI Screen Assistant",
           "operatingSystem": "Android",
           "applicationCategory": "ProductivityApplication",
-          "author": { "@type": "Person", "name": "Mamata" },
+          "author": { "@type": "Person", "name": {{ site.author | jsonify }} },
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
           "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "250", "bestRating": "5", "worstRating": "1" },
           "description": "Arc is a free AI assistant for Android — 7 free requests per week on basic features. Premium subscription unlocks unlimited summaries, text-to-speech, AI chat, and custom workflow automation.",
@@ -81,6 +87,7 @@
           "featureList": ["AI-powered text summarization","Text-to-speech with automatic language detection","AI chat assistant for any screen content","Custom AI actions and workflow automation","Community-shared AI actions","Floating sidebar for instant access","Private and secure - local storage","Works across all Android apps"],
           "keywords": "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI, AI reading assistant, Android accessibility AI"
         }
+        {% endif %}
       ]
     }
     </script>
@@ -111,7 +118,7 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <a href="{{ '/' | relative_url }}">
-                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="logo-image">
+                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="logo-image" width="34" height="34">
                     <span class="logo-text">Arc</span>
                 </a>
             </div>
@@ -188,7 +195,7 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <a href="{{ '/' | relative_url }}" class="footer-logo-link">
-                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo">
+                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo" width="28" height="28">
                     <span class="footer-logo-text">Arc</span>
                 </a>
                 <div class="footer-socials">

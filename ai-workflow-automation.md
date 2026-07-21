@@ -3,6 +3,8 @@ layout: default
 title: "AI Workflow Automation for Android | Custom AI Actions | Arc"
 description: "Automate Android workflows with Arc AI's custom AI actions. Create personalized AI automation for productivity, translations, fact-checking, and more."
 keywords: "AI workflow automation, AI automation, custom AI actions, Android automation, AI productivity automation, workflow AI"
+og_image: /assets/images/og-ai-workflow-automation.png
+product_page: true
 faq:
   - question: "How do I create a custom AI action?"
     answer: "Open Arc AI settings, go to Custom Actions, and tap 'Create New Action'. Write a clear prompt describing what you want the AI to do (e.g., 'Translate to French' or 'Extract all dates'). You can enable screenshot capture and web search if needed. Save it and it appears in your sidebar."
@@ -21,7 +23,7 @@ faq:
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Arc AI custom workflow actions on an Android screen" loading="eager">
+        <img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Arc AI custom workflow actions on an Android screen" width="800" height="1760" loading="eager">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -237,8 +239,8 @@ Extract structured data, parse information, reorganize content, or transform uns
   <p style="font-size: 1.1em; color: var(--text-2); margin-bottom: 30px;">
     Build your personalized AI automation toolkit and boost productivity
   </p>
-  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc">
-    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Arc AI Workflow Automation on Google Play" width="250">
+  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Arc AI Workflow Automation on Google Play" width="250" height="83" loading="lazy">
   </a>
 </div>
 
@@ -249,7 +251,7 @@ Extract structured data, parse information, reorganize content, or transform uns
 - **[AI Summary &amp; Reader]({{ '/ai-summary-reader.html' | relative_url }})** - Automatic text summarization and text-to-speech
 - **[AI Writer]({{ '/ai-writer.html' | relative_url }})** - Rewrite, reply, and polish text in any app
 - **[AI Chat Assistant]({{ '/' | relative_url }})** - Conversational AI for deeper insights
-- **[Home](/arc/)** - Discover all Arc AI features
+- **[Home]({{ '/' | relative_url }})** - Discover all Arc AI features
 
 ---
 

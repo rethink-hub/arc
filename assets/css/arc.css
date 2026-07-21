@@ -1700,7 +1700,7 @@ a:focus, button:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
   .social-proof { gap: var(--lg); }
   .social-proof-item { padding: 0 var(--lg); }
   .social-proof-item:not(:last-child)::after { display: none; }
-  .navbar { max-width: calc(100% - 28px); height: 54px; }
+  .navbar { max-width: calc(100% - 28px); height: 54px; backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); }
 }
 
 @media (max-width: 480px) {
