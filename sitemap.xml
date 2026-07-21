@@ -33,6 +33,24 @@ layout: null
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/macos.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/ios.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/windows.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   {% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>

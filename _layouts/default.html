@@ -120,8 +120,56 @@
                 <a href="{{ '/ai-summary.html' | relative_url }}" class="nav-link {% if page.url == '/ai-summary.html' %}active{% endif %}">Summary</a>
                 <a href="{{ '/ai-text-reader.html' | relative_url }}" class="nav-link {% if page.url == '/ai-text-reader.html' %}active{% endif %}">Reader</a>
                 <a href="{{ '/ai-workflow-automation.html' | relative_url }}" class="nav-link {% if page.url == '/ai-workflow-automation.html' %}active{% endif %}">Automation</a>
+
+                <div class="nav-item dropdown" id="appsDropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="appsDropdownMenu">
+                        Apps
+                        <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu" id="appsDropdownMenu" role="menu">
+                        <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="dropdown-card" role="menuitem" target="_blank" rel="noopener">
+                            <div class="dropdown-icon icon-android" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
+                            </div>
+                            <span class="dropdown-label">Android</span>
+                            <span class="dropdown-status status-live">Live</span>
+                        </a>
+                        <a href="{{ '/macos.html' | relative_url }}" class="dropdown-card" role="menuitem">
+                            <div class="dropdown-icon icon-macos" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
+                            </div>
+                            <span class="dropdown-label">Mac OS</span>
+                            <span class="dropdown-status status-soon">Soon</span>
+                        </a>
+                        <a href="{{ '/ios.html' | relative_url }}" class="dropdown-card" role="menuitem">
+                            <div class="dropdown-icon icon-ios" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
+                            </div>
+                            <span class="dropdown-label">iOS</span>
+                            <span class="dropdown-status status-soon">Soon</span>
+                        </a>
+                        <a href="{{ '/windows.html' | relative_url }}" class="dropdown-card" role="menuitem">
+                            <div class="dropdown-icon icon-windows" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+                            </div>
+                            <span class="dropdown-label">Windows</span>
+                            <span class="dropdown-status status-soon">Soon</span>
+                        </a>
+                        <a href="https://chromewebstore.google.com/" class="dropdown-card" role="menuitem" target="_blank" rel="noopener">
+                            <div class="dropdown-icon icon-chrome" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.909c2.298 0 4.332.993 5.747 2.561L12 17.5 5.954 6.394C7.558 5.238 9.698 4.909 12 4.909zM4.12 8.371l4.35 7.529H5.296C3.762 13.898 3.44 10.958 4.12 8.371zm13.032 7.529h-3.174l4.35-7.529c.68 2.587.358 5.527-1.176 7.529z"/></svg>
+                            </div>
+                            <span class="dropdown-label">Extensions</span>
+                            <span class="dropdown-status status-soon">Soon</span>
+                        </a>
+                    </div>
+                </div>
+
                 <a href="{{ '/blog.html' | relative_url }}" class="nav-link {% if page.url == '/blog.html' %}active{% endif %}">Blog</a>
-                <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="nav-link nav-cta">Get Arc</a>
+                <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="nav-link nav-cta" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
+                    Get Arc
+                </a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -176,6 +224,9 @@
                 <div class="footer-links-col">
                     <h4>Products</h4>
                     <a href="{{ '/' | relative_url }}">Arc for Android</a>
+                    <a href="{{ '/macos.html' | relative_url }}">Arc for Mac</a>
+                    <a href="{{ '/ios.html' | relative_url }}">Arc for iOS</a>
+                    <a href="{{ '/windows.html' | relative_url }}">Arc for Windows</a>
                     <a href="{{ '/ai-summary.html' | relative_url }}">AI Summary</a>
                     <a href="{{ '/ai-text-reader.html' | relative_url }}">AI Text Reader</a>
                     <a href="{{ '/ai-workflow-automation.html' | relative_url }}">Workflow Automation</a>
@@ -191,7 +242,10 @@
                 <div class="footer-links-col footer-links-wide">
                     <h4>Arc</h4>
                     <p class="footer-tagline">Your AI screen assistant for Android. Understand any screen, instantly.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="footer-cta">Get Arc for Free</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="footer-cta" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
+                        Get Arc for Free
+                    </a>
                 </div>
             </div>
         </div>
@@ -223,6 +277,25 @@
         const navMenu = document.getElementById('navMenu');
         navToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); navToggle.classList.toggle('active'); });
         document.addEventListener('click', (e) => { if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) { navMenu.classList.remove('active'); navToggle.classList.remove('active'); } });
+
+        // Apps dropdown
+        const appsDropdown = document.getElementById('appsDropdown');
+        const appsDropdownMenu = document.getElementById('appsDropdownMenu');
+        const appsToggle = appsDropdown?.querySelector('.dropdown-toggle');
+        function closeAppsDropdown() {
+            appsDropdown?.classList.remove('open');
+            appsToggle?.setAttribute('aria-expanded', 'false');
+        }
+        function toggleAppsDropdown() {
+            const isOpen = appsDropdown?.classList.toggle('open');
+            appsToggle?.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+        appsToggle?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleAppsDropdown();
+        });
+        document.addEventListener('click', (e) => { if (appsDropdown && !appsDropdown.contains(e.target)) closeAppsDropdown(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAppsDropdown(); });
 
         // Progress bar
         window.addEventListener('scroll', () => {

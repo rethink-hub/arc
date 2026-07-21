@@ -13,13 +13,15 @@ description: "Guides on AI productivity, Android multitasking, screen assistants
     <div class="blog-list">
         {% assign posts = site.posts | sort: 'date' | reverse %}
         {% for post in posts %}
-        <article class="blog-card">
-            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            <p class="blog-excerpt">{{ post.description | default: post.excerpt }}</p>
-            <div class="blog-meta">
-                <time>{{ post.date | date: "%b %d, %Y" }}</time>
-            </div>
-        </article>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="blog-card-link">
+            <article class="blog-card">
+                <h2>{{ post.title }}</h2>
+                <p class="blog-excerpt">{{ post.description | default: post.excerpt }}</p>
+                <div class="blog-meta">
+                    <time>{{ post.date | date: "%b %d, %Y" }}</time>
+                </div>
+            </article>
+        </a>
         {% endfor %}
     </div>
 </div>
