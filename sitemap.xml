@@ -1,4 +1,56 @@
 ---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url><loc>https://rethink-hub.github.io/arc/</loc><lastmod>2026-07-20T14:48:00.000Z</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url><url><loc>https://rethink-hub.github.io/arc/ai-summary.html</loc><lastmod>2026-07-20T14:48:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://rethink-hub.github.io/arc/ai-text-reader.html</loc><lastmod>2026-07-20T14:48:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://rethink-hub.github.io/arc/ai-workflow-automation.html</loc><lastmod>2026-07-20T14:48:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://rethink-hub.github.io/arc/blog.html</loc><lastmod>2026-07-20T14:48:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url><loc>https://rethink-hub.github.io/arc/privacy.html</loc><lastmod>2026-07-20T14:48:00.000Z</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url><url><loc>https://rethink-hub.github.io/arc/terms.html</loc><lastmod>2026-07-20T14:48:00.000Z</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/ai-summary.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/ai-text-reader.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/ai-workflow-automation.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/blog.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/privacy.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/terms.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
