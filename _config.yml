@@ -12,15 +12,15 @@ tagline: "Understand Your Screen. Instantly."
 # Build settings
 markdown: kramdown
 
-# Plugins — using custom sitemap.xml (jekyll-sitemap not loaded)
+# Plugins — custom meta is hand-written in _layouts/default.html (jekyll-seo-tag not used);
+# custom sitemap.xml (jekyll-sitemap not loaded)
 plugins:
-  - jekyll-seo-tag
   - jekyll-feed
 
 # SEO settings
 lang: en-US
-url: "https://rethink-hub.github.io" # Your GitHub Pages URL
-baseurl: "/arc" # Repository name as subdirectory
+url: "https://arcassistant.app" # Custom root domain (GitHub Pages via CNAME)
+baseurl: "" # Root domain — no subdirectory
 
 # Social and contact info (for SEO)
 social:

@@ -63,7 +63,7 @@
         {
           "@type": "Person",
           "name": {{ site.author | jsonify }},
-          "url": "https://rethink-hub.github.io/arc/",
+          "url": "https://arcassistant.app/",
           "image": "{{ site.url }}{{ site.baseurl }}/assets/images/arc-logo.png",
           "jobTitle": "Indie Developer",
           "worksFor": { "@type": "Organization", "name": "Rethink" },
@@ -96,7 +96,7 @@
     {% if page_path != "" and page_path != "index.html" %}
     <script type="application/ld+json">
     { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rethink-hub.github.io/arc/" },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://arcassistant.app/" },
       { "@type": "ListItem", "position": 2, "name": "{{ page.title | split: ' | ' | first }}", "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}" }
     ]}
     </script>

@@ -254,17 +254,17 @@ All major SEO optimizations have been successfully implemented for the Arc AI we
 
 3. **Verify deployment:**
    - Wait 2-3 minutes for GitHub Pages build
-   - Visit https://rethink-hub.github.io/arc/
+   - Visit https://arcassistant.app/
    - Check all new pages load correctly
 
 ### **Google Search Console Setup**
-1. Add property: https://rethink-hub.github.io
+1. Add property: https://arcassistant.app
 2. Verify ownership (already have verification code)
-3. Submit sitemap: https://rethink-hub.github.io/arc/sitemap.xml
+3. Submit sitemap: https://arcassistant.app/sitemap.xml
 4. Request indexing for new pages:
-   - /arc/ai-summary.html
-   - /arc/ai-workflow-automation.html
-   - /arc/ai-text-reader.html
+   - /ai-summary.html
+   - /ai-workflow-automation.html
+   - /ai-text-reader.html
 
 ### **Schema Validation**
 1. Test structured data:
@@ -282,7 +282,7 @@ All major SEO optimizations have been successfully implemented for the Arc AI we
    - https://cards-dev.twitter.com/validator
 
 ### **Create Social Share Image** (Optional but Recommended)
-- Follow guide in `/arc/assets/images/SOCIAL-SHARE-IMAGE-GUIDE.md`
+- Follow guide in `/assets/images/SOCIAL-SHARE-IMAGE-GUIDE.md`
 - Create 1200x630px image with branding
 - Save as `arc-social-share.png`
 - Update `_layouts/default.html` to use new image

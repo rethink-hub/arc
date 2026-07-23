@@ -74,14 +74,14 @@ git push origin main
 ### Check Production URLs:
 
 **Main Pages:**
-- https://rethink-hub.github.io/arc/
-- https://rethink-hub.github.io/arc/privacy.html
-- https://rethink-hub.github.io/arc/terms.html
+- https://arcassistant.app/
+- https://arcassistant.app/privacy.html
+- https://arcassistant.app/terms.html
 
 **New Feature Pages:**
-- https://rethink-hub.github.io/arc/ai-summary.html
-- https://rethink-hub.github.io/arc/ai-workflow-automation.html
-- https://rethink-hub.github.io/arc/ai-text-reader.html
+- https://arcassistant.app/ai-summary.html
+- https://arcassistant.app/ai-workflow-automation.html
+- https://arcassistant.app/ai-text-reader.html
 
 ### Verify All Pages:
 - ✅ Load without errors
@@ -98,7 +98,7 @@ git push origin main
 ### A. Rich Results Test (Structured Data)
 
 1. Visit: https://search.google.com/test/rich-results
-2. Enter your homepage URL: `https://rethink-hub.github.io/arc/`
+2. Enter your homepage URL: `https://arcassistant.app/`
 3. Click "Test URL"
 4. Verify schemas detected:
    - ✅ Organization
@@ -111,7 +111,7 @@ git push origin main
 
 **Facebook Debugger:**
 1. Visit: https://developers.facebook.com/tools/debug/
-2. Enter URL: `https://rethink-hub.github.io/arc/`
+2. Enter URL: `https://arcassistant.app/`
 3. Click "Debug"
 4. Verify:
    - ✅ Title displays correctly
@@ -121,7 +121,7 @@ git push origin main
 
 **Twitter Card Validator:**
 1. Visit: https://cards-dev.twitter.com/validator
-2. Enter URL: `https://rethink-hub.github.io/arc/`
+2. Enter URL: `https://arcassistant.app/`
 3. Verify card preview looks good
 
 **Open Graph Checker:**
@@ -131,13 +131,13 @@ git push origin main
 ### C. Mobile-Friendly Test
 
 1. Visit: https://search.google.com/test/mobile-friendly
-2. Enter URL: `https://rethink-hub.github.io/arc/`
+2. Enter URL: `https://arcassistant.app/`
 3. Verify: "Page is mobile friendly"
 
 ### D. Page Speed Test
 
 1. Visit: https://pagespeed.web.dev/
-2. Enter URL: `https://rethink-hub.github.io/arc/`
+2. Enter URL: `https://arcassistant.app/`
 3. Test both Mobile and Desktop
 4. Target scores:
    - Performance: 90+
@@ -157,7 +157,7 @@ git push origin main
 2. **Add Property:**
    - Click "Add Property"
    - Select "URL prefix"
-   - Enter: `https://rethink-hub.github.io/arc/`
+   - Enter: `https://arcassistant.app/`
 
 3. **Verify Ownership:**
    - You already have the verification meta tag in your HTML
@@ -166,15 +166,15 @@ git push origin main
 
 4. **Submit Sitemap:**
    - Go to "Sitemaps" in left menu
-   - Add: `https://rethink-hub.github.io/arc/sitemap.xml`
+   - Add: `https://arcassistant.app/sitemap.xml`
    - Click "Submit"
 
 5. **Request Indexing for New Pages:**
    - Go to "URL Inspection"
    - Enter each new page URL:
-     - `/arc/ai-summary.html`
-     - `/arc/ai-workflow-automation.html`
-     - `/arc/ai-text-reader.html`
+     - `/ai-summary.html`
+     - `/ai-workflow-automation.html`
+     - `/ai-text-reader.html`
    - Click "Request Indexing" for each
 
 ### Monitor in Search Console:
@@ -190,8 +190,8 @@ git push origin main
 Bing powers ~30% of searches and is often faster to rank:
 
 1. **Sign up:** https://www.bing.com/webmasters/
-2. **Add site:** `https://rethink-hub.github.io/arc/`
-3. **Submit sitemap:** `/arc/sitemap.xml`
+2. **Add site:** `https://arcassistant.app/`
+3. **Submit sitemap:** `/sitemap.xml`
 4. **Request indexing** for new pages
 
 ---
@@ -316,7 +316,7 @@ git commit -m "SEO optimizations"
 git push origin main
 
 # Check site status
-curl -I https://rethink-hub.github.io/arc/
+curl -I https://arcassistant.app/
 ```
 
 ---

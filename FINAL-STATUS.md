@@ -128,7 +128,7 @@ git push origin main
 
 ### After Deployment:
 1. ✅ Wait 2-3 minutes for GitHub Pages build
-2. ✅ Verify: https://rethink-hub.github.io/arc/
+2. ✅ Verify: https://arcassistant.app/
 3. ✅ Check new pages load correctly
 4. ✅ Submit sitemap to Google Search Console
 5. ✅ Validate structured data with Rich Results Test

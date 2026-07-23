@@ -137,7 +137,7 @@ def generate(filename, title, subtitle, screenshot):
 
     # site url at bottom
     url_font = load_font(20)
-    draw.text((80, 560), "rethink-hub.github.io/arc", font=url_font, fill=TEXT_MUTED)
+    draw.text((80, 560), "arcassistant.app", font=url_font, fill=TEXT_MUTED)
 
     if screenshot:
         img = add_screenshot(img, screenshot)
