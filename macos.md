@@ -5,6 +5,8 @@ description: "Arc for macOS is coming soon. Get AI summaries, text-to-speech, AI
 keywords: "Arc for Mac, macOS AI assistant, AI screen assistant Mac, Mac AI summary app, Mac text to speech AI, Mac workflow automation"
 platform: macos
 og_image: /assets/images/og-macos.png
+redirect_from:
+  - /macos
 ---
 
 <!-- Hero -->

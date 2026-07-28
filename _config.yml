@@ -16,6 +16,12 @@ markdown: kramdown
 # custom sitemap.xml (jekyll-sitemap not loaded)
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
+
+# Redirect from clean URLs to .html versions to prevent duplicate content
+# GitHub Pages serves both /page and /page.html as 200 — this causes
+# "Alternate page with proper canonical tag" indexing issues in Search Console
+# jekyll-redirect-from generates proper redirect pages for the non-.html URLs
 
 # SEO settings
 lang: en-US

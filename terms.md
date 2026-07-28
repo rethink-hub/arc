@@ -4,6 +4,8 @@ title: "Terms of Service - Arc AI: Android AI Assistant"
 description: "Terms of Service for Arc AI Android assistant app. Understand usage terms, AI features, and conditions for our AI productivity application."
 keywords: "Arc AI terms, Android AI app terms of service"
 og_image: /assets/images/og-arc.png
+redirect_from:
+  - /terms
 ---
 
 <div class="privacy-nav">

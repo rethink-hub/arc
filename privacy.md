@@ -4,6 +4,8 @@ title: "Privacy Policy - Arc AI: Android AI Assistant"
 description: "Arc AI privacy policy for our Android AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
 keywords: "Arc AI privacy, Android AI app privacy, AI assistant privacy policy"
 og_image: /assets/images/og-arc.png
+redirect_from:
+  - /privacy
 ---
 
 <div class="privacy-nav">

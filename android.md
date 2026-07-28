@@ -6,6 +6,8 @@ keywords: "Arc for Android, Android AI assistant, AI screen assistant Android, f
 platform: android
 og_image: /assets/images/og-android.png
 product_page: true
+redirect_from:
+  - /android
 ---
 
 <!-- Hero -->
