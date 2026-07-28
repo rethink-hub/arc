@@ -6,8 +6,6 @@ date: 2026-07-15
 author: Mamata
 tags: ["android", "ai", "gemini", "productivity", "screen-assistant"]
 og_image: /assets/images/og-blog-gemini.png
-redirect_from:
-  - /2026/07/15/gemini-intelligence-vs-ai-screen-assistants
 ---
 
 Google I/O 2026 just dropped a wave of AI announcements for Android. Gemini Intelligence is the big one — Google is weaving AI deeper into the OS with on-screen awareness, task automation across apps, and proactive suggestions. It sounds like exactly what every Android user has been waiting for.

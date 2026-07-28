@@ -11,6 +11,7 @@ tagline: "Understand Your Screen. Instantly."
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 
 # Plugins — custom meta is hand-written in _layouts/default.html (jekyll-seo-tag not used);
 # custom sitemap.xml (jekyll-sitemap not loaded)
@@ -22,6 +23,7 @@ plugins:
 # GitHub Pages serves both /page and /page.html as 200 — this causes
 # "Alternate page with proper canonical tag" indexing issues in Search Console
 # jekyll-redirect-from generates proper redirect pages for the non-.html URLs
+# permalink: pretty handles blog posts (uses /:year/:month/:day/:title/ format)
 
 # SEO settings
 lang: en-US

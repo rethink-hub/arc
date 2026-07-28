@@ -6,8 +6,6 @@ date: 2026-07-20
 author: Rethink
 tags: ["mod-apk", "arc", "premium", "indie-developer", "android"]
 og_image: /assets/images/og-blog-mod-apk.png
-redirect_from:
-  - /2026/07/20/arc-ai-screen-assistant-mod-apk-read-this-first
 ---
 
 So you searched for "Arc AI Screen Assistant mod APK" and ended up here. I know why you're looking for it — you want the premium features without paying. I get it. I've been there too.
