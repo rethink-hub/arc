@@ -21,14 +21,8 @@ faq:
 ---
 
 <div class="hero-section hero-simple hero-with-mockup">
-  <div class="hero-mockup-wrap hero-mockup-small">
-    <div class="iphone-frame">
-      <div class="iphone-notch"></div>
-      <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Arc AI custom workflow actions on an Android screen" width="800" height="1760" loading="eager">
-        <div class="iphone-reflection"></div>
-      </div>
-    </div>
+  <div class="hero-video-wrap hero-video-youtube">
+    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/qk6gu5Owaas?si=yFJd1TiF16FNph2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
   <h1>AI Workflow Automation for Android</h1>

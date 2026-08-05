@@ -816,6 +816,25 @@ em { font-style: italic; }
   display: flex;
   justify-content: center;
 }
+.hero-video-youtube {
+  max-width: 560px;
+  margin: 0 auto 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.hero-video-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 16px;
+}
 .video-frame {
   width: 100%;
   max-width: 300px;
