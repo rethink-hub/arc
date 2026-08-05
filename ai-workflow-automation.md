@@ -21,8 +21,16 @@ faq:
 ---
 
 <div class="hero-section hero-simple hero-with-mockup">
-  <div class="hero-video-wrap hero-video-youtube">
-    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/qk6gu5Owaas?si=yFJd1TiF16FNph2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="hero-mockup-wrap hero-mockup-small">
+    <div class="iphone-frame-video">
+      <div class="iphone-notch"></div>
+      <div class="iphone-button left"></div>
+      <div class="iphone-button"></div>
+      <div class="iphone-button bottom"></div>
+      <div class="iphone-video-screen">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/qk6gu5Owaas?si=yFJd1TiF16FNph2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 
   <h1>AI Workflow Automation for Android</h1>
