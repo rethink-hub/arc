@@ -93,11 +93,41 @@ redirect_from:
   <h2>Already available on Android</h2>
   <p>Try Arc on Android now and be the first to know when the iPhone app is ready.</p>
   <div class="platform-links">
-    <a href="{{ '/android.html' | relative_url }}">
+    <a href="{{ '/android/' | relative_url }}">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
       Get Arc for Android
     </a>
-    <a href="{{ '/macos.html' | relative_url }}">Arc for Mac</a>
-    <a href="{{ '/windows.html' | relative_url }}">Arc for Windows</a>
+    <a href="{{ '/macos/' | relative_url }}">Arc for Mac</a>
+    <a href="{{ '/windows/' | relative_url }}">Arc for Windows</a>
   </div>
 </div>
+
+---
+
+## About Arc for iOS
+
+Arc for iOS will bring the same AI screen assistant experience that Android users love to the iPhone. Whether you're reading a long article in Safari, composing a message in WhatsApp, or reviewing a document in Mail, Arc's floating sidebar will be there to help you summarize, listen, write, and automate — without leaving the app you're in.
+
+### What makes Arc different on iOS
+
+Unlike traditional AI apps that require you to copy-paste text or switch between windows, Arc works directly on what's already on your screen. On iOS, this means integration with the system's accessibility features to read on-screen content and provide AI-powered assistance in real time.
+
+Arc is designed to feel like a native iOS experience — lightweight, fast, and respectful of your privacy. Your screen content is processed for AI responses but never stored on our servers. Sensitive apps like banking and password managers are automatically protected.
+
+### Planned features for iOS
+
+- **AI Summary**: Condense long articles, emails, and web pages into key takeaways with one tap
+- **AI Text Reader**: Listen to any text with natural iOS voices and automatic language detection
+- **AI Chat**: Ask follow-up questions about anything on your screen without context switching
+- **AI Writer**: Rewrite, reply, translate, and polish text in any app with a keyboard
+- **Custom AI Actions**: Create your own one-tap AI commands for your daily workflows
+- **Community Actions**: Browse and install 500+ AI actions shared by other Arc users
+- **Smart Extract**: Pull out dates, contacts, action items, and key data from any screen
+
+### When will Arc for iOS be available?
+
+Arc for iOS is in early development. We're taking the time to get the experience right — iOS has different accessibility APIs and UI patterns compared to Android, and we want Arc to feel native on iPhone. Join the waitlist above and we'll notify you as soon as the beta is ready.
+
+### Will Arc for iOS be free?
+
+Yes. Arc will follow the same freemium model as the Android app — 7 free requests per week on basic features, with a premium subscription for unlimited access. No ads, no watermarks, no trial period that expires.

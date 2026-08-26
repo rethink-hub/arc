@@ -10,52 +10,52 @@ layout: null
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-summary-reader.html</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/ai-summary-reader/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-writer.html</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/ai-writer/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-workflow-automation.html</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/ai-workflow-automation/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/blog.html</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/blog/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/macos.html</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ios.html</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/windows.html</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/android.html</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/android/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/ios/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/macos/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/windows/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   {% for post in site.posts %}
   <url>
@@ -65,16 +65,4 @@ layout: null
     <priority>0.6</priority>
   </url>
   {% endfor %}
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/privacy.html</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/terms.html</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 </urlset>

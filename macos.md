@@ -93,11 +93,41 @@ redirect_from:
   <h2>Already available on Android</h2>
   <p>Can’t wait? Try Arc on Android today and be the first to know when the Mac app launches.</p>
   <div class="platform-links">
-    <a href="{{ '/android.html' | relative_url }}">
+    <a href="{{ '/android/' | relative_url }}">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
       Get Arc for Android
     </a>
-    <a href="{{ '/ios.html' | relative_url }}">Arc for iOS</a>
-    <a href="{{ '/windows.html' | relative_url }}">Arc for Windows</a>
+    <a href="{{ '/ios/' | relative_url }}">Arc for iOS</a>
+    <a href="{{ '/windows/' | relative_url }}">Arc for Windows</a>
   </div>
 </div>
+
+---
+
+## About Arc for Mac
+
+Arc for Mac will bring the same AI screen assistant experience that Android users love to macOS. Whether you're reading a long article in Safari, reviewing a PDF in Preview, or composing an email in Mail, Arc's floating sidebar will help you summarize, listen, write, and automate — without switching apps.
+
+### What makes Arc different on macOS
+
+On desktop, most AI tools require you to copy-paste text into a separate window or switch to a browser tab. Arc works directly on what's already visible on your screen. On macOS, this means integrating with the system's accessibility APIs to read on-screen content and provide AI-powered assistance in any application.
+
+Arc for Mac will support global hotkeys, menu bar integration, and a floating panel that sits at the edge of your screen — always available, never in the way. Whether you're a student, researcher, developer, or professional, Arc will fit into your existing Mac workflow without disrupting it.
+
+### Planned features for macOS
+
+- **AI Summary**: Instantly summarize Safari pages, PDFs, emails, or any app window without context switching
+- **AI Text Reader**: Listen to articles, documents, or messages with Mac's natural text-to-speech voices
+- **AI Chat**: Ask follow-up questions about any window, document, or conversation on your screen
+- **AI Writer**: Rewrite, reply, translate, or polish text in any Mac app without copy-pasting
+- **Custom AI Actions**: Build one-tap AI actions and assign them to global hotkeys for repeated workflows
+- **Community Actions**: Browse and install 500+ AI actions shared by the Arc community
+- **Smart Extract**: Pull out key points, dates, contacts, and action items from any screen or document
+
+### When will Arc for Mac be available?
+
+Arc for Mac is in early development. macOS offers powerful accessibility APIs that make on-screen AI assistance straightforward, but we're taking the time to design an experience that feels native to Mac — with keyboard-first interactions, menu bar support, and the same privacy-first approach that Android users trust. Join the waitlist above and we'll notify you when the beta launches.
+
+### Will Arc for Mac be free?
+
+Yes. Arc will follow the same freemium model as the Android app — 7 free requests per week on basic features, with a premium subscription for unlimited access. The same pricing, no platform-specific upsells.

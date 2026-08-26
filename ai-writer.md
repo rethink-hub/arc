@@ -205,10 +205,17 @@ Get support forming clear sentences when writing is challenging.
 
 ## Related Features
 
-- **[AI Summary &amp; Reader]({{ '/ai-summary-reader.html' | relative_url }})** - Summarize and listen to any content
-- **[AI Workflow Automation]({{ '/ai-workflow-automation.html' | relative_url }})** - Automate repetitive tasks with AI
+- **[AI Summary &amp; Reader]({{ '/ai-summary-reader/' | relative_url }})** - Summarize and listen to any content
+- **[AI Workflow Automation]({{ '/ai-workflow-automation/' | relative_url }})** - Automate repetitive tasks with AI
 - **[AI Chat Assistant]({{ '/' | relative_url }})** - Ask questions about content on your screen
 - **[Home]({{ '/' | relative_url }})** - Explore all Arc AI features
+
+## Available Platforms
+
+- **[Arc for Android]({{ '/android/' | relative_url }})** - Download now from Google Play
+- **[Arc for iOS]({{ '/ios/' | relative_url }})** - Coming soon
+- **[Arc for Mac]({{ '/macos/' | relative_url }})** - Coming soon
+- **[Arc for Windows]({{ '/windows/' | relative_url }})** - Coming soon
 
 ---
 

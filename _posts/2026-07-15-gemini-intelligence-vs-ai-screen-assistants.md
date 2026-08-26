@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Android's New Gemini Intelligence vs AI Screen Assistants — What Actually Helps"
+title: "Gemini Intelligence vs AI Screen Assistants: What Actually Helps"
 description: "Google's Gemini Intelligence brings on-screen AI to Android 17. But what's actually useful day-to-day? A practical comparison from an indie dev building Arc."
 date: 2026-07-15
 author: Mamata

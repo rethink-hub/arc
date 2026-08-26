@@ -254,10 +254,17 @@ Extract structured data, parse information, reorganize content, or transform uns
 
 ## Related Features
 
-- **[AI Summary &amp; Reader]({{ '/ai-summary-reader.html' | relative_url }})** - Automatic text summarization and text-to-speech
-- **[AI Writer]({{ '/ai-writer.html' | relative_url }})** - Rewrite, reply, and polish text in any app
+- **[AI Summary &amp; Reader]({{ '/ai-summary-reader/' | relative_url }})** - Automatic text summarization and text-to-speech
+- **[AI Writer]({{ '/ai-writer/' | relative_url }})** - Rewrite, reply, and polish text in any app
 - **[AI Chat Assistant]({{ '/' | relative_url }})** - Conversational AI for deeper insights
 - **[Home]({{ '/' | relative_url }})** - Discover all Arc AI features
+
+## Available Platforms
+
+- **[Arc for Android]({{ '/android/' | relative_url }})** - Download now from Google Play
+- **[Arc for iOS]({{ '/ios/' | relative_url }})** - Coming soon
+- **[Arc for Mac]({{ '/macos/' | relative_url }})** - Coming soon
+- **[Arc for Windows]({{ '/windows/' | relative_url }})** - Coming soon
 
 ---
 

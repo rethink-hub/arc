@@ -90,8 +90,8 @@ redirect_from:
   <h2>Other platforms coming soon</h2>
   <p>Arc is built for every screen. Mac, iOS, Windows, and browser extensions are on the way.</p>
   <div class="platform-links">
-    <a href="{{ '/macos.html' | relative_url }}">Arc for Mac</a>
-    <a href="{{ '/ios.html' | relative_url }}">Arc for iOS</a>
-    <a href="{{ '/windows.html' | relative_url }}">Arc for Windows</a>
+    <a href="{{ '/macos/' | relative_url }}">Arc for Mac</a>
+    <a href="{{ '/ios/' | relative_url }}">Arc for iOS</a>
+    <a href="{{ '/windows/' | relative_url }}">Arc for Windows</a>
   </div>
 </div>

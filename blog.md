@@ -29,3 +29,27 @@ redirect_from:
         {% endfor %}
     </div>
 </div>
+
+<!-- Cross-platform section -->
+<div class="section-header" style="margin-top: var(--xl);">
+    <span class="section-tag">Platforms</span>
+    <h2>Arc is expanding.</h2>
+    <p>Available on Android now. iOS, Mac, and Windows coming soon.</p>
+</div>
+<div class="platform-links" style="justify-content: center; margin-bottom: var(--xl);">
+    <a href="{{ '/android/' | relative_url }}">Arc for Android</a>
+    <a href="{{ '/ios/' | relative_url }}">Arc for iOS</a>
+    <a href="{{ '/macos/' | relative_url }}">Arc for Mac</a>
+    <a href="{{ '/windows/' | relative_url }}">Arc for Windows</a>
+</div>
+
+<!-- Feature links -->
+<div class="section-header">
+    <span class="section-tag">Features</span>
+    <h2>Explore what Arc can do.</h2>
+</div>
+<div class="platform-links" style="justify-content: center; margin-bottom: var(--xl);">
+    <a href="{{ '/ai-summary-reader/' | relative_url }}">AI Summary &amp; Reader</a>
+    <a href="{{ '/ai-writer/' | relative_url }}">AI Writer</a>
+    <a href="{{ '/ai-workflow-automation/' | relative_url }}">Workflow Automation</a>
+</div>

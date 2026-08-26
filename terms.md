@@ -4,6 +4,7 @@ title: "Terms of Service - Arc AI: Android AI Assistant"
 description: "Terms of Service for Arc AI Android assistant app. Understand usage terms, AI features, and conditions for our AI productivity application."
 keywords: "Arc AI terms, Android AI app terms of service"
 og_image: /assets/images/og-arc.png
+robots: noindex, follow
 redirect_from:
   - /terms
 ---
@@ -297,7 +298,7 @@ Optional feature requiring explicit permission. Backups are stored securely in y
 
 ## 18. Privacy & Security
 
-All data is encrypted in transit using HTTPS/TLS. Local data is protected by Android's app sandbox security. See our [Privacy Policy](privacy.html) for complete security details. You can access, export, and delete your data anytime. We implement industry-standard security but cannot guarantee 100% security. Breach notifications will be provided as required by law.
+All data is encrypted in transit using HTTPS/TLS. Local data is protected by Android's app sandbox security. See our [Privacy Policy](/privacy/) for complete security details. You can access, export, and delete your data anytime. We implement industry-standard security but cannot guarantee 100% security. Breach notifications will be provided as required by law.
 
 ---
 
@@ -390,7 +391,7 @@ We may update these Terms for legal changes or new features. Material changes wi
   <p><em>These Terms of Service are effective as of December 2, 2025. Last updated February 9, 2026.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
     <a href="{{ '/' | relative_url }}">← Back to Home</a>
-    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="/privacy/">🔒 Privacy Policy</a>
     <a href="mailto:everythingrethink@gmail.com">📧 Contact Us</a>
   </div>
 </div>

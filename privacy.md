@@ -4,6 +4,7 @@ title: "Privacy Policy - Arc AI: Android AI Assistant"
 description: "Arc AI privacy policy for our Android AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
 keywords: "Arc AI privacy, Android AI app privacy, AI assistant privacy policy"
 og_image: /assets/images/og-arc.png
+robots: noindex, follow
 redirect_from:
   - /privacy
 ---
@@ -483,7 +484,7 @@ If you have any questions about this policy, please contact us at: **everythingr
   <p><em>This privacy policy is effective as of December 7, 2025. Last updated February 9, 2026.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
     <a href="{{ '/' | relative_url }}">← Back to Home</a>
-    <a href="terms.html">📋 Terms of Service</a>
+    <a href="/terms/">📋 Terms of Service</a>
     <a href="mailto:everythingrethink@gmail.com">📧 Contact Us</a>
   </div>
 </div>

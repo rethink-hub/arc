@@ -93,11 +93,41 @@ redirect_from:
   <h2>Already available on Android</h2>
   <p>Get Arc on Android today and be the first to know when the Windows app launches.</p>
   <div class="platform-links">
-    <a href="{{ '/android.html' | relative_url }}">
+    <a href="{{ '/android/' | relative_url }}">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
       Get Arc for Android
     </a>
-    <a href="{{ '/macos.html' | relative_url }}">Arc for Mac</a>
-    <a href="{{ '/ios.html' | relative_url }}">Arc for iOS</a>
+    <a href="{{ '/macos/' | relative_url }}">Arc for Mac</a>
+    <a href="{{ '/ios/' | relative_url }}">Arc for iOS</a>
   </div>
 </div>
+
+---
+
+## About Arc for Windows
+
+Arc for Windows will bring the same AI screen assistant experience that Android users love to your PC. Whether you're reading a long article in Edge, reviewing a document in Word, or composing an email in Outlook, Arc's floating sidebar will help you summarize, listen, write, and automate — without switching apps.
+
+### What makes Arc different on Windows
+
+Most desktop AI tools on Windows require you to copy-paste text into a separate application or use a browser-based chatbot. Arc works directly on what's already visible on your screen. On Windows, this means integrating with the UI Automation framework to read on-screen content and provide AI-powered assistance in any desktop application — including legacy Win32 apps, modern UWP apps, and browser windows.
+
+Arc for Windows will support system tray integration, global hotkeys, and a floating panel that docks at the edge of your screen. Whether you're a knowledge worker, student, developer, or casual user, Arc will fit into your existing Windows workflow seamlessly.
+
+### Planned features for Windows
+
+- **AI Summary**: Turn long browser tabs, documents, and chat threads into bite-sized takeaways instantly
+- **AI Text Reader**: Use Windows natural voices to listen to any text while you work on something else
+- **AI Chat**: Ask questions about what you see in any app and get instant, contextual answers
+- **AI Writer**: Rewrite, reply, translate, or polish text in any Windows app without copy-pasting
+- **Custom AI Actions**: Build one-tap AI commands and assign them to global hotkeys for your daily workflows
+- **Community Actions**: Browse and install 500+ AI actions shared by the Arc community
+- **Smart Extract**: Pull out key points, dates, contacts, and action items from any screen or document
+
+### When will Arc for Windows be available?
+
+Arc for Windows is in early development. Windows offers robust accessibility APIs through UI Automation, but we want to ensure Arc works reliably across the wide variety of Windows apps — from modern UWP applications to legacy desktop software. Join the waitlist above and we'll notify you when the beta is ready.
+
+### Will Arc for Windows be free?
+
+Yes. Arc will follow the same freemium model as the Android app — 7 free requests per week on basic features, with a premium subscription for unlimited access. Same pricing across all platforms, no Windows-specific upsells.

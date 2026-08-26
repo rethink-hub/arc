@@ -1,12 +1,16 @@
 ---
 layout: default
 title: "AI Summary & Reader for Android | Summarize & Listen | Arc"
-description: "Freemium AI summary and text reader for Android. Summarize any content, then listen with natural text-to-speech. 7 free requests/week. Premium unlocks unlimited use."
+description: "Freemium AI summary and text reader for Android. Summarize any content, then listen with natural text-to-speech. 7 free requests/week."
 keywords: "AI summary app, AI text reader, screen reader AI, text to speech AI Android, AI reading assistant, Android summary app, AI powered summary"
 og_image: /assets/images/og-ai-summary-reader.png
 product_page: true
 redirect_from:
   - /ai-summary-reader
+  - /ai-text-reader
+  - /ai-text-reader.html
+  - /ai-summary
+  - /ai-summary.html
 faq:
   - question: "How accurate are the AI summaries?"
     answer: "Arc AI uses advanced language models (Google Gemini) to provide highly accurate summaries. However, AI-generated content should be verified for critical decisions. The summaries capture key points and main ideas very effectively."
@@ -308,10 +312,17 @@ Turn articles and reports into podcasts while exercising, cooking, or driving.
 
 ## Related Features
 
-- **[AI Writer]({{ '/ai-writer.html' | relative_url }})** - Rewrite, reply, and polish text in any app
-- **[AI Workflow Automation]({{ '/ai-workflow-automation.html' | relative_url }})** - Automate repetitive tasks with AI
+- **[AI Writer]({{ '/ai-writer/' | relative_url }})** - Rewrite, reply, and polish text in any app
+- **[AI Workflow Automation]({{ '/ai-workflow-automation/' | relative_url }})** - Automate repetitive tasks with AI
 - **[AI Chat Assistant]({{ '/' | relative_url }})** - Ask questions about any content on your screen
 - **[Home]({{ '/' | relative_url }})** - Explore all Arc AI features
+
+## Available Platforms
+
+- **[Arc for Android]({{ '/android/' | relative_url }})** - Download now from Google Play
+- **[Arc for iOS]({{ '/ios/' | relative_url }})** - Coming soon
+- **[Arc for Mac]({{ '/macos/' | relative_url }})** - Coming soon
+- **[Arc for Windows]({{ '/windows/' | relative_url }})** - Coming soon
 
 ---
 

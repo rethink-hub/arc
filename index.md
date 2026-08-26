@@ -65,7 +65,7 @@ product_page: true
     <span class="highlight-label">Arc Summary</span>
     <h2>Understand any content, right on your screen.</h2>
     <p>Ask Arc about any page, article, or message using Google Gemini. It summarizes long reads, explains ideas, translates languages, and answers follow-ups — without leaving the app you're in.</p>
-    <a href="{{ '/ai-summary-reader.html' | relative_url }}" class="learn-more">Learn more</a>
+    <a href="{{ '/ai-summary-reader/' | relative_url }}" class="learn-more">Learn more</a>
   </div>
   <div class="highlight-media">
     <div class="iphone-frame">
@@ -86,7 +86,7 @@ product_page: true
     <span class="highlight-label">Arc Writer</span>
     <h2>Write smarter, everywhere you type.</h2>
     <p>Rewrite text in any tone, fix grammar, generate replies, or create social posts — all from the floating sidebar. Arc works inside any app, so you never have to copy-paste again.</p>
-    <a href="{{ '/ai-writer.html' | relative_url }}" class="learn-more">Learn more</a>
+    <a href="{{ '/ai-writer/' | relative_url }}" class="learn-more">Learn more</a>
   </div>
   <div class="highlight-media">
     <div class="iphone-frame">
@@ -107,7 +107,7 @@ product_page: true
     <span class="highlight-label">Arc Workflows</span>
     <h2>Build your own AI actions.</h2>
     <p>Create custom one-tap AI commands for the tasks you repeat every day. Or browse community actions made by other Arc users and add them to your sidebar in seconds.</p>
-    <a href="{{ '/ai-workflow-automation.html' | relative_url }}" class="learn-more">Learn more</a>
+    <a href="{{ '/ai-workflow-automation/' | relative_url }}" class="learn-more">Learn more</a>
   </div>
   <div class="highlight-media">
     <div class="iphone-frame">
