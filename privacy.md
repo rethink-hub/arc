@@ -299,7 +299,19 @@ To improve Arc and fix issues, we use the following services.
 
   **What we DON'T collect:** Your screen content, the text you process, your AI prompts, or the results Arc generates. Analytics events carry feature names and counts only — never the content itself.
 
-* **Crash Reporting:** The macOS app does **not** include a third-party crash reporting SDK. If Arc for Mac crashes, macOS may offer to send a diagnostic report to Apple under your system's standard Analytics & Improvements settings, which you control in **System Settings → Privacy & Security → Analytics & Improvements**. We do not receive those reports unless you separately choose to send them to us.
+* **Crash Reporting:** The macOS app does **not** include a third-party crash reporting SDK (Crashlytics cannot be built into it). Instead Arc records its own crash reports. If Arc for Mac stops unexpectedly, it writes a report **to your Mac** containing:
+  - the error or signal type (for example `SIGSEGV`, or an exception name such as `NSInvalidArgumentException`) and its message
+  - the call stack at the moment of the crash
+  - the app version, macOS version, and processor architecture
+  - a short trail of recent in-app actions and diagnostic flags — feature names and states only
+
+  The report stays on your Mac until the next time you open Arc. At that point Arc sends a **summary** of it — the error type, a truncated message, and the single most relevant line of the call stack — as a `app_exception` analytics event, and then **deletes the local report**. The full stack never leaves your Mac.
+
+  **What we DON'T collect:** your screen content, the text you process, your prompts, or Arc's generated output. Crash reports carry technical diagnostic information only.
+
+  Separately, macOS itself may offer to send a diagnostic report to Apple under your standard Analytics & Improvements settings (**System Settings → Privacy & Security → Analytics & Improvements**). Those go to Apple, not to us.
+
+**Turning macOS collection off.** Both of the above are controlled by a single switch in Arc for Mac: **Settings → Privacy → "Share usage data & crash reports."** It is on by default (matching the Android app). Turning it off stops all analytics and crash reporting immediately, discards anything still queued on your device, and deletes any crash reports waiting to be sent. Nothing further is transmitted unless you turn it back on.
 
 These services collect data anonymously and do not identify you personally. You can review Google's data practices at [Google Privacy Policy](https://policies.google.com/privacy).
 
@@ -371,7 +383,7 @@ We use reputable third-party services and only share the minimum data necessary:
 
 * **Firebase Cloud Messaging (FCM)** *(Android)*: Push notification delivery for feature announcements and updates. Only anonymous device tokens are used for delivery. ([Firebase Privacy](https://firebase.google.com/support/privacy))
 
-* **Google Analytics 4 Measurement Protocol** *(macOS)*: Anonymous usage analytics sent directly over HTTPS, as described above. ([Google Privacy Policy](https://policies.google.com/privacy))
+* **Google Analytics 4 Measurement Protocol** *(macOS)*: Anonymous usage analytics and crash summaries sent directly over HTTPS, as described above. Controlled by Settings → Privacy → "Share usage data & crash reports". ([Google Privacy Policy](https://policies.google.com/privacy))
 
 * **Dodo Payments** *(macOS)*: Merchant of record for macOS subscriptions. Handles checkout, card processing, tax calculation, invoicing, and the subscription customer portal. We never receive your payment instrument details. ([Dodo Payments Privacy Policy](https://dodopayments.com/privacy-policy))
 
