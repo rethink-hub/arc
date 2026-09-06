@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Arc</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Sun, 06 Sep 2026 15:30:17 +0530</pubDate>
+            <link>https://arcassistant.app/</link>
+            <sparkle:version>10000</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/rethink-hub/arc/releases/download/mac-v1.0.0/Arc-1.0.0.dmg" length="5728110" type="application/octet-stream" sparkle:edSignature="eqdDe1y7Vz4sNyAJLbudfU1W/ysYhiElAsk82V1baKzPWjf7y5f0JRcQ2Ru8HY5X40vgpCJb247oveGQ/OpzCg=="/>
+        </item>
+    </channel>
+</rss>
