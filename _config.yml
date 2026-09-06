@@ -44,9 +44,9 @@ keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader,
 # upload the matching dist/Arc-<version>.dmg to /downloads/. The macos.md download
 # button and the Sparkle appcast must both point at the same file.
 mac_app:
-  version: "1.0.0"
+  version: "1.0.1"
   min_macos: "14.0"
-  dmg: "/downloads/Arc-1.0.0.dmg"
+  dmg: "/downloads/Arc-1.0.1.dmg"
 
 # App-specific metadata
 app:

@@ -3,6 +3,15 @@
     <channel>
         <title>Arc</title>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Sun, 06 Sep 2026 17:38:55 +0530</pubDate>
+            <link>https://arcassistant.app/</link>
+            <sparkle:version>10001</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://arcassistant.app/downloads/Arc-1.0.1.dmg" length="5773601" type="application/octet-stream" sparkle:edSignature="qwT7CurqQ5R2RT4ByY9ok443YGDEJUdOwQ6fnzjBkNXCtMgz5ghYKlYMgLGHhmiuHVB2QHdHzpQdRZ6xoSuwDg=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Sun, 06 Sep 2026 15:30:17 +0530</pubDate>
             <link>https://arcassistant.app/</link>
