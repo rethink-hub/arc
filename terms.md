@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Terms of Service - Arc AI: Android AI Assistant"
-description: "Terms of Service for Arc AI Android assistant app. Understand usage terms, AI features, and conditions for our AI productivity application."
-keywords: "Arc AI terms, Android AI app terms of service"
+title: "Terms of Service - Arc AI: Android & macOS AI Assistant"
+description: "Terms of Service for the Arc AI assistant on Android and macOS. Understand usage terms, AI features, billing, and conditions for our AI productivity application."
+keywords: "Arc AI terms, Android AI app terms of service, Mac AI app terms of service"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow
 redirect_from:
@@ -23,7 +23,7 @@ redirect_from:
 
 ## Welcome to Arc
 
-Thank you for choosing Arc: AI Screen Assistant ("Arc", "we", "our", or "the App"). These Terms of Service ("Terms") govern your access to and use of Arc, our floating sidebar application that provides AI-powered summaries, text-to-speech, content saving, custom AI actions, chat, AI writing assistance, flashcards, call insights, and smart extraction features for Android devices.
+Thank you for choosing Arc: AI Screen Assistant ("Arc", "we", "our", or "the App"). These Terms of Service ("Terms") govern your access to and use of Arc, our floating sidebar application that provides AI-powered summaries, text-to-speech, content saving, custom AI actions, chat, AI writing assistance, flashcards, call insights, and smart extraction features. Arc is available for **Android** and **macOS**; where these Terms differ by platform, the platform is named explicitly.
 
 **By downloading, installing, or using Arc, you agree to be bound by these Terms.** If you do not agree to these Terms, please do not use the App.
 
@@ -42,7 +42,7 @@ By using Arc, you confirm that:
 
 ## 2. Description of Service
 
-Arc is an Android accessibility application that provides the following core features:
+Arc is an accessibility-based AI assistant, available as an Android application and as a macOS application, providing the following core features:
 
 **⚡ Floating Sidebar:** A persistent overlay interface accessible from any app (requires Display Over Other Apps permission)
 
@@ -76,7 +76,9 @@ Arc is an Android accessibility application that provides the following core fea
 
 **📱 App Management:** Control which apps Arc can work with, with nearly 400 sensitive apps blocked by default
 
-**Minimum Requirements:** Android 5.0 (Lollipop) or higher. Screenshot feature requires Android 11+. Call Insights requires Android 13+ for audio file access.
+**Minimum Requirements (Android):** Android 5.0 (Lollipop) or higher. Screenshot feature requires Android 11+. Call Insights requires Android 13+ for audio file access.
+
+**Minimum Requirements (macOS):** macOS 14.0 (Sonoma) or higher, on Apple Silicon or Intel. Arc for Mac is distributed as a notarized download from [arcassistant.app](https://arcassistant.app/macos/) and is **not** available on the Mac App Store, because Apple's App Sandbox prohibits the accessibility APIs Arc depends on. Arc for Mac requires macOS Accessibility permission, and requires Screen Recording permission for screenshot-based actions. Some Android-only features (App Management, AI Call Insights, and push notifications) are not present in the macOS app.
 
 ---
 
@@ -84,9 +86,13 @@ Arc is an Android accessibility application that provides the following core fea
 
 Arc operates on a **freemium model** — core features are available for free, with a subscription that unlocks full access to all premium AI features.
 
-**Freemium:** Arc provides core features at no cost. A subscription is required to unlock premium AI features, with details, pricing, and billing cycles displayed within the app and on the Google Play Store listing.
+**Freemium:** Arc provides core features at no cost. A subscription is required to unlock premium AI features, with details, pricing, and billing cycles displayed within the app and, for Android, on the Google Play Store listing.
 
-**Subscription:** Subscriptions are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
+**Subscription (Android):** Subscriptions purchased on Android are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
+
+**Subscription (macOS):** Subscriptions purchased on macOS are billed through **Dodo Payments**, which acts as the merchant of record for that transaction. Checkout takes place on Dodo's secure hosted page in your browser; we never receive or store your card details. Your subscription automatically renews at the interval shown at checkout unless cancelled before the end of the current billing period. You can manage or cancel a macOS subscription from Arc's Settings, which opens the Dodo customer portal. As merchant of record, Dodo Payments calculates any applicable tax and issues your invoice or receipt.
+
+**Cross-Platform Entitlement:** Your subscription entitlement is attached to your Arc account, so a subscription bought on one platform unlocks premium features on the other when you sign in with the same account. Billing, renewal, and cancellation are always handled by the processor you originally purchased through — you cannot cancel a Google Play subscription via Dodo, or vice versa. Purchasing separately on both platforms results in two independent subscriptions and two charges.
 
 **Refund Policy:**
 
@@ -96,8 +102,10 @@ Arc operates on a **freemium model** — core features are available for free, w
 * Promo coupons and discount offers are also **non-refundable** — once a promo purchase is made, it cannot be reversed or refunded
 * We do not offer refunds for partial billing periods, unused subscription time, or change of mind
 * If you cancel your subscription, you will continue to have access until the end of your current billing period
-* Refunds for defective purchases or Google Play's refund policies may apply separately under Google Play's terms — contact Google Play support for app-specific refund requests within their eligible window
-* By purchasing a subscription or using a promo coupon, you acknowledge and agree to this no-refund policy
+* For **Android** purchases, Google Play's own refund policies may apply separately under Google Play's terms — contact Google Play support for app-specific refund requests within their eligible window
+* For **macOS** purchases, Dodo Payments is the merchant of record; any refund request permitted under its policies must be directed to Dodo Payments, and billing disputes are handled by Dodo
+* Nothing in this section limits any **statutory right of withdrawal, cancellation, or refund** you may have under the mandatory consumer-protection laws of your country of residence (including, where applicable, the EU/UK statutory cooling-off period). Where such rights apply, they take precedence over this no-refund policy
+* By purchasing a subscription or using a promo coupon, you acknowledge and agree to this no-refund policy, subject to the statutory rights noted above
 
 **Price Changes:** We may adjust subscription pricing with reasonable advance notice. Existing subscribers will be notified before any price change takes effect.
 
@@ -115,7 +123,9 @@ Arc operates on a **freemium model** — core features are available for free, w
 
 ## 5. Permissions and Data Access
 
-Arc requires specific Android permissions to function. We are transparent about what we request and why:
+Arc requires specific system permissions to function. We are transparent about what we request and why.
+
+**On Android:**
 
 | Permission | Purpose | When Active |
 | :--------- | :------ | :---------- |
@@ -129,6 +139,22 @@ Arc requires specific Android permissions to function. We are transparent about 
 | **Post Notifications** | Show foreground service notifications, backup status updates, unread content reminders, and optional feature announcements | Foreground notification always shown when sidebar is active. Push notifications and unread nudges are optional (Android 13+ can skip during onboarding). |
 | **Read Media Audio (Android 13+)** | Access call recording audio files for AI Call Insights (Manual Upload and Auto Analysis) | For Manual Upload: when you select a file. For Auto Analysis: only when you explicitly set it up and only reads files from folders you grant access to — cannot access files outside those folders. |
 | **Request Ignore Battery Optimizations** | Prevent aggressive OEM battery management from killing the sidebar service | Only requested on devices with aggressive battery policies. Does not access any personal data. |
+
+**On macOS:**
+
+Arc for Mac is a notarized, non-sandboxed application. macOS gates each capability below behind its own system prompt, and you can revoke any of them at any time in **System Settings → Privacy & Security**.
+
+| Permission | Purpose | When Active |
+| :--------- | :------ | :---------- |
+| **Accessibility** | Read the text of the window you are working in, and insert generated text back into an editor or input field | Only when you invoke an action via the Arc hotkey or the Arc menu. **Never** in the background. Arc skips known password managers. |
+| **Screen Recording** | Capture a screenshot of the screen or a selected region for actions that need visual context | Only when you run an action that requires an image. Arc does not record video or capture continuously. |
+| **Calendar** | Create calendar events from details extracted by Smart Extract | Only when you tap the calendar action on an extracted item. Arc does not read your existing calendar. |
+| **Reminders** | Create reminders from tasks extracted by Smart Extract | Only when you tap the reminder action on an extracted item. Arc does not read your existing reminders. |
+| **Apple Events / Automation** | Paste text into an app when direct insertion is unsupported, and read the current page URL from a supported browser | Only during an action you invoked. macOS prompts separately for each target app. |
+| **Network Access** | Communicate with AI services and our backend, and check for app updates | When using AI features, and for periodic update checks |
+| **Launch at Login** *(optional)* | Start Arc at login so the global hotkey is available immediately | Only if you enable it. Accesses no personal data. |
+
+If you deny or revoke Accessibility or Screen Recording, the features depending on them stop working; the rest of the app continues to function.
 
 **Important:** We never monitor your screen in the background. Text extraction and screenshot capture occur **only** when you explicitly tap an action button in the sidebar. You maintain complete control.
 

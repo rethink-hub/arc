@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Privacy Policy - Arc AI: Android AI Assistant"
-description: "Arc AI privacy policy for our Android AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
-keywords: "Arc AI privacy, Android AI app privacy, AI assistant privacy policy"
+title: "Privacy Policy - Arc AI: Android & macOS AI Assistant"
+description: "Arc AI privacy policy for our Android and macOS AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
+keywords: "Arc AI privacy, Android AI app privacy, Mac AI app privacy, AI assistant privacy policy"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow
 redirect_from:
@@ -16,7 +16,7 @@ redirect_from:
 <div class="privacy-header">
   <h1>Privacy Policy for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 7, 2025</p>
-  <p><strong>Last Updated:</strong> February 9, 2026</p>
+  <p><strong>Last Updated:</strong> September 6, 2026</p>
 </div>
 
 ---
@@ -25,13 +25,15 @@ redirect_from:
 
 Welcome to Arc: AI Screen Assistant. This policy explains how we handle your data with transparency and care. Our goal is to provide powerful features while respecting your privacy at every step.
 
+**Which apps this policy covers.** This policy applies to Arc on **Android** and Arc for **macOS**. The two apps share the same backend, the same AI processing, and the same core privacy promise, but they run on different platforms and therefore use different system permissions, a different payment processor, and a different update mechanism. Wherever behaviour differs, the platform is named explicitly. Sections that mention Google Play, Android permissions, or Firebase Cloud Messaging apply to the **Android app only**; see [macOS Permissions Explained](#macos-permissions-explained) and [Subscription & Billing Information](#subscription--billing-information) for the macOS equivalents.
+
 ## Our Core Privacy Promise
 
 Arc is built to be private by design. Our fundamental promise to you is:
 
 * **You Are in Control:** The app only accesses screen content when you explicitly tap an action in the floating sidebar. It never monitors your screen in the background.
 * **Content is Processed, Never Stored on Servers:** When we process your on-screen text for summaries, it is handled ephemerally and is **never stored, saved, or logged on our servers.**
-* **Your Data Stays Yours:** Any content you explicitly save is stored **securely on your local device only.** Protected by Android's app sandbox, this data is accessible only to Arc and cannot be seen or accessed by us or other apps.
+* **Your Data Stays Yours:** Any content you explicitly save is stored **securely on your local device only.** On Android this is protected by the app sandbox; on macOS it is stored in Arc's own Application Support container under your user account. In both cases the data is accessible only to Arc and cannot be seen or accessed by us.
 
 ---
 
@@ -247,18 +249,32 @@ Arc is fully functional without an account. However, to enable optional features
 
 ## Subscription & Billing Information
 
-Arc operates on a **freemium** model with optional subscription. Subscription billing is handled entirely through **Google Play Billing**.
+Arc operates on a **freemium** model with optional subscription. The payment processor depends on the platform you use.
+
+**On Android**, subscription billing is handled entirely through **Google Play Billing**.
 
 * **What We Collect:** We do not collect or store your payment card information. Billing, payment processing, and subscription management are all handled by Google Play.
 * **Subscription Status:** We may receive notification from Google Play about your subscription status (active, cancelled, expired) to manage your access to premium features.
 * **No Payment Data:** All financial information is processed by Google Play and is subject to [Google's Privacy Policy](https://policies.google.com/privacy). We never see or store your credit card details, bank accounts, or other payment instruments.
 * **Promo Coupons:** If you use a promotional coupon or discount code, the transaction is processed through Google Play. We do not store any coupon-related payment information.
 
+**On macOS**, Arc is distributed directly from our website rather than the Mac App Store, so subscription billing is handled by **[Dodo Payments](https://dodopayments.com/)**, our merchant of record.
+
+* **How Checkout Works:** When you start a purchase, Arc opens Dodo's secure hosted checkout page in your default web browser. You enter your payment details on Dodo's page — **never inside the Arc app**. Arc receives only the resulting subscription identifier and status.
+* **What We Collect:** We do not collect, see, or store your card number, CVC, bank account, or billing address. Those are handled entirely by Dodo Payments as merchant of record and are subject to the [Dodo Payments Privacy Policy](https://dodopayments.com/privacy-policy).
+* **Subscription Status:** Our backend receives webhook notifications from Dodo about your subscription lifecycle (created, active, cancelled, expired, payment failed) so we can manage your access to premium features. We store the subscription ID, plan, status, and expiry date against your account — not payment instrument data.
+* **Taxes & Invoices:** As merchant of record, Dodo Payments calculates applicable sales tax/VAT/GST and issues your invoice or receipt. Any billing correspondence you receive comes from Dodo.
+* **Managing Your Subscription:** You can manage or cancel a macOS subscription from Settings inside Arc, which opens the Dodo customer portal in your browser.
+
+Your subscription entitlement is tied to your Arc account, so a subscription purchased on one platform is recognised when you sign in on the other. Billing itself, however, is always managed by the processor you originally purchased through.
+
 ---
 
 ## Analytics & Crash Reporting
 
-To improve Arc and fix issues, we use the following services:
+To improve Arc and fix issues, we use the following services.
+
+**On Android:**
 
 * **Google Analytics for Firebase:** We collect **anonymous usage data** to understand how features are used and improve the app. This includes:
   - Which features you use (e.g., AI Summary, AI Read, Save Content)
@@ -275,11 +291,23 @@ To improve Arc and fix issues, we use the following services:
   
   **What we DON'T collect:** Your screen content or personal data. Crash reports contain only technical diagnostic information.
 
-Both services collect data anonymously and do not identify you personally. You can review Google's data practices at [Google Privacy Policy](https://policies.google.com/privacy).
+**On macOS:**
+
+* **Google Analytics 4 (Measurement Protocol):** The macOS app cannot embed the Firebase SDK, so it reports the same kind of **anonymous usage events** directly to Google Analytics over HTTPS. This includes which features you use, navigation patterns, and app performance metrics — the same categories listed above for Android.
+
+  Events are tagged with a **randomly generated per-installation identifier** (not your name, device serial, or advertising ID) and, if you are signed in, your Arc account ID so that usage can be reconciled across your devices. Events are queued locally and may be sent when the app next has network access.
+
+  **What we DON'T collect:** Your screen content, the text you process, your AI prompts, or the results Arc generates. Analytics events carry feature names and counts only — never the content itself.
+
+* **Crash Reporting:** The macOS app does **not** include a third-party crash reporting SDK. If Arc for Mac crashes, macOS may offer to send a diagnostic report to Apple under your system's standard Analytics & Improvements settings, which you control in **System Settings → Privacy & Security → Analytics & Improvements**. We do not receive those reports unless you separately choose to send them to us.
+
+These services collect data anonymously and do not identify you personally. You can review Google's data practices at [Google Privacy Policy](https://policies.google.com/privacy).
 
 ---
 
 ## Push Notifications
+
+**This section applies to the Android app only.** Arc for macOS does not use Firebase Cloud Messaging and sends no push notifications.
 
 Arc uses Firebase Cloud Messaging (FCM) to send optional push notifications about new features and app updates.
 
@@ -337,11 +365,17 @@ We use reputable third-party services and only share the minimum data necessary:
 
 * **Google Play In-App Review:** We use Google's In-App Review API to occasionally prompt for app reviews. This is handled entirely by Google Play and we do not collect any data about your review.
 
-* **Google Analytics for Firebase:** Anonymous usage analytics to improve the app experience. ([Firebase Privacy](https://firebase.google.com/support/privacy))
+* **Google Analytics for Firebase** *(Android)*: Anonymous usage analytics to improve the app experience. ([Firebase Privacy](https://firebase.google.com/support/privacy))
 
-* **Firebase Crashlytics:** Anonymous crash reporting to identify and fix bugs. ([Firebase Privacy](https://firebase.google.com/support/privacy))
+* **Firebase Crashlytics** *(Android)*: Anonymous crash reporting to identify and fix bugs. ([Firebase Privacy](https://firebase.google.com/support/privacy))
 
-* **Firebase Cloud Messaging (FCM):** Push notification delivery for feature announcements and updates. Only anonymous device tokens are used for delivery. ([Firebase Privacy](https://firebase.google.com/support/privacy))
+* **Firebase Cloud Messaging (FCM)** *(Android)*: Push notification delivery for feature announcements and updates. Only anonymous device tokens are used for delivery. ([Firebase Privacy](https://firebase.google.com/support/privacy))
+
+* **Google Analytics 4 Measurement Protocol** *(macOS)*: Anonymous usage analytics sent directly over HTTPS, as described above. ([Google Privacy Policy](https://policies.google.com/privacy))
+
+* **Dodo Payments** *(macOS)*: Merchant of record for macOS subscriptions. Handles checkout, card processing, tax calculation, invoicing, and the subscription customer portal. We never receive your payment instrument details. ([Dodo Payments Privacy Policy](https://dodopayments.com/privacy-policy))
+
+* **Sparkle Updater** *(macOS)*: Arc for Mac checks for new versions by fetching an update feed from `arcassistant.app`. This request is made to our own servers and carries only what an ordinary web request carries (such as your IP address and the app version being checked). No account information is attached, and updates are cryptographically signed so a tampered download is rejected. Arc asks for your permission before enabling automatic update checks, and you can also check for updates manually from Arc's settings.
 
 **We will never sell your personal information.**
 
@@ -442,9 +476,9 @@ To delete backups stored in Google Drive:
 
 ---
 
-## Permissions Explained
+## Android Permissions Explained
 
-Arc requests certain permissions to provide its features. Here's why we need them:
+Arc for Android requests certain permissions to provide its features. Here's why we need them:
 
 | Permission                  | Purpose                                                                                                 |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------ |
@@ -458,6 +492,26 @@ Arc requests certain permissions to provide its features. Here's why we need the
 | **Query All Packages** | To display a list of installed apps in App Management settings, allowing you to enable/disable Arc for specific apps. This data never leaves your device. |
 | **Read Media Audio (Android 13+)** | To access call recording audio files for AI Call Insights (Manual Upload and Auto Analysis). For Auto Analysis, only reads files from folders you explicitly grant access to via Android's document picker — cannot access files outside those folders. Audio content is processed for transcription and insights via AI and never stored on our servers. On Android 12 and below, Read External Storage is used instead. |
 | **Request Ignore Battery Optimizations** | To request that Android exempts Arc from aggressive battery optimization, preventing the floating sidebar service from being killed on devices with aggressive OEM battery management. This permission is only shown on devices where it is needed and does not access any personal data. |
+
+---
+
+<h2 id="macos-permissions-explained">macOS Permissions Explained</h2>
+
+Arc for macOS is a notarized app distributed directly from our website. It is **not sandboxed**, because the macOS Accessibility APIs it depends on are unavailable to sandboxed apps — this is also why Arc for Mac is not distributed through the Mac App Store. macOS still gates every sensitive capability behind a system permission prompt that only you can grant, and you can revoke any of them at any time in **System Settings → Privacy & Security**.
+
+| macOS Permission | Why Arc Needs It | When It Is Used |
+| :--------------- | :--------------- | :-------------- |
+| **Accessibility** | To read the text of the window you are currently working in, and to insert text back into an editor or input field when you use AI Writer. This is the core capability that lets Arc work on whatever is already on your screen instead of making you copy and paste. | **Only when you invoke an action** — pressing the Arc hotkey or choosing an action from the Arc menu. Arc does **not** read your screen in the background, does not log keystrokes, and does not monitor apps you are not acting on. Arc additionally skips known password managers. |
+| **Screen Recording** | To capture a screenshot of the current screen or a region you select, for actions that need visual context (for example a custom action with screenshots enabled, or Save Content). macOS classifies any screen capture under this permission name. | **Only when you run an action that requires an image.** Screenshots are sent for AI processing and are **not stored on our servers**. Arc does not record video and does not capture your screen continuously. |
+| **Calendar** | To create calendar events from details Arc extracts with Smart Extract (for example a meeting or a deadline). | **Only when you tap the "Add to Calendar" action** on an extracted item. Arc writes the event you approve; it does not read, upload, or scan your existing calendar. |
+| **Reminders** | To create reminders from tasks and follow-ups Arc extracts with Smart Extract. | **Only when you tap the "Add Reminder" action** on an extracted item. Arc does not read or upload your existing reminders. |
+| **Apple Events / Automation** | To paste generated text into the app you are working in when direct insertion is not supported, and to ask a supported browser for the URL of the page you are acting on (so summaries can cite their source). | **Only during an action you invoked.** macOS prompts you separately for each app Arc needs to talk to. |
+| **Network Access** | To communicate with our backend and the AI services that generate your results, and to check for app updates. | Whenever you run an action that needs AI processing, and for periodic update checks. |
+| **Launch at Login** *(optional)* | To start Arc automatically when you log in, so the global hotkey is available without opening the app first. | Only if you enable it during onboarding or in Settings. Accesses no personal data. |
+
+**What Arc for Mac never does:** it does not run a keylogger, does not read your screen when you have not invoked an action, does not take screenshots without an explicit action, does not upload files from your Mac, and does not transmit the contents of your Keychain, Photos, Contacts, or Messages.
+
+If you deny or later revoke Accessibility or Screen Recording, the features that depend on them stop working, but the rest of the app continues to function. Revoking permission in System Settings takes effect immediately.
 
 ---
 
@@ -481,7 +535,7 @@ If you have any questions about this policy, please contact us at: **everythingr
 ---
 
 <div class="footer-section">
-  <p><em>This privacy policy is effective as of December 7, 2025. Last updated February 9, 2026.</em></p>
+  <p><em>This privacy policy is effective as of December 7, 2025. Last updated September 6, 2026.</em></p>
   <div class="footer-links" style="margin-top: 30px;">
     <a href="{{ '/' | relative_url }}">← Back to Home</a>
     <a href="/terms/">📋 Terms of Service</a>

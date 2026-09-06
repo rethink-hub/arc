@@ -40,6 +40,14 @@ social:
 # Additional SEO metadata
 keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI Android, AI reading assistant, Android accessibility AI, AI automation, AI fact checker, AI actions"
 
+# Arc for macOS release metadata — bump `version` when cutting a Mac release and
+# upload the matching dist/Arc-<version>.dmg to /downloads/. The macos.md download
+# button and the Sparkle appcast must both point at the same file.
+mac_app:
+  version: "1.0.0"
+  min_macos: "14.0"
+  dmg: "/downloads/Arc-1.0.0.dmg"
+
 # App-specific metadata
 app:
   name: "Arc: AI Screen Assistant"

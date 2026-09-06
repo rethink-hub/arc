@@ -9,7 +9,7 @@
             <sparkle:version>10000</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/rethink-hub/arc/releases/download/mac-v1.0.0/Arc-1.0.0.dmg" length="5728110" type="application/octet-stream" sparkle:edSignature="eqdDe1y7Vz4sNyAJLbudfU1W/ysYhiElAsk82V1baKzPWjf7y5f0JRcQ2Ru8HY5X40vgpCJb247oveGQ/OpzCg=="/>
+            <enclosure url="https://arcassistant.app/downloads/Arc-1.0.0.dmg" length="5746612" type="application/octet-stream" sparkle:edSignature="e5CELG/lCK2ZJVUGLm/lnVsi76johY2M9NGD8Lq6VH0ocgUvE5f1RUS4e0fGNNAfTH3P0wu1olWwOZBJ3kYmBQ=="/>
         </item>
     </channel>
 </rss>

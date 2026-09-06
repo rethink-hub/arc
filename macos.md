@@ -1,33 +1,70 @@
 ---
 layout: default
-title: "Arc for Mac — AI Screen Assistant | Coming Soon"
-description: "Arc for macOS is coming soon. Get AI summaries, text-to-speech, AI chat, and custom workflow automation right on your Mac screen."
-keywords: "Arc for Mac, macOS AI assistant, AI screen assistant Mac, Mac AI summary app, Mac text to speech AI, Mac workflow automation"
+title: "Arc for Mac — AI Screen Assistant | Free Download for macOS"
+description: "Download Arc for macOS free. AI summaries, text-to-speech, AI chat, AI writer, and custom workflow automation for any window on your Mac. Requires macOS 14 or later."
+keywords: "Arc for Mac, macOS AI assistant, AI screen assistant Mac, Mac AI summary app, Mac text to speech AI, Mac workflow automation, download AI assistant Mac"
 platform: macos
 og_image: /assets/images/og-macos.png
+product_page: true
 redirect_from:
   - /macos
 ---
 
 <!-- Hero -->
-<div class="coming-soon-hero">
-  <div class="coming-soon-badge">Coming Soon</div>
+<div class="coming-soon-hero android-hero">
+  <div class="coming-soon-badge status-live">Now available for macOS</div>
   <div class="coming-soon-icon icon-macos" aria-hidden="true">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.27 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.94 1.21-1.96 1.07-3.11-1.11.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
   </div>
   <h1>Arc for Mac</h1>
   <p class="hero-subtitle">Your AI screen assistant, built for macOS. Summarize, read aloud, chat, and automate any window with a single shortcut.</p>
-  <form class="notify-form" action="mailto:everythingrethink@gmail.com?subject=Notify%20me%20when%20Arc%20for%20Mac%20is%20ready" method="post" enctype="text/plain">
-    <input type="email" name="email" placeholder="Enter your email" aria-label="Email for Arc for Mac updates" required>
-    <button type="submit" class="cta-button">Notify Me</button>
-  </form>
+</div>
+
+<div class="android-hero-download">
+  <a href="{{ site.mac_app.dmg | relative_url }}" class="cta-button" download>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.27 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.94 1.21-1.96 1.07-3.11-1.11.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
+    Download for Mac
+  </a>
+  <p style="margin-top: 16px; color: var(--text-2); font-size: 0.95em;">
+    Version {{ site.mac_app.version }} · Universal (Apple Silicon &amp; Intel) · Requires macOS {{ site.mac_app.min_macos }} or later<br>
+    Free to use — 7 requests per week, no account required.
+  </p>
 </div>
 
 ---
 
-<!-- Feature teaser -->
+<!-- Install steps -->
 <div class="section-header">
-  <span class="section-tag">What to expect</span>
+  <span class="section-tag">Getting started</span>
+  <h2>Up and running in a minute.</h2>
+  <p>Arc is a notarized Mac app you install by dragging it to Applications.</p>
+</div>
+
+<div class="steps-container">
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-title">Download &amp; Install</div>
+    <p class="step-description">Open the downloaded <code>.dmg</code> and drag <strong>Arc</strong> into your Applications folder, then launch it.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-title">Grant Accessibility</div>
+    <p class="step-description">Arc asks for Accessibility permission so it can read the window you're working in. Screen Recording is only needed for screenshot-based actions.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-title">Press ⌃ Space</div>
+    <p class="step-description">Hit Control + Space anywhere in macOS to open the Arc menu and run any action on whatever is on screen. You can change the shortcut in Settings.</p>
+  </div>
+</div>
+
+---
+
+<!-- Features -->
+<div class="section-header">
+  <span class="section-tag">Features</span>
   <h2>Powerful AI, right on your Mac.</h2>
   <p>Arc on macOS brings the same privacy-first screen assistant to your desktop.</p>
 </div>
@@ -83,6 +120,13 @@ redirect_from:
       <h3>500+ Community Actions</h3>
       <p>Browse and install ready-made AI actions shared by the Arc community for work, study, and productivity.</p>
     </div>
+    <div class="feature-card">
+      <div class="feature-icon icon-summary" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/><path d="M12 7v5l3 3"/></svg>
+      </div>
+      <h3>Syncs with Android</h3>
+      <p>Sign in and your saved summaries, custom actions, and subscription carry across from Arc on Android.</p>
+    </div>
   </div>
 </div>
 
@@ -90,8 +134,8 @@ redirect_from:
 
 <!-- Cross platform CTA -->
 <div class="coming-soon-section">
-  <h2>Already available on Android</h2>
-  <p>Can’t wait? Try Arc on Android today and be the first to know when the Mac app launches.</p>
+  <h2>Also available on Android</h2>
+  <p>Use Arc on your phone too — one account, the same saved content and subscription on both.</p>
   <div class="platform-links">
     <a href="{{ '/android/' | relative_url }}">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
@@ -106,15 +150,15 @@ redirect_from:
 
 ## About Arc for Mac
 
-Arc for Mac will bring the same AI screen assistant experience that Android users love to macOS. Whether you're reading a long article in Safari, reviewing a PDF in Preview, or composing an email in Mail, Arc's floating sidebar will help you summarize, listen, write, and automate — without switching apps.
+Arc for Mac brings the same AI screen assistant experience that Android users love to macOS. Whether you're reading a long article in Safari, reviewing a PDF in Preview, or composing an email in Mail, Arc helps you summarize, listen, write, and automate — without switching apps.
 
 ### What makes Arc different on macOS
 
-On desktop, most AI tools require you to copy-paste text into a separate window or switch to a browser tab. Arc works directly on what's already visible on your screen. On macOS, this means integrating with the system's accessibility APIs to read on-screen content and provide AI-powered assistance in any application.
+On desktop, most AI tools require you to copy-paste text into a separate window or switch to a browser tab. Arc works directly on what's already visible on your screen. On macOS it uses the system's accessibility APIs to read on-screen content and provide AI-powered assistance in any application — only ever when you invoke an action yourself.
 
-Arc for Mac will support global hotkeys, menu bar integration, and a floating panel that sits at the edge of your screen — always available, never in the way. Whether you're a student, researcher, developer, or professional, Arc will fit into your existing Mac workflow without disrupting it.
+Arc for Mac supports global hotkeys, a menu bar item, and a Spotlight-style floating panel that appears over whatever you're working on — always available, never in the way. Whether you're a student, researcher, developer, or professional, Arc fits into your existing Mac workflow without disrupting it.
 
-### Planned features for macOS
+### Features on macOS
 
 - **AI Summary**: Instantly summarize Safari pages, PDFs, emails, or any app window without context switching
 - **AI Text Reader**: Listen to articles, documents, or messages with Mac's natural text-to-speech voices
@@ -123,11 +167,21 @@ Arc for Mac will support global hotkeys, menu bar integration, and a floating pa
 - **Custom AI Actions**: Build one-tap AI actions and assign them to global hotkeys for repeated workflows
 - **Community Actions**: Browse and install 500+ AI actions shared by the Arc community
 - **Smart Extract**: Pull out key points, dates, contacts, and action items from any screen or document
+- **Google Drive Backup**: Optionally back up your saved content and restore it on another Mac or on Android
+- **10 Languages**: English, Spanish, German, Portuguese (Brazil & Portugal), French, Korean, Indonesian, Japanese, and Arabic
 
-### When will Arc for Mac be available?
+### System requirements
 
-Arc for Mac is in early development. macOS offers powerful accessibility APIs that make on-screen AI assistance straightforward, but we're taking the time to design an experience that feels native to Mac — with keyboard-first interactions, menu bar support, and the same privacy-first approach that Android users trust. Join the waitlist above and we'll notify you when the beta launches.
+Arc for Mac requires **macOS {{ site.mac_app.min_macos }} (Sonoma) or later** and runs natively on both Apple Silicon and Intel Macs as a universal binary. The app is code-signed with an Apple Developer ID and notarized by Apple, so it installs without security warnings.
 
-### Will Arc for Mac be free?
+### Why isn't Arc on the Mac App Store?
 
-Yes. Arc will follow the same freemium model as the Android app — 7 free requests per week on basic features, with a premium subscription for unlimited access. The same pricing, no platform-specific upsells.
+Arc reads on-screen content through macOS accessibility APIs, which Apple's App Sandbox prohibits. Since sandboxing is mandatory for Mac App Store apps, Arc is distributed directly from this site instead — notarized by Apple and updated automatically through a signed update feed, so you still get the same security guarantees.
+
+### Is Arc for Mac free?
+
+Yes. Arc follows the same freemium model as the Android app — 7 free requests per week on basic features, with a premium subscription for unlimited access. Your subscription works across both platforms with the same account.
+
+### Privacy on macOS
+
+Arc only reads your screen when you invoke an action — never in the background, and never as a keylogger. Screenshots are taken only for actions that need them, and processed content is never stored on our servers. Password managers are skipped automatically. See the [Privacy Policy]({{ '/privacy/' | relative_url }}#macos-permissions-explained) for the full list of macOS permissions and exactly when each is used.
