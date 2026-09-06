@@ -459,7 +459,7 @@
   /* ---------- try-it overlay ---------- */
   .tryit {
     position: absolute;
-    left: 50%; bottom: 14px; transform: translateX(-50%);
+    left: 50%; top: -17px; transform: translateX(-50%);
     z-index: 50;
     display: flex; align-items: center; gap: 8px;
     padding: 11px 18px;
@@ -716,10 +716,10 @@
       target: "#rowSummary", pad: 3 },
     { tag: "AI Summary",
       text: "Arc read the page through the macOS accessibility APIs and summarized it in place.",
-      target: "#resBody", pad: 10 },
+      target: "#resBody", pad: 10, zoom: 1.35 },
     { tag: "Do something with it",
       text: "Listen, copy, save to your Library, or share " + DASH + " then Esc and you\u2019re back to work.",
-      target: "#resBar", pad: 4 },
+      target: "#resBar", pad: 4, zoom: 1.5 },
     { tag: "500+ actions",
       text: "Just like AI Summary, 500+ actions are ready to run " + DASH + " AI Writer, Save Content, Smart Extract, and community actions for work and study.",
       target: "#rows", pad: 4 },
@@ -728,15 +728,15 @@
       target: "#customRow", pad: 3 },
     { tag: "Shortcuts",
       text: "Give any action a global hotkey. Here AI Writer\u2019s Rephrase was just recorded as " + CTRL + "G.",
-      target: "#rowWriter .arc-kbd", pad: 7 },
+      target: "#rowWriter .arc-kbd", pad: 7, zoom: 1.6 },
     { tag: CTRL + "G in any app",
       text: "A rough message in a chat app. Press " + CTRL + " G " + DASH + " real keys work " + DASH + " and Arc rewrites it in place.",
-      target: "#chatField", pad: 6 }
+      target: "#chatField", pad: 6, zoom: 1.45 }
   ];
   var DONE = {
     tag: "Rewritten in place",
     text: "No copy-paste, no app switch " + DASH + " the text was replaced right in the field. That\u2019s Arc.",
-    target: "#chatField", pad: 6,
+    target: "#chatField", pad: 6, zoom: 1.45,
     cta: { label: "Download for Mac \u2192", href: (document.getElementById("arc-demo").getAttribute("data-dmg") || "https://arcassistant.app/macos/") }
   };
 
@@ -873,7 +873,7 @@
     // so the coach goes above/below the spot to stay inside the framed area.
     var cw = 272, ch = coach.offsetHeight || 110, gap = 18, M = 14;
     var vw = window.innerWidth;
-    var zBase = vw < 480 ? 2.2 : (vw < 700 ? 1.8 : 1);
+    var zBase = vw < 480 ? 2.2 : (vw < 700 ? 1.8 : (def.zoom || 1));
     var x, y, arrow;
     if (zBase === 1 && s.x + s.w + gap + cw <= 1120 - M) {
       x = s.x + s.w + gap; arrow = "left";

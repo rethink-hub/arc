@@ -584,6 +584,15 @@ em { font-style: italic; }
   grid-template-columns: 0.55fr 1.45fr;
   max-width: 1380px;
 }
+.macos-hero-row h1 {
+  font-size: clamp(2.2rem, 3.4vw, 3.3rem);
+  letter-spacing: -0.035em;
+}
+.macos-hero-row .hero-subtitle {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  max-width: 40ch;
+}
+.macos-hero-row .cta-button { padding: 13px 28px; font-size: 0.95rem; }
 .hero-demo-col--arc {
   display: block;
   justify-content: initial;
