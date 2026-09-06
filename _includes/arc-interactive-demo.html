@@ -1,0 +1,1078 @@
+<!-- Arc for Mac interactive demo. Generated from the arc-mac design tokens
+     (ArcTheme.swift); the panel, rows, HUD and shortcut badge mirror the app. -->
+<div id="arc-demo" data-dmg="{{ site.mac_app.dmg | relative_url }}">
+<style>
+/* Arc interactive demo (self-contained; scoped to #arc-demo) */
+#arc-demo {
+  --page-ink:   var(--text, #1b1b21);
+  --page-ink-2: var(--text-2, #5b5b68);
+  --page-line:  rgba(20,20,30,0.14);
+  --arc-vivid:  #3B82F6;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex; flex-direction: column; gap: 16px;
+}
+#arc-demo * { box-sizing: border-box; }
+#arc-demo p, #arc-demo h2, #arc-demo h3 { margin: 0; }
+#arc-demo .article p { margin: 0 0 11px; }
+#arc-demo a { transition: none; }
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  /* ---------- stage & camera ---------- */
+  #stage { position: relative; width: 100%; overflow: hidden; border-radius: 22px; }
+  #scene {
+    position: absolute; top: 0; left: 0;
+    width: 1120px; height: 700px;
+    transform-origin: 0 0;
+  }
+  .laptop {
+    position: absolute; inset: 0;
+    border-radius: 22px; padding: 11px;
+    background: linear-gradient(160deg, #55555f, #2b2b32 40%, #3c3c45);
+    box-shadow: 0 30px 64px rgba(0,0,0,0.32), 0 3px 10px rgba(0,0,0,0.2);
+  }
+  .screen {
+    position: relative; width: 100%; height: 100%;
+    border-radius: 13px; overflow: hidden;
+    background: #0d1220;
+  }
+  #cam {
+    position: absolute; inset: 0;
+    transform-origin: 0 0;
+    transition: transform .55s cubic-bezier(.3,.8,.3,1);
+  }
+  .notch {
+    position: absolute; top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 128px; height: 17px;
+    background: #17171c;
+    border-radius: 0 0 9px 9px;
+    z-index: 40;
+  }
+
+  /* ---------- wallpaper ---------- */
+  .wall { position: absolute; inset: 0; }
+  .wall::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 80% at 76% 8%,  rgba(255,196,140,0.50), transparent 56%),
+      radial-gradient(90%  70% at 22% 22%, rgba(122,110,220,0.40), transparent 60%),
+      linear-gradient(178deg, #2b2350 0%, #4a3563 34%, #8a5570 58%, #c98a63 78%, #e7b184 100%);
+  }
+  .wall::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 34%;
+    background: linear-gradient(180deg, rgba(24,18,42,0) 0%, rgba(22,16,38,0.72) 62%, rgba(18,13,32,0.9) 100%);
+  }
+  .ridge {
+    position: absolute; left: -4%; right: -4%; bottom: 18%;
+    height: 190px; background: #1d1733; opacity: 0.85;
+    clip-path: polygon(0 100%,0 56%,10% 40%,20% 52%,31% 27%,43% 47%,54% 33%,66% 51%,78% 30%,89% 46%,100% 34%,100% 100%);
+  }
+
+  /* ---------- menu bar ---------- */
+  .menubar {
+    position: absolute; top: 0; left: 0; right: 0; height: 26px;
+    display: flex; align-items: center; gap: 17px;
+    padding: 0 14px;
+    background: rgba(18,16,28,0.42);
+    backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px);
+    color: rgba(255,255,255,0.94);
+    font-size: 12.5px; z-index: 30;
+  }
+  .menubar .app { font-weight: 700; }
+  .menubar .spacer { margin-left: auto; }
+  .menubar .right { display: flex; align-items: center; gap: 13px; font-size: 12px; }
+  .menubar svg { display: block; }
+
+  /* ---------- light app windows (article / chat) ---------- */
+  .win {
+    position: absolute;
+    left: 92px; top: 74px;
+    width: 706px; height: 540px;
+    background: #fbfbfd;
+    border-radius: 11px; overflow: hidden;
+    box-shadow: 0 26px 54px rgba(0,0,0,0.42), 0 0 0 0.5px rgba(0,0,0,0.3);
+    transition: filter .45s ease, opacity .35s ease;
+  }
+  .scene-dim .win { filter: brightness(0.62) saturate(0.85); }
+  .win.gone { opacity: 0; pointer-events: none; }
+
+  .win-bar {
+    height: 38px;
+    display: flex; align-items: center; gap: 8px;
+    padding: 0 13px;
+    background: #ecedf1;
+    border-bottom: 0.5px solid rgba(0,0,0,0.13);
+  }
+  .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .dot.r { background: #ff5f57; } .dot.y { background: #febc2e; } .dot.g { background: #28c840; }
+  .urlbar {
+    margin-left: 12px; flex: 1; height: 22px;
+    border-radius: 6px; background: #fff;
+    border: 0.5px solid rgba(0,0,0,0.13);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11.5px; color: #6a6a75;
+  }
+  .win-title { flex: 1; text-align: center; font-size: 12.5px; font-weight: 600; color: #3c3c46; margin-right: 42px; }
+
+  .article { padding: 26px 42px; color: #14141a; }
+  .kicker { font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: #8a8a96; margin-bottom: 9px; }
+  .article h2 {
+    margin: 0 0 7px;
+    font-family: "New York", Georgia, "Times New Roman", serif;
+    font-size: 27px; line-height: 1.16; letter-spacing: -0.015em; font-weight: 700;
+  }
+  .byline { font-size: 12px; color: #8a8a96; margin-bottom: 17px; }
+  .article p { margin: 0 0 11px; font-size: 13.5px; line-height: 1.62; color: #33333d; }
+  .skel { display: flex; flex-direction: column; gap: 8px; margin-top: 15px; }
+  .skel i { display: block; height: 8px; border-radius: 4px; background: #e2e2e9; }
+
+  /* chat app */
+  .chat-body { display: flex; flex-direction: column; height: calc(100% - 38px); background: #fff; }
+  .msgs { flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 22px 26px; }
+  .msg { max-width: 62%; padding: 9px 13px; border-radius: 16px; font-size: 13.5px; line-height: 1.45; }
+  .msg.them { background: #e9e9ec; color: #1a1a20; border-bottom-left-radius: 5px; align-self: flex-start; }
+  .msg.me   { background: #3B82F6; color: #fff; border-bottom-right-radius: 5px; align-self: flex-end; }
+  .msg-time { font-size: 10.5px; color: #9a9aa4; align-self: center; }
+  .chat-inputbar {
+    display: flex; align-items: flex-end; gap: 9px;
+    padding: 11px 14px 13px;
+    border-top: 0.5px solid rgba(0,0,0,0.1);
+    background: #fafafc;
+  }
+  .chat-field {
+    flex: 1; min-height: 38px;
+    border-radius: 19px;
+    border: 1px solid rgba(0,0,0,0.16);
+    background: #fff;
+    padding: 9px 14px;
+    font-size: 13.5px; line-height: 1.4; color: #1a1a20;
+    transition: background .3s ease;
+  }
+  .chat-field.flash { animation: fieldFlash 0.9s ease; }
+  @keyframes fieldFlash {
+    0% { background: #fff; }
+    30% { background: rgba(59,130,246,0.16); }
+    100% { background: #fff; }
+  }
+  .chat-send {
+    width: 30px; height: 30px; flex: none;
+    border-radius: 50%;
+    background: #3B82F6;
+    display: grid; place-items: center;
+    color: #fff; margin-bottom: 3px;
+  }
+  .chat-send svg { width: 14px; height: 14px; }
+
+  /* ---------- Arc menu panel -- 600x460, ArcTheme.swift ---------- */
+  .arc-panel {
+    position: absolute;
+    left: 170px; top: 128px;
+    width: 600px; height: 460px;
+    border-radius: 28px;
+    background: rgba(36,36,43,0.74);
+    backdrop-filter: blur(44px) saturate(165%);
+    -webkit-backdrop-filter: blur(44px) saturate(165%);
+    box-shadow: 0 30px 78px rgba(0,0,0,0.56), inset 0 0 0 1px rgba(255,255,255,0.11);
+    display: flex; flex-direction: column;
+    z-index: 20; color: #fff;
+    opacity: 0; transform: scale(0.955) translateY(9px);
+    pointer-events: none;
+    transition: opacity .26s cubic-bezier(.2,.8,.3,1), transform .26s cubic-bezier(.2,.8,.3,1);
+    overflow: hidden;
+  }
+  .arc-panel.show { opacity: 1; transform: none; }
+
+  .arc-search {
+    margin: 18px 16px 12px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 11px 14px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.10);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.14);
+    flex: none;
+  }
+  .arc-search .ph { font-size: 15px; color: rgba(255,255,255,0.65); }
+  .arc-sep { height: 0.5px; margin: 0 16px; background: rgba(255,255,255,0.08); flex: none; }
+
+  .arc-list {
+    padding: 10px 0;
+    display: flex; flex-direction: column; gap: 4px;
+    transition: margin-top .4s cubic-bezier(.2,.8,.3,1);
+  }
+  .arc-list.scrolled { margin-top: -118px; }
+  .arc-row {
+    height: 50px; margin: 0 8px; padding: 0 16px;
+    display: flex; align-items: center; gap: 14px;
+    border-radius: 12px; flex: none;
+    transition: background .16s ease, box-shadow .16s ease, opacity .3s ease;
+  }
+  .arc-row.sel {
+    background: rgba(91,153,231,0.18);
+    box-shadow: inset 0 0 0 1px rgba(91,153,231,0.35);
+  }
+  .arc-row.hidden-row { display: none; }
+  .arc-ico {
+    width: 36px; height: 36px; flex: none;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
+    color: #5B99E7;
+  }
+  .arc-row.sel .arc-ico { background: linear-gradient(135deg, rgba(255,255,255,0.22), rgba(255,255,255,0.10)); }
+  .arc-ico svg { width: 17px; height: 17px; }
+  .arc-txt { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .arc-title { font-size: 15px; line-height: 1.15; color: #fff; }
+  .arc-sub   { font-size: 13px; line-height: 1.15; color: rgba(255,255,255,0.40); }
+  .arc-kbd {
+    margin-left: auto; flex: none;
+    font-size: 11px; color: rgba(255,255,255,0.42);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 6px; padding: 2px 7px;
+    transition: all .2s ease;
+  }
+  .arc-kbd.recorded {
+    color: #fff;
+    background: rgba(59,130,246,0.28);
+    border-color: rgba(59,130,246,0.55);
+    font-weight: 600;
+  }
+  .arc-kbd.listening {
+    color: #3B82F6;
+    background: rgba(59,130,246,0.16);
+    border-color: transparent;
+    font-weight: 600;
+    animation: blinkText 1s ease-in-out infinite;
+  }
+  @keyframes blinkText { 50% { opacity: 0.45; } }
+
+  /* ---------- Arc result panel ---------- */
+  .arc-result {
+    position: absolute;
+    left: 170px; top: 128px;
+    width: 600px; height: 460px;
+    border-radius: 28px;
+    background: rgba(36,36,43,0.82);
+    backdrop-filter: blur(44px) saturate(165%);
+    -webkit-backdrop-filter: blur(44px) saturate(165%);
+    box-shadow: 0 30px 78px rgba(0,0,0,0.56), inset 0 0 0 1px rgba(255,255,255,0.11);
+    display: flex; flex-direction: column;
+    z-index: 21; color: #fff;
+    opacity: 0; transform: scale(0.955) translateY(9px);
+    pointer-events: none;
+    transition: opacity .3s cubic-bezier(.2,.8,.3,1), transform .3s cubic-bezier(.2,.8,.3,1);
+  }
+  .arc-result.show { opacity: 1; transform: none; }
+
+  .res-head { display: flex; align-items: center; gap: 10px; padding: 18px 20px 12px; }
+  .res-head .rico { width: 22px; height: 22px; color: #5B99E7; }
+  .res-head h3 { margin: 0; font-size: 15px; font-weight: 600; }
+  .res-head .src { margin-left: auto; font-size: 12px; color: rgba(255,255,255,0.40); }
+
+  .res-body { flex: 1; padding: 4px 20px 0; display: flex; flex-direction: column; gap: 11px; overflow: hidden; }
+  .res-body .bullet { display: flex; gap: 11px; align-items: flex-start; }
+  .res-body .num {
+    flex: none; width: 19px; height: 19px; margin-top: 1px;
+    border-radius: 50%;
+    background: rgba(91,153,231,0.20);
+    color: #5B99E7;
+    font-size: 11px; font-weight: 700;
+    display: grid; place-items: center;
+  }
+  .res-body p { margin: 0; font-size: 13.5px; line-height: 1.55; color: rgba(255,255,255,0.86); }
+
+  .res-bar {
+    margin-top: auto;
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 16px;
+    background: #222229;
+    border-top: 1px solid #333337;
+    border-radius: 0 0 28px 28px;
+  }
+  .chip {
+    display: flex; align-items: center; gap: 7px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.07);
+    font-size: 12.5px; font-weight: 500;
+    color: rgba(255,255,255,0.92);
+  }
+  .chip svg { width: 14px; height: 14px; }
+  .chip.listen svg { color: #F5A623; }
+  .chip.copy   svg { color: #38BDF8; }
+  .chip.save   svg { color: #10B981; }
+  .chip.share  svg { color: #8B5CF6; }
+
+  /* ---------- processing HUD (ActionOverlayView) ---------- */
+  .hud {
+    position: absolute;
+    left: 445px; top: 250px;
+    width: 230px;
+    padding: 30px 34px;
+    border-radius: 20px;
+    background: rgba(90,90,100,0.55);
+    backdrop-filter: blur(26px) saturate(140%);
+    -webkit-backdrop-filter: blur(26px) saturate(140%);
+    box-shadow: 0 12px 34px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.14);
+    display: flex; flex-direction: column; align-items: center; gap: 16px;
+    z-index: 26;
+    opacity: 0; transform: scale(0.92);
+    pointer-events: none;
+    transition: opacity .28s cubic-bezier(.2,.8,.3,1), transform .28s cubic-bezier(.2,.8,.3,1);
+  }
+  .hud.show { opacity: 1; transform: none; }
+  .hud-spinner {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.28);
+    border-top-color: #fff;
+    animation: spin .7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .hud-label { font-size: 15px; font-weight: 600; color: #fff; white-space: nowrap; }
+
+  /* ---------- keycap prompt ---------- */
+  .keycap {
+    position: absolute;
+    left: 330px; top: 470px;
+    display: flex; align-items: center; gap: 9px;
+    padding: 11px 17px;
+    border-radius: 13px;
+    background: rgba(20,18,30,0.72);
+    backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16), 0 12px 30px rgba(0,0,0,0.4);
+    color: #fff; font-size: 14px;
+    z-index: 22; white-space: nowrap;
+    transition: opacity .25s ease, transform .25s ease;
+  }
+  .keycap kbd {
+    font-family: inherit; font-size: 13px; font-weight: 600;
+    background: rgba(255,255,255,0.15);
+    border-radius: 7px; padding: 3px 9px;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
+  }
+  .keycap.gone { opacity: 0; transform: translateY(7px) scale(0.97); pointer-events: none; }
+
+  /* ---------- spotlight & coach ---------- */
+  .spot {
+    position: absolute;
+    border-radius: 13px;
+    box-shadow: 0 0 0 2px #3B82F6, 0 0 0 7px rgba(59,130,246,0.28);
+    z-index: 34;
+    cursor: pointer;
+    transition: left .4s cubic-bezier(.2,.8,.3,1), top .4s cubic-bezier(.2,.8,.3,1),
+                width .4s cubic-bezier(.2,.8,.3,1), height .4s cubic-bezier(.2,.8,.3,1),
+                opacity .3s ease;
+    animation: breathe 2.1s ease-in-out infinite;
+    background: transparent; border: 0; padding: 0;
+  }
+  @keyframes breathe {
+    0%,100% { box-shadow: 0 0 0 2px #3B82F6, 0 0 0 7px rgba(59,130,246,0.28); }
+    50%     { box-shadow: 0 0 0 2px #3B82F6, 0 0 0 12px rgba(59,130,246,0.10); }
+  }
+  .spot:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+  .spot.hide { opacity: 0; pointer-events: none; }
+  .autoplaying .spot { pointer-events: none; cursor: default; }
+
+  .coach {
+    position: absolute;
+    width: 272px;
+    padding: 13px 15px 14px;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #14141a;
+    box-shadow: 0 18px 44px rgba(0,0,0,0.4);
+    z-index: 35;
+    transition: left .4s cubic-bezier(.2,.8,.3,1), top .4s cubic-bezier(.2,.8,.3,1), opacity .3s ease;
+  }
+  .coach.hide { opacity: 0; pointer-events: none; }
+  .coach .tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.02em;
+    color: #3B82F6;
+    background: rgba(59,130,246,0.11);
+    border-radius: 999px; padding: 3px 9px;
+    margin-bottom: 9px;
+  }
+  .coach .line { display: flex; gap: 10px; align-items: flex-start; }
+  .coach .coach-num {
+    flex: none; width: 20px; height: 20px; border-radius: 50%;
+    background: #3B82F6; color: #fff;
+    font-size: 11px; font-weight: 700;
+    display: grid; place-items: center;
+  }
+  .coach p { margin: 0; font-size: 13.5px; line-height: 1.45; }
+  .coach .cta {
+    display: inline-block;
+    margin: 12px 0 0 30px;
+    padding: 7px 14px;
+    border-radius: 8px;
+    background: #111114; color: #fff;
+    font-size: 12.5px; font-weight: 600;
+    text-decoration: none;
+  }
+  .coach .cta:hover { background: #000; }
+  .coach::after {
+    content: ''; position: absolute;
+    width: 13px; height: 13px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  .coach[data-arrow="left"]::after  { left: -6px;  top: 24px; }
+  .coach[data-arrow="right"]::after { right: -6px; top: 24px; }
+  .coach[data-arrow="up"]::after    { top: -6px;   left: 30px; }
+  .coach[data-arrow="down"]::after  { bottom: -6px; left: 30px; }
+  .coach[data-arrow="none"]::after  { display: none; }
+
+  /* ---------- try-it overlay ---------- */
+  .tryit {
+    position: absolute;
+    right: 14px; top: 14px;
+    z-index: 50;
+    display: flex; align-items: center; gap: 8px;
+    padding: 11px 18px;
+    border-radius: 999px;
+    border: 0; cursor: pointer;
+    background: #3B82F6; color: #fff;
+    font-family: inherit; font-size: 13.5px; font-weight: 600;
+    box-shadow: 0 10px 28px rgba(59,130,246,0.45);
+    transition: transform .2s ease, box-shadow .2s ease, opacity .3s ease;
+  }
+  .tryit:hover { transform: translateY(-1px); box-shadow: 0 14px 32px rgba(59,130,246,0.55); }
+  .tryit.hide { opacity: 0; pointer-events: none; }
+  .tryit svg { width: 13px; height: 13px; }
+  .tryit .pulse-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #fff;
+    animation: dotPulse 1.6s ease-in-out infinite;
+  }
+  @keyframes dotPulse { 50% { opacity: 0.35; transform: scale(0.75); } }
+
+  /* ---------- controls under the stage ---------- */
+  .ctrl {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .ctrl button {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    border-radius: 9px;
+    border: 1px solid var(--page-line);
+    background: transparent;
+    color: var(--page-ink);
+    font-family: inherit; font-size: 13px; font-weight: 500;
+    cursor: pointer;
+    transition: background .15s ease;
+  }
+  .ctrl button:hover { background: rgba(120,120,140,0.10); }
+  .ctrl button:disabled { opacity: 0.35; cursor: default; }
+  .ctrl button svg { width: 13px; height: 13px; }
+  .ctrl button:focus-visible { outline: 2px solid var(--arc-vivid); outline-offset: 2px; }
+
+  .rail { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+  .rail button {
+    width: 24px; height: 14px;
+    padding: 0; border: 0;
+    background: transparent;
+    display: grid; place-items: center;
+    cursor: pointer;
+  }
+  .rail button i {
+    display: block; width: 100%; height: 3px; border-radius: 2px;
+    background: var(--page-line);
+    transition: background .3s ease;
+  }
+  .rail button.on i { background: var(--arc-vivid); }
+  .rail .lab { font-size: 12.5px; color: var(--page-ink-2); margin-left: 6px; white-space: nowrap; }
+
+  .kbd-hint { font-size: 12px; color: var(--page-ink-2); }
+  .kbd-hint kbd {
+    font-family: inherit; font-size: 11px;
+    border: 1px solid var(--page-line);
+    border-radius: 5px; padding: 1px 6px;
+    margin: 0 1px;
+  }
+  @media (max-width: 700px) {
+    .kbd-hint { display: none; }
+    .tryit { top: auto; bottom: 12px; right: auto; left: 50%; transform: translateX(-50%); }
+    .tryit:hover { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #arc-demo *, #arc-demo *::before, #arc-demo *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+  }
+</style>
+  
+
+  <div id="stage">
+    <button class="tryit" id="tryit" type="button">
+      <span class="pulse-dot"></span> Try the interactive demo
+    </button>
+    <div id="scene">
+      <div class="laptop">
+        <div class="screen" id="screenEl">
+          <div id="cam">
+            <div class="wall"><div class="ridge"></div></div>
+
+            <div class="menubar">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.27 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.94 1.21-1.96 1.07-3.11-1.11.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
+              <span class="app" id="menubarApp">Safari</span>
+              <span>File</span><span>Edit</span><span>View</span><span>Window</span><span>Help</span>
+              <span class="spacer"></span>
+              <span class="right">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor" stroke="none"/></svg>
+                <svg width="16" height="14" viewBox="0 0 26 14" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="2.6" width="19" height="8.8" rx="2.6"/><rect x="2.9" y="4.5" width="13" height="5" rx="1.3" fill="currentColor" stroke="none"/><path d="M22.4 6v2" stroke-linecap="round"/></svg>
+                <span>Sun 6 Sep&nbsp; 9:41 AM</span>
+              </span>
+            </div>
+
+            <!-- article window -->
+            <div class="win" id="articleWin">
+              <div class="win-bar">
+                <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                <span class="urlbar">inkandatoms.com/local-first</span>
+              </div>
+              <div class="article">
+                <div class="kicker">Engineering</div>
+                <h2>The quiet return of local-first software</h2>
+                <div class="byline">Priya Raghunathan &middot; 11 min read</div>
+                <p>For fifteen years the default answer was the server. Your documents lived somewhere else, your edits were round trips, and an aeroplane was enough to make the tool useless.</p>
+                <p>Local-first inverts that. The device holds the real copy; the network is a synchroniser, not a landlord. Conflict-free replicated data types made the merge tractable, and cheap local storage made the rest obvious.</p>
+                <div class="skel">
+                  <i style="width:97%"></i><i style="width:91%"></i><i style="width:95%"></i>
+                  <i style="width:62%"></i><i style="width:88%"></i><i style="width:79%"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- chat window -->
+            <div class="win gone" id="chatWin">
+              <div class="win-bar">
+                <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                <span class="win-title">Riya &middot; Design</span>
+              </div>
+              <div class="chat-body">
+                <div class="msgs">
+                  <span class="msg-time">Today 9:38 AM</span>
+                  <div class="msg them">Hey! Any update on the quarterly report?</div>
+                  <div class="msg me">Working on it now</div>
+                  <div class="msg them">Nice &mdash; when can I expect it?</div>
+                </div>
+                <div class="chat-inputbar">
+                  <div class="chat-field" id="chatField">hey can u send me teh feedback by tmrw mrng?? need it asap</div>
+                  <span class="chat-send" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- keycap prompt -->
+            <div class="keycap" id="keycap">
+              <kbd>&#8963;</kbd><kbd>Space</kbd><span>summons Arc anywhere in macOS</span>
+            </div>
+
+            <!-- Arc menu -->
+            <div class="arc-panel" id="panel">
+              <div class="arc-search">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+                <span class="ph">Search actions or type a prompt&hellip;</span>
+              </div>
+              <div class="arc-sep"></div>
+              <div class="arc-list" id="rows"></div>
+            </div>
+
+            <!-- Arc result -->
+            <div class="arc-result" id="result">
+              <div class="res-head">
+                <svg class="rico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h13M3 18h9"/></svg>
+                <h3>AI Summary</h3>
+                <span class="src">inkandatoms.com</span>
+              </div>
+              <div class="res-body" id="resBody">
+                <div class="bullet"><span class="num">1</span><p>For fifteen years software defaulted to the server &mdash; documents lived remotely and every edit was a round trip.</p></div>
+                <div class="bullet"><span class="num">2</span><p>Local-first inverts the relationship: the device holds the authoritative copy and the network merely synchronises it.</p></div>
+                <div class="bullet"><span class="num">3</span><p>CRDTs made conflict-free merging practical, while cheap local storage removed the last reason to centralise.</p></div>
+                <div class="bullet"><span class="num">4</span><p>The tradeoff moves to sync infrastructure: teams own the merge semantics they used to rent from a database.</p></div>
+                <div class="bullet"><span class="num">5</span><p>The pattern pays off where offline use is a real requirement, not an aesthetic one.</p></div>
+              </div>
+              <div class="res-bar" id="resBar">
+                <span class="chip listen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a9 9 0 0 1 0 14"/></svg>Listen</span>
+                <span class="chip copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy</span>
+                <span class="chip save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Save</span>
+                <span class="chip share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg>Share</span>
+              </div>
+            </div>
+
+            <!-- processing HUD (mirrors ActionOverlayView) -->
+            <div class="hud" id="hud">
+              <div class="hud-spinner"></div>
+              <div class="hud-label" id="hudLabel">Summarizing&hellip;</div>
+            </div>
+
+            <div class="notch"></div>
+
+            <button class="spot" id="spot" aria-label="Continue the demo"></button>
+            <div class="coach" id="coach" role="status" aria-live="polite">
+              <span class="tag" id="coachTag"></span>
+              <div class="line">
+                <span class="coach-num" id="coachNum">1</span>
+                <p id="coachText"></p>
+              </div>
+            </div>
+          </div><!-- /cam -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ctrl">
+    <button id="btnRestart" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+      Restart
+    </button>
+    <button id="btnPrev" type="button">&lsaquo; Back</button>
+    <button id="btnNext" type="button">Next &rsaquo;</button>
+    <span class="kbd-hint">or use real keys: <kbd>&#8963;</kbd><kbd>Space</kbd> opens the menu, <kbd>Enter</kbd> runs, <kbd>&#8963;</kbd><kbd>G</kbd> rewrites</span>
+    <div class="rail" id="rail"></div>
+  
+</div>
+<script>
+(function () {
+  "use strict";
+
+  var CTRL = "\u2303", OPT = "\u2325", ELL = "\u2026", DASH = "\u2014";
+
+  /* ------------------------------------------------------------------
+     Menu rows \u2014 names, subtitles, icons from SidebarAction + en.json
+     ------------------------------------------------------------------ */
+  var ACTIONS = [
+    { t: "AI Summary",    s: "Summarize the current screen",                 k: OPT + "1", id: "rowSummary",
+      d: "M3 6h18M3 12h13M3 18h9" },
+    { t: "AI Writer",     s: "Rewrite or reply from the focused text field", k: OPT + "2", id: "rowWriter",
+      d: "M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" },
+    { t: "AI Read",       s: "Read the current screen aloud",                k: "", id: "",
+      d: "M11 5 6 9H2v6h4l5 4V5ZM15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14" },
+    { t: "Chat Screen",   s: "Ask questions about the current screen",       k: "", id: "",
+      d: "M8 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v3M10 21h9a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2Z" },
+    { t: "Smart Extract", s: "Extract structured data",                      k: "", id: "",
+      d: "M5 3v4M3 5h4M6 17v4M4 19h4M13 3l2.5 6.5L22 12l-6.5 2.5L13 21l-2.5-6.5L4 12l6.5-2.5Z" },
+    { t: "Save Content",  s: "Save the on-screen text",                      k: "", id: "",
+      d: "M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" },
+    { t: "Meeting Action Items", s: "Custom action",                         k: "", id: "customRow",
+      d: "M12 5v14M5 12h14" }
+  ];
+
+  var rows = document.getElementById("rows");
+  ACTIONS.forEach(function (a) {
+    var r = document.createElement("div");
+    r.className = "arc-row";
+    if (a.id) { r.id = a.id; }
+    r.innerHTML =
+      '<span class="arc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+      'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + a.d + '"/></svg></span>' +
+      '<span class="arc-txt"><span class="arc-title">' + a.t + '</span>' +
+      '<span class="arc-sub">' + a.s + '</span></span>' +
+      '<span class="arc-kbd"' + (a.k ? "" : ' style="visibility:hidden"') + ">" + (a.k || "\u00a0") + "</span>";
+    rows.appendChild(r);
+  });
+  var rowSummary  = document.getElementById("rowSummary");
+  var rowWriter   = document.getElementById("rowWriter");
+  var customRow   = document.getElementById("customRow");
+  var writerBadge = rowWriter.querySelector(".arc-kbd");
+
+  /* ------------------------------------------------------------------
+     Step definitions. Highlight targets are measured from the DOM, so
+     the ring always hugs the element regardless of layout changes.
+     ------------------------------------------------------------------ */
+  var CHAT_ROUGH  = "hey can u send me teh feedback by tmrw mrng?? need it asap";
+  var CHAT_POLISH = "Hi! Could you please send me the feedback by tomorrow morning? I need it fairly urgently.";
+
+  var STEPS = [
+    { tag: CTRL + " Space",
+      text: "You\u2019re reading an article. Press " + CTRL + " Space " + DASH + " on your actual keyboard, or click the highlight.",
+      target: "#keycap", pad: 8 },
+    { tag: "Built-in actions",
+      text: "Every action runs on whatever is on screen. Click AI Summary, or press Enter.",
+      target: "#rowSummary", pad: 3 },
+    { tag: "AI Summary",
+      text: "Arc read the page through the macOS accessibility APIs and summarized it in place.",
+      target: "#resBody", pad: 10 },
+    { tag: "Do something with it",
+      text: "Listen, copy, save to your Library, or share " + DASH + " then Esc and you\u2019re back to work.",
+      target: "#resBar", pad: 4 },
+    { tag: "500+ actions",
+      text: "Just like AI Summary, 500+ actions are ready to run " + DASH + " AI Writer, Save Content, Smart Extract, and community actions for work and study.",
+      target: "#rows", pad: 4 },
+    { tag: "Make your own",
+      text: "And you can create your own " + DASH + " write a prompt once, and it becomes an action you run on any screen.",
+      target: "#customRow", pad: 3 },
+    { tag: "Shortcuts",
+      text: "Give any action a global hotkey. Here AI Writer\u2019s Rephrase was just recorded as " + CTRL + "G.",
+      target: "#rowWriter .arc-kbd", pad: 7 },
+    { tag: CTRL + "G in any app",
+      text: "A rough message in a chat app. Press " + CTRL + " G " + DASH + " real keys work " + DASH + " and Arc rewrites it in place.",
+      target: "#chatField", pad: 6 }
+  ];
+  var DONE = {
+    tag: "Rewritten in place",
+    text: "No copy-paste, no app switch " + DASH + " the text was replaced right in the field. That\u2019s Arc.",
+    target: "#chatField", pad: 6,
+    cta: { label: "Download for Mac \u2192", href: (document.getElementById("arc-demo").getAttribute("data-dmg") || "https://arcassistant.app/macos/") }
+  };
+
+  var scene    = document.getElementById("scene"),
+      stage    = document.getElementById("stage"),
+      cam      = document.getElementById("cam"),
+      screenEl = document.getElementById("screenEl"),
+      panel    = document.getElementById("panel"),
+      result   = document.getElementById("result"),
+      keycap   = document.getElementById("keycap"),
+      hud      = document.getElementById("hud"),
+      hudLabel = document.getElementById("hudLabel"),
+      articleWin = document.getElementById("articleWin"),
+      chatWin  = document.getElementById("chatWin"),
+      chatField= document.getElementById("chatField"),
+      menubarApp = document.getElementById("menubarApp"),
+      spot     = document.getElementById("spot"),
+      coach    = document.getElementById("coach"),
+      cTag     = document.getElementById("coachTag"),
+      cNum     = document.getElementById("coachNum"),
+      cText    = document.getElementById("coachText"),
+      tryit    = document.getElementById("tryit"),
+      rail     = document.getElementById("rail"),
+      btnPrev  = document.getElementById("btnPrev"),
+      btnNext  = document.getElementById("btnNext"),
+      btnRestart = document.getElementById("btnRestart");
+
+  var N = STEPS.length;
+  var step = 0;             // 0-based
+  var rewritten = false;    // step 8 sub-state
+  var busy = false;
+  var autoplay = true;
+  var autoTimer = null;
+
+  /* rail */
+  var railLab;
+  (function buildRail() {
+    for (var n = 0; n < N; n++) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", "Go to step " + (n + 1));
+      b.innerHTML = "<i></i>";
+      (function (idx) {
+        b.addEventListener("click", function () { userTakesOver(); goto_(idx, false); });
+      })(n);
+      rail.appendChild(b);
+    }
+    railLab = document.createElement("span");
+    railLab.className = "lab";
+    rail.appendChild(railLab);
+  })();
+
+  /* ------------------------------------------------------------------
+     Scene state \u2014 fully declarative from (step, rewritten)
+     ------------------------------------------------------------------ */
+  function applyScene() {
+    var menuSteps   = step === 1 || step === 4 || step === 5 || step === 6;
+    var resultSteps = step === 2 || step === 3;
+    var chatSteps   = step === 7;
+
+    keycap.classList.toggle("gone", step !== 0);
+    panel.classList.toggle("show", menuSteps);
+    result.classList.toggle("show", resultSteps);
+    screenEl.classList.toggle("scene-dim", menuSteps || resultSteps);
+
+    articleWin.classList.toggle("gone", chatSteps);
+    chatWin.classList.toggle("gone", !chatSteps);
+    menubarApp.textContent = chatSteps ? "Messages" : "Safari";
+
+    rowSummary.classList.toggle("sel", step === 1);
+    customRow.classList.toggle("hidden-row", step < 4);
+    customRow.classList.toggle("sel", step === 5);
+    rows.classList.toggle("scrolled", step === 5);
+
+    if (step === 6) {
+      writerBadge.textContent = CTRL + "G";
+      writerBadge.className = "arc-kbd recorded";
+      writerBadge.style.visibility = "visible";
+    } else {
+      writerBadge.textContent = OPT + "2";
+      writerBadge.className = "arc-kbd";
+      writerBadge.style.visibility = "visible";
+    }
+
+    chatField.textContent = (step === 7 && rewritten) ? CHAT_POLISH : CHAT_ROUGH;
+  }
+
+  /* ------------------------------------------------------------------
+     Highlight + coach placement, measured from the live DOM
+     ------------------------------------------------------------------ */
+  function rectOf(el, pad) {
+    // offset* is layout geometry: immune to the panel entrance transforms
+    // and to the scene/camera scaling, so the ring lands on the settled spot.
+    var x = 0, y = 0, n = el;
+    while (n && n !== cam) { x += n.offsetLeft; y += n.offsetTop; n = n.offsetParent; }
+    return { x: x - pad, y: y - pad, w: el.offsetWidth + pad * 2, h: el.offsetHeight + pad * 2 };
+  }
+
+  var placeToken = 0;
+  function place() {
+    var token = ++placeToken;
+    window.setTimeout(function () {
+      if (token === placeToken && !busy) { placeNow(); }
+    }, 340);
+    placeNow();
+  }
+
+  function placeNow() {
+    var def = (step === N - 1 && rewritten) ? DONE : STEPS[step];
+    var el = document.querySelector(def.target);
+    if (!el) { return; }
+    var s = rectOf(el, def.pad);
+
+    spot.classList.remove("hide");
+    spot.style.left = s.x + "px";
+    spot.style.top  = s.y + "px";
+    spot.style.width  = s.w + "px";
+    spot.style.height = s.h + "px";
+    spot.style.borderRadius = Math.min(16, s.h / 2) + "px";
+
+    cTag.textContent  = def.tag;
+    cNum.textContent  = String(step + 1);
+    cText.textContent = def.text;
+    var old = coach.querySelector(".cta");
+    if (old) { old.remove(); }
+    if (def.cta) {
+      var a = document.createElement("a");
+      a.className = "cta"; a.href = def.cta.href;
+      a.target = "_blank"; a.rel = "noopener";
+      a.textContent = def.cta.label;
+      coach.appendChild(a);
+    }
+    coach.classList.remove("hide");
+
+    // measure, then choose a side that fits. On phones the camera zooms in,
+    // so the coach goes above/below the spot to stay inside the framed area.
+    var cw = 272, ch = coach.offsetHeight || 110, gap = 18, M = 14;
+    var vw = stage.clientWidth;
+    var zBase = vw < 480 ? 2.2 : (vw < 700 ? 1.8 : 1);
+    var x, y, arrow;
+    if (zBase === 1 && s.x + s.w + gap + cw <= 1120 - M) {
+      x = s.x + s.w + gap; arrow = "left";
+      y = s.y + s.h / 2 - 34;
+    } else if (zBase === 1 && s.x - gap - cw >= M) {
+      x = s.x - gap - cw; arrow = "right";
+      y = s.y + s.h / 2 - 34;
+    } else if (s.y + s.h + gap + ch <= 700 - M) {
+      x = Math.min(Math.max(s.x + s.w / 2 - 44, M), 1120 - M - cw); y = s.y + s.h + gap; arrow = "up";
+    } else {
+      x = Math.min(Math.max(s.x + s.w / 2 - 44, M), 1120 - M - cw); y = s.y - gap - ch; arrow = "down";
+    }
+    y = Math.min(Math.max(y, 34), 700 - ch - M);
+    coach.style.left = x + "px";
+    coach.style.top  = y + "px";
+    coach.setAttribute("data-arrow", arrow);
+
+    paintRail();
+
+    // frame the union of spot + coach
+    var ux = Math.min(s.x, x), uy = Math.min(s.y, y);
+    var uw = Math.max(s.x + s.w, x + cw) - ux;
+    var uh = Math.max(s.y + s.h, y + ch) - uy;
+    zoomCamera({ x: ux, y: uy, w: uw, h: uh }, zBase);
+  }
+
+  function paintRail() {
+    var segs = rail.querySelectorAll("button");
+    for (var n = 0; n < N; n++) { segs[n].classList.toggle("on", n <= step); }
+    railLab.textContent = "Step " + (step + 1) + " of " + N;
+    btnPrev.disabled = step === 0 && !rewritten;
+  }
+
+  /* phone camera: zoom so the spot AND its coach card both stay in frame */
+  function zoomCamera(u, zBase) {
+    if (zBase === 1) { cam.style.transform = "none"; return; }
+    var z = Math.min(zBase, 1050 / u.w, 650 / u.h);
+    z = Math.max(z, 1.1);
+    var cx = u.x + u.w / 2, cy = u.y + u.h / 2;
+    var tx = 560 - z * cx, ty = 350 - z * cy;
+    tx = Math.min(0, Math.max(1120 - z * 1120, tx));
+    ty = Math.min(0, Math.max(700  - z * 700,  ty));
+    cam.style.transform = "translate(" + tx + "px," + ty + "px) scale(" + z + ")";
+  }
+
+  function goto_(n, keepRewritten) {
+    if (busy) { return; }
+    step = Math.max(0, Math.min(N - 1, n));
+    if (!keepRewritten) { rewritten = false; }
+    applyScene();
+    place();
+  }
+
+  /* ------------------------------------------------------------------
+     Forward transitions (with the processing HUD where the app has one)
+     ------------------------------------------------------------------ */
+  function playHUD(label, midway, after) {
+    busy = true;
+    spot.classList.add("hide");
+    coach.classList.add("hide");
+    hudLabel.textContent = label;
+    if (midway) { midway(); }
+    hud.classList.add("show");
+    window.setTimeout(function () {
+      hud.classList.remove("show");
+      window.setTimeout(function () {
+        busy = false;
+        after();
+      }, 200);
+    }, 1250);
+  }
+
+  function advance() {
+    if (busy) { return; }
+
+    if (step === 1) {                       // menu -> HUD "Summarizing\u2026" -> result
+      playHUD("Summarizing" + ELL, function () {
+        panel.classList.remove("show");
+      }, function () { goto_(2, false); });
+      return;
+    }
+
+    if (step === 6) {                       // shortcut recorded -> chat scene
+      goto_(7, false);
+      return;
+    }
+
+    if (step === N - 1) {                   // chat: rewrite in place, then restart
+      if (!rewritten) {
+        playHUD("Processing" + ELL, null, function () {
+          rewritten = true;
+          applyScene();
+          chatField.classList.remove("flash");
+          void chatField.offsetWidth;
+          chatField.classList.add("flash");
+          place();
+        });
+      } else {
+        goto_(0, false);
+      }
+      return;
+    }
+
+    goto_(step + 1, false);
+  }
+
+  function back() {
+    if (busy) { return; }
+    if (step === N - 1 && rewritten) { rewritten = false; applyScene(); place(); return; }
+    goto_(step - 1, false);
+  }
+
+  /* step-7 arrival flourish: badge records live when reached by advancing */
+  var origGoto = goto_;
+  goto_ = function (n, keep) {
+    var enteringShortcut = n === 6 && step !== 6;
+    origGoto(n, keep);
+    if (enteringShortcut && !prefersReduced()) {
+      writerBadge.textContent = "Listening" + ELL;
+      writerBadge.className = "arc-kbd listening";
+      window.setTimeout(function () {
+        if (step === 6) {
+          writerBadge.textContent = CTRL + "G";
+          writerBadge.className = "arc-kbd recorded";
+          place();
+        }
+      }, 950);
+    }
+  };
+
+  function prefersReduced() {
+    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  /* ------------------------------------------------------------------
+     Autoplay: loops the whole story until the user takes over
+     ------------------------------------------------------------------ */
+  // Autoplay dwell per step. The steps where a real user would act
+  // (press the hotkey, record the shortcut, press the rewrite key) hold
+  // longer so a viewer can register what is being asked.
+  var DWELL = [5600, 4200, 4200, 4200, 4800, 4400, 6000, 6400];
+  function tickAutoplay() {
+    if (!autoplay) { return; }
+    advance();
+    var dwell = DWELL[step] || 4200;
+    autoTimer = window.setTimeout(tickAutoplay, busy ? dwell + 1500 : dwell);
+  }
+
+  function userTakesOver() {
+    if (!autoplay) { return; }
+    autoplay = false;
+    window.clearTimeout(autoTimer);
+    stage.classList.remove("autoplaying");
+    tryit.classList.add("hide");
+  }
+
+  tryit.addEventListener("click", function () {
+    userTakesOver();
+    goto_(0, false);
+  });
+
+  /* ------------------------------------------------------------------
+     Input: clicks, buttons, real keys
+     ------------------------------------------------------------------ */
+  spot.addEventListener("click", function () { userTakesOver(); advance(); });
+  btnNext.addEventListener("click", function () { userTakesOver(); advance(); });
+  btnPrev.addEventListener("click", function () { userTakesOver(); back(); });
+  btnRestart.addEventListener("click", function () { userTakesOver(); goto_(0, false); });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && (e.code === "Space" || e.key === " ")) {
+      if (step === 0) { e.preventDefault(); userTakesOver(); advance(); }
+      return;
+    }
+    if (e.ctrlKey && e.code === "KeyG") {
+      if (step === N - 1 && !rewritten) { e.preventDefault(); userTakesOver(); advance(); }
+      return;
+    }
+    if (e.key === "Enter" && step === 1) { e.preventDefault(); userTakesOver(); advance(); }
+  });
+
+  /* ------------------------------------------------------------------
+     Responsive fit
+     ------------------------------------------------------------------ */
+  function fit() {
+    var w = stage.clientWidth;
+    var k = Math.min(1, w / 1120);
+    scene.style.transform = "scale(" + k + ")";
+    stage.style.height = (700 * k) + "px";
+    place();
+  }
+  window.addEventListener("resize", fit);
+
+  /* boot */
+  stage.classList.add("autoplaying");
+  applyScene();
+  fit();
+  if (prefersReduced()) {
+    userTakesOver();
+  } else {
+    autoTimer = window.setTimeout(tickAutoplay, 3600);
+  }
+})();
+</script>
+</div>

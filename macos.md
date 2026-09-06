@@ -33,6 +33,17 @@ redirect_from:
 
 ---
 
+<!-- Interactive demo -->
+<div class="section-header">
+  <span class="section-tag">See it in action</span>
+  <h2>Try Arc right here.</h2>
+  <p>Not a video &mdash; a live, clickable recreation of Arc built from the app&rsquo;s real design tokens. Watch it play, or take over and drive it yourself.</p>
+</div>
+
+{% include arc-interactive-demo.html %}
+
+---
+
 <!-- Install steps -->
 <div class="section-header">
   <span class="section-tag">Getting started</span>
