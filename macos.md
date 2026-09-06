@@ -23,10 +23,6 @@ redirect_from:
           Download for Mac
         </a>
       </div>
-      <p class="hero-download-note">
-        Version {{ site.mac_app.version }} &middot; Universal (Apple Silicon &amp; Intel) &middot; Requires macOS {{ site.mac_app.min_macos }} or later<br>
-        Free to use &mdash; 7 requests per week, no account required.
-      </p>
     </div>
     <div class="hero-demo-col hero-demo-col--arc">
       {% include arc-interactive-demo.html %}

@@ -488,7 +488,7 @@
   .ctrl button svg { width: 13px; height: 13px; }
   .ctrl button:focus-visible { outline: 2px solid var(--arc-vivid); outline-offset: 2px; }
 
-  .rail { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+  .rail { display: flex; align-items: center; gap: 6px; margin-left: 4px; }
   .rail button {
     width: 24px; height: 14px;
     padding: 0; border: 0;
@@ -504,14 +504,6 @@
   .rail button.on i { background: var(--arc-vivid); }
   .rail .lab { font-size: 12.5px; color: var(--page-ink-2); margin-left: 6px; white-space: nowrap; }
 
-  .kbd-hint { font-size: 12px; color: var(--page-ink-2); }
-  .kbd-hint kbd {
-    font-family: inherit; font-size: 11px;
-    border: 1px solid var(--page-line);
-    border-radius: 5px; padding: 1px 6px;
-    margin: 0 1px;
-  }
-  @media (max-width: 1200px) { .kbd-hint { display: none; } }
 
   @media (prefers-reduced-motion: reduce) {
     #arc-demo *, #arc-demo *::before, #arc-demo *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
@@ -646,9 +638,6 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
       Restart
     </button>
-    <button id="btnPrev" type="button">&lsaquo; Back</button>
-    <button id="btnNext" type="button">Next &rsaquo;</button>
-    <span class="kbd-hint">or use real keys: <kbd>&#8963;</kbd><kbd>Space</kbd> opens the menu, <kbd>Enter</kbd> runs, <kbd>&#8963;</kbd><kbd>G</kbd> rewrites</span>
     <div class="rail" id="rail"></div>
   
 </div>
@@ -758,8 +747,6 @@
       cText    = document.getElementById("coachText"),
       tryit    = document.getElementById("tryit"),
       rail     = document.getElementById("rail"),
-      btnPrev  = document.getElementById("btnPrev"),
-      btnNext  = document.getElementById("btnNext"),
       btnRestart = document.getElementById("btnRestart");
 
   var N = STEPS.length;
@@ -872,7 +859,7 @@
     // measure, then choose a side that fits. On phones the camera zooms in,
     // so the coach goes above/below the spot to stay inside the framed area.
     var cw = 272, ch = coach.offsetHeight || 110, gap = 18, M = 14;
-    var vw = stage.clientWidth;
+    var vw = window.innerWidth;
     var zBase = vw < 480 ? 2.2 : (vw < 700 ? 1.8 : 1);
     var x, y, arrow;
     if (zBase === 1 && s.x + s.w + gap + cw <= 1120 - M) {
@@ -904,7 +891,6 @@
     var segs = rail.querySelectorAll("button");
     for (var n = 0; n < N; n++) { segs[n].classList.toggle("on", n <= step); }
     railLab.textContent = "Step " + (step + 1) + " of " + N;
-    btnPrev.disabled = step === 0 && !rewritten;
   }
 
   /* phone camera: zoom so the spot AND its coach card both stay in frame */
@@ -980,12 +966,6 @@
     goto_(step + 1, false);
   }
 
-  function back() {
-    if (busy) { return; }
-    if (step === N - 1 && rewritten) { rewritten = false; applyScene(); place(); return; }
-    goto_(step - 1, false);
-  }
-
   /* step-7 arrival flourish: badge records live when reached by advancing */
   var origGoto = goto_;
   goto_ = function (n, keep) {
@@ -1039,8 +1019,6 @@
      Input: clicks, buttons, real keys
      ------------------------------------------------------------------ */
   spot.addEventListener("click", function () { userTakesOver(); advance(); });
-  btnNext.addEventListener("click", function () { userTakesOver(); advance(); });
-  btnPrev.addEventListener("click", function () { userTakesOver(); back(); });
   btnRestart.addEventListener("click", function () { userTakesOver(); goto_(0, false); });
 
   document.addEventListener("keydown", function (e) {
