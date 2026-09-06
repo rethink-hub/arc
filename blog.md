@@ -34,7 +34,7 @@ redirect_from:
 <div class="section-header" style="margin-top: var(--xl);">
     <span class="section-tag">Platforms</span>
     <h2>Arc is expanding.</h2>
-    <p>Available on Android now. iOS, Mac, and Windows coming soon.</p>
+    <p>Available on Android and Mac now. iOS and Windows coming soon.</p>
 </div>
 <div class="platform-links" style="justify-content: center; margin-bottom: var(--xl);">
     <a href="{{ '/android/' | relative_url }}">Arc for Android</a>

@@ -433,6 +433,8 @@ em { font-style: italic; }
 }
 .android-hero-download {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
   margin-top: calc(-1 * var(--xl));
@@ -444,6 +446,13 @@ em { font-style: italic; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+.hero-download-note {
+  max-width: 640px;
+  margin: var(--md) auto 0;
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 .coming-soon-features {
   margin: var(--2xl) 0 var(--4xl);
