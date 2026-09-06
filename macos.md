@@ -10,37 +10,29 @@ redirect_from:
   - /macos
 ---
 
-<!-- Hero -->
-<div class="coming-soon-hero android-hero">
-  <div class="coming-soon-badge status-live">Now available for macOS</div>
-  <div class="coming-soon-icon icon-macos" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.27 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.94 1.21-1.96 1.07-3.11-1.11.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
+<!-- Hero: text left, live interactive demo right (mirrors the Android homepage) -->
+<div class="hero-section hero-with-live-demo">
+  <div class="hero-content-row macos-hero-row">
+    <div class="hero-text-col">
+      <div class="coming-soon-badge status-live">Now available for macOS</div>
+      <h1>Arc for Mac</h1>
+      <p class="hero-subtitle">Your AI screen assistant, built for macOS. Summarize, read aloud, chat, and automate any window with a single shortcut.</p>
+      <div class="hero-cta-group">
+        <a href="{{ site.mac_app.dmg | relative_url }}" class="cta-button" download>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.27 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.94 1.21-1.96 1.07-3.11-1.11.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
+          Download for Mac
+        </a>
+      </div>
+      <p class="hero-download-note">
+        Version {{ site.mac_app.version }} &middot; Universal (Apple Silicon &amp; Intel) &middot; Requires macOS {{ site.mac_app.min_macos }} or later<br>
+        Free to use &mdash; 7 requests per week, no account required.
+      </p>
+    </div>
+    <div class="hero-demo-col hero-demo-col--arc">
+      {% include arc-interactive-demo.html %}
+    </div>
   </div>
-  <h1>Arc for Mac</h1>
-  <p class="hero-subtitle">Your AI screen assistant, built for macOS. Summarize, read aloud, chat, and automate any window with a single shortcut.</p>
 </div>
-
-<div class="android-hero-download">
-  <a href="{{ site.mac_app.dmg | relative_url }}" class="cta-button" download>
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.27 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.94 1.21-1.96 1.07-3.11-1.11.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>
-    Download for Mac
-  </a>
-  <p class="hero-download-note">
-    Version {{ site.mac_app.version }} · Universal (Apple Silicon &amp; Intel) · Requires macOS {{ site.mac_app.min_macos }} or later<br>
-    Free to use — 7 requests per week, no account required.
-  </p>
-</div>
-
----
-
-<!-- Interactive demo -->
-<div class="section-header">
-  <span class="section-tag">See it in action</span>
-  <h2>Try Arc right here.</h2>
-  <p>Not a video &mdash; a live, clickable recreation of Arc built from the app&rsquo;s real design tokens. Watch it play, or take over and drive it yourself.</p>
-</div>
-
-{% include arc-interactive-demo.html %}
 
 ---
 

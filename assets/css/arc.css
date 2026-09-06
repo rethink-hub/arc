@@ -579,6 +579,18 @@ em { font-style: italic; }
   align-items: center;
   min-height: 460px;
 }
+/* macOS hero: interactive demo replaces the phone video on the right */
+.hero-content-row.macos-hero-row { grid-template-columns: 0.85fr 1.15fr; }
+.hero-demo-col--arc {
+  display: block;
+  justify-content: initial;
+  padding-right: 0;
+  min-height: 0;
+  width: 100%;
+}
+.hero-demo-col--arc #arc-demo { width: 100%; }
+.hero-with-live-demo .hero-download-note { margin: var(--md) 0 0; max-width: none; text-align: left; }
+.hero-with-live-demo .coming-soon-badge { margin-bottom: var(--md); }
 .hero-video-single {
   max-width: 260px;
   margin: 0;
@@ -1658,6 +1670,8 @@ a:focus, button:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
   .footer-content { grid-template-columns: 1fr; gap: var(--2xl); }
   .footer-links-row { grid-template-columns: repeat(2, 1fr); }
   .hero-content-row { grid-template-columns: 1fr; gap: var(--3xl); text-align: center; }
+  .hero-content-row.macos-hero-row { grid-template-columns: 1fr; }
+  .hero-with-live-demo .hero-download-note { margin-left: auto; margin-right: auto; text-align: center; }
   .hero-text-col { max-width: 600px; margin: 0 auto; }
   .hero-with-live-demo .hero-badge,
   .hero-with-live-demo h1,
