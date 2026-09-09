@@ -26,7 +26,7 @@ The screen-aware approach is what I built Arc around, because the copy-paste wor
 
 <img src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar over Chrome on Android" width="800" height="1760" loading="lazy" />
 
-## Why Most AI Summarizer Apps Fall Short on Android
+## Why Most AI Summarizer Android Apps Fall Short
 
 I tested a bunch of summarizer apps while building Arc, and most of them share the same limitations:
 
@@ -36,11 +36,11 @@ I tested a bunch of summarizer apps while building Arc, and most of them share t
 
 **They don't understand context.** A generic summarizer treats all text the same. But summarizing a news article is different from summarizing a legal contract or a group chat. You need different summarization strategies for different content types.
 
-**They're not built for mobile workflows.** Most summarizer apps are web tools wrapped in a mobile shell. They don't integrate with how you actually use your phone.
+**They're not built for mobile workflows.** Most summarizer apps are web tools wrapped in a mobile shell. They don't integrate with how you actually use your phone. A proper AI summarizer Android app should work inside whatever app you're already using.
 
 This is why I went with a floating overlay approach for Arc. Instead of another app you switch to, Arc lives as a sidebar you summon with a swipe. It sees your screen, understands the context, and gives you a summary right where you are.
 
-## How to Summarize Text on Android with Arc: Step-by-Step
+## How to Use an AI Summarizer Android App: Step-by-Step with Arc
 
 Let me walk you through the actual workflow. I'll use a real scenario — you're reading a long news article in your browser and want a quick summary.
 
@@ -96,11 +96,11 @@ Here's where Arc goes beyond a basic summarizer. Once you have the summary, you 
 - "Does this article mention any statistics?"
 - "Can you explain the second point in more detail?"
 
-Arc keeps the context of what's on your screen, so it answers based on the original content — not just the summary. This is powered by Arc's [AI Summary & Reader](/ai-summary-reader/) capability, which combines summarization with conversational understanding.
+Arc keeps the context of what's on your screen, so it answers based on the original content — not just the summary. This is powered by Arc's [AI Summary & Reader](/ai-summary-reader/) capability, which combines summarization with conversational understanding. No other AI summarizer Android app offers this kind of follow-up conversation.
 
 <img src="{{ '/assets/images/screenshots/00_summary_library_with_items.jpg' | relative_url }}" alt="Arc summary library with saved summaries" width="800" height="1760" loading="lazy" />
 
-## Use Cases: When to Use an AI Summarizer on Android
+## Use Cases: When to Use an AI Summarizer Android App
 
 Let me share some real scenarios where I use Arc's summarizer daily:
 
@@ -132,7 +132,7 @@ After using Arc's summarizer for months, here are some tips I've picked up:
 
 **Summarize in sections for very long content.** For a 10-page PDF, I'll summarize each page or section separately rather than trying to do it all at once. The summaries are more accurate when the content is focused.
 
-## How Arc's Summarizer Compares to Other Android Apps
+## How Arc Compares to Other AI Summarizer Android Apps
 
 I'm obviously biased here, but let me be honest about where Arc shines and where other tools might be better:
 
@@ -148,7 +148,7 @@ I'm obviously biased here, but let me be honest about where Arc shines and where
 
 ### What is the best AI summarizer app for Android?
 
-It depends on your workflow. For summarizing on-screen content like articles, emails, and chats without copy-paste, Arc is the best option. For meeting transcription and summarization, Summary AI is purpose-built. For simple paste-and-summarize tasks, QuillBot works well. I recommend trying a couple and seeing which fits your daily usage.
+It depends on your workflow. For summarizing on-screen content like articles, emails, and chats without copy-paste, Arc is the best AI summarizer Android app available. For meeting transcription and summarization, Summary AI is purpose-built. For simple paste-and-summarize tasks, QuillBot works well. I recommend trying a couple and seeing which fits your daily usage.
 
 ### Can AI summarizer apps work offline?
 
@@ -164,11 +164,11 @@ Yes. Open the PDF in any reader app (Google PDF Viewer, Adobe Acrobat, etc.), th
 
 ### Are AI summarizer apps free?
 
-Many AI summarizer apps are free with usage limits. Arc is free to download on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) with a free tier for basic summarization. Premium features like extended summaries, follow-up questions, and AI writing are available with a subscription. QuillBot offers a free tier with ads, and AI Summarizer on Play Store is free with in-app purchases.
+Many AI summarizer apps are free with usage limits. Arc is free to download on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) with a free tier for basic summarization — making it a solid free AI summarizer Android app to start with. Premium features like extended summaries, follow-up questions, and AI writing are available with a subscription. QuillBot offers a free tier with ads, and AI Summarizer on Play Store is free with in-app purchases.
 
 ## Get Started
 
-If you're tired of reading walls of text on your phone, give Arc a try. Install it from [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc), grant the permissions during setup, and the next time you're staring at a long article — just swipe and summarize.
+If you're tired of reading walls of text on your phone, give Arc a try. It's the AI summarizer Android app I built for exactly this problem. Install it from [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc), grant the permissions during setup, and the next time you're staring at a long article — just swipe and summarize.
 
 The [AI Summary & Reader](/ai-summary-reader/) feature works across every app on your phone. No copy-paste, no app switching, just summaries when you need them.
 
