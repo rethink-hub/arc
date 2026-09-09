@@ -17,13 +17,12 @@ permalink: pretty
 # custom sitemap.xml (jekyll-sitemap not loaded)
 plugins:
   - jekyll-feed
-  - jekyll-redirect-from
 
-# Redirect from clean URLs to .html versions to prevent duplicate content
-# GitHub Pages serves both /page and /page.html as 200 — this causes
-# "Alternate page with proper canonical tag" indexing issues in Search Console
-# jekyll-redirect-from generates proper redirect pages for the non-.html URLs
-# permalink: pretty handles blog posts (uses /:year/:month/:day/:title/ format)
+# jekyll-redirect-from REMOVED: it generates .html stub pages that return
+# HTTP 200 with JS/meta-refresh redirects instead of proper 301s. Google
+# treats these as real pages, wasting crawl budget and causing duplicate
+# content issues. With permalink: pretty, GitHub Pages serves clean URLs
+# (e.g. /android/ from android/index.html) without needing redirect stubs.
 
 # SEO settings
 lang: en-US

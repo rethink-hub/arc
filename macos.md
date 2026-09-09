@@ -6,8 +6,6 @@ keywords: "Arc for Mac, macOS AI assistant, AI screen assistant Mac, Mac AI summ
 platform: macos
 og_image: /assets/images/og-macos.png
 product_page: true
-redirect_from:
-  - /macos
 ---
 
 <!-- Hero: text left, live interactive demo right (mirrors the Android homepage) -->

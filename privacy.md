@@ -5,8 +5,6 @@ description: "Arc AI privacy policy for our Android and macOS AI assistant. Lear
 keywords: "Arc AI privacy, Android AI app privacy, Mac AI app privacy, AI assistant privacy policy"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow
-redirect_from:
-  - /privacy
 ---
 
 <div class="privacy-nav">

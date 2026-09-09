@@ -5,8 +5,6 @@ description: "Freemium AI writer for Android. Rewrite, reply, translate, fix gra
 keywords: "AI writer Android, AI writing assistant, rewrite text AI, AI reply generator, grammar fix AI, translate text AI, AI content creator Android"
 og_image: /assets/images/og-ai-writer.png
 product_page: true
-redirect_from:
-  - /ai-writer
 faq:
   - question: "What can the AI Writer do?"
     answer: "Arc AI's writer can rewrite text in different tones, fix grammar and spelling, generate replies, translate between languages, and create social media posts — all from the floating sidebar inside any Android app."

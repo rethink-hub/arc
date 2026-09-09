@@ -5,8 +5,6 @@ description: "Automate Android workflows with Arc AI's custom AI actions. Create
 keywords: "AI workflow automation, AI automation, custom AI actions, Android automation, AI productivity automation, workflow AI"
 og_image: /assets/images/og-ai-workflow-automation.png
 product_page: true
-redirect_from:
-  - /ai-workflow-automation
 faq:
   - question: "How do I create a custom AI action?"
     answer: "Open Arc AI settings, go to Custom Actions, and tap 'Create New Action'. Write a clear prompt describing what you want the AI to do (e.g., 'Translate to French' or 'Extract all dates'). You can enable screenshot capture and web search if needed. Save it and it appears in your sidebar."

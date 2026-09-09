@@ -5,12 +5,6 @@ description: "Freemium AI summary and text reader for Android. Summarize any con
 keywords: "AI summary app, AI text reader, screen reader AI, text to speech AI Android, AI reading assistant, Android summary app, AI powered summary"
 og_image: /assets/images/og-ai-summary-reader.png
 product_page: true
-redirect_from:
-  - /ai-summary-reader
-  - /ai-text-reader
-  - /ai-text-reader.html
-  - /ai-summary
-  - /ai-summary.html
 faq:
   - question: "How accurate are the AI summaries?"
     answer: "Arc AI uses advanced language models (Google Gemini) to provide highly accurate summaries. However, AI-generated content should be verified for critical decisions. The summaries capture key points and main ideas very effectively."

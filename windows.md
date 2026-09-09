@@ -5,8 +5,6 @@ description: "Arc for Windows is coming soon. Bring AI summaries, text-to-speech
 keywords: "Arc for Windows, Windows AI assistant, Windows AI screen assistant, PC AI summary app, Windows text to speech AI, Windows workflow automation"
 platform: windows
 og_image: /assets/images/og-windows.png
-redirect_from:
-  - /windows
 ---
 
 <!-- Hero -->

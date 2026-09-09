@@ -5,8 +5,6 @@ description: "Terms of Service for the Arc AI assistant on Android and macOS. Un
 keywords: "Arc AI terms, Android AI app terms of service, Mac AI app terms of service"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow
-redirect_from:
-  - /terms
 ---
 
 <div class="privacy-nav">
