@@ -24,6 +24,8 @@ There are two main approaches:
 
 The screen-aware approach is what I built Arc around, because the copy-paste workflow on mobile is painful. You're selecting text with those tiny drag handles, hoping you got everything, then jumping between apps. It's friction.
 
+<img src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar over Chrome on Android" width="800" height="1760" loading="lazy" />
+
 ## Why Most AI Summarizer Apps Fall Short on Android
 
 I tested a bunch of summarizer apps while building Arc, and most of them share the same limitations:
@@ -83,6 +85,9 @@ Arc reads the visible content on your screen and generates a summary. Depending 
 
 The summary appears in Arc's sidebar panel. You can read it right there, or tap to expand it full-screen if it's long. You can also copy it, share it, or save it to notes.
 
+<img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="Arc AI summary result on Android" width="800" height="1760" loading="lazy" />
+<img src="{{ '/assets/images/screenshots/02_ai_summary_chat_input.jpg' | relative_url }}" alt="Arc AI summary chat input" width="800" height="1760" loading="lazy" />
+
 ### Step 5: Ask Follow-Up Questions
 
 Here's where Arc goes beyond a basic summarizer. Once you have the summary, you can ask follow-up questions in the same panel:
@@ -92,6 +97,8 @@ Here's where Arc goes beyond a basic summarizer. Once you have the summary, you 
 - "Can you explain the second point in more detail?"
 
 Arc keeps the context of what's on your screen, so it answers based on the original content — not just the summary. This is powered by Arc's [AI Summary & Reader](/ai-summary-reader/) capability, which combines summarization with conversational understanding.
+
+<img src="{{ '/assets/images/screenshots/00_summary_library_with_items.jpg' | relative_url }}" alt="Arc summary library with saved summaries" width="800" height="1760" loading="lazy" />
 
 ## Use Cases: When to Use an AI Summarizer on Android
 
