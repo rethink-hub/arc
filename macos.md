@@ -182,3 +182,5 @@ Yes. Arc follows the same freemium model as the Android app — 7 free requests 
 ### Privacy on macOS
 
 Arc only reads your screen when you invoke an action — never in the background, and never as a keylogger. Screenshots are taken only for actions that need them, and processed content is never stored on our servers. Password managers are skipped automatically. See the [Privacy Policy]({{ '/privacy/' | relative_url }}#macos-permissions-explained) for the full list of macOS permissions and exactly when each is used.
+
+{% include referral-handoff.html %}

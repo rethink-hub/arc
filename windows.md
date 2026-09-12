@@ -129,3 +129,5 @@ Arc for Windows is in early development. Windows offers robust accessibility API
 ### Will Arc for Windows be free?
 
 Yes. Arc will follow the same freemium model as the Android app — 7 free requests per week on basic features, with a premium subscription for unlimited access. Same pricing across all platforms, no Windows-specific upsells.
+
+{% include referral-handoff.html %}

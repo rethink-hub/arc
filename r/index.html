@@ -1,0 +1,301 @@
+---
+layout: default
+permalink: /r/
+title: "You've been invited to Arc — get Arc Pro free"
+description: "A friend invited you to Arc, the AI assistant that works on any screen. Install Arc with their link and you both get Arc Pro free when you subscribe."
+keywords: "Arc AI referral, Arc invite, Arc Pro free, AI screen assistant invite"
+og_image: /assets/images/og-arc.png
+robots: "noindex, follow"
+---
+
+<!--
+  Referral landing page.
+
+  Its whole job is to get a code onto a device that may not have Arc yet, and each platform
+  needs a different trick:
+
+  - Android: the code is appended to the Play Store URL as `referrer`. Play holds that string
+    across the install and hands it to the app on first launch, which is the only attribution
+    path here that is genuinely reliable.
+  - macOS / Windows: no store carries anything, so after the download the page offers an
+    `arc://referral` handoff that puts the code straight into the installed app.
+  - Anything else: the click is recorded server-side, so a fresh install can ask the backend
+    whether a recent visit plausibly belongs to it.
+
+  The code is read from `?c=` first and from the path second. The path form only occurs when
+  GitHub Pages has served this page through 404.html for a pretty `/r/CODE` link — see 404.md.
+-->
+
+<div class="hero-section" style="text-align: center;">
+  <div class="coming-soon-badge status-live" id="referral-badge">You've been invited</div>
+  <h1>Get Arc Pro, free</h1>
+  <p class="hero-subtitle" id="referral-intro">
+    A friend thinks you'd like Arc — an AI assistant that works on whatever is already on your
+    screen. Install it with their link and you both get Arc Pro free when you subscribe.
+  </p>
+
+  <div id="referral-code-display" class="referral-code-display" hidden>
+    <span class="referral-code-label">Your invite code</span>
+    <span class="referral-code-value" id="referral-code-value"></span>
+  </div>
+
+  <div class="hero-cta-group" id="referral-cta-group" style="justify-content: center;">
+    <!-- Filled in by JS once the platform is known, so nobody is sent to the wrong store. -->
+  </div>
+
+  <p class="referral-fineprint" id="referral-fineprint">
+    Your code is applied automatically when you sign in. You'll never be asked to type it during
+    checkout.
+  </p>
+</div>
+
+<hr>
+
+<div class="section-header">
+  <span class="section-tag">How it works</span>
+  <h2>Three steps, then you both get a free month.</h2>
+</div>
+
+<div class="steps-container">
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-title">Install Arc</div>
+    <p class="step-description">Use the button above so your invite code travels with the install. Arc is free to use.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-title">Sign in</div>
+    <p class="step-description">The code attaches to your Arc account, not your device — so it still counts if you switch to another platform later.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-title">Subscribe to Arc Pro</div>
+    <p class="step-description">You and your friend each get a free month on the monthly plan, or two months on the yearly plan.</p>
+  </div>
+</div>
+
+<div class="section-header" style="margin-top: var(--xl);">
+  <span class="section-tag">Already installed?</span>
+  <h2>Link your invite in one click.</h2>
+  <p>If Arc is already on this computer, open it with your code attached.</p>
+</div>
+
+<div class="platform-links" style="justify-content: center;" id="referral-desktop-handoff" hidden>
+  <a href="#" id="referral-open-app" class="cta-button">Open Arc and apply my code</a>
+</div>
+
+<p class="referral-fineprint" style="text-align: center;">
+  Nothing happens automatically if you'd rather not — you can always enter the code by hand in
+  <strong>Settings → Refer a friend</strong>.
+</p>
+
+<style>
+  .referral-code-display {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin: var(--lg) auto;
+    padding: 14px 28px;
+    border: 1px solid rgba(108, 49, 255, 0.35);
+    border-radius: 14px;
+    background: rgba(108, 49, 255, 0.08);
+  }
+  .referral-code-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  .referral-code-value {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+  .referral-fineprint {
+    font-size: 0.85rem;
+    opacity: 0.72;
+    max-width: 46ch;
+    margin: var(--md) auto 0;
+  }
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  var API_BASE = 'https://d1y3owe337zqgk.cloudfront.net/api/v1';
+  var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.rethink.arc';
+  var MAC_URL = '{{ site.mac_app.dmg | relative_url }}';
+  var WINDOWS_URL = '{{ "/windows/" | relative_url }}';
+  var STORAGE_KEY = 'arc.referralCode';
+  var MAX_CODE_LENGTH = 16;
+
+  // --- code ---------------------------------------------------------------
+
+  /**
+   * Read the code from `?c=`, then from the path, then from a previous visit.
+   *
+   * The path form only appears when GitHub Pages served this page through 404.html for a
+   * pretty `/r/CODE` link. Anything that is not plainly a code is ignored rather than
+   * guessed at — a stray path segment must not become a bogus referral.
+   */
+  function readCode() {
+    var params = new URLSearchParams(window.location.search);
+    var fromQuery = params.get('c') || params.get('code');
+    if (isCode(fromQuery)) return normalize(fromQuery);
+
+    var segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length >= 2 && segments[segments.length - 2] === 'r') {
+      var fromPath = segments[segments.length - 1];
+      if (isCode(fromPath)) return normalize(fromPath);
+    }
+
+    try {
+      var stored = window.localStorage.getItem(STORAGE_KEY);
+      if (isCode(stored)) return normalize(stored);
+    } catch (e) { /* private browsing */ }
+
+    return null;
+  }
+
+  function isCode(value) {
+    return !!value && value.length <= MAX_CODE_LENGTH && /^[A-Za-z0-9]+$/.test(value);
+  }
+
+  function normalize(value) {
+    return value.trim().toUpperCase();
+  }
+
+  function remember(code) {
+    try { window.localStorage.setItem(STORAGE_KEY, code); } catch (e) { /* private browsing */ }
+    // A cookie as well as localStorage: the two are cleared under different conditions, and
+    // losing the code costs a referral.
+    try {
+      document.cookie = 'arc_ref=' + encodeURIComponent(code) +
+        ';path=/;max-age=' + (60 * 60 * 24 * 30) + ';SameSite=Lax';
+    } catch (e) { /* ignore */ }
+  }
+
+  // --- platform -----------------------------------------------------------
+
+  function detectPlatform() {
+    var ua = navigator.userAgent || '';
+    if (/android/i.test(ua)) return 'android';
+    if (/iPad|iPhone|iPod/.test(ua)) return 'ios';
+    // iPadOS reports as Macintosh; a touch-capable "Mac" is really an iPad.
+    if (/Macintosh/.test(ua)) {
+      return (navigator.maxTouchPoints || 0) > 1 ? 'ios' : 'mac';
+    }
+    if (/Windows/i.test(ua)) return 'windows';
+    return 'other';
+  }
+
+  // --- rendering ----------------------------------------------------------
+
+  function button(href, label, download) {
+    var a = document.createElement('a');
+    a.className = 'cta-button';
+    a.href = href;
+    a.textContent = label;
+    if (download) a.setAttribute('download', '');
+    return a;
+  }
+
+  function render(platform, code) {
+    var group = document.getElementById('referral-cta-group');
+    group.innerHTML = '';
+
+    if (platform === 'android') {
+      // The referrer parameter is what survives the trip through the Play Store.
+      var playUrl = PLAY_URL;
+      if (code) {
+        playUrl += '&referrer=' + encodeURIComponent('arc_ref=' + code);
+      }
+      group.appendChild(button(playUrl, 'Get Arc on Google Play', false));
+      return;
+    }
+
+    if (platform === 'mac') {
+      group.appendChild(button(MAC_URL, 'Download Arc for Mac', true));
+      showDesktopHandoff(code);
+      return;
+    }
+
+    if (platform === 'windows') {
+      group.appendChild(button(WINDOWS_URL, 'Get Arc for Windows', false));
+      showDesktopHandoff(code);
+      return;
+    }
+
+    if (platform === 'ios') {
+      var intro = document.getElementById('referral-intro');
+      intro.textContent = 'Arc is not on iPhone or iPad yet. Open this link on Android, Mac, ' +
+        'or Windows and your invite will be waiting.';
+      group.appendChild(button('{{ "/" | relative_url }}', 'See what Arc does', false));
+      return;
+    }
+
+    // Unknown platform: offer everything rather than guessing wrong.
+    group.appendChild(button(PLAY_URL + (code ? '&referrer=' + encodeURIComponent('arc_ref=' + code) : ''), 'Android', false));
+    group.appendChild(button(MAC_URL, 'Mac', true));
+    group.appendChild(button(WINDOWS_URL, 'Windows', false));
+    showDesktopHandoff(code);
+  }
+
+  /**
+   * Desktop has no store to carry the code, so offer to hand it to an installed app directly.
+   * Shown only when there is a code to hand over.
+   */
+  function showDesktopHandoff(code) {
+    if (!code) return;
+    var section = document.getElementById('referral-desktop-handoff');
+    var link = document.getElementById('referral-open-app');
+    link.href = 'arc://referral?code=' + encodeURIComponent(code);
+    section.hidden = false;
+  }
+
+  function showCode(code) {
+    if (!code) {
+      document.getElementById('referral-badge').textContent = 'Welcome to Arc';
+      document.getElementById('referral-fineprint').textContent =
+        'This invite link is missing its code. You can still install Arc, then enter a code in ' +
+        'Settings → Refer a friend.';
+      return;
+    }
+    document.getElementById('referral-code-value').textContent = code;
+    document.getElementById('referral-code-display').hidden = false;
+  }
+
+  // --- attribution --------------------------------------------------------
+
+  /**
+   * Record the visit so a desktop install with no code of its own can ask the backend whether
+   * a recent visit plausibly belongs to it. Best-effort in every sense: failures are ignored,
+   * and nothing on the page waits for it.
+   */
+  function recordClick(code, platform) {
+    if (!code || !window.fetch) return;
+    try {
+      fetch(API_BASE + '/referral/click', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: code, platform: platform }),
+        keepalive: true
+      }).catch(function () { /* attribution is a bonus, never a blocker */ });
+    } catch (e) { /* ignore */ }
+  }
+
+  // --- go -----------------------------------------------------------------
+
+  var code = readCode();
+  var platform = detectPlatform();
+  if (code) remember(code);
+  showCode(code);
+  render(platform, code);
+  recordClick(code, platform);
+})();
+</script>

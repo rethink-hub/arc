@@ -1,0 +1,60 @@
+{% comment %}
+  Referral handoff for the desktop download pages.
+
+  Someone who arrives via /r/ and then clicks through to a download page has navigated away
+  from the handoff button that page offered. The code is remembered in localStorage and a
+  cookie, so this block re-offers it right where the install actually happens.
+
+  Hidden by default and revealed only when a code is actually remembered — a visitor who never
+  came through a referral link must never see an invite they do not have.
+{% endcomment %}
+
+<div id="arc-referral-handoff" class="referral-handoff" hidden>
+  <div class="section-header">
+    <span class="section-tag">Your invite</span>
+    <h2>Apply your invite code.</h2>
+    <p>Once Arc is installed, open it with your code attached — you'll both get Arc Pro free when you subscribe.</p>
+  </div>
+  <div class="platform-links" style="justify-content: center;">
+    <a href="#" id="arc-referral-open" class="cta-button">Open Arc and apply my code</a>
+  </div>
+  <p class="referral-handoff-note">
+    Code <strong><span id="arc-referral-code"></span></strong>. You can also enter it by hand in
+    <strong>Settings → Refer a friend</strong>.
+  </p>
+</div>
+
+<style>
+  .referral-handoff { margin-top: var(--xl); }
+  .referral-handoff-note {
+    font-size: 0.85rem;
+    opacity: 0.72;
+    text-align: center;
+    max-width: 46ch;
+    margin: var(--md) auto 0;
+  }
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  function storedCode() {
+    try {
+      var fromStorage = window.localStorage.getItem('arc.referralCode');
+      if (fromStorage) return fromStorage;
+    } catch (e) { /* private browsing */ }
+    var match = document.cookie.match(/(?:^|;\s*)arc_ref=([^;]+)/);
+    return match ? decodeURIComponent(match[1]) : null;
+  }
+
+  var code = storedCode();
+  if (!code || !/^[A-Za-z0-9]{1,16}$/.test(code)) return;
+
+  code = code.toUpperCase();
+  document.getElementById('arc-referral-code').textContent = code;
+  document.getElementById('arc-referral-open').href =
+    'arc://referral?code=' + encodeURIComponent(code);
+  document.getElementById('arc-referral-handoff').hidden = false;
+})();
+</script>
