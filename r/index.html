@@ -43,6 +43,16 @@ robots: "noindex, follow"
     <!-- Filled in by JS once the platform is known, so nobody is sent to the wrong store. -->
   </div>
 
+  <!--
+    Arc runs on Android, Mac and Windows, and the invite is worth the same on all of them —
+    the code attaches to the account, not the device. Leading with the platform you're holding
+    keeps the main path short, but someone reading this on their phone may well want Arc on
+    their Mac, so the others stay one tap away rather than invisible.
+  -->
+  <p class="referral-other" id="referral-other" hidden>
+    Also available on <span id="referral-other-links"></span>
+  </p>
+
   <p class="referral-fineprint" id="referral-fineprint">
     Your code is applied automatically when you sign in. You'll never be asked to type it during
     checkout.
@@ -121,6 +131,13 @@ robots: "noindex, follow"
     max-width: 46ch;
     margin: var(--md) auto 0;
   }
+  .referral-other {
+    font-size: 0.88rem;
+    opacity: 0.75;
+    margin: var(--md) auto 0;
+  }
+  .referral-other a { text-decoration: underline; text-underline-offset: 3px; }
+  .referral-other .sep { opacity: 0.45; margin: 0 6px; }
 </style>
 
 <script>
@@ -205,17 +222,46 @@ robots: "noindex, follow"
     return a;
   }
 
+  /**
+   * Offer the platforms the visitor is not currently on. The invite is identical on each —
+   * the code is claimed against the Arc account, so it does not matter which one they install.
+   */
+  function renderOtherPlatforms(platform, code) {
+    var all = [
+      { id: 'android', label: 'Android', href: playUrl(code) },
+      { id: 'mac', label: 'Mac', href: MAC_URL },
+      { id: 'windows', label: 'Windows', href: WINDOWS_URL }
+    ];
+    var others = all.filter(function (p) { return p.id !== platform; });
+    if (!others.length) return;
+
+    var host = document.getElementById('referral-other-links');
+    others.forEach(function (p, i) {
+      if (i > 0) {
+        var sep = document.createElement('span');
+        sep.className = 'sep';
+        sep.textContent = '·';
+        host.appendChild(sep);
+      }
+      var a = document.createElement('a');
+      a.href = p.href;
+      a.textContent = p.label;
+      host.appendChild(a);
+    });
+    document.getElementById('referral-other').hidden = false;
+  }
+
+  function playUrl(code) {
+    return code ? PLAY_URL + '&referrer=' + encodeURIComponent('arc_ref=' + code) : PLAY_URL;
+  }
+
   function render(platform, code) {
     var group = document.getElementById('referral-cta-group');
     group.innerHTML = '';
 
     if (platform === 'android') {
       // The referrer parameter is what survives the trip through the Play Store.
-      var playUrl = PLAY_URL;
-      if (code) {
-        playUrl += '&referrer=' + encodeURIComponent('arc_ref=' + code);
-      }
-      group.appendChild(button(playUrl, 'Get Arc on Google Play', false));
+      group.appendChild(button(playUrl(code), 'Get Arc on Google Play', false));
       return;
     }
 
@@ -240,7 +286,7 @@ robots: "noindex, follow"
     }
 
     // Unknown platform: offer everything rather than guessing wrong.
-    group.appendChild(button(PLAY_URL + (code ? '&referrer=' + encodeURIComponent('arc_ref=' + code) : ''), 'Android', false));
+    group.appendChild(button(playUrl(code), 'Android', false));
     group.appendChild(button(MAC_URL, 'Mac', true));
     group.appendChild(button(WINDOWS_URL, 'Windows', false));
     showDesktopHandoff(code);
@@ -296,6 +342,7 @@ robots: "noindex, follow"
   if (code) remember(code);
   showCode(code);
   render(platform, code);
+  if (platform !== 'ios' && platform !== 'other') renderOtherPlatforms(platform, code);
   recordClick(code, platform);
 })();
 </script>
