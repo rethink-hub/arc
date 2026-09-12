@@ -93,6 +93,10 @@ exclude:
 
 # Include files
 include:
+  # Jekyll skips dot-directories by default, so .well-known must be named
+  # explicitly or assetlinks.json never reaches _site and Android App Links
+  # silently fall back to opening the browser.
+  - .well-known
   - _pages
   - privacy.md
   - assets

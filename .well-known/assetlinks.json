@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rethink.arc",
+      "sha256_cert_fingerprints": [
+        "F1:0C:01:34:80:07:EE:95:44:A6:8B:ED:D7:24:D0:AA:F5:A1:18:65:BE:AF:2B:26:EF:A0:28:70:0D:B1:D2:AD"
+      ]
+    }
+  }
+]
