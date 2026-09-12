@@ -1,0 +1,270 @@
+---
+layout: default
+permalink: /go/
+title: "Opening Arc"
+description: "Open Arc on the screen this link points to, or install Arc if you don't have it yet."
+keywords: "Arc AI, open Arc, Arc deep link"
+og_image: /assets/images/og-arc.png
+robots: "noindex, follow"
+---
+
+<!--
+  Route hand-off page.
+
+  Android and macOS can claim an https link by domain and open the app directly, so an Android
+  user with Arc installed never sees this page — the verified App Link intercepts it first. This
+  is for everyone else:
+
+  - Windows: an unpackaged Win32 app cannot claim an https URL at all (that needs MSIX package
+    identity), so the custom scheme is the only route into the app and this page is the only way
+    to reach it from the web.
+  - macOS outside Safari/Mail/Messages: Universal Links only fire from those three, so a Chrome
+    click lands here instead of in Arc.
+  - Anyone without Arc: they get the download for the platform they're actually on, rather than
+    a dead link.
+
+  The route is read from `?to=` first and from the path second. The path form only occurs when
+  GitHub Pages has served this page through 404.html for a pretty `/go/ROUTE` link — see 404.md.
+
+  Routes are matched against a fixed list rather than passed through. `?to=` arrives from
+  whatever anyone chose to link to, and concatenating it straight into `arc://` would let a
+  crafted value carry its own scheme into the app.
+-->
+
+<div class="hero-section" style="text-align: center;">
+  <div class="coming-soon-badge status-live" id="go-badge">Opening Arc</div>
+  <h1 id="go-heading">Taking you to Arc</h1>
+  <p class="hero-subtitle" id="go-subtitle">
+    If Arc is installed, it should be opening now.
+  </p>
+
+  <div class="hero-cta-group" id="go-cta-group" style="justify-content: center;">
+    <a href="#" id="go-open" class="cta-button">Open Arc</a>
+  </div>
+
+  <!--
+    Revealed only once the hand-off has plainly not worked. Showing "get Arc" straight away to
+    somebody who already has it installed is the failure mode worth avoiding: the page has no
+    way to ask whether the app exists, so it waits to be told by the absence of a switch away.
+  -->
+  <div id="go-fallback" hidden>
+    <p class="hero-subtitle" id="go-fallback-text">
+      Nothing happened? You may not have Arc on this device yet.
+    </p>
+    <div class="hero-cta-group" id="go-download-group" style="justify-content: center;"></div>
+  </div>
+
+  <p class="referral-fineprint" id="go-fineprint" hidden></p>
+</div>
+
+<style>
+  .go-destination { font-weight: 600; }
+  #go-fallback { margin-top: var(--lg); }
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.rethink.arc';
+  var MAC_URL = '{{ site.mac_app.dmg | relative_url }}';
+  var WINDOWS_URL = '{{ "/windows/" | relative_url }}';
+
+  // How long to wait before deciding the hand-off did not land. Long enough that a slow app
+  // launch is not mistaken for a missing install, short enough not to feel broken.
+  var FALLBACK_DELAY_MS = 1500;
+
+  /**
+   * Every route a link may name, and what to call it on screen.
+   *
+   * This mirrors the route table the apps parse. The hyphenated names are the ones links should
+   * use; the underscored ones are what earlier builds and push payloads already send, and they
+   * keep working forever — a link is out of our hands the moment it is sent.
+   */
+  var ROUTES = {
+    'home':                 'your library',
+    'settings':             'Settings',
+    'custom-actions':       'your actions',
+    'custom-actions/new':   'a new action',
+    'community-actions':    'Community Actions',
+    'chats':                'your chats',
+    'flashcards':           'your flashcards',
+    'info-vault':           'your Info Vault',
+    'tutorial':             'the tutorial',
+    'login':                'sign-in',
+    'upgrade':              'Arc Pro',
+    'referral':             'Refer a friend',
+    'unread':               'your unread queue',
+
+    'summary_list':         'your library',
+    'library':              'your library',
+    'custom_actions':       'your actions',
+    'create_custom_action': 'a new action',
+    'predefined_actions':   'Community Actions',
+    'chat_history':         'your chats',
+    'active_chats':         'your chats',
+    'flashcard_library':    'your flashcards',
+    'info_vault':           'your Info Vault',
+    'pro_upgrade':          'Arc Pro',
+    'unread_queue':         'your unread queue',
+    'general_settings':     'Settings',
+    'tts_settings':         'Settings',
+    'sidebar_settings':     'Settings',
+    'backup_settings':      'Settings',
+    'app_management':       'Settings',
+    'my_subscriptions':     'your subscription',
+    'call_insights':        'Call Insights',
+    'about':                'About Arc',
+    'privacy_policy':       'the privacy policy'
+  };
+
+  // --- route --------------------------------------------------------------
+
+  /**
+   * Read the route from `?to=`, then from the path.
+   *
+   * Anything not on the list is ignored rather than guessed at, and the app is opened on its
+   * home screen instead. A link naming a screen this site has never heard of is far more likely
+   * to be a typo than a screen worth inventing a hand-off for.
+   */
+  function readRoute() {
+    var params = new URLSearchParams(window.location.search);
+    var fromQuery = params.get('to');
+    if (isRoute(fromQuery)) return normalize(fromQuery);
+
+    var segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length >= 2 && segments[0] === 'go') {
+      var fromPath = segments.slice(1).join('/');
+      if (isRoute(fromPath)) return normalize(fromPath);
+    }
+
+    return null;
+  }
+
+  function isRoute(value) {
+    return !!value && Object.prototype.hasOwnProperty.call(ROUTES, normalize(value));
+  }
+
+  function normalize(value) {
+    return String(value).trim().replace(/^\/+|\/+$/g, '').toLowerCase();
+  }
+
+  // --- platform -----------------------------------------------------------
+
+  function detectPlatform() {
+    var ua = navigator.userAgent || '';
+    if (/android/i.test(ua)) return 'android';
+    if (/iPad|iPhone|iPod/.test(ua)) return 'ios';
+    // iPadOS reports as Macintosh; a touch-capable "Mac" is really an iPad.
+    if (/Macintosh/.test(ua)) {
+      return (navigator.maxTouchPoints || 0) > 1 ? 'ios' : 'mac';
+    }
+    if (/Windows/i.test(ua)) return 'windows';
+    return 'other';
+  }
+
+  // --- rendering ----------------------------------------------------------
+
+  function button(href, label, download) {
+    var a = document.createElement('a');
+    a.className = 'cta-button';
+    a.href = href;
+    a.textContent = label;
+    if (download) a.setAttribute('download', '');
+    return a;
+  }
+
+  function describe(route) {
+    var where = ROUTES[route];
+    if (!where) return;
+    document.getElementById('go-heading').textContent = 'Opening Arc';
+    document.getElementById('go-subtitle').innerHTML =
+      'Taking you to <span class="go-destination"></span> in Arc.';
+    document.querySelector('#go-subtitle .go-destination').textContent = where;
+  }
+
+  /**
+   * Offer the install for the platform the visitor is actually on.
+   *
+   * iOS has no Arc yet, so it is told so plainly rather than being handed a download that will
+   * not work — an honest dead end beats a confusing one.
+   */
+  function renderDownloads(platform) {
+    var group = document.getElementById('go-download-group');
+
+    if (platform === 'ios') {
+      document.getElementById('go-fallback-text').textContent =
+        'Arc is not on iPhone or iPad yet. It works on Android, Mac and Windows.';
+      group.appendChild(button(PLAY_URL, 'Android', false));
+      group.appendChild(button(MAC_URL, 'Mac', true));
+      group.appendChild(button(WINDOWS_URL, 'Windows', false));
+      return;
+    }
+
+    if (platform === 'android') {
+      group.appendChild(button(PLAY_URL, 'Get Arc on Google Play', false));
+      return;
+    }
+    if (platform === 'mac') {
+      group.appendChild(button(MAC_URL, 'Download Arc for Mac', true));
+      return;
+    }
+    if (platform === 'windows') {
+      group.appendChild(button(WINDOWS_URL, 'Get Arc for Windows', false));
+      return;
+    }
+
+    // Unknown platform: offer everything rather than guessing wrong.
+    group.appendChild(button(PLAY_URL, 'Android', false));
+    group.appendChild(button(MAC_URL, 'Mac', true));
+    group.appendChild(button(WINDOWS_URL, 'Windows', false));
+  }
+
+  // --- hand-off -----------------------------------------------------------
+
+  /**
+   * Try to open the app, and remember whether the browser ever left this page.
+   *
+   * The automatic attempt is a convenience, not the mechanism: browsers may refuse to navigate
+   * to a custom scheme without a user gesture, which is why the button is on the page from the
+   * start and does the same thing on click.
+   */
+  function handOff(target) {
+    var switched = false;
+
+    function noteSwitch() {
+      if (document.visibilityState === 'hidden') switched = true;
+    }
+    document.addEventListener('visibilitychange', noteSwitch);
+    window.addEventListener('pagehide', function () { switched = true; });
+    window.addEventListener('blur', function () { switched = true; });
+
+    document.getElementById('go-open').href = target;
+
+    try {
+      window.location.href = target;
+    } catch (e) { /* blocked without a gesture; the button still works */ }
+
+    window.setTimeout(function () {
+      if (switched || document.visibilityState === 'hidden') return;
+      document.getElementById('go-fallback').hidden = false;
+    }, FALLBACK_DELAY_MS);
+  }
+
+  // --- go -----------------------------------------------------------------
+
+  var route = readRoute();
+  var platform = detectPlatform();
+
+  if (route) {
+    describe(route);
+  } else {
+    // No usable route: still worth opening Arc, just on its home screen.
+    document.getElementById('go-subtitle').textContent =
+      'This link does not name a screen we recognise, so Arc will open where it usually does.';
+  }
+
+  renderDownloads(platform);
+  handOff('arc://' + (route || 'home'));
+})();
+</script>
