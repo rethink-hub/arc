@@ -48,3 +48,111 @@ bio:
   medium: profile
   campaign: evergreen
   content: link_in_bio
+
+# ---------------------------------------------------------------------------
+# Generic per-platform slugs.
+#
+# Use these when a link is not worth its own entry — a profile bio, a reply in a
+# thread, a quick comment. They answer "which platform works" but not "which post
+# works", so prefer a specific slug whenever you are posting something you might
+# want to repeat. `content` is deliberately "generic" so these never masquerade as
+# a particular piece of content in the report.
+# ---------------------------------------------------------------------------
+
+x:
+  source: x
+  medium: post
+  campaign: generic
+  content: generic
+
+reddit:
+  source: reddit
+  medium: post
+  campaign: generic
+  content: generic
+
+youtube:
+  source: youtube
+  medium: video
+  campaign: generic
+  content: generic
+
+instagram:
+  source: instagram
+  medium: post
+  campaign: generic
+  content: generic
+
+tiktok:
+  source: tiktok
+  medium: video
+  campaign: generic
+  content: generic
+
+facebook:
+  source: facebook
+  medium: post
+  campaign: generic
+  content: generic
+
+linkedin:
+  source: linkedin
+  medium: post
+  campaign: generic
+  content: generic
+
+threads:
+  source: threads
+  medium: post
+  campaign: generic
+  content: generic
+
+producthunt:
+  source: producthunt
+  medium: listing
+  campaign: generic
+  content: generic
+
+hackernews:
+  source: hackernews
+  medium: post
+  campaign: generic
+  content: generic
+
+discord:
+  source: discord
+  medium: message
+  campaign: generic
+  content: generic
+
+telegram:
+  source: telegram
+  medium: message
+  campaign: generic
+  content: generic
+
+whatsapp:
+  source: whatsapp
+  medium: message
+  campaign: generic
+  content: generic
+
+newsletter:
+  source: newsletter
+  medium: email
+  campaign: generic
+  content: generic
+
+blog:
+  source: blog
+  medium: article
+  campaign: generic
+  content: generic
+
+# The website's own buttons, so traffic Arc sends itself is not mistaken for
+# somebody else's marketing.
+website:
+  source: website
+  medium: cta
+  campaign: generic
+  content: generic
