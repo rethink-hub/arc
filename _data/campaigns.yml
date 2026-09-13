@@ -1,0 +1,50 @@
+# Acquisition campaigns — the slug table behind https://arcassistant.app/s/?c=<slug>
+#
+# One entry per place a link is posted. The slug is what goes in the link; the utm values are
+# what Play carries through the install and what the backend groups revenue by, so a slug that
+# is never reused is the difference between "Reddit works" and "this particular Reddit post
+# works".
+#
+# Conventions, kept deliberately narrow so the report groups cleanly:
+#   source   - the platform:  reddit, x, youtube, producthunt, hn, newsletter
+#   medium   - the format:    post, comment, short, video, bio, profile, thread, email
+#   campaign - the push:      launch_oct, blackfriday, evergreen
+#   content  - THE ONE POST:  unique per post/video/ad creative. Never reuse.
+#
+# Lowercase, and only letters, digits, dot, dash and underscore — the backend reduces anything
+# else to underscores, which makes two different campaigns look like one.
+#
+# Do not tag Google Ads links. Google overwrites the Play referrer on installs it drives, so a
+# hand-written referrer there is silently discarded. Those live in Google Ads linked to Firebase.
+#
+# Adding a campaign is a commit to this file. Nothing else needs to change.
+
+reddit-androidapps-1012:
+  source: reddit
+  medium: post
+  campaign: launch_oct
+  content: r_androidapps_1012
+
+reddit-productivity-1014:
+  source: reddit
+  medium: comment
+  campaign: launch_oct
+  content: r_productivity_1014
+
+x-launch-thread:
+  source: x
+  medium: thread
+  campaign: launch_oct
+  content: launch_thread_1
+
+yt-sidebar-demo:
+  source: youtube
+  medium: short
+  campaign: evergreen
+  content: sidebar_demo_60s
+
+bio:
+  source: bio
+  medium: profile
+  campaign: evergreen
+  content: link_in_bio

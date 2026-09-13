@@ -1,0 +1,171 @@
+---
+layout: default
+permalink: /s/
+title: "Getting Arc"
+description: "Taking you to Arc on your platform."
+keywords: "Arc AI, get Arc, download Arc"
+og_image: /assets/images/og-arc.png
+robots: "noindex, nofollow"
+---
+
+<!--
+  Acquisition hand-off page.
+
+  Every marketing link points here rather than straight at the Play Store, for one reason: the
+  Play referrer is the only string that survives an install, and it has to be attached to the
+  store URL at click time. Pointing the post at Play directly throws that away, and the sale it
+  eventually produces arrives with no idea where it came from.
+
+  The slug is read from `?c=` first and from the path second. The path form only occurs when
+  GitHub Pages has served this page through 404.html for a pretty `/s/SLUG` link — see 404.md.
+  Slugs live in _data/campaigns.yml; adding a campaign is a commit to that file and nothing else.
+
+  Slugs are matched against that fixed list rather than passed through. The referrer string ends
+  up inside a URL the Play Store parses, so a value from an arbitrary link is never concatenated
+  into it — an unknown slug goes to the store untagged instead.
+
+  Only Android carries a referrer. Mac and Windows have no equivalent, so those visitors go to
+  the site with the tags left on the URL, where the site's own analytics can still see them.
+-->
+
+<div class="hero-section" style="text-align: center;">
+  <div class="coming-soon-badge status-live">Getting Arc</div>
+  <h1>Taking you to Arc</h1>
+  <p class="hero-subtitle" id="s-subtitle">
+    One moment — opening the right download for your device.
+  </p>
+
+  <div class="hero-cta-group" id="s-cta-group" style="justify-content: center;">
+    <!-- Filled in by JS so nobody is sent to the wrong store if the redirect is blocked. -->
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.rethink.arc';
+  var MAC_URL = '{{ site.mac_app.dmg | relative_url }}';
+  var WINDOWS_URL = '{{ "/windows/" | relative_url }}';
+  var HOME_URL = '{{ "/" | relative_url }}';
+
+  /** The campaign table, rendered from _data/campaigns.yml at build time. */
+  var CAMPAIGNS = {
+{%- for campaign in site.data.campaigns %}
+    {{ campaign[0] | jsonify }}: {
+      source: {{ campaign[1].source | default: "" | jsonify }},
+      medium: {{ campaign[1].medium | default: "" | jsonify }},
+      campaign: {{ campaign[1].campaign | default: "" | jsonify }},
+      content: {{ campaign[1].content | default: "" | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  };
+
+  // --- slug ---------------------------------------------------------------
+
+  function readSlug() {
+    var params = new URLSearchParams(window.location.search);
+    var fromQuery = params.get('c');
+    if (isSlug(fromQuery)) return normalize(fromQuery);
+
+    var segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length >= 2 && segments[0] === 's') {
+      var fromPath = segments[1];
+      if (isSlug(fromPath)) return normalize(fromPath);
+    }
+
+    return null;
+  }
+
+  function isSlug(value) {
+    return !!value && Object.prototype.hasOwnProperty.call(CAMPAIGNS, normalize(value));
+  }
+
+  function normalize(value) {
+    return String(value).trim().replace(/^\/+|\/+$/g, '').toLowerCase();
+  }
+
+  // --- tags ---------------------------------------------------------------
+
+  /**
+   * Build the utm query for a campaign, skipping anything the table left blank.
+   *
+   * Encoded once here. The Android path encodes the whole thing a second time as the value of
+   * `referrer=`, which is what Play expects and what the app decodes on first launch.
+   */
+  function utmQuery(campaign) {
+    var parts = [];
+    if (campaign.source) parts.push('utm_source=' + encodeURIComponent(campaign.source));
+    if (campaign.medium) parts.push('utm_medium=' + encodeURIComponent(campaign.medium));
+    if (campaign.campaign) parts.push('utm_campaign=' + encodeURIComponent(campaign.campaign));
+    if (campaign.content) parts.push('utm_content=' + encodeURIComponent(campaign.content));
+    return parts.join('&');
+  }
+
+  function playUrlFor(campaign) {
+    if (!campaign) return PLAY_URL;
+    var query = utmQuery(campaign);
+    return query ? PLAY_URL + '&referrer=' + encodeURIComponent(query) : PLAY_URL;
+  }
+
+  // --- platform -----------------------------------------------------------
+
+  function detectPlatform() {
+    var ua = navigator.userAgent || '';
+    if (/android/i.test(ua)) return 'android';
+    if (/iPad|iPhone|iPod/.test(ua)) return 'ios';
+    // iPadOS reports as Macintosh; a touch-capable "Mac" is really an iPad.
+    if (/Macintosh/.test(ua)) {
+      return (navigator.maxTouchPoints || 0) > 1 ? 'ios' : 'mac';
+    }
+    if (/Windows/i.test(ua)) return 'windows';
+    return 'other';
+  }
+
+  function button(href, label, download) {
+    var a = document.createElement('a');
+    a.className = 'cta-button';
+    a.href = href;
+    a.textContent = label;
+    if (download) a.setAttribute('download', '');
+    return a;
+  }
+
+  // --- go -----------------------------------------------------------------
+
+  var slug = readSlug();
+  var campaign = slug ? CAMPAIGNS[slug] : null;
+  var platform = detectPlatform();
+  var group = document.getElementById('s-cta-group');
+
+  var destination;
+  if (platform === 'android') {
+    destination = playUrlFor(campaign);
+    group.appendChild(button(destination, 'Get Arc on Google Play', false));
+  } else if (platform === 'mac') {
+    destination = MAC_URL;
+    group.appendChild(button(destination, 'Download Arc for Mac', true));
+  } else if (platform === 'windows') {
+    destination = WINDOWS_URL;
+    group.appendChild(button(destination, 'Get Arc for Windows', false));
+  } else if (platform === 'ios') {
+    // No Arc on iOS yet. Say so rather than handing over a download that cannot work.
+    document.getElementById('s-subtitle').textContent =
+      'Arc is not on iPhone or iPad yet. It works on Android, Mac and Windows.';
+    group.appendChild(button(playUrlFor(campaign), 'Android', false));
+    group.appendChild(button(MAC_URL, 'Mac', true));
+    group.appendChild(button(WINDOWS_URL, 'Windows', false));
+    return;
+  } else {
+    // Desktop browser we cannot place: the site itself is the safest destination, with the tags
+    // kept on the URL so the visit is still countable.
+    var query = campaign ? utmQuery(campaign) : '';
+    destination = query ? HOME_URL + '?' + query : HOME_URL;
+    group.appendChild(button(destination, 'Explore Arc', false));
+  }
+
+  // Replace rather than assign: a back tap should return to wherever the link was posted, not
+  // bounce through this page again.
+  window.location.replace(destination);
+})();
+</script>
