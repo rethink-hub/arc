@@ -24,8 +24,10 @@ robots: "noindex, nofollow"
   up inside a URL the Play Store parses, so a value from an arbitrary link is never concatenated
   into it — an unknown slug goes to the store untagged instead.
 
-  Only Android carries a referrer. Mac and Windows have no equivalent, so those visitors go to
-  the site with the tags left on the URL, where the site's own analytics can still see them.
+  Only Android carries a referrer. Mac and Windows have no equivalent, so they get two other
+  routes: the visit is recorded server-side for the app to match against on first launch, and once
+  installed, the handoff link below puts the campaign into the app exactly. Desktop visitors are
+  therefore not redirected away — the page has to survive for that link to be clickable.
 -->
 
 <div class="hero-section" style="text-align: center;">
@@ -38,12 +40,21 @@ robots: "noindex, nofollow"
   <div class="hero-cta-group" id="s-cta-group" style="justify-content: center;">
     <!-- Filled in by JS so nobody is sent to the wrong store if the redirect is blocked. -->
   </div>
+
+  <!--
+    Desktop only. A download carries no campaign the way a Play install does, so after installing,
+    this puts the campaign into the app exactly rather than leaving it to a network guess.
+  -->
+  <div class="platform-links" style="justify-content: center;" id="s-handoff" hidden>
+    <a href="#" id="s-open-app" class="cta-button">Installed Arc? Finish setup</a>
+  </div>
 </div>
 
 <script>
 (function () {
   'use strict';
 
+  var API_BASE = 'https://d1y3owe337zqgk.cloudfront.net/api/v1';
   var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.rethink.arc';
   var MAC_URL = '{{ site.mac_app.dmg | relative_url }}';
   var WINDOWS_URL = '{{ "/windows/" | relative_url }}';
@@ -131,12 +142,58 @@ robots: "noindex, nofollow"
     return a;
   }
 
+  /**
+   * Record the visit so a desktop install can ask the backend which campaign produced it.
+   *
+   * Android needs none of this — Play carries the campaign through the install. A .dmg or .exe
+   * carries nothing, so this visit is the only server-side trace linking the download to the
+   * campaign, and the app matches against it on first launch.
+   *
+   * Best-effort in every sense: failures are ignored and nothing on the page waits for it.
+   */
+  function recordClick(campaign, platform) {
+    if (!campaign || !window.fetch) return;
+    try {
+      fetch(API_BASE + '/attribution/click', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          source: campaign.source,
+          medium: campaign.medium,
+          campaign: campaign.campaign,
+          content: campaign.content,
+          platform: platform
+        }),
+        keepalive: true
+      }).catch(function () { /* attribution is a bonus, never a blocker */ });
+    } catch (e) { /* ignore */ }
+  }
+
+  /**
+   * Offer the deterministic handoff, for desktop only.
+   *
+   * The deferred match above is a guess against a shared network; this is certainty. Revealed
+   * rather than fired, because the app does not exist yet when the page loads — the user installs
+   * first, comes back to this tab, and clicks.
+   */
+  function showDesktopHandoff(campaign) {
+    if (!campaign) return;
+    var query = utmQuery(campaign);
+    if (!query) return;
+    var section = document.getElementById('s-handoff');
+    var link = document.getElementById('s-open-app');
+    link.href = 'arc://attribution?' + query;
+    section.hidden = false;
+  }
+
   // --- go -----------------------------------------------------------------
 
   var slug = readSlug();
   var campaign = slug ? CAMPAIGNS[slug] : null;
   var platform = detectPlatform();
   var group = document.getElementById('s-cta-group');
+
+  recordClick(campaign, platform);
 
   var destination;
   if (platform === 'android') {
@@ -145,9 +202,11 @@ robots: "noindex, nofollow"
   } else if (platform === 'mac') {
     destination = MAC_URL;
     group.appendChild(button(destination, 'Download Arc for Mac', true));
+    showDesktopHandoff(campaign);
   } else if (platform === 'windows') {
     destination = WINDOWS_URL;
     group.appendChild(button(destination, 'Get Arc for Windows', false));
+    showDesktopHandoff(campaign);
   } else if (platform === 'ios') {
     // No Arc on iOS yet. Say so rather than handing over a download that cannot work.
     document.getElementById('s-subtitle').textContent =
@@ -164,8 +223,15 @@ robots: "noindex, nofollow"
     group.appendChild(button(destination, 'Explore Arc', false));
   }
 
-  // Replace rather than assign: a back tap should return to wherever the link was posted, not
-  // bounce through this page again.
-  window.location.replace(destination);
+  // Android leaves immediately for the Store, where the referrer does the work. Desktop stays:
+  // the download starts on its own, and the page has to remain for the handoff link to be
+  // clickable after the installer has run.
+  if (platform === 'android') {
+    // Replace rather than assign: a back tap should return to wherever the link was posted, not
+    // bounce through this page again.
+    window.location.replace(destination);
+  } else if (destination) {
+    window.location.href = destination;
+  }
 })();
 </script>
