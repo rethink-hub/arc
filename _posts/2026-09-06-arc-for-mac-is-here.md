@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Arc for Mac Is Here — Your AI Screen Assistant, Now on macOS"
-description: "Arc for Mac is out. Press Control + Space anywhere in macOS to summarize, read aloud, chat, or rewrite whatever is on your screen. Free to start, notarized by Apple, and it syncs with Arc on Android."
+description: "Arc for Mac is out. Press Control + Space anywhere in macOS to summarize, read aloud, chat, or rewrite what's on your screen. Free to start, notarized by Apple."
 date: 2026-09-06
 author: Rethink
 tags: ["macos", "arc-for-mac", "release", "ai-assistant", "productivity"]
