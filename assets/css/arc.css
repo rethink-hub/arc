@@ -1359,7 +1359,8 @@ details p { padding: var(--md) var(--lg); margin: 0; color: var(--text-2); font-
   gap: var(--xl);
 }
 .footer-links-col { display: flex; flex-direction: column; gap: 10px; }
-.footer-links-col h4 {
+.footer-links-col h4,
+.footer-heading {
   color: var(--text-inverse);
   font-size: 0.95rem;
   font-weight: 700;
