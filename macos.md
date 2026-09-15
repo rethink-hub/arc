@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Arc for Mac — AI Screen Assistant | Free Download for macOS"
-description: "Download Arc for macOS free. AI summaries, text-to-speech, AI chat, AI writer, and custom workflow automation for any window on your Mac. Requires macOS 14 or later."
+description: "Download Arc for macOS free. AI summaries, text-to-speech, AI chat, AI writer, and workflow automation for any window. Requires macOS 14+."
 keywords: "Arc for Mac, macOS AI assistant, AI screen assistant Mac, Mac AI summary app, Mac text to speech AI, Mac workflow automation, download AI assistant Mac"
 platform: macos
 og_image: /assets/images/og-macos.png
