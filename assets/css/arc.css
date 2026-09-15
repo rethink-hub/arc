@@ -1792,3 +1792,30 @@ details.animate-in,
 .iphone-frame.animate-in,
 .cross-device-cta.animate-in,
 .footer-content.animate-in { opacity: 1 !important; }
+
+
+/* Comparison table (alternatives page) */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--lg) 0;
+  background: var(--bg-card, rgba(255,255,255,0.03));
+  border-radius: 12px;
+  overflow: hidden;
+}
+.comparison-table th, .comparison-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  color: inherit;
+}
+.comparison-table tr:first-child th {
+  font-weight: 700;
+  color: var(--text-inverse, #fff);
+  background: rgba(108, 49, 255, 0.25);
+}
+.comparison-table td:first-child { font-weight: 600; }
+.content-section { margin: var(--xl) auto; max-width: 760px; padding: 0 20px; }
+.content-section h2 { margin-bottom: var(--md); }
+.content-section details { border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
+.content-section summary { cursor: pointer; font-weight: 600; }
