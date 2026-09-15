@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Terms of Service - Arc AI: Android & macOS AI Assistant"
-description: "Terms of Service for the Arc AI assistant on Android and macOS. Understand usage terms, AI features, billing, and conditions for our AI productivity application."
+description: "Terms of Service for the Arc AI assistant on Android and macOS. Usage terms, AI features, billing, and conditions for our productivity app."
 keywords: "Arc AI terms, Android AI app terms of service, Mac AI app terms of service"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow

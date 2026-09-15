@@ -230,7 +230,7 @@ Arc uses ML Kit Language Identification to automatically detect the language of 
 
 ## Information We Handle for Other Features
 
-#### **Optional Account Information (If You Choose to Sign In)**
+### **Optional Account Information (If You Choose to Sign In)**
 
 Arc is fully functional without an account. However, to enable optional features like Google Drive backup and Community Actions, you can choose to create an account using Google Sign-In.
 
