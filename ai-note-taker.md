@@ -69,6 +69,10 @@ product_page: true
   </div>
 </div>
 
+<div class="content-section">
+  <img src="/assets/images/screenshots/13_call_insights_detail_promotional.png" alt="Arc Call Insights showing a transcribed call with summary and extracted action items" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
 ---
 
 <div class="section-header">

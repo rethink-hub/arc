@@ -57,6 +57,10 @@ product_page: true
   </div>
 </div>
 
+<div class="content-section">
+  <img src="/assets/images/screenshots/00_settings_choose_apps.jpg" alt="Arc settings screen showing per-app permissions where you choose which apps Arc works in" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
 ---
 
 <div class="content-section">

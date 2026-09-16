@@ -29,6 +29,9 @@ product_page: true
 </div>
 
 <p>If text on a screen costs you something to read — effort, time, confidence — you already know the routine: select the text, copy it, switch apps, paste it, press play. A dozen taps just to hear a paragraph. That routine is exactly what a good text-to-speech app should make disappear.</p>
+<div class="content-section">
+  <img src="/assets/images/screenshots/00_summary_library_with_items.jpg" alt="Arc summary library with TTS play buttons on each saved summary" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
 
 <p>Arc is designed from the ground up for people who read differently:</p>
 
