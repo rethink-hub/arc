@@ -149,6 +149,10 @@ product_page: true
   <p style="font-size:0.9em; color:var(--text-muted);">The deck library: every deck with its source app, card count, and reviewed tally.</p>
 </div>
 
+<div class="content-section">
+  <img src="/assets/images/screenshots/09_flashcards_viewer_answer.jpg" alt="Flashcard answer view on Android showing the flipped card" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
 <h3>Preview before you save</h3>
 
 <p>Here's the part that keeps a deck library worth opening in month three: the viewer opens the moment a deck is generated, before anything is saved. You study the deck first — every card — and only press <strong>Save to Library</strong> if it's actually good.</p>

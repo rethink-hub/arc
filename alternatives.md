@@ -63,6 +63,10 @@ og_image: /assets/images/og-arc.png
     <p style="font-size:0.9em; color:var(--text-muted);">Arc's menu summoned over Chrome on macOS — no app switch, no copy-paste. On Android, the same actions live in the edge-swipe sidebar.</p>
   </div>
 
+<div class="content-section">
+  <img src="/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg" alt="Arc floating sidebar over Chrome on Android — the screen-aware alternative" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
   <p><strong>Strengths:</strong></p>
   <ul>
     <li><strong>It works where you already are.</strong> Reading a long article in Chrome, an email in Gmail, a PDF in a reader — Arc acts on the actual screen content. No copying, no pasting, no switching apps.</li>

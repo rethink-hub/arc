@@ -25,6 +25,10 @@ product_page: true
   <p style="font-size:0.9em; color:var(--text-muted);">The Arc menu on macOS, summoned over Chrome. On Android the same actions live in the floating sidebar you swipe in from the screen edge.</p>
 </div>
 
+<div class="content-section">
+  <img src="/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg" alt="Arc floating sidebar expanded over Chrome on Android with all actions" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
 ---
 
 <div class="section-header">

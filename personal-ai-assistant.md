@@ -33,6 +33,10 @@ product_page: true
   <p>Saved entries live locally on your device. Google Drive backup is strictly opt-in, and when you switch phones, vault entries merge — they never overwrite. That means the assistant gets more useful the longer you use it, without you ever re-explaining yourself.</p>
 </div>
 
+<div class="content-section">
+  <img src="/assets/images/screenshots/00_home_screen_dashboard.jpg" alt="Arc home screen dashboard with reading stats, saved items and feature cards" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
 ---
 
 <div class="section-header">

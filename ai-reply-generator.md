@@ -114,6 +114,10 @@ product_page: true
 </div>
 
 <div class="content-section">
+  <img src="/assets/images/screenshots/03_ai_writer_reply_mode.jpg" alt="Arc AI Writer reply mode on Android with five reply intentions" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
+<div class="content-section">
   <h2>Keyboard-speed editing on desktop.</h2>
   <p>The desktop app takes replies a step further: bind any sub-action to a global shortcut — <strong>Control+R</strong> for Rephrase by default — and fix any text field without even opening the Arc panel. Cursor in the field, press the shortcut, done. It even works in terminals and Electron apps.</p>
 

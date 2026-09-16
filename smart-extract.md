@@ -68,6 +68,10 @@ product_page: true
   <p>On desktop, the same works over any window: PDFs in preview apps, text inside video subtitles, labels in design tools. If your eyes can read it, Arc can copy it.</p>
 </div>
 
+<div class="content-section">
+  <img src="/assets/images/screenshots/10_smart_extract_results.jpg" alt="Smart Extract results on Android showing extracted items with one-tap actions" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+</div>
+
 ---
 
 <div class="section-header">
