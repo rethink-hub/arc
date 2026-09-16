@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Best AI Apps for Android (2026): 9 Picks Tested by a Developer"
+title: "Best AI Apps for Android (2026): 9 Tested Picks"
 description: "The best AI apps for Android in 2026 — assistants, summarizers, writers, and automation tools, tested by an indie developer who builds one of them."
 keywords: "best ai apps, best ai apps for android, best android ai apps, ai apps 2026, best ai assistant android"
 og_image: /assets/images/og-arc.png

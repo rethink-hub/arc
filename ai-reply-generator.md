@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "AI Reply Generator for Android & Desktop — Smart Replies | Arc"
+title: "AI Reply Generator — Smart Replies in Any App | Arc"
 description: "Generate perfect replies in seconds. AI reply generator for WhatsApp, Gmail & Slack — polite, professional or concise responses written inside any app. Free."
 keywords: "ai reply generator, text reply generator, ai text reply generator, smart reply ai, email reply generator, whatsapp reply generator, auto reply generator"
 og_image: /assets/images/og-arc.png
