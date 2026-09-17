@@ -29,6 +29,8 @@ The enabling trick is macOS's Accessibility API (`AXUIElement`). With one Screen
 
 Arc for Mac runs in the menu bar. Press **Control+Space** from anywhere and a dark, Spotlight-style panel fades in over your current window — centered, glassy, keyboard-first. The panel is non-activating: it appears without taking focus, so the app underneath keeps its text cursor. Arrow down, hit Return, and the panel disappears while a small click-through overlay shows progress. The result lands in a floating panel beside your work — or, for text editing, straight back into the field you were typing in.
 
+<img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc menu panel floating over a Chrome window on macOS" width="1200" height="715" loading="lazy" />
+
 If you've used the Android version of [Arc](/android/), the concept carries over; the shape is different. Android gets a floating sidebar you swipe open over any app. On macOS you get a command palette on a global hotkey. Same AI, same screen-reading approach — keyboard-first instead of touch-first.
 
 ### The seven things it does out of the box
@@ -59,6 +61,8 @@ No account juggling beyond one sign-in — and if you use Arc on Android, one su
 This is the action that sells the app, and the reason most people install it. Reading a long BBC investigation, a dense docs page, or a 90-reply thread? Press **Control+Space**, Return on **AI Summary**.
 
 Arc reads the frontmost window directly — no select, no copy, no paste — and a result panel appears over your work with numbered key points: an AI-generated title, the key points, a source chip showing the page URL, and footer actions: **Share**, **Copy**, **Save**, and **Ask questions**. For browser content the source URL is resolved automatically, so the summary carries its provenance. If you'd rather listen than read, the play button hands the summary to **AI Read**.
+
+<img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="AI Summary result panel with numbered key points in Arc for Mac" width="1200" height="715" loading="lazy" />
 
 The numbered format matters more than it sounds. Walls of prose are just compressed reading; key points are scannable. You get the shape of the content in fifteen seconds and decide whether to invest more.
 
@@ -91,6 +95,8 @@ Four modes cover most of what people actually need:
 
 The reply modes deserve a special mention for email. A request lands that needs a "yes but let me check the timeline" answer: focus the reply field, hit Reply, tap **Yes/Agree**, edit two words, send. That's the difference between an AI assistant for Mac that demos well and one that shaves minutes off every email.
 
+<img src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="AI Writer ready to rewrite a Gmail reply field on macOS" width="1200" height="715" loading="lazy" />
+
 ### Make it sound like you: Info Vault
 
 Generic AI output is a dead giveaway. **Info Vault** fixes that: you store entries about yourself — your role, your tone preferences, the products you work on — and they appear as #chips in every AI Writer mode. Include them and the rewrite or reply reflects your context, not a generic corporate voice. Entries stay local and are only attached when you tap the chip.
@@ -108,11 +114,15 @@ Examples of bindings that earn their keep:
 
 Binding takes about three seconds: click the keyboard icon on any action's row, press your combination, done. Live conflict detection names any action that already holds the key, every Arc hotkey suspends during recording so capture is clean, and bindings survive restarts and updates. This is the closest thing macOS has to "run my AI on a key."
 
+<img src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Custom global shortcut assigned to AI Writer in Arc for Mac" width="1200" height="715" loading="lazy" />
+
 And if none of the built-ins fit, **Arc Actions** lets you write your own: any prompt, a `{screen_text}` placeholder that injects the on-screen content, optional screenshot region, optional web search. There's also a **Community Actions** catalog with 500+ ready-made prompts — every card shows the real prompt text, with verified badges and upvotes — addable in one click and fully editable once added.
 
 ## Save First, Read Later: Your Mac AI Assistant's Library
 
 Reading queues die because capture has friction. Your AI assistant for Mac doubles as a capture tool: **Save Content** removes it: one keystroke saves the screen's text, a screenshot, the source app, and the URL into the **Saved Items library** — a two-pane window with thumbnails, search, and multi-select app/category filters. Each saved item can be re-summarized, listened to, copied, or opened for questions later. First-time use asks explicit consent before any screenshot is stored, and there's a region-select option when you only want part of the screen.
+
+<img src="{{ '/assets/images/screenshots/macos/13_saved_item_detail_with_screenshot.jpg' | relative_url }}" alt="Saved item detail view in the Arc Saved Items library on macOS" width="1200" height="715" loading="lazy" />
 
 Pair it with Smart Extract for the practical stuff: that confirmation email becomes a calendar event and a reminder; that meetup page becomes a saved contact and a map pin. Seven item categories — Events, Reminders, Deadlines, Contacts, Meeting Links, Locations, OTPs — each with one matched real action, not just a link.
 

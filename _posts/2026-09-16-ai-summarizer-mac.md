@@ -43,6 +43,8 @@ Press **Control + Space** anywhere in macOS — with Safari in front, with a PDF
 
 Pick **Summarize** from the panel. Arc reads the frontmost window through the accessibility tree — the actual text, not a screenshot OCR guess — and a tight summary appears in the panel a second later. Press **Esc** and the panel collapses; your document is exactly where you left it, unscrolled and untouched.
 
+<img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc summarizer panel open over a Chrome window on macOS" width="1200" height="715" loading="lazy" />
+
 If you're a mouse person, there's a small icon in the menu bar that opens the same panel over the active window. And if Control+Space is already bound to something on your machine (it's the default input-source switcher on some setups), you can remap the shortcut in Arc's settings — the panel doesn't care which key summons it.
 
 That's the entire interaction model of this AI summarizer Mac workflow: one keystroke, one window, one result.
@@ -57,6 +59,8 @@ The most common use. Say you're on a 4,000-word product review and you only want
 4. Read the summary in the panel. If it's a keeper — a reference doc, a recipe, a comparison you'll need next week — tap **Save** and it goes to your Library, where it survives browser restarts and Mac reboots.
 
 Two things worth knowing about how this works. First, Arc summarizes what's rendered on the page, including parts of long articles that load as you scroll — you don't have to scroll to the bottom first. Second, if the summary skips something you care about, just type a follow-up in the panel: *"what did it say about battery life?"* The answer is grounded in the live window, so this AI summarizer Mac app answers from the actual article rather than inventing a plausible guess.
+
+<img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="AI Summary result panel with numbered key points in Arc for Mac" width="1200" height="715" loading="lazy" />
 
 ## Step 4: Summarize a PDF in Preview
 
@@ -74,6 +78,8 @@ A nine-reply thread is mostly repetition with one decision buried in it. Open th
 
 And because Arc is a full screen assistant and not only a summarizer, you can go one step further — choose **Reply** and the [AI Writer](/ai-writer/) drafts a response in the tone you've set, placed right where you were about to type it. Summarize the thread, answer the thread, press Esc. Nobody had to know you never read reply #6.
 
+<img src="{{ '/assets/images/screenshots/macos/03_ai_writer_inserted_into_gmail.jpg' | relative_url }}" alt="AI Writer reply drafted into a Gmail reply field on macOS" width="1200" height="715" loading="lazy" />
+
 ## Step 6: Build a Library, Then Let It Compound
 
 Summaries you save land in Arc's **Library** — a searchable list of everything you've condensed, grouped by source. This is what turns a summarizer from a party trick into a system:
@@ -83,6 +89,8 @@ Summaries you save land in Arc's **Library** — a searchable list of everything
 - **500+ community actions** are one-click installs — including summarizer presets other users have already tuned.
 - The Library optionally backs up to Google Drive, so a new Mac doesn't mean a cold start.
 
+<img src="{{ '/assets/images/screenshots/macos/13_saved_items_library_list.jpg' | relative_url }}" alt="Saved Items library list in Arc for Mac" width="1200" height="715" loading="lazy" />
+
 ## More Things This AI Summarizer Mac Setup Can Do
 
 Summarizing is the headline act, but the same panel does three related jobs that make it stick as a daily tool.
@@ -90,6 +98,8 @@ Summarizing is the headline act, but the same panel does three related jobs that
 ### Ask the window questions instead of just summarizing
 
 A summary tells you what a document says; follow-up questions tell you what *you* need from it. With the panel open, just type: *"Does this contract clause contradict the email above it?"*, *"Which of these 90 comments actually answer the question?"*, *"What am I agreeing to in this terms page?"* Because every answer is grounded in the live window rather than a chatbot's guess, this is the AI summarizer Mac setup that doubles as a reading assistant — it can quote the exact line you're asking about.
+
+<img src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Chat Screen panel discussing the current window's content in Arc for Mac" width="1200" height="715" loading="lazy" />
 
 ### Smart Extract: structure instead of prose
 

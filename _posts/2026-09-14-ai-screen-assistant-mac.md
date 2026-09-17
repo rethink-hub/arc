@@ -25,11 +25,15 @@ That's the category Arc belongs to, and its whole design hangs on one shortcut.
 
 Arc started life on Android, as a floating sidebar that could read whatever was on the phone screen and do something useful with it. The most common request ever since has been the same sentence in a dozen variations: *put this on my Mac.* It's there now, and it behaves the way an AI screen assistant Mac app should: free to start, notarized by Apple, and about two minutes from DMG to working panel. You can grab it from [Arc for Mac](/macos/). It ships as a universal binary, so it runs natively on Apple Silicon and Intel alike, on macOS 14 (Sonoma) or later.
 
+<img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc AI screen assistant panel over a Chrome window on macOS" width="1200" height="715" loading="lazy" />
+
 ### Control+Space: One Shortcut Over Every Window
 
 Press **Control + Space** anywhere in macOS. A slim floating panel slides in over whatever window has your attention — anchored to the side, translucent, your actions already listed in it. It behaves like a private little Spotlight: instead of launching apps, it works on the thing behind it. Pick an action, Arc reads the frontmost window, and the result lands in the panel. Press **Esc** and the panel collapses; your window is untouched, right where you left it.
 
 If you'd rather use the mouse, a small icon in the menu bar opens the same panel over the active window. The keyboard shortcut is simply faster, and it's remappable in settings if Control+Space is already spoken for on your machine.
+
+<img src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Arc menu panel with a custom global shortcut assigned to AI Writer" width="1200" height="715" loading="lazy" />
 
 That's the whole AI screen assistant Mac interaction model: one keystroke, one window, one result. There's a full app window too — for your Library of saved summaries, custom actions, and settings — but the daily loop is the panel.
 
@@ -43,6 +47,8 @@ Worth being explicit about, because "it can see my screen" sounds alarming until
 
 This is where an AI screen assistant Mac setup earns its keep. Long Safari articles, 40-page PDFs, email threads with fourteen replies, lecture notes, meeting agendas — press Control+Space, choose Summarize, and a tight summary appears in the panel without you leaving the app. Save the useful ones to your Library so they survive the restart. It's the same engine behind our [AI Summary & Reader](/ai-summary-reader/), now aimed at your desktop windows instead of your phone's.
 
+<img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="AI Summary result panel from the Arc screen assistant for Mac" width="1200" height="715" loading="lazy" />
+
 ### Listen Instead: Read-Aloud Mode
 
 Some windows you don't want to read — you want read to. Arc's AI text reader turns any on-screen article or document into natural speech, so a long policy page becomes something you can follow while making coffee or walking to the kitchen. It's the fastest way through a backlog of "I'll read it later" tabs, and it uses the same summary-and-reader toolkit that ships in the Android app.
@@ -50,6 +56,8 @@ Some windows you don't want to read — you want read to. Arc's AI text reader t
 ### Write and Reply Without Breaking Focus
 
 Half the text on a Mac screen is text you're supposed to answer: email, Slack, comments, application fields. Arc's AI Writer rewrites, replies, translates, and fixes grammar inside the app you're typing in — it doesn't hand you a wall of text to shuttle around, it puts the result back into the field you were editing. That round trip is the AI screen assistant Mac advantage over a chat tab: the answer goes where the work already is. The feature gets its own tour on the [AI Writer](/ai-writer/) page.
+
+<img src="{{ '/assets/images/screenshots/macos/03_ai_writer_inserted_into_gmail.jpg' | relative_url }}" alt="AI Writer rewrite inserted directly into a Gmail reply field on macOS" width="1200" height="715" loading="lazy" />
 
 ### Ask Your Screen a Question
 
