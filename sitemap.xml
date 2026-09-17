@@ -119,4 +119,10 @@ layout: null
     <priority>0.6</priority>
   </url>
   {% endfor %}
+    <url>
+    <loc>https://arcassistant.app/2026/09/17/ai-assistant-for-mac/</loc>
+    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   </urlset>
