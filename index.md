@@ -23,8 +23,13 @@ last_modified_at: 2026-09-19
 <div class="hero-section hero-with-live-demo">
   <div class="hero-content-row">
     <div class="hero-text-col">
-      <h1>Your AI Agent<br>for Any Screen</h1>
-      <p class="hero-subtitle">One floating sidebar for everything you do on your phone.</p>
+      <!-- The H1 carries the same words as the <title>: the Jev audit scored the
+           old "Your AI Agent for Any Screen" at 2.1 because the searchable phrase
+           (AI assistant, reads your screen) lived only in the title tag while the
+           H1 spent itself on a slogan. Subtitle names both platforms; "on your
+           phone" predated the Mac app. -->
+      <h1>An AI Assistant That Reads<br>the Screen You're On</h1>
+      <p class="hero-subtitle">Summarize, listen, rewrite and automate in any app — on Android and Mac. No copy-paste.</p>
 
       <div class="hero-cta-group">
         <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button" target="_blank" rel="noopener">
