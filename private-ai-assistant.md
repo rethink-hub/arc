@@ -58,11 +58,11 @@ product_page: true
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/00_settings_choose_apps.jpg" alt="Arc settings screen showing per-app permissions where you choose which apps Arc works in" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/00_settings_choose_apps.jpg" alt="Arc settings screen showing per-app permissions where you choose which apps Arc works in" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/00_settings_main_hub.jpg" alt="Arc settings hub on Android showing privacy and app controls" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/00_settings_main_hub.jpg" alt="Arc settings hub on Android showing privacy and app controls" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 ---
@@ -201,6 +201,18 @@ product_page: true
     <summary>Do you sell my data or show ads?</summary>
     <p>No. Arc is built by an indie developer and funded by an optional subscription. The free plan has a weekly AI allowance because generation costs money; Pro removes the limits. There are no ads and no data sales — check the plain-language privacy policy for the specifics.</p>
   </details>
+</div>
+
+
+<div class="related-links">
+  <h2>Related</h2>
+  <p>Privacy is a property of specific features, not a slogan. These are the ones people ask about:</p>
+  <ul>
+    <li><a href="{{ '/personal-ai-assistant/' | relative_url }}">Personal AI assistant</a> — the Info Vault, and what it keeps about you</li>
+    <li><a href="{{ '/alternatives/' | relative_url }}">Arc vs. the alternatives</a> — the same privacy questions asked of every option</li>
+    <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — the accessibility permission, and what it can and cannot see</li>
+    <li><a href="{{ '/macos/' | relative_url }}">Arc for Mac</a> — why it ships outside the Mac App Store</li>
+  </ul>
 </div>
 
 <script type="application/ld+json">

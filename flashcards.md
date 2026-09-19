@@ -150,7 +150,7 @@ product_page: true
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/09_flashcards_viewer_answer.jpg" alt="Flashcard answer view on Android showing the flipped card" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/09_flashcards_viewer_answer.jpg" alt="Flashcard answer view on Android showing the flipped card" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 <h3>Preview before you save</h3>
@@ -248,6 +248,18 @@ product_page: true
     <summary>How is this different from Anki?</summary>
     <p>Anki is great for long-term spaced repetition of decks you build by hand. Arc skips the building: point it at any content and get a studyable deck in seconds, with hints on every card. Many students use both — Arc to generate, Anki to schedule.</p>
   </details>
+</div>
+
+
+<div class="related-links">
+  <h2>Related</h2>
+  <p>Flashcards are one way to keep what you read. The others:</p>
+  <ul>
+    <li><a href="{{ '/ai-note-taker/' | relative_url }}">AI note taker</a> — structured notes instead of cards</li>
+    <li><a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary &amp; reader</a> — condense the source material first</li>
+    <li><a href="{{ '/text-to-speech/' | relative_url }}">AI text to speech</a> — revise by listening instead of reading</li>
+    <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — make decks from any app on your phone</li>
+  </ul>
 </div>
 
 <script type="application/ld+json">

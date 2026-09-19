@@ -36,12 +36,24 @@ pages = [
     ("og-ai-summary-reader.png", "AI Summary & Reader", "Summarize & listen on any Android screen", "02_ai_summary_result.jpg"),
     ("og-ai-writer.png", "AI Writer for Android", "Rewrite, reply & polish text anywhere", "03_ai_writer_rewrite_result.jpg"),
     ("og-ai-workflow-automation.png", "AI Workflow Automation", "Build custom AI actions for Android", "06_custom_actions_list_with_active_actions.jpg"),
-    ("og-macos.png", "Arc for Mac", "AI screen assistant coming to macOS", None),
-    ("og-ios.png", "Arc for iOS", "AI screen assistant coming to iPhone", None),
-    ("og-windows.png", "Arc for Windows", "AI screen assistant coming to PC", None),
+    ("og-macos.png", "AI Assistant for Mac", "Control+Space on any window \u2014 free download", "macos/02_ai_summary_result_panel.jpg"),
+    ("og-ios.png", "AI Assistant for iPhone", "In development \u2014 shipping on Android today", None),
+    ("og-windows.png", "AI Assistant for Windows", "Ctrl+Space on any window \u2014 in beta", "macos/01_arc_menu_over_chrome.jpg"),
     ("og-blog.png", "Arc Blog", "AI tips, Android guides & productivity", None),
     ("og-blog-gemini.png", "Gemini Intelligence vs AI Assistants", "What actually helps day-to-day", "06_custom_actions_list_with_active_actions.jpg"),
     ("og-blog-mod-apk.png", "No Arc Mod APK Needed", "Why the real app costs less than you think", None),
+    ("og-personal-ai-assistant.png", "Personal AI Assistant", "It knows your context, not just your question", "macos/11_info_vault_with_entries.jpg"),
+    # Per-post cards \u2014 every published post gets its own, so shares and
+    # social previews stop falling back to the generic og-arc.png card.
+    ("og-post-ai-summarizer-android.png", "AI Summarizer for Android", "Summarize any screen in one tap", "02_ai_summary_result.jpg"),
+    ("og-post-ai-summary-app-android.png", "AI Summary Apps for Android", "What actually works inside other apps", "02_ai_summary_result.jpg"),
+    ("og-post-ai-screen-assistant-mac.png", "AI Screen Assistant for Mac", "It reads the window you\u2019re already in", "macos/01_arc_menu_over_chrome.jpg"),
+    ("og-post-ai-summarizer-mac.png", "AI Summarizer for Mac", "Control+Space, then numbered key points", "macos/02_ai_summary_result_panel.jpg"),
+    ("og-post-ai-assistant-for-mac.png", "AI Assistant for Mac", "Beyond ChatGPT in a browser tab", "macos/08_chat_about_screen_panel.jpg"),
+    ("og-post-read-screen-aloud-android.png", "Read Any Screen Aloud", "Natural TTS on Android, set up in 2 minutes", "00_summary_library_with_items.jpg"),
+    ("og-post-ai-text-reader-mac.png", "AI Text Reader for Mac", "Listen to any window, then summarize it", "macos/13_saved_items_library_list.jpg"),
+    ("og-post-best-ai-apps-android.png", "Best AI Apps for Android", "The ones that earn their place", "01_floating_sidebar_expanded_over_chrome.jpg"),
+    ("og-post-arc-for-mac-is-here.png", "Arc for Mac Is Here", "The screen assistant, now on macOS", "macos/01_arc_menu_over_chrome.jpg"),
 ]
 
 def make_base():
@@ -73,17 +85,23 @@ def add_logo(img):
         img.paste(logo, (80, 80), logo)
 
 def add_screenshot(img, filename):
+    # filename may be a bare android shot or a "macos/..." relative path
     path = os.path.join(SCREENSHOTS, filename)
+    if not os.path.exists(path):
+        path = os.path.join(ASSETS, filename)
     if not os.path.exists(path):
         return
     shot = Image.open(path).convert("RGB")
-    # target height around 420px, keep aspect ratio
-    target_h = 420
-    ratio = target_h / shot.height
+    # Fit inside the right-hand box, constraining BOTH dimensions. Portrait
+    # phone shots are height-bound; landscape desktop shots are width-bound,
+    # and without the width cap they run across the title text.
+    box_w, box_h = 460, 470
+    ratio = min(box_w / shot.width, box_h / shot.height)
     target_w = int(shot.width * ratio)
+    target_h = int(shot.height * ratio)
     shot = shot.resize((target_w, target_h), Image.Resampling.LANCZOS)
     # rounded corners mask
-    x = 1200 - target_w - 80
+    x = 1200 - 80 - (box_w + target_w) // 2
     y = (630 - target_h) // 2 + 20
     # drop shadow
     shadow = Image.new("RGBA", (target_w + 20, target_h + 20), (0, 0, 0, 0))
@@ -111,7 +129,7 @@ def generate(filename, title, subtitle, screenshot):
     draw.text((180, 100), "Arc AI", font=brand_font, fill=TEXT_WHITE)
 
     # wrap title to fit left column
-    max_width = 620
+    max_width = 560
     words = title.split()
     lines = []
     current = ""

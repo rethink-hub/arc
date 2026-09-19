@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "AI Shortcuts, Custom AI Actions & Floating AI Assistant | Arc"
+title: "AI Shortcuts & Custom AI Actions for Any Screen | Arc"
 description: "Build custom AI actions and keyboard AI shortcuts that run in any app. A floating AI assistant for Android and macOS with 500+ ready actions. Free."
 keywords: "ai shortcuts, custom ai actions, floating ai assistant, ai quick actions, keyboard shortcut ai, ai shortcut android, ai automation"
 og_image: /assets/images/og-arc.png
@@ -26,7 +26,7 @@ product_page: true
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg" alt="Arc floating sidebar expanded over Chrome on Android with all actions" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg" alt="Arc floating sidebar expanded over Chrome on Android with all actions" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 ---
@@ -194,12 +194,24 @@ Then list any claims that need a citation.</code></pre>
   </details>
 </div>
 
+
+<div class="related-links">
+  <h2>Where shortcuts pay off</h2>
+  <p>A shortcut is only worth binding if the action behind it is worth running. These are the ones people bind most:</p>
+  <ul>
+    <li><a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a> — building the custom actions you bind keys to</li>
+    <li><a href="{{ '/macos/' | relative_url }}">Arc for Mac</a> — global hotkeys and headless actions on the desktop</li>
+    <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — the floating sidebar as the shortcut on mobile</li>
+    <li><a href="{{ '/ai-writer/' | relative_url }}">AI writer</a> — the action most often bound to a single key</li>
+  </ul>
+</div>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How do I open Arc with a shortcut?", "acceptedAnswer": {"@type": "Answer", "text": "Android: swipe from the screen edge. macOS: press Control+Space in any window. Windows (Ctrl+Space) and iPhone (Action Button / back-tap) are coming soon."}},
+    {"@type": "Question", "name": "How do I open Arc with a shortcut?", "acceptedAnswer": {"@type": "Answer", "text": "Android: swipe from the screen edge. macOS: press Control+Space in any window. Windows (Ctrl+Space) is in beta; iPhone (Action Button / Shortcuts) is in development."}},
     {"@type": "Question", "name": "Can I create my own AI shortcuts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc Actions let you write any prompt once and pin it to your menu, with optional screenshot region, web search, reordering, and per-action keyboard shortcuts on desktop."}},
     {"@type": "Question", "name": "What are Community Actions?", "acceptedAnswer": {"@type": "Answer", "text": "A catalog of 500+ ready-made AI actions built by the Arc team and other users — every card shows the real prompt before you add it, and added actions are fully editable."}},
     {"@type": "Question", "name": "What is a non-activating panel, and why does it matter?", "acceptedAnswer": {"@type": "Answer", "text": "The Arc menu appears over your current app without activating itself, so your app keeps focus and your text cursor stays in place. Arc can read the focused field and write results back into it, and Esc dismisses the panel with no residue."}},

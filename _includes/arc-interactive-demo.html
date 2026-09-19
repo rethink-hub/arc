@@ -1,6 +1,9 @@
 <!-- Arc for Mac interactive demo. Generated from the arc-mac design tokens
      (ArcTheme.swift); the panel, rows, HUD and shortcut badge mirror the app. -->
-<div id="arc-demo" data-dmg="{{ site.mac_app.dmg | relative_url }}">
+<div id="arc-demo" data-dmg="{{ site.mac_app.dmg | relative_url }}"
+     data-cta-label="{{ include.cta_label | default: 'Download for Mac →' }}"
+     data-cta-href="{{ include.cta_href | default: '' }}"
+     data-platform="{{ include.platform | default: 'mac' }}">
 <style>
 /* Arc interactive demo (self-contained; scoped to #arc-demo) */
 #arc-demo {
@@ -588,7 +591,7 @@
 
             <!-- keycap prompt -->
             <div class="keycap" id="keycap">
-              <kbd>&#8963;</kbd><kbd>Space</kbd><span>summons Arc anywhere in macOS</span>
+              <kbd id="keycapMod">&#8963;</kbd><kbd>Space</kbd><span id="keycapHint">summons Arc anywhere in macOS</span>
             </div>
 
             <!-- Arc menu -->
@@ -659,6 +662,16 @@
   "use strict";
 
   var CTRL = "\u2303", OPT = "\u2325", ELL = "\u2026", DASH = "\u2014";
+  /* Platform skin: the demo ships a macOS capture, but the same product runs on
+     Windows. data-platform="windows" relabels the keys, browser and APIs so the
+     Windows page is not telling visitors about a Mac they do not own. */
+  var PLATFORM = (document.getElementById("arc-demo").getAttribute("data-platform") || "mac").toLowerCase();
+  var SKIN = PLATFORM === "windows"
+    ? { mod: "Ctrl", modKbd: "Ctrl", os: "Windows", browser: "Edge", chat: "Teams",
+        api: "the Windows UI Automation APIs", clock: "Mon 6 Sep\u00a0 9:41 AM" }
+    : { mod: CTRL,   modKbd: "\u2303", os: "macOS",  browser: "Safari", chat: "Messages",
+        api: "the macOS accessibility APIs", clock: "Sun 6 Sep\u00a0 9:41 AM" };
+  if (PLATFORM === "windows") { CTRL = "Ctrl"; }
 
   /* ------------------------------------------------------------------
      Menu rows \u2014 names, subtitles, icons from SidebarAction + en.json
@@ -695,6 +708,22 @@
         : '<span class="arc-key-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="5.5" width="19" height="13" rx="2.2"/><path stroke-width="2" stroke-linecap="round" d="M6.2 9.2h.01M9.7 9.2h.01M13.2 9.2h.01M16.7 9.2h.01M6.2 12.2h.01M9.7 12.2h.01M13.2 12.2h.01M16.7 12.2h.01"/><path stroke-linecap="round" d="M8 15.4h8"/></svg></span>');
     rows.appendChild(r);
   });
+  (function applySkin() {
+    var mod = document.getElementById("keycapMod");
+    if (mod) { mod.innerHTML = SKIN.modKbd; }
+    var hint = document.getElementById("keycapHint");
+    if (hint) { hint.textContent = "summons Arc anywhere in " + SKIN.os; }
+    var clock = document.querySelector("#arc-demo .menubar .right span");
+    if (clock) { clock.innerHTML = SKIN.clock; }
+    if (PLATFORM === "windows") {
+      var logo = document.querySelector("#arc-demo .menubar > svg");
+      if (logo) {
+        logo.setAttribute("viewBox", "0 0 24 24");
+        logo.innerHTML = '<path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>';
+      }
+    }
+  })();
+
   var rowSummary  = document.getElementById("rowSummary");
   var rowWriter   = document.getElementById("rowWriter");
   var customRow   = document.getElementById("customRow");
@@ -715,7 +744,7 @@
       text: "Every action runs on whatever is on screen. Click AI Summary, or press Enter.",
       target: "#rowSummary", pad: 3 },
     { tag: "AI Summary",
-      text: "Arc read the page through the macOS accessibility APIs and summarized it in place.",
+      text: "Arc read the page through " + SKIN.api + " and summarized it in place.",
       target: "#resBody", pad: 10, zoom: 1.35 },
     { tag: "Do something with it",
       text: "Listen, copy, save to your Library, or share " + DASH + " then Esc and you\u2019re back to work.",
@@ -737,7 +766,13 @@
     tag: "Rewritten in place",
     text: "No copy-paste, no app switch " + DASH + " the text was replaced right in the field. That\u2019s Arc.",
     target: "#chatField", pad: 6, zoom: 1.45,
-    cta: { label: "Download for Mac \u2192", href: (document.getElementById("arc-demo").getAttribute("data-dmg") || "https://arcassistant.app/macos/") }
+    cta: (function () {
+      var el = document.getElementById("arc-demo");
+      return {
+        label: el.getAttribute("data-cta-label") || "Download for Mac \u2192",
+        href: el.getAttribute("data-cta-href") || el.getAttribute("data-dmg") || "https://arcassistant.app/macos/"
+      };
+    })()
   };
 
   var scene    = document.getElementById("scene"),
@@ -802,7 +837,7 @@
 
     articleWin.classList.toggle("gone", chatSteps);
     chatWin.classList.toggle("gone", !chatSteps);
-    menubarApp.textContent = chatSteps ? "Messages" : "Safari";
+    menubarApp.textContent = chatSteps ? SKIN.chat : SKIN.browser;
 
     rowSummary.classList.toggle("sel", step === 1);
     customRow.classList.toggle("hidden-row", step < 4);

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Smart Extract — Copy Text & Extract Data from Any App | Arc"
-description: "Extract text, contacts, OTP codes, dates & links from any app screen. Copy from non-selectable apps, one-tap contact extractor, OCR built in. Free."
-keywords: "contact extractor, copy text from image android, extract text from screen, ocr app android, smart extract, text extractor app, copy text from any app"
+title: "Screenshot to Text — Extract Data from Any Screen | Arc"
+description: "Turn any screenshot or screen into text: contacts, OTP codes, dates and links extracted in one tap, even from apps that block copying. Free on Android and Mac."
+keywords: "screenshot to text, extract data from image, ai data extraction, ai text extractor, extract text from screen, contact extractor, ocr app android"
 og_image: /assets/images/og-arc.png
 product_page: true
 ---
@@ -63,13 +63,13 @@ product_page: true
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg" alt="Arc menu invoked over a Chrome window showing the built-in action list" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg" alt="Arc menu invoked over a Chrome window showing the built-in action list" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="1200" height="715" loading="lazy" decoding="async">
   <p>Some apps simply don't let you select text — webview containers, locked PDFs, certain messaging interfaces, scanned documents. Arc reads the screen directly with built-in OCR, so the words become copyable regardless of what the app allows.</p>
   <p>On desktop, the same works over any window: PDFs in preview apps, text inside video subtitles, labels in design tools. If your eyes can read it, Arc can copy it.</p>
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/10_smart_extract_results.jpg" alt="Smart Extract results on Android showing extracted items with one-tap actions" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/10_smart_extract_results.jpg" alt="Smart Extract results on Android showing extracted items with one-tap actions" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 ---
@@ -139,6 +139,18 @@ product_page: true
     <summary>Is there an extract tool for Mac or Windows?</summary>
     <p>Arc for macOS is available now with region selection for precise extraction. The Windows version is coming soon.</p>
   </details>
+</div>
+
+
+<div class="related-links">
+  <h2>Related</h2>
+  <p>Extraction is usually one step in a longer workflow. Here is the rest of it:</p>
+  <ul>
+    <li><a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a> — chain extraction into an action you run with one key</li>
+    <li><a href="{{ '/ai-note-taker/' | relative_url }}">AI note taker</a> — keep what you extracted as a structured note</li>
+    <li><a href="{{ '/ai-shortcuts/' | relative_url }}">AI shortcuts</a> — run extraction without opening a menu</li>
+    <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — extract from any screen on your phone</li>
+  </ul>
 </div>
 
 <script type="application/ld+json">

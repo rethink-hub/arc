@@ -5,6 +5,8 @@ description: "How to pick a read screen aloud Android app and set it up in minut
 date: 2026-09-18
 author: Mamata
 tags: ["android", "ai", "accessibility", "text-to-speech"]
+og_image: /assets/images/og-post-read-screen-aloud-android.png
+
 ---
 
 You're halfway through a 4,000-word article on your phone when your eyes give out. Or you're cooking with both hands busy and the recipe lives in a browser tab. Or it's 11pm, lights off, and you still have three long emails to get through. In all three cases the fix is the same: have your phone read the screen aloud while you listen.

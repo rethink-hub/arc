@@ -90,6 +90,8 @@ If it's not useful, just uninstall it. No harm done. But if it is — and for 60
 
 **[Download Arc from Google Play →](https://play.google.com/store/apps/details?id=com.rethink.arc)**
 
+If you want to see what you'd actually be paying for before you decide, the feature pages go through it properly: [AI summary and reader](/ai-summary-reader/), [AI writer](/ai-writer/), [AI workflow automation](/ai-workflow-automation/), and [AI text to speech](/text-to-speech/). Arc also runs on [Mac](/macos/) now, and the same subscription covers both platforms.
+
 ---
 
 *Have questions about Arc, the pricing, or the features? Email me at everythingrethink@gmail.com — I read every message.*

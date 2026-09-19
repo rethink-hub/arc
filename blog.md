@@ -9,7 +9,7 @@ og_image: /assets/images/og-blog.png
 <div class="blog-index">
     <header class="blog-index-header">
         <h1>Arc Blog</h1>
-        <p>AI productivity guides, Android tips, and how to get more done with AI on your phone.</p>
+        <p>Guides on using AI on the screen you're already on — setup walkthroughs, honest comparisons, and what actually saves time on Android and Mac.</p>
     </header>
 
     <div class="blog-list">
@@ -32,7 +32,7 @@ og_image: /assets/images/og-blog.png
 <div class="section-header" style="margin-top: var(--xl);">
     <span class="section-tag">Platforms</span>
     <h2>Arc is expanding.</h2>
-    <p>Available on Android and Mac now. iOS and Windows coming soon.</p>
+    <p>Android and Mac are available now. Windows is in beta, iPhone is in development.</p>
 </div>
 <div class="platform-links" style="justify-content: center; margin-bottom: var(--xl);">
     <a href="{{ '/android/' | relative_url }}">Arc for Android</a>
@@ -51,3 +51,27 @@ og_image: /assets/images/og-blog.png
     <a href="{{ '/ai-writer/' | relative_url }}">AI Writer</a>
     <a href="{{ '/ai-workflow-automation/' | relative_url }}">Workflow Automation</a>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "publisher": { "@type": "Person", "name": {{ site.author | jsonify }} },
+  "blogPost": [
+    {% assign allposts = site.posts | sort: 'date' | reverse %}
+    {% for post in allposts %}
+    {
+      "@type": "BlogPosting",
+      "headline": {{ post.title | jsonify }},
+      "description": {{ post.description | jsonify }},
+      "url": {{ post.url | absolute_url | jsonify }},
+      "datePublished": {{ post.date | date_to_xmlschema | jsonify }},
+      "image": {{ post.og_image | default: '/assets/images/og-arc.png' | absolute_url | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

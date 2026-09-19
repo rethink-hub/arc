@@ -31,18 +31,18 @@ product_page: true
 <div class="content-section">
   <h3>Step 1 — The rough draft</h3>
   <p>You've typed a quick, messy reply: <em>"Hi, This is a test mail that i am writing to test AI Writer in Arc App on MacOS/Windows."</em> Lowercase "i", missing comma, no sign-off. Good enough for a test — embarrassing for a client.</p>
-  <img src="/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg" alt="Gmail compose window with a rough draft email before invoking Arc" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg" alt="Gmail compose window with a rough draft email before invoking Arc" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="1058" height="984" loading="lazy" decoding="async">
 
   <h3>Step 2 — Invoke Arc over the draft</h3>
   <p>Press <strong>Control+Space</strong> (macOS) or swipe the edge (Android). The Arc menu appears over Gmail — without stealing focus from your draft. Select <strong>AI Writer</strong>. Arc auto-fetches the text from the focused field: your rough draft appears in the <strong>SELECTED TEXT</strong> box, ready to work on.</p>
 
   <h3>Step 3 — Pick a tone</h3>
   <p>Choose <strong>Rewrite</strong>, then a tone from the chips: Rephrase, Professional, Polite, Shorten, or Elaborate. Tap <strong>Generate</strong>. Arc rewrites the draft in that voice — and if it's not right, tap <strong>Regenerate</strong> or step back through the generation history.</p>
-  <img src="/assets/images/screenshots/macos/03_ai_writer_rewrite_generated.jpg" alt="Arc AI Writer showing the rewritten, polished email draft" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/macos/03_ai_writer_rewrite_generated.jpg" alt="Arc AI Writer showing the rewritten, polished email draft" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="1200" height="637" loading="lazy" decoding="async">
 
   <h3>Step 4 — Insert and send</h3>
   <p>Tap <strong>Insert</strong>, and the polished text is written directly back into the Gmail field — replacing your rough draft exactly where your cursor was. Gmail shows "Draft saved". Hit send.</p>
-  <img src="/assets/images/screenshots/macos/03_ai_writer_inserted_into_gmail.jpg" alt="Gmail compose window with the AI-polished reply inserted" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/macos/03_ai_writer_inserted_into_gmail.jpg" alt="Gmail compose window with the AI-polished reply inserted" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="1062" height="988" loading="lazy" decoding="async">
 </div>
 
 ---
@@ -108,13 +108,13 @@ product_page: true
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/macos/11_info_vault_with_entries.jpg" alt="Arc Info Vault with saved personal context entries" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/macos/11_info_vault_with_entries.jpg" alt="Arc Info Vault with saved personal context entries" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="1200" height="780" loading="lazy" decoding="async">
   <p>The <strong>My Info Vault</strong> is what separates Arc from generic reply generators. Save your details once — your name and title, your company, your tone preferences, your common sign-offs — and they appear as optional chips in every reply generation. Include them when the reply needs your full signature; skip them for quick one-liners.</p>
   <p>Entries are stored locally on your device. They never get uploaded without your explicit opt-in to Drive backup — and if you use Arc on two devices, backups merge instead of overwriting.</p>
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/03_ai_writer_reply_mode.jpg" alt="Arc AI Writer reply mode on Android with five reply intentions" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/03_ai_writer_reply_mode.jpg" alt="Arc AI Writer reply mode on Android with five reply intentions" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 <div class="content-section">
@@ -167,8 +167,20 @@ product_page: true
   </details>
   <details>
     <summary>Is there an AI reply generator for Mac or Windows?</summary>
-    <p>Arc for macOS is available now (free, notarized, macOS 14+), and Windows is coming soon. On desktop you also get per-action keyboard shortcuts and generation history.</p>
+    <p>Arc for macOS is available now (free, notarized, macOS 14+), and Windows is in beta. On desktop you also get per-action keyboard shortcuts and generation history.</p>
   </details>
+</div>
+
+
+<div class="related-links">
+  <h2>Related</h2>
+  <p>Replying is one mode of the writer. The rest of it, and the faster ways in:</p>
+  <ul>
+    <li><a href="{{ '/ai-writer/' | relative_url }}">AI writer</a> — rewrite, grammar and post modes beyond replies</li>
+    <li><a href="{{ '/ai-shortcuts/' | relative_url }}">AI shortcuts</a> — bind a reply intention to one keystroke</li>
+    <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — reply inside WhatsApp, Gmail and any other app</li>
+    <li><a href="{{ '/macos/' | relative_url }}">Arc for Mac</a> — the same reply modes with Control+Space</li>
+  </ul>
 </div>
 
 <script type="application/ld+json">

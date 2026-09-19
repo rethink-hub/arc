@@ -1,8 +1,8 @@
 # GitHub Pages Configuration for Arc
 
 # Site settings
-title: "Free AI Screen Assistant for Android | Arc AI"
-description: "Freemium Android AI assistant — 7 free requests/week on basic features. Premium subscription unlocks summaries, TTS, AI chat, and workflow automation."
+title: "AI Assistant App That Works on Any Screen | Arc"
+description: "Arc is a free AI assistant app that works on the screen you're already on. Summarize, listen, rewrite and automate in any app. Android and Mac."
 author: "Mamata"
 tagline: "Understand Your Screen. Instantly."
 
@@ -37,7 +37,7 @@ social:
     - https://x.com/rethink_hub
 
 # Additional SEO metadata
-keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI Android, AI reading assistant, Android accessibility AI, AI automation, AI fact checker, AI actions"
+keywords: "ai assistant app, ai assistant for windows, android ai assistant, ai assistant for mac, personal ai assistant, ai note taker, ai summarizer, ai workflow automation, ai shortcuts, ai reply generator, free ai assistant"
 
 # Arc for macOS release metadata — bump `version` when cutting a Mac release and
 # upload the matching dist/Arc-<version>.dmg to /downloads/. The macos.md download
@@ -52,7 +52,7 @@ app:
   name: "Arc: AI Screen Assistant"
   package: "com.rethink.arc"
   category: "Productivity"
-  platform: "Android"
+  platform: "Android, macOS"
   price: "Freemium with subscription"
   features:
     - "AI-powered text summarization"

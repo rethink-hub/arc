@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "AI Summary & Reader for Android | Summarize & Listen | Arc"
-description: "Freemium AI summary and text reader for Android. Summarize any content, then listen with natural text-to-speech. 7 free requests/week."
-keywords: "AI summary app, AI text reader, screen reader AI, text to speech AI Android, AI reading assistant, Android summary app, AI powered summary"
+title: "AI Summarizer That Reads Any Screen — Free | Arc"
+description: "A free AI summarizer that works on the screen you're already on. Summarize any article, email or PDF in one tap, then listen to it. Android and Mac."
+keywords: "ai summarizer, ai summary generator, ai summarizer app, ai article summarizer, ai summary app, ai text reader, ai reading assistant"
 og_image: /assets/images/og-ai-summary-reader.png
 product_page: true
 faq:
@@ -314,9 +314,9 @@ Turn articles and reports into podcasts while exercising, cooking, or driving.
 ## Available Platforms
 
 - **[Arc for Android]({{ '/android/' | relative_url }})** - Download now from Google Play
-- **[Arc for iOS]({{ '/ios/' | relative_url }})** - Coming soon
-- **[Arc for Mac]({{ '/macos/' | relative_url }})** - Coming soon
-- **[Arc for Windows]({{ '/windows/' | relative_url }})** - Coming soon
+- **[Arc for iOS]({{ '/ios/' | relative_url }})** - In development
+- **[Arc for Mac]({{ '/macos/' | relative_url }})** - Available now, free download
+- **[Arc for Windows]({{ '/windows/' | relative_url }})** - In beta, join the waitlist
 
 ---
 

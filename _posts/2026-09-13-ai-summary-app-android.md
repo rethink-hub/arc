@@ -5,6 +5,8 @@ description: "Looking for an AI summary app Android users actually rate? I teste
 date: 2026-09-13
 author: Mamata
 tags: ["android", "ai", "summarizer", "productivity", "listicle"]
+og_image: /assets/images/og-post-ai-summary-app-android.png
+
 ---
 
 Last Tuesday I was on a call, reading a 12-page PDF in Gmail at the same time. The PDF was 12 pages because the author was paid by the word, apparently. I had about 90 seconds to decide if the attached proposal was worth a deeper read.

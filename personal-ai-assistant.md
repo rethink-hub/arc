@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Personal AI Assistant for Android — Meet Arc | Free Download"
-description: "Arc is a personal AI assistant that lives on your screen. Summarize, write, extract, chat & automate in any app — free floating sidebar powered by Gemini."
-keywords: "personal ai assistant, personal ai assistant android, ai personal assistant app, free personal ai assistant, ai assistant for android, gemini personal assistant"
-og_image: /assets/images/og-arc.png
+title: "Personal AI Assistant That Knows Your Context | Arc — Free"
+description: "A personal AI assistant that works on your current screen and remembers who you are. Summarize, write, extract and automate in any app. Free on Android and Mac."
+keywords: "personal ai assistant, personal ai assistant app, best personal ai assistant, free personal ai assistant, ai personal assistant app, personal ai assistant android"
+og_image: /assets/images/og-personal-ai-assistant.png
 product_page: true
 ---
 
@@ -22,6 +22,20 @@ product_page: true
 
 ---
 
+<div class="content-section" markdown="1">
+
+## What a Personal AI Assistant Actually Is
+
+A personal AI assistant is software that does small knowledge tasks for you — reading, summarizing, drafting, extracting, remembering — using context about your own work rather than starting from scratch every time. What separates it from a chatbot is that it comes to you: it acts on what's already in front of you, and it keeps a memory of who you are between tasks.
+
+Arc is that, built as a layer over your screen. On Android it's a floating sidebar on every app; on Mac it's a Control+Space panel over any window. It reads the screen you're on, and it draws on an **Info Vault** of details you save once — your role, your projects, how you sign off emails — so what it writes sounds like you and not like a generic model.
+
+It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on the free tier.
+
+</div>
+
+---
+
 <div class="section-header">
   <span class="section-tag">What makes it personal</span>
   <h2>It remembers you — so every answer fits you.</h2>
@@ -29,12 +43,12 @@ product_page: true
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/macos/11_info_vault_with_entries.jpg" alt="Arc Info Vault showing saved entries for Arc Project and My Job" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/macos/11_info_vault_with_entries.jpg" alt="Arc Info Vault showing saved entries for Arc Project and My Job" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="1200" height="780" loading="lazy" decoding="async">
   <p>Saved entries live locally on your device. Google Drive backup is strictly opt-in, and when you switch phones, vault entries merge — they never overwrite. That means the assistant gets more useful the longer you use it, without you ever re-explaining yourself.</p>
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/00_home_screen_dashboard.jpg" alt="Arc home screen dashboard with reading stats, saved items and feature cards" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/00_home_screen_dashboard.jpg" alt="Arc home screen dashboard with reading stats, saved items and feature cards" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 ---
@@ -133,7 +147,7 @@ product_page: true
   </details>
   <details>
     <summary>Is there a personal AI assistant for Mac or Windows?</summary>
-    <p>Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. The Windows version is coming soon.</p>
+    <p>Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. The Windows version is in beta — join the waitlist on the <a href="/windows/">Arc for Windows</a> page.</p>
   </details>
 </div>
 
@@ -146,7 +160,7 @@ product_page: true
     {"@type": "Question", "name": "What can a personal AI assistant like Arc do?", "acceptedAnswer": {"@type": "Answer", "text": "Arc summarizes articles, drafts messages in your voice, extracts events and OTP codes from any screen, answers questions about what you're viewing, reads text aloud, transcribes calls, and automates tasks — all from a floating sidebar inside every app."}},
     {"@type": "Question", "name": "How does Arc know my personal context?", "acceptedAnswer": {"@type": "Answer", "text": "The Info Vault stores your details locally on your device. Saved entries appear as optional context chips in every generation, so replies and drafts sound like you."}},
     {"@type": "Question", "name": "Does Arc work on Samsung, OnePlus, and other Android phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Arc works on all modern Android phones and integrates natively with Samsung Edge Panel, OnePlus Shelf, and OPPO Smart Sidebar."}},
-    {"@type": "Question", "name": "Is there a personal AI assistant for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Arc for macOS is available now (free, notarized, macOS 14+) — press Control+Space in any window. The Windows version is coming soon."}}
+    {"@type": "Question", "name": "Is there a personal AI assistant for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Arc for macOS is available now (free, notarized, macOS 14+) — press Control+Space in any window. The Windows version is in beta."}}
   ]
 }
 </script>

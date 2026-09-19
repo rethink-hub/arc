@@ -1819,3 +1819,59 @@ details.animate-in,
 .content-section h2 { margin-bottom: var(--md); }
 .content-section details { border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
 .content-section summary { cursor: pointer; font-weight: 600; }
+
+/* ============================================
+   Screenshot galleries (platform pages)
+   Desktop shots run 1200x715 landscape; Android
+   shots are 800x1760 portrait, so they get the
+   phone frame and a tighter column.
+   ============================================ */
+.shot-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--xl);
+  max-width: var(--max-w-wide);
+  margin: var(--xl) auto;
+  padding: 0 20px;
+}
+.shot-gallery--single { grid-template-columns: 1fr; max-width: 900px; }
+.shot { margin: 0; }
+.shot img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  display: block;
+}
+.shot figcaption {
+  margin-top: var(--sm);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-light);
+  text-align: center;
+}
+.shot figcaption strong { color: var(--text-2); font-weight: 600; }
+
+/* Portrait phone shots sit inside the existing iPhone frame */
+.shot-gallery--phone { grid-template-columns: repeat(auto-fit, minmax(240px, 260px)); justify-content: center; }
+.shot-gallery--phone .iphone-frame { margin: 0 auto; max-width: 260px; }
+.shot-gallery--phone .shot img { border: 0; border-radius: 0; box-shadow: none; }
+
+@media (max-width: 640px) {
+  .shot-gallery { gap: var(--lg); }
+  .shot-gallery--phone { grid-template-columns: repeat(auto-fit, minmax(200px, 220px)); }
+}
+
+/* Related links block — contextual internal linking on feature pages */
+.related-links {
+  max-width: 760px;
+  margin: var(--2xl) auto var(--xl);
+  padding: var(--lg) 20px 0;
+  border-top: 1px solid var(--border);
+}
+.related-links h2 { font-size: 1.25rem; margin: 0 0 var(--sm); }
+.related-links p { color: var(--text-2); margin: 0 0 var(--md); line-height: 1.7; }
+.related-links ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--xs); }
+.related-links li { color: var(--text-light); font-size: 0.9375rem; line-height: 1.6; }
+.related-links a { font-weight: 600; }

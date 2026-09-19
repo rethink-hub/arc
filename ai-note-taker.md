@@ -70,11 +70,11 @@ product_page: true
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/13_call_insights_detail_promotional.png" alt="Arc Call Insights showing a transcribed call with summary and extracted action items" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/13_call_insights_detail_promotional.jpg" alt="Arc Call Insights showing a transcribed call with summary and extracted action items" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1430" loading="lazy" decoding="async">
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/13_call_insights_settings.jpg" alt="Arc Call Insights settings on Android showing transcription modes" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/13_call_insights_settings.jpg" alt="Arc Call Insights settings on Android showing transcription modes" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 ---
@@ -245,6 +245,18 @@ Speaker 1: Sure, let me pull up the details. The current deadline is March 30th.
     <summary>Is there an AI note taker for Mac or Windows?</summary>
     <p>Arc for macOS is available now and captures desktop call apps. The Windows version is coming soon.</p>
   </details>
+</div>
+
+
+<div class="related-links">
+  <h2>Where notes go next</h2>
+  <p>Notes are one output of reading a screen. These cover the rest of that loop.</p>
+  <ul>
+    <li><a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary &amp; reader</a> — the summarizing step that most notes start from</li>
+    <li><a href="{{ '/private-ai-assistant/' | relative_url }}">Private AI assistant</a> — where notes are stored and what leaves your device</li>
+    <li><a href="{{ '/alternatives/' | relative_url }}">Arc vs. the alternatives</a> — how this compares to dedicated note apps</li>
+    <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — take notes from any app on your phone</li>
+  </ul>
 </div>
 
 <script type="application/ld+json">

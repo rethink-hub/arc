@@ -5,6 +5,8 @@ description: "Arc is the AI text reader Mac users summon with Control+Space — 
 date: 2026-09-19
 author: Mamata
 tags: ["mac", "macos", "ai", "text-to-speech"]
+og_image: /assets/images/og-post-ai-text-reader-mac.png
+
 ---
 
 You want your Mac to read to you. A long article in Safari, a PDF in Preview, a wall of text in Mail — and your eyes are done for the day. You search for a solution and find two dead ends: the built-in `Option+Esc` voice that sounds like a 2004 answering machine, and a pile of subscriptions that want $139 a year to read text at 2x speed.

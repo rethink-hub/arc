@@ -5,6 +5,8 @@ description: "Meet Arc, the AI screen assistant Mac users summon with Control+Sp
 date: 2026-09-14
 author: Mamata
 tags: ["mac", "ai", "productivity", "macos"]
+og_image: /assets/images/og-post-ai-screen-assistant-mac.png
+
 ---
 
 You're 30 pages into a PDF you don't have time to finish. Or staring at a Safari thread with 90 comments. Or re-reading an email for the third time because writing the reply feels worse than the email itself. The normal fix for all of these is copy-paste: select the text, switch to a chat tab, paste it, explain what you want, wait, copy the answer, switch back, fix the formatting. Six steps and three context switches for one question.

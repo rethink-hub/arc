@@ -1,10 +1,21 @@
 ---
 layout: default
-title: "Free AI Screen Assistant for Android | Arc AI"
-description: "Free Android AI assistant — 7 free requests/week on basic features. Premium subscription unlocks summaries, TTS, AI chat, and workflow automation."
-keywords: "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant"
+title: "AI Assistant App That Works on Any Screen | Arc — Free"
+description: "Arc is a free AI assistant app that works on the screen you're already on. Summarize, listen, rewrite and automate in any app. Android and Mac, no copy-paste."
+keywords: "ai assistant app, ai assistant, free ai assistant, ai screen assistant, personal ai assistant, android ai assistant, ai assistant for mac"
 og_image: /assets/images/og-arc.png
 product_page: true
+faq:
+  - question: "What is an AI assistant app that works on your screen?"
+    answer: "It is an assistant that acts on whatever app you already have open, instead of making you copy text into a chatbot. Arc puts a floating sidebar on Android and a Control+Space panel on Mac; it reads the current window and summarizes it, reads it aloud, rewrites your text, or runs a prompt you saved."
+  - question: "Is Arc free?"
+    answer: "Yes. Arc is free with 7 requests per week on basic features. A premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation, and one subscription covers every platform. There are no ads and no expiring trial."
+  - question: "Which platforms does Arc run on?"
+    answer: "Android and macOS are available today. Windows is in beta and iPhone is in development. Your saved items and subscription carry across the platforms you use."
+  - question: "Does Arc monitor my screen in the background?"
+    answer: "No. Arc reads screen content only when you tap an action yourself. It disables itself automatically in around 400 sensitive apps including banking, crypto and password managers, and you can add your own exclusions."
+  - question: "What can I actually do with it?"
+    answer: "Summarize any article or document, listen to it with natural text-to-speech, rewrite or reply to messages in place, extract dates, contacts and codes off a screen, turn study material into flashcards, and build your own one-tap AI actions with custom prompts."
 ---
 
 <!-- Hero — Sider.ai style with live demo on right -->
@@ -55,6 +66,18 @@ product_page: true
       </div>
     </div>
   </div>
+</div>
+
+---
+
+<div class="content-section" markdown="1">
+
+## What Arc Is
+
+Arc is an AI assistant app that runs on the screen you are already looking at. On Android it's a floating sidebar over every app; on Mac it's a panel you open with Control+Space over any window. Either way it reads the current screen and acts on it — summarize, read aloud, rewrite, chat, extract — with nothing copied and no app switch.
+
+That's the whole difference from a chatbot. You don't describe your situation to it, because it already has the screen. It's free on [Android](/android/) and [Mac](/macos/) with 7 requests a week; [Windows](/windows/) is in beta and [iPhone](/ios/) is in development.
+
 </div>
 
 ---

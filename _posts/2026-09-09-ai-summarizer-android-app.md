@@ -5,6 +5,8 @@ description: "Learn how to use an AI summarizer Android app to condense articles
 date: 2026-09-09
 author: Mamata
 tags: ["android", "ai", "summarizer", "productivity", "tutorial"]
+og_image: /assets/images/og-post-ai-summarizer-android.png
+
 ---
 
 You're reading a 3,000-word article on your phone. It's interesting, but you're on a bus, your stop is coming up, and you just want the key takeaways. Or maybe a colleague forwarded you a wall of text in an email and you need the gist before your next meeting.

@@ -102,7 +102,9 @@ If you've ever wished your phone could just *understand what's on your screen* a
 
 It's not a replacement for Gemini Intelligence. It's a complement. Use Gemini for the system-level stuff it's great at. Use Arc for the fast, customizable, cross-app AI that fits *your* workflow.
 
-If you want to try it, Arc is [available on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc). The free tier gives you 7 requests per week on basic features — enough to see if it fits how you work.
+If you want to try it, Arc is [available on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc), and on [Mac](/macos/). The free tier gives you 7 requests per week on basic features — enough to see if it fits how you work.
+
+The two arguments above have their own pages if you want the detail: [AI workflow automation](/ai-workflow-automation/) covers building your own actions, and [private AI assistant](/private-ai-assistant/) covers exactly what is stored where. [Arc vs. the alternatives](/alternatives/) puts it next to the other options directly.
 
 ---
 

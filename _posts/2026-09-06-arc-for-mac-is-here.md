@@ -5,7 +5,7 @@ description: "Arc for Mac is out. Press Control + Space anywhere in macOS to sum
 date: 2026-09-06
 author: Rethink
 tags: ["macos", "arc-for-mac", "release", "ai-assistant", "productivity"]
-og_image: /assets/images/og-macos.png
+og_image: /assets/images/og-post-arc-for-mac-is-here.png
 ---
 
 Arc started on Android as a floating sidebar that could read whatever was on your screen and do something useful with it. The most common piece of feedback I got, over and over, was some version of the same sentence: *"I want this on my Mac."*

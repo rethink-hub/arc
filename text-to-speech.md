@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Text to Speech App for Dyslexia & Students | Arc AI Read"
-description: "AI Read reads any screen aloud with natural voices, 100+ languages auto-detected. Built for dyslexia, low vision & ADHD. Free on Android & Mac."
+title: "Text to Speech App for Android — Read Any Screen | Arc"
+description: "A text to speech app for Android that reads any screen aloud in natural voices, 100+ languages auto-detected. Built for dyslexia, low vision and ADHD. Free."
 keywords: "text to speech apps for dyslexia, text-to-speech software for students with disabilities, free text to speech app, best text to speech app, text to speech app android, screen reader android, read pdf aloud"
 og_image: /assets/images/og-arc.png
 product_page: true
@@ -30,11 +30,11 @@ product_page: true
 
 <p>If text on a screen costs you something to read — effort, time, confidence — you already know the routine: select the text, copy it, switch apps, paste it, press play. A dozen taps just to hear a paragraph. That routine is exactly what a good text-to-speech app should make disappear.</p>
 <div class="content-section">
-  <img src="/assets/images/screenshots/00_summary_library_with_items.jpg" alt="Arc summary library with TTS play buttons on each saved summary" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/00_summary_library_with_items.jpg" alt="Arc summary library with TTS play buttons on each saved summary" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/02_ai_summary_chat_input.jpg" alt="Arc AI Summary on Android with chat input for follow-up questions" style="width:100%; border-radius:12px; margin: var(--md) 0;">
+  <img src="/assets/images/screenshots/02_ai_summary_chat_input.jpg" alt="Arc AI Summary on Android with chat input for follow-up questions" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
 </div>
 
 <p>Arc is designed from the ground up for people who read differently:</p>
@@ -230,6 +230,18 @@ product_page: true
   </details>
 </div>
 
+
+<div class="related-links">
+  <h2>Related</h2>
+  <p>Listening pairs with the reading features more than it replaces them:</p>
+  <ul>
+    <li><a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary &amp; reader</a> — summarize first, then listen to the short version</li>
+    <li><a href="{{ '/ai-note-taker/' | relative_url }}">AI note taker</a> — keep what you heard as notes</li>
+    <li><a href="{{ '/alternatives/' | relative_url }}">Arc vs. the alternatives</a> — how this compares to dedicated TTS apps</li>
+    <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — listen to any app on your phone</li>
+  </ul>
+</div>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -239,7 +251,7 @@ product_page: true
     {"@type": "Question", "name": "Is Arc good for dyslexia?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is accessibility-first (WCAG 2.1 AA, TalkBack support): one tap reads any screen aloud without copying text into another app."}},
     {"@type": "Question", "name": "Can it read PDFs aloud?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — open the PDF on screen, invoke AI Read, and Arc reads it with natural voices in 100+ auto-detected languages."}},
     {"@type": "Question", "name": "How do I get better-sounding voices?", "acceptedAnswer": {"@type": "Answer", "text": "Natural voices are free OS downloads — Arc's Get Voices button opens the OS voice settings directly, with Premium/Enhanced voices on macOS and Natural/Neural voices on Windows."}},
-    {"@type": "Question", "name": "Is there a text-to-speech app for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "iOS is coming soon. Arc for Android and macOS are available today."}}
+    {"@type": "Question", "name": "Is there a text-to-speech app for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "iOS is in development. Arc for Android and macOS are available today."}}
   ]
 }
 </script>

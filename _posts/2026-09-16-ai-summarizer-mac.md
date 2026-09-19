@@ -5,6 +5,8 @@ description: "Arc is the AI summarizer Mac users summon with Control+Space — c
 date: 2026-09-16
 author: Mamata
 tags: ["mac", "macos", "ai", "productivity"]
+og_image: /assets/images/og-post-ai-summarizer-mac.png
+
 ---
 
 It's 4pm, you have 14 open Safari tabs you swear you'll read, a 32-page PDF in Preview, and an email thread with nine replies you still haven't digested. The standard Mac workflow for all of this is the same sad dance: select the text, copy it, switch to a chat tab, paste it, type "summarize this," wait, then copy the answer back to wherever you were. Six steps, three context switches, and by the time you're done you've forgotten what you wanted out of the summary in the first place.

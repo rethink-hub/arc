@@ -15,7 +15,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% if page.layout == 'blog' %}article{% else %}website{% endif %}">
-    <meta property="og:site_name" content="Arc AI — Screen Assistant for Android">
+    <meta property="og:site_name" content="Arc AI — AI Screen Assistant">
     <meta property="og:title" content="{{ page.title | default: site.title }}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
 
@@ -76,7 +76,7 @@
         ,{
           "@type": "SoftwareApplication",
           "name": "Arc: AI Screen Assistant",
-          "operatingSystem": "Android",
+          "operatingSystem": "Android, macOS",
           "applicationCategory": "ProductivityApplication",
           "author": { "@type": "Person", "name": {{ site.author | jsonify }} },
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -85,7 +85,7 @@
           "image": "{{ site.url }}{{ site.baseurl }}/assets/images/og-arc.png",
           "downloadUrl": "https://play.google.com/store/apps/details?id=com.rethink.arc",
           "datePublished": "2025-12-07",
-          "dateModified": "2026-07-20",
+          "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
           "featureList": ["AI-powered text summarization","Text-to-speech with automatic language detection","AI chat assistant for any screen content","Custom AI actions and workflow automation","Community-shared AI actions","Floating sidebar for instant access","Private and secure - local storage","Works across all Android apps"],
           "keywords": "AI assistant Android, Android AI app, AI summary app, AI text reader, screen reader AI, AI workflow automation, AI productivity assistant, text to speech AI, AI reading assistant, Android accessibility AI"
         }
@@ -197,7 +197,7 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <a href="{{ '/' | relative_url }}" class="footer-logo-link">
-                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo" width="28" height="28">
+                    <img src="{{ '/assets/images/arc-logo.png' | relative_url }}" alt="Arc Logo" class="footer-logo" width="28" height="28" loading="lazy" decoding="async">
                     <span class="footer-logo-text">Arc</span>
                 </a>
                 <div class="footer-socials">
