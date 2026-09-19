@@ -17,15 +17,15 @@ That's the entire idea behind Arc for Mac — the desktop version of [Arc AI Scr
 
 ## What an AI Screen Assistant for Mac Actually Does
 
-A chatbot lives in a tab. An AI screen assistant Mac app lives on top of your windows.
+A chatbot lives in a tab. A screen assistant lives on top of your windows.
 
 The difference is bigger than it sounds. With a chat tab, everything you want help with has to be carried to the AI: select, copy, paste, explain, wait, copy back, paste back. With a screen assistant, the app can read the window sitting in front of you — the Safari article, the PDF open in Preview, the thread in Mail, the wall of Slack — and act on it directly. Summarize it. Read it out loud. Rewrite the draft sitting in your reply field. Answer a question about it. No uploads, no pasting into a box, no "please describe your document."
 
 That's the category Arc belongs to, and its whole design hangs on one shortcut.
 
-## Meet Arc: The AI Screen Assistant Mac Users Kept Asking For
+## Meet Arc: The One Mac Users Kept Asking For
 
-Arc started life on Android, as a floating sidebar that could read whatever was on the phone screen and do something useful with it. The most common request ever since has been the same sentence in a dozen variations: *put this on my Mac.* It's there now, and it behaves the way an AI screen assistant Mac app should: free to start, notarized by Apple, and about two minutes from DMG to working panel. You can grab it from [Arc for Mac](/macos/). It ships as a universal binary, so it runs natively on Apple Silicon and Intel alike, on macOS 14 (Sonoma) or later.
+Arc started life on Android, as a floating sidebar that could read whatever was on the phone screen and do something useful with it. The most common request ever since has been the same sentence in a dozen variations: *put this on my Mac.* It's there now, and it behaves the way one should: free to start, notarized by Apple, and about two minutes from DMG to working panel. You can grab it from [Arc for Mac](/macos/). It ships as a universal binary, so it runs natively on Apple Silicon and Intel alike, on macOS 14 (Sonoma) or later.
 
 <img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc AI screen assistant panel over a Chrome window on macOS" width="1200" height="715" loading="lazy" />
 
@@ -37,7 +37,7 @@ If you'd rather use the mouse, a small icon in the menu bar opens the same panel
 
 <img src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Arc menu panel with a custom global shortcut assigned to AI Writer" width="1200" height="715" loading="lazy" />
 
-That's the whole AI screen assistant Mac interaction model: one keystroke, one window, one result. There's a full app window too — for your Library of saved summaries, custom actions, and settings — but the daily loop is the panel.
+That's the whole interaction model: one keystroke, one window, one result. There's a full app window too — for your Library of saved summaries, custom actions, and settings — but the daily loop is the panel.
 
 ### It Only Reads When You Ask
 
@@ -47,7 +47,7 @@ Worth being explicit about, because "it can see my screen" sounds alarming until
 
 ### Summarize Any Window, in Any App
 
-This is where an AI screen assistant Mac setup earns its keep. Long Safari articles, 40-page PDFs, email threads with fourteen replies, lecture notes, meeting agendas — press Control+Space, choose Summarize, and a tight summary appears in the panel without you leaving the app. Save the useful ones to your Library so they survive the restart. It's the same engine behind our [AI Summary & Reader](/ai-summary-reader/), now aimed at your desktop windows instead of your phone's.
+This is where the whole idea earns its keep. Long Safari articles, 40-page PDFs, email threads with fourteen replies, lecture notes, meeting agendas — press Control+Space, choose Summarize, and a tight summary appears in the panel without you leaving the app. Save the useful ones to your Library so they survive the restart. It's the same engine behind our [AI Summary & Reader](/ai-summary-reader/), now aimed at your desktop windows instead of your phone's.
 
 <img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="AI Summary result panel from the Arc screen assistant for Mac" width="1200" height="715" loading="lazy" />
 
@@ -57,13 +57,13 @@ Some windows you don't want to read — you want read to. Arc's AI text reader t
 
 ### Write and Reply Without Breaking Focus
 
-Half the text on a Mac screen is text you're supposed to answer: email, Slack, comments, application fields. Arc's AI Writer rewrites, replies, translates, and fixes grammar inside the app you're typing in — it doesn't hand you a wall of text to shuttle around, it puts the result back into the field you were editing. That round trip is the AI screen assistant Mac advantage over a chat tab: the answer goes where the work already is. The feature gets its own tour on the [AI Writer](/ai-writer/) page.
+Half the text on a Mac screen is text you're supposed to answer: email, Slack, comments, application fields. Arc's AI Writer rewrites, replies, translates, and fixes grammar inside the app you're typing in — it doesn't hand you a wall of text to shuttle around, it puts the result back into the field you were editing. That round trip is the advantage over a chat tab: the answer goes where the work already is. The feature gets its own tour on the [AI Writer](/ai-writer/) page.
 
 <img src="{{ '/assets/images/screenshots/macos/03_ai_writer_inserted_into_gmail.jpg' | relative_url }}" alt="AI Writer rewrite inserted directly into a Gmail reply field on macOS" width="1200" height="715" loading="lazy" />
 
 ### Ask Your Screen a Question
 
-Sometimes you don't want a summary — you want to interrogate the thing. What did I just agree to on this terms page? Which of these 90 comments actually answer the question? Does this contract clause contradict the email? Ask in the panel and the answer is grounded in the live window, not in whatever a generic chat model guesses you mean. That grounding — answers about the exact content in front of you — is what separates an AI screen assistant Mac tool from a browser tab with a chat box in it.
+Sometimes you don't want a summary — you want to interrogate the thing. What did I just agree to on this terms page? Which of these 90 comments actually answer the question? Does this contract clause contradict the email? Ask in the panel and the answer is grounded in the live window, not in whatever a generic chat model guesses you mean. That grounding — answers about the exact content in front of you — is what separates this from a browser tab with a chat box in it.
 
 ### Smart Extract, Flashcards, and Backup
 
@@ -75,15 +75,15 @@ The panel's action list isn't fixed. Write your own prompt once — "reply polit
 
 ## Privacy: What Arc Sees, and When
 
-A well-behaved AI screen assistant Mac app should be boring about data, and Arc is. It wakes on Control+Space (or the menu bar icon), reads the frontmost window, runs your chosen action, and goes back to sleep. Nothing is read between presses. Nothing is logged or watched. The app is notarized by Apple, requests Accessibility permission up front with a plain-language explanation of what it's for, and asks for Screen Recording only if you use screenshot actions. Google Drive backup is optional and stays off until you turn it on. That's the complete list of what touches your data — there is no hidden fifth permission.
+A well-behaved tool of this kind should be boring about data, and Arc is. It wakes on Control+Space (or the menu bar icon), reads the frontmost window, runs your chosen action, and goes back to sleep. Nothing is read between presses. Nothing is logged or watched. The app is notarized by Apple, requests Accessibility permission up front with a plain-language explanation of what it's for, and asks for Screen Recording only if you use screenshot actions. Google Drive backup is optional and stays off until you turn it on. That's the complete list of what touches your data — there is no hidden fifth permission.
 
 ## One Assistant on Mac and Android
 
-Arc also lives on Android, where it started — the same floating-sidebar idea, over any app on your phone. If you run both, sign in on each and your saved content, custom actions, and subscription carry across; write an action at your desk, use it on the bus. The Android app is on Google Play ([com.rethink.arc](https://play.google.com/store/apps/details?id=com.rethink.arc)), it's the same account, and it's the same subscription — not a second one. So the AI screen assistant Mac users rely on at the keyboard rides along in your pocket, reading and summarizing the small screen the same way.
+Arc also lives on Android, where it started — the same floating-sidebar idea, over any app on your phone. If you run both, sign in on each and your saved content, custom actions, and subscription carry across; write an action at your desk, use it on the bus. The Android app is on Google Play ([com.rethink.arc](https://play.google.com/store/apps/details?id=com.rethink.arc)), it's the same account, and it's the same subscription — not a second one. So what you rely on at the keyboard rides along in your pocket, reading and summarizing the small screen the same way.
 
 ## Getting Started Takes About Two Minutes
 
-An AI screen assistant Mac install is deliberately short:
+The install is deliberately short:
 
 1. Download the DMG, open it, and drag **Arc** into your Applications folder.
 2. Launch it and grant the **Accessibility** permission when onboarding asks — that's what lets Arc read the active window.
@@ -95,7 +95,7 @@ There's no account required to start. The basic features include 7 free requests
 
 ### What is an AI screen assistant for Mac?
 
-An AI screen assistant Mac app is a tool that can read the window currently in front of you and perform AI actions on it — summarize it, read it aloud, rewrite text in it, answer questions about it — without any copy-paste. Arc does this on macOS 14 and later: press Control+Space and a floating panel opens over the active window, then works directly on that window's content.
+It's a tool that can read the window currently in front of you and perform AI actions on it — summarize it, read it aloud, rewrite text in it, answer questions about it — without any copy-paste. Arc does this on macOS 14 and later: press Control+Space and a floating panel opens over the active window, then works directly on that window's content.
 
 ### Which is the best AI assistant for Mac?
 

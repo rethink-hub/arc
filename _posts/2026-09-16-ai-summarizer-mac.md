@@ -19,7 +19,7 @@ I built Arc — an [AI screen assistant](/) that started on Android and is now l
 
 Before the steps, a quick word on what "good" means here, because the App Store is full of summarizers that only work inside their own little sandbox.
 
-An AI summarizer Mac users actually keep installed has to be:
+A summarizer you actually keep installed has to be:
 
 - **System-wide.** It should work in Safari, Chrome, Preview, Mail, Slack, Obsidian, Pages — any window, not just its own. If a tool only summarizes documents you upload to it, you'll stop using it within a week.
 - **One keystroke away.** Selecting, copying, and pasting is the tax you're trying to escape. The summarizer should come to your text, not the other way around.
@@ -39,7 +39,7 @@ Arc for Mac ships as a notarized DMG from [arcassistant.app/macos/](/macos/), so
 
 Arc runs natively on Apple Silicon and Intel, on macOS 14 (Sonoma) or later, and the free tier covers your daily summarizing. Screen Recording permission is only requested if you use screenshot-based actions — plain text summarization needs Accessibility alone.
 
-## Step 2: Control+Space — the AI Summarizer Mac Shortcut
+## Step 2: Control+Space — the Only Shortcut You Need
 
 Press **Control + Space** anywhere in macOS — with Safari in front, with a PDF open in Preview, mid-email in Mail. A slim floating panel slides in over the active window: anchored to the edge, translucent so you can still see the text behind it, with Arc's actions already listed. It behaves like a private Spotlight, except instead of launching apps it works on the window behind it.
 
@@ -49,7 +49,7 @@ Pick **Summarize** from the panel. Arc reads the frontmost window through the ac
 
 If you're a mouse person, there's a small icon in the menu bar that opens the same panel over the active window. And if Control+Space is already bound to something on your machine (it's the default input-source switcher on some setups), you can remap the shortcut in Arc's settings — the panel doesn't care which key summons it.
 
-That's the entire interaction model of this AI summarizer Mac workflow: one keystroke, one window, one result.
+That's the entire interaction model: one keystroke, one window, one result.
 
 ## Step 3: Summarize a Web Page in Safari or Chrome
 
@@ -60,7 +60,7 @@ The most common use. Say you're on a 4,000-word product review and you only want
 3. Choose **Summarize**.
 4. Read the summary in the panel. If it's a keeper — a reference doc, a recipe, a comparison you'll need next week — tap **Save** and it goes to your Library, where it survives browser restarts and Mac reboots.
 
-Two things worth knowing about how this works. First, Arc summarizes what's rendered on the page, including parts of long articles that load as you scroll — you don't have to scroll to the bottom first. Second, if the summary skips something you care about, just type a follow-up in the panel: *"what did it say about battery life?"* The answer is grounded in the live window, so this AI summarizer Mac app answers from the actual article rather than inventing a plausible guess.
+Two things worth knowing about how this works. First, Arc summarizes what's rendered on the page, including parts of long articles that load as you scroll — you don't have to scroll to the bottom first. Second, if the summary skips something you care about, just type a follow-up in the panel: *"what did it say about battery life?"* The answer is grounded in the live window, so it answers from the actual article rather than inventing a plausible guess.
 
 <img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="AI Summary result panel with numbered key points in Arc for Mac" width="1200" height="715" loading="lazy" />
 
@@ -93,13 +93,13 @@ Summaries you save land in Arc's **Library** — a searchable list of everything
 
 <img src="{{ '/assets/images/screenshots/macos/13_saved_items_library_list.jpg' | relative_url }}" alt="Saved Items library list in Arc for Mac" width="1200" height="715" loading="lazy" />
 
-## More Things This AI Summarizer Mac Setup Can Do
+## More Things This Setup Can Do
 
 Summarizing is the headline act, but the same panel does three related jobs that make it stick as a daily tool.
 
 ### Ask the window questions instead of just summarizing
 
-A summary tells you what a document says; follow-up questions tell you what *you* need from it. With the panel open, just type: *"Does this contract clause contradict the email above it?"*, *"Which of these 90 comments actually answer the question?"*, *"What am I agreeing to in this terms page?"* Because every answer is grounded in the live window rather than a chatbot's guess, this is the AI summarizer Mac setup that doubles as a reading assistant — it can quote the exact line you're asking about.
+A summary tells you what a document says; follow-up questions tell you what *you* need from it. With the panel open, just type: *"Does this contract clause contradict the email above it?"*, *"Which of these 90 comments actually answer the question?"*, *"What am I agreeing to in this terms page?"* Because every answer is grounded in the live window rather than a chatbot's guess, it doubles as a reading assistant — it can quote the exact line you're asking about.
 
 <img src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Chat Screen panel discussing the current window's content in Arc for Mac" width="1200" height="715" loading="lazy" />
 
@@ -118,13 +118,13 @@ You have other options, so here's the honest comparison:
 - **Apple Intelligence** (macOS 15.1+) can summarize text in some apps, but availability depends on your hardware and region, the summary tends to be brief, and there's no library, no follow-up chat, and no custom prompts. If your Mac supports it, it's fine for a quick condense.
 - **ChatGPT or Claude in a browser** is powerful but manual: copy, paste, explain, wait, copy back. Great for deep work on one document, heavy for the fifteen small summarizing moments a day.
 - **QuillBot and web-based summarizer sites** mean uploading your text to a website every time — awkward for PDFs, worse for anything confidential, and none of them see the window you're working in.
-- **Arc** is an AI summarizer Mac users run in-place: it works over any app, with saved history, follow-up questions, and your own custom prompts. Free to start, and the same subscription covers the Android app if you want the same floating-assistant trick on your phone — Arc began there, as a sidebar that reads and summarizes whatever's on screen.
+- **Arc** runs in-place: it works over any app, with saved history, follow-up questions, and your own custom prompts. Free to start, and the same subscription covers the Android app if you want the same floating-assistant trick on your phone — Arc began there, as a sidebar that reads and summarizes whatever's on screen.
 
 The pattern across all four: the less friction between "text is on my screen" and "summary," the more you actually use it.
 
 ## Tips From Two Months of Daily Use
 
-- **Summarize, then interrogate.** This is the AI summarizer Mac habit that matters most: the summary is the table of contents, and the follow-up questions are where the real value is. "What am I actually agreeing to in this terms page?" beats a generic summary every time.
+- **Summarize, then interrogate.** This is the habit that matters most: the summary is the table of contents, and the follow-up questions are where the real value is. "What am I actually agreeing to in this terms page?" beats a generic summary every time.
 - **Bind custom summaries to hotkeys.** My most-used is "TL;DR + what's actionable" bound to its own key, so long docs and meeting notes get different treatment with zero extra clicks.
 - **Save ruthlessly, search later.** Saved summaries are more findable than browser history. Anything you might reference in a week, save.
 - **Use read-aloud for the backlog.** When a window is something you'd rather hear than read — a long policy doc, an article while making coffee — the [AI Summary & Reader](/ai-summary-reader/) toolkit includes natural-voice read-aloud of whatever's on screen.

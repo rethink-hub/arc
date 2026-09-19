@@ -28,7 +28,7 @@ The screen-aware approach is what I built Arc around, because the copy-paste wor
 
 <img src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar over Chrome on Android" width="800" height="1760" loading="lazy" />
 
-## Why Most AI Summarizer Android Apps Fall Short
+## Why Most of Them Fall Short
 
 I tested a bunch of summarizer apps while building Arc, and most of them share the same limitations:
 
@@ -38,7 +38,7 @@ I tested a bunch of summarizer apps while building Arc, and most of them share t
 
 **They don't understand context.** A generic summarizer treats all text the same. But summarizing a news article is different from summarizing a legal contract or a group chat. You need different summarization strategies for different content types.
 
-**They're not built for mobile workflows.** Most summarizer apps are web tools wrapped in a mobile shell. They don't integrate with how you actually use your phone. A proper AI summarizer Android app should work inside whatever app you're already using.
+**They're not built for mobile workflows.** Most summarizer apps are web tools wrapped in a mobile shell. They don't integrate with how you actually use your phone. A proper one should work inside whatever app you're already using.
 
 This is why I went with a floating overlay approach for Arc. Instead of another app you switch to, Arc lives as a sidebar you summon with a swipe. It sees your screen, understands the context, and gives you a summary right where you are.
 
@@ -58,7 +58,7 @@ The setup wizard walks you through each permission with explanations, so you're 
 
 ### Step 2: Open the Content You Want to Summarize
 
-This is the part that's different from other AI summarizer Android apps. You don't need to copy anything.
+This is the part that's different from the others. You don't need to copy anything.
 
 Just open whatever you want summarized:
 
@@ -98,11 +98,11 @@ Here's where Arc goes beyond a basic summarizer. Once you have the summary, you 
 - "Does this article mention any statistics?"
 - "Can you explain the second point in more detail?"
 
-Arc keeps the context of what's on your screen, so it answers based on the original content — not just the summary. This is powered by Arc's [AI Summary & Reader](/ai-summary-reader/) capability, which combines summarization with conversational understanding. No other AI summarizer Android app offers this kind of follow-up conversation.
+Arc keeps the context of what's on your screen, so it answers based on the original content — not just the summary. This is powered by Arc's [AI Summary & Reader](/ai-summary-reader/) capability, which combines summarization with conversational understanding. No other app in this category offers this kind of follow-up conversation.
 
 <img src="{{ '/assets/images/screenshots/00_summary_library_with_items.jpg' | relative_url }}" alt="Arc summary library with saved summaries" width="800" height="1760" loading="lazy" />
 
-## Use Cases: When to Use an AI Summarizer Android App
+## Use Cases: When I Actually Reach For It
 
 Let me share some real scenarios where I use Arc's summarizer daily:
 
@@ -134,7 +134,7 @@ After using Arc's summarizer for months, here are some tips I've picked up:
 
 **Summarize in sections for very long content.** For a 10-page PDF, I'll summarize each page or section separately rather than trying to do it all at once. The summaries are more accurate when the content is focused.
 
-## How Arc Compares to Other AI Summarizer Android Apps
+## How Arc Compares to the Alternatives
 
 I'm obviously biased here, but let me be honest about where Arc shines and where other tools might be better:
 
@@ -166,7 +166,7 @@ Yes. Open the PDF in any reader app (Google PDF Viewer, Adobe Acrobat, etc.), th
 
 ### Are AI summarizer apps free?
 
-Many AI summarizer apps are free with usage limits. Arc is free to download on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) with a free tier for basic summarization — making it a solid free AI summarizer Android app to start with. Premium features like extended summaries, follow-up questions, and AI writing are available with a subscription. QuillBot offers a free tier with ads, and AI Summarizer on Play Store is free with in-app purchases.
+Many AI summarizer apps are free with usage limits. Arc is free to download on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) with a free tier for basic summarization — making it a solid free option to start with. Premium features like extended summaries, follow-up questions, and AI writing are available with a subscription. QuillBot offers a free tier with ads, and AI Summarizer on Play Store is free with in-app purchases.
 
 ## Get Started
 

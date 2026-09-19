@@ -11,23 +11,23 @@ og_image: /assets/images/og-post-ai-assistant-for-mac.png
 
 Pick your flavor of Mac frustration: 23 Safari tabs you keep meaning to read, a 40-page PDF in Preview that could be 10 bullet points, a Gmail reply you've started six times, a Slack thread you're afraid to scroll in case it un-sends itself. The Mac-native fix for every one of these is the same sad dance: select, copy, switch to a chat tab, paste, type an instruction, wait, copy back, paste back, fix the formatting. That's not an assistant — that's a courier service with extra steps.
 
-A real AI assistant for Mac should come to your window, not make you carry your work to it. That's the whole idea behind Arc, a free AI assistant for Mac built as an [AI screen assistant](/) that reads the frontmost window through the macOS Accessibility API and acts on it in place. Press **Control+Space**, and Arc works over whatever you're already looking at, in whatever app you're already in.
+A real AI assistant for Mac should come to your window, not make you carry your work to it. That's the whole idea behind Arc, a free tool built as an [AI screen assistant](/) that reads the frontmost window through the macOS Accessibility API and acts on it in place. Press **Control+Space**, and Arc works over whatever you're already looking at, in whatever app you're already in.
 
 I'm Mamata, I build Arc, and in this guide I'll cover what a Mac AI assistant can actually do beyond chatting: summarizing any window, reading screens aloud, rewriting text where your cursor is, chatting with the current page, and binding all of it to custom shortcuts. Everything here works on any Mac running macOS 14 or later — Apple Silicon or Intel.
 
 ## What an AI Assistant for Mac Actually Needs to Be
 
-### The clipboard problem every AI assistant for Mac inherits
+### The clipboard problem every chatbot inherits
 
 Every chatbot on the Mac — including the good ones — shares the same architectural limitation: the model lives in a window, and your work lives in other windows. So every request starts with logistics. Select the text. Copy it. Alt over to the chatbot. Paste. Describe which part you meant. Wait. Copy the output. Switch back. Paste it where it belongs.
 
-The AI assistant for Mac that actually saves you time removes the logistics entirely. It reads the **frontmost window** — not a file you upload, not a text box you fill — and it acts without stealing focus. Your cursor stays in Gmail. Your text selection stays highlighted. Arc never becomes the active app, so macOS never flips you to another Space mid-flow.
+The version that actually saves you time removes the logistics entirely. It reads the **frontmost window** — not a file you upload, not a text box you fill — and it acts without stealing focus. Your cursor stays in Gmail. Your text selection stays highlighted. Arc never becomes the active app, so macOS never flips you to another Space mid-flow.
 
 ### Screen access, not file uploads
 
-The enabling trick is macOS's Accessibility API (`AXUIElement`). With one Screen Recording + Accessibility grant in System Settings, an assistant can read the text of any window on demand: Safari, Chrome, Preview PDFs, Mail, Slack, VS Code, Xcode, Notion, Excel. Arc reads **only when you invoke an action** — there's no background monitoring, no polling, nothing running when you're not pressing the key. That design is what makes an AI assistant for Mac feel safe to keep installed.
+The enabling trick is macOS's Accessibility API (`AXUIElement`). With one Screen Recording + Accessibility grant in System Settings, an assistant can read the text of any window on demand: Safari, Chrome, Preview PDFs, Mail, Slack, VS Code, Xcode, Notion, Excel. Arc reads **only when you invoke an action** — there's no background monitoring, no polling, nothing running when you're not pressing the key. That design is what makes it feel safe to keep installed.
 
-## Meet Arc: an AI Assistant for Mac That Lives Over Your Windows
+## Meet Arc: the Panel That Lives Over Your Windows
 
 Arc for Mac runs in the menu bar. Press **Control+Space** from anywhere and a dark, Spotlight-style panel fades in over your current window — centered, glassy, keyboard-first. The panel is non-activating: it appears without taking focus, so the app underneath keeps its text cursor. Arrow down, hit Return, and the panel disappears while a small click-through overlay shows progress. The result lands in a floating panel beside your work — or, for text editing, straight back into the field you were typing in.
 
@@ -82,7 +82,7 @@ Three ways in:
 
 Because the context is visible, you can trust it. Follow-ups keep the same context — it's a conversation about that page, not one-shot Q&A. Sessions persist under **Active Chats** with search, so a question you asked about a contract on Tuesday is still there on Friday. Answers copy as clean plain text, or get read aloud with the speaker button.
 
-This is what an AI assistant for Mac should feel like — context handled automatically. Good questions to start with: "What are the risks listed here?", "Which option does this comparison recommend?", "Explain the third paragraph like I'm new to this."
+This is what it should feel like — context handled automatically. Good questions to start with: "What are the risks listed here?", "Which option does this comparison recommend?", "Explain the third paragraph like I'm new to this."
 
 ## AI Writer: Rewrite and Reply Inside the App You're Typing In
 
@@ -95,7 +95,7 @@ Four modes cover most of what people actually need:
 - **Reply** — five one-tap intentions: Yes/Agree, No/Decline, Thank, Ask for details, Acknowledge
 - **Create Post** — platform-aware drafts for posts, reviews, comments
 
-The reply modes deserve a special mention for email. A request lands that needs a "yes but let me check the timeline" answer: focus the reply field, hit Reply, tap **Yes/Agree**, edit two words, send. That's the difference between an AI assistant for Mac that demos well and one that shaves minutes off every email.
+The reply modes deserve a special mention for email. A request lands that needs a "yes but let me check the timeline" answer: focus the reply field, hit Reply, tap **Yes/Agree**, edit two words, send. That's the difference between a tool that demos well and one that shaves minutes off every email.
 
 <img src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="AI Writer ready to rewrite a Gmail reply field on macOS" width="1200" height="715" loading="lazy" />
 
@@ -103,9 +103,9 @@ The reply modes deserve a special mention for email. A request lands that needs 
 
 Generic AI output is a dead giveaway. **Info Vault** fixes that: you store entries about yourself — your role, your tone preferences, the products you work on — and they appear as #chips in every AI Writer mode. Include them and the rewrite or reply reflects your context, not a generic corporate voice. Entries stay local and are only attached when you tap the chip.
 
-## Custom Shortcuts: an AI Assistant for Mac That Runs Without a Menu
+## Custom Shortcuts: Actions That Run Without a Menu
 
-Here's the feature that makes Arc feel like a Mac power tool rather than an app — the reason it earns a permanent spot as your AI assistant for Mac: **every action can bind to its own global keyboard shortcut**, and bound actions run **headlessly** — no menu, no panel, no window. The result just happens.
+Here's the feature that makes Arc feel like a Mac power tool rather than an app — the reason it earns a permanent spot in the menu bar: **every action can bind to its own global keyboard shortcut**, and bound actions run **headlessly** — no menu, no panel, no window. The result just happens.
 
 Examples of bindings that earn their keep:
 
@@ -122,13 +122,13 @@ And if none of the built-ins fit, **Arc Actions** lets you write your own: any p
 
 ## Save First, Read Later: Your Mac AI Assistant's Library
 
-Reading queues die because capture has friction. Your AI assistant for Mac doubles as a capture tool: **Save Content** removes it: one keystroke saves the screen's text, a screenshot, the source app, and the URL into the **Saved Items library** — a two-pane window with thumbnails, search, and multi-select app/category filters. Each saved item can be re-summarized, listened to, copied, or opened for questions later. First-time use asks explicit consent before any screenshot is stored, and there's a region-select option when you only want part of the screen.
+Reading queues die because capture has friction. Arc doubles as a capture tool: **Save Content** removes it: one keystroke saves the screen's text, a screenshot, the source app, and the URL into the **Saved Items library** — a two-pane window with thumbnails, search, and multi-select app/category filters. Each saved item can be re-summarized, listened to, copied, or opened for questions later. First-time use asks explicit consent before any screenshot is stored, and there's a region-select option when you only want part of the screen.
 
 <img src="{{ '/assets/images/screenshots/macos/13_saved_item_detail_with_screenshot.jpg' | relative_url }}" alt="Saved item detail view in the Arc Saved Items library on macOS" width="1200" height="715" loading="lazy" />
 
 Pair it with Smart Extract for the practical stuff: that confirmation email becomes a calendar event and a reminder; that meetup page becomes a saved contact and a map pin. Seven item categories — Events, Reminders, Deadlines, Contacts, Meeting Links, Locations, OTPs — each with one matched real action, not just a link.
 
-## What an AI Assistant for Mac Can Do That ChatGPT and Gemini Can't
+## What Arc Can Do That ChatGPT and Gemini Can't
 
 - **It never asks you to bring the text.** Reading the frontmost window beats copy-paste for anything already on screen — including apps that don't "share" well.
 - **It doesn't steal focus.** The non-activating panel is the reason in-place text editing works at all: your cursor stays in the field, and the rewrite lands back in it.
@@ -150,7 +150,7 @@ Yes. Arc for Mac is free to download from [arcassistant.app/macos/](/macos/), an
 
 Download Arc from [arcassistant.app/macos/](/macos/), drag it to Applications, launch it, grant Accessibility and Screen Recording permissions when prompted, and press **Control+Space** over any window. Setup takes about five minutes, works on macOS 14 and later, and runs on both Apple Silicon and Intel Macs.
 
-### Does an AI assistant for Mac read my screen all the time?
+### Does Arc read my screen all the time?
 
 No — not in Arc's case, by design. Arc reads the frontmost window **only at the moment you invoke an action**. There is no background monitoring, no polling, no persistent capture between your keystrokes. Screenshot capture is explicit too: the first time Save Content runs, Arc asks consent before storing anything, and you can target a region instead of the whole screen.
 

@@ -19,14 +19,14 @@ Arc is an [AI screen assistant](/) — it sees the frontmost window, so you neve
 
 Before the steps, let's define the bar, because "text reader" means wildly different things across the App Store.
 
-An AI text reader Mac owners keep installed has to:
+One you actually keep installed has to:
 
 - **Work system-wide.** Safari, Chrome, Preview, Mail, Obsidian, Slack — any app. A reader that only works inside its own sandbox fails the moment your reading lives elsewhere.
 - **Grab the text itself.** Selecting, copying, pasting into another app is three steps of friction every single time. The reader should come to your screen, not the other way around.
 - **Sound human.** The robotic default voice is why people abandon built-in TTS. Natural speech is what makes listening sustainable past the first paragraph.
 - **Know when reading is overkill.** Some text deserves listening; some deserves a summary. A modern AI text reader does both from the same panel.
 
-Arc does all four, and it's the only Mac reader I know of that pairs screen-aware text-to-speech with AI summarization in one keystroke. Here's how to set up your AI text reader Mac workflow, step by step.
+Arc does all four, and it's the only Mac reader I know of that pairs screen-aware text-to-speech with AI summarization in one keystroke. Here's how to set it up, step by step.
 
 ## Step 1: Install Arc and Grant Screen Access
 
@@ -51,7 +51,7 @@ From here you have the two reading options, and knowing when to use each is the 
 
 ## Step 3: Read PDFs and Email Without Copy-Pasting
 
-This is where a screen-aware AI text reader Mac users trust earns its keep versus every upload-a-file reader.
+This is where a screen-aware reader earns its keep versus every upload-a-file alternative.
 
 **PDFs in Preview:** open the PDF, press Control+Space over it, and the AI text reader reads what's visible — no OCR gymnastics, no dragging the file into a web app, no worrying about where your contract ends up. For a 60-page vendor agreement last week, the summary came back in about ten seconds as five bullets covering term, price, and renewal. I saved it with one click, and it landed in the saved items library with a screenshot of the source page — so three weeks later I can find the clause I need without re-opening the PDF.
 
@@ -63,7 +63,7 @@ This is where a screen-aware AI text reader Mac users trust earns its keep versu
 
 ## Step 4: Build the Habit With Saved Items and Shortcuts
 
-An AI text reader Mac users stick with is one that keeps what it produced. Two features make the habit stick:
+The one you stick with is the one that keeps what it produced. Two features make the habit stick:
 
 - **Saved items.** Every summary, extraction, or captured passage can be saved to a library inside Arc. When you read a recipe, a spec, or an apartment listing you'll need later, one click files it away with a screenshot of the source.
 
@@ -78,14 +78,14 @@ That last screenshot points at Arc's [AI Writer](/ai-writer/), the writing compa
 
 ## The Alternatives, Honestly
 
-Every AI text reader Mac comparison ends up naming these, so here's the straight take from someone who ships a competing product:
+Every comparison in this category ends up naming these, so here's the straight take from someone who ships a competing product:
 
 - **Built-in Spoken Content (`Option+Esc`).** Free, instant, works everywhere — and the voice is the reason you're reading this post. No comprehension, no summaries, no memory of what it read. Use it for a single paragraph in a pinch.
 - **Speechify and friends.** Polished voices, 2x-4x speed, solid mobile apps. Subscription pricing built around premium voices, and it works through its own apps and extension rather than reading whatever window is frontmost.
 - **Speech Central and library readers.** Great for ingesting documents, RSS, and ebooks you add to a library. Less useful for the "read this exact window right now" case.
 - **Voice Dream-style reader apps.** Strong accessibility pedigree for files you import. Same limitation: your text has to come to them.
 
-Every one of these asks you to move text or pay monthly. A screen-aware AI text reader Mac app is the only category that treats whatever is already on your screen as the input — which, if you think about when you actually want text read aloud (mid-article, mid-PDF, mid-email), is exactly when you don't want to go hunting for a copy button.
+Every one of these asks you to move text or pay monthly. A screen-aware reader is the only category that treats whatever is already on your screen as the input — which, if you think about when you actually want text read aloud (mid-article, mid-PDF, mid-email), is exactly when you don't want to go hunting for a copy button.
 
 ## FAQ
 
@@ -115,6 +115,6 @@ Arc started on Android — the same floating assistant reads and summarizes anyt
 
 ## Your Two-Minute Setup
 
-Install Arc, grant the two permissions, press Control+Space over any window, and pick read-aloud or summarize. That's the entire learning curve — about two minutes from download to your first summary, and the average article I read now takes half the time it used to because I summarize first and read only the parts that matter. If you've been putting off "reading" a stack of PDFs because reading them means *sitting down*, an AI text reader Mac setup like this turns commute time, coffee time, and eye-rest time into reading time.
+Install Arc, grant the two permissions, press Control+Space over any window, and pick read-aloud or summarize. That's the entire learning curve — about two minutes from download to your first summary, and the average article I read now takes half the time it used to because I summarize first and read only the parts that matter. If you've been putting off "reading" a stack of PDFs because reading them means *sitting down*, a setup like this turns commute time, coffee time, and eye-rest time into reading time.
 
 Download Arc for Mac free from [arcassistant.app/macos/](/macos/) — Control+Space, and any window on your screen becomes something you can listen to.

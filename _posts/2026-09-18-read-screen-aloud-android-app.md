@@ -43,13 +43,13 @@ After a week of relying on Select to Speak as a daily reader, the friction shows
 - **Nothing sticks.** If you hear something worth remembering, there's no library to return to, no summary attached.
 - **No follow-up.** You can't ask a question about what was just read. The text talks; you can't talk back.
 
-None of these are flaws — the built-ins were designed as accessibility features and they're excellent at that job. But "read screen aloud" as a *daily workflow* — commute listening, research triage, hands-busy multitasking — needs more. So when you graduate from "make this paragraph talk" to wanting a full read screen aloud Android app workflow, here's the setup I'd recommend.
+None of these are flaws — the built-ins were designed as accessibility features and they're excellent at that job. But "read screen aloud" as a *daily workflow* — commute listening, research triage, hands-busy multitasking — needs more. So when you graduate from "make this paragraph talk" to wanting a real listening workflow, here's the setup I'd recommend.
 
 ## Arc: the read screen aloud Android app that also understands your screen
 
 Arc is a floating AI sidebar that lives over every app on your phone. Tap its edge and it expands over whatever you're looking at — a Chrome article, a Gmail thread, a PDF, a group chat — with one tap to capture the screen and act on it. [Arc for Android](/android/) works system-wide, so there's no copy-paste detour and no app-switching.
 
-Every read screen aloud Android app needs the same two permissions: accessibility access (to read screen content) and a speech engine (to speak it). Arc adds a third layer the built-ins don't have — an LLM that reads the screen with you. That means you can:
+Any app doing this needs the same two permissions: accessibility access (to read screen content) and a speech engine (to speak it). Arc adds a third layer the built-ins don't have — an LLM that reads the screen with you. That means you can:
 
 - **Listen to the full text** of any captured screen, with speed control
 - **Summarize first**, then decide whether the full listen is worth it
@@ -62,7 +62,7 @@ And if you also work on a Mac, Arc exists there too — summoned with **Control+
 
 ## How to read your screen aloud with Arc, step by step
 
-This read screen aloud Android app setup takes about five minutes, start to finish.
+The setup takes about five minutes, start to finish.
 
 ### Step 1: Install and grant screen access
 
@@ -99,11 +99,11 @@ Tap save and the capture — with its summary — lands in your Arc library. Tom
 | Saves captures to a library | No | Yes |
 | Also available on Mac | — | Yes, Control+Space |
 
-The honest take: if you occasionally need a paragraph spoken, stay with Select to Speak — it's free, instant, and already on your phone. If listening is becoming part of how you get through content every day, a dedicated read screen aloud Android app earns its install.
+The honest take: if you occasionally need a paragraph spoken, stay with Select to Speak — it's free, instant, and already on your phone. If listening is becoming part of how you get through content every day, a dedicated app earns its install.
 
 ## Tips for listening instead of reading
 
-A good read screen aloud Android app only helps if it fits the gaps of your day. Six habits that made this stick for me:
+Any of this only helps if it fits the gaps of your day. Six habits that made this stick for me:
 
 1. **Summarize long pages first.** If a capture runs past ~800 words, get the summary before committing to the full listen.
 2. **Bump the speed to 1.2–1.5x.** Comprehension holds up better than you'd expect, and long articles stop feeling long.
@@ -122,11 +122,11 @@ For pure accessibility navigation, TalkBack is excellent and built in. For readi
 
 Yes. Select to Speak (Settings → Accessibility → Select to Speak) reads anything you select, and TalkBack provides full spoken navigation. Both ship on every modern Android phone.
 
-**Can a read screen aloud Android app work inside any app?**
+**Can it work inside any app?**
 
 The right one, yes. TalkBack and Select to Speak work system-wide, and Arc's floating sidebar sits over any app — Chrome, Gmail, WhatsApp, PDFs — because it reads the screen itself rather than waiting for each app to support it.
 
-**Is there a free read screen aloud Android app?**
+**Is there a free option?**
 
 Select to Speak is free and already on your phone. Arc is free to download from Google Play, with a free tier to start, so you can test the capture-listen-save flow before deciding it belongs in your routine.
 
