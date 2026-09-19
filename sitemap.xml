@@ -13,11 +13,18 @@ layout: null
 
   Excluded: noindex pages (privacy, terms), the 404, and the /go/ /r/ /s/
   redirect shims, which are all noindex or not canonical destinations.
+
+  site.pages also holds generated assets (the leftover theme's
+  assets/css/style.css, feed.xml, robots.txt). Those are filtered by requiring
+  a trailing slash: with `permalink: pretty` every real page is /like-this/ or
+  bare "/", and nothing else is. The old extension blacklist missed .css and
+  put a 76KB stylesheet in the sitemap as an indexable page.
 {%- endcomment -%}
 {%- assign excluded = "/privacy/,/terms/,/404.html,/go/,/r/,/s/" | split: "," -%}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 {%- for page in site.pages -%}
-{%- unless page.url contains ".xml" or page.url contains ".txt" or page.url contains ".json" or excluded contains page.url or page.robots contains "noindex" %}
+{%- assign last_char = page.url | slice: -1 -%}
+{%- unless last_char != "/" or excluded contains page.url or page.robots contains "noindex" %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
     <lastmod>{{ page.last_modified_at | default: page.date | default: site.time | date_to_xmlschema }}</lastmod>
