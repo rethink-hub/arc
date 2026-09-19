@@ -4,7 +4,7 @@ title: "Gemini Intelligence vs AI Screen Assistants: What Helps"
 description: "Google's Gemini Intelligence brings on-screen AI to Android 17. But what's actually useful day-to-day? A practical comparison from an indie dev building Arc."
 date: 2026-07-15
 author: Mamata
-tags: ["android", "ai", "gemini", "productivity", "screen-assistant"]
+tags: ["android", "ai", "gemini", "productivity", "screen-assistant", "comparison"]
 og_image: /assets/images/og-blog-gemini.png
 ---
 
@@ -102,9 +102,13 @@ If you've ever wished your phone could just *understand what's on your screen* a
 
 It's not a replacement for Gemini Intelligence. It's a complement. Use Gemini for the system-level stuff it's great at. Use Arc for the fast, customizable, cross-app AI that fits *your* workflow.
 
-If you want to try it, Arc is [available on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc), and on [Mac](/macos/). The free tier gives you 7 requests per week on basic features — enough to see if it fits how you work.
-
 The two arguments above have their own pages if you want the detail: [AI workflow automation](/ai-workflow-automation/) covers building your own actions, and [private AI assistant](/private-ai-assistant/) covers exactly what is stored where. [Arc vs. the alternatives](/alternatives/) puts it next to the other options directly.
+
+## Try It Alongside Gemini
+
+You don't have to choose. Install Arc, grant the two permissions, and tap the floating sidebar over the next article Gemini didn't surface anything useful for. Setup is about two minutes, and the free tier is 7 requests per week on basic features — enough to see whether the fast, customizable version fits how you actually work. (There's [a Mac version](/macos/) on the same account if you want it later.)
+
+**[Get Arc free on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc)** — the Android screen assistant I build and use every day.
 
 ---
 

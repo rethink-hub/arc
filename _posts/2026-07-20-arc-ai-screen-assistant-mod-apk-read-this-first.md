@@ -4,7 +4,7 @@ title: "Arc AI Screen Assistant Mod APK? Read This First"
 description: "Looking for a modded Arc AI? Here's the truth from the indie developer who built it: why there's no mod APK and how cheap the real thing is."
 date: 2026-07-20
 author: Rethink
-tags: ["mod-apk", "arc", "premium", "indie-developer", "android"]
+tags: ["mod-apk", "arc", "premium", "indie-developer", "android", "comparison"]
 og_image: /assets/images/og-blog-mod-apk.png
 ---
 
