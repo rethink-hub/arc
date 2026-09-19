@@ -5,6 +5,7 @@ description: "Build custom AI actions and keyboard AI shortcuts that run in any 
 keywords: "ai shortcuts, custom ai actions, floating ai assistant, ai quick actions, keyboard shortcut ai, ai shortcut android, ai automation"
 og_image: /assets/images/og-arc.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

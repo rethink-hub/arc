@@ -5,6 +5,7 @@ description: "Free AI note taker for phone calls and meetings. Live transcriptio
 keywords: "ai note taker, call summary app, ai call transcription, meeting notes ai, call transcription app, ai call analysis, call summary"
 og_image: /assets/images/og-arc.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

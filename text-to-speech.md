@@ -5,6 +5,7 @@ description: "A text to speech app for Android that reads any screen aloud in na
 keywords: "text to speech apps for dyslexia, text-to-speech software for students with disabilities, free text to speech app, best text to speech app, text to speech app android, screen reader android, read pdf aloud"
 og_image: /assets/images/og-arc.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

@@ -16,6 +16,7 @@ faq:
     answer: "No. Arc reads screen content only when you tap an action yourself. It disables itself automatically in around 400 sensitive apps including banking, crypto and password managers, and you can add your own exclusions."
   - question: "What can I actually do with it?"
     answer: "Summarize any article or document, listen to it with natural text-to-speech, rewrite or reply to messages in place, extract dates, contacts and codes off a screen, turn study material into flashcards, and build your own one-tap AI actions with custom prompts."
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero — Sider.ai style with live demo on right -->

@@ -5,6 +5,7 @@ description: "Generate perfect replies in seconds. AI reply generator for WhatsA
 keywords: "ai reply generator, text reply generator, ai text reply generator, smart reply ai, email reply generator, whatsapp reply generator, auto reply generator"
 og_image: /assets/images/og-arc.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

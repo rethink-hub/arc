@@ -26,6 +26,7 @@ faq:
     answer: "TalkBack is a full screen reader that reads all UI elements. Arc AI focuses specifically on content reading - it intelligently extracts and reads only the text you want to hear with natural AI voices, making it perfect for consuming written content."
   - question: "Can I listen to PDFs and ebooks?"
     answer: "Yes! Arc AI can read content from PDF readers, ebook apps, and any app that displays text on your Android screen."
+last_modified_at: 2026-09-19
 ---
 
 <div class="hero-section hero-simple hero-with-mockup">

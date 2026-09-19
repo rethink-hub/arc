@@ -17,6 +17,7 @@ faq:
     answer: "Arc reads on-screen content through the macOS accessibility APIs, which Apple's App Sandbox prohibits. Sandboxing is mandatory for Mac App Store apps, so Arc is distributed directly from this site — still notarized by Apple, and updated through a signed Sparkle update feed."
   - question: "Does Arc read my screen in the background?"
     answer: "No. Arc reads the frontmost window only when you invoke an action yourself. It is not a keylogger and it does not monitor continuously. Screenshots are captured only for actions that explicitly need one, and password managers are skipped automatically."
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero: text left, live interactive demo right (mirrors the Android homepage) -->

@@ -5,6 +5,7 @@ description: "A private AI assistant that auto-disables in 200+ banking apps, ne
 keywords: "private ai assistant, private ai chatbot, private ai, no track ai, offline ai chatbot, secure ai assistant, privacy first ai"
 og_image: /assets/images/og-arc.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

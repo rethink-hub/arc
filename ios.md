@@ -16,6 +16,7 @@ faq:
     answer: "The same as every other platform: free for 7 requests per week on basic features, with a premium subscription for unlimited summaries, text-to-speech, AI chat and automation. No ads, no expiring trial."
   - question: "Can I use Arc on iPhone right now?"
     answer: "Not yet as a native app. Arc ships on Android and macOS today. If you use a Mac alongside your iPhone, the Mac app covers reading and writing on the desktop while the iPhone version is in development."
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

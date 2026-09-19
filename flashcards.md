@@ -5,6 +5,7 @@ description: "Turn any article, PDF or lecture into flashcards instantly. Free A
 keywords: "flashcard maker free, free flashcard maker, pdf to flashcards, ai flashcard generator, printable flashcards, make flashcards from pdf, flashcards app"
 og_image: /assets/images/og-arc.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

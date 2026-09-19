@@ -19,6 +19,7 @@ faq:
     answer: "Arc runs on Google Gemini for summaries, chat and writing. Your summaries, saved items and custom actions are stored locally on your phone, with optional Google Drive backup that you control."
   - question: "Can I create my own AI commands in Arc?"
     answer: "Yes. Write a prompt once with a {screen_text} placeholder and it becomes a one-tap action in your sidebar — for example 'translate this to Spanish and keep the formatting'. You can also install more than 500 actions other Arc users have published."
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

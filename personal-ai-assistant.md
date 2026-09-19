@@ -5,6 +5,7 @@ description: "A personal AI assistant that works on your current screen and reme
 keywords: "personal ai assistant, personal ai assistant app, best personal ai assistant, free personal ai assistant, ai personal assistant app, personal ai assistant android"
 og_image: /assets/images/og-personal-ai-assistant.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

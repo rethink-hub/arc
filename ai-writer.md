@@ -16,6 +16,7 @@ faq:
     answer: "Yes. You can ask the AI to make text more professional, casual, friendly, concise, persuasive, or match any tone you need."
   - question: "Does the AI Writer store my text?"
     answer: "No. Text is processed for AI responses but never stored on our servers. Your content stays private and is not used to train models."
+last_modified_at: 2026-09-19
 ---
 
 <div class="hero-section hero-simple hero-with-mockup">

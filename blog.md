@@ -4,6 +4,7 @@ title: "Arc Blog — AI Tips, Guides & Android Productivity"
 description: "Guides on AI productivity, Android multitasking, screen assistants, and how to get more done with AI on your phone. Practical tips from an indie developer."
 keywords: "Arc AI blog, Android productivity, AI screen assistant tips"
 og_image: /assets/images/og-blog.png
+last_modified_at: 2026-09-19
 ---
 
 <div class="blog-index">

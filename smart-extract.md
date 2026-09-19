@@ -5,6 +5,7 @@ description: "Turn any screenshot or screen into text: contacts, OTP codes, date
 keywords: "screenshot to text, extract data from image, ai data extraction, ai text extractor, extract text from screen, contact extractor, ocr app android"
 og_image: /assets/images/og-arc.png
 product_page: true
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->

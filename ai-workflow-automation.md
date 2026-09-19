@@ -16,6 +16,7 @@ faq:
     answer: "The AI fact checker uses advanced language models with web search capabilities to verify information. While highly effective, always verify critical information from authoritative sources. Think of it as a helpful first-pass fact-checking assistant."
   - question: "Can actions work without internet?"
     answer: "Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup."
+last_modified_at: 2026-09-19
 ---
 
 <div class="hero-section hero-simple hero-with-mockup">

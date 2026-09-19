@@ -2,121 +2,36 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  Generated from site.pages and site.posts. Do not hand-add <url> blocks: every
+  previous attempt duplicated an entry the loop already emitted (see 7351e9f and
+  the three dupes removed in db66680). A new page is picked up automatically.
+
+  lastmod comes from each page's `last_modified_at` front matter, NOT site.time.
+  site.time is the build timestamp, so every page claimed to change on every
+  deploy and Google learned to discount the field entirely.
+
+  Excluded: noindex pages (privacy, terms), the 404, and the /go/ /r/ /s/
+  redirect shims, which are all noindex or not canonical destinations.
+{%- endcomment -%}
+{%- assign excluded = "/privacy/,/terms/,/404.html,/go/,/r/,/s/" | split: "," -%}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+{%- for page in site.pages -%}
+{%- unless page.url contains ".xml" or page.url contains ".txt" or page.url contains ".json" or excluded contains page.url or page.robots contains "noindex" %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+    <lastmod>{{ page.last_modified_at | default: page.date | default: site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>{% if page.url == "/" %}weekly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if page.url == "/" %}1.0{% elsif page.product_page %}0.9{% else %}0.8{% endif %}</priority>
   </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-summary-reader/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-writer/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-workflow-automation/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/blog/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/personal-ai-assistant/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/alternatives/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-reply-generator/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/flashcards/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-note-taker/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/smart-extract/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ai-shortcuts/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/private-ai-assistant/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/text-to-speech/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/android/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/ios/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/macos/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/windows/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  {% for post in site.posts %}
+{%- endunless -%}
+{%- endfor -%}
+{%- for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  {% endfor %}
-  </urlset>
+{%- endfor %}
+</urlset>

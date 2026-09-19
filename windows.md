@@ -16,6 +16,7 @@ faq:
     answer: "Copilot answers questions in its own panel, so you paste content into it. Arc runs on whatever window is already in front of you — press Ctrl+Space and it reads that window directly. You can also bind your own prompts to global hotkeys, which Copilot does not offer."
   - question: "Does Arc for Windows need an internet connection?"
     answer: "Yes. AI summaries, chat and rewriting are processed by a hosted model, so Arc needs a connection for those. Your saved items, custom actions and Info Vault entries are stored locally on your PC."
+last_modified_at: 2026-09-19
 ---
 
 <!-- Hero: text left, live interactive demo right (mirrors the macOS page) -->
