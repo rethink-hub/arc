@@ -1631,10 +1631,36 @@ a:focus, button:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
   transition: all var(--t);
 }
 .blog-card-link:hover .blog-card { border-color: var(--border-hover); box-shadow: var(--shadow-md); transform: translateY(-2px); }
-.blog-card h2 { font-size: 1.2rem; margin-top: 0; margin-bottom: var(--xs); color: var(--text); }
-.blog-card-link:hover .blog-card h2 { color: var(--brand); }
+/* Cards moved from h2 to h3 when the index grew section headings; both are kept
+   so a card still renders correctly wherever the old markup survives. */
+.blog-card h2,
+.blog-card h3 { font-size: 1.2rem; margin-top: 0; margin-bottom: var(--xs); color: var(--text); }
+.blog-card-link:hover .blog-card h2,
+.blog-card-link:hover .blog-card h3 { color: var(--brand); }
 .blog-excerpt { color: var(--text-light); font-size: 0.92rem; line-height: 1.6; margin-bottom: var(--sm); }
 .blog-meta { font-size: 0.82rem; color: var(--text-3); }
+
+/* Topic sections on the blog index */
+.blog-section { padding: 0 var(--lg); margin-top: var(--2xl); }
+.blog-section > h2 {
+  font-size: 1.45rem;
+  margin: 0 0 var(--xs);
+  padding-bottom: var(--xs);
+  border-bottom: 1px solid var(--border);
+}
+.blog-section > p { color: var(--text-light); font-size: 0.98rem; line-height: 1.7; margin: 0; max-width: 62ch; }
+.blog-section .blog-list { margin-top: var(--lg); }
+.blog-starters { margin: var(--lg) 0 0; padding: 0; list-style: none; max-width: 62ch; }
+.blog-starters li {
+  position: relative;
+  padding: 0 0 var(--sm) var(--md);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.blog-starters li::before { content: "\2192"; position: absolute; left: 0; color: var(--brand); }
+.blog-starters a { font-weight: 600; color: var(--text); }
+.blog-starters a:hover { color: var(--brand); }
 
 .blog-post { max-width: var(--max-w); margin: 0 auto; }
 .blog-header { text-align: center; padding: var(--3xl) var(--lg) var(--md); }
@@ -1763,6 +1789,8 @@ a:focus, button:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
   .footer-links-row { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: var(--xs); text-align: center; }
   .blog-content .img-row img { max-width: 100%; }
+  .blog-section { padding: 0 var(--md); margin-top: var(--xl); }
+  .blog-section > h2 { font-size: 1.25rem; }
   .hero-section { padding: var(--3xl) var(--lg) var(--2xl); }
   .social-proof { gap: var(--lg); }
   .social-proof-item { padding: 0 var(--lg); }
