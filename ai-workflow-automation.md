@@ -194,6 +194,47 @@ Perfect for combating misinformation and ensuring accuracy in your work.
 
 ---
 
+## Three Actions Worth Copying
+
+The feature is only as good as the prompts you put in it. These three are the ones that earn their place on the sidebar — copy the prompt text straight into **Settings → Custom Actions → Create New Action**.
+
+**1. Meeting-to-tasks**
+
+> Read the screen and list only the action items, one per line. For each, write who owns it and the deadline if one was stated. If no owner or deadline was given, write "unassigned" rather than guessing. Ignore discussion that produced no action.
+
+Run it on a meeting-notes doc, a long Slack thread, or an email chain. The "rather than guessing" clause is what keeps it from inventing owners — without it, models fill the blank.
+
+**2. Vocabulary capture (language learners)**
+
+> Find every word or phrase on this screen that a B1-level learner of this language would not know. For each: the word, a one-line meaning, and the sentence it appeared in, copied exactly.
+
+Turn on **screenshot capture** for this one so it reads text inside images and subtitles. Pair it with [flashcards]({{ '/flashcards/' | relative_url }}) and the output becomes a study deck.
+
+**3. Claim check**
+
+> List each factual claim on this screen as a separate line. For each, search the web and mark it supported, disputed, or unverifiable, with one source link. Do not mark a claim supported on the strength of the page it came from.
+
+This one needs **web search** enabled or it will only tell you what the page already says.
+
+## What Makes an Action Prompt Work
+
+Four things separate an action you keep from one you delete after a week:
+
+- **Name the output shape.** "One per line," "a table with three columns," "at most 40 words." Actions run on wildly different screens; the shape is the only thing holding the result steady.
+- **Say what to do with missing information.** Models fill gaps by default. "Write unassigned rather than guessing" costs you six words and removes the most common failure.
+- **Use the two toggles deliberately.** *Screenshot capture* lets the action see text inside images, video subtitles, and apps that block text extraction — useful for learning and receipts, unnecessary for a web article. *Web search* lets it check the screen against something other than itself, which is the whole point of a fact-check action and pure latency everywhere else.
+- **Narrow beats clever.** Two sharp actions beat one that tries to branch. "Extract dates" and "extract contacts" both work; "extract the important stuff" does not.
+
+Actions have no cap — make as many as you want. Configurations are stored on the device and sync to your Google Drive if you turn on backup, so a new phone gets your sidebar back. Running an action needs a connection, since the models are cloud-side.
+
+## Community Actions
+
+Actions written by other people are browsable in the app, and you can publish your own with a Google sign-in. This is the part that tends to surprise people: the useful ones are rarely the general-purpose prompts. A kanji-breakdown action written by someone in Japan is now used by thousands of learners — the kind of thing that never survives a product roadmap but does fine when whoever needed it just built it.
+
+If you build one that earns a permanent sidebar slot, it is worth publishing.
+
+---
+
 ## Advanced Automation Capabilities
 
 ### **Chained Workflows**

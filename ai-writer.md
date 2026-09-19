@@ -161,6 +161,41 @@ Get support forming clear sentences when writing is challenging.
 
 ---
 
+## What Each Mode Actually Returns
+
+The modes are not five names for the same prompt. Each one is tuned for a different job, and the difference shows up in what comes back:
+
+| Mode | You start with | You get back |
+| --- | --- | --- |
+| **Rewrite** | "hey so i cant make the 3pm, something came up, sorry" | The same message in the tone you picked — professional, warm, or blunt — with the meaning and the facts unchanged |
+| **Grammar fix** | A paragraph with typos and comma splices | The same paragraph, same voice, with the mistakes corrected and nothing else touched |
+| **Reply** | A message thread on screen | A draft answer that reads the thread first, so it responds to what was actually asked |
+| **Translate** | Text in any of the supported languages | The translation with tone preserved — a casual message stays casual instead of turning formal |
+| **Create post** | A rough idea or a link | A short-form post shaped for the platform, with variations to pick from |
+
+Rewrite is the one people use most, and it is worth knowing that it keeps your facts. It will change "can't make 3pm" into "I'm unable to attend at 3:00 PM," but it will not invent a reason you didn't give it.
+
+## How It Compares to What's Already on Your Phone
+
+Your phone can already do some of this. Here is where each option actually wins:
+
+- **Gboard's built-in proofread** is free and instant, and it is the right tool for a typo in a text message. It fixes; it does not rewrite, reply, or translate with tone.
+- **The Grammarly keyboard** is strong on grammar and style, and it works anywhere you type. It is a keyboard, so it acts on what you are writing — not on what is on the screen around it.
+- **Pasting into ChatGPT or Gemini** gives you the most capable model, and there is no beating it for long-form work. It also costs you an app switch, a copy, a paste, and a paste back, every single time.
+- **Arc's AI Writer** reads the screen rather than the keyboard, so it can answer a message it can see without you selecting anything, and it returns you to the app you were already in. Where it loses: it is not a grammar engine running live as you type, and for a 2,000-word draft you want the full chat interface.
+
+The honest summary: if you mostly fix typos, Gboard is enough. If you spend your day answering messages in six different apps, the screen-aware version saves more time than the keyboard-aware one.
+
+## Setup and What It Costs
+
+Setup is two permissions — accessibility, so Arc can read the screen text, and display-over-other-apps, so the sidebar can float above what you are doing. Both are granted from Arc's onboarding screen and take about two minutes. Arc disables itself automatically in around 400 sensitive apps, including banking, crypto and password managers, and you can add your own exclusions.
+
+The free tier is 7 requests per week across basic features, which is enough to find out whether this fits your routine before paying anything. Premium removes the cap and covers every platform on one subscription — the same account works on [Android]({{ '/android/' | relative_url }}) and [Mac]({{ '/macos/' | relative_url }}). There is no ad tier and no trial that expires out from under you.
+
+Your text is sent for processing and is not stored on our servers or used to train models; [private AI assistant]({{ '/private-ai-assistant/' | relative_url }}) covers exactly what goes where.
+
+---
+
 ## Frequently Asked Questions
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
