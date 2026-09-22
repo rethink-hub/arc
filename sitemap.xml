@@ -47,4 +47,10 @@ layout: null
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+    <url>
+    <loc>https://arcassistant.app/2026/09/22/ai-assistant-for-iphone/</loc>
+    <lastmod>2026-09-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   </urlset>
