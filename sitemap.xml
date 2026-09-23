@@ -41,22 +41,4 @@ layout: null
     <priority>0.6</priority>
   </url>
 {%- endfor %}
-  <url>
-    <loc>https://arcassistant.app/2026/09/21/ai-screen-assistant-windows/</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://arcassistant.app/2026/09/22/ai-assistant-for-iphone/</loc>
-    <lastmod>2026-09-22T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://arcassistant.app/2026/09/23/ai-text-reader-android/</loc>
-    <lastmod>2026-09-23T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   </urlset>
