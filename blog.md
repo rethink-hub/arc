@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI Screen Assistant Guides for Android & Mac | Arc Blog"
-description: "Setup walkthroughs, tested app roundups and honest comparisons for reading, summarizing and listening to any screen on Android and macOS. Written by the developer."
+description: "Setup guides, tested app roundups and honest comparisons for reading, summarizing and listening to any screen on Android and Mac. Written by the developer."
 keywords: "Arc AI blog, Android productivity, AI screen assistant tips"
 og_image: /assets/images/og-blog.png
 last_modified_at: 2026-09-19
