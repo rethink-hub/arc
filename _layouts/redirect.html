@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moved | Arc</title>
+{%- comment -%}
+  Permanent-move stub for a URL that used to exist (the old .html pages and the
+  github.io-era paths). GitHub Pages cannot send a real 301, so this is the
+  closest equivalent: an instant meta refresh, which Google treats as a
+  permanent redirect, plus a canonical pointing at the new page. Stubs are kept
+  out of sitemap.xml via `sitemap: false`. See legacy/ for the list.
+{%- endcomment %}
+<link rel="canonical" href="{{ site.url }}{{ page.redirect_to }}">
+<meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
+<script>location.replace("{{ page.redirect_to }}" + location.search + location.hash);</script>
+</head>
+<body>
+<p>This page has moved to <a href="{{ page.redirect_to }}">{{ site.url }}{{ page.redirect_to }}</a>.</p>
+</body>
+</html>

@@ -11,8 +11,9 @@ layout: null
   site.time is the build timestamp, so every page claimed to change on every
   deploy and Google learned to discount the field entirely.
 
-  Excluded: noindex pages (privacy, terms), the 404, and the /go/ /r/ /s/
-  redirect shims, which are all noindex or not canonical destinations.
+  Excluded: noindex pages (privacy, terms), the 404, the /go/ /r/ /s/
+  redirect shims, and the legacy/ moved-page stubs (sitemap: false), which are
+  all noindex or not canonical destinations.
 
   site.pages also holds generated assets (the leftover theme's
   assets/css/style.css, feed.xml, robots.txt). Those are filtered by requiring
@@ -24,7 +25,7 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 {%- for page in site.pages -%}
 {%- assign last_char = page.url | slice: -1 -%}
-{%- unless last_char != "/" or excluded contains page.url or page.robots contains "noindex" %}
+{%- unless last_char != "/" or excluded contains page.url or page.robots contains "noindex" or page.sitemap == false %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
     <lastmod>{{ page.last_modified_at | default: page.date | default: site.time | date_to_xmlschema }}</lastmod>

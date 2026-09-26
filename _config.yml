@@ -18,11 +18,12 @@ permalink: pretty
 plugins:
   - jekyll-feed
 
-# jekyll-redirect-from REMOVED: it generates .html stub pages that return
-# HTTP 200 with JS/meta-refresh redirects instead of proper 301s. Google
-# treats these as real pages, wasting crawl budget and causing duplicate
-# content issues. With permalink: pretty, GitHub Pages serves clean URLs
-# (e.g. /android/ from android/index.html) without needing redirect stubs.
+# jekyll-redirect-from was removed (89987a8), and the old .html URLs then 404'd.
+# Search Console showed that threw away the github.io-era history (~41K
+# impressions) because GitHub forwards rethink-hub.github.io/arc/X.html to
+# arcassistant.app/X.html. Those URLs now get explicit moved-page stubs in
+# legacy/ (layout: redirect): an instant meta refresh plus a canonical to the
+# new URL, excluded from sitemap.xml. Add a stub there when a URL is retired.
 
 # SEO settings
 lang: en-US
