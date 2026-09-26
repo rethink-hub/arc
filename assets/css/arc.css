@@ -2203,3 +2203,26 @@ img, video { max-width: 100%; height: auto; }
 .cta-platforms em { font-style: normal; color: rgba(255,255,255,0.45); }
 .cta-platforms .soon svg { opacity: 0.55; }
 @media (max-width: 900px) { .navbar.scrolled, .navbar.menu-open { background: #fff; } }
+
+/* ---------- Phones: swap the keyboard-driven demo for device screenshots ---------- */
+.hero-stage-mac-mobile, .demo-mobile-fallback { display: none; }
+@media (max-width: 760px) {
+  .hero-stage-card #arc-demo, .hero-demo-col--arc #arc-demo { display: none; }
+  .hero-stage-card { padding: 20px 16px 56px; }
+  .hero-stage-mac-mobile {
+    display: block; width: 100%; height: auto;
+    border-radius: 12px;
+    box-shadow: 0 24px 48px rgba(40,30,110,0.25), 0 0 0 1px rgba(255,255,255,0.4);
+  }
+  .hero-stage-card .hero-stage-phone {
+    display: block; position: absolute;
+    right: 18px; bottom: 14px; width: 36%; max-width: 170px;
+  }
+  .demo-mobile-fallback {
+    display: block; width: 100%; height: auto;
+    border-radius: 14px; border: 1px solid var(--border);
+    box-shadow: 0 20px 44px rgba(12,12,20,0.16);
+  }
+}
+@media (max-width: 968px) { .hero-demo-col.hero-demo-col--arc { min-height: 0; } }
+@media (max-width: 760px) { .hero-with-live-demo { padding-bottom: var(--xl); } }

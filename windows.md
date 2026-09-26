@@ -33,6 +33,7 @@ last_modified_at: 2026-09-19
     </div>
     <div class="hero-demo-col hero-demo-col--arc">
       {% include arc-interactive-demo.html platform="windows" cta_label="Join the Windows waitlist →" cta_href="#about-arc-for-windows" %}
+      <img class="demo-mobile-fallback" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="The Arc panel open over a browser window, listing AI actions" width="1200" height="715" loading="lazy" decoding="async">
     </div>
   </div>
 </div>

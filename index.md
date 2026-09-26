@@ -44,6 +44,8 @@ last_modified_at: 2026-09-19
   <div class="hero-stage">
     <div class="hero-stage-card">
     {% include arc-interactive-demo.html %}
+    <!-- Phones: the interactive demo is a keyboard walkthrough, so show both devices instead -->
+    <img class="hero-stage-mac-mobile" src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="Arc AI Summary panel on a Mac" width="1200" height="710" loading="lazy" decoding="async">
     <div class="hero-stage-phone" aria-hidden="true">
       <div class="video-frame">
         <video src="{{ '/assets/videos/ai-summary.mp4' | relative_url }}" autoplay loop muted playsinline preload="metadata" poster="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}"></video>
