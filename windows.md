@@ -58,35 +58,35 @@ It is in beta on Windows today. The same application already ships on macOS, so 
 
 <div class="shot-gallery">
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc menu panel floating over a Chrome browser window, listing AI actions" width="1200" height="715" loading="lazy">
+    <img width="1200" height="715" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc menu panel floating over a Chrome browser window, listing AI actions" loading="lazy">
     <figcaption><strong>The Arc menu.</strong> Ctrl+Space opens it over whatever app you're in. Your cursor and focus stay put underneath.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="Arc AI Summary result panel showing numbered key points from a web article" width="1200" height="715" loading="lazy">
+    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="Arc AI Summary result panel showing numbered key points from a web article" loading="lazy">
     <figcaption><strong>AI Summary.</strong> Numbered key points from the window Arc just read, with listen, copy, save and share on the result.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Arc chat panel answering a question about the content on screen" width="1200" height="710" loading="lazy">
+    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Arc chat panel answering a question about the content on screen" loading="lazy">
     <figcaption><strong>Chat about your screen.</strong> Ask follow-up questions about the document or page in front of you.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="Arc AI Writer ready to rewrite text in a Gmail reply field" width="1200" height="715" loading="lazy">
+    <img width="1058" height="984" src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="Arc AI Writer ready to rewrite text in a Gmail reply field" loading="lazy">
     <figcaption><strong>AI Writer.</strong> Arc grabs the focused text field, rewrites it, and writes the result straight back in — here in a browser mail compose box.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Custom global keyboard shortcut assigned to the AI Writer action in Arc settings" width="1200" height="715" loading="lazy">
+    <img width="1200" height="912" src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Custom global keyboard shortcut assigned to the AI Writer action in Arc settings" loading="lazy">
     <figcaption><strong>Global hotkeys.</strong> Bind any action — built-in or your own — to a keystroke that works system-wide. See <a href="{{ '/ai-shortcuts/' | relative_url }}">AI shortcuts</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc custom action creation form with a prompt template field" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc custom action creation form with a prompt template field" loading="lazy">
     <figcaption><strong>Your own actions.</strong> Write a prompt once with a <code>{screen_text}</code> placeholder and it becomes a one-key command. More on <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/13_saved_items_library_list.jpg' | relative_url }}" alt="Arc saved items library listing captured screens with titles and categories" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/13_saved_items_library_list.jpg' | relative_url }}" alt="Arc saved items library listing captured screens with titles and categories" loading="lazy">
     <figcaption><strong>Saved items.</strong> Every summary and capture lands in a searchable local library with its source app and URL.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/11_info_vault_with_entries.jpg' | relative_url }}" alt="Arc Info Vault storing reusable personal details for AI writing" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/11_info_vault_with_entries.jpg' | relative_url }}" alt="Arc Info Vault storing reusable personal details for AI writing" loading="lazy">
     <figcaption><strong>Info Vault.</strong> Reusable details Arc can drop into what it writes for you, stored on your own machine.</figcaption>
   </figure>
 </div>

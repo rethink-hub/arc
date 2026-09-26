@@ -57,7 +57,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar expanded over a Chrome browser window on Android" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar expanded over a Chrome browser window on Android" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -67,7 +67,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="Arc AI summary result showing numbered key points from an article" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="Arc AI summary result showing numbered key points from an article" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -77,7 +77,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/02_ai_summary_chat_input.jpg' | relative_url }}" alt="Arc chat input asking a follow-up question about a summarized screen" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/02_ai_summary_chat_input.jpg' | relative_url }}" alt="Arc chat input asking a follow-up question about a summarized screen" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -87,7 +87,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/03_ai_writer_reply_mode.jpg' | relative_url }}" alt="Arc AI Writer in reply mode generating a message response" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/03_ai_writer_reply_mode.jpg' | relative_url }}" alt="Arc AI Writer in reply mode generating a message response" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -97,7 +97,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/10_smart_extract_results.jpg' | relative_url }}" alt="Arc Smart Extract results listing dates, contacts and action items from a screen" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/10_smart_extract_results.jpg' | relative_url }}" alt="Arc Smart Extract results listing dates, contacts and action items from a screen" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -107,7 +107,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="List of custom AI actions configured in Arc for Android" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="List of custom AI actions configured in Arc for Android" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -117,7 +117,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/07_community_actions_browse_with_filter.jpg' | relative_url }}" alt="Browsing community-shared AI actions in Arc with a category filter" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/07_community_actions_browse_with_filter.jpg' | relative_url }}" alt="Browsing community-shared AI actions in Arc with a category filter" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>
@@ -127,7 +127,7 @@ The iPhone version is in development and has no release date yet. The honest rea
     <div class="iphone-frame">
       <div class="iphone-notch"></div>
       <div class="iphone-screen">
-        <img src="{{ '/assets/images/screenshots/09_flashcards_viewer_question.jpg' | relative_url }}" alt="Arc flashcard viewer showing a generated study question" width="800" height="1760" loading="lazy">
+        <img width="800" height="1760" src="{{ '/assets/images/screenshots/09_flashcards_viewer_question.jpg' | relative_url }}" alt="Arc flashcard viewer showing a generated study question" loading="lazy">
         <div class="iphone-reflection"></div>
       </div>
     </div>

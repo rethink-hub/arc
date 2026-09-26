@@ -9,17 +9,23 @@ last_modified_at: 2026-09-19
 ---
 
 <!-- Hero -->
-<div class="coming-soon-hero android-hero">
-  <div class="coming-soon-badge status-live-badge">Live on Google Play · 10K+ downloads · 4.5★</div>
-  <h1>AI Note Taker for Your Calls</h1>
-  <p class="hero-subtitle">Arc transcribes your phone calls live, summarizes them when you hang up, and pulls out the action items — dates, numbers, addresses — with one-tap actions. No bot joins your call.</p>
-</div>
+<!-- Hero: copy left, the same feature on Mac and Android right -->
+<section class="fhero">
+  <div class="fhero-copy">
+      <span class="fhero-badge">Android</span>
+      <h1>AI Note Taker for Your Calls</h1>
+      <p class="fhero-sub">Arc transcribes your phone calls live, summarizes them when you hang up, and pulls out the action items — dates, numbers, addresses — with one-tap actions. No bot joins your call.</p>
+      <div class="home-hero-ctas fhero-ctas">
+      <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="btn btn-primary btn-lg" data-cta="android" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>Get it on Google Play</a>
+      </div>
+      <p class="fhero-trust">Live on Google Play · 10K+ downloads · 4.5★</p>
+  </div>
+  <div class="tab-media tab-media--phones fhero-media">
+    <div class="phone-mini"><img width="800" height="1430" src="{{ '/assets/images/screenshots/13_call_insights_detail_promotional.jpg' | relative_url }}" alt="Arc on Android: AI Note Taker for Your Calls" loading="eager" decoding="async"></div>
+    <div class="phone-mini"><img width="800" height="1760" src="{{ '/assets/images/screenshots/13_call_insights_settings.jpg' | relative_url }}" alt="Arc on Android: AI Note Taker for Your Calls" loading="eager" decoding="async"></div>
+  </div>
+</section>
 
-<div class="android-hero-download">
-  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button" target="_blank" rel="noopener">
-    Get Arc Free on Google Play
-  </a>
-</div>
 
 ---
 
@@ -71,11 +77,11 @@ last_modified_at: 2026-09-19
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/13_call_insights_detail_promotional.jpg" alt="Arc Call Insights showing a transcribed call with summary and extracted action items" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1430" loading="lazy" decoding="async">
+  <img class="inline-phone" width="800" height="1430" src="/assets/images/screenshots/13_call_insights_detail_promotional.jpg" alt="Arc Call Insights showing a transcribed call with summary and extracted action items" loading="lazy" decoding="async">
 </div>
 
 <div class="content-section">
-  <img src="/assets/images/screenshots/13_call_insights_settings.jpg" alt="Arc Call Insights settings on Android showing transcription modes" style="width:100%; border-radius:12px; margin: var(--md) 0;" width="800" height="1760" loading="lazy" decoding="async">
+  <img class="inline-phone" width="800" height="1760" src="/assets/images/screenshots/13_call_insights_settings.jpg" alt="Arc Call Insights settings on Android showing transcription modes" loading="lazy" decoding="async">
 </div>
 
 ---

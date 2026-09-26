@@ -19,31 +19,29 @@ faq:
 last_modified_at: 2026-09-19
 ---
 
-<div class="hero-section hero-simple hero-with-mockup">
-  <div class="hero-mockup-wrap hero-mockup-small">
-    <div class="iphone-frame-video">
-      <div class="iphone-notch"></div>
-      <div class="iphone-button left"></div>
-      <div class="iphone-button"></div>
-      <div class="iphone-button bottom"></div>
-      <div class="iphone-video-screen">
-        <div class="video-16x9">
-          <iframe loading="lazy" src="https://www.youtube.com/embed/qk6gu5Owaas?si=yFJd1TiF16FNph2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+<!-- Hero: copy left, the same feature on Mac and Android right -->
+<section class="fhero">
+  <div class="fhero-copy">
+      <span class="fhero-badge">Android &amp; Mac</span>
+      <h1>AI Workflow Automation for Android</h1>
+      <h2 class="fhero-kicker">Automate Tasks with Custom AI Actions</h2>
+      <p class="fhero-sub">Arc AI revolutionizes Android productivity with powerful <strong>AI workflow automation</strong>. Create custom <strong>AI actions</strong> tailored to your specific needs - translate text, fact-check information, simplify complex content, extract data, or build any AI-powered workflow you can imagine. One-tap access to your personalized <strong>AI automation</strong> from any app.</p>
+      <div class="home-hero-ctas fhero-ctas">
+      <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="btn btn-primary btn-lg" data-cta="android" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>Get it on Google Play</a>
+      <a href="{{ '/macos/' | relative_url }}" class="btn btn-secondary btn-lg" data-cta="mac"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>Download for Mac</a>
       </div>
-    </div>
   </div>
+  <div class="tab-media fhero-media">
+    <img width="1200" height="780" class="shot-mac" src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc for Mac: AI Workflow Automation for Android" loading="eager" decoding="async">
+    <div class="phone-mini"><img width="800" height="1760" src="{{ '/assets/images/screenshots/06_custom_actions_list_with_active_actions.jpg' | relative_url }}" alt="Arc on Android: AI Workflow Automation for Android" loading="eager" decoding="async"></div>
+  </div>
+</section>
 
-  <h1>AI Workflow Automation for Android</h1>
-  <h2>Automate Tasks with Custom AI Actions</h2>
-  <p class="hero-description">
-    Arc AI revolutionizes Android productivity with powerful <strong>AI workflow automation</strong>. Create custom <strong>AI actions</strong> tailored to your specific needs - translate text, fact-check information, simplify complex content, extract data, or build any AI-powered workflow you can imagine. One-tap access to your personalized <strong>AI automation</strong> from any app.
-  </p>
-  <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
-    Get on Google Play
-  </a>
+<div class="video-embed-section">
+  <h2>See it in action</h2>
+  <div class="video-embed"><iframe loading="lazy" src="https://www.youtube.com/embed/qk6gu5Owaas?si=yFJd1TiF16FNph2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 </div>
+
 
 ---
 

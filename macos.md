@@ -33,6 +33,13 @@ last_modified_at: 2026-09-19
           Download for Mac
         </a>
       </div>
+      <ul class="hero-meta">
+        <li>Free · v{{ site.mac_app.version }}</li>
+        <li>macOS {{ site.mac_app.min_macos }}+</li>
+        <li>Apple Silicon &amp; Intel</li>
+        <li>Notarized by Apple</li>
+      </ul>
+      <a class="hero-alt-link" href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">Also on Android →</a>
     </div>
     <div class="hero-demo-col hero-demo-col--arc">
       {% include arc-interactive-demo.html %}
@@ -61,43 +68,43 @@ Nothing is copied or pasted, and the panel is non-activating, so your cursor and
 
 <div class="shot-gallery">
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc menu panel floating over a Chrome window on macOS, listing AI actions" width="1200" height="715" loading="lazy">
+    <img width="1200" height="715" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc menu panel floating over a Chrome window on macOS, listing AI actions" loading="lazy">
     <figcaption><strong>The Arc menu.</strong> Control+Space opens it over whatever app you're in. The search field doubles as a free-text prompt box.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="Arc AI Summary result panel with numbered key points from a web article on macOS" width="1200" height="715" loading="lazy">
+    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="Arc AI Summary result panel with numbered key points from a web article on macOS" loading="lazy">
     <figcaption><strong>AI Summary.</strong> Numbered key points with an auto-detected title, category and source URL. See <a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary &amp; reader</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Arc chat panel answering a question about the content on screen on macOS" width="1200" height="710" loading="lazy">
+    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Arc chat panel answering a question about the content on screen on macOS" loading="lazy">
     <figcaption><strong>Chat about your screen.</strong> Follow-up questions on the document in front of you, no context re-explained.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/03_ai_writer_rewrite_generated.jpg' | relative_url }}" alt="Arc AI Writer showing rewritten text ready to insert back into the field" width="1200" height="715" loading="lazy">
+    <img width="1200" height="637" src="{{ '/assets/images/screenshots/macos/03_ai_writer_rewrite_generated.jpg' | relative_url }}" alt="Arc AI Writer showing rewritten text ready to insert back into the field" loading="lazy">
     <figcaption><strong>AI Writer.</strong> Rewrite, reply, fix grammar or create a post — then Insert writes it back into the focused field. See <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/12_shortcut_recorder_listening.jpg' | relative_url }}" alt="Arc shortcut recorder waiting for a global hotkey to be pressed" width="1200" height="715" loading="lazy">
+    <img width="1200" height="914" src="{{ '/assets/images/screenshots/macos/12_shortcut_recorder_listening.jpg' | relative_url }}" alt="Arc shortcut recorder waiting for a global hotkey to be pressed" loading="lazy">
     <figcaption><strong>Global hotkeys.</strong> Bind any action to a system-wide keystroke. See <a href="{{ '/ai-shortcuts/' | relative_url }}">AI shortcuts</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc custom action creation form with a prompt template field on macOS" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc custom action creation form with a prompt template field on macOS" loading="lazy">
     <figcaption><strong>Your own actions.</strong> A prompt with a <code>{screen_text}</code> placeholder becomes a permanent command. See <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/07_community_actions_browse_english_filter.jpg' | relative_url }}" alt="Browsing community-shared AI actions in Arc for Mac with a language filter" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/07_community_actions_browse_english_filter.jpg' | relative_url }}" alt="Browsing community-shared AI actions in Arc for Mac with a language filter" loading="lazy">
     <figcaption><strong>Community actions.</strong> 500+ published by other Arc users, filterable and installable in one click.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/13_saved_items_library_list.jpg' | relative_url }}" alt="Arc saved items library listing captured screens with titles and categories on macOS" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/13_saved_items_library_list.jpg' | relative_url }}" alt="Arc saved items library listing captured screens with titles and categories on macOS" loading="lazy">
     <figcaption><strong>Saved items.</strong> Every summary and capture in a searchable local library, each row with a speaker icon to listen.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/09_flashcards_decks_library.jpg' | relative_url }}" alt="Arc flashcard decks library on macOS" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/09_flashcards_decks_library.jpg' | relative_url }}" alt="Arc flashcard decks library on macOS" loading="lazy">
     <figcaption><strong>Flashcards.</strong> Turn a page of study material into a deck without retyping it. See <a href="{{ '/flashcards/' | relative_url }}">AI flashcards</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img src="{{ '/assets/images/screenshots/macos/11_info_vault_with_entries.jpg' | relative_url }}" alt="Arc Info Vault storing reusable personal details for AI writing on macOS" width="1200" height="715" loading="lazy">
+    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/11_info_vault_with_entries.jpg' | relative_url }}" alt="Arc Info Vault storing reusable personal details for AI writing on macOS" loading="lazy">
     <figcaption><strong>Info Vault.</strong> Reusable details Arc drops into what it writes, stored locally. See <a href="{{ '/private-ai-assistant/' | relative_url }}">private AI assistant</a>.</figcaption>
   </figure>
 </div>
