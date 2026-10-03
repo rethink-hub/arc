@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Privacy Policy - Arc AI: Android & macOS AI Assistant"
-description: "Arc AI privacy policy for our Android and macOS AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
-keywords: "Arc AI privacy, Android AI app privacy, Mac AI app privacy, AI assistant privacy policy"
+title: "Privacy Policy - Arc AI: Android, macOS & Windows AI Assistant"
+description: "Arc AI privacy policy for our Android, macOS and Windows AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
+keywords: "Arc AI privacy, Android AI app privacy, Mac AI app privacy, Windows AI app privacy, AI assistant privacy policy"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow
-last_modified_at: 2026-09-15
+last_modified_at: 2026-10-04
 ---
 
 <div class="privacy-nav">
@@ -15,7 +15,7 @@ last_modified_at: 2026-09-15
 <div class="privacy-header">
   <h1>Privacy Policy for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 7, 2025</p>
-  <p><strong>Last Updated:</strong> September 6, 2026</p>
+  <p><strong>Last Updated:</strong> October 4, 2026</p>
 </div>
 
 ---
@@ -24,7 +24,7 @@ last_modified_at: 2026-09-15
 
 Welcome to Arc: AI Screen Assistant. This policy explains how we handle your data with transparency and care. Our goal is to provide powerful features while respecting your privacy at every step.
 
-**Which apps this policy covers.** This policy applies to Arc on **Android** and Arc for **macOS**. The two apps share the same backend, the same AI processing, and the same core privacy promise, but they run on different platforms and therefore use different system permissions, a different payment processor, and a different update mechanism. Wherever behaviour differs, the platform is named explicitly. Sections that mention Google Play, Android permissions, or Firebase Cloud Messaging apply to the **Android app only**; see [macOS Permissions Explained](#macos-permissions-explained) and [Subscription & Billing Information](#subscription--billing-information) for the macOS equivalents.
+**Which apps this policy covers.** This policy applies to Arc on **Android**, Arc for **macOS**, and Arc for **Windows**. The three apps share the same backend, the same AI processing, and the same core privacy promise, but they run on different platforms and therefore use different system permissions, payment processors, and update mechanisms. Wherever behaviour differs, the platform is named explicitly. Sections that mention Google Play, Android permissions, or Firebase Cloud Messaging apply to the **Android app only**; see [macOS Permissions Explained](#macos-permissions-explained), [Windows Permissions Explained](#windows-permissions-explained) and [Subscription & Billing Information](#subscription--billing-information) for the desktop equivalents.
 
 ## Our Core Privacy Promise
 
@@ -32,7 +32,7 @@ Arc is built to be private by design. Our fundamental promise to you is:
 
 * **You Are in Control:** The app only accesses screen content when you explicitly tap an action in the floating sidebar. It never monitors your screen in the background.
 * **Content is Processed, Never Stored on Servers:** When we process your on-screen text for summaries, it is handled ephemerally and is **never stored, saved, or logged on our servers.**
-* **Your Data Stays Yours:** Any content you explicitly save is stored **securely on your local device only.** On Android this is protected by the app sandbox; on macOS it is stored in Arc's own Application Support container under your user account. In both cases the data is accessible only to Arc and cannot be seen or accessed by us.
+* **Your Data Stays Yours:** Any content you explicitly save is stored **securely on your local device only.** On Android this is protected by the app sandbox; on macOS it is stored in Arc's own Application Support container under your user account; on Windows it is stored in Arc's private app storage under your Windows account. In every case the data stays on your device and cannot be seen or accessed by us.
 
 ---
 
@@ -257,15 +257,15 @@ Arc operates on a **freemium** model with optional subscription. The payment pro
 * **No Payment Data:** All financial information is processed by Google Play and is subject to [Google's Privacy Policy](https://policies.google.com/privacy). We never see or store your credit card details, bank accounts, or other payment instruments.
 * **Promo Coupons:** If you use a promotional coupon or discount code, the transaction is processed through Google Play. We do not store any coupon-related payment information.
 
-**On macOS**, Arc is distributed directly from our website rather than the Mac App Store, so subscription billing is handled by **[Dodo Payments](https://dodopayments.com/)**, our merchant of record.
+**On macOS and Windows**, subscription billing is handled by **[Dodo Payments](https://dodopayments.com/)**, our merchant of record. (Arc for Mac is distributed directly from our website; Arc for Windows is distributed through the Microsoft Store, but its subscriptions are also purchased through Dodo, not through the Store.)
 
 * **How Checkout Works:** When you start a purchase, Arc opens Dodo's secure hosted checkout page in your default web browser. You enter your payment details on Dodo's page — **never inside the Arc app**. Arc receives only the resulting subscription identifier and status.
 * **What We Collect:** We do not collect, see, or store your card number, CVC, bank account, or billing address. Those are handled entirely by Dodo Payments as merchant of record and are subject to the [Dodo Payments Privacy Policy](https://dodopayments.com/privacy-policy).
 * **Subscription Status:** Our backend receives webhook notifications from Dodo about your subscription lifecycle (created, active, cancelled, expired, payment failed) so we can manage your access to premium features. We store the subscription ID, plan, status, and expiry date against your account — not payment instrument data.
 * **Taxes & Invoices:** As merchant of record, Dodo Payments calculates applicable sales tax/VAT/GST and issues your invoice or receipt. Any billing correspondence you receive comes from Dodo.
-* **Managing Your Subscription:** You can manage or cancel a macOS subscription from Settings inside Arc, which opens the Dodo customer portal in your browser.
+* **Managing Your Subscription:** You can manage or cancel a macOS or Windows subscription from Settings inside Arc, which opens the Dodo customer portal in your browser.
 
-Your subscription entitlement is tied to your Arc account, so a subscription purchased on one platform is recognised when you sign in on the other. Billing itself, however, is always managed by the processor you originally purchased through.
+Your subscription entitlement is tied to your Arc account, so a subscription purchased on one platform is recognised when you sign in on the others. Billing itself, however, is always managed by the processor you originally purchased through.
 
 ---
 
@@ -290,27 +290,27 @@ To improve Arc and fix issues, we use the following services.
   
   **What we DON'T collect:** Your screen content or personal data. Crash reports contain only technical diagnostic information.
 
-**On macOS:**
+**On macOS and Windows:**
 
-* **Google Analytics 4 (Measurement Protocol):** The macOS app cannot embed the Firebase SDK, so it reports the same kind of **anonymous usage events** directly to Google Analytics over HTTPS. This includes which features you use, navigation patterns, and app performance metrics — the same categories listed above for Android.
+* **Google Analytics 4 (Measurement Protocol):** The desktop apps cannot embed the Firebase SDK, so they report the same kind of **anonymous usage events** directly to Google Analytics over HTTPS. This includes which features you use, navigation patterns, and app performance metrics — the same categories listed above for Android.
 
   Events are tagged with a **randomly generated per-installation identifier** (not your name, device serial, or advertising ID) and, if you are signed in, your Arc account ID so that usage can be reconciled across your devices. Events are queued locally and may be sent when the app next has network access.
 
   **What we DON'T collect:** Your screen content, the text you process, your AI prompts, or the results Arc generates. Analytics events carry feature names and counts only — never the content itself.
 
-* **Crash Reporting:** The macOS app does **not** include a third-party crash reporting SDK (Crashlytics cannot be built into it). Instead Arc records its own crash reports. If Arc for Mac stops unexpectedly, it writes a report **to your Mac** containing:
-  - the error or signal type (for example `SIGSEGV`, or an exception name such as `NSInvalidArgumentException`) and its message
+* **Crash Reporting:** The desktop apps do **not** include a third-party crash reporting SDK (Crashlytics cannot be built into them). Instead Arc records its own crash reports. If Arc for Mac or Windows stops unexpectedly, it writes a report **to your computer** containing:
+  - the error or signal type (for example `SIGSEGV`, or an exception name such as `NSInvalidArgumentException` on Mac or `NullReferenceException` on Windows) and its message
   - the call stack at the moment of the crash
-  - the app version, macOS version, and processor architecture
+  - the app version, operating system version, and processor architecture
   - a short trail of recent in-app actions and diagnostic flags — feature names and states only
 
-  The report stays on your Mac until the next time you open Arc. At that point Arc sends a **summary** of it — the error type, a truncated message, and the single most relevant line of the call stack — as a `app_exception` analytics event, and then **deletes the local report**. The full stack never leaves your Mac.
+  The report stays on your computer until the next time you open Arc. At that point Arc sends a **summary** of it — the error type, a truncated message, and the single most relevant line of the call stack — as a `app_exception` analytics event, and then **deletes the local report**. The full stack never leaves your computer.
 
   **What we DON'T collect:** your screen content, the text you process, your prompts, or Arc's generated output. Crash reports carry technical diagnostic information only.
 
-  Separately, macOS itself may offer to send a diagnostic report to Apple under your standard Analytics & Improvements settings (**System Settings → Privacy & Security → Analytics & Improvements**). Those go to Apple, not to us.
+  Separately, macOS itself may offer to send a diagnostic report to Apple under your standard Analytics & Improvements settings (**System Settings → Privacy & Security → Analytics & Improvements**). Those go to Apple, not to us. Likewise, Windows may send its own error reports to Microsoft under your Windows diagnostic data settings; those go to Microsoft, not to us.
 
-**Turning macOS collection off.** Both of the above are controlled by a single switch in Arc for Mac: **Settings → Privacy → "Share usage data & crash reports."** It is on by default (matching the Android app). Turning it off stops all analytics and crash reporting immediately, discards anything still queued on your device, and deletes any crash reports waiting to be sent. Nothing further is transmitted unless you turn it back on.
+**Turning desktop collection off.** Both of the above are controlled by a single switch in Arc for Mac and Arc for Windows: **Settings → Privacy → "Share usage data & crash reports."** It is on by default (matching the Android app). Turning it off stops all analytics and crash reporting immediately, discards anything still queued on your device, and deletes any crash reports waiting to be sent. Nothing further is transmitted unless you turn it back on.
 
 These services collect data anonymously and do not identify you personally. You can review Google's data practices at [Google Privacy Policy](https://policies.google.com/privacy).
 
@@ -318,7 +318,7 @@ These services collect data anonymously and do not identify you personally. You 
 
 ## Push Notifications
 
-**This section applies to the Android app only.** Arc for macOS does not use Firebase Cloud Messaging and sends no push notifications.
+**This section applies to the Android app only.** Arc for macOS and Arc for Windows do not use Firebase Cloud Messaging and send no push notifications.
 
 Arc uses Firebase Cloud Messaging (FCM) to send optional push notifications about new features and app updates.
 
@@ -382,11 +382,13 @@ We use reputable third-party services and only share the minimum data necessary:
 
 * **Firebase Cloud Messaging (FCM)** *(Android)*: Push notification delivery for feature announcements and updates. Only anonymous device tokens are used for delivery. ([Firebase Privacy](https://firebase.google.com/support/privacy))
 
-* **Google Analytics 4 Measurement Protocol** *(macOS)*: Anonymous usage analytics and crash summaries sent directly over HTTPS, as described above. Controlled by Settings → Privacy → "Share usage data & crash reports". ([Google Privacy Policy](https://policies.google.com/privacy))
+* **Google Analytics 4 Measurement Protocol** *(macOS, Windows)*: Anonymous usage analytics and crash summaries sent directly over HTTPS, as described above. Controlled by Settings → Privacy → "Share usage data & crash reports". ([Google Privacy Policy](https://policies.google.com/privacy))
 
-* **Dodo Payments** *(macOS)*: Merchant of record for macOS subscriptions. Handles checkout, card processing, tax calculation, invoicing, and the subscription customer portal. We never receive your payment instrument details. ([Dodo Payments Privacy Policy](https://dodopayments.com/privacy-policy))
+* **Dodo Payments** *(macOS, Windows)*: Merchant of record for macOS and Windows subscriptions. Handles checkout, card processing, tax calculation, invoicing, and the subscription customer portal. We never receive your payment instrument details. ([Dodo Payments Privacy Policy](https://dodopayments.com/privacy-policy))
 
 * **Sparkle Updater** *(macOS)*: Arc for Mac checks for new versions by fetching an update feed from `arcassistant.app`. This request is made to our own servers and carries only what an ordinary web request carries (such as your IP address and the app version being checked). No account information is attached, and updates are cryptographically signed so a tampered download is rejected. Arc asks for your permission before enabling automatic update checks, and you can also check for updates manually from Arc's settings.
+
+* **Microsoft Store** *(Windows)*: Arc for Windows is installed and updated through the Microsoft Store, which handles downloads and updates under [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement). Arc also checks our backend for the minimum supported version; that request carries only the app version and platform, no account information.
 
 **We will never sell your personal information.**
 
@@ -415,7 +417,7 @@ Both features are completely optional and can be used independently or not at al
 
 * **Security Measures:** 
   - **Data in Transit:** All network communications use HTTPS/TLS encryption to protect data while it travels between your device and our servers.
-  - **Local Device Storage:** Data saved on your device is protected by Android's app sandbox security model, which isolates your app data and makes it accessible only to Arc (not to us, other apps, or other users of your device).
+  - **Local Device Storage:** On Android, data saved on your device is protected by Android's app sandbox security model, which isolates your app data and makes it accessible only to Arc (not to us, other apps, or other users of your device). On macOS and Windows, saved data is stored under your own user account and is not accessible to other users of the computer. On Windows, Arc's sign-in credentials are additionally encrypted at rest with the Windows Data Protection API.
   - **Server Storage:** Account information stored on our AWS servers is protected by AWS security measures and access controls.
 
 * **Retention:** 
@@ -444,13 +446,15 @@ You have full control over your data. You can manage and delete your locally sto
 
 **Local Data (Saved Summaries, Screenshots, Chat History, Custom Actions, Flashcards, Call Insights, Info Vault, AI Writer Responses):**
 
-To delete all local app data:
+To delete all local app data on **Android**:
 1. Go to your device's **Settings**
 2. Navigate to **Apps** or **Applications**
 3. Find and select **Arc**
 4. Tap **Storage**
 5. Tap **Clear Storage** or **Clear Data**
 6. Confirm deletion
+
+On **Windows**, uninstall Arc from **Settings → Apps → Installed apps → Arc → Uninstall**. Windows removes Arc's private app storage along with the app, which deletes all locally saved content.
 
 *Note: This will permanently delete all your saved summaries, screenshots, chat history, custom actions, flashcards, call insights, Info Vault entries, and AI Writer responses from your device.*
 
@@ -523,6 +527,24 @@ Arc for macOS is a notarized app distributed directly from our website. It is **
 **What Arc for Mac never does:** it does not run a keylogger, does not read your screen when you have not invoked an action, does not take screenshots without an explicit action, does not upload files from your Mac, and does not transmit the contents of your Keychain, Photos, Contacts, or Messages.
 
 If you deny or later revoke Accessibility or Screen Recording, the features that depend on them stop working, but the rest of the app continues to function. Revoking permission in System Settings takes effect immediately.
+
+---
+
+<h2 id="windows-permissions-explained">Windows Permissions Explained</h2>
+
+Arc for Windows is distributed through the Microsoft Store. It runs as a standard (non-administrator) desktop app with the "full trust" capability, which Windows grants to desktop apps so they can work with other apps on your screen. Windows does not ask desktop apps for separate screen or accessibility permissions, so Arc applies the same limits as Arc for Mac itself.
+
+| Capability | Why Arc Needs It | When It Is Used |
+| :--------- | :--------------- | :-------------- |
+| **Reading the active window** (Windows UI Automation) | To read the text of the window you are currently working in, so Arc can work on whatever is already on your screen instead of making you copy and paste. | **Only when you invoke an action** — pressing the Arc hotkey or choosing an action from the Arc menu. Arc does **not** read your screen in the background, does not log keystrokes, and does not monitor apps you are not acting on. Arc skips known password managers (such as 1Password, Bitwarden and KeePass). |
+| **Inserting text** (AI Writer) | To place generated text into the field you were typing in. Arc sometimes does this by briefly placing the text on the clipboard and pasting it. | **Only when you insert an AI Writer result.** Your previous clipboard contents are restored immediately afterwards. |
+| **Screen capture** | To capture a screenshot of the current screen or a region you select, for actions that need visual context (for example a custom action with screenshots enabled, or Save Content). | **Only when you run an action that requires an image**, and only after you have agreed to screenshot capture. Screenshots are saved on your PC and sent for AI processing; they are **not stored on our servers**. Arc does not record video and does not capture your screen continuously. |
+| **Calendar and contacts** | To add events, reminders and contacts that Arc extracts with Smart Extract. Arc creates a standard calendar (.ics) or contact (.vcf) file and opens it in your default app, where you choose whether to save it. | **Only when you tap the matching action** on an extracted item. Arc does not read, upload, or scan your existing calendar or contacts. |
+| **Text-to-speech** | To read results aloud using the voices built into Windows. | Only when you use AI Read. Speech is generated on your device. |
+| **Network Access** | To communicate with our backend and the AI services that generate your results. | Whenever you run an action that needs AI processing, and for periodic version checks. |
+| **Launch at Login** *(optional)* | To start Arc automatically when you sign in to Windows, so the global hotkey is available without opening the app first. | Only if you enable it during onboarding or in Settings. You can also turn it off in **Task Manager → Startup apps**. Accesses no personal data. |
+
+**What Arc for Windows never does:** it does not run a keylogger, does not read your screen when you have not invoked an action, does not take screenshots without an explicit action, does not upload files from your PC, and does not read your password manager, email, or messages in the background.
 
 ---
 
