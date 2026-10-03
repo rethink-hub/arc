@@ -250,7 +250,7 @@ Speaker 1: Sure, let me pull up the details. The current deadline is March 30th.
   </details>
   <details>
     <summary>Is there an AI note taker for Mac or Windows?</summary>
-    <p>Arc for macOS is available now and captures desktop call apps. The Windows version is coming soon.</p>
+    <p>Arc for macOS and Arc for Windows are available now and capture desktop call apps.</p>
   </details>
 </div>
 
@@ -276,7 +276,7 @@ Speaker 1: Sure, let me pull up the details. The current deadline is March 30th.
     {"@type": "Question", "name": "Can it create calendar events from the call?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — dates, numbers, addresses and links are extracted with one-tap actions that create real calendar entries, contacts and map pins."}},
     {"@type": "Question", "name": "Can it process recordings I already have?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Manual Upload mode accepts MP3, M4A, WAV, AAC, OGG and FLAC files up to 100 MB, or Auto Analysis processes new recordings from folders you choose automatically."}},
     {"@type": "Question", "name": "Is my call data private?", "acceptedAnswer": {"@type": "Answer", "text": "Transcription results are stored on-device, calls are only processed with explicit opt-in, folder access is scoped, and Arc auto-disables in 200+ banking and crypto apps."}},
-    {"@type": "Question", "name": "Is there an AI note taker for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Arc for macOS is available now and captures desktop call apps. The Windows version is coming soon."}}
+    {"@type": "Question", "name": "Is there an AI note taker for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Arc for macOS and Arc for Windows are available now and capture desktop call apps."}}
   ]
 }
 </script>

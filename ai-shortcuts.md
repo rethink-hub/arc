@@ -57,7 +57,7 @@ last_modified_at: 2026-09-19
     </div>
     <div class="feature-card">
       <h3>🪟 Windows: Ctrl + Space</h3>
-      <p>Coming soon — the same Arc Menu, keyboard-first, over every app on Windows. The desktop feature set is already documented; the Windows build is on its way.</p>
+      <p>The same Arc Menu, keyboard-first, over every app on Windows. Press Ctrl+Space in any window; Esc dismisses it. Get it from the <a href="{{ site.windows_app.store }}" target="_blank" rel="noopener">Microsoft Store</a>.</p>
     </div>
     <div class="feature-card">
       <h3>📱 iPhone: Action Button & back-tap</h3>
@@ -157,7 +157,7 @@ Then list any claims that need a citation.</code></pre>
   </table>
 
   <p>The catalog grows from real, in-use prompts rather than a curated launch set — and your own actions can be published back with your name on them.</p>
-  <p><em>Arc is live on Android and macOS today. Windows and iPhone versions are coming soon.</em></p>
+  <p><em>Arc is live on Android, macOS and Windows today. The iPhone version is coming soon.</em></p>
 </div>
 
 ---
@@ -178,7 +178,7 @@ Then list any claims that need a citation.</code></pre>
 <div class="content-section">
   <details>
     <summary>How do I open Arc with a shortcut?</summary>
-    <p>On Android, swipe from the screen edge — the floating sidebar appears over any app. On macOS, press ⌃Space and the Arc menu appears over any window; Esc dismisses it. Windows uses Ctrl+Space (coming soon). On iPhone, you'll be able to bind Arc to the Action Button or a double-tap-on-back gesture.</p>
+    <p>On Android, swipe from the screen edge — the floating sidebar appears over any app. On macOS, press ⌃Space and the Arc menu appears over any window; Esc dismisses it. On Windows, press Ctrl+Space. On iPhone, you'll be able to bind Arc to the Action Button or a double-tap-on-back gesture.</p>
   </details>
   <details>
     <summary>Can I create my own AI shortcuts?</summary>
@@ -219,7 +219,7 @@ Then list any claims that need a citation.</code></pre>
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How do I open Arc with a shortcut?", "acceptedAnswer": {"@type": "Answer", "text": "Android: swipe from the screen edge. macOS: press Control+Space in any window. Windows (Ctrl+Space) is in beta; iPhone (Action Button / Shortcuts) is in development."}},
+    {"@type": "Question", "name": "How do I open Arc with a shortcut?", "acceptedAnswer": {"@type": "Answer", "text": "Android: swipe from the screen edge. macOS: press Control+Space in any window. Windows: press Ctrl+Space in any window. iPhone (Action Button / Shortcuts) is in development."}},
     {"@type": "Question", "name": "Can I create my own AI shortcuts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc Actions let you write any prompt once and pin it to your menu, with optional screenshot region, web search, reordering, and per-action keyboard shortcuts on desktop."}},
     {"@type": "Question", "name": "What are Community Actions?", "acceptedAnswer": {"@type": "Answer", "text": "A catalog of 500+ ready-made AI actions built by the Arc team and other users — every card shows the real prompt before you add it, and added actions are fully editable."}},
     {"@type": "Question", "name": "What is a non-activating panel, and why does it matter?", "acceptedAnswer": {"@type": "Answer", "text": "The Arc menu appears over your current app without activating itself, so your app keeps focus and your text cursor stays in place. Arc can read the focused field and write results back into it, and Esc dismisses the panel with no residue."}},

@@ -48,6 +48,10 @@ mac_app:
   min_macos: "14.0"
   dmg: "/downloads/Arc-1.0.2.dmg"
 
+# Arc for Windows ships through the Microsoft Store (Store ID 9P21PT1G34CL).
+windows_app:
+  store: "https://apps.microsoft.com/detail/9P21PT1G34CL"
+
 # App-specific metadata
 app:
   name: "Arc: AI Screen Assistant"

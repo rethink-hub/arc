@@ -131,7 +131,7 @@ last_modified_at: 2026-09-19
 <div class="section-header" style="margin-top: var(--xl);">
     <span class="section-tag">Platforms</span>
     <h2>Which platform are you on?</h2>
-    <p>Android and Mac are available now. Windows is in beta, iPhone is in development.</p>
+    <p>Android, Mac and Windows are available now. iPhone is in development.</p>
 </div>
 <div class="platform-links" style="justify-content: center; margin-bottom: var(--xl);">
     <a href="{{ '/android/' | relative_url }}">Arc for Android</a>

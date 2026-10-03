@@ -104,7 +104,7 @@ last_modified_at: 2026-09-19
     <tr><td>Meeting time in an email</td><td>Read, switch, create event</td><td>One tap → Calendar</td></tr>
     <tr><td>App that blocks selection</td><td>Retype manually</td><td>Copy from screen</td></tr>
   </table>
-  <p><em>Arc is live on Android and macOS today. Windows and iPhone versions are coming soon.</em></p>
+  <p><em>Arc is live on Android, macOS and Windows today. The iPhone version is coming soon.</em></p>
 </div>
 
 ---
@@ -145,7 +145,7 @@ last_modified_at: 2026-09-19
   </details>
   <details>
     <summary>Is there an extract tool for Mac or Windows?</summary>
-    <p>Arc for macOS is available now with region selection for precise extraction. The Windows version is coming soon.</p>
+    <p>Arc for macOS and Arc for Windows are available now, both with region selection for precise extraction.</p>
   </details>
 </div>
 
@@ -171,7 +171,7 @@ last_modified_at: 2026-09-19
     {"@type": "Question", "name": "What can Smart Extract pull from a screen?", "acceptedAnswer": {"@type": "Answer", "text": "Seven categories: events, reminders, deadlines, contacts, meeting links, locations, and OTP codes — each with a one-tap action."}},
     {"@type": "Question", "name": "Does the calendar action create real events?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Smart Extract integrates with platform calendar APIs, creating genuine calendar entries rather than links."}},
     {"@type": "Question", "name": "Is the contact extractor free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Smart Extract including contact extraction, OTP capture, and OCR is free with generous daily usage. Premium removes limits."}},
-    {"@type": "Question", "name": "Is there an extract tool for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Arc for macOS is available now with region selection. The Windows version is coming soon."}}
+    {"@type": "Question", "name": "Is there an extract tool for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Arc for macOS and Arc for Windows are available now, both with region selection."}}
   ]
 }
 </script>

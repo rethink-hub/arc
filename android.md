@@ -280,7 +280,7 @@ Banking apps, password managers and other sensitive apps are excluded automatica
 
 ## Arc on Your Other Screens
 
-Arc is the same product across platforms. [Arc for Mac](/macos/) is available now with a Control+Space hotkey instead of a sidebar, [Arc for Windows](/windows/) is in beta, and [Arc for iPhone](/ios/) is in development. Saved items sync across the ones you use.
+Arc is the same product across platforms. [Arc for Mac](/macos/) is available now with a Control+Space hotkey instead of a sidebar, [Arc for Windows](/windows/) is on the Microsoft Store, and [Arc for iPhone](/ios/) is in development. Saved items sync across the ones you use.
 
 ## Android AI Assistant FAQ
 
@@ -315,7 +315,7 @@ Yes. Write a prompt once with a `{screen_text}` placeholder and it becomes a one
 <!-- Cross platform CTA -->
 <div class="coming-soon-section">
   <h2>Arc on your other screens</h2>
-  <p>Mac is available now. Windows is in beta, iOS is in development.</p>
+  <p>Mac and Windows are available now. iOS is in development.</p>
   <div class="platform-links">
     <a href="{{ '/macos/' | relative_url }}">Arc for Mac</a>
     <a href="{{ '/windows/' | relative_url }}">Arc for Windows</a>

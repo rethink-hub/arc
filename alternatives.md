@@ -91,7 +91,7 @@ last_modified_at: 2026-09-19
 
   <p><strong>Weaknesses:</strong></p>
   <ul>
-    <li><strong>It's not on iPhone or Windows yet.</strong> Android and macOS are live; iOS and Windows are coming soon. If your whole life is in Safari on an iPhone, Arc can't help you today.</li>
+    <li><strong>It's not on iPhone yet.</strong> Android, macOS and Windows are live; iOS is coming soon. If your whole life is in Safari on an iPhone, Arc can't help you today.</li>
     <li><strong>It's not a deep-Google assistant.</strong> It won't manage your calendar inbox the way Gemini's integrations do, and it doesn't try.</li>
     <li><strong>AI generation needs internet.</strong> It runs on cloud models, so this is not an offline assistant.</li>
   </ul>

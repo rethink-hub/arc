@@ -118,7 +118,7 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
     <tr><td>Reads aloud</td><td>✅ Built-in TTS</td><td>Varies</td></tr>
     <tr><td>Transcribes calls</td><td>✅ Built-in</td><td>❌</td></tr>
   </table>
-  <p><em>Arc is live on Android and macOS today. Windows and iPhone versions are coming soon.</em></p>
+  <p><em>Arc is live on Android, macOS and Windows today. The iPhone version is coming soon.</em></p>
 </div>
 
 ---

@@ -1,38 +1,48 @@
 ---
 layout: default
-title: "AI Assistant for Windows — Works on Any App | Arc"
-description: "An AI assistant for Windows that reads the window you're already in — summarize, listen, rewrite, automate with Ctrl+Space. In beta; join the waitlist."
-keywords: "ai assistant for windows, windows ai assistant, ai assistant for pc, ai screen assistant windows, windows ai summary app, windows text to speech ai"
+title: "AI Assistant for Windows — Free on Microsoft Store | Arc"
+description: "Arc is an AI assistant for Windows that reads any window. Press Ctrl+Space to summarize, listen, rewrite and automate in any app. Free on the Microsoft Store."
+keywords: "ai assistant for windows, ai assistant microsoft store, download ai assistant windows, windows ai assistant, ai assistant for pc, ai screen assistant windows, windows ai summary app, windows text to speech ai"
 platform: windows
 og_image: /assets/images/og-windows.png
+product_page: true
 faq:
   - question: "Is there an AI assistant for Windows that works in every app?"
-    answer: "Arc does. It reads the frontmost window through the Windows UI Automation APIs, so it works in Edge, Chrome, Word, Outlook, Slack, Teams, PDF readers and legacy Win32 apps without copy-pasting anything into a chatbot. Arc for Windows is in beta — the Mac build, which is the same application, is available today."
-  - question: "When will Arc for Windows be released?"
-    answer: "Arc for Windows is in beta. macOS and Windows are the same codebase and the same feature set, so the Windows build ships once hotkey registration and capture permissions are verified across Windows 10 and 11. Join the waitlist on this page and you'll be emailed when the beta opens."
+    answer: "Arc does. It reads the frontmost window through the Windows UI Automation APIs, so it works in Edge, Chrome, Word, Outlook, Slack, Teams, PDF readers and legacy Win32 apps without copy-pasting anything into a chatbot. It is a free download from the Microsoft Store."
+  - question: "Where can I download Arc for Windows?"
+    answer: "From the Microsoft Store. It installs and updates like any Store app, runs on Windows 10 (version 1809 or later) and Windows 11, and supports both Intel/AMD and Arm PCs."
   - question: "How much does Arc for Windows cost?"
     answer: "Arc is freemium. The free tier gives you 7 requests per week on basic features, and a premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation. Pricing is identical on every platform — there is no Windows-specific upsell."
   - question: "How is Arc different from Copilot in Windows?"
     answer: "Copilot answers questions in its own panel, so you paste content into it. Arc runs on whatever window is already in front of you — press Ctrl+Space and it reads that window directly. You can also bind your own prompts to global hotkeys, which Copilot does not offer."
   - question: "Does Arc for Windows need an internet connection?"
     answer: "Yes. AI summaries, chat and rewriting are processed by a hosted model, so Arc needs a connection for those. Your saved items, custom actions and Info Vault entries are stored locally on your PC."
-last_modified_at: 2026-09-19
+last_modified_at: 2026-10-04
 ---
 
 <!-- Hero: text left, live interactive demo right (mirrors the macOS page) -->
 <div class="hero-section hero-with-live-demo">
   <div class="hero-content-row macos-hero-row">
     <div class="hero-text-col">
-      <div class="coming-soon-badge">Coming soon — in beta</div>
+      <div class="coming-soon-badge status-live">Now available for Windows</div>
       <h1>AI Assistant for Windows</h1>
       <p class="hero-subtitle">Press Ctrl+Space in any Windows app and Arc reads that window — summarizes it, reads it aloud, rewrites your text, or runs a prompt you wrote yourself.</p>
-      <form class="notify-form" action="mailto:everythingrethink@gmail.com?subject=Notify%20me%20when%20Arc%20for%20Windows%20is%20ready" method="post" enctype="text/plain">
-        <input type="email" name="email" placeholder="Enter your email" aria-label="Email for Arc for Windows updates" required>
-        <button type="submit" class="cta-button">Join the waitlist</button>
-      </form>
+      <div class="hero-cta-group">
+        <a href="{{ site.windows_app.store }}" class="cta-button" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          Get it from Microsoft
+        </a>
+      </div>
+      <ul class="hero-meta">
+        <li>Free</li>
+        <li>Windows 10 &amp; 11</li>
+        <li>x64 &amp; Arm</li>
+        <li>Microsoft Store</li>
+      </ul>
+      <a class="hero-alt-link" href="{{ '/macos/' | relative_url }}">Also on Mac →</a>
     </div>
     <div class="hero-demo-col hero-demo-col--arc">
-      {% include arc-interactive-demo.html platform="windows" cta_label="Join the Windows waitlist →" cta_href="#about-arc-for-windows" %}
+      {% include arc-interactive-demo.html platform="windows" cta_label="Get Arc for Windows →" cta_href=site.windows_app.store %}
       <img class="demo-mobile-fallback" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="The Arc panel open over a browser window, listing AI actions" width="1200" height="715" loading="lazy" decoding="async">
     </div>
   </div>
@@ -46,14 +56,14 @@ last_modified_at: 2026-09-19
 
 Arc is an AI assistant for Windows that works on the window you are already looking at. You press **Ctrl + Space**, a search panel appears over your current app, and every action — summarize, read aloud, rewrite, chat, extract — runs against the text in that window. Nothing is copied, nothing is pasted, and you never switch to a separate chatbot tab.
 
-It is in beta on Windows today. The same application already ships on macOS, so everything below is the real product rather than a mockup — [Arc for Mac](/macos/) is available to download now.
+It's a free download from the [Microsoft Store]({{ site.windows_app.store }}) for Windows 10 and 11, with 7 requests a week on the free tier. The same application ships on macOS, so one subscription covers both.
 
 </div>
 
 <!-- Screenshots (captured on macOS; identical UI on Windows) -->
 <div class="section-header">
   <span class="section-tag">What it looks like</span>
-  <h2>The same app you'll run on Windows.</h2>
+  <h2>The same app on Windows and Mac.</h2>
   <p>Arc for Windows and Arc for Mac are one codebase with one interface. These screenshots were captured on macOS — on Windows the panel, actions and results are identical, with <strong>Ctrl</strong> in place of <strong>⌃</strong>.</p>
 </div>
 
@@ -180,7 +190,7 @@ macOS and Windows run the same Arc codebase with the same feature set. Three thi
 |---|---|---|
 | Summon hotkey | ⌃ Space | Ctrl + Space |
 | Screen reading | Accessibility API | UI Automation |
-| Permissions | Accessibility + Screen Recording prompts | No equivalent prompt; capture is granted at install |
+| Permissions | Accessibility + Screen Recording prompts | No equivalent prompt; works as installed from the Store |
 | Background home | Menu bar | System tray |
 
 Everything else — the actions, the result panel, the Saved Items library, the Info Vault, custom actions, community actions — is identical.
@@ -191,11 +201,11 @@ Copilot in Windows is a chat panel: it is excellent at answering questions you t
 
 The second difference is programmability. In Arc you write a prompt once — "extract every action item and who owns it from `{screen_text}`" — give it a hotkey, and it becomes a permanent command you run on any screen. That is closer to a scripting layer for AI than a chatbot. If that's the part you care about, [AI workflow automation](/ai-workflow-automation/) covers it in depth, and the same ideas apply to the [private AI assistant](/private-ai-assistant/) setup for sensitive work.
 
-### When is the Windows release?
+### Installing Arc on Windows
 
-Arc for Windows is in beta. Because it is the same codebase as the shipping Mac app, the remaining work is platform plumbing rather than features: hotkey registration across Windows 10 and 11, capture permissions, and installer signing. Join the waitlist above and you'll get an email when the beta opens — no other mail.
+Get Arc from the [Microsoft Store]({{ site.windows_app.store }}). The Store installs it per user, with no administrator rights needed, and keeps it updated automatically. Open Arc once, follow the short setup, and from then on Ctrl+Space works in every app — Arc stays in the system tray and can start with Windows.
 
-If you don't want to wait, [Arc for Mac](/macos/) is available today and [Arc for Android](/android/) is on Google Play.
+Arc is also available for [Mac](/macos/) and [Android](/android/), and one subscription covers every platform.
 
 </div>
 
@@ -203,8 +213,8 @@ If you don't want to wait, [Arc for Mac](/macos/) is available today and [Arc fo
 
 <!-- Cross platform CTA -->
 <div class="coming-soon-section">
-  <h2>Available now on Mac and Android</h2>
-  <p>Arc for Windows is in beta. The same app is shipping on two platforms today.</p>
+  <h2>Also on Mac and Android</h2>
+  <p>The same Arc, with one subscription across every platform you use.</p>
   <div class="platform-links">
     <a href="{{ '/macos/' | relative_url }}">Arc for Mac</a>
     <a href="{{ '/android/' | relative_url }}">
@@ -221,11 +231,11 @@ If you don't want to wait, [Arc for Mac](/macos/) is available today and [Arc fo
 
 ### Is there an AI assistant for Windows that works in every app?
 
-Arc does. It reads the frontmost window through the Windows UI Automation APIs, so it works in Edge, Chrome, Word, Outlook, Slack, Teams, PDF readers and legacy Win32 apps without copy-pasting anything into a chatbot. Arc for Windows is in beta — the Mac build, which is the same application, is available today.
+Arc does. It reads the frontmost window through the Windows UI Automation APIs, so it works in Edge, Chrome, Word, Outlook, Slack, Teams, PDF readers and legacy Win32 apps without copy-pasting anything into a chatbot. It is a free download from the Microsoft Store.
 
-### When will Arc for Windows be released?
+### Where can I download Arc for Windows?
 
-Arc for Windows is in beta. macOS and Windows are the same codebase and the same feature set, so the Windows build ships once hotkey registration and capture permissions are verified across Windows 10 and 11. Join the waitlist on this page and you'll be emailed when the beta opens.
+From the [Microsoft Store]({{ site.windows_app.store }}). It installs and updates like any Store app, runs on Windows 10 (version 1809 or later) and Windows 11, and supports both Intel/AMD and Arm PCs.
 
 ### How much does Arc for Windows cost?
 

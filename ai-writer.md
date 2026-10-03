@@ -244,7 +244,7 @@ Your text is sent for processing and is not stored on our servers or used to tra
 - **[Arc for Android]({{ '/android/' | relative_url }})** - Download now from Google Play
 - **[Arc for iOS]({{ '/ios/' | relative_url }})** - In development
 - **[Arc for Mac]({{ '/macos/' | relative_url }})** - Available now, free download
-- **[Arc for Windows]({{ '/windows/' | relative_url }})** - In beta, join the waitlist
+- **[Arc for Windows]({{ '/windows/' | relative_url }})** - Free on the Microsoft Store
 
 ---
 

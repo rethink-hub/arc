@@ -158,7 +158,7 @@ last_modified_at: 2026-09-19
     <tr><td>Where is my data stored?</td><td>On your device — uploads happen only via Google Drive backup you connect yourself</td></tr>
     <tr><td>Do you sell my data?</td><td>No — subscription-supported, ad-free, indie-built</td></tr>
   </table>
-  <p><em>Arc is live on Android and macOS today. Windows and iPhone versions are coming soon.</em></p>
+  <p><em>Arc is live on Android, macOS and Windows today. The iPhone version is coming soon.</em></p>
 </div>
 
 ---

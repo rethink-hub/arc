@@ -12,7 +12,7 @@ faq:
   - question: "Is Arc free?"
     answer: "Yes. Arc is free with 7 requests per week on basic features. A premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation, and one subscription covers every platform. There are no ads and no expiring trial."
   - question: "Which platforms does Arc run on?"
-    answer: "Android and macOS are available today. Windows is in beta and iPhone is in development. Your saved items and subscription carry across the platforms you use."
+    answer: "Android, macOS and Windows are available today, and iPhone is in development. Your saved items and subscription carry across the platforms you use."
   - question: "Does Arc monitor my screen in the background?"
     answer: "No. Arc reads screen content only when you tap an action yourself. It disables itself automatically in around 400 sensitive apps including banking, crypto and password managers, and you can add your own exclusions."
   - question: "What can I actually do with it?"
@@ -71,7 +71,7 @@ last_modified_at: 2026-09-19
       <span class="eyebrow">What Arc is</span>
       <h2>Chatbots make you bring the screen to them. Arc is already on it.</h2>
       <p>Arc is an AI assistant app that runs on the screen you are already looking at. On Android it's a floating sidebar over every app; on Mac it's a panel you open with Control+Space over any window. It reads the current screen and acts on it: summarize, read aloud, rewrite, chat, extract.</p>
-      <p>You don't describe your situation to it, because it already has the screen. It's free on <a href="{{ '/android/' | relative_url }}">Android</a> and <a href="{{ '/macos/' | relative_url }}">Mac</a> with 7 requests a week; <a href="{{ '/windows/' | relative_url }}">Windows</a> is in beta and <a href="{{ '/ios/' | relative_url }}">iPhone</a> is in development.</p>
+      <p>You don't describe your situation to it, because it already has the screen. It's free on <a href="{{ '/android/' | relative_url }}">Android</a>, <a href="{{ '/macos/' | relative_url }}">Mac</a> and <a href="{{ '/windows/' | relative_url }}">Windows</a> with 7 requests a week; <a href="{{ '/ios/' | relative_url }}">iPhone</a> is in development.</p>
     </div>
     <div class="flow-compare reveal">
       <div class="flow flow--old">
@@ -334,10 +334,11 @@ last_modified_at: 2026-09-19
       </div>
       <div class="plat" data-os-card="windows">
         <span class="plat-rec">For your PC</span>
-        <div class="plat-top"><span class="plat-ico icon-windows"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></span><span class="dropdown-status status-soon">Beta</span></div>
+        <div class="plat-top"><span class="plat-ico icon-windows"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></span><span class="dropdown-status status-live">Live</span></div>
         <h3>Windows</h3>
         <p>The same panel with Ctrl+Space, for every Windows app.</p>
-        <a class="btn btn-secondary btn-block" href="{{ '/windows/' | relative_url }}">Join the beta</a>
+        <span class="plat-meta">Windows 10 &amp; 11 · x64 &amp; Arm · Microsoft Store</span>
+        <a class="btn btn-primary btn-block" href="{{ site.windows_app.store }}" target="_blank" rel="noopener">Get it from Microsoft</a>
       </div>
       <div class="plat" data-os-card="ios">
         <span class="plat-rec">For your iPhone</span>
@@ -445,7 +446,7 @@ last_modified_at: 2026-09-19
       <ul class="cta-platforms" aria-label="Available platforms">
         <li><a href="{{ '/android/' | relative_url }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg><span>Android</span></a></li>
         <li><a href="{{ '/macos/' | relative_url }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg><span>Mac</span></a></li>
-        <li class="soon"><a href="{{ '/windows/' | relative_url }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg><span>Windows <em>beta</em></span></a></li>
+        <li><a href="{{ '/windows/' | relative_url }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg><span>Windows</span></a></li>
         <li class="soon"><a href="{{ '/ios/' | relative_url }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg><span>iPhone <em>soon</em></span></a></li>
       </ul>
     </div>
