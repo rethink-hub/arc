@@ -1794,6 +1794,7 @@ hr { margin: var(--2xl) 0; }
 .home-hero-ctas { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 [data-os="mac"] .home-hero-ctas [data-cta="mac"],
 [data-os="windows"] .home-hero-ctas [data-cta="mac"] { order: -1; }
+[data-os="windows"] .home-hero-ctas [data-cta="windows"] { order: -2; }
 .home-hero-alt { margin: var(--md) 0 0; font-size: 0.875rem; color: var(--text-light); }
 .home-hero-alt a { color: var(--text-2); text-decoration: underline; text-decoration-color: var(--border-hover); text-underline-offset: 3px; }
 .trust-row {

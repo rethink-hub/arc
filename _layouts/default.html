@@ -368,14 +368,17 @@
             });
         }
 
-        // Paired store buttons: on a Mac or PC the Mac download leads and takes the primary style
+        // Store buttons: the visitor's own platform leads and takes the primary style. Groups with no
+        // Windows button (the feature pages) turn the Mac button into one for Windows visitors.
         if (os === 'mac' || os === 'windows') {
             document.querySelectorAll('.home-hero-ctas').forEach(function (g) {
-                var and = g.querySelector('[data-cta="android"]'), mac = g.querySelector('[data-cta="mac"]');
+                var and = g.querySelector('[data-cta="android"]'), mac = g.querySelector('[data-cta="mac"]'),
+                    win = g.querySelector('[data-cta="windows"]');
                 if (!and || !mac) return;
-                var ac = and.className, mc = mac.className;
-                and.className = mc; mac.className = ac;
-                if (os === 'windows') {
+                var lead = os === 'windows' && win ? win : mac;
+                var ac = and.className, lc = lead.className;
+                and.className = lc; lead.className = ac;
+                if (os === 'windows' && !win) {
                     mac.href = '{{ "/windows/" | relative_url }}';
                     mac.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>Get Arc for Windows';
                 }
