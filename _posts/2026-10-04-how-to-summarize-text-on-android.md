@@ -35,9 +35,7 @@ This is the method I use a dozen times a day, because it doesn't care which app 
 2. Tap the floating tab and pick **AI Summary**.
 3. Arc reads the visible content and returns a summary in seconds — bullet points, key facts, the gist.
 
-{% raw %}
 <img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="AI summary result of a web article in Arc floating sidebar on Android" width="800" height="1760" loading="lazy" />
-{% endraw %}
 
 What I like about this flow: there's no share-sheet juggling, no "copy text, switch apps, paste." Arc knows what's already on the screen. An article in Chrome, a Terms of Service page, a restaurant review thread — how to summarize text on Android from any of them? Open the sidebar, tap once. Learn more about the full feature at [AI Summary & Reader](/ai-summary-reader/).
 
@@ -45,17 +43,13 @@ What I like about this flow: there's no share-sheet juggling, no "copy text, swi
 
 Every summary auto-saves to your **Summary Library**, so next week when you're trying to remember what that 40-slide pitch actually said, it's one tap away instead of one re-read away.
 
-{% raw %}
 <img src="{{ '/assets/images/screenshots/00_summary_library_with_items.jpg' | relative_url }}" alt="Summary library in Arc storing saved AI summaries on Android" width="800" height="1760" loading="lazy" />
-{% endraw %}
 
 ### Summaries that answer follow-up questions
 
 A summary tells you *what* something says. Often you also need to ask *why* or *what does this mean for me*. Arc's summary isn't a dead end: after the result appears, type a question into the same chat — "summarize the refund policy" or "does this cover dental?" — and Arc re-reads the screen and answers from it. This is also the cleanest way to summarize text on Android page by page: scroll, ask, scroll.
 
-{% raw %}
 <img src="{{ '/assets/images/screenshots/02_ai_summary_chat_input.jpg' | relative_url }}" alt="Arc summary chat input for follow-up questions about on-screen text on Android" width="800" height="1760" loading="lazy" />
-{% endraw %}
 
 ## Method 2: Smart Extract for specific information
 
@@ -68,9 +62,7 @@ Sometimes you don't want a summary of the whole screen — you want specific pie
 
 Open the sidebar, choose **Smart Extract**, pick a mode, and Arc scans the screen for exactly that. That's how to summarize text on Android when you need numbers or deadlines instead of prose.
 
-{% raw %}
 <img src="{{ '/assets/images/screenshots/10_smart_extract_results.jpg' | relative_url }}" alt="Smart Extract results pulling key facts from screen text on Android" width="800" height="1760" loading="lazy" />
-{% endraw %}
 
 ## Method 3: Google Messages and built-in options
 
