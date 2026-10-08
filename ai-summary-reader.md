@@ -322,3 +322,18 @@ Turn articles and reports into podcasts while exercising, cooking, or driving.
     © 2026 Mamata. All rights reserved.
   </p>
 </div>
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/10/03/best-ai-summarizer-app-android/' | relative_url }}">Best AI Summarizer: 7 Ranked and Tested (2026)</a></li>
+    <li><a href="{{ '/2026/09/09/ai-summarizer-android-app/' | relative_url }}">Article Summarizer for Android: Any Page, One Tap</a></li>
+    <li><a href="{{ '/2026/09/13/ai-summary-app-android/' | relative_url }}">Summary App for Android: 7 Tested Picks (2026)</a></li>
+    <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>
+    <li><a href="{{ '/2026/09/06/arc-for-mac-is-here/' | relative_url }}">Spotlight AI for Mac: Arc Puts AI in Every Window</a></li>
+    <li><a href="{{ '/2026/10/04/how-to-summarize-text-on-android/' | relative_url }}">How to Summarize Text on Android: 4 Methods That Work</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->

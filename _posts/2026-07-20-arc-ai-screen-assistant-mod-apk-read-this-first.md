@@ -6,7 +6,19 @@ date: 2026-07-20
 author: Rethink
 tags: ["mod-apk", "arc", "premium", "indie-developer", "android", "comparison"]
 og_image: /assets/images/og-blog-mod-apk.png
+faq:
+  - question: "Why People Look for Mod APKs"
+    answer: "I understand the impulse. A lot of Android apps these days charge ridiculous prices \u2014 $10/month, $15/month, sometimes more \u2014 for features that should be basic. Subscriptions stacked on subscriptions. It feels like every app wants a piece of your monthly budget forever."
+  - question: "How Much Arc Actually Costs"
+    answer: "Let me be transparent about the pricing, because I think you'll be surprised."
+  - question: "What You Get for Free"
+    answer: "Arc gives you 7 free requests per week on basic features \u2014 summarizing screens, extracting text, AI chat. No ads. No watermarks. No \"trial period\" that expires. Seven requests, every week, forever."
+  - question: "What Premium Costs"
+    answer: "If you want unlimited access to all features \u2014 summaries, TTS, flashcards, AI writer, workflow automation \u2014 here's what it costs:"
+  - question: "Why a Mod APK Doesn't Exist (And Won't)"
+    answer: "Here's the practical reality: even if someone cracked Arc's licensing, it wouldn't give you much."
 ---
+
 
 So you searched for "Arc AI Screen Assistant mod APK" and ended up here. I know why you're looking for it — you want the premium features without paying. I get it. I've been there too.
 
@@ -95,3 +107,6 @@ If you want to see what you'd actually be paying for before you decide, the feat
 ---
 
 *Have questions about Arc, the pricing, or the features? Email me at everythingrethink@gmail.com — I read every message.*
+
+<!-- sources -->
+*Further reading: [Android text-to-speech settings](https://support.google.com/accessibility/android/answer/6006983) · [Android's Select to Speak](https://support.google.com/accessibility/android/answer/7349565).*

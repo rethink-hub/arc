@@ -113,3 +113,6 @@ You don't have to choose. Install Arc, grant the two permissions, and tap the fl
 ---
 
 *By Mamata, indie developer building Arc — an AI screen assistant for Android. [Follow on X](https://x.com/rethink_hub) for updates.*
+
+<!-- sources -->
+*Further reading: [Android's AccessibilityService API](https://developer.android.com/guide/topics/ui/accessibility/service) · [Google's Gemini developer docs](https://ai.google.dev/).*

@@ -267,3 +267,13 @@ Not yet as a native app. Arc ships on Android and macOS today. If you use a Mac 
 </div>
 
 {% include referral-handoff.html %}
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/22/ai-assistant-for-iphone/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->

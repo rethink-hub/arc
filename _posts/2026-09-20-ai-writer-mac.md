@@ -1,11 +1,26 @@
 ---
 layout: blog
-title: "AI Writer Mac: Rewrite, Reply, and Insert in Any App"
-description: "Arc is the AI writer Mac users summon over any app with Control+Space — rewrite, fix grammar, reply, insert in place. Setup takes two minutes."
+title: "AI Writing Assistant for Mac: Rewrite in Any App"
+description: "An AI writing assistant for Mac that works inside the app you're typing in. Rewrite, reply, fix grammar — and Arc inserts the result back in place."
 date: 2026-09-20
 author: Mamata
 tags: ["mac", "macos", "ai", "writing"]
+keywords: "ai writing assistant, ai writing assistant mac, ai writer mac, writing assistant app"
+og_image: /assets/images/og-post-ai-writer-mac.png
+faq:
+  - question: "What an AI Writer Mac App Should Actually Do"
+    answer: "Before the steps, let's set the bar, because \"AI writer\" means very different things across the App Store. A real AI writer Mac setup needs to:"
+  - question: "Is Arc an AI writer Mac app that works in any app?"
+    answer: "Yes \u2014 anywhere macOS exposes a text field. That covers native mail clients, browsers (Gmail, Outlook Web, WhatsApp Web, LinkedIn), Electron apps like Slack and VS Code, terminals, and note apps. Apps that expose no text field fall back to a clipboard-based capture path, so there's almost always a way in."
+  - question: "What's the difference between an AI writer Mac tool and iA Writer?"
+    answer: "iA Writer is a markdown editor for focused drafting \u2014 excellent at it, but it contains no AI rewriting. An AI writer Mac tool like Arc works over other apps: it captures the draft from whatever field you're typing in, rewrites or replies, and inserts the result back. If you want a place to write, use iA Writer. If you want the writing fixed everywhere you already write, use Arc."
+  - question: "Can I use Arc's AI Writer on Mac for free?"
+    answer: "Yes. Arc downloads free from arcassistant.app/macos/ and the AI Writer is included \u2014 install it, grant the two permissions, and you can run the first rewrite within two minutes of opening the DMG."
+  - question: "Does it work in Gmail, Slack, and WhatsApp Web?"
+    answer: "Yes \u2014 those are precisely the apps it's built around. The Reply mode is particularly useful in Slack and WhatsApp Web, where Arc extracts the message thread from the screen so the generated reply answers the right person from the right side of the conversation."
 ---
+
+An **AI writing assistant** is only useful if it works where you actually write. Arc runs inside the app you're already typing in on Mac — Mail, Slack, a browser text box — so you press one key, it rewrites or replies, and the result goes straight back into the field you were in.
 
 You typed a rough paragraph into a Gmail compose window, and now you want it to sound like a professional wrote it. The default Mac workflow is a mess: select the text, switch to a ChatGPT tab, paste, wait, copy the result, switch back, paste over your draft — and repeat the whole dance for every single email. The formatting breaks, the cursor loses its place, and halfway through your third message you're managing browser tabs instead of writing.
 
@@ -115,3 +130,6 @@ Yes — bind any of the twelve sub-actions to a global shortcut (Fix Grammar, Re
 ## Try Arc's AI Writer on Your Mac
 
 The core loop takes two minutes to set up and about ten seconds per use after that: Control+Space, AI Writer, Generate, Insert. Download Arc for Mac free from [arcassistant.app/macos/](/macos/), grant the two permissions, and put ⌃Space to work on the next draft you'd rather not polish by hand. Android users get the same AI Writer in [Arc for Android](/android/) — grab it free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc).
+
+<!-- sources -->
+*Further reading: [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility) · [Google's Gemini developer docs](https://ai.google.dev/).*

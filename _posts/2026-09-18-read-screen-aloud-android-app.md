@@ -1,13 +1,15 @@
 ---
 layout: blog
-title: "Read Screen Aloud Android App: Set It Up in 2 Minutes"
-description: "How to pick a read screen aloud Android app and set it up in minutes — built-in Select to Speak vs AI screen readers, and how Arc reads, summarizes, saves."
+title: "How to Read Aloud on Android: Set It Up in 2 Minutes"
+description: "How to read aloud any screen on Android with a natural voice — articles, PDFs, messages — in about two minutes. No copy-paste, works in every app."
 date: 2026-09-18
 author: Mamata
 tags: ["android", "ai", "accessibility", "text-to-speech"]
 og_image: /assets/images/og-post-read-screen-aloud-android.png
+keywords: "how to read aloud, read aloud android, read screen aloud, android read aloud"
 
 ---
+**How to read aloud** on Android, in short: install Arc, grant the accessibility permission, open whatever you want to hear, and tap the floating sidebar. It reads the real text on screen in a natural voice — articles, PDFs, messages, any app. Setup takes about two minutes, and the full walkthrough is below.
 
 You're halfway through a 4,000-word article on your phone when your eyes give out. Or you're cooking with both hands busy and the recipe lives in a browser tab. Or it's 11pm, lights off, and you still have three long emails to get through. In all three cases the fix is the same: have your phone read the screen aloud while you listen.
 
@@ -137,3 +139,6 @@ The Mac app is live now — same capture, summarize, and listen flow, summoned w
 Reading will always have its place. But a surprising amount of what lands on your phone — newsletters, long emails, documentation, that one 5,000-word essay — doesn't actually need your eyes. It needs five minutes of your ears. Install Arc, grant the two permissions, and the next wall of text you meet becomes a tap and a listen.
 
 **Try Arc free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc)** — the read screen aloud Android app I use every day.
+
+<!-- sources -->
+*Further reading: [Android text-to-speech settings](https://support.google.com/accessibility/android/answer/6006983) · [Android's Select to Speak](https://support.google.com/accessibility/android/answer/7349565).*

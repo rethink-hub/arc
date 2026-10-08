@@ -1,11 +1,25 @@
 ---
 layout: blog
-title: "AI Assistant for iPhone: What Arc Is Building"
-description: "An AI assistant for iPhone that works on the screen you're on — summarize, listen, rewrite in any app. How Arc approaches iOS and how to join the waitlist."
+title: "iPhone AI Assistant: What Arc Is Building"
+description: "What an iPhone AI assistant can and can't do under Apple's rules, and how Arc is being built around the Share Sheet, Shortcuts and the Action Button."
 date: 2026-09-22
 author: Mamata
 tags: ["ios", "ai", "screen-assistant", "coming-soon"]
+keywords: "iphone ai assistant, ai assistant iphone, ios ai assistant, ai app iphone"
+og_image: /assets/images/og-post-ai-assistant-for-iphone.png
+faq:
+  - question: "Why most iPhone AI assistants feel disconnected"
+    answer: "The best-known assistants on iOS are full-screen chat apps. ChatGPT, Claude, Gemini, Perplexity \u2014 all strong models, all packaged the same way: switch apps, type your question, switch back. Apple Intelligence adds writing tools and notification summaries, but they activate only in the specific places Apple wires them into."
+  - question: "What Arc already does \u2014 on Android and Mac today"
+    answer: "The iPhone version isn't a redesign; it's a port of a working product. Arc is live on Android and macOS, and the feature set carries over:"
+  - question: "When is Arc for iPhone shipping?"
+    answer: "In development, with no announced date \u2014 and I'd rather say that plainly than tease a launch that slips. The honest constraint is iOS itself: the floating sidebar that makes Android Arc feel effortless doesn't exist on iOS, so the iPhone build leans on Share Sheet, Shortcuts, keyboard, and Action Button, each of which needs its own integration work. If you want to be told when the beta opens, join the Arc for iPhone waitlist \u2014 you'll get an email the day TestFlight invites go out, nothing more."
+  - question: "Can I use Arc on my iPhone right now?"
+    answer: "Not as a native iOS app yet. Arc ships today on Android and Mac. If your phone is an iPhone, the waitlist is the fastest path in; if you also carry an Android device or use a Mac, you can run Arc today and see exactly what the iPhone build is porting."
+  - question: "Will the iPhone version have the floating sidebar?"
+    answer: "No \u2014 iOS doesn't let any app draw over other apps or read screen content in the background. Arc for iPhone uses the Share Sheet, Shortcuts, an Action Button binding, and a custom keyboard to reach the same outcome: acting on content without app-switching."
 ---
+
 
 Ask ten people what an AI assistant for iPhone should do and you'll get ten answers. Draft my texts. Summarize this article. Read my email aloud while I drive. Check this claim. The App Store has hundreds of apps that do one of those things, and they all share the same friction: you have to leave what you're doing, open the assistant, paste something in, copy the answer back out.
 
@@ -108,3 +122,6 @@ The plan is to support recent iOS versions and work on everything from iPhone 15
 ---
 
 Arc on Android is free to try today, and every feature described here — the floating sidebar, summaries, read-aloud, the writer — works right now. [Download Arc on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) to see the assistant the iPhone version is being built from, or [join the iPhone waitlist](/ios/) and be first through the door when the beta opens.
+
+<!-- sources -->
+*Further reading: [Apple's Shortcuts guide](https://support.apple.com/guide/shortcuts/welcome/ios) · [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility).*

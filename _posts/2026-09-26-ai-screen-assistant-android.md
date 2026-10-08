@@ -5,7 +5,20 @@ description: "Arc is the AI screen assistant Android users keep one swipe away �
 date: 2026-09-26
 author: Mamata
 tags: ["android", "ai", "screen-assistant", "productivity"]
+og_image: /assets/images/og-post-ai-screen-assistant-android.png
+faq:
+  - question: "What Does an AI Screen Assistant Android App Do?"
+    answer: "An AI screen assistant is an app that can read what's currently on your screen and act on it \u2014 no copying, no pasting, no app-switching. Instead of a chat bubble living in its own silo, the assistant overlays the app you're already using and works with the content that's already there."
+  - question: "What \"screen-aware\" actually means"
+    answer: "When you tap AI Summary on a news article, Arc reads the article itself \u2014 the one on your screen, at the scroll position you're at \u2014 not a paragraph you had to paste into a box. The result lands in a panel over the app, and you can save it to your summary library for later."
+  - question: "How It Compares to Gemini and Other Android AI"
+    answer: "Google's Gemini is a strong general-purpose chat assistant, and Circle to Search is handy for lookups. But neither gives you a persistent action panel that follows you across every app with one-tap summarize, rewrite, read-aloud, and extract. They're assistants you visit; Arc is an AI screen assistant Android keeps one swipe away in every app."
+  - question: "What is an AI screen assistant Android app?"
+    answer: "An app that overlays your current app and can read or act on the content displayed there \u2014 summarizing, rewriting, reading aloud, extracting, or automating \u2014 without you copying text into another app. Arc is one example; the category is distinct from chatbots because an AI screen assistant Android app works with live screen content."
+  - question: "Does Arc work in every app?"
+    answer: "Yes. Because it's a system-wide overlay, it works over Chrome, Gmail, WhatsApp, Kindle, Reddit, PDF readers, notes apps, anything showing text. If the text is on the screen, Arc can summarize, rewrite, read, or act on it."
 ---
+
 
 I built Arc because of a specific frustration. I'd be reading a long article in Chrome, want a summary, and realize the only way to get one was: select the text, copy it, switch to a chatbot app, paste, hit enter, read the answer, switch back. Seven taps for a two-second question. Multiply that by every app on my phone and you get why I started building the AI screen assistant Android was missing.
 
@@ -118,3 +131,6 @@ Yes. Arc is free to download from [Google Play](https://play.google.com/store/ap
 No. Arc requests exactly two permissions: Accessibility (to read on-screen text when you invoke an action) and Display-over-apps (to draw the sidebar). It doesn't intercept calls, messages, or notifications in the background.
 
 Try Arc free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) — or explore the full feature list on [Arc for Android](/android/).
+
+<!-- sources -->
+*Further reading: [Android's AccessibilityService API](https://developer.android.com/guide/topics/ui/accessibility/service) · [Google's Gemini developer docs](https://ai.google.dev/).*

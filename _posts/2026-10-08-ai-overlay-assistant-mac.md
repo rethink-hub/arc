@@ -5,7 +5,20 @@ description: "Arc is the AI overlay assistant Mac needs: a floating panel over a
 date: 2026-10-08
 author: Mamata
 tags: ["mac", "ai", "productivity", "macos"]
+og_image: /assets/images/og-post-ai-overlay-assistant-mac.png
+faq:
+  - question: "What an AI Overlay Assistant for Mac Actually Is"
+    answer: "The definition is simple, and most people get it slightly wrong."
+  - question: "How the AI Overlay Assistant Fits a Real Workday"
+    answer: "Nothing above requires switching apps a single time. That is the whole point of an AI overlay assistant: the AI is measured in keystrokes, not context switches."
+  - question: "What Arc's Overlay Deliberately Does Not Do"
+    answer: "An honest list, because every overlay on the Mac has tradeoffs:"
+  - question: "What is an AI overlay assistant for Mac?"
+    answer: "It is a floating panel \u2014 an AI overlay assistant Mac app can run over any window \u2014 that appears over whatever app you are using and acts on that window's content \u2014 summarizing it, reading it aloud, rewriting text in it, or answering questions about it \u2014 with no copy-paste. Arc is the AI overlay assistant Mac users get with one keystroke: press Control+Space on macOS 14 or later, and a slim overlay opens over the active window, ready to work on whatever is behind it."
+  - question: "How is an overlay assistant different from ChatGPT on Mac?"
+    answer: "A chat app works on what you paste into it. An AI overlay assistant works on what is already on your screen \u2014 the PDF you have open, the draft you are writing \u2014 and returns the result in place. With Arc, the difference is one keystroke versus six steps of copy-paste, and the panel works in every app, not just the one that hosts a sidebar extension."
 ---
+
 
 Copy the text, switch to a chat tab, paste it, wait, copy the answer, switch back — unless an AI overlay assistant already sits over the window. That is the tax every chatbot charges, and you pay it every single time you use one. The fix is not a better chatbot — it is an AI overlay assistant: a small floating panel that appears over whatever app you are already in, reads the window behind it, and hands back the answer in place. On Android, Arc does this as a floating sidebar over any app; on Mac, it does it from a panel you summon with Control+Space — an AI overlay assistant Mac users invoke the same way, on a bigger screen. This guide is about what an AI overlay assistant on Mac should do, and how Arc does it. I'm Mamata — I build Arc, and the overlay pattern is the one thing users kept asking for since the Android app launched in 2024: 'don't make me come to the AI, let the AI come to my screen.'
 
@@ -126,3 +139,6 @@ Yes. Arc runs on Android as a floating sidebar with the same summarize, read-alo
 ## Try the Overlay Yourself
 
 Download the AI overlay assistant Mac free from [arcassistant.app/macos/](/macos/), grant Accessibility, and press **Control + Space** over any window. Arc, the AI overlay assistant Mac users have been piecing together from chat tabs and browser extensions, is one keystroke away — and it works in every app on your screen.
+
+<!-- sources -->
+*Further reading: [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility) · [Google's Gemini developer docs](https://ai.google.dev/).*

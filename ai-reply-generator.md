@@ -191,6 +191,18 @@ last_modified_at: 2026-09-19
   </ul>
 </div>
 
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/24/ai-writer-android-app/' | relative_url }}">AI Message Generator for Android: Reply in Any App</a></li>
+    <li><a href="{{ '/2026/09/28/ai-reply-generator-android/' | relative_url }}">AI Reply Generator Android: Reply to Any Message in 10s</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

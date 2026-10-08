@@ -254,3 +254,13 @@ Your text is sent for processing and is not stored on our servers or used to tra
     © 2026 Mamata. All rights reserved.
   </p>
 </div>
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/20/ai-writer-mac/' | relative_url }}">AI Writing Assistant for Mac: Rewrite in Any App</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->

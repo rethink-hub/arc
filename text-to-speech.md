@@ -250,6 +250,23 @@ last_modified_at: 2026-09-19
   </ul>
 </div>
 
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/10/07/read-screen-aloud-mac/' | relative_url }}">Mac Text to Speech: 4 Ways to Hear Any Window</a></li>
+    <li><a href="{{ '/2026/10/02/ai-screen-reader-for-android/' | relative_url }}">Text to Speech Android: Make Any App Talk</a></li>
+    <li><a href="{{ '/2026/09/19/ai-text-reader-mac/' | relative_url }}">Text to Speech Mac: Listen to Any Window</a></li>
+    <li><a href="{{ '/2026/09/18/read-screen-aloud-android-app/' | relative_url }}">How to Read Aloud on Android: Set It Up in 2 Minutes</a></li>
+    <li><a href="{{ '/2026/09/25/text-to-speech-ai-android-app/' | relative_url }}">TTS Android: Hear Any Screen in 2 Minutes</a></li>
+    <li><a href="{{ '/2026/09/27/screen-reader-ai-app-android/' | relative_url }}">Screen Reader App for Android: Read Any Screen</a></li>
+    <li><a href="{{ '/2026/10/05/how-to-read-screen-aloud-android/' | relative_url }}">Screen Reader Android: 4 Ways to Hear Any Screen</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

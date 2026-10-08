@@ -1,11 +1,26 @@
 ---
 layout: blog
-title: "AI Screen Assistant Windows: Arc Is Coming to Your PC"
-description: "Arc is the AI screen assistant Windows users want — press Ctrl+Space over any app to summarize, listen, rewrite. Coming soon; join the Windows waitlist."
+title: "AI Assistant for PC: Arc Is Coming to Windows"
+description: "An AI assistant for PC that reads the window you're already in. Ctrl+Space to summarize, listen, rewrite or automate. In beta — join the waitlist."
 date: 2026-09-21
 author: Mamata
 tags: ["windows", "macos", "ai", "productivity"]
+keywords: "ai assistant for pc, windows ai tool, ai assistant windows, pc ai assistant"
+og_image: /assets/images/og-post-ai-screen-assistant-windows.png
+faq:
+  - question: "What an AI Screen Assistant Windows App Should Actually Do"
+    answer: "Before the preview, the bar \u2014 because \"AI assistant for Windows\" describes everything from chatbots to wallpaper apps. Here's the checklist I hold Arc to:"
+  - question: "What's Left Before the AI Screen Assistant Windows Beta Opens"
+    answer: "Full transparency, because I'd rather under-promise: the application itself is done \u2014 every feature above ships on Mac today. What remains is the platform plumbing that makes the identical build feel native on Windows:"
+  - question: "How It Compares to Copilot"
+    answer: "The obvious question, so here's the honest take. Copilot is a good chatbot, but it lives in its own panel: to get help with content, you paste the content in. An AI screen assistant Windows users actually keep using has to invert that \u2014 the assistant comes to the window, reads it, and acts where you are. Copilot can't read your focused text field and write a reply back into it; Arc can, in any app, with your own prompts bound to global keys. They coexist fine \u2014 I use both \u2014 but for the screen-focused jobs, one of them was built for it."
+  - question: "Is there an AI screen assistant for Windows?"
+    answer: "Not released yet \u2014 Arc for Windows is in beta. The Mac app, which is the identical application, is available today at arcassistant.app/macos/, so you can see exactly what the Windows build will do before you sign up."
+  - question: "When will the AI screen assistant Windows beta open?"
+    answer: "Once hotkey registration, capture permissions, and installer signing are verified across Windows 10 and 11. macOS and Windows share one codebase, so no features are left to build \u2014 it's verification work. Join the waitlist on the Windows page to be notified the day it opens."
 ---
+
+An **AI assistant for PC** that reads your screen instead of waiting for you to paste into it — that's what Arc brings to Windows. Press Ctrl+Space over any app (Edge, Word, Outlook, Teams) and it summarizes, reads aloud, rewrites, or runs a prompt you saved. It's in beta now.
 
 Windows has more AI in it than ever — Copilot in the taskbar, AI search, an assistant bolted onto every first-party app. And yet the thing I actually want still doesn't exist natively: an assistant that can see the window I'm already working in and act on it. Every time I want a summary of a long document open in Edge, the workflow is still select → copy → switch apps → paste → wait → copy the answer back. Decades in, the clipboard is still the API between me and my own screen.
 
@@ -106,3 +121,6 @@ Copilot runs in its own panel and expects you to paste content into it. Arc read
 ### How much will Arc for Windows cost?
 
 Same as every platform: freemium. The free tier gives you 7 requests per week on basic features, and a premium subscription unlocks unlimited summaries, text-to-speech, AI chat, and workflow automation. There's no Windows-specific upsell.
+
+<!-- sources -->
+*Further reading: [Microsoft's UI Automation docs](https://learn.microsoft.com/en-us/windows/win32/winauto/entry-uiauto-win32) · [Microsoft's Narrator guide](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1).*

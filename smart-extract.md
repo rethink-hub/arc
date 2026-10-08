@@ -161,6 +161,17 @@ last_modified_at: 2026-09-19
   </ul>
 </div>
 
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

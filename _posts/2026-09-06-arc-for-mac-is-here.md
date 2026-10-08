@@ -1,12 +1,22 @@
 ---
 layout: blog
-title: "Arc for Mac Is Here — Your AI Screen Assistant, Now on macOS"
-description: "Arc for Mac is out. Press Control + Space anywhere in macOS to summarize, read aloud, chat, or rewrite what's on screen. Free, notarized by Apple."
+title: "Spotlight AI for Mac: Arc Puts AI in Every Window"
+description: "Spotlight AI for your Mac: press Control+Space over any window and Arc summarizes, reads aloud, rewrites or runs your own prompt. Free download."
 date: 2026-09-06
 author: Rethink
 tags: ["macos", "arc-for-mac", "release", "ai-assistant", "productivity"]
 og_image: /assets/images/og-post-arc-for-mac-is-here.png
+keywords: "spotlight ai, ai spotlight mac, mac ai overlay, ai assistant mac, arc for mac"
+faq:
+  - question: "What It Actually Does"
+    answer: "Press \u2303 Space \u2014 Control and Space \u2014 anywhere in macOS. A Spotlight-style panel appears over whatever you're working on, with your actions in it. Pick one. Arc reads the window you were just in, does the thing, and gets out of your way. Press Esc to dismiss."
+  - question: "Why I Built It This Way"
+    answer: "Nearly every AI tool on the desktop makes you bring the text to the AI. You select, you copy, you switch to a browser tab or a chat window, you paste, you ask, you copy the answer, you switch back, you paste again."
+  - question: "What It Runs On"
+    answer: "macOS 14 (Sonoma) or later. It's a universal binary, so it runs natively on both Apple Silicon and Intel Macs \u2014 no Rosetta, no separate download to pick between."
 ---
+
+**Spotlight AI** is the shortest way to describe Arc for Mac: a Spotlight-style panel you open with Control+Space, except instead of searching your files it reads the window in front of you. Summarize it, hear it aloud, rewrite what you're typing, or run a prompt you wrote yourself — without leaving the app you're in.
 
 Arc started on Android as a floating sidebar that could read whatever was on your screen and do something useful with it. The most common piece of feedback I got, over and over, was some version of the same sentence: *"I want this on my Mac."*
 
@@ -85,3 +95,6 @@ That means the Mac version will get better in the direction users actually push 
 ---
 
 *Arc is also available on [Android]({{ '/android/' | relative_url }}). [iOS]({{ '/ios/' | relative_url }}) and [Windows]({{ '/windows/' | relative_url }}) are on the way.*
+
+<!-- sources -->
+*Further reading: [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility) · [Google's Gemini developer docs](https://ai.google.dev/).*

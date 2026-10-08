@@ -1,13 +1,15 @@
 ---
 layout: blog
-title: "AI Summarizer Mac: Summarize Any Window in One Keystroke"
-description: "Arc is the AI summarizer Mac users summon with Control+Space — condense Safari pages, PDFs, and email threads without leaving the app. Free to start."
+title: "Summarize a PDF on Mac in One Keystroke"
+description: "How to summarize a PDF on Mac without uploading it anywhere: press Control+Space over the open document and get numbered key points in seconds."
 date: 2026-09-16
 author: Mamata
 tags: ["mac", "macos", "ai", "productivity"]
 og_image: /assets/images/og-post-ai-summarizer-mac.png
+keywords: "summarize pdf, summarize pdf mac, pdf summarizer, summarize document mac"
 
 ---
+To **summarize a PDF** on Mac: open it in Preview or any viewer, press Control+Space, and pick AI Summary. Arc reads the document already on screen and returns numbered key points in seconds — nothing to upload, and the file never leaves your machine for a web form.
 
 It's 4pm, you have 14 open Safari tabs you swear you'll read, a 32-page PDF in Preview, and an email thread with nine replies you still haven't digested. The standard Mac workflow for all of this is the same sad dance: select the text, copy it, switch to a chat tab, paste it, type "summarize this," wait, then copy the answer back to wherever you were. Six steps, three context switches, and by the time you're done you've forgotten what you wanted out of the summary in the first place.
 
@@ -150,3 +152,6 @@ Apple Intelligence can summarize text in supported apps on newer Macs, but it's 
 ---
 
 That's the whole pitch: an AI summarizer Mac users don't have to think about, because it lives one keystroke from every window. **Download Arc for Mac free from [arcassistant.app/macos/](/macos/)**, grant one permission, and try Control+Space on whatever tab you've been avoiding. If you live on Android too, [Arc for Android](/android/) is on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) with the same account and subscription.
+
+<!-- sources -->
+*Further reading: [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility) · [Google's Gemini developer docs](https://ai.google.dev/).*

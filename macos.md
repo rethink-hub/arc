@@ -266,3 +266,17 @@ Yes. Arc follows the same freemium model as the Android app — 7 free requests 
 Arc only reads your screen when you invoke an action — never in the background, and never as a keylogger. Screenshots are taken only for actions that need them, and processed content is never stored on our servers. Password managers are skipped automatically. See the [Privacy Policy]({{ '/privacy/' | relative_url }}#macos-permissions-explained) for the full list of macOS permissions and exactly when each is used.
 
 {% include referral-handoff.html %}
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
+    <li><a href="{{ '/2026/10/08/ai-overlay-assistant-mac/' | relative_url }}">AI Overlay Assistant Mac: Any App, One Keystroke</a></li>
+    <li><a href="{{ '/2026/10/06/ai-screen-reader-macos/' | relative_url }}">AI Screen Reader for macOS: Read Any Window</a></li>
+    <li><a href="{{ '/2026/09/20/ai-writer-mac/' | relative_url }}">AI Writing Assistant for Mac: Rewrite in Any App</a></li>
+    <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->

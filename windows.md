@@ -252,3 +252,13 @@ Yes. AI summaries, chat and rewriting are processed by a hosted model, so Arc ne
 </div>
 
 {% include referral-handoff.html %}
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/21/ai-screen-assistant-windows/' | relative_url }}">AI Assistant for PC: Arc Is Coming to Windows</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->

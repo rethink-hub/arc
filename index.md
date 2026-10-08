@@ -481,3 +481,19 @@ last_modified_at: 2026-09-19
     tabs.forEach(function (t, i) { if (i) document.getElementById(t.getAttribute('aria-controls')).hidden = true; });
   })();
 </script>
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
+    <li><a href="{{ '/2026/09/15/best-ai-apps-android/' | relative_url }}">Best AI Apps for Android (2026): 9 Tested Picks</a></li>
+    <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
+    <li><a href="{{ '/2026/09/22/ai-assistant-for-iphone/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
+    <li><a href="{{ '/2026/09/28/ai-reply-generator-android/' | relative_url }}">AI Reply Generator Android: Reply to Any Message in 10s</a></li>
+    <li><a href="{{ '/2026/07/20/arc-ai-screen-assistant-mod-apk-read-this-first/' | relative_url }}">Arc AI Screen Assistant Mod APK? Read This First</a></li>
+    <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">Best AI App for Mac: What Arc Does Beyond ChatGPT</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->

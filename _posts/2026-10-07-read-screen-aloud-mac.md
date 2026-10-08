@@ -1,11 +1,24 @@
 ---
 layout: blog
-title: "Read Screen Aloud Mac: 4 Ways to Hear Any Window"
-description: "Read screen aloud Mac guide: built-in Speak Selection, VoiceOver, Safari speech, plus Arc's one-shortcut overlay that reads any window, then summarizes it."
+title: "Mac Text to Speech: 4 Ways to Hear Any Window"
+description: "Four ways to get Mac text to speech working — the built-in Speak Selection, Safari Reader, Shortcuts, and Arc. Which is worth setting up, and why."
 date: 2026-10-07
 author: Mamata
 tags: ["mac", "ai", "accessibility", "text-to-speech"]
+keywords: "mac text to speech, text to speech mac, mac read aloud, macos tts"
+og_image: /assets/images/og-post-read-screen-aloud-mac.png
+faq:
+  - question: "How do I make my Mac read screen aloud with no installs at all?"
+    answer: "Enable System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 \"Speak selection\", select text anywhere, and press Option+Esc. That's the complete built-in read screen aloud Mac flow \u2014 no third-party app needed."
+  - question: "Can my Mac read screen aloud without me selecting text first?"
+    answer: "With built-in tools, only Preview does full-document read screen aloud duty for PDFs via Edit \u2192 Speech. For any app \u2014 Chrome, Mail, Slack, anything \u2014 Arc's overlay captures the entire visible window on Control+Space and reads it, no selection required."
+  - question: "What's better for long articles, read-aloud or an AI summary?"
+    answer: "Use both: read-aloud to stay hands-free while you're cooking or walking, AI summary when the goal is deciding fast whether an article is worth your attention. Arc does both from the same capture \u2014 the voice reading is the input, the summary workflow is the shortcut out."
+  - question: "Does this work on phones too?"
+    answer: "Yes \u2014 Arc's Android app has read the screen aloud through the same floating-sidebar overlay since launch: it works in any Android app, not just browsers. The Mac version mirrors it with Control+Space. iOS and Windows versions are in development."
 ---
+
+**Mac text to speech** has four realistic routes: the built-in Speak Selection shortcut, Safari Reader, a Shortcuts automation, and Arc. They differ a lot in voice quality and in whether they work outside a browser. Here's each one, and which is worth setting up.
 
 You open a 30-page PDF, a dense newsletter, or a Slack thread that somehow became a novel, and your eyes are done for the day. You want your Mac to read screen aloud instead — ideally with one shortcut, in whatever app you're already in. macOS can do this. Apple ships a genuinely good screen reader and a decent selection reader, but both are buried in System Settings, and neither will tell you what the text actually *means*.
 
@@ -108,3 +121,6 @@ Yes — Arc's [Android app](/android/) has read the screen aloud through the sam
 ## Hear your screen today
 
 Start with the built-in — enable Speak Selection and download an Enhanced voice; it might be all you need. On Android instead? [Try Arc free on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) — the floating sidebar reads any app the same way. If you want the full read screen aloud Mac setup — every app covered, no selecting, with the option to summarize instead of listen — [try Arc free on your Mac](/macos/), hit **Control+Space**, and let it take it from there.
+
+<!-- sources -->
+*Further reading: [Apple's Spoken Content guide](https://support.apple.com/guide/mac-help/have-your-mac-speak-text-mh27448/mac) · [Apple's VoiceOver guide](https://support.apple.com/guide/voiceover/welcome/mac).*

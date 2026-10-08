@@ -214,6 +214,21 @@ Then list any claims that need a citation.</code></pre>
   </ul>
 </div>
 
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>
+    <li><a href="{{ '/2026/09/06/arc-for-mac-is-here/' | relative_url }}">Spotlight AI for Mac: Arc Puts AI in Every Window</a></li>
+    <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
+    <li><a href="{{ '/2026/10/08/ai-overlay-assistant-mac/' | relative_url }}">AI Overlay Assistant Mac: Any App, One Keystroke</a></li>
+    <li><a href="{{ '/2026/09/19/ai-text-reader-mac/' | relative_url }}">Text to Speech Mac: Listen to Any Window</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

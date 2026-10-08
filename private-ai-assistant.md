@@ -223,6 +223,19 @@ last_modified_at: 2026-09-19
   </ul>
 </div>
 
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
+    <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
+    <li><a href="{{ '/2026/10/08/ai-overlay-assistant-mac/' | relative_url }}">AI Overlay Assistant Mac: Any App, One Keystroke</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

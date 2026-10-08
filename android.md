@@ -324,3 +324,19 @@ Yes. Write a prompt once with a `{screen_text}` placeholder and it becomes a one
 </div>
 
 {% include referral-handoff.html %}
+
+<!-- related-posts: generated, see scratchpad linkplan -->
+<div class="related-links">
+  <h2>More on this</h2>
+  <p>Guides that go further on what's above:</p>
+  <ul>
+    <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
+    <li><a href="{{ '/2026/09/23/ai-text-reader-android/' | relative_url }}">Read a PDF Aloud on Android: Listen to Any Screen</a></li>
+    <li><a href="{{ '/2026/09/30/ai-rewrite-text-android-app/' | relative_url }}">AI Rewrite Tool for Android: Fix Text In-Place</a></li>
+    <li><a href="{{ '/2026/10/01/ai-fact-checker-app-android/' | relative_url }}">AI Fact Checker: Verify Any Screen in One Tap</a></li>
+    <li><a href="{{ '/2026/09/24/ai-writer-android-app/' | relative_url }}">AI Message Generator for Android: Reply in Any App</a></li>
+    <li><a href="{{ '/2026/07/15/gemini-intelligence-vs-ai-screen-assistants/' | relative_url }}">Gemini Intelligence vs AI Screen Assistants: What Helps</a></li>
+    <li><a href="{{ '/2026/09/29/ai-automation-app-android/' | relative_url }}">AI Automation on Android: Build Custom AI Actions</a></li>
+  </ul>
+</div>
+<!-- /related-posts -->

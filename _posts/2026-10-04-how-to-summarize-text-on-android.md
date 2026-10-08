@@ -5,6 +5,8 @@ description: "How to summarize text on Android: share any article, chat, or docu
 date: 2026-10-04
 author: Mamata
 tags: ["android", "ai", "summarizer", "tutorial"]
+og_image: /assets/images/og-post-how-to-summarize-text-on-android.png
+
 ---
 
 Long article open in Chrome. A WhatsApp thread 200 messages deep. A PDF a colleague sent at 11pm. If you've been looking for how to summarize text on Android, you've probably hit the same wall I did: there's no summarize button anywhere. You end up copy-pasting chunks into some other app and losing your place. There's a better way, and this guide covers it plus three other methods.
@@ -124,3 +126,6 @@ Yes — Arc ships on macOS with the same AI Summary, Smart Extract, and Reader f
 ---
 
 **Try Arc free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc)** — open any app, tap the floating tab, and see the screen summarized before you finish reading this sentence.
+
+<!-- sources -->
+*Further reading: [Google's Gemini developer docs](https://ai.google.dev/) · [Android's AccessibilityService API](https://developer.android.com/guide/topics/ui/accessibility/service).*

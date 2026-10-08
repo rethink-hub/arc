@@ -1,13 +1,26 @@
 ---
 layout: blog
-title: "AI Text Reader Mac: Listen to Any Window"
-description: "Arc is the AI text reader Mac users summon with Control+Space — it reads any window aloud, then summarizes what it read. Setup takes two minutes."
+title: "Text to Speech Mac: Listen to Any Window"
+description: "Text to speech on Mac that reads the window you're already in. Control+Space, and Arc reads any article, PDF or email aloud in a natural voice."
 date: 2026-09-19
 author: Mamata
 tags: ["mac", "macos", "ai", "text-to-speech"]
 og_image: /assets/images/og-post-ai-text-reader-mac.png
-
+keywords: "text to speech mac, mac text to speech, tts mac, read aloud mac, voice reader mac"
+faq:
+  - question: "What an AI Text Reader Mac App Should Actually Do"
+    answer: "Before the steps, let's define the bar, because \"text reader\" means wildly different things across the App Store."
+  - question: "How do I get text read to me on a Mac?"
+    answer: "Three ways. Built-in: System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 enable Speak Selection, then press Option+Esc on selected text. Better voices: install an AI text reader like Arc, press Control+Space over any window, and choose the read-aloud option \u2014 no text selection needed, and the voice is natural rather than robotic."
+  - question: "Can a MacBook Air read text aloud?"
+    answer: "Yes. Every Mac, including the MacBook Air, has built-in Spoken Content under Accessibility settings, and it runs fine on Apple Silicon \u2014 TTS is a lightweight workload. For a better voice plus summaries of what was read, Arc runs comfortably on any Apple Silicon MacBook Air and Intel Macs from the last several years."
+  - question: "What's the best AI text reader for Mac?"
+    answer: "The honest answer depends on your reading material. For documents and ebooks you collect into a library, Speech Central is solid. For reading whatever window is in front of you \u2014 web pages, PDFs, email \u2014 Arc is the only one that works system-wide from a single keystroke and pairs reading with AI summaries, and it's free to start."
+  - question: "Does Arc work on Apple Silicon (M1/M2/M3/M4)?"
+    answer: "Yes, and that's the target platform \u2014 the panel snaps open fast, which matters when you're invoking it dozens of times a day. The same app also runs on Intel Macs."
 ---
+
+**Text to speech on Mac**, the short version: press Control+Space over any window and Arc reads what's on screen aloud in a natural voice — Safari, Preview, Mail, anything. No selecting, no copying, and it can summarize the page instead when you don't need all 4,000 words.
 
 You want your Mac to read to you. A long article in Safari, a PDF in Preview, a wall of text in Mail — and your eyes are done for the day. You search for a solution and find two dead ends: the built-in `Option+Esc` voice that sounds like a 2004 answering machine, and a pile of subscriptions that want $139 a year to read text at 2x speed.
 
@@ -118,3 +131,6 @@ Arc started on Android — the same floating assistant reads and summarizes anyt
 Install Arc, grant the two permissions, press Control+Space over any window, and pick read-aloud or summarize. That's the entire learning curve — about two minutes from download to your first summary, and the average article I read now takes half the time it used to because I summarize first and read only the parts that matter. If you've been putting off "reading" a stack of PDFs because reading them means *sitting down*, a setup like this turns commute time, coffee time, and eye-rest time into reading time.
 
 Download Arc for Mac free from [arcassistant.app/macos/](/macos/) — Control+Space, and any window on your screen becomes something you can listen to.
+
+<!-- sources -->
+*Further reading: [Apple's Spoken Content guide](https://support.apple.com/guide/mac-help/have-your-mac-speak-text-mh27448/mac) · [Apple's VoiceOver guide](https://support.apple.com/guide/voiceover/welcome/mac).*
