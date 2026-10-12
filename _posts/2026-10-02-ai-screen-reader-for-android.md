@@ -8,14 +8,20 @@ tags: ["android", "ai", "accessibility", "text-to-speech"]
 keywords: "text to speech android, android text to speech, tts app android, make android read text"
 og_image: /assets/images/og-post-ai-screen-reader-for-android.png
 faq:
-  - question: "What Is an AI Screen Reader for Android?"
-    answer: "Android has shipped a screen reader for over a decade. TalkBack is genuinely great at its job: it announces every button, label, and UI element so a blind user can operate the phone without seeing it. To use it, you have to change how you touch your phone \u2014 swipe gestures replace taps, and everything slows down on purpose."
-  - question: "TalkBack vs an AI Screen Reader: Which One Do You Need?"
-    answer: "This trips a lot of people up, because both are called \"screen readers.\" They're complements, not competitors:"
-  - question: "How the AI Screen Reader Actually Reads a Screen"
-    answer: "When you tap AI Read, Arc extracts the readable text from the current screen using the Accessibility Service, then filters it. Articles, email bodies, message threads, and document text make the cut. Navigation bars, buttons, ads, headers, and footers get dropped. What's left is cleaned up, the language is detected, and a matching voice is picked before playback starts."
-  - question: "How Arc extracts text without copy-paste"
-    answer: "Older read-it-later apps and TTS utilities make you select text, copy it to the clipboard, and paste it into a reader window. Arc reads whatever is on the screen directly. That single difference is why people who abandon other text-to-speech tools stick with an AI screen reader built this way \u2014 the friction of copy-paste is exactly what kills the habit."
+  - question: "How do I turn on the screen reader on Android?"
+    answer: "The built-in one: Settings \u2192 Accessibility \u2192 TalkBack \u2192 toggle on. For an AI screen reader that reads content instead of navigating UI, install Arc, grant its Accessibility permission, and use the AI Read button in the floating sidebar."
+  - question: "What's the difference between TalkBack and an AI screen reader?"
+    answer: "TalkBack announces every UI element and controls navigation by gesture \u2014 designed for eyes-free use. An AI screen reader like Arc extracts the actual content on screen, filters out interface clutter, and reads it naturally. Many people run both."
+  - question: "Does the AI screen reader work in every app?"
+    answer: "Yes. Arc reads any app that renders text on screen \u2014 browsers, email, PDFs, messaging apps, Reddit, news apps. Content extraction and filtering happen at the screen level, not per app."
+  - question: "Can it read content in other languages?"
+    answer: "It detects the language automatically and selects a matching voice, supporting 100+ languages. You can turn off auto voice selection and pin a default in Speech Settings if you prefer."
+  - question: "Is there free text to speech for Android?"
+    answer: "Yes, two options. Select to Speak is built in and free. Arc is free to download on Google Play with a free tier that covers reading, summarizing and saving, so you can judge the voices before paying anything. TalkBack is also free, but it solves a different problem."
+  - question: "Does text to speech work offline on Android?"
+    answer: "The built-in system engine works offline with standard voices. Natural neural voices are cloud-based and need a connection; offline, Arc falls back to the device's system voice so reading never just stops."
+  - question: "Does Arc work on Mac or iPhone?"
+    answer: "The Mac app is live now, with the same read and summarize flow summoned over any window with Control+Space. An iOS version is in development with a waitlist open."
 ---
 
 **Text to speech on Android** that works in every app, not just inside a reader: open anything, tap Arc's sidebar, and it reads the real text on screen in a natural voice with the language detected automatically. Here's how to set it up, and where it beats the built-in options.
@@ -47,11 +53,29 @@ This trips a lot of people up, because both are called "screen readers." They're
 
 The quick test: if the goal is operating the phone without looking, TalkBack. If the goal is having content read to you, an AI screen reader for Android. The two also coexist fine. Arc is built screen-reader-compatible, so if you currently run TalkBack you can keep it for navigation and use Arc's reading and summarization features for content. One handles the interface, the other handles the reading.
 
+## Select to Speak, Speechify, or Arc: The Three Routes Compared
+
+TalkBack aside, there are three realistic ways to get text to speech on Android, and they suit different listeners:
+
+1. **Select to Speak (built-in, free).** Turn it on under Settings → Accessibility → Select to Speak and grant the screen-capture prompt. Tap the accessibility button, then tap an item or drag a box over the text you want spoken; a playback bar gives you pause and speed. Perfect for an occasional paragraph, tiresome as a daily reader: you're steering that rectangle around menus and ads every time, and nothing is kept afterward.
+2. **Speechify (the category giant).** Polished, with genuinely good voices and 60M+ users. The free tier keeps you on standard voices at 1x; premium runs about $139/year, with word quotas on the premium voices. A reasonable buy if you listen to books for hours a day.
+3. **Arc (screen-aware, my app).** Free to download with a free tier. It reads the app you're already in, with nothing to import or paste, and plugs listening into a workflow: read, summarize, ask follow-ups, save.
+
+| | Select to Speak | Arc |
+|---|---|---|
+| Works in any app | Yes, with selection friction | Yes, one tap, no selection |
+| Filters menus and ads | No | Yes |
+| Summarizes before reading | No | Yes |
+| Follow-up questions | No | Yes |
+| Saves to a library | No | Yes |
+
+The honest take: if you need a paragraph spoken now and then, Select to Speak costs nothing and is already on your phone. If listening is becoming how you get through content every day, a dedicated app earns its install.
+
 ## Set Up Arc as Your Android AI Screen Reader in 2 Minutes
 
 Here's the whole setup. There's nothing to configure before your first use.
 
-**Step 1: Install Arc and grant one permission.** Arc is free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc). On first launch it asks for Accessibility permission — that's what lets it read on-screen text. You grant it once in Android settings and never think about it again.
+**Step 1: Install Arc and grant two permissions.** Arc is free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc). On first launch it asks for Accessibility permission, which lets it read on-screen text, and Display over other apps, which powers the floating sidebar. You grant both once in Android settings and never think about them again.
 
 **Step 2: Find the floating sidebar.** Arc adds a small handle that floats over every app. Swipe it open and you get a compact panel of actions. It works over Chrome, Gmail, a PDF in Drive, a Reddit thread — any app with text.
 
@@ -97,8 +121,6 @@ Everything you summarize gets saved to a library, so if you start an audiobook-s
 <img src="{{ '/assets/images/screenshots/00_summary_library_with_items.jpg' | relative_url }}" alt="Summary library with saved summaries, each with a Listen button" width="800" height="1760" loading="lazy" />
 </center>
 
-If reading long threads or docs is a daily thing for you, it's worth looking at the broader reading toolkit — the [AI Summary & Reader](/ai-summary-reader/) page covers the full picture.
-
 ## Control Playback From Anywhere
 
 An AI screen reader for Android is only useful if it doesn't lock your phone down while it talks. Arc runs playback as a foreground service, which means:
@@ -129,6 +151,7 @@ After months of living with this feature, a few habits stuck:
 3. **Use 1.5x for everything you'd skim.** Counterintuitively, faster narration is *easier* to follow for fluff content because there's less time for your mind to wander.
 4. **Ask follow-up questions.** On any summary, tap Ask Questions to open a chat with the article as context — useful when a summary skips the detail you actually needed.
 5. **Chain it with automated actions.** Arc's custom actions — part of [AI Workflow Automation](/ai-workflow-automation/) — let you combine summarize-then-read into a single tap if you do it often.
+6. **Edit by ear.** Run your own drafts through AI Read before sending. Listening catches awkward sentences your eyes skip over, which makes it a good last pass after an [AI Writer](/ai-writer/) rewrite.
 
 And if you use a mix of devices, the same reading workflow exists on the Mac app — [Arc's Android app](/android/) and the Mac version share the same feature set, so what you learn on one transfers to the other.
 
@@ -141,13 +164,19 @@ The built-in one: Settings → Accessibility → TalkBack → toggle on. For an 
 TalkBack announces every UI element and controls navigation by gesture — designed for eyes-free use. An AI screen reader like Arc extracts the actual content on screen, filters out interface clutter, and reads it naturally. Many people run both.
 
 **Does the AI screen reader work in every app?**
-Yes. Arc was designed as an AI screen reader for Android that works at the screen level, not per app. Arc reads any app that renders text on screen — browsers, email, PDFs, messaging apps, Reddit, news apps. Content extraction and filtering happen at the screen level, not per-app.
+Yes. Arc reads any app that renders text on screen — browsers, email, PDFs, messaging apps, Reddit, news apps. Content extraction and filtering happen at the screen level, not per app.
 
 **Can it read content in other languages?**
 It detects the language automatically and selects a matching voice, supporting 100+ languages. You can turn off auto voice selection and pin a default in Speech Settings if you prefer.
 
-**Is there a free AI screen reader for Android?**
-Arc is free to download and use on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc), with high-quality offline fallback if you lose connection. TalkBack is also free and pre-installed, but as covered above it solves a different problem.
+**Is there free text to speech for Android?**
+Yes, two options. Select to Speak is built in and free. Arc is free to download on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) with a free tier that covers reading, summarizing and saving, so you can judge the voices before paying anything. TalkBack is also free, but it solves a different problem.
+
+**Does text to speech work offline on Android?**
+The built-in system engine works offline with standard voices. Natural neural voices are cloud-based and need a connection; offline, Arc falls back to the device's system voice so reading never just stops.
+
+**Does Arc work on Mac or iPhone?**
+The Mac app is live now, with the same read and summarize flow summoned over any window with Control+Space. An iOS version is in development with a [waitlist open](/ios/).
 
 Try Arc free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) — setup takes about two minutes, and your first AI Read is thirty seconds away.
 

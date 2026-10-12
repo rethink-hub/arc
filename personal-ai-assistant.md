@@ -52,7 +52,7 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
 
 <div class="content-section">
   <img class="inline-shot" width="1200" height="780" src="/assets/images/screenshots/macos/11_info_vault_with_entries.jpg" alt="Arc Info Vault showing saved entries for Arc Project and My Job" loading="lazy" decoding="async">
-  <p>Saved entries live locally on your device. Google Drive backup is strictly opt-in, and when you switch phones, vault entries merge — they never overwrite. That means the assistant gets more useful the longer you use it, without you ever re-explaining yourself.</p>
+  <p>Saved entries live locally on your device. Google Drive backup is strictly opt-in, and when you switch phones, vault entries merge — they never overwrite. The assistant gets more useful the longer you use it, without you ever re-explaining yourself.</p>
 </div>
 
 <div class="content-section">
@@ -68,21 +68,19 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
 
 <div class="content-section">
   <h3>☀️ Morning commute</h3>
-  <p>You've saved three long articles for the train. Open one, tap the play button, and <strong>AI Read</strong> reads it aloud in a natural voice — the language auto-detected, lists spoken with real pauses. You arrive having "read" three articles without looking at your screen once.</p>
+  <p>You've saved three long articles for the train. Open one, tap play, and <strong>AI Read</strong> reads it aloud in a natural voice, language auto-detected. You arrive having "read" three articles without looking at your screen.</p>
 
   <h3>🍱 Lunch break</h3>
-  <p>A 4,000-word industry report lands in your inbox. Instead of skimming, you swipe the edge, tap <strong>AI Summary</strong>, and get seven numbered points in seconds — the source site tagged, ready to save to your library.</p>
+  <p>A 4,000-word industry report lands in your inbox. Swipe the edge, tap <strong>AI Summary</strong>, and get seven numbered points in seconds — the source site tagged, ready to save to your library.</p>
 
   <h3>🌙 Evening messages</h3>
-  <p>Twelve unread messages. Open WhatsApp, leave the cursor in the reply field, invoke Arc. Tap <strong>Reply</strong> and choose an intention — Yes, Decline, Thank, Ask for details, Acknowledge — and a response that matches the conversation lands in the field. Insert. Send. Twelve messages handled before dinner.</p>
+  <p>Twelve unread messages. Open WhatsApp, leave the cursor in the reply field, invoke Arc. Tap <strong>Reply</strong>, choose an intention — Yes, Decline, Thank, Ask for details, Acknowledge — and a response that matches the conversation, in your voice from the Info Vault, lands in the field. Insert. Send.</p>
+
+  <h3>📞 And the call you forgot to note</h3>
+  <p><strong>Call Insights</strong> transcribed the conversation, separated the speakers, and pulled the deadline into a calendar event. "What did we agree on?" has an answer.</p>
 </div>
 
 ---
-
-<div class="section-header">
-  <span class="section-tag">Under the hood</span>
-  <h2>The details that make it feel like magic.</h2>
-</div>
 
 <div class="coming-soon-features">
   <div class="features-grid">
@@ -95,12 +93,8 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
       <p>Every summary has an "Ask questions" button that opens a chat seeded with that screen's content. Follow-ups keep the context — like texting a friend who read the article too.</p>
     </div>
     <div class="feature-card">
-      <h3>⚡ Non-intrusive by design</h3>
-      <p>On desktop, the Arc menu never steals focus from the app underneath — your cursor stays put, your window stays frontmost. It helps, then vanishes.</p>
-    </div>
-    <div class="feature-card">
-      <h3>🔒 Private by default</h3>
-      <p>Info Vault entries live on your device. Banking apps are off-limits automatically. Screenshots require explicit consent.</p>
+      <h3>🔒 An assistant with boundaries</h3>
+      <p>It only looks when you ask, and never in banking apps. Vault entries stay on your device. <a href="{{ '/private-ai-assistant/' | relative_url }}">How Arc handles privacy →</a></p>
     </div>
   </div>
 </div>
@@ -115,10 +109,9 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
     <tr><td>Remembers your context</td><td>✅ Info Vault</td><td>❌ Per-conversation</td></tr>
     <tr><td>Works inside other apps</td><td>✅ Floating sidebar</td><td>❌ Switch away</td></tr>
     <tr><td>Extracts OTPs & events</td><td>✅ Tap to act</td><td>❌ Manual</td></tr>
-    <tr><td>Reads aloud</td><td>✅ Built-in TTS</td><td>Varies</td></tr>
     <tr><td>Transcribes calls</td><td>✅ Built-in</td><td>❌</td></tr>
   </table>
-  <p><em>Arc is live on Android, macOS and Windows today. The iPhone version is coming soon.</em></p>
+  <p>Getting started takes a minute: install from Google Play and grant the accessibility permission (that's how Arc reads screens), or download the notarized Mac app and grant Accessibility. Set your Info Vault entries while your first summary runs. For a wider comparison, see <a href="{{ '/alternatives/' | relative_url }}">Arc vs. the alternatives</a>.</p>
 </div>
 
 ---
@@ -139,15 +132,11 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
 <div class="content-section">
   <details>
     <summary>Is Arc a free personal AI assistant?</summary>
-    <p>Yes — Arc is free to download with generous daily usage on core features (summaries, chat, extraction). An optional premium subscription removes limits.</p>
+    <p>Yes — Arc is free to download with generous usage on core features (summaries, chat, extraction). An optional premium subscription removes limits.</p>
   </details>
   <details>
     <summary>What can a personal AI assistant like Arc do?</summary>
     <p>Arc summarizes articles and documents, drafts and rewrites messages in your voice, extracts events and OTP codes from any screen, answers questions about what you're viewing, reads text aloud, transcribes calls, and automates repetitive tasks — all from a floating sidebar that works inside every app.</p>
-  </details>
-  <details>
-    <summary>How does Arc "know" me?</summary>
-    <p>The Info Vault: you save entries once (your role, projects, tone preferences), and they appear as optional context in every generation. Stored locally on your device, with opt-in Drive backup that merges across platforms.</p>
   </details>
   <details>
     <summary>Does Arc work on Samsung, OnePlus, and other Android phones?</summary>
@@ -155,7 +144,7 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
   </details>
   <details>
     <summary>Is there a personal AI assistant for Mac or Windows?</summary>
-    <p>Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. The Windows version is in beta — join the waitlist on the <a href="/windows/">Arc for Windows</a> page.</p>
+    <p>Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. The Windows version is in beta — see the <a href="/windows/">Arc for Windows</a> page.</p>
   </details>
 </div>
 
@@ -168,7 +157,6 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
     <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
     <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
     <li><a href="{{ '/2026/09/21/ai-screen-assistant-windows/' | relative_url }}">AI Assistant for PC: Arc Is Coming to Windows</a></li>
-    <li><a href="{{ '/2026/10/08/ai-overlay-assistant-mac/' | relative_url }}">AI Overlay Assistant Mac: Any App, One Keystroke</a></li>
     <li><a href="{{ '/2026/09/22/ai-assistant-for-iphone/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
   </ul>
 </div>
@@ -179,86 +167,10 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Arc a free personal AI assistant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is free to download with generous daily usage on core features. An optional premium subscription removes limits."}},
-    {"@type": "Question", "name": "What can a personal AI assistant like Arc do?", "acceptedAnswer": {"@type": "Answer", "text": "Arc summarizes articles, drafts messages in your voice, extracts events and OTP codes from any screen, answers questions about what you're viewing, reads text aloud, transcribes calls, and automates tasks — all from a floating sidebar inside every app."}},
-    {"@type": "Question", "name": "How does Arc know my personal context?", "acceptedAnswer": {"@type": "Answer", "text": "The Info Vault stores your details locally on your device. Saved entries appear as optional context chips in every generation, so replies and drafts sound like you."}},
+    {"@type": "Question", "name": "Is Arc a free personal AI assistant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is free to download with generous usage on core features (summaries, chat, extraction). An optional premium subscription removes limits."}},
+    {"@type": "Question", "name": "What can a personal AI assistant like Arc do?", "acceptedAnswer": {"@type": "Answer", "text": "Arc summarizes articles and documents, drafts and rewrites messages in your voice, extracts events and OTP codes from any screen, answers questions about what you're viewing, reads text aloud, transcribes calls, and automates repetitive tasks — all from a floating sidebar that works inside every app."}},
     {"@type": "Question", "name": "Does Arc work on Samsung, OnePlus, and other Android phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Arc works on all modern Android phones and integrates natively with Samsung Edge Panel, OnePlus Shelf, and OPPO Smart Sidebar."}},
-    {"@type": "Question", "name": "Is there a personal AI assistant for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Arc for macOS is available now (free, notarized, macOS 14+) — press Control+Space in any window. The Windows version is in beta."}}
+    {"@type": "Question", "name": "Is there a personal AI assistant for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. The Windows version is in beta — see the Arc for Windows page."}}
   ]
 }
 </script>
-
----
-
-<div class="section-header">
-  <span class="section-tag">Feature deep dive</span>
-  <h2>Built-in actions — the whole toolbox in one menu.</h2>
-</div>
-
-<div class="content-section">
-  <p>Summon Arc and the menu lists everything it can do on the current screen, each one enabled, disabled, or reordered to taste:</p>
-  <table class="comparison-table">
-    <tr><th>Action</th><th>What it does on the current screen</th></tr>
-    <tr><td>AI Summary</td><td>Condenses the screen into key points</td></tr>
-    <tr><td>AI Writer</td><td>Rewrites or replies from the focused text field</td></tr>
-    <tr><td>Save Content</td><td>Captures the on-screen text for later</td></tr>
-    <tr><td>AI Read</td><td>Reads the screen aloud</td></tr>
-    <tr><td>Chat Screen</td><td>Ask questions about what's displayed</td></tr>
-    <tr><td>Flashcards</td><td>Generates a study deck from the content</td></tr>
-    <tr><td>Smart Extract</td><td>Pulls structured data: dates, contacts, OTPs</td></tr>
-  </table>
-  <p>And alongside them, your own Arc Actions — the custom prompts you've built — interleaved in the same list, sorted the way you want.</p>
-</div>
-
-<div class="section-header">
-  <span class="section-tag">More scenarios</span>
-  <h2>The moments Arc earns its keep.</h2>
-</div>
-
-<div class="content-section">
-  <h3>📧 The email you almost sent angry</h3>
-  <p>Draft the heated version. Select it, invoke <strong>AI Writer → Rewrite → Professional</strong>, and read back something you'd actually sign. Regenerate if it's still spicy — generation history lets you step back through versions.</p>
-
-  <h3>🧾 The expense receipt</h3>
-  <p>Snap the paper receipt or open the email. <strong>Smart Extract</strong> pulls the amount, date, and vendor — and it's in your library with the source attached for the reimbursement claim.</p>
-
-  <h3>🎓 The study session</h3>
-  <p>Open the chapter PDF, invoke <strong>Flashcards</strong>, and study a generated Q&A deck on the bus. Save it — the library tracks how many times you've reviewed it.</p>
-
-  <h3>📞 The call you forgot to note</h3>
-  <p><strong>Call Insights</strong> transcribed the conversation, separated the speakers, and pulled the deadline into a calendar event. "What did we agree on?" has an answer.</p>
-
-  <h3>🌐 The wall of text in another language</h3>
-  <p>AI Read detects the language and reads it aloud with a native voice. Smart Extract translates on demand. 100+ languages, no settings fiddling.</p>
-</div>
-
-<div class="content-section">
-  <h2>Works on your phone <em>and</em> your desk.</h2>
-  <p>On Android, Arc is the floating sidebar — swipe the edge over any app. On macOS, press <strong>Control+Space</strong> anywhere: a Spotlight-style panel appears over the frontmost window, runs the action, and disappears without stealing focus. The Windows version (Ctrl+Space) and the iPhone version (Action Button / back-tap) are coming soon — one assistant, every device you own.</p>
-</div>
-
----
-
-<div class="section-header">
-  <span class="section-tag">Privacy</span>
-  <h2>An assistant with boundaries.</h2>
-</div>
-
-<div class="content-section">
-  <p>A personal assistant sees a lot. Arc's rule is simple: <strong>it only looks when you ask, and never where it's forbidden.</strong></p>
-  <ul>
-    <li>Auto-disables in <strong>200+ banking and crypto apps</strong> — balances and transactions are never read</li>
-    <li>No background monitoring between invocations — active only when summoned</li>
-    <li>Screenshots require explicit consent, every time</li>
-    <li>Info Vault entries stored locally; Drive backup strictly opt-in</li>
-    <li>Per-app allow/deny list — you choose where Arc works</li>
-    <li>No ads, no data selling — subscription-supported</li>
-  </ul>
-</div>
-
----
-
-<div class="content-section">
-  <h2>Getting started takes a minute.</h2>
-  <p>Install from Google Play, grant the accessibility permission (that's how Arc reads screens), and the sidebar is live. Set your Info Vault entries while your first summary runs. On macOS, download the notarized app, grant Accessibility permission, and Control+Space is ready. Setup guides live on the <a href="/android/">Android</a> and <a href="/macos/">Mac</a> pages.</p>
-</div>

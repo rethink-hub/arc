@@ -31,9 +31,9 @@ last_modified_at: 2026-09-19
 ---
 
 <div class="section-header">
-  <span class="section-tag">8 item types</span>
+  <span class="section-tag">7 item types + OCR</span>
   <h2>Point it at anything. Get the useful parts.</h2>
-  <p>Smart Extract reads the current screen and surfaces every actionable item, prioritized so the most urgent come first. Each item carries a matched one-click action:</p>
+  <p>Smart Extract reads the current screen and surfaces every actionable item, each with a matched one-tap action:</p>
 </div>
 
 <div class="content-section">
@@ -54,13 +54,11 @@ last_modified_at: 2026-09-19
 
 <div class="section-header">
   <span class="section-tag">The OTP problem</span>
-  <h2>Verification codes, solved forever.</h2>
+  <h2>Verification codes, solved.</h2>
 </div>
 
 <div class="content-section">
-  <p>The modern annoyance: a code arrives, you memorize six digits, switch apps, and type it before it expires. On a small keyboard. Under time pressure.</p>
-  <p>With Arc: the code appears on screen, you invoke Smart Extract, and the OTP is <strong>copied to your clipboard verbatim</strong> — exactly as sent, no transcription errors, no expiry scramble. It's the single most-used extraction on the app, and once you've used it, there's no going back.</p>
-  <p>It works across SMS apps, email clients, authenticator screens, and web forms — anywhere the code is visible, Arc can copy it.</p>
+  <p>A code arrives, you memorize six digits, switch apps, and type it before it expires. With Arc, you invoke Smart Extract while the code is on screen and the OTP is <strong>copied to your clipboard verbatim</strong> — no transcription errors, no expiry scramble. It's the most-used extraction in the app, and it works in SMS apps, email, authenticator screens and web forms.</p>
 </div>
 
 ---
@@ -71,13 +69,7 @@ last_modified_at: 2026-09-19
 </div>
 
 <div class="content-section">
-  <img class="inline-shot" width="1200" height="715" src="/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg" alt="Arc menu invoked over a Chrome window showing the built-in action list" loading="lazy" decoding="async">
-  <p>Some apps simply don't let you select text — webview containers, locked PDFs, certain messaging interfaces, scanned documents. Arc reads the screen directly with built-in OCR, so the words become copyable regardless of what the app allows.</p>
-  <p>On desktop, the same works over any window: PDFs in preview apps, text inside video subtitles, labels in design tools. If your eyes can read it, Arc can copy it.</p>
-</div>
-
-<div class="content-section">
-  <img class="inline-phone" width="800" height="1760" src="/assets/images/screenshots/10_smart_extract_results.jpg" alt="Smart Extract results on Android showing extracted items with one-tap actions" loading="lazy" decoding="async">
+  <p>Webview containers, locked PDFs, some messaging apps and scanned documents don't let you select text. Arc reads the screen with built-in OCR, so the words become copyable regardless of what the app allows. On desktop it works over any window — PDFs in preview apps, video subtitles, labels in design tools.</p>
 </div>
 
 ---
@@ -88,22 +80,7 @@ last_modified_at: 2026-09-19
 </div>
 
 <div class="content-section">
-  <p>A screen full of chat bubbles, sidebars, and ads is full of noise. Smart Extract has a fix: <strong>region selection</strong>. Enable it in Settings → Screenshots ("Ask for region"), and Arc extracts only from the area you mark — a single table row, one message, one code block. The rest of the screen is ignored.</p>
-  <p>Extraction results are also <strong>real system actions</strong> — the calendar path creates an actual event entry through the platform's calendar API (EventKit on macOS, .ics on Windows), not a webpage link that hopes you finish the job.</p>
-</div>
-
----
-
-<div class="content-section">
-  <h2>The copy-paste problems this kills.</h2>
-  <table class="comparison-table">
-    <tr><th>Annoyance</th><th>Without Arc</th><th>With Arc</th></tr>
-    <tr><td>OTP in a notification</td><td>Memorize, switch, type before it expires</td><td>Tap to copy from screen</td></tr>
-    <tr><td>Text in an image/screenshot</td><td>Retype it by hand</td><td>Smart Extract reads it</td></tr>
-    <tr><td>Address in a chat</td><td>Select piece by piece</td><td>One tap → Maps</td></tr>
-    <tr><td>Meeting time in an email</td><td>Read, switch, create event</td><td>One tap → Calendar</td></tr>
-    <tr><td>App that blocks selection</td><td>Retype manually</td><td>Copy from screen</td></tr>
-  </table>
+  <p>A screen full of chat bubbles, sidebars and ads is noisy. Turn on <strong>region selection</strong> in Settings → Screenshots ("Ask for region") and Arc extracts only from the area you mark — one table row, one message, one code block.</p>
   <p><em>Arc is live on Android, macOS and Windows today. The iPhone version is coming soon.</em></p>
 </div>
 
@@ -129,15 +106,15 @@ last_modified_at: 2026-09-19
   </details>
   <details>
     <summary>Does it work on apps that block text selection?</summary>
-    <p>Yes — that's one of the most-loved uses. Arc reads the screen directly, so apps that prevent copying (some banking, ticketing, or webview apps) are no longer a dead end.</p>
+    <p>Yes. Arc reads the screen directly, so apps that prevent copying (some banking, ticketing, or webview apps) are no longer a dead end.</p>
   </details>
   <details>
     <summary>What item types can it extract?</summary>
-    <p>Seven categories: events, reminders, deadlines, contacts, meeting links, locations, and OTP codes — plus plain text via OCR. Each with a matched one-tap action like Add to Calendar, Save Contact, or Copy Code.</p>
+    <p>Seven categories: events, reminders, deadlines, contacts, meeting links, locations, and OTP codes — plus plain text via OCR. Each has a matched one-tap action like Add to Calendar, Save Contact, or Copy Code.</p>
   </details>
   <details>
     <summary>Does the calendar action create real events?</summary>
-    <p>Yes — Smart Extract integrates with the platform's actual calendar APIs (EventKit on macOS, .ics files on Windows). One tap creates a genuine entry, not a link.</p>
+    <p>Yes — Smart Extract uses the platform's actual calendar APIs (EventKit on macOS, .ics files on Windows). One tap creates a genuine entry, not a link.</p>
   </details>
   <details>
     <summary>Is the contact extractor free?</summary>
@@ -145,7 +122,7 @@ last_modified_at: 2026-09-19
   </details>
   <details>
     <summary>Is there an extract tool for Mac or Windows?</summary>
-    <p>Arc for macOS and Arc for Windows are available now, both with region selection for precise extraction.</p>
+    <p>Yes. Arc for macOS and Arc for Windows are available now, both with region selection for precise extraction.</p>
   </details>
 </div>
 
@@ -177,12 +154,54 @@ last_modified_at: 2026-09-19
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can Arc copy text from images?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — built-in OCR reads text in images and screenshots, making non-selectable text copyable."}},
-    {"@type": "Question", "name": "Does it work on apps that block text selection?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc reads the screen directly, so apps that prevent copying are no longer a dead end."}},
-    {"@type": "Question", "name": "What can Smart Extract pull from a screen?", "acceptedAnswer": {"@type": "Answer", "text": "Seven categories: events, reminders, deadlines, contacts, meeting links, locations, and OTP codes — each with a one-tap action."}},
-    {"@type": "Question", "name": "Does the calendar action create real events?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Smart Extract integrates with platform calendar APIs, creating genuine calendar entries rather than links."}},
-    {"@type": "Question", "name": "Is the contact extractor free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Smart Extract including contact extraction, OTP capture, and OCR is free with generous daily usage. Premium removes limits."}},
-    {"@type": "Question", "name": "Is there an extract tool for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Arc for macOS and Arc for Windows are available now, both with region selection."}}
+    {
+      "@type": "Question",
+      "name": "Can Arc copy text from images?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — Smart Extract reads text in images and screenshots using built-in OCR. Screenshot a menu, a form, or a locked PDF, and the text becomes selectable and copyable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on apps that block text selection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Arc reads the screen directly, so apps that prevent copying (some banking, ticketing, or webview apps) are no longer a dead end."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What item types can it extract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seven categories: events, reminders, deadlines, contacts, meeting links, locations, and OTP codes — plus plain text via OCR. Each has a matched one-tap action like Add to Calendar, Save Contact, or Copy Code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the calendar action create real events?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — Smart Extract uses the platform's actual calendar APIs (EventKit on macOS, .ics files on Windows). One tap creates a genuine entry, not a link."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the contact extractor free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — Smart Extract including contact extraction, OTP capture, and OCR is free with generous daily usage. Premium removes limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an extract tool for Mac or Windows?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Arc for macOS and Arc for Windows are available now, both with region selection for precise extraction."
+      }
+    }
   ]
 }
 </script>

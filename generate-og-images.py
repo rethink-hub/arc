@@ -46,22 +46,17 @@ pages = [
     # Per-post cards \u2014 every published post gets its own, so shares and
     # social previews stop falling back to the generic og-arc.png card.
     ("og-post-ai-summarizer-android.png", "AI Summarizer for Android", "Summarize any screen in one tap", "02_ai_summary_result.jpg"),
-    ("og-post-ai-summary-app-android.png", "AI Summary Apps for Android", "What actually works inside other apps", "02_ai_summary_result.jpg"),
     ("og-post-ai-screen-assistant-mac.png", "AI Screen Assistant for Mac", "It reads the window you\u2019re already in", "macos/01_arc_menu_over_chrome.jpg"),
     ("og-post-ai-summarizer-mac.png", "AI Summarizer for Mac", "Control+Space, then numbered key points", "macos/02_ai_summary_result_panel.jpg"),
     ("og-post-ai-assistant-for-mac.png", "AI Assistant for Mac", "Beyond ChatGPT in a browser tab", "macos/08_chat_about_screen_panel.jpg"),
     ("og-post-read-screen-aloud-android.png", "Read Any Screen Aloud", "Natural TTS on Android, set up in 2 minutes", "00_summary_library_with_items.jpg"),
-    ("og-post-ai-text-reader-mac.png", "AI Text Reader for Mac", "Listen to any window, then summarize it", "macos/13_saved_items_library_list.jpg"),
     ("og-post-best-ai-apps-android.png", "Best AI Apps for Android", "The ones that earn their place", "01_floating_sidebar_expanded_over_chrome.jpg"),
     ("og-post-arc-for-mac-is-here.png", "Arc for Mac Is Here", "The screen assistant, now on macOS", "macos/01_arc_menu_over_chrome.jpg"),
     ("og-post-ai-writer-mac.png", 'AI Writing Assistant for Mac', 'Rewrite in Any App', 'macos/03_ai_writer_rewrite_generated.jpg'),
     ("og-post-ai-screen-assistant-windows.png", 'AI Assistant for PC', 'Arc Is Coming to Windows', 'macos/01_arc_menu_over_chrome.jpg'),
     ("og-post-ai-assistant-for-iphone.png", 'iPhone AI Assistant', 'What Arc Is Building', '01_floating_sidebar_expanded_over_chrome.jpg'),
     ("og-post-ai-text-reader-android.png", 'Read a PDF Aloud on Android', 'Listen to Any Screen', '00_summary_library_with_items.jpg'),
-    ("og-post-ai-writer-android-app.png", 'AI Message Generator for Android', 'Reply in Any App', '03_ai_writer_reply_mode.jpg'),
-    ("og-post-text-to-speech-ai-android-app.png", 'TTS Android', 'Hear Any Screen in 2 Minutes', '00_summary_library_with_items.jpg'),
     ("og-post-ai-screen-assistant-android.png", 'AI Screen Assistant Android', 'Arc Works in Every App', '01_floating_sidebar_expanded_over_chrome.jpg'),
-    ("og-post-screen-reader-ai-app-android.png", 'Screen Reader App for Android', 'Read Any Screen', '02_ai_summary_result.jpg'),
     ("og-post-ai-reply-generator-android.png", 'AI Reply Generator Android', 'Reply to Any Message in 10s', '03_ai_writer_reply_mode.jpg'),
     ("og-post-ai-automation-app-android.png", 'AI Automation on Android', 'Build Custom AI Actions', '06_custom_actions_list_with_active_actions.jpg'),
     ("og-post-ai-rewrite-text-android-app.png", 'AI Rewrite Tool for Android', 'Fix Text In-Place', '03_ai_writer_rewrite_result.jpg'),
@@ -72,7 +67,6 @@ pages = [
     ("og-post-how-to-read-screen-aloud-android.png", 'Screen Reader Android', '4 Ways to Hear Any Screen', '00_summary_library_with_items.jpg'),
     ("og-post-ai-screen-reader-macos.png", 'AI Screen Reader for macOS', 'Read Any Window', 'macos/13_saved_items_library_list.jpg'),
     ("og-post-read-screen-aloud-mac.png", 'Mac Text to Speech', '4 Ways to Hear Any Window', 'macos/02_ai_summary_result_panel.jpg'),
-    ("og-post-ai-overlay-assistant-mac.png", 'AI Overlay Assistant Mac', 'Any App, One Keystroke', 'macos/01_arc_menu_over_chrome.jpg'),
 ]
 
 def make_base():

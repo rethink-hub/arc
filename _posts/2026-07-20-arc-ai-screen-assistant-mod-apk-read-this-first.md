@@ -6,6 +6,8 @@ date: 2026-07-20
 author: Rethink
 tags: ["mod-apk", "arc", "premium", "indie-developer", "android", "comparison"]
 og_image: /assets/images/og-blog-mod-apk.png
+robots: noindex, follow
+sitemap: false
 faq:
   - question: "Why People Look for Mod APKs"
     answer: "I understand the impulse. A lot of Android apps these days charge ridiculous prices \u2014 $10/month, $15/month, sometimes more \u2014 for features that should be basic. Subscriptions stacked on subscriptions. It feels like every app wants a piece of your monthly budget forever."

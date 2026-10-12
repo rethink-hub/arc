@@ -12,8 +12,7 @@ layout: null
   deploy and Google learned to discount the field entirely.
 
   Excluded: noindex pages (privacy, terms), the 404, the /go/ /r/ /s/
-  redirect shims, and the legacy/ moved-page stubs (sitemap: false), which are
-  all noindex or not canonical destinations.
+  redirect shims, and any page or post marked noindex or `sitemap: false`.
 
   site.pages also holds generated assets (the leftover theme's
   assets/css/style.css, feed.xml, robots.txt). Those are filtered by requiring
@@ -35,11 +34,13 @@ layout: null
 {%- endunless -%}
 {%- endfor -%}
 {%- for post in site.posts %}
+{%- unless post.robots contains "noindex" or post.sitemap == false %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
     <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+{%- endunless %}
 {%- endfor %}
   </urlset>

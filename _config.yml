@@ -18,16 +18,16 @@ permalink: pretty
 plugins:
   - jekyll-feed
 
-# jekyll-redirect-from was removed (89987a8), and the old .html URLs then 404'd.
-# Search Console showed that threw away the github.io-era history (~41K
-# impressions) because GitHub forwards rethink-hub.github.io/arc/X.html to
-# arcassistant.app/X.html. Those URLs now get explicit moved-page stubs in
-# legacy/ (layout: redirect): an instant meta refresh plus a canonical to the
-# new URL, excluded from sitemap.xml. Add a stub there when a URL is retired.
+# Hosted on S3 + CloudFront (deployed by .github/workflows/deploy.yml on push to
+# master). Retired URLs get real 301s from the CloudFront function
+# (cloudfront/rewrite.js): any /x.html → /x/ automatically, and anything else is
+# listed in _data/redirects.yml. Add a line there when a URL is retired.
+# GitHub Pages stays enabled only so rethink-hub.github.io/arc/* keeps
+# forwarding the github.io-era URLs to arcassistant.app.
 
 # SEO settings
 lang: en-US
-url: "https://arcassistant.app" # Custom root domain (GitHub Pages via CNAME)
+url: "https://arcassistant.app"
 baseurl: "" # Root domain — no subdirectory
 
 # Social and contact info (for SEO)
@@ -87,6 +87,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - generate-og-images.py
+  - cloudfront
   - assets/images/SOCIAL-SHARE-IMAGE-GUIDE.md
   - assets/README.md
   - .gitignore

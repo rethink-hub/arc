@@ -39,9 +39,9 @@ last_modified_at: 2026-09-19
 
 ## What Arc for iPhone Will Be
 
-Arc is an AI assistant that runs on the content you are already looking at. Open an article, a message thread, a PDF or a contract, invoke Arc, and it summarizes that screen, reads it aloud in a natural voice, rewrites your draft reply, or pulls out the dates and contacts buried in it.
+Arc is an AI assistant that runs on the content you are already looking at. Open an article, a message thread, a PDF or a contract, invoke Arc, and it summarizes that screen, [reads it aloud](/text-to-speech/) in a natural voice, rewrites your draft reply, or pulls out the dates and contacts buried in it.
 
-The iPhone version is in development and has no release date yet. The honest reason is below: iOS does not allow the floating overlay that makes the Android app work, so the iPhone build is being designed around the entry points Apple does provide. In the meantime [Arc for Android](/android/) is live on Google Play and [Arc for Mac](/macos/) is available to download.
+The iPhone version is in development, built around the entry points iOS allows (below). Meanwhile [Arc for Android](/android/) is live on Google Play and [Arc for Mac](/macos/) is available to download.
 
 </div>
 
@@ -49,7 +49,7 @@ The iPhone version is in development and has no release date yet. The honest rea
 <div class="section-header">
   <span class="section-tag">What it looks like</span>
   <h2>The app, running today on Android.</h2>
-  <p>These are real screenshots from the shipping Android app — the same features the iPhone version is being built around. The iOS interface will follow native iPhone patterns, so expect these flows rather than these exact pixels.</p>
+  <p>Screenshots from the shipping Android app. The iPhone version will follow these flows with native iOS patterns.</p>
 </div>
 
 <div class="shot-gallery shot-gallery--phone">
@@ -71,17 +71,7 @@ The iPhone version is in development and has no release date yet. The honest rea
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>AI Summary.</strong> Numbered key points from the screen, with listen, save and share on the result. See <a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary &amp; reader</a>.</figcaption>
-  </figure>
-  <figure class="shot">
-    <div class="iphone-frame">
-      <div class="iphone-notch"></div>
-      <div class="iphone-screen">
-        <img width="800" height="1760" src="{{ '/assets/images/screenshots/02_ai_summary_chat_input.jpg' | relative_url }}" alt="Arc chat input asking a follow-up question about a summarized screen" loading="lazy">
-        <div class="iphone-reflection"></div>
-      </div>
-    </div>
-    <figcaption><strong>Ask follow-ups.</strong> Keep questioning the same screen without re-explaining what you're looking at.</figcaption>
+    <figcaption><strong>AI Summary.</strong> Numbered key points from the screen. See <a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary &amp; reader</a>.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">
@@ -111,17 +101,7 @@ The iPhone version is in development and has no release date yet. The honest rea
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Custom actions.</strong> Your own prompts, saved as one-tap commands. See <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
-  </figure>
-  <figure class="shot">
-    <div class="iphone-frame">
-      <div class="iphone-notch"></div>
-      <div class="iphone-screen">
-        <img width="800" height="1760" src="{{ '/assets/images/screenshots/07_community_actions_browse_with_filter.jpg' | relative_url }}" alt="Browsing community-shared AI actions in Arc with a category filter" loading="lazy">
-        <div class="iphone-reflection"></div>
-      </div>
-    </div>
-    <figcaption><strong>Community actions.</strong> 500+ ready-made actions from other Arc users, installable in a tap.</figcaption>
+    <figcaption><strong>Custom actions.</strong> Your own prompts as one-tap commands, plus 500+ community actions. See <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">
@@ -133,76 +113,6 @@ The iPhone version is in development and has no release date yet. The honest rea
     </div>
     <figcaption><strong>Flashcards.</strong> Any page of study material becomes a reviewable deck. See <a href="{{ '/flashcards/' | relative_url }}">AI flashcards</a>.</figcaption>
   </figure>
-</div>
-
----
-
-<!-- Feature teaser -->
-<div class="section-header">
-  <span class="section-tag">Planned for iPhone</span>
-  <h2>What will ship on iOS.</h2>
-  <p>Same feature set, reached through the entry points iOS actually allows.</p>
-</div>
-
-<div class="coming-soon-features">
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon icon-summary" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L14 9L21 12L14 15L12 22L10 15L3 12L10 9L12 2Z"/></svg>
-      </div>
-      <h3>Summarize on Tap</h3>
-      <p>Condense long articles, messages and web pages from the Share Sheet in Safari or any app.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-reader" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2V15H6L11 19V5Z"/><path class="wave-1" d="M15.54 8.46C16.48 9.4 17 10.62 17 12C17 13.38 16.48 14.6 15.54 15.54"/><path class="wave-2" d="M19.07 4.93C20.95 6.81 22 9.28 22 12C22 14.72 20.95 17.19 19.07 19.07"/></svg>
-      </div>
-      <h3>Listen Anywhere</h3>
-      <p>Natural iOS voices read text aloud in any language while you multitask. See <a href="{{ '/text-to-speech/' | relative_url }}">AI text to speech</a>.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-writer" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20H21"/><path d="M16.5 3.5C16.8978 3.10217 17.4374 2.87868 18 2.87868C18.5626 2.87868 19.1022 3.10217 19.5 3.5C19.8978 3.89782 20.1213 4.43739 20.1213 5C20.1213 5.56261 19.8978 6.10217 19.5 6.5L7 19L3 20L4 16L16.5 3.5Z"/></svg>
-      </div>
-      <h3>Write in Any App</h3>
-      <p>A custom keyboard rewrites replies and fixes grammar in place, wherever you're typing.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-actions" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/></svg>
-      </div>
-      <h3>One-Tap Actions</h3>
-      <p>Run custom AI commands from the Action Button, a Shortcuts automation, or a Home Screen widget.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-chat" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5C21.0034 12.82 20.6951 13.12 20.12 14.3C19.3875 15.82 18.2056 17.05 16.72 17.83C15.2344 18.61 13.5465 18.9 11.88 18.66C11.48 18.6 11.09 18.53 10.7 18.43C9.6333 18.86 8.44083 19.08 7.22 19.08C6.87 19.08 6.53 18.93 6.29 18.68C6.04 18.44 5.9 18.1 5.9 17.74V15.6C4.76 14.36 4.08 12.79 4.08 11.08C4.08 8.35 6.27 5.99 9.01 5.61C9.49 2.61 12.13 0.25 15.34 0.25C18.91 0.25 21.8 3.14 21.8 6.71C21.8 8.37 21.1 9.87 19.97 10.97"/></svg>
-      </div>
-      <h3>Chat About Content</h3>
-      <p>Ask follow-up questions about the page or document you just shared into Arc.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-privacy" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-      </div>
-      <h3>Smart Extract</h3>
-      <p>Pull dates, contacts, codes and action items from any screen, each with a button that uses it.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-community" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"/><circle cx="9" cy="7" r="4"/><path d="M23 21V19C23 18.22 22.81 17.48 22.46 16.82C22.11 16.16 21.64 15.58 21.06 15.13"/><path d="M16 3.13C16.64 3.58 17.11 4.16 17.46 4.82C17.81 5.48 18 6.22 18 7C18 7.78 17.81 8.52 17.46 9.18C17.11 9.84 16.64 10.42 16 10.87"/></svg>
-      </div>
-      <h3>500+ Community Actions</h3>
-      <p>The same shared action catalog Android and Mac users already draw from.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-summary" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L14 9L21 12L14 15L12 22L10 15L3 12L10 9L12 2Z"/></svg>
-      </div>
-      <h3>Flashcards</h3>
-      <p>Turn study material into decks you can review on the phone you already carry.</p>
-    </div>
-  </div>
 </div>
 
 ---
@@ -225,22 +135,14 @@ The iPhone version is in development and has no release date yet. The honest rea
 
 ## Why iOS Is Harder Than Android
 
-On Android, Arc draws a floating sidebar over other apps and reads their content through the accessibility service. That is a capability Android grants and iOS deliberately does not. An iPhone app cannot draw over another app, and it cannot read another app's content in the background. No amount of engineering gets around that — it is a platform decision by Apple, and it is the reason there is no true screen-reading AI assistant on iOS from anyone.
-
-So Arc for iPhone is being built around the openings Apple does provide:
+An iPhone app cannot draw over another app or read its content in the background — a platform decision by Apple, and the reason no true screen-reading AI assistant exists on iOS from anyone. So Arc for iPhone is being built around the openings Apple does provide:
 
 - **Share Sheet** — send the current page, PDF, image or selection into Arc from any app, which covers Safari, Mail, Files, Messages and most third-party apps.
 - **Shortcuts and the Action Button** — bind a custom Arc action to the side button on iPhone 15 Pro and later, or to any Shortcuts automation.
 - **A custom keyboard** — rewrite, reply and fix grammar in place, in whatever field you're typing in.
 - **Widgets and App Intents** — surface the Saved Items library and one-tap actions without opening the app.
 
-That is a genuinely different interaction model from Android's sidebar. It reaches the same features with one extra tap, and it's the version that can actually ship on the App Store.
-
-### What you get on iPhone today
-
-Nothing native yet. Two things do work now if you're in the Apple ecosystem: [Arc for Mac](/macos/) handles reading, summarizing and rewriting on the desktop with a Control+Space hotkey, and saved items sync so anything you capture on the Mac is there when the iPhone app arrives. If you also carry an Android device, [Arc for Android](/android/) is the complete product.
-
-For a sense of what the reading and listening side feels like, the [AI summary and reader](/ai-summary-reader/) page covers it in detail, and [private AI assistant](/private-ai-assistant/) explains how content is handled.
+It reaches the same features with one extra tap, and it can actually ship on the App Store. Saved items sync, so anything you capture with [Arc for Mac](/macos/) now will be there when the iPhone app arrives. For how content is handled, see [private AI assistant](/private-ai-assistant/).
 
 ## Arc for iOS FAQ
 

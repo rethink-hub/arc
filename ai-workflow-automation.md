@@ -6,16 +6,14 @@ keywords: "AI workflow automation, AI automation, custom AI actions, Android aut
 og_image: /assets/images/og-ai-workflow-automation.png
 product_page: true
 faq:
-  - question: "How do I create a custom AI action?"
-    answer: "Open Arc AI settings, go to Custom Actions, and tap 'Create New Action'. Write a clear prompt describing what you want the AI to do (e.g., 'Translate to French' or 'Extract all dates'). You can enable screenshot capture and web search if needed. Save it and it appears in your sidebar."
   - question: "Can I share my custom actions?"
-    answer: "Yes! You can publish your custom actions to the Community Actions library where other Arc AI users can discover and use them. Sign in with Google to publish actions."
+    answer: "Yes. Publish them to the Community Actions library with a Google sign-in, and other Arc users can find and add them."
   - question: "Are there limits on custom actions?"
-    answer: "You can create unlimited custom actions. The only limit is your imagination! Actions can be simple one-line prompts or complex multi-step instructions."
+    answer: "No. You can create unlimited custom actions, from one-line prompts to multi-step instructions."
   - question: "How accurate is the AI fact checker?"
-    answer: "The AI fact checker uses advanced language models with web search capabilities to verify information. While highly effective, always verify critical information from authoritative sources. Think of it as a helpful first-pass fact-checking assistant."
+    answer: "A fact-check action with web search enabled checks each claim against outside sources and links one. Treat it as a fast first pass and verify anything critical against an authoritative source."
   - question: "Can actions work without internet?"
-    answer: "Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup."
+    answer: "No. Running an action needs a connection because the models are cloud-side. Your action configurations are stored on the device and sync to Google Drive if you turn on backup, so a new phone gets your sidebar back."
 last_modified_at: 2026-09-19
 ---
 
@@ -25,7 +23,7 @@ last_modified_at: 2026-09-19
       <span class="fhero-badge">Android &amp; Mac</span>
       <h1>AI Workflow Automation for Android</h1>
       <h2 class="fhero-kicker">Automate Tasks with Custom AI Actions</h2>
-      <p class="fhero-sub">Arc AI revolutionizes Android productivity with powerful <strong>AI workflow automation</strong>. Create custom <strong>AI actions</strong> tailored to your specific needs - translate text, fact-check information, simplify complex content, extract data, or build any AI-powered workflow you can imagine. One-tap access to your personalized <strong>AI automation</strong> from any app.</p>
+      <p class="fhero-sub">Turn any prompt you repeat into a one-tap <strong>AI action</strong>: translate, fact-check, simplify, extract data, or anything else you can describe. Your custom actions sit in the Arc sidebar and run on whatever is on screen, in any app.</p>
       <div class="home-hero-ctas fhero-ctas">
       <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="btn btn-primary btn-lg" data-cta="android" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>Get it on Google Play</a>
       <a href="{{ '/macos/' | relative_url }}" class="btn btn-secondary btn-lg" data-cta="mac"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>Download for Mac</a>
@@ -45,149 +43,28 @@ last_modified_at: 2026-09-19
 
 ---
 
-## What is AI Workflow Automation?
-
-AI workflow automation in Arc AI lets you create custom AI commands that execute complex tasks with a single tap. Instead of manually performing repetitive actions, you can automate them with intelligent AI that understands context and delivers consistent results.
-
-<div class="section-highlight">
-  <h3>Examples of Custom AI Actions:</h3>
-  <ul>
-    <li><strong>Translation:</strong> "Translate this to Spanish" - instant multilingual translation</li>
-    <li><strong>Simplification:</strong> "Explain like I'm 5" - make complex content understandable</li>
-    <li><strong>Fact Checking:</strong> "Verify these facts" - AI-powered fact verification</li>
-    <li><strong>Data Extraction:</strong> "Extract email addresses" - pull specific information</li>
-    <li><strong>Tone Adjustment:</strong> "Make this more professional" - rewrite with different tone</li>
-    <li><strong>Key Points:</strong> "List main takeaways" - structured information extraction</li>
-  </ul>
-</div>
-
----
-
 ## How AI Automation Works
+
+A custom action is a saved prompt that runs on the content of your current screen. Instead of copying text into a chatbot and retyping the same instruction, you tap the action and get the result in 2–3 seconds.
 
 <div class="steps-container">
   <div class="step">
     <div class="step-number">1</div>
-    <div class="step-title">Create Custom Action</div>
-    <p class="step-description">Write an AI prompt describing what you want automated</p>
+    <div class="step-title">Write the Prompt</div>
+    <p class="step-description">Settings → Custom Actions → Create New Action. Describe what you want done, e.g. "Extract all dates"</p>
   </div>
-  
+
   <div class="step">
     <div class="step-number">2</div>
-    <div class="step-title">Add to Sidebar</div>
-    <p class="step-description">Save your AI action to the floating sidebar for instant access</p>
+    <div class="step-title">Choose the Toggles</div>
+    <p class="step-description">Turn on screenshot capture or web search only if the action needs them</p>
   </div>
-  
+
   <div class="step">
     <div class="step-number">3</div>
-    <div class="step-title">One-Tap Execution</div>
-    <p class="step-description">Execute your custom AI workflow on any content with one tap</p>
+    <div class="step-title">Run It Anywhere</div>
+    <p class="step-description">The action appears in your floating sidebar — tap it over any app to run it on what's on screen</p>
   </div>
-  
-  <div class="step">
-    <div class="step-number">4</div>
-    <div class="step-title">Get AI Results</div>
-    <p class="step-description">Receive AI-processed results instantly based on your custom action</p>
-  </div>
-</div>
-
----
-
-## Powerful Automation Features
-
-<div class="features-grid">
-  <div class="feature-card">
-    <span class="feature-icon">✨</span>
-    <h3 class="feature-title">Unlimited Custom Actions</h3>
-    <p class="feature-description">Create as many AI actions as you need. Build a complete AI automation toolkit tailored to your workflow.</p>
-  </div>
-  
-  <div class="feature-card">
-    <span class="feature-icon">🔍</span>
-    <h3 class="feature-title">Web Search Integration</h3>
-    <p class="feature-description">Enable web search for actions that need real-time information and fact-checking capabilities.</p>
-  </div>
-  
-  <div class="feature-card">
-    <span class="feature-icon">📸</span>
-    <h3 class="feature-title">Screenshot Support</h3>
-    <p class="feature-description">Include visual context with screenshot capture for actions that analyze images or layouts.</p>
-  </div>
-  
-  <div class="feature-card">
-    <span class="feature-icon">🌐</span>
-    <h3 class="feature-title">Community Actions</h3>
-    <p class="feature-description">Browse and add AI actions created by the community. Share your best automations with others.</p>
-  </div>
-  
-  <div class="feature-card">
-    <span class="feature-icon">⚡</span>
-    <h3 class="feature-title">Instant Execution</h3>
-    <p class="feature-description">All custom actions execute in 2-3 seconds. No waiting, no manual steps - just results.</p>
-  </div>
-  
-  <div class="feature-card">
-    <span class="feature-icon">🎯</span>
-    <h3 class="feature-title">Context-Aware AI</h3>
-    <p class="feature-description">AI understands the content on your screen and applies actions with contextual intelligence.</p>
-  </div>
-</div>
-
----
-
-<div class="section-highlight">
-  <h2>Popular Automation Use Cases</h2>
-  
-  ### **For Professionals**
-  - Email drafting and response templates
-  - Professional tone conversion
-  - Meeting notes summarization
-  - Document formatting and structure
-  - Competitive intelligence extraction
-  
-  ### **For Students**
-  - Study guide generation
-  - Concept explanation in simple terms
-  - Citation and reference extraction
-  - Language translation for research
-  - Quiz question generation
-  
-  ### **For Content Creators**
-  - Content repurposing for different platforms
-  - SEO keyword extraction
-  - Hashtag generation
-  - Tone and style adjustment
-  - Grammar and clarity improvement
-  
-  ### **For Researchers**
-  - Data point extraction
-  - Methodology summarization
-  - Citation formatting
-  - Literature review assistance
-  - Statistical interpretation
-</div>
-
----
-
-## AI Fact Checker Feature
-
-One of the most powerful automation features is Arc AI's **AI fact checker**. Create custom actions to:
-
-- Verify claims and statements
-- Check statistical accuracy
-- Identify potential misinformation
-- Cross-reference information with web sources
-- Get confidence ratings on factual claims
-
-Perfect for combating misinformation and ensuring accuracy in your work.
-
----
-
-<div class="accessibility-section">
-  <h2>Automation for Everyone</h2>
-  <p>
-    AI workflow automation makes technology more accessible. Users with various needs can create custom actions that adapt content to their preferences - simplify complex language, change text formatting, add context, or automate accessibility features that aren't available in other apps.
-  </p>
 </div>
 
 ---
@@ -223,57 +100,32 @@ Four things separate an action you keep from one you delete after a week:
 - **Use the two toggles deliberately.** *Screenshot capture* lets the action see text inside images, video subtitles, and apps that block text extraction — useful for learning and receipts, unnecessary for a web article. *Web search* lets it check the screen against something other than itself, which is the whole point of a fact-check action and pure latency everywhere else.
 - **Narrow beats clever.** Two sharp actions beat one that tries to branch. "Extract dates" and "extract contacts" both work; "extract the important stuff" does not.
 
-Actions have no cap — make as many as you want. Configurations are stored on the device and sync to your Google Drive if you turn on backup, so a new phone gets your sidebar back. Running an action needs a connection, since the models are cloud-side.
-
 ## Community Actions
 
-Actions written by other people are browsable in the app, and you can publish your own with a Google sign-in. This is the part that tends to surprise people: the useful ones are rarely the general-purpose prompts. A kanji-breakdown action written by someone in Japan is now used by thousands of learners — the kind of thing that never survives a product roadmap but does fine when whoever needed it just built it.
-
-If you build one that earns a permanent sidebar slot, it is worth publishing.
-
----
-
-## Advanced Automation Capabilities
-
-### **Chained Workflows**
-While each action runs independently, you can create multiple specialized actions that work together sequentially for complex workflows.
-
-### **Template-Based Actions**
-Create action templates for common tasks and customize them for specific situations with minimal effort.
-
-### **Multi-Language Support**
-Arc's app interface and AI features support 9 languages: English, Spanish, German, French, Portuguese (Brazil & Portugal), Korean, Japanese, and Indonesian. AI actions work seamlessly across these languages for translation workflows, multilingual summaries, and language-specific processing.
-
-### **Data Processing**
-Extract structured data, parse information, reorganize content, or transform unstructured text into organized formats.
+Actions written by other people are browsable in the app, and you can publish your own with a Google sign-in. The useful ones are rarely general-purpose: a kanji-breakdown action written by someone in Japan is now used by thousands of learners — the kind of thing that never survives a product roadmap but does fine when whoever needed it just built it.
 
 ---
 
 ## Frequently Asked Questions
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
-  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">How do I create a custom AI action?</summary>
-  <p style="padding: 10px 20px; color: var(--text-2);">Open Arc AI settings, go to Custom Actions, and tap "Create New Action". Write a clear prompt describing what you want the AI to do (e.g., "Translate to French" or "Extract all dates"). You can enable screenshot capture and web search if needed. Save it and it appears in your sidebar.</p>
-</details>
-
-<details style="margin: 20px auto; max-width: 800px; text-align: left;">
   <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can I share my custom actions?</summary>
-  <p style="padding: 10px 20px; color: var(--text-2);">Yes! You can publish your custom actions to the Community Actions library where other Arc AI users can discover and use them. Sign in with Google to publish actions.</p>
+  <p style="padding: 10px 20px; color: var(--text-2);">Yes. Publish them to the Community Actions library with a Google sign-in, and other Arc users can find and add them.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
   <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Are there limits on custom actions?</summary>
-  <p style="padding: 10px 20px; color: var(--text-2);">You can create unlimited custom actions. The only limit is your imagination! Actions can be simple one-line prompts or complex multi-step instructions.</p>
+  <p style="padding: 10px 20px; color: var(--text-2);">No. You can create unlimited custom actions, from one-line prompts to multi-step instructions.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
   <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">How accurate is the AI fact checker?</summary>
-  <p style="padding: 10px 20px; color: var(--text-2);">The AI fact checker uses advanced language models with web search capabilities to verify information. While highly effective, always verify critical information from authoritative sources. Think of it as a helpful first-pass fact-checking assistant.</p>
+  <p style="padding: 10px 20px; color: var(--text-2);">A fact-check action with web search enabled checks each claim against outside sources and links one. Treat it as a fast first pass and verify anything critical against an authoritative source.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
   <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can actions work without internet?</summary>
-  <p style="padding: 10px 20px; color: var(--text-2);">Custom AI actions require an internet connection as they use cloud-based AI models. However, your action configurations are stored locally and synced to your Google Drive if you choose backup.</p>
+  <p style="padding: 10px 20px; color: var(--text-2);">No. Running an action needs a connection because the models are cloud-side. Your action configurations are stored on the device and sync to Google Drive if you turn on backup, so a new phone gets your sidebar back.</p>
 </details>
 
 ---
@@ -294,8 +146,8 @@ Extract structured data, parse information, reorganize content, or transform uns
 
 - **[AI Summary &amp; Reader]({{ '/ai-summary-reader/' | relative_url }})** - Automatic text summarization and text-to-speech
 - **[AI Writer]({{ '/ai-writer/' | relative_url }})** - Rewrite, reply, and polish text in any app
-- **[AI Chat Assistant]({{ '/' | relative_url }})** - Conversational AI for deeper insights
-- **[Home]({{ '/' | relative_url }})** - Discover all Arc AI features
+- **[Smart Extract]({{ '/smart-extract/' | relative_url }})** - Built-in extraction of dates, contacts and codes
+- **[Flashcards]({{ '/flashcards/' | relative_url }})** - Turn captured vocabulary into a study deck
 
 ## Available Platforms
 
@@ -303,14 +155,3 @@ Extract structured data, parse information, reorganize content, or transform uns
 - **[Arc for iOS]({{ '/ios/' | relative_url }})** - In development
 - **[Arc for Mac]({{ '/macos/' | relative_url }})** - Available now, free download
 - **[Arc for Windows]({{ '/windows/' | relative_url }})** - Free on the Microsoft Store
-
----
-
-<div class="footer-section">
-  <p style="color: var(--text-2); margin-top: 20px;">
-    <strong>Arc AI:</strong> Powerful AI workflow automation for Android<br>
-    © 2026 Mamata. All rights reserved.
-  </p>
-</div>
-
-

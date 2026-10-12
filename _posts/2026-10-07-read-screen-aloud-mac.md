@@ -10,8 +10,14 @@ og_image: /assets/images/og-post-read-screen-aloud-mac.png
 faq:
   - question: "How do I make my Mac read screen aloud with no installs at all?"
     answer: "Enable System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 \"Speak selection\", select text anywhere, and press Option+Esc. That's the complete built-in read screen aloud Mac flow \u2014 no third-party app needed."
+  - question: "What is the MacBook read text aloud shortcut?"
+    answer: "Option+Esc for Speak Selection (customizable in the Read & Speak settings) and Cmd+F5 to toggle VoiceOver. Arc adds its own global overlay shortcut \u2014 Control+Space by default \u2014 which you can rebind to anything you like."
   - question: "Can my Mac read screen aloud without me selecting text first?"
     answer: "With built-in tools, only Preview does full-document read screen aloud duty for PDFs via Edit \u2192 Speech. For any app \u2014 Chrome, Mail, Slack, anything \u2014 Arc's overlay captures the entire visible window on Control+Space and reads it, no selection required."
+  - question: "Can a MacBook Air read text aloud?"
+    answer: "Yes. Every Mac, including the MacBook Air, has Spoken Content under Accessibility settings, and text to speech is a light workload. Arc runs natively on Apple Silicon (M1 through M4) and on Intel Macs from the last several years."
+  - question: "Is there a free way to get better voices?"
+    answer: "Two. Download an Enhanced or Premium system voice for Speak Selection, which costs nothing. Or try Arc free: the core loop of Control+Space, then read aloud or summarize, needs no subscription to test."
   - question: "What's better for long articles, read-aloud or an AI summary?"
     answer: "Use both: read-aloud to stay hands-free while you're cooking or walking, AI summary when the goal is deciding fast whether an article is worth your attention. Arc does both from the same capture \u2014 the voice reading is the input, the summary workflow is the shortcut out."
   - question: "Does this work on phones too?"
@@ -80,7 +86,25 @@ The part I think matters most: after the reading, Arc still has the parsed text 
 
 Every capture is saved with its screenshot, so you can reopen and re-read it later — useful for anything you might want to hear again, like a meeting thread you're prepping responses for.
 
+### PDFs, email, and study notes
+
+Three cases where the screen-aware approach pays off over any upload-a-file reader:
+
+- **PDFs in Preview.** Press Control+Space over the open document and Arc works from what's visible: no dragging the file into a web app, no wondering where your contract ends up. A 60-page vendor agreement came back in about ten seconds as five bullets covering term, price, and renewal, and the chat input under the summary answered "what's the cancellation penalty in section 8?" straight from the text.
+- **Email in Mail.** A nine-reply negotiation thread condensed to who-decided-what in about five seconds, and follow-up questions pulled exact dates out of the replies.
+- **Study notes.** Arc can turn notes into flashcards, question on the front and answer on the back, so passive listening becomes active recall.
+
 <img src="{{ '/assets/images/screenshots/macos/13_saved_item_detail_with_screenshot.jpg' | relative_url }}" alt="Arc saved item detail on macOS showing the captured screenshot alongside extracted text" width="1200" height="715" loading="lazy" />
+
+## What About Speechify and Other Reader Apps?
+
+Every comparison in this category names these, so here's the straight take from someone who ships a competing product:
+
+- **Speechify.** Polished voices, 2x–4x speed, solid mobile apps. Pricing is a subscription built around premium voices (about $139/year), and it reads through its own apps and extension rather than whatever window is frontmost.
+- **Speech Central and library readers.** Great for documents, RSS, and ebooks you add to a library. Less useful for "read this exact window right now."
+- **Voice Dream-style readers.** Strong accessibility pedigree for files you import. Same limitation: your text has to come to them.
+
+All of them ask you to move text into their app, and most of them charge monthly. The built-ins and Arc work on what's already on your screen.
 
 ## Which read screen aloud Mac setup should you pick?
 
@@ -94,7 +118,7 @@ Every capture is saved with its screenshot, so you can reopen and re-read it lat
 1. **Proofread by ear.** Run the read screen aloud voice over your own draft before sending. Your ears catch double words, homophone swaps, and broken sentences your eyes have learned to skip.
 2. **Listen first, then summarize.** For long pieces, let the voice read the first few paragraphs while you decide whether it deserves a full read — if not, jump straight to the AI summary.
 3. **Chunk long documents.** Read-aloud quality collapses when you try to hear 90 minutes straight. Treat it like a podcast: a chapter at a time.
-4. **Bind the shortcut into muscle memory.** Whichever read screen aloud Mac tool you pick, it only sticks if invoking it costs zero thought — Option+Esc or Control+Space, one motion, every time.
+4. **Bind the shortcut into muscle memory.** Whichever read screen aloud Mac tool you pick, it only sticks if invoking it costs zero thought — Option+Esc or Control+Space, one motion, every time. In Arc you can also bind a dedicated hotkey to a single action, such as summarize or open [AI Writer](/ai-writer/) on the capture, so the thing you do most never needs a menu.
 
 ## FAQ
 
@@ -104,11 +128,19 @@ Enable **System Settings → Accessibility → Read & Speak → "Speak selection
 
 ### What is the MacBook read text aloud shortcut?
 
-**Option+Esc** for Speak Selection ( customizable in the Read & Speak settings) and **Cmd+F5** to toggle VoiceOver. Arc adds its own global overlay shortcut — **Control+Space** by default — which you can rebind to anything you like.
+**Option+Esc** for Speak Selection (customizable in the Read & Speak settings) and **Cmd+F5** to toggle VoiceOver. Arc adds its own global overlay shortcut — **Control+Space** by default — which you can rebind to anything you like.
 
 ### Can my Mac read screen aloud without me selecting text first?
 
 With built-in tools, only Preview does full-document read screen aloud duty for PDFs via Edit → Speech. For any app — Chrome, Mail, Slack, anything — Arc's overlay captures the entire visible window on **Control+Space** and reads it, no selection required.
+
+### Can a MacBook Air read text aloud?
+
+Yes. Every Mac, including the MacBook Air, has Spoken Content under Accessibility settings, and text to speech is a light workload. Arc runs natively on Apple Silicon (M1 through M4) and on Intel Macs from the last several years.
+
+### Is there a free way to get better voices?
+
+Two. Download an Enhanced or Premium system voice for Speak Selection, which costs nothing. Or try Arc free: the core loop of Control+Space, then read aloud or summarize, needs no subscription to test.
 
 ### What's better for long articles, read-aloud or an AI summary?
 
