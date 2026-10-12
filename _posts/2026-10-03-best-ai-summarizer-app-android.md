@@ -9,7 +9,7 @@ keywords: "best ai summarizer, ai summarizer comparison, top ai summarizer, best
 og_image: /assets/images/og-post-best-ai-summarizer-app-android.png
 faq:
   - question: "What's the best free AI summarizer app for Android?"
-    answer: "Arc \u2014 the screen-aware summarizer, the library, text-to-speech, and follow-up chat are all free, which is why it tops this list. Summarizer.org and TLDR This also have usable free tiers for paste-in jobs if you only need an occasional digest."
+    answer: "Arc \u2014 the screen-aware summarizer, the library, text-to-speech, and follow-up chat are all on the free tier (7 requests per week), which is why it tops this list. Summarizer.org and TLDR This also have usable free tiers for paste-in jobs if you only need an occasional digest."
   - question: "Which AI summarizer app is best for students?"
     answer: "For lectures and YouTube recordings, NoteGPT \u2014 the timestamped summaries and flashcards map directly to exam prep. For textbooks and PDF chapters you read inside an app, Arc: no copy-paste, and the follow-up chat doubles as a study tool that can quiz you on the section."
   - question: "Is there an AI summarizer that works without copy-pasting?"
@@ -144,7 +144,7 @@ Then add a specialist only when your source material demands it: recordings (Sum
 
 ### What's the best free AI summarizer app for Android?
 
-Arc — the screen-aware summarizer, the library, text-to-speech, and follow-up chat are all free, which is why it tops this list. Summarizer.org and TLDR This also have usable free tiers for paste-in jobs if you only need an occasional digest.
+Arc — the screen-aware summarizer, the library, text-to-speech, and follow-up chat are all on the free tier (7 requests per week), which is why it tops this list. Summarizer.org and TLDR This also have usable free tiers for paste-in jobs if you only need an occasional digest.
 
 ### Which AI summarizer app is best for students?
 

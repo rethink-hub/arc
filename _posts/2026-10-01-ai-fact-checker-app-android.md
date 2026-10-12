@@ -133,9 +133,9 @@ On desktop, people install browser extensions. On Android, Arc does the same job
 
 With Arc and Gemini Flash, a typical check on one article returns in 5–10 seconds. Long posts with many claims take a bit longer. The sidebar stays available while it works, so you can keep reading and come back to the panel.
 
-### Will Arc's fact checker come to iPhone or Windows?
+### Does Arc's fact checker work on iPhone or Windows?
 
-iOS and Windows versions are in development. The Windows build is expected to mirror the current macOS app — same fact check, summaries, and custom actions at a global shortcut. Meanwhile Arc on Android delivers the full workflow today, and Arc for Mac is already released with the same Verify-Facts setup at Control+Space.
+Arc for Windows is available now on the Microsoft Store and mirrors the macOS app — same fact check, summaries, and custom actions at a global shortcut (Ctrl+Space). An iOS version is in development. Meanwhile Arc on Android delivers the full workflow today, and Arc for Mac is already released with the same Verify-Facts setup at Control+Space.
 
 Try Arc free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc).
 

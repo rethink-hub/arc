@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI Note Taker for Calls — Transcribe & Summarize | Arc"
-description: "Free AI note taker for phone calls and meetings. Live transcription, instant summary, speaker detection, and one-tap calendar reminders. Android & Mac."
+description: "Free AI note taker for phone calls and meetings. Live transcription, instant summary, speaker detection, and one-tap calendar reminders. Android, Mac & Windows."
 keywords: "ai note taker, call summary app, ai call transcription, meeting notes ai, call transcription app, ai call analysis, call summary"
 og_image: /assets/images/og-arc.png
 product_page: true
@@ -143,7 +143,7 @@ Speaker 1: Sure, let me pull up the details. The current deadline is March 30th.
   <tr><td>One-tap extractions</td><td>✅ Calendar, contacts, maps, links</td><td>⚠️ Varies by tool</td></tr>
   <tr><td>Auto mode for recordings folder</td><td>✅ New files processed automatically</td><td>⚠️ Varies; often manual upload</td></tr>
   <tr><td>Also part of a full assistant</td><td>✅ Summaries, flashcards, TTS, chat</td><td>❌ Notes only</td></tr>
-  <tr><td>Free tier</td><td>✅ Generous</td><td>⚠️ Limited minutes per month</td></tr>
+  <tr><td>Free tier</td><td>✅ 7 requests/week</td><td>⚠️ Limited minutes per month</td></tr>
 </table>
 
 <p>The fair counterpoint: if your calls are Zoom-and-Slack all day and your team shares notes, dedicated meeting tools with calendar sync and CRM integrations fit better. Arc is for the calls that never appear on a calendar — the contractor's quote, the doctor's instructions, the "quick question" that became a scope change.</p>
@@ -166,7 +166,7 @@ Speaker 1: Sure, let me pull up the details. The current deadline is March 30th.
 <div class="content-section">
   <details>
     <summary>Is the AI note taker free?</summary>
-    <p>Yes — Arc includes free call transcription and summaries with generous daily usage. An optional premium subscription removes limits.</p>
+    <p>Yes — Arc includes free call transcription and summaries, with 7 requests per week on the free tier. An optional premium subscription removes limits.</p>
   </details>
   <details>
     <summary>Does it work on regular phone calls, not just meetings?</summary>
@@ -207,7 +207,7 @@ Speaker 1: Sure, let me pull up the details. The current deadline is March 30th.
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is the AI note taker free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc includes free call transcription and summaries with generous daily usage. An optional premium subscription removes limits."}},
+    {"@type": "Question", "name": "Is the AI note taker free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc includes free call transcription and summaries, with 7 requests per week on the free tier. An optional premium subscription removes limits."}},
     {"@type": "Question", "name": "Does it work on regular phone calls, not just meetings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc captures your actual phone calls with your consent, unlike most note takers which only join scheduled meeting apps. No bot joins the call."}},
     {"@type": "Question", "name": "Can it create calendar events from the call?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — dates, numbers, addresses and links are extracted with one-tap actions that create real calendar entries, reminders, contacts and map pins."}},
     {"@type": "Question", "name": "Can it process recordings I already have?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Manual Upload accepts MP3, M4A, WAV, AAC, OGG and FLAC files up to 100 MB, and Auto Analysis processes new recordings from a folder you choose."}},

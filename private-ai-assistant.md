@@ -113,7 +113,7 @@ last_modified_at: 2026-09-19
 
 <div class="content-section">
   <h2>How Arc makes money (the honest version)</h2>
-  <p>Arc is built by one person — I'm Mamata, an indie developer — and funded by an optional subscription, not by advertising or data. The free plan includes a weekly allowance of AI requests because generation costs money per request; the subscription keeps the lights on <em>instead of</em> your data. No ads, no selling or sharing your content with advertisers or data brokers. Anonymous crash reporting exists, but it's a toggle in Settings → Privacy, and switching it off stops reporting entirely.</p>
+  <p>Arc is built by one person — I'm Mamata, an indie developer — and funded by an optional subscription, not by advertising or data. The free plan includes 7 AI requests per week because generation costs money per request; the subscription keeps the lights on <em>instead of</em> your data. No ads, no selling or sharing your content with advertisers or data brokers. Anonymous crash reporting exists, but it's a toggle in Settings → Privacy, and switching it off stops reporting entirely.</p>
   <p>Every claim on this page maps to a behavior you can verify in the app, and the <a href="/privacy/" target="_blank" rel="noopener">privacy policy</a> is written in plain language.</p>
 </div>
 

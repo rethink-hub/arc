@@ -28,7 +28,7 @@ faq:
 
 You open a 30-page PDF, a dense newsletter, or a Slack thread that somehow became a novel, and your eyes are done for the day. You want your Mac to read screen aloud instead — ideally with one shortcut, in whatever app you're already in. macOS can do this. Apple ships a genuinely good screen reader and a decent selection reader, but both are buried in System Settings, and neither will tell you what the text actually *means*.
 
-I build [Arc](/), an AI screen assistant for Mac and Android, and read-aloud is one of the top three things people install it for. In this guide I'll walk through every way to set up a read screen aloud Mac workflow — the free built-in routes first, because they're honest options — then the AI overlay route that handles the "any window, no selecting, and summarize it too" case.
+I build [Arc](/), an AI screen assistant for Mac, Windows and Android, and read-aloud is one of the top three things people install it for. In this guide I'll walk through every way to set up a read screen aloud Mac workflow — the free built-in routes first, because they're honest options — then the AI overlay route that handles the "any window, no selecting, and summarize it too" case.
 
 ## Option 1: Speak Selection — the built-in read screen aloud Mac tool
 

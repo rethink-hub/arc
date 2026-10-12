@@ -139,7 +139,7 @@ Yes, but with a clear split: device-level automation (Wi-Fi toggles, scheduled S
 The three most-used in Arc: drafting replies (Smart Reply on 10+ messengers a day), fact-checking forwarded messages before reacting, and extracting action items from long emails. Students lean on ELI5 and Math Solver, shoppers on Find Cheaper Alternatives with web search.
 
 ### What should an AI automation app Android handle first?
-Yes — Arc is free to download from Google Play, and free actions cover custom + built-in AI actions like summary, translation, Math Solver and Fact Check. If your workflow needs a heavier model or many actions per day, Arc Premium unlocks it — no paywall on the core AI workflow automation.
+Yes — Arc is free to download from Google Play, and free actions cover custom + built-in AI actions like summary, translation, Math Solver and Fact Check. If your workflow needs a heavier model or more than the free tier's 7 requests per week, Arc Premium unlocks it — no paywall on the core AI workflow automation.
 
 ### Is Arc the best Tasker alternative for AI work?
 Different categories, different winners. Tasker remains the tool for device triggers (Wi-Fi, Bluetooth, time-based flows). For language-heavy work — replies, translation, fact checks, extraction on whatever is on screen — an AI automation app Android is the better fit. Many power users, myself included, run both.

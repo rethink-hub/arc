@@ -106,7 +106,7 @@ How you decide to summarize text on Android mostly comes down to friction: the l
 ## FAQ: how to summarize text on Android
 
 **How to summarize text on Android for free?**
-Install [Arc from Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc), grant the accessibility permission, open any app with text, tap the floating tab, and choose AI Summary. Arc is free to try — you get a daily free quota of AI actions, enough to test the summarizer properly before paying.
+Install [Arc from Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc), grant the accessibility permission, open any app with text, tap the floating tab, and choose AI Summary. Arc is free to try — you get 7 free AI requests per week, enough to test the summarizer properly before paying.
 
 **How to summarize text on Android without copying and pasting?**
 Use a screen assistant instead of share-to-app tools. Arc reads what's already visible on screen, so the workflow is: open the app, tap the floating tab, tap AI Summary. No selection, no clipboard, no app switching.

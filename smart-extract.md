@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Screenshot to Text — Extract Data from Any Screen | Arc"
-description: "Turn any screenshot or screen into text: contacts, OTP codes, dates and links extracted in one tap, even from apps that block copying. Free on Android and Mac."
+description: "Turn any screenshot or screen into text: contacts, OTP codes, dates and links extracted in one tap, even from apps that block copying. Free on Android, Mac and Windows."
 keywords: "screenshot to text, extract data from image, ai data extraction, ai text extractor, extract text from screen, contact extractor, ocr app android"
 og_image: /assets/images/og-arc.png
 product_page: true
@@ -118,7 +118,7 @@ last_modified_at: 2026-09-19
   </details>
   <details>
     <summary>Is the contact extractor free?</summary>
-    <p>Yes — Smart Extract including contact extraction, OTP capture, and OCR is free with generous daily usage. Premium removes limits.</p>
+    <p>Yes — Smart Extract including contact extraction, OTP capture, and OCR is included in the free tier, which gives you 7 requests per week. Premium removes limits.</p>
   </details>
   <details>
     <summary>Is there an extract tool for Mac or Windows?</summary>
@@ -191,7 +191,7 @@ last_modified_at: 2026-09-19
       "name": "Is the contact extractor free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — Smart Extract including contact extraction, OTP capture, and OCR is free with generous daily usage. Premium removes limits."
+        "text": "Yes — Smart Extract including contact extraction, OTP capture, and OCR is included in the free tier, which gives you 7 requests per week. Premium removes limits."
       }
     },
     {

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Terms of Service - Arc AI: Android & macOS AI Assistant"
-description: "Terms of Service for the Arc AI assistant on Android and macOS. Usage terms, AI features, billing, and conditions for our productivity app."
+title: "Terms of Service - Arc AI: Android, macOS & Windows AI Assistant"
+description: "Terms of Service for the Arc AI assistant on Android, macOS and Windows. Usage terms, AI features, billing, and conditions for our productivity app."
 keywords: "Arc AI terms, Android AI app terms of service, Mac AI app terms of service"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow
@@ -41,7 +41,7 @@ By using Arc, you confirm that:
 
 ## 2. Description of Service
 
-Arc is an accessibility-based AI assistant, available as an Android application and as a macOS application, providing the following core features:
+Arc is an accessibility-based AI assistant, available as an Android application, a macOS application and a Windows application, providing the following core features:
 
 **⚡ Floating Sidebar:** A persistent overlay interface accessible from any app (requires Display Over Other Apps permission)
 

@@ -94,7 +94,7 @@ That means the Mac version will get better in the direction users actually push 
 
 ---
 
-*Arc is also available on [Android]({{ '/android/' | relative_url }}). [iOS]({{ '/ios/' | relative_url }}) and [Windows]({{ '/windows/' | relative_url }}) are on the way.*
+*Arc is also available on [Android]({{ '/android/' | relative_url }}) and [Windows]({{ '/windows/' | relative_url }}). [iOS]({{ '/ios/' | relative_url }}) is on the way.*
 
 <!-- sources -->
 *Further reading: [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility) · [Google's Gemini developer docs](https://ai.google.dev/).*

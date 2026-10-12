@@ -9,7 +9,7 @@ og_image: /assets/images/og-post-ai-reply-generator-android.png
 keywords: "ai reply generator android, ai message generator, ai reply app, ai text reply generator"
 faq:
   - question: "Is this AI reply generator Android app free?"
-    answer: "Yes \u2014 Arc is free to download from Google Play, and reply generation works on the free tier. It runs entirely as an overlay over apps you already use, with no per-reply limits baked into the free experience."
+    answer: "Yes \u2014 Arc is free to download from Google Play, and reply generation works on the free tier. It runs entirely as an overlay over apps you already use, and the free tier gives you 7 requests per week."
   - question: "Can it match my tone \u2014 funny, flirty, formal?"
     answer: "Through Custom instructions, yes. The reply generator writes in whatever register you describe: \"keep it playful\", \"make it formal\", \"short and warm\". It's a text instruction, so the range is wide \u2014 people use it for dating app replies, rizz-adjacent banter, and stiff corporate emails alike."
   - question: "Which apps does the AI reply generator Android version support?"
@@ -134,7 +134,7 @@ The same AI reply generator Android users get also runs on macOS. On a Mac, Arc 
 
 ### Is this AI reply generator Android app free?
 
-Yes — Arc is free to download from Google Play, and reply generation works on the free tier. It runs entirely as an overlay over apps you already use, with no per-reply limits baked into the free experience.
+Yes — Arc is free to download from Google Play, and reply generation works on the free tier. It runs entirely as an overlay over apps you already use, and the free tier gives you 7 requests per week.
 
 ### Can it match my tone — funny, flirty, formal?
 

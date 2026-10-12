@@ -39,7 +39,7 @@ Arc for Mac ships as a notarized DMG from [arcassistant.app/macos/](/macos/), so
 3. Launch it. Onboarding asks for **Accessibility permission** — this is what lets Arc read the text of the window in front of you. It's the same macOS API family that VoiceOver uses, and nothing is read until you actively press the shortcut.
 4. That's it. There's no account wall before your first summary.
 
-Arc runs natively on Apple Silicon and Intel, on macOS 14 (Sonoma) or later, and the free tier covers your daily summarizing. Screen Recording permission is only requested if you use screenshot-based actions — plain text summarization needs Accessibility alone.
+Arc runs natively on Apple Silicon and Intel, on macOS 14 (Sonoma) or later, and the free tier gives you 7 requests per week. Screen Recording permission is only requested if you use screenshot-based actions — plain text summarization needs Accessibility alone.
 
 ## Step 2: Control+Space — the Only Shortcut You Need
 
@@ -141,7 +141,7 @@ Install Arc for Mac, grant Accessibility permission, then press **Control+Space*
 Yes. Open the PDF in Preview (or any reader), press Control+Space, and pick Summarize. Arc reads the document directly, so there's no uploading or exporting, and you can ask follow-up questions about specific sections of the PDF afterward.
 
 **Is there a free AI summarizer Mac users can start with?**
-Arc is free to start and covers daily summarizing out of the box — the floating panel, summaries, and follow-up questions work on the free tier. Paid plans add higher limits and extras like Drive backup, and one subscription covers both the Mac and Android apps.
+Arc is free to start, with 7 requests per week — the floating panel, summaries, and follow-up questions work on the free tier. Paid plans add higher limits and extras like Drive backup, and one subscription covers the Mac, Windows and Android apps.
 
 **Do I need a browser extension to summarize web pages on Mac?**
 No. Arc is a system-wide app, not an extension — it reads the frontmost window through macOS accessibility APIs, so it works in Safari, Chrome, and every other app without installing anything per-browser and without any extension permissions to audit.

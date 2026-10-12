@@ -80,7 +80,7 @@ Rewrite keeps your facts: it will turn "can't make 3pm" into "I'm unable to atte
 
 Setup is two permissions — accessibility, so Arc can read screen text, and display-over-other-apps, so the sidebar can float — granted from onboarding in about two minutes. Arc disables itself automatically in around 400 sensitive apps, including banking, crypto and password managers, and you can add your own exclusions.
 
-The free tier is 7 requests per week. Premium removes the cap and covers [Android]({{ '/android/' | relative_url }}) and [Mac]({{ '/macos/' | relative_url }}) on one subscription. No ad tier, no expiring trial.
+The free tier is 7 requests per week. Premium removes the cap and covers [Android]({{ '/android/' | relative_url }}), [Mac]({{ '/macos/' | relative_url }}) and [Windows]({{ '/windows/' | relative_url }}) on one subscription. No ad tier, no expiring trial.
 
 ---
 

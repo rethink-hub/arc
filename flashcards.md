@@ -83,7 +83,7 @@ last_modified_at: 2026-09-19
 
 <h3>Keyboard-first study mode</h3>
 
-<p>On Mac (and soon Windows) the study loop never needs the mouse: <strong>Space</strong> flips, <strong>H</strong> shows the hint, <strong>← →</strong> page through, <strong>Esc</strong> closes. A counter pill shows <em>2 / 5</em>, and chevrons and click-to-flip are there for mouse users.</p>
+<p>On Mac and Windows the study loop never needs the mouse: <strong>Space</strong> flips, <strong>H</strong> shows the hint, <strong>← →</strong> page through, <strong>Esc</strong> closes. A counter pill shows <em>2 / 5</em>, and chevrons and click-to-flip are there for mouse users.</p>
 
 <div style="text-align:center; margin: var(--lg) 0;">
   <img class="inline-shot" width="1200" height="712" src="/assets/images/screenshots/macos/09_flashcards_viewer_question.jpg" alt="Arc flashcard viewer on macOS showing a question face, card counter, and Space to reveal" loading="lazy">
@@ -142,7 +142,7 @@ last_modified_at: 2026-09-19
 <div class="content-section">
   <details>
     <summary>Is this flashcard maker really free?</summary>
-    <p>Yes — Arc is free to download with generous flashcard generation on the free plan. Deck generation counts against a weekly quota; an optional premium subscription removes limits.</p>
+    <p>Yes — Arc is free to download, and flashcard generation works on the free plan. Deck generation counts against the free tier's 7 requests per week; an optional premium subscription removes limits.</p>
   </details>
   <details>
     <summary>Can I convert a PDF to flashcards?</summary>
@@ -154,7 +154,7 @@ last_modified_at: 2026-09-19
   </details>
   <details>
     <summary>Does it work on Mac or Windows?</summary>
-    <p>Arc for macOS is available now (free, notarized, macOS 14+) with keyboard-first study mode. The Windows version is coming soon, with the same viewer and keys.</p>
+    <p>Arc for macOS is available now (free, notarized, macOS 14+) with keyboard-first study mode. Arc for Windows is available now on the Microsoft Store, with the same viewer and keys.</p>
   </details>
   <details>
     <summary>How is this different from Anki?</summary>
@@ -179,10 +179,10 @@ last_modified_at: 2026-09-19
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is this flashcard maker really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is free to download with generous flashcard generation on the free plan. Deck generation counts against a weekly quota; an optional premium subscription removes limits."}},
+    {"@type": "Question", "name": "Is this flashcard maker really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is free to download, and flashcard generation works on the free plan. Deck generation counts against the free tier's 7 requests per week; an optional premium subscription removes limits."}},
     {"@type": "Question", "name": "Can I convert a PDF to flashcards?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — open the PDF on screen, invoke Flashcards, and Arc generates a question-hint-answer deck from the visible content. No upload or conversion step."}},
     {"@type": "Question", "name": "Can I print my flashcards?", "acceptedAnswer": {"@type": "Answer", "text": "Decks are designed for in-app study mode, but every card is plain text — question, hint, and answer — so you can copy any deck out for printing whenever you need paper cards."}},
-    {"@type": "Question", "name": "Does it work on Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Arc for macOS is available now (free, notarized, macOS 14+) with keyboard-first study mode. The Windows version is coming soon, with the same viewer and keys."}},
+    {"@type": "Question", "name": "Does it work on Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Arc for macOS is available now (free, notarized, macOS 14+) with keyboard-first study mode. Arc for Windows is available now on the Microsoft Store, with the same viewer and keys."}},
     {"@type": "Question", "name": "How is this different from Anki?", "acceptedAnswer": {"@type": "Answer", "text": "Arc generates full decks from any on-screen content in one tap, while Anki excels at long-term spaced repetition of decks you build by hand. Many students use both."}}
   ]
 }

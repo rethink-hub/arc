@@ -140,7 +140,7 @@ last_modified_at: 2026-09-19
 <div class="content-section">
   <details>
     <summary>Is this text-to-speech app free?</summary>
-    <p>Yes — AI Read is included free with generous daily usage and no per-minute charges. Optional premium removes limits.</p>
+    <p>Yes — AI Read is included in the free tier (7 requests per week) with no per-minute charges. Optional premium removes limits.</p>
   </details>
   <details>
     <summary>Is Arc good for dyslexia?</summary>
@@ -156,7 +156,7 @@ last_modified_at: 2026-09-19
   </details>
   <details>
     <summary>Is there a text-to-speech app for iPhone?</summary>
-    <p>The iOS version is coming soon. Arc for Android and macOS are available today.</p>
+    <p>The iOS version is coming soon. Arc for Android, macOS and Windows are available today.</p>
   </details>
 </div>
 
@@ -190,11 +190,11 @@ last_modified_at: 2026-09-19
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is this text-to-speech app free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — AI Read is included free with generous daily usage and no per-minute charges. Optional premium removes limits."}},
+    {"@type": "Question", "name": "Is this text-to-speech app free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — AI Read is included in the free tier (7 requests per week) with no per-minute charges. Optional premium removes limits."}},
     {"@type": "Question", "name": "Is Arc good for dyslexia?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is accessibility-first (WCAG 2.1 AA, TalkBack support): one tap reads any screen aloud without copying text into another app."}},
     {"@type": "Question", "name": "Can it read PDFs aloud?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — open the PDF on screen, invoke AI Read, and Arc reads it with natural voices in 100+ auto-detected languages."}},
     {"@type": "Question", "name": "How do I get better-sounding voices?", "acceptedAnswer": {"@type": "Answer", "text": "Natural voices are free OS downloads — Arc's Get Voices button opens the OS voice settings directly, with Premium/Enhanced voices on macOS and Natural/Neural voices on Windows."}},
-    {"@type": "Question", "name": "Is there a text-to-speech app for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "The iOS version is coming soon. Arc for Android and macOS are available today."}}
+    {"@type": "Question", "name": "Is there a text-to-speech app for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "The iOS version is coming soon. Arc for Android, macOS and Windows are available today."}}
   ]
 }
 </script>

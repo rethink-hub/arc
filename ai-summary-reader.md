@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI Summarizer That Reads Any Screen — Free | Arc"
-description: "A free AI summarizer that works on the screen you're already on. Summarize any article, email or PDF in one tap, then listen to it. Android and Mac."
+description: "A free AI summarizer that works on the screen you're already on. Summarize any article, email or PDF in one tap, then listen to it. Android, Mac and Windows."
 keywords: "ai summarizer, ai summary generator, ai summarizer app, ai article summarizer, ai summary app, ai text reader, ai reading assistant"
 og_image: /assets/images/og-ai-summary-reader.png
 product_page: true

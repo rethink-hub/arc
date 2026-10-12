@@ -82,7 +82,7 @@ last_modified_at: 2026-09-19
 <div class="content-section">
   <div class="glass rounded-2xl" style="text-align:center; padding: var(--xl);">
     <h2>Stop typing the same replies.</h2>
-    <p class="hero-subtitle">Free download, free daily usage.</p>
+    <p class="hero-subtitle">Free download, 7 free requests a week.</p>
     <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button" target="_blank" rel="noopener">Get Arc Free</a>
   </div>
 </div>
@@ -95,7 +95,7 @@ last_modified_at: 2026-09-19
 <div class="content-section">
   <details>
     <summary>Is the AI reply generator free?</summary>
-    <p>Yes — Arc is free to download with generous daily usage on reply generation, rewrites, and grammar fixes. An optional premium subscription removes limits.</p>
+    <p>Yes — Arc is free to download, with 7 requests per week on reply generation, rewrites, and grammar fixes. An optional premium subscription removes limits.</p>
   </details>
   <details>
     <summary>Which apps does the reply generator work in?</summary>
@@ -144,7 +144,7 @@ last_modified_at: 2026-09-19
       "name": "Is the AI reply generator free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — Arc is free to download with generous daily usage on reply generation, rewrites, and grammar fixes. An optional premium subscription removes limits."
+        "text": "Yes — Arc is free to download, with 7 requests per week on reply generation, rewrites, and grammar fixes. An optional premium subscription removes limits."
       }
     },
     {

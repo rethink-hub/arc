@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Personal AI Assistant That Knows Your Context | Arc — Free"
-description: "A personal AI assistant that works on your current screen and remembers who you are. Summarize, write, extract and automate in any app. Free on Android and Mac."
+description: "A personal AI assistant that works on your current screen and remembers who you are. Summarize, write, extract and automate in any app. Free on Android, Mac and Windows."
 keywords: "personal ai assistant, personal ai assistant app, best personal ai assistant, free personal ai assistant, ai personal assistant app, personal ai assistant android"
 og_image: /assets/images/og-personal-ai-assistant.png
 product_page: true
@@ -38,7 +38,7 @@ A personal AI assistant is software that does small knowledge tasks for you — 
 
 Arc is that, built as a layer over your screen. On Android it's a floating sidebar on every app; on Mac it's a Control+Space panel over any window. It reads the screen you're on, and it draws on an **Info Vault** of details you save once — your role, your projects, how you sign off emails — so what it writes sounds like you and not like a generic model.
 
-It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on the free tier.
+It's free on [Android](/android/), [Mac](/macos/) and [Windows](/windows/), with 7 requests a week on the free tier.
 
 </div>
 
@@ -119,7 +119,7 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
 <div class="content-section">
   <div class="glass rounded-2xl" style="text-align:center; padding: var(--xl);">
     <h2>Meet your assistant in 60 seconds.</h2>
-    <p class="hero-subtitle">Free download. Free daily usage. No account needed to start.</p>
+    <p class="hero-subtitle">Free download. 7 free requests a week. No account needed to start.</p>
     <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="cta-button" target="_blank" rel="noopener">Download Arc Free</a>
   </div>
 </div>
@@ -132,7 +132,7 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
 <div class="content-section">
   <details>
     <summary>Is Arc a free personal AI assistant?</summary>
-    <p>Yes — Arc is free to download with generous usage on core features (summaries, chat, extraction). An optional premium subscription removes limits.</p>
+    <p>Yes — Arc is free to download, with 7 requests per week on core features (summaries, chat, extraction). An optional premium subscription removes limits.</p>
   </details>
   <details>
     <summary>What can a personal AI assistant like Arc do?</summary>
@@ -144,7 +144,7 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
   </details>
   <details>
     <summary>Is there a personal AI assistant for Mac or Windows?</summary>
-    <p>Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. The Windows version is in beta — see the <a href="/windows/">Arc for Windows</a> page.</p>
+    <p>Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. Arc for Windows is available now on the Microsoft Store — see the <a href="/windows/">Arc for Windows</a> page.</p>
   </details>
 </div>
 
@@ -156,7 +156,7 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
   <ul>
     <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
     <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
-    <li><a href="{{ '/2026/09/21/ai-screen-assistant-windows/' | relative_url }}">AI Assistant for PC: Arc Is Coming to Windows</a></li>
+    <li><a href="{{ '/2026/09/21/ai-screen-assistant-windows/' | relative_url }}">AI Assistant for PC: Arc Is Now on Windows</a></li>
     <li><a href="{{ '/2026/09/22/ai-assistant-for-iphone/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
   </ul>
 </div>
@@ -167,10 +167,10 @@ It's free on [Android](/android/) and [Mac](/macos/), with 7 requests a week on 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Arc a free personal AI assistant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is free to download with generous usage on core features (summaries, chat, extraction). An optional premium subscription removes limits."}},
+    {"@type": "Question", "name": "Is Arc a free personal AI assistant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is free to download, with 7 requests per week on core features (summaries, chat, extraction). An optional premium subscription removes limits."}},
     {"@type": "Question", "name": "What can a personal AI assistant like Arc do?", "acceptedAnswer": {"@type": "Answer", "text": "Arc summarizes articles and documents, drafts and rewrites messages in your voice, extracts events and OTP codes from any screen, answers questions about what you're viewing, reads text aloud, transcribes calls, and automates repetitive tasks — all from a floating sidebar that works inside every app."}},
     {"@type": "Question", "name": "Does Arc work on Samsung, OnePlus, and other Android phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Arc works on all modern Android phones and integrates natively with Samsung Edge Panel, OnePlus Shelf, and OPPO Smart Sidebar."}},
-    {"@type": "Question", "name": "Is there a personal AI assistant for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. The Windows version is in beta — see the Arc for Windows page."}}
+    {"@type": "Question", "name": "Is there a personal AI assistant for Mac or Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc for macOS is available now (free, notarized, macOS 14+): press Control+Space in any window. Arc for Windows is available now on the Microsoft Store — see the Arc for Windows page."}}
   ]
 }
 </script>

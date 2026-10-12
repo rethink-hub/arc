@@ -48,7 +48,7 @@ Nothing here is sponsored, and no one paid for placement. Prices are what I saw 
 
 ## 1. Arc — AI Screen Assistant (Best overall assistant)
 
-**Free · Android + macOS**
+**Free · Android, macOS + Windows**
 
 The category Arc created: a floating AI sidebar that works on top of every app. Swipe from the screen edge and it appears over whatever you're doing — no switching, no copy-pasting.
 

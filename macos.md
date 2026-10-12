@@ -10,7 +10,7 @@ faq:
   - question: "Is there an AI assistant for Mac that works in every app?"
     answer: "Arc does. Press Control+Space in any macOS app and Arc reads that window through the system accessibility APIs, then summarizes it, reads it aloud, rewrites your text or runs a prompt you wrote. It works in Safari, Chrome, Preview, Mail, Slack, Obsidian and anything else that puts text on screen."
   - question: "Is Arc for Mac free?"
-    answer: "Yes. Arc is free with 7 requests per week on basic features, and a premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation. One subscription covers Mac and Android."
+    answer: "Yes. Arc is free with 7 requests per week on basic features, and a premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation. One subscription covers Mac, Windows and Android."
   - question: "What are the system requirements for Arc on Mac?"
     answer: "macOS 14 (Sonoma) or later. Arc is a universal binary that runs natively on both Apple Silicon and Intel Macs, and it is code-signed with an Apple Developer ID and notarized by Apple, so it installs without security warnings."
   - question: "Why isn't Arc on the Mac App Store?"
@@ -156,7 +156,7 @@ Arc does. Press Control+Space in any macOS app and Arc reads that window through
 
 ### Is Arc for Mac free?
 
-Yes. Arc is free with 7 requests per week on basic features, and a premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation. One subscription covers Mac and Android.
+Yes. Arc is free with 7 requests per week on basic features, and a premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation. One subscription covers Mac, Windows and Android.
 
 ### What are the system requirements for Arc on Mac?
 

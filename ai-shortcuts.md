@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI Shortcuts & Custom AI Actions for Any Screen | Arc"
-description: "Build custom AI actions and keyboard AI shortcuts that run in any app. A floating AI assistant for Android and macOS with 500+ ready actions. Free."
+description: "Build custom AI actions and keyboard AI shortcuts that run in any app. A floating AI assistant for Android, macOS and Windows with 500+ ready actions. Free."
 keywords: "ai shortcuts, custom ai actions, floating ai assistant, ai quick actions, keyboard shortcut ai, ai shortcut android, ai automation"
 og_image: /assets/images/og-arc.png
 product_page: true
@@ -160,7 +160,7 @@ Then list any claims that need a citation.</code></pre>
   </details>
   <details>
     <summary>Is it free?</summary>
-    <p>Yes — Arc, custom actions, and Community Actions are free, with a generous weekly usage allowance. An optional Pro subscription removes the limits across Android, macOS, and Windows on one account.</p>
+    <p>Yes — Arc, custom actions, and Community Actions are free, with 7 AI requests per week. An optional Pro subscription removes the limits across Android, macOS, and Windows on one account.</p>
   </details>
 </div>
 
@@ -199,7 +199,7 @@ Then list any claims that need a citation.</code></pre>
     {"@type": "Question", "name": "Can I create my own AI shortcuts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Arc Actions let you write any prompt once and pin it to your menu, with an optional screenshot region, web search, reordering, and on desktop a global keyboard shortcut that runs it without opening the menu."}},
     {"@type": "Question", "name": "What are Community Actions?", "acceptedAnswer": {"@type": "Answer", "text": "A catalog of 500+ ready-made AI actions built by the Arc team and other users. Every card shows the real prompt before you add it, and added actions are fully editable."}},
     {"@type": "Question", "name": "Can I change the ⌃Space shortcut?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Open Settings → Activation, press Record, and choose any combination. Arc detects conflicts with its own action shortcuts and names the action that already owns a key."}},
-    {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc, custom actions, and Community Actions are free, with a generous weekly usage allowance. An optional Pro subscription removes the limits across Android, macOS, and Windows on one account."}}
+    {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc, custom actions, and Community Actions are free, with 7 AI requests per week. An optional Pro subscription removes the limits across Android, macOS, and Windows on one account."}}
   ]
 }
 </script>

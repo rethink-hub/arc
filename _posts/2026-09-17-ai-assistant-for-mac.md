@@ -11,7 +11,7 @@ faq:
   - question: "What is the best AI assistant for Mac?"
     answer: "There's no single best \u2014 it depends what you want it to touch. For writing inside apps and working over any window, Arc is purpose-built: Control+Space from any app, summarize, read aloud, rewrite in place, chat with the screen. If you want a general chat companion, the ChatGPT Mac app is strong \u2014 but it stays a chat window. The practical answer most power users land on: a chat app for open-ended conversation, Arc for acting on what's already on screen."
   - question: "Is there a free AI assistant for Mac?"
-    answer: "Yes. Arc for Mac is free to download from arcassistant.app/macos/, and the free tier covers everyday use: summarizing windows, chat, and reading aloud. Apple's own Apple Intelligence is also free on supported Macs, though it's more of a system feature set than a screen-reading assistant. For heavier AI Writer usage there's a subscription \u2014 and one subscription unlocks Android, macOS, and Windows together."
+    answer: "Yes. Arc for Mac is free to download from arcassistant.app/macos/, and the free tier gives you 7 requests per week for summarizing windows, chat, and reading aloud. Apple's own Apple Intelligence is also free on supported Macs, though it's more of a system feature set than a screen-reading assistant. For heavier AI Writer usage there's a subscription \u2014 and one subscription unlocks Android, macOS, and Windows together."
   - question: "How do I get an AI assistant on my Mac?"
     answer: "Download Arc from arcassistant.app/macos/, drag it to Applications, launch it, grant Accessibility and Screen Recording permissions when prompted, and press Control+Space over any window. Setup takes about five minutes, works on macOS 14 and later, and runs on both Apple Silicon and Intel Macs."
   - question: "Does Arc read my screen all the time?"
@@ -157,7 +157,7 @@ There's no single best — it depends what you want it to touch. For writing ins
 
 ### Is there a free AI assistant for Mac?
 
-Yes. Arc for Mac is free to download from [arcassistant.app/macos/](/macos/), and the free tier covers everyday use: summarizing windows, chat, and reading aloud. Apple's own Apple Intelligence is also free on supported Macs, though it's more of a system feature set than a screen-reading assistant. For heavier AI Writer usage there's a subscription — and one subscription unlocks Android, macOS, and Windows together.
+Yes. Arc for Mac is free to download from [arcassistant.app/macos/](/macos/), and the free tier gives you 7 requests per week for summarizing windows, chat, and reading aloud. Apple's own Apple Intelligence is also free on supported Macs, though it's more of a system feature set than a screen-reading assistant. For heavier AI Writer usage there's a subscription — and one subscription unlocks Android, macOS, and Windows together.
 
 ### How do I get an AI assistant on my Mac?
 

@@ -15,7 +15,7 @@ faq:
   - question: "How much will Arc for iOS cost?"
     answer: "The same as every other platform: free for 7 requests per week on basic features, with a premium subscription for unlimited summaries, text-to-speech, AI chat and automation. No ads, no expiring trial."
   - question: "Can I use Arc on iPhone right now?"
-    answer: "Not yet as a native app. Arc ships on Android and macOS today. If you use a Mac alongside your iPhone, the Mac app covers reading and writing on the desktop while the iPhone version is in development."
+    answer: "Not yet as a native app. Arc ships on Android, macOS and Windows today. If you use a Mac alongside your iPhone, the Mac app covers reading and writing on the desktop while the iPhone version is in development."
 last_modified_at: 2026-09-19
 ---
 
@@ -119,8 +119,8 @@ The iPhone version is in development, built around the entry points iOS allows (
 
 <!-- Cross platform CTA -->
 <div class="coming-soon-section">
-  <h2>Available now on Android and Mac</h2>
-  <p>Arc for iPhone is in development. The same app is shipping on two platforms today.</p>
+  <h2>Available now on Android, Mac and Windows</h2>
+  <p>Arc for iPhone is in development. The same app is shipping on three platforms today.</p>
   <div class="platform-links">
     <a href="{{ '/android/' | relative_url }}">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>
@@ -164,7 +164,7 @@ The same as every other platform: free for 7 requests per week on basic features
 
 ### Can I use Arc on iPhone right now?
 
-Not yet as a native app. Arc ships on Android and macOS today. If you use a Mac alongside your iPhone, the Mac app covers reading and writing on the desktop while the iPhone version is in development.
+Not yet as a native app. Arc ships on Android, macOS and Windows today. If you use a Mac alongside your iPhone, the Mac app covers reading and writing on the desktop while the iPhone version is in development.
 
 </div>
 

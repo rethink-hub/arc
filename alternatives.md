@@ -73,7 +73,7 @@ last_modified_at: 2026-09-19
   <p><strong>What it is:</strong> a floating AI assistant over any app. On Android it's a sidebar you swipe in from the screen edge; on macOS it's a Spotlight-style menu you summon with ⌃ Space. It reads the current screen, so "summarize this" needs no copy-paste.</p>
   <p><strong>Strengths:</strong> it acts on the actual screen content in Chrome, Gmail, or a PDF reader; Smart Extract turns events, contacts, and OTP codes into working buttons; custom prompts plus a 500+ community catalog, each bindable to a desktop shortcut; auto-off in 200+ banking and crypto apps.</p>
   <p><strong>Weaknesses:</strong> not on iPhone yet (Android, macOS and Windows are live); not a deep-Google assistant the way Gemini is; AI generation needs internet.</p>
-  <p><strong>Best for:</strong> people who want AI help <em>inside</em> whatever they're already doing — reading, emailing, studying, texting. One Pro subscription covers Android and macOS. <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">Get Arc free →</a></p>
+  <p><strong>Best for:</strong> people who want AI help <em>inside</em> whatever they're already doing — reading, emailing, studying, texting. One Pro subscription covers Android, macOS and Windows. <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">Get Arc free →</a></p>
 </div>
 
 <div class="content-section">
@@ -129,7 +129,7 @@ last_modified_at: 2026-09-19
 <div class="content-section">
   <h2>Which should you pick?</h2>
   <ul>
-    <li><strong>You live inside apps on Android or Mac and want AI everywhere:</strong> <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">Arc</a> — the only one here that works on top of everything else you use.</li>
+    <li><strong>You live inside apps on Android, Mac or Windows and want AI everywhere:</strong> <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">Arc</a> — the only one here that works on top of everything else you use.</li>
     <li><strong>You're deep in Google's world (Gmail, Docs, Calendar):</strong> Gemini.</li>
     <li><strong>You want quick lookups on a Pixel or Galaxy:</strong> Circle to Search.</li>
     <li><strong>You do web research in a desktop browser:</strong> Sider, or Perplexity if citations matter more than the sidebar.</li>
@@ -159,7 +159,7 @@ last_modified_at: 2026-09-19
 <div class="content-section">
   <details>
     <summary>What is the best AI assistant app in 2026?</summary>
-    <p>It depends on where you need it. ChatGPT and Gemini lead for general chat, Perplexity for cited research, and Arc is the screen-aware option that works inside every app on Android and macOS.</p>
+    <p>It depends on where you need it. ChatGPT and Gemini lead for general chat, Perplexity for cited research, and Arc is the screen-aware option that works inside every app on Android, macOS and Windows.</p>
   </details>
   <details>
     <summary>What makes a screen-aware AI assistant different from a chatbot?</summary>
@@ -171,7 +171,7 @@ last_modified_at: 2026-09-19
   </details>
   <details>
     <summary>Which AI assistant is free?</summary>
-    <p>Circle to Search is entirely free. Arc, Gemini, Copilot, ChatGPT, Sider, and Perplexity all offer free tiers with subscriptions for higher limits or stronger models. Arc's free plan includes a weekly AI allowance.</p>
+    <p>Circle to Search is entirely free. Arc, Gemini, Copilot, ChatGPT, Sider, and Perplexity all offer free tiers with subscriptions for higher limits or stronger models. Arc's free plan includes 7 AI requests per week.</p>
   </details>
 </div>
 
@@ -209,10 +209,10 @@ last_modified_at: 2026-09-19
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "What is the best AI assistant app in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on where you need it. ChatGPT and Gemini lead for general chat, Perplexity for cited research, and Arc is the screen-aware option that works inside every app on Android and macOS."}},
+    {"@type": "Question", "name": "What is the best AI assistant app in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on where you need it. ChatGPT and Gemini lead for general chat, Perplexity for cited research, and Arc is the screen-aware option that works inside every app on Android, macOS and Windows."}},
     {"@type": "Question", "name": "What makes a screen-aware AI assistant different from a chatbot?", "acceptedAnswer": {"@type": "Answer", "text": "A chatbot lives in its own app and you paste context into it. A screen-aware assistant reads the app you're already in and acts on it — no copy-paste, no app switching. That needs overlay permissions and careful privacy design, which is why Arc reads only on demand and stays blind in banking apps."}},
     {"@type": "Question", "name": "Is Arc a good alternative to Google Gemini?", "acceptedAnswer": {"@type": "Answer", "text": "For different jobs. Gemini wins on deep Google integrations; Arc wins at acting on whatever screen is in front of you — summaries, OTP extraction, flashcards, read-aloud, and custom actions inside any app. Many people run both."}},
-    {"@type": "Question", "name": "Which AI assistant is free?", "acceptedAnswer": {"@type": "Answer", "text": "Circle to Search is entirely free. Arc, Gemini, Copilot, ChatGPT, Sider, and Perplexity all offer free tiers with subscriptions for higher limits or stronger models. Arc's free plan includes a weekly AI allowance."}}
+    {"@type": "Question", "name": "Which AI assistant is free?", "acceptedAnswer": {"@type": "Answer", "text": "Circle to Search is entirely free. Arc, Gemini, Copilot, ChatGPT, Sider, and Perplexity all offer free tiers with subscriptions for higher limits or stronger models. Arc's free plan includes 7 AI requests per week."}}
   ]
 }
 </script>

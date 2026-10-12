@@ -15,7 +15,7 @@ faq:
   - question: "Is Arc the Best Free AI Rewrite App for Android?"
     answer: "Free to download from Google Play, and every core rewrite feature is usable before you pay. QuillBot and Grammarly remain good choices if your text mostly lives in a desktop browser. But if you want an AI rewrite text Android app that works inside WhatsApp, Gmail, and every other app you type in \u2014 reading your screen, no pasting, results inserted where you were already editing \u2014 Arc is the tool built for exactly that. The same AI Writer ships on our Mac app with a dedicated rewrite mode, so your rewrite habit works the same on both platforms."
   - question: "Is there a free AI rewrite text app for Android?"
-    answer: "Yes. Arc is a free AI rewrite text Android app you can install from Google Play, and rewriting text on your screen works right away. The Pro subscription adds higher usage limits and extras; you'll hit that only if you run a lot of rewrites daily."
+    answer: "Yes. Arc is a free AI rewrite text Android app you can install from Google Play, and rewriting text on your screen works right away. The free tier gives you 7 requests per week; the Pro subscription adds higher usage limits and extras."
   - question: "Can an AI rewriter rewrite a text message without ruining the tone?"
     answer: "That's the 1 use case. Pick the friendly/casual tone for personal chats and Arc keeps it conversational while cleaning up phrasing. Because Arc sees the whole conversation context on your screen (who wrote what, how formal it is), the result sounds like a text \u2014 not an essay."
 ---
@@ -110,7 +110,7 @@ Free to download from Google Play, and every core rewrite feature is usable befo
 
 ### Is there a free AI rewrite text app for Android?
 
-Yes. Arc is a free AI rewrite text Android app you can install from Google Play, and rewriting text on your screen works right away. The Pro subscription adds higher usage limits and extras; you'll hit that only if you run a lot of rewrites daily.
+Yes. Arc is a free AI rewrite text Android app you can install from Google Play, and rewriting text on your screen works right away. The free tier gives you 7 requests per week; the Pro subscription adds higher usage limits and extras.
 
 ### Can an AI rewriter rewrite a text message without ruining the tone?
 
