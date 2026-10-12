@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI Assistant App That Works on Any Screen | Arc — Free"
-description: "Arc is a free AI assistant app that works on the screen you're already on. Summarize, listen, rewrite and automate in any app. Android, Mac and Windows, no copy-paste."
+description: "Arc is a free AI assistant app that works on the screen you're already on. Summarize, listen, rewrite and automate in any app on Android, Mac and Windows."
 keywords: "ai assistant app, ai assistant, free ai assistant, ai screen assistant, personal ai assistant, android ai assistant, ai assistant for mac"
 og_image: /assets/images/og-arc.png
 product_page: true

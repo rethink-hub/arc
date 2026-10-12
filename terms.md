@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Terms of Service - Arc AI: Android, macOS & Windows AI Assistant"
+title: "Terms of Service | Arc AI Assistant"
 description: "Terms of Service for the Arc AI assistant on Android, macOS and Windows. Usage terms, AI features, billing, and conditions for our productivity app."
 keywords: "Arc AI terms, Android AI app terms of service, Mac AI app terms of service"
 og_image: /assets/images/og-arc.png
 robots: noindex, follow
-last_modified_at: 2026-09-15
+last_modified_at: 2026-10-12
 ---
 
 <div class="privacy-nav">
@@ -15,7 +15,7 @@ last_modified_at: 2026-09-15
 <div class="privacy-header">
   <h1>Terms of Service for Arc: AI Screen Assistant</h1>
   <p><strong>Effective Date:</strong> December 2, 2025</p>
-  <p><strong>Last Updated:</strong> February 9, 2026</p>
+  <p><strong>Last Updated:</strong> October 12, 2026</p>
 </div>
 
 ---
@@ -89,9 +89,9 @@ Arc operates on a **freemium model** — core features are available for free, w
 
 **Subscription (Android):** Subscriptions purchased on Android are billed through Google Play Billing. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription anytime via Google Play Store settings.
 
-**Subscription (macOS):** Subscriptions purchased on macOS are billed through **Dodo Payments**, which acts as the merchant of record for that transaction. Checkout takes place on Dodo's secure hosted page in your browser; we never receive or store your card details. Your subscription automatically renews at the interval shown at checkout unless cancelled before the end of the current billing period. You can manage or cancel a macOS subscription from Arc's Settings, which opens the Dodo customer portal. As merchant of record, Dodo Payments calculates any applicable tax and issues your invoice or receipt.
+**Subscription (macOS and Windows):** Subscriptions purchased on macOS or Windows are billed through **Dodo Payments**, which acts as the merchant of record for that transaction. Checkout takes place on Dodo's secure hosted page in your browser; we never receive or store your card details. Your subscription automatically renews at the interval shown at checkout unless cancelled before the end of the current billing period. You can manage or cancel a macOS or Windows subscription from Arc's Settings, which opens the Dodo customer portal. As merchant of record, Dodo Payments calculates any applicable tax and issues your invoice or receipt.
 
-**Cross-Platform Entitlement:** Your subscription entitlement is attached to your Arc account, so a subscription bought on one platform unlocks premium features on the other when you sign in with the same account. Billing, renewal, and cancellation are always handled by the processor you originally purchased through — you cannot cancel a Google Play subscription via Dodo, or vice versa. Purchasing separately on both platforms results in two independent subscriptions and two charges.
+**Cross-Platform Entitlement:** Your subscription entitlement is attached to your Arc account, so a subscription bought on one platform unlocks premium features on the others when you sign in with the same account. Billing, renewal, and cancellation are always handled by the processor you originally purchased through — you cannot cancel a Google Play subscription via Dodo, or vice versa. Purchasing separately through both processors results in two independent subscriptions and two charges.
 
 **Refund Policy:**
 
@@ -102,7 +102,7 @@ Arc operates on a **freemium model** — core features are available for free, w
 * We do not offer refunds for partial billing periods, unused subscription time, or change of mind
 * If you cancel your subscription, you will continue to have access until the end of your current billing period
 * For **Android** purchases, Google Play's own refund policies may apply separately under Google Play's terms — contact Google Play support for app-specific refund requests within their eligible window
-* For **macOS** purchases, Dodo Payments is the merchant of record; any refund request permitted under its policies must be directed to Dodo Payments, and billing disputes are handled by Dodo
+* For **macOS and Windows** purchases, Dodo Payments is the merchant of record; any refund request permitted under its policies must be directed to Dodo Payments, and billing disputes are handled by Dodo
 * Nothing in this section limits any **statutory right of withdrawal, cancellation, or refund** you may have under the mandatory consumer-protection laws of your country of residence (including, where applicable, the EU/UK statutory cooling-off period). Where such rights apply, they take precedence over this no-refund policy
 * By purchasing a subscription or using a promo coupon, you acknowledge and agree to this no-refund policy, subject to the statutory rights noted above
 

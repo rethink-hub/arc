@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Personal AI Assistant That Knows Your Context | Arc — Free"
-description: "A personal AI assistant that works on your current screen and remembers who you are. Summarize, write, extract and automate in any app. Free on Android, Mac and Windows."
+description: "A personal AI assistant that works on your screen and remembers who you are. Summarize, write and automate in any app. Free on Android, Mac and Windows."
 keywords: "personal ai assistant, personal ai assistant app, best personal ai assistant, free personal ai assistant, ai personal assistant app, personal ai assistant android"
 og_image: /assets/images/og-personal-ai-assistant.png
 product_page: true

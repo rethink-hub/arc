@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Privacy Policy - Arc AI: Android, macOS & Windows AI Assistant"
+title: "Privacy Policy | Arc AI Assistant"
 description: "Arc AI privacy policy for our Android, macOS and Windows AI assistant. Learn how we protect your data, handle AI summaries, and ensure privacy."
 keywords: "Arc AI privacy, Android AI app privacy, Mac AI app privacy, Windows AI app privacy, AI assistant privacy policy"
 og_image: /assets/images/og-arc.png

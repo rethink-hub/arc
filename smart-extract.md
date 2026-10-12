@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Screenshot to Text — Extract Data from Any Screen | Arc"
-description: "Turn any screenshot or screen into text: contacts, OTP codes, dates and links extracted in one tap, even from apps that block copying. Free on Android, Mac and Windows."
+description: "Turn any screenshot or screen into text: contacts, OTP codes, dates and links extracted in one tap, even in apps that block copying. Android, Mac, Windows."
 keywords: "screenshot to text, extract data from image, ai data extraction, ai text extractor, extract text from screen, contact extractor, ocr app android"
 og_image: /assets/images/og-arc.png
 product_page: true
