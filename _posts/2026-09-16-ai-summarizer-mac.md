@@ -1,12 +1,12 @@
 ---
 layout: blog
-title: "Summarize a PDF on Mac in One Keystroke"
-description: "How to summarize a PDF on Mac without uploading it anywhere: press Control+Space over the open document and get numbered key points in seconds."
+title: "Summarize a PDF or Any Text on Mac in One Keystroke"
+description: "How to summarize a PDF, article or any text on macOS without uploading it: Apple's built-in options, plus Control+Space over any window."
 date: 2026-09-16
 author: Mamata
 tags: ["mac", "macos", "ai", "productivity"]
 og_image: /assets/images/og-post-ai-summarizer-mac.png
-keywords: "summarize pdf, summarize pdf mac, pdf summarizer, summarize document mac"
+keywords: "summarize pdf, summarize pdf mac, pdf summarizer, summarize document mac, summarize text macos, summarize text mac"
 
 ---
 To **summarize a PDF** on Mac: open it in Preview or any viewer, press Control+Space, and pick AI Summary. Arc reads the document already on screen and returns numbered key points in seconds — nothing to upload, and the file never leaves your machine for a web form.
@@ -45,7 +45,7 @@ Arc runs natively on Apple Silicon and Intel, on macOS 14 (Sonoma) or later, and
 
 Press **Control + Space** anywhere in macOS — with Safari in front, with a PDF open in Preview, mid-email in Mail. A slim floating panel slides in over the active window: anchored to the edge, translucent so you can still see the text behind it, with Arc's actions already listed. It behaves like a private Spotlight, except instead of launching apps it works on the window behind it.
 
-Pick **Summarize** from the panel. Arc reads the frontmost window through the accessibility tree — the actual text, not a screenshot OCR guess — and a tight summary appears in the panel a second later. Press **Esc** and the panel collapses; your document is exactly where you left it, unscrolled and untouched.
+Pick **Summarize** from the panel. Arc reads the frontmost window through the accessibility tree — the actual text, not a screenshot OCR guess — and a tight summary appears in the panel in about 3–6 seconds. The default prompt keeps numbers, names, and deadlines rather than washing them into vague prose. Press **Esc** and the panel collapses; your document is exactly where you left it, unscrolled and untouched.
 
 <img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc summarizer panel open over a Chrome window on macOS" width="1200" height="715" loading="lazy" />
 
@@ -113,29 +113,50 @@ Sometimes you don't want a paragraph — you want the data. **Smart Extract** pu
 
 If the window is study material — lecture notes, a paper, a textbook chapter — Arc can turn it into a **flashcard deck** you cycle through before the exam. It's the quieter feature I wish existed when I was a student, and it starts from the same summarizer flow.
 
-## How This Compares to Other Ways to Summarize on Mac
+## Other Ways to Summarize Text on macOS
 
-You have other options, so here's the honest comparison:
+Search how to summarize text on macOS and the advice splits by hardware generation: half of it assumes an Apple Intelligence Mac, the other half points at a Summarize feature Apple stopped shipping long ago. Here's the honest map.
 
-- **Apple Intelligence** (macOS 15.1+) can summarize text in some apps, but availability depends on your hardware and region, the summary tends to be brief, and there's no library, no follow-up chat, and no custom prompts. If your Mac supports it, it's fine for a quick condense.
+### Apple Intelligence Writing Tools (M1 and later, macOS 15.1+)
+
+If your Mac has an M-series chip and runs macOS 15.1 or newer, this is the built-in option:
+
+1. Select the text — in an article, a document, a draft, anywhere you can highlight.
+2. Right-click the selection and choose **Writing Tools**.
+3. Click **Summarize**, or **Key Points** for a bulleted digest, or **Table** if the source is structured.
+
+It works well on prose and shows up in most text-bearing apps. The catch is coverage, not quality: no Intel Mac gets it, availability also depends on region, and it only sees the text you selected — not the whole window, and with no saved history or follow-up chat.
+
+### The old Summarize service
+
+Before Apple Intelligence, macOS had a Summarize service. On some older versions you may still find it under **System Settings → Keyboard → Keyboard Shortcuts → Services → Text**, where enabling it adds a *Summarize* item for selected text in apps like TextEdit, with a slider for length. Apple deprecated it long ago and pulled the Safari entry point; treat it as a curiosity, not a 2026 answer.
+
+### Everything else
+
 - **ChatGPT or Claude in a browser** is powerful but manual: copy, paste, explain, wait, copy back. Great for deep work on one document, heavy for the fifteen small summarizing moments a day.
-- **QuillBot and web-based summarizer sites** mean uploading your text to a website every time — awkward for PDFs, worse for anything confidential, and none of them see the window you're working in.
-- **Arc** runs in-place: it works over any app, with saved history, follow-up questions, and your own custom prompts. Free to start, and the same subscription covers the Android app if you want the same floating-assistant trick on your phone — Arc began there, as a sidebar that reads and summarizes whatever's on screen.
+- **QuillBot and web-based summarizer sites** mean uploading your text every time — awkward for PDFs, worse for anything confidential.
+- **Safari Reader and read-later extensions** clean up a page, and some add digests, but they live in the browser. The moment your text is in Preview, Mail, or Slack, they're gone.
 
-The pattern across all four: the less friction between "text is on my screen" and "summary," the more you actually use it.
+### Which method fits which job
+
+- **One article a week on an M1 or newer Mac:** Writing Tools is fine — right-click, Summarize, done.
+- **An Intel Mac, or macOS 14:** Arc is the option that runs system-wide summarization on the machine you already own; an Intel MacBook Pro from 2019 runs it the same as an M3.
+- **Text in Preview, Mail, or Slack:** only a window-level tool sees those, without selecting anything first.
+- **Summaries you want to keep:** Arc's Library holds every digest; chatbots and Writing Tools forget instantly.
+
+An honest limit: Arc summarizes the window in front of you, not two documents at once — cross-referencing means two invocations. And it needs a connection, since the models run server-side.
 
 ## Tips From Two Months of Daily Use
 
-- **Summarize, then interrogate.** This is the habit that matters most: the summary is the table of contents, and the follow-up questions are where the real value is. "What am I actually agreeing to in this terms page?" beats a generic summary every time.
-- **Bind custom summaries to hotkeys.** My most-used is "TL;DR + what's actionable" bound to its own key, so long docs and meeting notes get different treatment with zero extra clicks.
-- **Save ruthlessly, search later.** Saved summaries are more findable than browser history. Anything you might reference in a week, save.
-- **Use read-aloud for the backlog.** When a window is something you'd rather hear than read — a long policy doc, an article while making coffee — the [AI Summary & Reader](/ai-summary-reader/) toolkit includes natural-voice read-aloud of whatever's on screen.
-- **Esc is your friend.** The panel never takes over your window. Flick it away and keep working.
+- **Summarize, then interrogate.** The summary is the table of contents; the follow-up questions are where the value is.
+- **Bind custom summaries to hotkeys.** I keep one called *Executive brief* — "Summarize the screen as ten bullets, bold the deadlines, note every number" — bound to its own key. It took two minutes to write and beats the generic summary for my taste.
+- **Save ruthlessly, search later.** Saved summaries are more findable than browser history.
+- **Use read-aloud for the backlog.** When you'd rather hear a window than read it, the [AI Summary & Reader](/ai-summary-reader/) toolkit includes natural-voice read-aloud of whatever's on screen.
 
 ## FAQ
 
 **How do I summarize text on a MacBook?**
-Install Arc for Mac, grant Accessibility permission, then press **Control+Space** over any window with text — Safari, Preview, Mail, anything — and choose Summarize. A summary appears in a floating panel in about a second, with no copy-pasting and no tab-switching.
+On an M1 or newer MacBook running macOS 15.1+, select text and right-click → Writing Tools → Summarize. On any Mac with macOS 14 or later — Intel included — install Arc, grant Accessibility permission, press **Control+Space** over any window with text, and choose Summarize. The summary appears in a floating panel in a few seconds, with no copy-pasting and no tab-switching.
 
 **Can I summarize a PDF on Mac with AI?**
 Yes. Open the PDF in Preview (or any reader), press Control+Space, and pick Summarize. Arc reads the document directly, so there's no uploading or exporting, and you can ask follow-up questions about specific sections of the PDF afterward.
@@ -145,6 +166,9 @@ Arc is free to start, with 7 requests per week — the floating panel, summaries
 
 **Do I need a browser extension to summarize web pages on Mac?**
 No. Arc is a system-wide app, not an extension — it reads the frontmost window through macOS accessibility APIs, so it works in Safari, Chrome, and every other app without installing anything per-browser and without any extension permissions to audit.
+
+**What happened to the Summarize feature in Safari?**
+Apple removed it years ago — the Summarize service behind it was deprecated, and current macOS versions don't rely on it. Apple Intelligence's Writing Tools is the official successor, on M-series Macs only.
 
 **Does Apple Intelligence already do this on Mac?**
 Apple Intelligence can summarize text in supported apps on newer Macs, but it's brief, hardware-dependent, and has no library or follow-up chat. If you have a compatible Mac, try both — Arc adds saved summaries, custom prompts, and grounded Q&A about the window in front of you.

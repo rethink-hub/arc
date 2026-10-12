@@ -50,7 +50,7 @@ last_modified_at: 2026-09-19
         <p>If you've never used a screen assistant, these three explain the idea and get you running in a couple of minutes.</p>
         <ul class="blog-starters">
             <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">What an AI assistant for Mac does beyond ChatGPT</a> — why reading the window you're in beats pasting text into a chat box.</li>
-            <li><a href="{{ '/2026/09/09/ai-summarizer-android-app/' | relative_url }}">Summarize anything on your Android phone, step by step</a> — the full setup walkthrough, from install to first summary.</li>
+            <li><a href="{{ '/2026/10/04/how-to-summarize-text-on-android/' | relative_url }}">Summarize anything on your Android phone, step by step</a> — the full setup walkthrough, from install to first summary.</li>
             <li><a href="{{ '/2026/09/15/best-ai-apps-android/' | relative_url }}">Nine Android AI apps, tested against each other</a> — including where a competitor beats Arc.</li>
         </ul>
     </section>

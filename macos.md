@@ -182,7 +182,7 @@ The [Privacy Policy]({{ '/privacy/' | relative_url }}#macos-permissions-explaine
   <p>Guides that go further on what's above:</p>
   <ul>
     <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
-    <li><a href="{{ '/2026/10/06/ai-screen-reader-macos/' | relative_url }}">AI Screen Reader for macOS: Read Any Window</a></li>
+    <li><a href="{{ '/2026/10/07/read-screen-aloud-mac/' | relative_url }}">AI Screen Reader for macOS: Read Any Window</a></li>
     <li><a href="{{ '/2026/09/20/ai-writer-mac/' | relative_url }}">AI Writing Assistant for Mac: Rewrite in Any App</a></li>
     <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>
   </ul>

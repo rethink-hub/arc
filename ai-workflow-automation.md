@@ -9,11 +9,13 @@ faq:
   - question: "Can I share my custom actions?"
     answer: "Yes. Publish them to the Community Actions library with a Google sign-in, and other Arc users can find and add them."
   - question: "Are there limits on custom actions?"
-    answer: "No. You can create unlimited custom actions, from one-line prompts to multi-step instructions."
+    answer: "No limit on how many. You can create unlimited custom actions, and each prompt can run to 40,000 characters, so multi-step instructions fit in one action."
   - question: "How accurate is the AI fact checker?"
     answer: "A fact-check action with web search enabled checks each claim against outside sources and links one. Treat it as a fast first pass and verify anything critical against an authoritative source."
   - question: "Can actions work without internet?"
     answer: "No. Running an action needs a connection because the models are cloud-side. Your action configurations are stored on the device and sync to Google Drive if you turn on backup, so a new phone gets your sidebar back."
+  - question: "Is Arc a Tasker alternative?"
+    answer: "Different jobs. Tasker, MacroDroid and Automate trigger on device events — time, location, battery, notifications — and are still the right tools for toggling Wi-Fi or scheduling an SMS. Acting on the content inside an app means brittle simulated taps that break on the next app update. Arc's actions do the language work instead — replies, translation, fact checks, extraction — on whatever is on screen, with you present. Many power users run both."
 last_modified_at: 2026-09-19
 ---
 
@@ -97,12 +99,14 @@ Four things separate an action you keep from one you delete after a week:
 
 - **Name the output shape.** "One per line," "a table with three columns," "at most 40 words." Actions run on wildly different screens; the shape is the only thing holding the result steady.
 - **Say what to do with missing information.** Models fill gaps by default. "Write unassigned rather than guessing" costs you six words and removes the most common failure.
-- **Use the two toggles deliberately.** *Screenshot capture* lets the action see text inside images, video subtitles, and apps that block text extraction — useful for learning and receipts, unnecessary for a web article. *Web search* lets it check the screen against something other than itself, which is the whole point of a fact-check action and pure latency everywhere else.
+- **Use the two toggles deliberately.** *Screenshot capture* lets the action see text inside images, video subtitles, and apps that block text extraction — useful for learning and receipts, unnecessary for a web article. You drag a selection box over the region first, so frame just the chart or menu rather than the whole screen. *Web search* lets it check the screen against something other than itself, which is the whole point of a fact-check action and pure latency everywhere else — it roughly doubles the wait.
 - **Narrow beats clever.** Two sharp actions beat one that tries to branch. "Extract dates" and "extract contacts" both work; "extract the important stuff" does not.
 
-## Community Actions
+## Ready-Made and Community Actions
 
-Actions written by other people are browsable in the app, and you can publish your own with a Google sign-in. The useful ones are rarely general-purpose: a kanji-breakdown action written by someone in Japan is now used by thousands of learners — the kind of thing that never survives a product roadmap but does fine when whoever needed it just built it.
+Before writing your own, check the built-in system actions in the Community Actions browser: **Fact Check** (verdict, reasoning, source links), **Smart Reply**, **ELI5**, **Math Solver**, **Find Calories**, **Find Cheaper Alternatives**, **Conflict Cooler** and more, available in 10 languages. A camera badge marks actions that capture a screenshot and a globe badge those that search the web. One tap adds any of them to your sidebar, and drag-to-reorder keeps your top three at the top.
+
+Actions written by other people are browsable in the same place, and you can publish your own with a Google sign-in. The useful ones are rarely general-purpose: a kanji-breakdown action written by someone in Japan is now used by thousands of learners — the kind of thing that never survives a product roadmap but does fine when whoever needed it just built it.
 
 ---
 
@@ -115,7 +119,7 @@ Actions written by other people are browsable in the app, and you can publish yo
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
   <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Are there limits on custom actions?</summary>
-  <p style="padding: 10px 20px; color: var(--text-2);">No. You can create unlimited custom actions, from one-line prompts to multi-step instructions.</p>
+  <p style="padding: 10px 20px; color: var(--text-2);">No limit on how many. You can create unlimited custom actions, and each prompt can run to 40,000 characters, so multi-step instructions fit in one action.</p>
 </details>
 
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
@@ -126,6 +130,11 @@ Actions written by other people are browsable in the app, and you can publish yo
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
   <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can actions work without internet?</summary>
   <p style="padding: 10px 20px; color: var(--text-2);">No. Running an action needs a connection because the models are cloud-side. Your action configurations are stored on the device and sync to Google Drive if you turn on backup, so a new phone gets your sidebar back.</p>
+</details>
+
+<details style="margin: 20px auto; max-width: 800px; text-align: left;">
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Is Arc a Tasker alternative?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Different jobs. Tasker, MacroDroid and Automate trigger on device events — time, location, battery, notifications — and are still the right tools for toggling Wi-Fi or scheduling an SMS. Acting on the content inside an app means brittle simulated taps that break on the next app update. Arc's actions do the language work instead — replies, translation, fact checks, extraction — on whatever is on screen, with you present. Many power users run both.</p>
 </details>
 
 ---

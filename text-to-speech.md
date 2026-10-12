@@ -37,6 +37,8 @@ last_modified_at: 2026-09-19
 
 <p>Most TTS apps start with logistics: select, copy, switch apps, paste, press play. AI Read skips all of it. Invoke Arc (<strong>Ctrl + Space</strong> then AI Read on desktop; a tap from the Arc menu on Android), the menu dismisses, no window opens, and Arc reads the frontmost screen aloud — browser, email, PDF reader or chat. Invoke it again to stop. It reads on demand only; nothing monitors your screen in the background.</p>
 
+<p>It reads content, not interface. Article text, email bodies, message threads and document text are kept; navigation bars, buttons, ads, headers and footers are dropped before the voice starts. Want the gist instead? Run AI Summary and tap Listen on the result: a 30-second listen in place of an eight-minute read.</p>
+
 <div class="coming-soon-features">
   <div class="features-grid">
     <div class="feature-card">
@@ -45,7 +47,7 @@ last_modified_at: 2026-09-19
     </div>
     <div class="feature-card">
       <h3>🎚️ Speed and pitch, your way</h3>
-      <p><strong>Settings → Speech</strong> has Speed and Pitch sliders and a Test Speech button. Tune it once; every read follows it.</p>
+      <p><strong>Settings → Speech</strong> has Speed (0.5x to 2x) and Pitch sliders and a Test Speech button. Tune it once; every read follows it.</p>
     </div>
     <div class="feature-card">
       <h3>⏸️ Real pauses between list points</h3>
@@ -53,7 +55,7 @@ last_modified_at: 2026-09-19
     </div>
     <div class="feature-card">
       <h3>🎧 Background playback</h3>
-      <p>Listen while you walk, cook or commute — nothing on screen needs to stay open.</p>
+      <p>Listen while you walk, cook or commute — switch apps or lock the screen and narration continues. On Android, play/pause sits in the media notification and on the lock screen, headset buttons work like a music player, and a saved queue auto-advances ("playing 2 of 5").</p>
     </div>
   </div>
 </div>
@@ -120,6 +122,8 @@ last_modified_at: 2026-09-19
   <tr><td>Price</td><td>✅ Free tier</td><td>Often $8–15/mo</td></tr>
 </table>
 
+<p>Android's own options solve different problems. <strong>TalkBack</strong> announces every button and label so you can operate the phone without seeing it — use it if you can't see the screen, and keep it alongside Arc if you do, since Arc's controls are labeled for it. <strong>Select to Speak</strong> is free and built in, but you drag a box over the text each time, ads and menus included, and nothing is kept afterward. Fine for an occasional paragraph; tiresome as a daily reader.</p>
+
 <p>Dedicated TTS apps can't see your screen, which is why they need the paste. If all you want is a paste box with a voice, plenty of apps do that; Arc also summarizes what it reads, extracts dates and contacts, and quizzes you on it later.</p>
 
 ---
@@ -155,6 +159,10 @@ last_modified_at: 2026-09-19
     <p>Natural voices are free OS downloads — Arc's Get Voices button opens the OS voice settings directly, with Premium/Enhanced voices on macOS and Natural/Neural voices on Windows.</p>
   </details>
   <details>
+    <summary>What's the difference between TalkBack and Arc?</summary>
+    <p>TalkBack announces every interface element and replaces taps with gestures — it's for operating the phone eyes-free. Arc reads the content on screen with menus and ads filtered out, for people who can see the screen but would rather listen. Many people run both.</p>
+  </details>
+  <details>
     <summary>Is there a text-to-speech app for iPhone?</summary>
     <p>The iOS version is coming soon. Arc for Android, macOS and Windows are available today.</p>
   </details>
@@ -179,7 +187,6 @@ last_modified_at: 2026-09-19
   <p>Guides that go further on what's above:</p>
   <ul>
     <li><a href="{{ '/2026/10/07/read-screen-aloud-mac/' | relative_url }}">Mac Text to Speech: 4 Ways to Hear Any Window</a></li>
-    <li><a href="{{ '/2026/10/02/ai-screen-reader-for-android/' | relative_url }}">Text to Speech Android: Make Any App Talk</a></li>
     <li><a href="{{ '/2026/10/05/how-to-read-screen-aloud-android/' | relative_url }}">Screen Reader App for Android: Read Any Screen</a></li>
   </ul>
 </div>
@@ -194,6 +201,7 @@ last_modified_at: 2026-09-19
     {"@type": "Question", "name": "Is Arc good for dyslexia?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Arc is accessibility-first (WCAG 2.1 AA, TalkBack support): one tap reads any screen aloud without copying text into another app."}},
     {"@type": "Question", "name": "Can it read PDFs aloud?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — open the PDF on screen, invoke AI Read, and Arc reads it with natural voices in 100+ auto-detected languages."}},
     {"@type": "Question", "name": "How do I get better-sounding voices?", "acceptedAnswer": {"@type": "Answer", "text": "Natural voices are free OS downloads — Arc's Get Voices button opens the OS voice settings directly, with Premium/Enhanced voices on macOS and Natural/Neural voices on Windows."}},
+    {"@type": "Question", "name": "What's the difference between TalkBack and Arc?", "acceptedAnswer": {"@type": "Answer", "text": "TalkBack announces every interface element and replaces taps with gestures — it's for operating the phone eyes-free. Arc reads the content on screen with menus and ads filtered out, for people who can see the screen but would rather listen. Many people run both."}},
     {"@type": "Question", "name": "Is there a text-to-speech app for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "The iOS version is coming soon. Arc for Android, macOS and Windows are available today."}}
   ]
 }

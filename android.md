@@ -169,11 +169,15 @@ Nothing is copied, nothing is pasted, and you never leave the app you're in. It 
 1. **Install Arc** from [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc).
 2. **Grant two permissions** during onboarding: Accessibility Service, so Arc can read the text on your current screen, and Overlay, so the sidebar can draw on top of other apps.
 3. **Pick your sidebar mode.** The default is Arc's own floating bar. If you'd rather not add a second overlay, choose System Sidebar Integration and Arc becomes an entry in your phone's native edge panel — Samsung Edge Panel, OnePlus Shelf and similar.
-4. **Open something worth reading**, tap the sidebar, and pick AI Summary.
+4. **Open something worth reading**, swipe the sidebar in from the edge, and pick AI Summary.
+
+Install to first summary takes under two minutes — timed on a three-year-old mid-range phone. Drag the sidebar to whichever edge stays out of your thumb's way; it auto-hides when you're not using it.
 
 ## What Makes It Different From a Chatbot App
 
-Gemini, ChatGPT and Copilot are destinations: you go to them, paste what you're dealing with, then go back. Arc already has the screen, so the interaction is one tap and a result. That makes small tasks worth doing — rewriting a two-line message, checking what a dense paragraph said, grabbing the flight number from a confirmation email. Add your own prompts as buttons and it becomes a [personal AI assistant](/personal-ai-assistant/) shaped around your work.
+Gemini, ChatGPT and Copilot are destinations: you go to them, paste what you're dealing with, then go back. Arc already has the screen, so the interaction is one tap and a result. That makes small tasks worth doing — rewriting a two-line message, checking what a dense paragraph said, grabbing the flight number from a confirmation email, or pulling the text out of a screenshot someone sent you (Smart Extract has built-in OCR). Chat Screen skips the "here's the context" preamble entirely: ask "explain this error message" or "what are they actually offering in this email?" and the answer is grounded in what's displayed.
+
+Circle to Search is handy for one-off lookups and Gemini for open-ended research, but neither gives you a persistent action panel across every app. Plenty of people use both: chat assistants answer questions; a screen assistant clears the screen. Add your own prompts as buttons and it becomes a [personal AI assistant](/personal-ai-assistant/) shaped around your work.
 
 ## Privacy and Permissions
 
@@ -227,13 +231,9 @@ Yes. Write a prompt once with a `{screen_text}` placeholder and it becomes a one
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
     <li><a href="{{ '/2026/09/23/ai-text-reader-android/' | relative_url }}">Read a PDF Aloud on Android: Listen to Any Screen</a></li>
-    <li><a href="{{ '/2026/09/30/ai-rewrite-text-android-app/' | relative_url }}">AI Rewrite Tool for Android: Fix Text In-Place</a></li>
     <li><a href="{{ '/2026/10/01/ai-fact-checker-app-android/' | relative_url }}">AI Fact Checker: Verify Any Screen in One Tap</a></li>
-    <li><a href="{{ '/2026/09/28/ai-reply-generator-android/' | relative_url }}">AI Message Generator for Android: Reply in Any App</a></li>
     <li><a href="{{ '/2026/07/15/gemini-intelligence-vs-ai-screen-assistants/' | relative_url }}">Gemini Intelligence vs AI Screen Assistants: What Helps</a></li>
-    <li><a href="{{ '/2026/09/29/ai-automation-app-android/' | relative_url }}">AI Automation on Android: Build Custom AI Actions</a></li>
   </ul>
 </div>
 <!-- /related-posts -->

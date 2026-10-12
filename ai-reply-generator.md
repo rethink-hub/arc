@@ -47,6 +47,9 @@ last_modified_at: 2026-09-19
   </table>
   <p>Need a different register? Run the draft through a rewrite tone — Professional, Polite, Shorten and more are covered on the <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a> page.</p>
   <img class="inline-phone" width="800" height="1760" src="/assets/images/screenshots/03_ai_writer_reply_mode.jpg" alt="Arc AI Writer reply mode on Android with five reply intentions" loading="lazy" decoding="async">
+  <h3>It knows which side of the thread you're on.</h3>
+  <p>Paste-the-message tools reply to one message with no memory of what came before, and often from the wrong side of the conversation. Arc reads the visible thread and works out who said what: in WhatsApp and Telegram by bubble alignment (left is them, right is you), in Gmail from the flow of the conversation. It copes with quoted email threads, nested comments and right-to-left scripts like Arabic, Hebrew, Urdu and Persian. A context preview shows exactly what was captured before you generate. If your cursor is already in the reply box, anything you'd started typing is pulled in too.</p>
+  <p>In practice: a WhatsApp thread ending in <em>"Want to grab coffee at 3pm today?"</em>, one tap on Agree, and two to three seconds later — <em>"Yes, perfect! I'll be there at 3pm. See you then!"</em></p>
 </div>
 
 ---
@@ -109,6 +112,14 @@ last_modified_at: 2026-09-19
     <summary>Is there an AI reply generator for Mac or Windows?</summary>
     <p>Yes. Arc for macOS (free, notarized, macOS 14+) and Arc for Windows are available now, with per-action keyboard shortcuts and generation history.</p>
   </details>
+  <details>
+    <summary>Does the reply generator read my whole conversation?</summary>
+    <p>It reads the visible thread on your screen so the reply fits the context — who asked what, and how the conversation has gone. The expandable context preview shows exactly what was captured, and nothing is generated until you tap to generate.</p>
+  </details>
+  <details>
+    <summary>Can it write replies in other languages?</summary>
+    <p>Yes. AI Writer works in multiple languages and handles right-to-left scripts like Arabic, Hebrew, Urdu and Persian, with sender detection working the same way regardless of script direction.</p>
+  </details>
 </div>
 
 
@@ -123,16 +134,6 @@ last_modified_at: 2026-09-19
   </ul>
 </div>
 
-
-<!-- related-posts: generated, see scratchpad linkplan -->
-<div class="related-links">
-  <h2>More on this</h2>
-  <p>Guides that go further on what's above:</p>
-  <ul>
-    <li><a href="{{ '/2026/09/28/ai-reply-generator-android/' | relative_url }}">AI Message Generator for Android: Reply in Any App</a></li>
-  </ul>
-</div>
-<!-- /related-posts -->
 
 <script type="application/ld+json">
 {
@@ -169,6 +170,22 @@ last_modified_at: 2026-09-19
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Arc for macOS (free, notarized, macOS 14+) and Arc for Windows are available now, with per-action keyboard shortcuts and generation history."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the reply generator read my whole conversation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It reads the visible thread on your screen so the reply fits the context — who asked what, and how the conversation has gone. The expandable context preview shows exactly what was captured, and nothing is generated until you tap to generate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it write replies in other languages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AI Writer works in multiple languages and handles right-to-left scripts like Arabic, Hebrew, Urdu and Persian, with sender detection working the same way regardless of script direction."
       }
     }
   ]

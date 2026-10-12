@@ -6,7 +6,7 @@ date: 2026-09-14
 author: Mamata
 tags: ["mac", "ai", "productivity", "macos"]
 og_image: /assets/images/og-post-ai-screen-assistant-mac.png
-keywords: "ai screen assistant mac, ai overlay assistant mac, ai assistant for mac, mac ai overlay"
+keywords: "ai screen assistant mac, spotlight ai, ai spotlight mac, ai overlay assistant mac, ai assistant for mac, mac ai overlay"
 faq:
   - question: "What is an AI screen assistant for Mac?"
     answer: "It's a tool that can read the window currently in front of you and perform AI actions on it \u2014 summarize it, read it aloud, rewrite text in it, answer questions about it \u2014 without any copy-paste. Arc does this on macOS 14 and later: press Control+Space and a floating panel opens over the active window, then works directly on that window's content."
@@ -29,7 +29,7 @@ You're 30 pages into a PDF you don't have time to finish. Or staring at a Safari
 
 An AI screen assistant Mac setup deletes five of those steps. The AI comes to the window you're already looking at. You press one shortcut, it reads what's on screen, it does the thing, and it gets out of the way.
 
-That's the entire idea behind Arc for Mac — the desktop version of [Arc AI Screen Assistant](/). Below is what an AI screen assistant actually is, what Arc can do on macOS, and how Control+Space turns "I should deal with this later" into "done."
+That's the entire idea behind Arc for Mac — the desktop version of [Arc AI Screen Assistant](/). Below is what an AI screen assistant is, what Arc can do on macOS, and how Control+Space turns "I should deal with this later" into "done."
 
 ## What an AI Screen Assistant for Mac Actually Does
 
@@ -53,9 +53,11 @@ Arc started life on Android, as a floating sidebar that could read whatever was 
 
 <img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc AI screen assistant panel over a Chrome window on macOS" width="1200" height="715" loading="lazy" />
 
-### Control+Space: One Shortcut Over Every Window
+### Spotlight AI for Mac: Control+Space Over Every Window
 
-Press **Control + Space** anywhere in macOS. A slim floating panel slides in over whatever window has your attention — anchored to the side, translucent, your actions already listed in it. It behaves like a private little Spotlight: instead of launching apps, it works on the thing behind it. Pick an action, Arc reads the frontmost window, and the result lands in the panel. Press **Esc** and the panel collapses; your window is untouched, right where you left it.
+Press **Control + Space** anywhere in macOS. A slim floating panel slides in over whatever window has your attention — anchored to the side, translucent, your actions already listed in it. Pick an action, Arc reads the frontmost window, and the result lands in the panel. Press **Esc** and the panel collapses; your window is untouched, right where you left it.
+
+The shortest way to describe it is **Spotlight AI**. Same muscle memory as Apple's Command+Space search, one modifier key over — but instead of searching your files and launching apps, it works on the window behind it. Spotlight finds things; Arc does something with the thing you've already found.
 
 If you'd rather use the mouse, a small icon in the menu bar opens the same panel over the active window. The keyboard shortcut is simply faster, and it's remappable in settings if Control+Space is already spoken for on your machine.
 
@@ -65,7 +67,7 @@ That's the whole interaction model: one keystroke, one window, one result. There
 
 ### It Only Reads When You Ask
 
-Worth being explicit about, because "it can see my screen" sounds alarming until you hear the mechanics. Arc reads windows through macOS's accessibility APIs — the same system interfaces VoiceOver uses. It does not watch in the background, does not record keystrokes, and does nothing at all until you press the shortcut. It reads the frontmost window for the duration of one action (a summary takes 3–6 seconds), then goes dormant. Password managers are skipped automatically. Screen Recording permission is only needed if you want screenshot-based actions; plain text reading needs Accessibility only.
+Worth being explicit about, because "it can see my screen" sounds alarming until you hear the mechanics. Arc reads windows through macOS's accessibility APIs — the same system interfaces VoiceOver uses. It does not watch in the background, does not record keystrokes, and does nothing at all until you press the shortcut (or click the menu bar icon). It reads the frontmost window for the duration of one action (a summary takes 3–6 seconds), then goes dormant. Password managers are skipped automatically. Screen Recording permission is only needed if you want screenshot-based actions; plain text reading needs Accessibility only. Google Drive backup is optional and stays off until you turn it on.
 
 ## What the Panel Can Do With Your Screen
 
@@ -110,9 +112,11 @@ The panel's action list isn't fixed. Write your own prompt once — "reply polit
 
 None of that requires switching apps once. The AI is measured in keystrokes, not context switches.
 
-## Privacy: What Arc Sees, and When
+## Notarized, and Not on the Mac App Store
 
-A well-behaved tool of this kind should be boring about data, and Arc is. It wakes on Control+Space (or the menu bar icon), reads the frontmost window, runs your chosen action, and goes back to sleep. Nothing is read between presses. Nothing is logged or watched. The app is notarized by Apple, requests Accessibility permission up front with a plain-language explanation of what it's for, and asks for Screen Recording only if you use screenshot actions. Google Drive backup is optional and stays off until you turn it on. That's the complete list of what touches your data — there is no hidden fifth permission.
+Arc for Mac is signed with an Apple Developer ID and notarized by Apple, so it installs without the "unidentified developer" warning. It updates itself through a cryptographically signed update feed, so new versions arrive automatically without hunting for a download link.
+
+It is not on the Mac App Store, and it can't be. App Store apps must run inside Apple's App Sandbox, and the sandbox forbids the accessibility APIs that let one app read another app's window. Those APIs *are* Arc — shipping through the App Store would mean shipping an app that can't do the one thing it exists to do. Notarization plus a signed auto-updater does the same safety job, minus the restriction that breaks the product.
 
 ## What Arc Deliberately Does Not Do
 
@@ -127,7 +131,7 @@ The no-background rule is the same one that keeps the privacy story simple: no i
 
 ## One Assistant on Mac and Android
 
-Arc also lives on Android, where it started — the same floating-sidebar idea, over any app on your phone. If you run both, sign in on each and your saved content, custom actions, and subscription carry across; write an action at your desk, use it on the bus. The Android app is on Google Play ([com.rethink.arc](https://play.google.com/store/apps/details?id=com.rethink.arc)), it's the same account, and it's the same subscription — not a second one. So what you rely on at the keyboard rides along in your pocket, reading and summarizing the small screen the same way.
+Arc also lives on Android, where it started — the same floating-sidebar idea, over any app on your phone. If you run both, sign in on each and your saved content, custom actions, and subscription carry across; write an action at your desk, use it on the bus. The Android app is on Google Play ([com.rethink.arc](https://play.google.com/store/apps/details?id=com.rethink.arc)), it's the same account, and it's the same subscription — not a second one. Arc is also on [Windows](/windows/) through the Microsoft Store, and an [iOS](/ios/) version is in development.
 
 ## Getting Started Takes About Two Minutes
 
@@ -137,7 +141,7 @@ The install is deliberately short:
 2. Launch it and grant the **Accessibility** permission when onboarding asks — that's what lets Arc read the active window.
 3. Press **Control + Space** on whatever's already open, and try Summarize on it.
 
-There's no account required to start. The basic features include 7 free requests per week, with no ads and no trial clock quietly counting down in the corner.
+There's no account required to start. The basic features include 7 free requests per week, with no ads and no trial clock quietly counting down in the corner. The app ships in 10 languages — English, Spanish, German, Portuguese (Brazil and Portugal), French, Korean, Indonesian, Japanese, and Arabic.
 
 ## FAQ
 

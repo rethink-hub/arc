@@ -14,6 +14,10 @@ faq:
     answer: "Yes. Pick Rephrase, Professional, Polite, Shorten or Elaborate, or type a Custom instruction for any other tone — casual, persuasive, apologetic."
   - question: "Does the AI Writer store my text?"
     answer: "No. Text is processed for AI responses but never stored on our servers. Your content stays private and is not used to train models."
+  - question: "Can it make AI-generated text sound human?"
+    answer: "Yes. If a chatbot draft reads robotic, run it through Rewrite with Rephrase or a Custom instruction like \"casual and plain\" and the stiff phrasing gets reworked. If you only want errors repaired, Fix Grammar keeps the wording as is."
+  - question: "Can it rewrite text I can't select or copy?"
+    answer: "Usually. Arc reads the visible screen rather than the clipboard, so text that's awkward to select on Android — a preview pane, a PDF viewer, part of a web page — is still workable. For very long documents, capture the relevant section or condense it first with AI Summary."
 last_modified_at: 2026-09-19
 ---
 
@@ -69,10 +73,15 @@ Each mode is tuned for a different job, and the difference shows up in what come
 
 Rewrite keeps your facts: it will turn "can't make 3pm" into "I'm unable to attend at 3:00 PM," but it will not invent a reason you didn't give it.
 
+### Save the rewrites you run every day
+
+The built-in tones cover most fixes, but daily users end up with a few instructions they repeat — "shorten to one line for a status update", "rewrite as a three-bullet update, lead with the outcome", "confident but not aggressive". Save each once as a [custom action]({{ '/ai-workflow-automation/' | relative_url }}) and it becomes a one-tap button, instead of a Custom instruction you retype.
+
 ## How It Compares to What's Already on Your Phone
 
 - **Gboard's built-in proofread** is free and instant — the right tool for a typo. It fixes; it does not rewrite, reply, or translate with tone.
 - **The Grammarly keyboard** is strong on grammar and style, but as a keyboard it acts on what you type, not on what's on screen around it.
+- **QuillBot and browser rewriters** are good for long documents on a desktop. On a phone they mean leaving the app, pasting, copying and pasting back — five or six steps for a two-line fix.
 - **Pasting into ChatGPT or Gemini** gives you the most capable model for long-form work, at the cost of an app switch and two pastes every time.
 - **Arc's AI Writer** reads the screen, so it can answer a message it can see and return you to the app you were in. It is not a live as-you-type grammar engine, and for a 2,000-word draft you want a full chat interface.
 
@@ -104,6 +113,16 @@ The free tier is 7 requests per week. Premium removes the cap and covers [Androi
 <details style="margin: 20px auto; max-width: 800px; text-align: left;">
   <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Does the AI Writer store my text?</summary>
   <p style="padding: 10px 20px; color: var(--text-2);">No. Text is processed for AI responses but never stored on our servers. Your content stays private and is not used to train models.</p>
+</details>
+
+<details style="margin: 20px auto; max-width: 800px; text-align: left;">
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can it make AI-generated text sound human?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Yes. If a chatbot draft reads robotic, run it through Rewrite with Rephrase or a Custom instruction like "casual and plain" and the stiff phrasing gets reworked. If you only want errors repaired, Fix Grammar keeps the wording as is.</p>
+</details>
+
+<details style="margin: 20px auto; max-width: 800px; text-align: left;">
+  <summary style="font-weight: 600; cursor: pointer; padding: 10px; color: var(--brand);">Can it rewrite text I can't select or copy?</summary>
+  <p style="padding: 10px 20px; color: var(--text-2);">Usually. Arc reads the visible screen rather than the clipboard, so text that's awkward to select on Android — a preview pane, a PDF viewer, part of a web page — is still workable. For very long documents, capture the relevant section or condense it first with <a href="{{ '/ai-summary-reader/' | relative_url }}">AI Summary</a>.</p>
 </details>
 
 ---

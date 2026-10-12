@@ -180,7 +180,6 @@ last_modified_at: 2026-09-19
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
     <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
   </ul>
 </div>

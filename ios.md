@@ -16,6 +16,10 @@ faq:
     answer: "The same as every other platform: free for 7 requests per week on basic features, with a premium subscription for unlimited summaries, text-to-speech, AI chat and automation. No ads, no expiring trial."
   - question: "Can I use Arc on iPhone right now?"
     answer: "Not yet as a native app. Arc ships on Android, macOS and Windows today. If you use a Mac alongside your iPhone, the Mac app covers reading and writing on the desktop while the iPhone version is in development."
+  - question: "Which is the best AI assistant for iPhone?"
+    answer: "It depends on the job. ChatGPT and Claude are strong standalone chat apps, and Apple Intelligence covers system-level writing tools in the places Apple wires them in. The gap is an assistant that works on the screen you're already on — summarizing, reading aloud and rewriting inside the app you're using. That's the role Arc is building for."
+  - question: "Which iPhone models will be supported?"
+    answer: "The plan is recent iOS versions, including Action Button models. Exact hardware requirements will be confirmed at beta, and waitlist members hear first."
 last_modified_at: 2026-09-19
 ---
 
@@ -138,11 +142,18 @@ The iPhone version is in development, built around the entry points iOS allows (
 An iPhone app cannot draw over another app or read its content in the background — a platform decision by Apple, and the reason no true screen-reading AI assistant exists on iOS from anyone. So Arc for iPhone is being built around the openings Apple does provide:
 
 - **Share Sheet** — send the current page, PDF, image or selection into Arc from any app, which covers Safari, Mail, Files, Messages and most third-party apps.
-- **Shortcuts and the Action Button** — bind a custom Arc action to the side button on iPhone 15 Pro and later, or to any Shortcuts automation.
+- **Shortcuts, Back Tap and the Action Button** — bind a custom Arc action to the side button on iPhone 15 Pro and later, to a double Back Tap, or to any Shortcuts automation.
 - **A custom keyboard** — rewrite, reply and fix grammar in place, in whatever field you're typing in.
 - **Widgets and App Intents** — surface the Saved Items library and one-tap actions without opening the app.
 
 It reaches the same features with one extra tap, and it can actually ship on the App Store. Saved items sync, so anything you capture with [Arc for Mac](/macos/) now will be there when the iPhone app arrives. For how content is handled, see [private AI assistant](/private-ai-assistant/).
+
+### What day one should look like
+
+1. Reading a 4,000-word report in Safari: tap Share → Arc and get a summary in about twenty seconds, with the option to listen to it on your commute.
+2. A client email needs a reply between meetings: select the thread, invoke Arc, and pick from three drafted replies in different tones.
+3. An address, price or recipe on screen: one action saves it to your Info Vault, so it's findable later without a screenshot.
+4. Double Back Tap: Arc summarizes whatever you were just reading — the closest iOS allows to Android's always-there sidebar.
 
 ## Arc for iOS FAQ
 
@@ -166,16 +177,14 @@ The same as every other platform: free for 7 requests per week on basic features
 
 Not yet as a native app. Arc ships on Android, macOS and Windows today. If you use a Mac alongside your iPhone, the Mac app covers reading and writing on the desktop while the iPhone version is in development.
 
+### Which is the best AI assistant for iPhone?
+
+It depends on the job. ChatGPT and Claude are strong standalone chat apps, and Apple Intelligence covers system-level writing tools in the places Apple wires them in. The gap is an assistant that works on the screen you're already on — summarizing, reading aloud and rewriting inside the app you're using. That's the role Arc is building for.
+
+### Which iPhone models will be supported?
+
+The plan is recent iOS versions, including Action Button models. Exact hardware requirements will be confirmed at beta, and waitlist members hear first.
+
 </div>
 
 {% include referral-handoff.html %}
-
-<!-- related-posts: generated, see scratchpad linkplan -->
-<div class="related-links">
-  <h2>More on this</h2>
-  <p>Guides that go further on what's above:</p>
-  <ul>
-    <li><a href="{{ '/2026/09/22/ai-assistant-for-iphone/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
-  </ul>
-</div>
-<!-- /related-posts -->

@@ -154,10 +154,10 @@ It's free on [Android](/android/), [Mac](/macos/) and [Windows](/windows/), with
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/09/26/ai-screen-assistant-android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
+    <li><a href="{{ '/android/' | relative_url }}">AI Screen Assistant Android: Arc Works in Every App</a></li>
     <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
-    <li><a href="{{ '/2026/09/21/ai-screen-assistant-windows/' | relative_url }}">AI Assistant for PC: Arc Is Now on Windows</a></li>
-    <li><a href="{{ '/2026/09/22/ai-assistant-for-iphone/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
+    <li><a href="{{ '/windows/' | relative_url }}">AI Assistant for PC: Arc Is Now on Windows</a></li>
+    <li><a href="{{ '/ios/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
   </ul>
 </div>
 <!-- /related-posts -->

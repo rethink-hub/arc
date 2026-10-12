@@ -58,6 +58,15 @@ Arc is an AI assistant for Windows that works on the window you are already look
 
 It's a free download from the [Microsoft Store]({{ site.windows_app.store }}) for Windows 10 and 11.
 
+### What's in the Ctrl+Space menu
+
+The panel lists seven built-in actions — **AI Summary, AI Writer, Save Content, AI Read, Chat Screen, Flashcards, Smart Extract** — and the search field doubles as a free-text prompt box. Each action can be reordered, disabled or bound to its own global shortcut. Esc dismisses the panel with no residue.
+
+- **AI Summary** returns an AI-generated title, numbered key points and a source chip in a couple of seconds, with Listen, Copy, Share, Save and Ask questions underneath.
+- **AI Read** opens no window at all: Arc detects the on-screen language, picks the best installed voice and starts reading. Lists are spoken as separate points with pauses, and invoking it again stops playback.
+- **AI Writer** pulls the draft from whatever field your cursor is in and offers four modes: Rewrite (Rephrase, Professional, Polite, Shorten, Elaborate, Custom), Fix Grammar, Reply (Agree, Decline, Thank, Ask for details, Acknowledge) and Create Post for Reddit, X, LinkedIn and store reviews. **Insert** writes the result back into the original field.
+- **Arc Actions** are your own prompts with a `{screen_text}` placeholder — "extract every action item and deadline from this thread", "turn this error message into a bug report" — bound to a hotkey and run headless against the current window. The community catalog is filterable by language.
+
 </div>
 
 <!-- Screenshots (captured on macOS; identical UI on Windows) -->
@@ -170,13 +179,3 @@ Yes. AI summaries, chat and rewriting are processed by a hosted model, so Arc ne
 </div>
 
 {% include referral-handoff.html %}
-
-<!-- related-posts: generated, see scratchpad linkplan -->
-<div class="related-links">
-  <h2>More on this</h2>
-  <p>Guides that go further on what's above:</p>
-  <ul>
-    <li><a href="{{ '/2026/09/21/ai-screen-assistant-windows/' | relative_url }}">AI Assistant for PC: Arc Is Now on Windows</a></li>
-  </ul>
-</div>
-<!-- /related-posts -->
