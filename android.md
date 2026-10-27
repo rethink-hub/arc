@@ -96,7 +96,7 @@ Nothing is copied, nothing is pasted, and you never leave the app you're in. It 
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>AI Writer.</strong> Five reply intentions and six tones, written back into the field you're typing in. See <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a> and <a href="{{ '/ai-reply-generator/' | relative_url }}">AI reply generator</a>.</figcaption>
+    <figcaption><strong>AI Writer.</strong> Five reply intentions and six tones, written back into the field you're typing in. See <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a>.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">
@@ -106,7 +106,7 @@ Nothing is copied, nothing is pasted, and you never leave the app you're in. It 
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Smart Extract.</strong> Dates, contacts, codes and tasks, each with a button that uses it. See <a href="{{ '/smart-extract/' | relative_url }}">Smart Extract</a>.</figcaption>
+    <figcaption><strong>Smart Extract.</strong> Dates, contacts, codes and tasks, each with a button that uses it. See <a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary and extract</a>.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">
@@ -177,7 +177,7 @@ Install to first summary takes under two minutes — timed on a three-year-old m
 
 Gemini, ChatGPT and Copilot are destinations: you go to them, paste what you're dealing with, then go back. Arc already has the screen, so the interaction is one tap and a result. That makes small tasks worth doing — rewriting a two-line message, checking what a dense paragraph said, grabbing the flight number from a confirmation email, or pulling the text out of a screenshot someone sent you (Smart Extract has built-in OCR). Chat Screen skips the "here's the context" preamble entirely: ask "explain this error message" or "what are they actually offering in this email?" and the answer is grounded in what's displayed.
 
-Circle to Search is handy for one-off lookups and Gemini for open-ended research, but neither gives you a persistent action panel across every app. Plenty of people use both: chat assistants answer questions; a screen assistant clears the screen. Add your own prompts as buttons and it becomes a [personal AI assistant](/personal-ai-assistant/) shaped around your work.
+Circle to Search is handy for one-off lookups and Gemini for open-ended research, but neither gives you a persistent action panel across every app. Plenty of people use both: chat assistants answer questions; a screen assistant clears the screen. Add your own prompts as buttons and it becomes a personal AI assistant shaped around your work.
 
 ## Privacy and Permissions
 
@@ -231,9 +231,9 @@ Yes. Write a prompt once with a `{screen_text}` placeholder and it becomes a one
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/09/23/ai-text-reader-android/' | relative_url }}">Read a PDF Aloud on Android: Listen to Any Screen</a></li>
+    <li><a href="{{ '/2026/10/05/how-to-read-screen-aloud-android/' | relative_url }}">Read any screen aloud on Android</a></li>
     <li><a href="{{ '/2026/10/01/ai-fact-checker-app-android/' | relative_url }}">AI Fact Checker: Verify Any Screen in One Tap</a></li>
-    <li><a href="{{ '/2026/07/15/gemini-intelligence-vs-ai-screen-assistants/' | relative_url }}">Gemini Intelligence vs AI Screen Assistants: What Helps</a></li>
+    <li><a href="{{ '/2026/09/15/best-ai-apps-android/' | relative_url }}">Best AI apps for Android, tested</a></li>
   </ul>
 </div>
 <!-- /related-posts -->

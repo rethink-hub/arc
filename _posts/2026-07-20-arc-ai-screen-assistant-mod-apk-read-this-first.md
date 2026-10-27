@@ -1,114 +1,98 @@
 ---
 layout: blog
-title: "Arc AI Screen Assistant Mod APK? Read This First"
-description: "Looking for a modded Arc AI? Here's the truth from the indie developer who built it: why there's no mod APK and how cheap the real thing is."
+title: "Is There an Arc Mod APK? Free vs Premium, Honestly"
+description: "Searching for an Arc AI Screen Assistant mod APK? The developer explains why a mod can't unlock the AI features, what's free, and what Premium costs."
 date: 2026-07-20
-author: Rethink
-tags: ["mod-apk", "arc", "premium", "indie-developer", "android", "comparison"]
+last_modified_at: 2026-10-27
+author: Mamata
+tags: ["mod-apk", "arc", "premium", "indie-developer", "android"]
+keywords: "arc ai screen assistant mod apk, arc ai premium, arc ai free"
 og_image: /assets/images/og-blog-mod-apk.png
-robots: noindex, follow
-sitemap: false
 faq:
-  - question: "Why People Look for Mod APKs"
-    answer: "I understand the impulse. A lot of Android apps these days charge ridiculous prices \u2014 $10/month, $15/month, sometimes more \u2014 for features that should be basic. Subscriptions stacked on subscriptions. It feels like every app wants a piece of your monthly budget forever."
-  - question: "How Much Arc Actually Costs"
-    answer: "Let me be transparent about the pricing, because I think you'll be surprised."
-  - question: "What You Get for Free"
-    answer: "Arc gives you 7 free requests per week on basic features \u2014 summarizing screens, extracting text, AI chat. No ads. No watermarks. No \"trial period\" that expires. Seven requests, every week, forever."
-  - question: "What Premium Costs"
-    answer: "If you want unlimited access to all features \u2014 summaries, TTS, flashcards, AI writer, workflow automation \u2014 here's what it costs:"
-  - question: "Why a Mod APK Doesn't Exist (And Won't)"
-    answer: "Here's the practical reality: even if someone cracked Arc's licensing, it wouldn't give you much."
+  - question: "Is there an Arc AI Screen Assistant mod APK?"
+    answer: "No working one. Arc's AI features run on servers, not on your phone, so a modified APK can't unlock them; at best it opens an app whose AI requests fail. Files sold or shared as an \"Arc mod\" are unofficial and may contain malware."
+  - question: "Is Arc free?"
+    answer: "Yes. Arc gives you 7 free requests per week on basic features (summarizing screens, extracting text, AI chat), with no ads, no watermarks and no trial that expires."
+  - question: "How much does Arc Premium cost?"
+    answer: "$5.99 per month or $39.99 per year (₹149/month or ₹999/year in India, £5.99/month or £39.99/year in the UK). The yearly plan works out to about $3.33 a month and unlocks unlimited use of all features, including summaries, text-to-speech, flashcards, AI Writer and workflow automation."
+  - question: "Why can't a mod APK unlock Premium?"
+    answer: "Summaries, chat and extraction are processed by cloud AI models that cost money per request. Those requests are checked on the server, so changing the app on your phone doesn't change what the server allows."
+  - question: "Is it safe to install a modded APK?"
+    answer: "It's risky. Modded APKs come from unofficial sources, aren't checked by Google Play Protect in the same way, and are a common way to spread malware. An app like Arc needs accessibility permission, so a tampered copy could read everything on your screen. Install Arc only from Google Play."
+  - question: "Does one subscription cover Mac too?"
+    answer: "Yes. The same Arc subscription covers Android and Mac."
 ---
 
+If you searched for an "Arc AI Screen Assistant mod APK," here's the short answer: there isn't a working one, and installing one would be a bad idea. Arc's free tier is real, and Premium costs less than most people expect. I'm Mamata, the developer who builds Arc, so here's the full picture.
 
-So you searched for "Arc AI Screen Assistant mod APK" and ended up here. I know why you're looking for it — you want the premium features without paying. I get it. I've been there too.
+## Why a mod APK can't unlock Arc
 
-But there's no mod APK here. And honestly? You don't need one. Let me explain why.
+Arc's AI features (summaries, chat, text extraction) run on cloud AI models. Each request hits a server that costs money to run, and that server decides what your account can do. A modified APK changes the app on your phone, not the server, so it can't turn Premium on. At best you get an app whose AI requests fail.
 
-## I'm Not a Big Company
+## Why installing one is risky
 
-I'm a solo developer building Arc AI Screen Assistant — an Android app that lets you summarize, extract text, and chat with AI on any screen using a floating sidebar.
+Modded APKs come from unofficial sites, aren't vetted the way Play Store apps are, and are a common way to spread malware. That risk is bigger with an app like Arc, which needs accessibility permission to read your screen. A tampered copy with that permission could read your messages, emails and banking screens. Only install Arc from [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) (or the official [Mac](/macos/) and [Windows](/windows/) downloads).
 
-There's no team. No investors. No office. It's just me, my laptop, and a lot of late nights writing Kotlin and debugging accessibility service issues at 2 AM.
+## What you get for free
 
-Every line of code in Arc — the AI summarizer, the text reader, the flashcard generator, the TTS engine, the workflow automation — I wrote it. When a user emails about a bug, that email lands in my inbox and I fix it myself.
+Arc gives you **7 free requests per week** on basic features: summarizing screens, extracting text and AI chat. No ads, no watermarks, and no trial that expires. If you use Arc occasionally, you may never need to pay.
 
-## Why People Look for Mod APKs
+## What Premium costs
 
-I understand the impulse. A lot of Android apps these days charge ridiculous prices — $10/month, $15/month, sometimes more — for features that should be basic. Subscriptions stacked on subscriptions. It feels like every app wants a piece of your monthly budget forever.
+Premium unlocks unlimited use of everything, including summaries, text-to-speech, flashcards, AI Writer and workflow automation:
 
-So when you see another app with a "Premium" tier, the instinct is to look for a modded version. I'd probably do the same.
+- **Monthly:** $5.99/month (₹149/month in India, £5.99/month in the UK)
+- **Yearly:** $39.99/year (₹999/year in India, £39.99/year in the UK)
 
-But here's the thing: Arc isn't one of those apps.
+The yearly plan works out to about **$3.33 a month**, or around **₹83 a month** in India. One plan, no higher tiers or upsells, and the same subscription covers Android and Mac.
 
-## How Much Arc Actually Costs
+## Why it isn't free forever
 
-Let me be transparent about the pricing, because I think you'll be surprised.
+I'm a solo developer. There's no team and no investors; when someone emails about a bug, I'm the one who fixes it. Premium pays for:
 
-### What You Get for Free
+- **AI costs.** Every summary, chat reply and extraction costs money per request.
+- **Development.** New features, bug fixes and keeping up with Android changes, such as new accessibility restrictions.
+- **Servers.** The backend that handles accounts, settings and AI requests.
 
-Arc gives you **7 free requests per week** on basic features — summarizing screens, extracting text, AI chat. No ads. No watermarks. No "trial period" that expires. Seven requests, every week, forever.
+What's left is what I live on. With a small app, every subscription makes a real difference to whether it keeps going.
 
-If you use Arc occasionally — to summarize an article here, extract some text there — you might never need to pay anything. That's intentional. I wanted Arc to be useful even if you never spend a rupee.
+## What I'd suggest instead
 
-### What Premium Costs
+1. **Install Arc from Google Play.** It's free, with no credit card needed.
+2. **Use the free tier** for a few weeks: 7 requests a week, no time limit.
+3. **Decide whether it's useful.** If it isn't, uninstall it. If it is, the yearly plan is the cheapest way to keep using it.
 
-If you want unlimited access to all features — summaries, TTS, flashcards, AI writer, workflow automation — here's what it costs:
+To see what Premium includes before deciding, the feature pages go through it: [AI Summary & Reader](/ai-summary-reader/), [AI Writer](/ai-writer/), [AI Workflow Automation](/ai-workflow-automation/) and [Text to Speech](/text-to-speech/).
 
-- **Monthly**: $5.99/month (₹149/month in India, £5.99/month in UK)
-- **Yearly**: $39.99/year (₹999/year in India, £39.99/year in UK)
+## FAQ
 
-That yearly plan works out to **$3.33/month** — less than a cup of coffee. In India, ₹999/year is about **₹83/month**. That's less than most streaming services charge per month.
+### Is there an Arc AI Screen Assistant mod APK?
 
-I priced it this way deliberately. I'm not trying to get rich off this. I'm trying to make enough to keep building.
+No working one. Arc's AI features run on servers, not on your phone, so a modified APK can't unlock them; at best it opens an app whose AI requests fail. Files sold or shared as an "Arc mod" are unofficial and may contain malware.
 
-## Why a Mod APK Doesn't Exist (And Won't)
+### Is Arc free?
 
-Here's the practical reality: even if someone cracked Arc's licensing, it wouldn't give you much.
+Yes. Arc gives you 7 free requests per week on basic features (summarizing screens, extracting text, AI chat), with no ads, no watermarks and no trial that expires.
 
-Arc's AI features run on cloud APIs — the summarization, the chat, the text extraction. Those calls hit servers that cost real money per request. A modded APK can't bypass that because the computation happens server-side, not on your phone. You'd just get an app that crashes when you try to use any AI feature.
+### How much does Arc Premium cost?
 
-The free tier exists because I want people to try Arc without barriers. The paid tier exists because AI inference costs money and I need to cover it.
+$5.99 per month or $39.99 per year (₹149/month or ₹999/year in India, £5.99/month or £39.99/year in the UK). The yearly plan works out to about $3.33 a month and unlocks unlimited use of all features.
 
-## What Happens When You Support Indie Developers
+### Why can't a mod APK unlock Premium?
 
-When you subscribe to Arc Premium, here's where your money goes:
+Summaries, chat and extraction are processed by cloud AI models that cost money per request. Those requests are checked on the server, so changing the app on your phone doesn't change what the server allows.
 
-- **AI API costs**: Every summary, every chat response, every extraction costs me money per request. Your subscription literally pays for the compute you use.
-- **Development**: New features, bug fixes, Android version compatibility updates. Android 17 is coming with bubbles and new accessibility restrictions — I need to be ready.
-- **Server costs**: The backend that handles user accounts, syncs settings, and routes AI requests.
+### Is it safe to install a modded APK?
 
-What's left after that is what I live on. This is my full-time job — I make my living building Arc. It's not a lot, but it's enough to keep going. And every new subscriber genuinely makes a difference — it tells me someone out there values what I'm building enough to pay for it.
+It's risky. Modded APKs come from unofficial sources and are a common way to spread malware. An app like Arc needs accessibility permission, so a tampered copy could read everything on your screen. Install Arc only from Google Play.
 
-## The Real Cost of Piracy for Small Developers
+### Does one subscription cover Mac too?
 
-When you pirate a big company's app, they barely notice. Adobe doesn't care if one more person cracks Photoshop. Google isn't going bankrupt because someone sideloaded a modded APK.
-
-When you pirate an indie app, it's different. That $5.99/month isn't going into a corporate slush fund. It's going into the next feature, the next bug fix, the next Android update that keeps the app alive. If enough people pirate instead of paying, the app dies. Not because the developer got rich and quit — because they couldn't afford to keep the servers running.
-
-I've seen indie Android developers I admire shut down their apps for exactly this reason. Good apps, real apps, built by people who cared — gone because the math didn't work out.
-
-I don't want that to happen to Arc.
-
-## Try Arc First — Then Decide
-
-Here's what I'd suggest instead of looking for a mod APK:
-
-1. **Download Arc from the Play Store** — it's free, no credit card needed
-2. **Use the free tier** — 7 requests per week, no time limit
-3. **See if it's useful** — if you're summarizing articles, extracting text from screenshots, using the AI chat regularly
-4. **If it is, consider the yearly plan** — $39.99/year. That's it. No tiers, no upsells, no "Pro Max Ultra" version
-
-If it's not useful, just uninstall it. No harm done. But if it is — and for 600+ daily active users, it is — then the price of a few coffees a year keeps it alive and getting better.
-
-**[Download Arc from Google Play →](https://play.google.com/store/apps/details?id=com.rethink.arc)**
-
-If you want to see what you'd actually be paying for before you decide, the feature pages go through it properly: [AI summary and reader](/ai-summary-reader/), [AI writer](/ai-writer/), [AI workflow automation](/ai-workflow-automation/), and [AI text to speech](/text-to-speech/). Arc also runs on [Mac](/macos/) now, and the same subscription covers both platforms.
+Yes. The same Arc subscription covers Android and Mac.
 
 ---
 
-*Have questions about Arc, the pricing, or the features? Email me at everythingrethink@gmail.com — I read every message.*
+*Questions about Arc, pricing or features? Email me at everythingrethink@gmail.com. I read every message.*
 
 <!-- sources -->
-*Further reading: [Android text-to-speech settings](https://support.google.com/accessibility/android/answer/6006983) · [Android's Select to Speak](https://support.google.com/accessibility/android/answer/7349565).*
+*Further reading: [Google Play Protect](https://support.google.com/googleplay/answer/2812853) · [Android's AccessibilityService API](https://developer.android.com/guide/topics/ui/accessibility/service).*

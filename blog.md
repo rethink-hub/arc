@@ -4,7 +4,7 @@ title: "AI Screen Assistant Guides: Android, Mac, Windows | Arc"
 description: "Setup guides, tested app roundups and honest comparisons for reading, summarizing and listening to any screen on Android, Mac and Windows, by the developer."
 keywords: "Arc AI blog, Android productivity, AI screen assistant tips"
 og_image: /assets/images/og-blog.png
-last_modified_at: 2026-09-19
+last_modified_at: 2026-10-27
 ---
 
 {%- comment -%}
@@ -50,7 +50,7 @@ last_modified_at: 2026-09-19
         <p>If you've never used a screen assistant, these three explain the idea and get you running in a couple of minutes.</p>
         <ul class="blog-starters">
             <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">What an AI assistant for Mac does beyond ChatGPT</a> — why reading the window you're in beats pasting text into a chat box.</li>
-            <li><a href="{{ '/2026/10/04/how-to-summarize-text-on-android/' | relative_url }}">Summarize anything on your Android phone, step by step</a> — the full setup walkthrough, from install to first summary.</li>
+            <li><a href="{{ '/2026/10/03/best-ai-summarizer-app-android/' | relative_url }}">Summarize anything on your Android phone, step by step</a> — the full setup walkthrough, from install to first summary.</li>
             <li><a href="{{ '/2026/09/15/best-ai-apps-android/' | relative_url }}">Nine Android AI apps, tested against each other</a> — including where a competitor beats Arc.</li>
         </ul>
     </section>

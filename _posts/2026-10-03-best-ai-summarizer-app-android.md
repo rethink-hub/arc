@@ -1,176 +1,199 @@
 ---
 layout: blog
-title: "Best AI Summarizer: 7 Ranked and Tested (2026)"
-description: "I ranked 7 AI summarizers on accuracy, speed and whether they work where you actually read. Here's the best AI summarizer of 2026, and the runners-up."
+title: "Best AI Summarizer Apps for Android (2026), Compared"
+description: "Seven AI summarizers compared on accuracy, long documents and copy-paste friction, plus how to summarize text on Android with built-in tools."
 date: 2026-10-03
+last_modified_at: 2026-10-27
 author: Mamata
-tags: ["android", "ai", "summarizer", "productivity", "listicle", "comparison"]
-keywords: "best ai summarizer, ai summarizer comparison, top ai summarizer, best summarizer app"
+tags: ["android", "ai", "summarizer", "productivity", "comparison"]
+keywords: "best ai summarizer, ai summarizer android, summarize text android, article summarizer"
 og_image: /assets/images/og-post-best-ai-summarizer-app-android.png
 faq:
   - question: "What's the best free AI summarizer app for Android?"
-    answer: "Arc \u2014 the screen-aware summarizer, the library, text-to-speech, and follow-up chat are all on the free tier (7 requests per week), which is why it tops this list. Summarizer.org and TLDR This also have usable free tiers for paste-in jobs if you only need an occasional digest."
-  - question: "Which AI summarizer app is best for students?"
-    answer: "For lectures and YouTube recordings, NoteGPT \u2014 the timestamped summaries and flashcards map directly to exam prep. For textbooks and PDF chapters you read inside an app, Arc: no copy-paste, and the follow-up chat doubles as a study tool that can quiz you on the section."
-  - question: "Is there an AI summarizer that works without copy-pasting?"
-    answer: "Yes \u2014 that is the defining feature of Arc. It reads the text visible in whatever app you are in, through its floating sidebar. Every other app on this list is paste-in or link-based, which is exactly the friction Arc removes."
-  - question: "What do Redditors recommend as the best AI summarizer app?"
-    answer: "Reddit threads mostly point toward QuillBot and TLDR This for pasted text, and note-taker apps for meetings. Screen-aware options are newer, which is why Arc keeps winning the threads that mention reading directly on screen \u2014 the copy-paste-free approach simply matches how people actually read now."
-  - question: "Can an AI summarizer handle textbooks and long PDFs?"
-    answer: "Depends on the app's ceiling. Arc takes up to roughly 100,000 characters per capture, which covers a full textbook chapter in one shot. Summarizer.org and TLDR This truncate long documents noticeably, so you would do it section by section with those."
-  - question: "How does a screen summarizer actually read the screen?"
-    answer: "It uses Android's accessibility service to read the text currently displayed by any app, sends it to an AI model, and shows the result in a floating panel. You never leave the app you are reading in."
+    answer: "It depends on where your text lives. For text already open in other apps, Arc's free tier (7 requests per week) covers summaries, the library, text-to-speech and follow-up chat. For occasional paste-in jobs, Summarizer.org and TLDR This have usable free tiers. Disclosure: we make Arc."
+  - question: "Does Android have a built-in text summarizer?"
+    answer: "Not system-wide. Summarization exists in narrow spots: message summaries in Android Auto, Gemini suggestions inside Google Messages, and notification summaries on some recent Pixel builds. Chrome, Gmail and most apps have no summarize button."
+  - question: "How do I summarize text on Android without copying and pasting?"
+    answer: "Use a screen-aware assistant. Arc reads the text visible in whatever app you're in through its floating sidebar, so you open the app, tap the floating tab and choose AI Summary. Every other app on this list is paste-in, link-based or recording-based."
+  - question: "Which AI summarizer is best for students?"
+    answer: "For lectures and YouTube recordings, NoteGPT: timestamped summaries and flashcards map directly to exam prep. For academic papers, SciSpace. For textbook chapters and PDFs you read inside an app, Arc, where follow-up chat can quiz you on the section."
+  - question: "Can an AI summarizer handle long PDFs?"
+    answer: "It depends on the app's limit. Arc takes up to roughly 100,000 characters per capture, which fits a full textbook chapter. Summarizer.org and TLDR This truncate long documents noticeably, so work section by section with those."
+  - question: "Is an AI summary accurate?"
+    answer: "For news articles and emails, generally yes. Summaries can miss nuance in technical, legal or scientific text, so treat them as a starting point and ask follow-up questions when detail matters."
   - question: "Do AI summarizer apps work offline?"
-    answer: "No serious one does \u2014 summarization runs on cloud models. Arc processes requests server-side and does not store your screen text beyond the summaries you choose to save."
+    answer: "Most don't, Arc included: summaries come from cloud models. Google's ML Kit GenAI Summarization API can run on-device with Gemini Nano on supported phones, but only inside apps that build it in."
 ---
 
+There is no single best AI summarizer for Android. The right one depends on where your text comes from: an article already open on screen, a meeting recording, a YouTube lecture, or a stack of research papers. This guide compares seven apps on that basis and also covers the summarization Android has built in.
 
-I keep a folder of five deliberately awful texts on my phone: a 28-page PDF chapter on data-privacy law, a Gmail thread with 19 replies that could have been two, a 4,000-word Substack essay, the transcript of a 40-minute meeting, and a Reddit thread where the answer is buried in comment #37.
+**Disclosure:** I build [Arc](/), which is #1 on this list for one specific job (summarizing text already on your screen). For meetings, lectures and papers, other apps are better, and I say so below.
 
-Every time a new summarizer shows up on the Play Store, I run those five through it and time the result. That exercise is how I settled this list. I went in with one question: which is the best AI summarizer app Android users can actually keep — not download, admire for a week, and quietly uninstall?
+## How I compared them
 
-Short answer: [Arc AI Screen Assistant](/) wins for everyday reading, because it works on whatever is already on your screen without a copy-paste loop. There are four other cases — meetings, lectures, academic papers, one-click web articles — where a specialist beats it, and I'll tell you exactly when to reach for each.
+I ran each app on the same set of texts: a 28-page PDF chapter, a long Gmail thread, a 4,000-word essay, a meeting transcript and a Reddit thread. Then I scored them on:
 
-## How I picked the best AI summarizer app Android has right now
+- **Friction.** Do you have to copy, switch apps and paste, or can it work where the text already is?
+- **Long documents.** Does it handle a full chapter, or truncate after a few pages?
+- **Follow-up questions.** Can you ask "what did it say about X?" without starting over?
+- **Keeping results.** Can you save, search and revisit summaries?
+- **Pricing.** Does the free tier do the core job, with clear limits?
 
-Ranking summarizers is mostly theater when the comparison screenshots are hand-pasted. So here is my actual rubric, in order of weight:
+## The 7 apps, compared
 
-- **No copy-paste loop.** If I have to select text, copy it, switch apps, and paste, the tool loses points fast. Reading happens in Chrome, Gmail, Drive, PDF viewers, Reddit — the summarizer should meet me where the text already is.
-- **Speed under load.** A summary of a 28-page chapter is worthless if it takes 45 seconds or truncates at page six. The best AI summarizer app Android has ever shipped is the one you stop thinking about — tap, wait two seconds, read.
-- **Follow-up questions.** A summary answers "what does this say." A good one lets me ask "what did they say about retention penalties?" without regenerating everything from scratch.
-- **A place to keep results.** Summaries you can save, search, and listen to later — not a text box that dies when you close the app.
-- **Honest pricing.** A free tier that does the core job, and clear limits before you pay.
+### 1. Arc: best for text already on your screen
 
-Five of the seven apps below fail at least two of these. I kept the imperfect ones anyway because they are genuinely good at their niche — the trick is knowing which niche.
-
-## The 7 best AI summarizer apps for Android, ranked
-
-### 1. Arc — the best AI summarizer app Android offers overall
-
-Arc is the only app on this list built around the assumption that the text you want summarized is already on your screen. You are in Chrome staring at that data-privacy chapter: swipe the screen edge, Arc's floating sidebar opens over the app, tap **Summary**, and a couple of seconds later the whole thing is distilled — auto-detected as a Document, with the source URL attached for reference.
+Arc is a floating sidebar that sits over any app. Open an article, email or PDF, swipe in the sidebar, tap **Summary**, and it summarizes the visible text without you copying anything.
 
 <img src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar open over Chrome, ready to summarize the article on screen" width="800" height="1760" loading="lazy" />
 
-The details that sold me are after the summary appears, not during. Tap **Listen** and the summary is read aloud in a natural voice while I walk somewhere. Tap **Ask Questions** and it chats with the full text as context — I asked what the PDF said about data-retention penalties and got the right two sections cited back. Tap **Save** and the summary lands in a searchable library with the category, source app, and URL stored.
+After the summary appears you can **Listen** to it read aloud, **Ask Questions** about the full text, or **Save** it to a searchable library with the source app and URL attached.
 
 <img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="AI summary result in Arc with action buttons for saving, listening, and asking follow-up questions" width="800" height="1760" loading="lazy" />
 
-Where it fits, concretely:
+- **Pros:** works in any app; handles about 100,000 characters per capture; reads text inside images and screenshots; summaries in nine languages; bullet, paragraph or explain-simply formats; saved library.
+- **Cons:** can't record meetings or ingest YouTube links; the free tier is 7 requests per week, so heavy users will need Premium; it needs accessibility permission, which some people reasonably won't grant.
+- **Pick something else if** your source is audio or video.
 
-- Summarizes any app's visible text — browsers, email, PDFs, social feeds, chat threads, code docs
-- Handles up to roughly 100,000 characters (about 40,000 words) per capture; my 28-page chapter fit with room to spare
-- Works in nine languages, so non-English articles are not a dead end
-- Reads text inside images too: a screenshot of a long chat, a slide paused in a video, a photo of a whiteboard — things paste-in tools cannot even see
-- Gives you the shape you need: bullet takeaways, a paragraph for notes, or an explain-simply version for dense legal and academic text
-- Free, with no watermark games or three-summaries-then-paywall nonsense
-- Every summary is saved, searchable, and re-listenable — it doubles as a reading queue
+More detail on the [AI Summary & Reader](/ai-summary-reader/) page. The same flow runs on [Arc for Mac](/macos/) with Control+Space.
 
-What it deliberately does not do: record meetings or ingest YouTube links. If you want the full capability list beyond summarizing — reading aloud, saving, flashcards — the [AI Summary & Reader](/ai-summary-reader/) page covers it in detail. Arc summarizes what is visible on screen; if your source is audio or a video URL, use a note-taker app. And if you are weighing the best AI summarizer app Android picks against desktop tools, [Arc for Mac](/macos/) runs the same loop with a Control+Space shortcut, so the phone and desktop experience behave identically.
+### 2. Summary – AI Note Taker: best for meetings
 
-One more thing worth knowing: a summary is often a starting point, not the endpoint. When the next step is replying to that email thread or turning a summary into an announcement, [AI Writer](/ai-writer/) picks up from the same captured text — rewrite, reply, or fix grammar without retyping anything.
+One of the most-reviewed AI apps on the Play Store (4.6 stars from 135,000+ reviews). It records a conversation, transcribes it and turns it into minutes with action items and decisions.
 
-### 2. Summary – AI Note Taker — best AI summarizer app Android for meetings
+- **Pros:** excellent at recordings; structured output.
+- **Cons:** it's a recorder first. It can't help with text in a PDF or browser tab.
 
-One of the most-rated AI apps on the Play Store (4.6 stars from 135,000+ reviews), and deservedly so — but be clear about what it is: a meeting recorder first and a summarizer second. It records the conversation, transcribes it, and turns it into structured minutes with action items and decisions pulled out. For meetings, it is the best AI summarizer app Android users can keep on a phone.
+### 3. QuillBot: best paste-in summarizer with writing tools
 
-What it is not: a reader for what is already on screen. If the text lives in a PDF or a browser tab, there is nothing to record — this app cannot help.
+Key-sentence or paragraph modes, a length slider that actually works and no ads on the free tier. It sits alongside a paraphraser and grammar checker, so it's a good pick if you also write on your phone.
 
-### 3. QuillBot — best paste-in summarizer with a writing suite
+- **Pros:** reliable output; useful writing suite.
+- **Cons:** paste-in only, so long threads mean copying in chunks; follow-ups regenerate rather than converse.
 
-QuillBot's summarizer is the classic paste-in: key-sentences mode or paragraph mode, a length slider that actually responds, and no ads at the free tier. It is part of a suite (paraphraser, grammar checker) that makes it a sensible pick if you also write on your phone. The paste-in tax is real, though — for that 19-reply Gmail thread I had to copy it over in chunks, and the follow-up depth is one regenerating summary after another rather than a real conversation.
+### 4. Summarizer.org: simplest link or text summarizer
 
-### 4. Summarizer.org — best bare-minimum link summarizer
+Paste text or a URL, pick short bullets, long bullets or paragraph, and get an answer in seconds. Keyword extraction is occasionally handy.
 
-Drop in text or a URL, pick a mode (short bullets, long bullets, paragraph), get an answer in seconds. It also does keyword extraction, which is occasionally handy. At 3.7 stars on the Play Store it sits in the "works fine, nothing memorable" zone — it is a web wrapper, and the long-document ceiling shows: my PDF chapter came back noticeably lossier than Arc's version.
+- **Pros:** fast and free for small jobs.
+- **Cons:** essentially a web wrapper (3.7 stars on the Play Store); long documents lose noticeable detail.
 
-### 5. NoteGPT — best AI summarizer app Android choice for lectures and YouTube
+### 5. NoteGPT: best for lectures and YouTube
 
-NoteGPT's trick is ingesting YouTube links and lecture recordings and returning transcripts plus timestamped summaries, with flashcards built in. For students who live in recorded lectures, that is the whole workflow in one app. For everyday reading tasks it is the wrong shape — slow, and it wants a link rather than a screen.
+Takes YouTube links and lecture recordings and returns transcripts, timestamped summaries and flashcards.
 
-### 6. SciSpace — best for academic papers
+- **Pros:** the whole study workflow in one app.
+- **Cons:** wants a link rather than a screen; slower for everyday reading.
 
-Built for literature reviews: it summarizes papers and lets you interrogate them with domain-aware questions about methodology, sample size, and limitations. If all five of your brutal texts are arXiv PDFs, SciSpace is the specialist worth keeping. For everything else it is overkill and noticeably slower than the generalists.
+### 6. SciSpace: best for academic papers
 
-### 7. TLDR This — best one-click web-article option
+Built for literature reviews. It summarizes papers and answers domain questions about methodology, sample size and limitations.
 
-Paste a link, get a clean digest with the key sentences highlighted. No frills, no account dance at the free tier, no library. Good for the Substack-essay case specifically; weak everywhere else on my rubric — no follow-up chat, no history, no screen awareness.
+- **Pros:** the specialist to keep if you read papers by the stack.
+- **Cons:** overkill and slower for anything else.
 
-### Also tested, not ranked
+### 7. TLDR This: quickest one-off web article digest
 
-**Read AI** records calls, transcribes them, and tracks who talked most; like Summary, it is recording-based and pricier past the free tier. **Notion AI** summarizes pages inside your workspace and nothing outside it. **Perplexity** summarizes the web with citations when you ask a question, which makes it a research tool rather than a way to summarize what is in front of you. All three are good products; none of them can see your screen.
+Paste a link, get a clean digest with key sentences highlighted, no account needed.
 
-## Quick match: which one fits your actual week
+- **Pros:** zero friction for a single article.
+- **Cons:** no follow-up chat, no history, no screen awareness.
 
-The best AI summarizer app Android question comes down to your source material, so here is the matching table instead of a marketing paragraph:
+### Also worth knowing
 
-| Your actual reading | Best pick |
+**Read AI** records and transcribes calls, like Summary, and costs more past its free tier. **Notion AI** summarizes pages inside your workspace only. **Perplexity** summarizes the web with citations when you ask a question, so it's a research tool rather than a way to summarize what's in front of you.
+
+## Which one fits your reading?
+
+| What you read | Best pick |
 |---|---|
-| Articles, email, PDFs already open on screen | Arc (free, no copy-paste) |
+| Articles, email and PDFs already open on screen | Arc |
 | Meetings and calls | Summary – AI Note Taker |
-| Lectures and YouTube recordings | NoteGPT |
-| Academic papers by the stack | SciSpace |
-| Paste-and-go, plus paraphrase tools | QuillBot |
+| Lectures and YouTube | NoteGPT |
+| Academic papers | SciSpace |
+| Paste-and-go, plus paraphrasing | QuillBot |
 | Quick digests from links | Summarizer.org or TLDR This |
 
-If you want the deeper feature-by-feature reasoning on the winner, the [AI Summary & Reader](/ai-summary-reader/) page breaks down exactly how the capture and listening flow works.
+## How to summarize text on Android with built-in tools
 
-## How to set up Arc as your summarizer
+Before installing anything, it's worth knowing what Android already does:
 
-The part I get asked about most, start to finish:
+- **Google Messages:** Gemini-powered suggestions can condense a long thread before you reply, inside Google Messages only.
+- **Android Auto:** message summaries condense incoming texts while you drive (Settings → Notifications → Message summary in the Android Auto app).
+- **Notification summaries:** being tested on recent Pixel builds; rollout varies by device.
+- **Share to a summarizer app:** select text → **Share** → pick a summarizer such as TLDR or QuillBot. It works, but you leave the app each time and long selections can hit character limits.
 
-1. **Install Arc** from [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) and grant the two one-time permissions: accessibility service, which lets it read the screen, and draw over other apps, which shows the sidebar. Under a minute.
-2. **Open whatever has text** — a Gmail thread, a Chrome tab, a PDF, even a photo of a whiteboard.
-3. **Swipe the screen edge** to open the floating sidebar and tap **Summary**. Arc reads the visible text; nothing to copy.
-4. **Pick the format** in the result panel, then **ask follow-ups** in the same place: "explain the third point," "what's missing here?"
-5. **Save it.** The summary goes to your library, tagged with the source app and URL.
+As of Android 16 there is still no system-wide summarize button, so Chrome, Gmail, LinkedIn and most apps have none.
 
-The first real test I ran this way was on a call: a 12-page PDF proposal arrived in Gmail, I had about 90 seconds to decide whether it deserved a proper read, and seven bullet points later I knew, without leaving the call or the app.
+## How to summarize any screen with Arc
 
-## What to do with a summary once you have it
+1. **Install Arc** from [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) and grant two one-time permissions: accessibility (to read the screen when you tap) and display over other apps (to show the sidebar). Password fields and payment details are excluded.
+2. **Open anything with text**: a Gmail thread, a Chrome tab, a PDF, a photo of a whiteboard.
+3. **Swipe the screen edge** to open the sidebar and tap **AI Summary**.
+4. **Pick a format**, then ask follow-ups in the same panel, such as "what does it say about refunds?"
+5. **Save it.** Summaries auto-save to your library, tagged with the source.
 
-A summary you cannot do anything with is a party trick. Arc treats each one as an object: it lands in a library you can search, reopen (with the source screenshot and URL stored), listen to, or chat about days later.
+<img src="{{ '/assets/images/screenshots/02_ai_summary_chat_input.jpg' | relative_url }}" alt="Arc summary chat input for follow-up questions about on-screen text on Android" width="800" height="1760" loading="lazy" />
+
+### When you need facts, not a summary
+
+**Smart Extract** pulls specific pieces from the screen instead of summarizing everything:
+
+- **Key Points:** the main takeaways as a short list.
+- **Facts & Figures:** names, dates, prices and numbers, handy for listings or contracts.
+- **Action Items:** tasks buried in an email thread or chat.
+- **Table Data:** list-heavy content turned into clean rows.
+
+<img src="{{ '/assets/images/screenshots/10_smart_extract_results.jpg' | relative_url }}" alt="Smart Extract results pulling key facts from screen text on Android" width="800" height="1760" loading="lazy" />
+
+### Tips for better summaries
+
+- **Scroll through a long page once first.** Arc reads what's loaded on screen, so a quick scroll gives it the full text.
+- **Summarize long PDFs section by section.** Focused input gives more accurate results.
+- **Ask specific follow-ups.** "What was the sample size?" beats "tell me more."
+- **Treat the summary as a table of contents.** It tells you where to look; follow-ups and Smart Extract pull the detail.
+
+## What to do with a summary
+
+Summaries in Arc land in a library you can search, reopen with the source screenshot and URL, listen to or chat about later.
 
 <img src="{{ '/assets/images/screenshots/00_summary_library_with_items.jpg' | relative_url }}" alt="Arc summary library showing saved summaries with categories and sources" width="800" height="1760" loading="lazy" />
 
-I have quietly made it my reading queue — summarize now on the phone while the tab is open, listen to the saved summary on a walk later. And when a summarize-then-act pattern starts repeating (summarize this sender's email and draft a reply), that is the moment to stop tapping twice: [AI Workflow Automation](/ai-workflow-automation/) lets you wrap those steps into a one-tap custom action. My "meeting notes to action items" action took about five minutes to build and now runs daily.
+If you summarize something and then always do the same next step, such as drafting a reply, [AI Writer](/ai-writer/) works from the same captured text, and [AI Workflow Automation](/ai-workflow-automation/) can turn the pair into a one-tap custom action.
 
-## The verdict: the best AI summarizer app Android users should install first
+## The bottom line
 
-If your reading life is browser tabs, email, PDFs, and social feeds — the standard case — start with Arc. It is free, it works on-screen without the copy-paste loop, and it is the only pick here that keeps your summaries organized after the fact. That is what makes it the best AI summarizer app Android users can actually build a habit around, not just try once.
+If most of your reading is browser tabs, email, PDFs and feeds, a screen-aware summarizer saves the most time, and that's what Arc is built for. If your source is a recording, a lecture or a stack of papers, use Summary, NoteGPT or SciSpace instead. Many people end up with one general tool plus one specialist.
 
-Then add a specialist only when your source material demands it: recordings (Summary), recorded lectures (NoteGPT), paper stacks (SciSpace). That is my actual setup — Arc daily, a meeting note-taker when there is a call, and nothing else, because storage is finite.
-
-## FAQ: best AI summarizer app Android questions, answered
+## FAQ
 
 ### What's the best free AI summarizer app for Android?
 
-Arc — the screen-aware summarizer, the library, text-to-speech, and follow-up chat are all on the free tier (7 requests per week), which is why it tops this list. Summarizer.org and TLDR This also have usable free tiers for paste-in jobs if you only need an occasional digest.
+It depends on where your text lives. For text already open in other apps, Arc's free tier (7 requests per week) covers summaries, the library, text-to-speech and follow-up chat. For occasional paste-in jobs, Summarizer.org and TLDR This have usable free tiers. Disclosure: we make Arc.
 
-### Which AI summarizer app is best for students?
+### Does Android have a built-in text summarizer?
 
-For lectures and YouTube recordings, NoteGPT — the timestamped summaries and flashcards map directly to exam prep. For textbooks and PDF chapters you read inside an app, Arc: no copy-paste, and the follow-up chat doubles as a study tool that can quiz you on the section.
+Not system-wide. Summarization exists in narrow spots: message summaries in Android Auto, Gemini suggestions inside Google Messages, and notification summaries on some recent Pixel builds. Chrome, Gmail and most apps have no summarize button.
 
-### Is there an AI summarizer that works without copy-pasting?
+### How do I summarize text on Android without copying and pasting?
 
-Yes — that is the defining feature of Arc. It reads the text visible in whatever app you are in, through its floating sidebar. Every other app on this list is paste-in or link-based, which is exactly the friction Arc removes.
+Use a screen-aware assistant. Arc reads the text visible in whatever app you're in through its floating sidebar, so you open the app, tap the floating tab and choose AI Summary. Every other app on this list is paste-in, link-based or recording-based.
 
-### What do Redditors recommend as the best AI summarizer app?
+### Which AI summarizer is best for students?
 
-Reddit threads mostly point toward QuillBot and TLDR This for pasted text, and note-taker apps for meetings. Screen-aware options are newer, which is why Arc keeps winning the threads that mention reading directly on screen — the copy-paste-free approach simply matches how people actually read now.
+For lectures and YouTube recordings, NoteGPT: timestamped summaries and flashcards map directly to exam prep. For academic papers, SciSpace. For textbook chapters and PDFs you read inside an app, Arc, where follow-up chat can quiz you on the section.
 
-### Can an AI summarizer handle textbooks and long PDFs?
+### Can an AI summarizer handle long PDFs?
 
-Depends on the app's ceiling. Arc takes up to roughly 100,000 characters per capture, which covers a full textbook chapter in one shot. Summarizer.org and TLDR This truncate long documents noticeably, so you would do it section by section with those.
+It depends on the app's limit. Arc takes up to roughly 100,000 characters per capture, which fits a full textbook chapter. Summarizer.org and TLDR This truncate long documents noticeably, so work section by section with those.
 
-### How does a screen summarizer actually read the screen?
+### Is an AI summary accurate?
 
-It uses Android's accessibility service to read the text currently displayed by any app, sends it to an AI model, and shows the result in a floating panel. You never leave the app you are reading in.
+For news articles and emails, generally yes. Summaries can miss nuance in technical, legal or scientific text, so treat them as a starting point and ask follow-up questions when detail matters.
 
 ### Do AI summarizer apps work offline?
 
-No serious one does — summarization runs on cloud models. Arc processes requests server-side and does not store your screen text beyond the summaries you choose to save.
-
-That is the test data, the rubric, and the honest ranking. If you want to verify the winner yourself: **Try Arc free on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc)** — load up five brutal texts of your own and it takes about two minutes to confirm everything above.
+Most don't, Arc included: summaries come from cloud models. Google's ML Kit GenAI Summarization API can run on-device with Gemini Nano on supported phones, but only inside apps that build it in.
 
 <!-- sources -->
-*Further reading: [Google's Gemini developer docs](https://ai.google.dev/) · [Android's AccessibilityService API](https://developer.android.com/guide/topics/ui/accessibility/service).*
+*Further reading: [Google's Gemini developer docs](https://ai.google.dev/) · [Android's AccessibilityService API](https://developer.android.com/guide/topics/ui/accessibility/service) · [ML Kit GenAI APIs](https://developers.google.com/ml-kit/genai).*

@@ -2,7 +2,7 @@
 layout: default
 title: "AI Assistant App That Works on Any Screen | Arc — Free"
 description: "Arc is a free AI assistant app that works on the screen you're already on. Summarize, listen, rewrite and automate in any app on Android, Mac and Windows."
-keywords: "ai assistant app, ai assistant, free ai assistant, ai screen assistant, personal ai assistant, android ai assistant, ai assistant for mac"
+keywords: "ai assistant app, ai screen assistant, personal ai assistant"
 og_image: /assets/images/og-arc.png
 product_page: true
 full_width: true
@@ -17,7 +17,11 @@ faq:
     answer: "No. Arc reads screen content only when you tap an action yourself. It disables itself automatically in around 400 sensitive apps including banking, crypto and password managers, and you can add your own exclusions."
   - question: "What can I actually do with it?"
     answer: "Summarize any article or document, listen to it with natural text-to-speech, rewrite or reply to messages in place, extract dates, contacts and codes off a screen, turn study material into flashcards, and build your own one-tap AI actions with custom prompts."
-last_modified_at: 2026-09-19
+  - question: "Does Arc remember who I am?"
+    answer: "Yes, if you want it to. The Info Vault stores details you save once — your name, role, projects, writing style, sign-off — and offers them as optional chips in every AI Writer mode. Entries stay on your device; Google Drive backup is opt-in, and backups from two devices merge rather than overwrite."
+  - question: "Does Arc work on Samsung, OnePlus and other Android phones?"
+    answer: "Yes. Arc works on all modern Android phones and sits alongside Samsung Edge Panel, OnePlus Shelf and OPPO Smart Sidebar."
+last_modified_at: 2026-10-27
 ---
 
 <!-- Hero. The H1 carries the same words as the <title>: the Jev audit scored the
@@ -164,7 +168,7 @@ last_modified_at: 2026-09-19
           <li>Nothing to select or highlight first</li>
           <li>Copy each item with a single tap</li>
         </ul>
-        <a class="link-arrow" href="{{ '/smart-extract/' | relative_url }}">Explore Smart Extract</a>
+        <a class="link-arrow" href="{{ '/ai-summary-reader/#extract' | relative_url }}">Explore Smart Extract</a>
       </div>
       <div class="tab-media tab-media--phones">
         <div class="phone-mini"><img width="800" height="1760" src="{{ '/assets/images/screenshots/10_smart_extract_results.jpg' | relative_url }}" alt="Arc Smart Extract results listing structured data on Android" loading="lazy" decoding="async"></div>
@@ -245,12 +249,12 @@ last_modified_at: 2026-09-19
       <h2>500+ AI actions, one tap away.</h2>
     </div>
     <div class="mini-grid reveal">
-    <a class="mini" href="{{ '/personal-ai-assistant/' | relative_url }}">
+    <div class="mini">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v3M10 21h9a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2Z"/></svg></span>
       <h3>Chat with any screen</h3>
       <p>Ask questions about the document in front of you, with its context already loaded.</p>
-    </a>
-    <a class="mini" href="{{ '/ai-reply-generator/' | relative_url }}">
+    </div>
+    <a class="mini" href="{{ '/ai-writer/#replies' | relative_url }}">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17l-5-5 5-5M4 12h11a5 5 0 0 1 5 5v2"/></svg></span>
       <h3>AI Reply Generator</h3>
       <p>Context-aware replies for chats and email, in your tone.</p>
@@ -260,7 +264,7 @@ last_modified_at: 2026-09-19
       <h3>AI Note Taker</h3>
       <p>Call transcripts, summaries and action items.</p>
     </a>
-    <a class="mini" href="{{ '/ai-shortcuts/' | relative_url }}">
+    <a class="mini" href="{{ '/ai-workflow-automation/' | relative_url }}">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16v10H4zM8 11h.01M12 11h.01M16 11h.01M8 14h8"/></svg></span>
       <h3>AI Shortcuts</h3>
       <p>Bind any action to a global hotkey.</p>
@@ -270,6 +274,11 @@ last_modified_at: 2026-09-19
       <h3>Community Actions</h3>
       <p>Install actions other Arc users have shared.</p>
     </a>
+    <div class="mini">
+      <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></span>
+      <h3>Remembers your context</h3>
+      <p>Save your role, projects and sign-off once in the Info Vault; it stays on your device.</p>
+    </div>
     <div class="mini">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
       <h3>Save to your library</h3>
@@ -431,6 +440,14 @@ last_modified_at: 2026-09-19
         <summary>How does Chat with AI work?</summary>
         <p>Chat lets you have conversations about content on your screen. Ask questions, get clarifications, or explore topics further.</p>
       </details>
+      <details>
+        <summary>Does Arc remember who I am?</summary>
+        <p>Yes, if you want it to. The Info Vault stores details you save once — your name, role, projects, writing style, sign-off — and offers them as optional chips in every AI Writer mode. Entries stay on your device; Google Drive backup is opt-in, and backups from two devices merge rather than overwrite.</p>
+      </details>
+      <details>
+        <summary>Does Arc work on Samsung, OnePlus and other Android phones?</summary>
+        <p>Yes. Arc works on all modern Android phones and sits alongside Samsung Edge Panel, OnePlus Shelf and OPPO Smart Sidebar.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -488,9 +505,8 @@ last_modified_at: 2026-09-19
   <p>Guides that go further on what's above:</p>
   <ul>
     <li><a href="{{ '/2026/09/15/best-ai-apps-android/' | relative_url }}">Best AI Apps for Android (2026): 9 Tested Picks</a></li>
-    <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
     <li><a href="{{ '/ios/' | relative_url }}">iPhone AI Assistant: What Arc Is Building</a></li>
-    <li><a href="{{ '/ai-reply-generator/' | relative_url }}">AI Reply Generator Android: Reply to Any Message in 10s</a></li>
+    <li><a href="{{ '/ai-writer/' | relative_url }}">AI Writer and Reply Generator</a></li>
     <li><a href="{{ '/2026/07/20/arc-ai-screen-assistant-mod-apk-read-this-first/' | relative_url }}">Arc AI Screen Assistant Mod APK? Read This First</a></li>
     <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">Best AI App for Mac: What Arc Does Beyond ChatGPT</a></li>
   </ul>

@@ -167,7 +167,6 @@ last_modified_at: 2026-09-19
   <h2>Related</h2>
   <p>Privacy is a property of specific features, not a slogan. These are the ones people ask about:</p>
   <ul>
-    <li><a href="{{ '/personal-ai-assistant/' | relative_url }}">Personal AI assistant</a> — the Info Vault, and what it keeps about you</li>
     <li><a href="{{ '/alternatives/' | relative_url }}">Arc vs. the alternatives</a> — the same privacy questions asked of every option</li>
     <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — the accessibility permission, and what it can and cannot see</li>
     <li><a href="{{ '/macos/' | relative_url }}">Arc for Mac</a> — why it ships outside the Mac App Store</li>
@@ -180,7 +179,7 @@ last_modified_at: 2026-09-19
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
+    <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">AI assistant for Mac: what it does beyond ChatGPT</a></li>
   </ul>
 </div>
 <!-- /related-posts -->

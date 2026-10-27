@@ -1,14 +1,16 @@
 ---
 layout: default
 title: "AI Assistant for Mac — Free Download | Arc"
-description: "Arc is an AI assistant for Mac that reads any window. Press Control+Space to summarize, listen, rewrite and automate in any app. Free download, macOS 14+."
+description: "Download Arc for Mac: a notarized, menu-bar AI assistant for macOS 14+. Press Control+Space over any window to summarize, read aloud or rewrite."
 keywords: "ai assistant for mac, mac ai assistant, macos ai assistant, ai screen assistant mac, mac ai summary app, mac text to speech ai, download ai assistant mac"
 platform: macos
 og_image: /assets/images/og-macos.png
 product_page: true
 faq:
-  - question: "Is there an AI assistant for Mac that works in every app?"
-    answer: "Arc does. Press Control+Space in any macOS app and Arc reads that window through the system accessibility APIs, then summarizes it, reads it aloud, rewrites your text or runs a prompt you wrote. It works in Safari, Chrome, Preview, Mail, Slack, Obsidian and anything else that puts text on screen."
+  - question: "Which Mac apps does Arc work in?"
+    answer: "Any app that exposes its text to the macOS Accessibility API: Safari, Chrome, Preview, Mail, Notes, Slack, Obsidian, Pages and most others. Press Control+Space in the app and Arc reads that window directly."
+  - question: "How do I update Arc on my Mac?"
+    answer: "You don't have to do anything. Arc checks a signed Sparkle update feed and offers new versions in-app, so you never re-download the DMG by hand."
   - question: "Is Arc for Mac free?"
     answer: "Yes. Arc is free with 7 requests per week on basic features, and a premium subscription unlocks unlimited summaries, text-to-speech, AI chat and workflow automation. One subscription covers Mac, Windows and Android."
   - question: "What are the system requirements for Arc on Mac?"
@@ -17,7 +19,7 @@ faq:
     answer: "Arc reads on-screen content through the macOS accessibility APIs, which Apple's App Sandbox prohibits. Sandboxing is mandatory for Mac App Store apps, so Arc is distributed directly from this site — still notarized by Apple, and updated through a signed Sparkle update feed."
   - question: "Does Arc read my screen in the background?"
     answer: "No. Arc reads the frontmost window only when you invoke an action yourself. It is not a keylogger and it does not monitor continuously. Screenshots are captured only for actions that explicitly need one, and password managers are skipped automatically."
-last_modified_at: 2026-09-19
+last_modified_at: 2026-10-27
 ---
 
 <!-- Hero: text left, live interactive demo right (mirrors the Android homepage) -->
@@ -56,7 +58,7 @@ last_modified_at: 2026-09-19
 
 Arc is an AI assistant for Mac that works on the window you're already in. Press **Control + Space**, a Spotlight-style panel appears over your current app, and every action runs against the text in that window — summarize it, read it aloud, rewrite your draft, chat about it, or pull the dates and contacts out of it.
 
-Arc lives in the menu bar. Nothing is copied or pasted, and the panel is non-activating, so your cursor and focus stay where they were. The interface is available in 10 languages.
+Nothing is copied or pasted into a chatbot, and the result comes back in the same panel. The interface is available in 10 languages.
 
 </div>
 
@@ -84,7 +86,7 @@ Arc lives in the menu bar. Nothing is copied or pasted, and the panel is non-act
   </figure>
   <figure class="shot">
     <img width="1200" height="914" src="{{ '/assets/images/screenshots/macos/12_shortcut_recorder_listening.jpg' | relative_url }}" alt="Arc shortcut recorder waiting for a global hotkey to be pressed" loading="lazy">
-    <figcaption><strong>Global hotkeys.</strong> Bind any action to a system-wide keystroke. See <a href="{{ '/ai-shortcuts/' | relative_url }}">AI shortcuts</a>.</figcaption>
+    <figcaption><strong>Global hotkeys.</strong> Record any macOS key combination for an action, and it runs without opening the menu.</figcaption>
   </figure>
   <figure class="shot">
     <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc custom action creation form with a prompt template field on macOS" loading="lazy">
@@ -102,6 +104,27 @@ Arc lives in the menu bar. Nothing is copied or pasted, and the panel is non-act
 
 ---
 
+<div class="content-section" id="how-arc-works-on-macos" markdown="1">
+
+## How Arc Works on macOS
+
+**It reads windows through Accessibility, not screenshots.** When you press Control+Space, Arc asks macOS for the text of the frontmost window through the Accessibility API. Screen Recording is requested only if you use an action that needs a picture of the screen, such as a screenshot-based extract. Password managers are skipped.
+
+**It stays out of your way.** Arc keeps a menu bar icon alongside its Dock icon, and the Control+Space panel is a non-activating floating panel, so the app underneath keeps keyboard focus and your cursor stays in the field you were typing in.
+
+**It is distributed outside the Mac App Store, on purpose.** Mac App Store apps must run in Apple's App Sandbox, and the sandbox blocks reading other apps' windows. So Arc ships as a DMG from this site, code-signed with an Apple Developer ID and notarized by Apple, and Gatekeeper opens it without warnings.
+
+**It updates itself.** New versions arrive through a signed Sparkle feed, so the copy you install today keeps current.
+
+| Permission | When macOS asks | What Arc uses it for |
+|---|---|---|
+| Accessibility | First launch | Reading the frontmost window's text and inserting AI Writer results |
+| Screen Recording | Only when a screenshot action is first used | Capturing a still image for that one action |
+
+</div>
+
+---
+
 <!-- Install steps -->
 <div class="section-header">
   <span class="section-tag">Getting started</span>
@@ -111,20 +134,20 @@ Arc lives in the menu bar. Nothing is copied or pasted, and the panel is non-act
 <div class="steps-container">
   <div class="step">
     <div class="step-number">1</div>
-    <div class="step-title">Download &amp; Install</div>
-    <p class="step-description">Open the <code>.dmg</code>, drag <strong>Arc</strong> into Applications, and launch it.</p>
+    <div class="step-title">Drag to Applications</div>
+    <p class="step-description">Open the <code>.dmg</code>, drag <strong>Arc</strong> into Applications, and launch it. It's notarized, so there's no right-click-to-open workaround.</p>
   </div>
 
   <div class="step">
     <div class="step-number">2</div>
     <div class="step-title">Grant Accessibility</div>
-    <p class="step-description">Lets Arc read the window you're working in. Screen Recording is only needed for screenshot-based actions.</p>
+    <p class="step-description">Turn Arc on in System Settings → Privacy &amp; Security → Accessibility when prompted.</p>
   </div>
 
   <div class="step">
     <div class="step-number">3</div>
     <div class="step-title">Press ⌃ Space</div>
-    <p class="step-description">Open the Arc menu anywhere in macOS. You can change the shortcut in Settings.</p>
+    <p class="step-description">Control+Space opens Arc over any app. If Spotlight or an input source already uses it, record a different shortcut in Arc's Settings.</p>
   </div>
 </div>
 
@@ -150,9 +173,13 @@ Arc lives in the menu bar. Nothing is copied or pasted, and the panel is non-act
 
 ## Arc for Mac FAQ
 
-### Is there an AI assistant for Mac that works in every app?
+### Which Mac apps does Arc work in?
 
-Arc does. Press Control+Space in any macOS app and Arc reads that window through the system accessibility APIs, then summarizes it, reads it aloud, rewrites your text or runs a prompt you wrote. It works in Safari, Chrome, Preview, Mail, Slack, Obsidian and anything else that puts text on screen.
+Any app that exposes its text to the macOS Accessibility API: Safari, Chrome, Preview, Mail, Notes, Slack, Obsidian, Pages and most others. Press Control+Space in the app and Arc reads that window directly.
+
+### How do I update Arc on my Mac?
+
+You don't have to do anything. Arc checks a signed Sparkle update feed and offers new versions in-app, so you never re-download the DMG by hand.
 
 ### Is Arc for Mac free?
 
@@ -181,7 +208,7 @@ The [Privacy Policy]({{ '/privacy/' | relative_url }}#macos-permissions-explaine
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/09/14/ai-screen-assistant-mac/' | relative_url }}">AI Screen Assistant Mac: One Shortcut for Every Window</a></li>
+    <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">Best AI App for Mac: What Arc Does Beyond ChatGPT</a></li>
     <li><a href="{{ '/2026/10/07/read-screen-aloud-mac/' | relative_url }}">AI Screen Reader for macOS: Read Any Window</a></li>
     <li><a href="{{ '/2026/09/20/ai-writer-mac/' | relative_url }}">AI Writing Assistant for Mac: Rewrite in Any App</a></li>
     <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>

@@ -1,56 +1,55 @@
 ---
 layout: blog
-title: "Best AI App for Mac: What Arc Does Beyond ChatGPT"
-description: "Looking for the best AI app for Mac? Arc works on the window you're already in — no pasting into a chat tab. Here's how it differs from ChatGPT."
+title: "AI Assistant for Mac: How Arc Compares to ChatGPT"
+description: "Arc is an AI assistant for Mac that works on the window you're already in. What it does, how it compares to ChatGPT and Apple Intelligence, and its limits."
 date: 2026-09-17
+last_modified_at: 2026-10-27
 author: Mamata
 tags: ["mac", "macos", "ai", "productivity"]
 og_image: /assets/images/og-post-ai-assistant-for-mac.png
-keywords: "best ai app for mac, mac ai app, ai app for macbook, chatgpt alternative mac"
+keywords: "ai assistant for mac, ai screen assistant mac, chatgpt alternative mac"
 faq:
   - question: "What is the best AI assistant for Mac?"
-    answer: "There's no single best \u2014 it depends what you want it to touch. For writing inside apps and working over any window, Arc is purpose-built: Control+Space from any app, summarize, read aloud, rewrite in place, chat with the screen. If you want a general chat companion, the ChatGPT Mac app is strong \u2014 but it stays a chat window. The practical answer most power users land on: a chat app for open-ended conversation, Arc for acting on what's already on screen."
+    answer: "It depends on the job. For open-ended conversation, file uploads, and voice chat, the ChatGPT Mac app is excellent. For quick rewrites inside any text field, Apple Intelligence's Writing Tools are free on supported Macs. Arc is built for a third job: acting on whatever window is in front of you — summarize it, read it aloud, rewrite the field you're typing in, or ask questions about it — from one shortcut, Control+Space. Many people use a chat app and Arc side by side."
   - question: "Is there a free AI assistant for Mac?"
-    answer: "Yes. Arc for Mac is free to download from arcassistant.app/macos/, and the free tier gives you 7 requests per week for summarizing windows, chat, and reading aloud. Apple's own Apple Intelligence is also free on supported Macs, though it's more of a system feature set than a screen-reading assistant. For heavier AI Writer usage there's a subscription \u2014 and one subscription unlocks Android, macOS, and Windows together."
-  - question: "How do I get an AI assistant on my Mac?"
-    answer: "Download Arc from arcassistant.app/macos/, drag it to Applications, launch it, grant Accessibility and Screen Recording permissions when prompted, and press Control+Space over any window. Setup takes about five minutes, works on macOS 14 and later, and runs on both Apple Silicon and Intel Macs."
+    answer: "Yes. Arc for Mac is a free download with 7 free requests per week on the basic features — no account required, no ads. Apple Intelligence is also free on supported Macs. For heavier use Arc has a subscription, and one subscription covers Android, macOS, and Windows."
+  - question: "Can an AI assistant read my screen on any MacBook?"
+    answer: "Arc runs on any Mac with macOS 14 (Sonoma) or later. It's a universal binary, so it runs natively on Apple Silicon and Intel Macs — MacBook Air, MacBook Pro, Mac mini, iMac. It reads a window only when you invoke an action, never in the background."
   - question: "Does Arc read my screen all the time?"
-    answer: "No \u2014 not in Arc's case, by design. Arc reads the frontmost window only at the moment you invoke an action. There is no background monitoring, no polling, no persistent capture between your keystrokes. Screenshot capture is explicit too: the first time Save Content runs, Arc asks consent before storing anything, and you can target a region instead of the whole screen."
-  - question: "Can AI assistants for Mac edit text directly in apps?"
-    answer: "Arc can, and it's the feature that separates screen assistants from chat windows. The AI Writer auto-fetches the text field your cursor is focused in, generates the rewrite or reply, and Insert writes it back into that exact field \u2014 in Gmail, Notion, Slack, or any editable text box system-wide. The twelve AI Writer sub-actions (Rephrase, Professional, Polite, Shorten, Elaborate, Fix Grammar, and the reply intentions) can each get their own global shortcut for headless, in-place edits."
+    answer: "No. Arc reads the frontmost window only at the moment you invoke an action. There is no background monitoring, no polling, and no keystroke recording. The first time Save Content runs, Arc asks for consent before storing a screenshot, and you can capture a region instead of the whole screen."
+  - question: "Why isn't Arc on the Mac App Store?"
+    answer: "App Store apps must run inside Apple's App Sandbox, which blocks the accessibility APIs that let one app read another app's window — and that is the core of what Arc does. Instead, Arc is signed with an Apple Developer ID, notarized by Apple, and updates itself through a signed update feed."
+  - question: "Will it slow my Mac down?"
+    answer: "No noticeable impact in normal use. The panel isn't running until you summon it, and the AI work happens server-side rather than on your CPU."
+  - question: "How is this different from screen-share AI tools?"
+    answer: "Screen-share assistants are built around meetings: they join a call and answer questions about the shared screen. Arc works on your local windows all day — a PDF in Preview, an article in Safari, an email thread in Mail — whether or not you're on a call."
 ---
 
-If you're hunting for the **best AI app for Mac**, the useful question isn't which model it runs — they mostly run the same ones — it's whether you have to bring your work to it. Arc doesn't: press Control+Space over any window and it reads what's already there.
+Most AI apps on the Mac work the same way: the model lives in its own window, and you carry your work to it. Select, copy, switch apps, paste, explain what you want, wait, copy the answer back. Arc takes the other approach. Press **Control+Space** over any window and it reads what's already there.
 
-Pick your flavor of Mac frustration: 23 Safari tabs you keep meaning to read, a 40-page PDF in Preview that could be 10 bullet points, a Gmail reply you've started six times, a Slack thread you're afraid to scroll in case it un-sends itself. The Mac-native fix for every one of these is the same sad dance: select, copy, switch to a chat tab, paste, type an instruction, wait, copy back, paste back, fix the formatting. That's not an assistant — that's a courier service with extra steps.
+I'm Mamata, and I build Arc. This guide covers what a screen-aware AI assistant for Mac does, how it compares honestly with ChatGPT and Apple Intelligence, where it falls short, and how to set it up. Everything here works on macOS 14 or later, on Apple Silicon or Intel.
 
-A real AI assistant for Mac should come to your window, not make you carry your work to it. That's the whole idea behind Arc, a free tool built as an [AI screen assistant](/) that reads the frontmost window through the macOS Accessibility API and acts on it in place. Press **Control+Space**, and Arc works over whatever you're already looking at, in whatever app you're already in.
+## Three Kinds of AI Assistant on the Mac
 
-I'm Mamata, I build Arc, and in this guide I'll cover what a Mac AI assistant can actually do beyond chatting: summarizing any window, reading screens aloud, rewriting text where your cursor is, chatting with the current page, and binding all of it to custom shortcuts. Everything here works on any Mac running macOS 14 or later — Apple Silicon or Intel.
+"AI assistant" covers three quite different tools, and knowing which one you need saves an install:
 
-## What an AI Assistant for Mac Actually Needs to Be
+1. **Chat apps** (ChatGPT, Claude, Gemini in a browser or desktop app). The AI lives in its own window. Great for open-ended conversation and uploading files; anything already on your screen has to be copied in.
+2. **Sidebar extensions.** The AI lives inside one app, usually the browser. Useful in Chrome, absent in Mail, Preview, and Slack.
+3. **Screen assistants.** The AI floats over every app, because macOS gives it the frontmost window rather than one app's content. This is the category Arc belongs to.
 
-### The clipboard problem every chatbot inherits
+The enabling piece is macOS's Accessibility API — the same system interface VoiceOver uses. With Accessibility granted in System Settings, an assistant can read the text of any window on demand: Safari, Chrome, Preview PDFs, Mail, Slack, Notion, Xcode. Arc reads **only when you invoke an action**; nothing runs between keystrokes, and password managers are skipped automatically.
 
-Every chatbot on the Mac — including the good ones — shares the same architectural limitation: the model lives in a window, and your work lives in other windows. So every request starts with logistics. Select the text. Copy it. Alt over to the chatbot. Paste. Describe which part you meant. Wait. Copy the output. Switch back. Paste it where it belongs.
+## How Arc Works on macOS
 
-The version that actually saves you time removes the logistics entirely. It reads the **frontmost window** — not a file you upload, not a text box you fill — and it acts without stealing focus. Your cursor stays in Gmail. Your text selection stays highlighted. Arc never becomes the active app, so macOS never flips you to another Space mid-flow.
-
-### Screen access, not file uploads
-
-The enabling trick is macOS's Accessibility API (`AXUIElement`). With one Screen Recording + Accessibility grant in System Settings, an assistant can read the text of any window on demand: Safari, Chrome, Preview PDFs, Mail, Slack, VS Code, Xcode, Notion, Excel. Arc reads **only when you invoke an action** — there's no background monitoring, no polling, nothing running when you're not pressing the key. That design is what makes it feel safe to keep installed.
-
-## Meet Arc: the Panel That Lives Over Your Windows
-
-Arc for Mac runs in the menu bar. Press **Control+Space** from anywhere and a dark, Spotlight-style panel fades in over your current window — centered, glassy, keyboard-first. The panel is non-activating: it appears without taking focus, so the app underneath keeps its text cursor. Arrow down, hit Return, and the panel disappears while a small click-through overlay shows progress. The result lands in a floating panel beside your work — or, for text editing, straight back into the field you were typing in.
+Arc runs in the menu bar. Press **Control+Space** from anywhere and a Spotlight-style panel appears over your current window. The panel doesn't take focus, so the app underneath keeps its text cursor — which is what lets Arc write results straight back into the field you were typing in. Arrow down, press Return, and the result appears in a floating panel beside your work. The shortcut is remappable if Control+Space is already taken.
 
 <img src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc menu panel floating over a Chrome window on macOS" width="1200" height="715" loading="lazy" />
 
-If you've used the Android version of [Arc](/android/), the concept carries over; the shape is different. Android gets a floating sidebar you swipe open over any app. On macOS you get a command palette on a global hotkey. Same AI, same screen-reading approach — keyboard-first instead of touch-first.
+If you've used [Arc on Android](/android/), the idea is the same with a different shape: a floating sidebar on the phone, a keyboard-first command panel on the Mac.
 
-### The seven things it does out of the box
+### The seven built-in actions
 
-Summon the menu and you'll find seven built-in actions, each individually reorderable, toggleable, and bindable to its own global shortcut:
+Each action can be reordered, hidden, or bound to its own global shortcut:
 
 | Action | What it does |
 |---|---|
@@ -62,118 +61,110 @@ Summon the menu and you'll find seven built-in actions, each individually reorde
 | **Flashcards** | Generates a study deck from on-screen content |
 | **Smart Extract** | Pulls events, deadlines, contacts, OTPs into real actions |
 
-### Setup in five minutes
+### Summarize any window
 
-1. **Download Arc** from [arcassistant.app/macos/](/macos/) — a notarized .dmg, macOS 14+, universal binary (Apple Silicon and Intel).
-2. **Drag to Applications** and launch. Arc lives in the menu bar.
-3. **Grant two permissions**: Accessibility (so it can read window text) and Screen Recording (so it can capture screenshots when an action needs one). Both prompts appear during onboarding, with a direct button into the right System Settings pane.
-4. **Press Control+Space** over any window. The onboarding "Try It" step summons the real menu so you test it before setup ends.
-
-No account juggling beyond one sign-in — and if you use Arc on Android, one subscription covers both platforms, and your saved items back up to Google Drive so the two apps merge rather than overwrite each other.
-
-## Summarize Any Window: the Built-In AI Summarizer for Mac
-
-This is the action that sells the app, and the reason most people install it. Reading a long BBC investigation, a dense docs page, or a 90-reply thread? Press **Control+Space**, Return on **AI Summary**.
-
-Arc reads the frontmost window directly — no select, no copy, no paste — and a result panel appears over your work with numbered key points: an AI-generated title, the key points, a source chip showing the page URL, and footer actions: **Share**, **Copy**, **Save**, and **Ask questions**. For browser content the source URL is resolved automatically, so the summary carries its provenance. If you'd rather listen than read, the play button hands the summary to **AI Read**.
+Reading a long article, a dense docs page, or a long email thread? Press Control+Space and choose **AI Summary**. Arc reads the window directly and shows numbered key points with a title, the source URL for browser content, and buttons to share, copy, save, or ask follow-up questions. The play button hands the summary to **AI Read** if you'd rather listen. For a step-by-step walkthrough, see [how to summarize a PDF or any text on Mac](/2026/09/16/ai-summarizer-mac/).
 
 <img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="AI Summary result panel with numbered key points in Arc for Mac" width="1200" height="715" loading="lazy" />
 
-The numbered format matters more than it sounds. Walls of prose are just compressed reading; key points are scannable. You get the shape of the content in fifteen seconds and decide whether to invest more.
+### Ask questions about the screen
 
-**Try it on:** long-form journalism, documentation you only need one answer from, email threads where you were CC'd out of politeness, and lecture slides before class. If a summary is worth keeping, hit Save — it lands in the Saved Items library with its screenshot and source URL.
+**Chat Screen** opens a chat seeded with the current window's content, and the context is shown at the top so you can see exactly what the model is reading. Follow-ups keep that context, and sessions are saved under **Active Chats** with search. You can also type a question straight into the Arc menu and press Return. Good starting questions: "What are the risks listed here?", "What does the data-sharing clause actually say?", "Explain the third paragraph in plain English."
 
-## Chat With Any Screen, Not a Chatbot Window
+<img src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Chat-about-screen panel in Arc answering a question about the window underneath" width="1200" height="715" loading="lazy" />
 
-The second action changes how you ask questions. **Chat Screen** opens a chat panel seeded with the current window's content — the context bubble sits right at the top, so you can see exactly what the model is looking at. No hidden prompts, no re-explaining the document.
+### Rewrite and reply in the app you're typing in
 
-Three ways in:
+The **AI Writer** reads the text field your cursor is in — a Gmail reply, a Notion comment, a form — and **Insert** writes the result back into that same field. Its modes:
 
-1. Pick **Chat Screen** from the Arc menu
-2. Hit **Ask questions** on any AI Summary result
-3. Type a free-text prompt directly into the Arc menu — type anything that matches no action and the hint reads *"Press Return to ask this as a question"*
+- **Rewrite** — Rephrase, Professional, Polite, Shorten, Elaborate, plus a custom instruction
+- **Fix Grammar** — repairs mistakes without changing your voice
+- **Reply** — Yes/Agree, No/Decline, Thank, Ask for details, Acknowledge
+- **Create Post** — drafts for posts, reviews, and comments
 
-Because the context is visible, you can trust it. Follow-ups keep the same context — it's a conversation about that page, not one-shot Q&A. Sessions persist under **Active Chats** with search, so a question you asked about a contract on Tuesday is still there on Friday. Answers copy as clean plain text, or get read aloud with the speaker button.
-
-This is what it should feel like — context handled automatically. Good questions to start with: "What are the risks listed here?", "Which option does this comparison recommend?", "Explain the third paragraph like I'm new to this."
-
-## AI Writer: Rewrite and Reply Inside the App You're Typing In
-
-The clipboard dance is worst for writing, so Arc's writer inverts it. The **AI Writer** reads the text field your cursor is already in — the Gmail reply box, the Notion comment, the form, the doc — generates the text, and **Insert** writes it straight back into that same field. No copy, no paste, no switching apps.
-
-Four modes cover most of what people actually need:
-
-- **Rewrite** — six tones: Rephrase, Professional, Polite, Shorten, Elaborate, plus a custom instruction box
-- **Fix Grammar** — repairs mistakes without touching your voice
-- **Reply** — five one-tap intentions: Yes/Agree, No/Decline, Thank, Ask for details, Acknowledge
-- **Create Post** — platform-aware drafts for posts, reviews, comments
-
-The reply modes deserve a special mention for email. A request lands that needs a "yes but let me check the timeline" answer: focus the reply field, hit Reply, tap **Yes/Agree**, edit two words, send. That's the difference between a tool that demos well and one that shaves minutes off every email.
+**Info Vault** lets you store short notes about yourself — your role, preferred tone, the products you work on — and attach them as chips so output sounds like you rather than a generic template. Entries stay local and are only sent when you tap the chip. More detail is in the [AI writing assistant for Mac guide](/2026/09/20/ai-writer-mac/).
 
 <img src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="AI Writer ready to rewrite a Gmail reply field on macOS" width="1200" height="715" loading="lazy" />
 
-### Make it sound like you: Info Vault
+### Shortcuts that skip the menu
 
-Generic AI output is a dead giveaway. **Info Vault** fixes that: you store entries about yourself — your role, your tone preferences, the products you work on — and they appear as #chips in every AI Writer mode. Include them and the rewrite or reply reflects your context, not a generic corporate voice. Entries stay local and are only attached when you tap the chip.
-
-## Custom Shortcuts: Actions That Run Without a Menu
-
-Here's the feature that makes Arc feel like a Mac power tool rather than an app — the reason it earns a permanent spot in the menu bar: **every action can bind to its own global keyboard shortcut**, and bound actions run **headlessly** — no menu, no panel, no window. The result just happens.
-
-Examples of bindings that earn their keep:
-
-- **⌃S** → AI Summary: any window, instant key points, result panel over your work
-- **⌃R** → Rephrase: any text field, rewritten in place
-- **⌃H** → Fix Grammar: same, minus the typos
-- **⌃E** → Smart Extract: pull events and deadlines from any page into Calendar and Reminders
-
-Binding takes about three seconds: click the keyboard icon on any action's row, press your combination, done. Live conflict detection names any action that already holds the key, every Arc hotkey suspends during recording so capture is clean, and bindings survive restarts and updates. This is the closest thing macOS has to "run my AI on a key."
+Any action can get its own global keyboard shortcut, and bound actions run without opening the menu. For example: ⌃S for AI Summary, ⌃R for Rephrase in place, ⌃H for Fix Grammar, ⌃E for Smart Extract. Binding takes a few seconds, and Arc warns you if a key is already in use.
 
 <img src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Custom global shortcut assigned to AI Writer in Arc for Mac" width="1200" height="715" loading="lazy" />
 
-And if none of the built-ins fit, **Arc Actions** lets you write your own: any prompt, a `{screen_text}` placeholder that injects the on-screen content, optional screenshot region, optional web search. There's also a **Community Actions** catalog with 500+ ready-made prompts — every card shows the real prompt text, with verified badges and upvotes — addable in one click and fully editable once added.
+If no built-in action fits, **Arc Actions** lets you write your own prompt with a `{screen_text}` placeholder, an optional screenshot region, and optional web search. The **Community Actions** catalog has 500+ shared prompts you can add and edit. See [AI automation on Mac](/2026/10/10/ai-automation-mac/) for worked examples.
 
-## Save First, Read Later: Your Mac AI Assistant's Library
+### Save now, read later
 
-Reading queues die because capture has friction. Arc doubles as a capture tool: **Save Content** removes it: one keystroke saves the screen's text, a screenshot, the source app, and the URL into the **Saved Items library** — a two-pane window with thumbnails, search, and multi-select app/category filters. Each saved item can be re-summarized, listened to, copied, or opened for questions later. First-time use asks explicit consent before any screenshot is stored, and there's a region-select option when you only want part of the screen.
+**Save Content** stores the screen's text, a screenshot, the source app, and the URL in a searchable **Saved Items** library, where you can re-summarize, listen, or ask questions later. Pair it with **Smart Extract** to turn a confirmation email into a calendar event and reminder, or a meetup page into a contact and map pin.
 
 <img src="{{ '/assets/images/screenshots/macos/13_saved_item_detail_with_screenshot.jpg' | relative_url }}" alt="Saved item detail view in the Arc Saved Items library on macOS" width="1200" height="715" loading="lazy" />
 
-Pair it with Smart Extract for the practical stuff: that confirmation email becomes a calendar event and a reminder; that meetup page becomes a saved contact and a map pin. Seven item categories — Events, Reminders, Deadlines, Contacts, Meeting Links, Locations, OTPs — each with one matched real action, not just a link.
+## Arc vs ChatGPT and Apple Intelligence
 
-## What Arc Can Do That ChatGPT and Gemini Can't
+A fair comparison, since you may not need Arc at all:
 
-- **It never asks you to bring the text.** Reading the frontmost window beats copy-paste for anything already on screen — including apps that don't "share" well.
-- **It doesn't steal focus.** The non-activating panel is the reason in-place text editing works at all: your cursor stays in the field, and the rewrite lands back in it.
-- **It edits in place.** AI Writer replaces the text in the focused field. ChatGPT's desktop app is a great chat window; it cannot write into your Gmail reply box.
-- **It's keyboard-native.** Control+Space to summon, arrows and Return to run, custom global shortcuts for anything you use often — including completely headless runs.
-- **It's the same assistant on your phone.** Arc on [Android](/android/) brings the same screen-aware AI to your pocket — summaries, reads, replies — with shared subscription and backup. Start reading on the Mac, finish the summary on the phone.
+- **ChatGPT for Mac** is the better choice for long, open-ended conversations, uploading files, image generation, and voice chat. It's a chat window first; working on text in other apps still mostly means copying it in.
+- **Apple Intelligence** is free on supported Macs, runs much of its work on-device, and its Writing Tools can proofread and rewrite in most text fields. If quick rewrites are all you need, try it before installing anything.
+- **Arc** is the better fit when you want one shortcut that works on *whatever window is in front of you*: summarize a PDF in Preview, read an article aloud, reply in Gmail with a set intention, ask questions about a page, or run your own saved prompts with their own hotkeys. It's also the same assistant on Android and Windows, with one subscription.
+
+## Notarized, and Not on the Mac App Store
+
+Arc is signed with an Apple Developer ID and notarized by Apple, so it installs without an "unidentified developer" warning, and it updates itself through a signed update feed.
+
+It isn't on the Mac App Store because App Store apps must run in Apple's App Sandbox, and the sandbox blocks the accessibility APIs that let one app read another app's window. Those APIs are what Arc does; notarization plus a signed updater provides the safety checks without that restriction.
+
+## What Arc Doesn't Do
+
+Every tool in this category has tradeoffs:
+
+- **No background automation.** Arc does nothing between keystrokes. For scheduled or unattended automation, use Shortcuts or an agent tool instead.
+- **One window per action.** Comparing two documents means two invocations.
+- **It doesn't edit files.** Results land in the field you're in or on the clipboard; it won't reorganize folders or refactor code.
+- **It isn't offline.** The AI models run server-side, so you need a connection.
+
+## Setup
+
+1. **Download Arc** from [arcassistant.app/macos/](/macos/) — a notarized .dmg for macOS 14+, universal binary (Apple Silicon and Intel).
+2. **Drag it to Applications** and launch. Arc lives in the menu bar.
+3. **Grant permissions**: Accessibility (to read window text) and Screen Recording (for actions that capture a screenshot). Onboarding links straight to the right System Settings pane.
+4. **Press Control+Space** over any window. The onboarding "Try It" step opens the real menu so you can test it before you finish.
+
+The free tier includes 7 requests per week on the basic features, with no ads. The app is available in 10 languages. If you also use Arc on Android or [Windows](/windows/), one sign-in and one subscription cover all of them, and saved items can back up to Google Drive (off until you turn it on). An [iOS](/ios/) version is in development.
 
 ## FAQ
 
 ### What is the best AI assistant for Mac?
 
-There's no single best — it depends what you want it to touch. For writing inside apps and working over any window, [Arc](/) is purpose-built: Control+Space from any app, summarize, read aloud, rewrite in place, chat with the screen. If you want a general chat companion, the ChatGPT Mac app is strong — but it stays a chat window. The practical answer most power users land on: a chat app for open-ended conversation, Arc for acting on what's already on screen.
+It depends on the job. For open-ended conversation, file uploads, and voice chat, the ChatGPT Mac app is excellent. For quick rewrites inside any text field, Apple Intelligence's Writing Tools are free on supported Macs. [Arc](/) is built for a third job: acting on whatever window is in front of you — summarize it, read it aloud, rewrite the field you're typing in, or ask questions about it — from one shortcut, Control+Space. Many people use a chat app and Arc side by side.
 
 ### Is there a free AI assistant for Mac?
 
-Yes. Arc for Mac is free to download from [arcassistant.app/macos/](/macos/), and the free tier gives you 7 requests per week for summarizing windows, chat, and reading aloud. Apple's own Apple Intelligence is also free on supported Macs, though it's more of a system feature set than a screen-reading assistant. For heavier AI Writer usage there's a subscription — and one subscription unlocks Android, macOS, and Windows together.
+Yes. Arc for Mac is a [free download](/macos/) with 7 free requests per week on the basic features — no account required, no ads. Apple Intelligence is also free on supported Macs. For heavier use Arc has a subscription, and one subscription covers Android, macOS, and Windows.
 
-### How do I get an AI assistant on my Mac?
+### Can an AI assistant read my screen on any MacBook?
 
-Download Arc from [arcassistant.app/macos/](/macos/), drag it to Applications, launch it, grant Accessibility and Screen Recording permissions when prompted, and press **Control+Space** over any window. Setup takes about five minutes, works on macOS 14 and later, and runs on both Apple Silicon and Intel Macs.
+Arc runs on any Mac with macOS 14 (Sonoma) or later. It's a universal binary, so it runs natively on Apple Silicon and Intel Macs — MacBook Air, MacBook Pro, Mac mini, iMac. It reads a window only when you invoke an action, never in the background.
 
 ### Does Arc read my screen all the time?
 
-No — not in Arc's case, by design. Arc reads the frontmost window **only at the moment you invoke an action**. There is no background monitoring, no polling, no persistent capture between your keystrokes. Screenshot capture is explicit too: the first time Save Content runs, Arc asks consent before storing anything, and you can target a region instead of the whole screen.
+No. Arc reads the frontmost window **only at the moment you invoke an action**. There is no background monitoring, no polling, and no keystroke recording. The first time Save Content runs, Arc asks for consent before storing a screenshot, and you can capture a region instead of the whole screen.
 
-### Can AI assistants for Mac edit text directly in apps?
+### Why isn't Arc on the Mac App Store?
 
-Arc can, and it's the feature that separates screen assistants from chat windows. The **AI Writer** auto-fetches the text field your cursor is focused in, generates the rewrite or reply, and **Insert** writes it back into that exact field — in Gmail, Notion, Slack, or any editable text box system-wide. The twelve AI Writer sub-actions (Rephrase, Professional, Polite, Shorten, Elaborate, Fix Grammar, and the reply intentions) can each get their own global shortcut for headless, in-place edits.
+App Store apps must run inside Apple's App Sandbox, which blocks the accessibility APIs that let one app read another app's window — and that is the core of what Arc does. Instead, Arc is signed with an Apple Developer ID, notarized by Apple, and updates itself through a signed update feed.
+
+### Will it slow my Mac down?
+
+No noticeable impact in normal use. The panel isn't running until you summon it, and the AI work happens server-side rather than on your CPU.
+
+### How is this different from screen-share AI tools?
+
+Screen-share assistants are built around meetings: they join a call and answer questions about the shared screen. Arc works on your local windows all day — a PDF in Preview, an article in Safari, an email thread in Mail — whether or not you're on a call.
 
 ---
 
-Ready to stop shuttling text between windows? [Download Arc free from arcassistant.app/macos/](/macos/) and put an AI assistant for Mac on Control+Space — your first summary is two minutes away. Prefer phone-first? [Get Arc on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc) and the same screen AI rides along in your pocket.
+[Download Arc for Mac free](/macos/) and try Control+Space on a window you'd otherwise copy into a chat app. Prefer your phone? [Get Arc on Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc).
 
 <!-- sources -->
-*Further reading: [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility) · [Google's Gemini developer docs](https://ai.google.dev/).*
+*Further reading: [Apple's Accessibility framework](https://developer.apple.com/documentation/accessibility) · [Apple Intelligence on Mac](https://www.apple.com/apple-intelligence/).*

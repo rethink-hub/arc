@@ -1,14 +1,16 @@
 ---
 layout: default
 title: "AI Assistant for Windows — Free on Microsoft Store | Arc"
-description: "Arc is an AI assistant for Windows that reads any window. Press Ctrl+Space to summarize, listen, rewrite and automate in any app. Free on the Microsoft Store."
+description: "Get Arc free from the Microsoft Store for Windows 10 and 11. Press Ctrl+Space in Word, Outlook, Edge or Teams to summarize, read aloud or rewrite."
 keywords: "ai assistant for windows, ai assistant microsoft store, download ai assistant windows, windows ai assistant, ai assistant for pc, ai screen assistant windows, windows ai summary app, windows text to speech ai"
 platform: windows
 og_image: /assets/images/og-windows.png
 product_page: true
 faq:
-  - question: "Is there an AI assistant for Windows that works in every app?"
-    answer: "Arc does. It reads the frontmost window through the Windows UI Automation APIs, so it works in Edge, Chrome, Word, Outlook, Slack, Teams, PDF readers and legacy Win32 apps without copy-pasting anything into a chatbot. It is a free download from the Microsoft Store."
+  - question: "Does Arc for Windows need administrator rights?"
+    answer: "No. The Microsoft Store installs Arc per user, so it works on PCs where you can't install software as an administrator, as long as the Store is allowed."
+  - question: "What if Ctrl+Space is already taken on my PC?"
+    answer: "Some input methods use Ctrl+Space to switch languages. Open Arc's Settings, record a different key combination for the Arc menu, and the new shortcut takes over system-wide."
   - question: "Where can I download Arc for Windows?"
     answer: "From the Microsoft Store. It installs and updates like any Store app, runs on Windows 10 (version 1809 or later) and Windows 11, and supports both Intel/AMD and Arm PCs."
   - question: "How much does Arc for Windows cost?"
@@ -17,7 +19,7 @@ faq:
     answer: "Copilot answers questions in its own panel, so you paste content into it. Arc runs on whatever window is already in front of you — press Ctrl+Space and it reads that window directly. You can also bind your own prompts to global hotkeys, which Copilot does not offer."
   - question: "Does Arc for Windows need an internet connection?"
     answer: "Yes. AI summaries, chat and rewriting are processed by a hosted model, so Arc needs a connection for those. Your saved items, custom actions and Info Vault entries are stored locally on your PC."
-last_modified_at: 2026-10-04
+last_modified_at: 2026-10-27
 ---
 
 <!-- Hero: text left, live interactive demo right (mirrors the macOS page) -->
@@ -69,45 +71,49 @@ The panel lists seven built-in actions — **AI Summary, AI Writer, Save Content
 
 </div>
 
+<!-- Install steps -->
+<div class="section-header">
+  <span class="section-tag">Getting started</span>
+  <h2>Install from the Microsoft Store.</h2>
+</div>
+
+<div class="steps-container">
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-title">Get it from Microsoft</div>
+    <p class="step-description">Open the <a href="{{ site.windows_app.store }}" target="_blank" rel="noopener">Store listing</a> and click Get. No installer to download and no admin prompt.</p>
+  </div>
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-title">Launch from Start</div>
+    <p class="step-description">Arc settles into the system tray. Turn on "start with Windows" if you want it ready after every reboot.</p>
+  </div>
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-title">Press Ctrl + Space</div>
+    <p class="step-description">Open Word, Outlook, Edge or a PDF and press Ctrl+Space. The panel reads that window straight away.</p>
+  </div>
+</div>
+
 <!-- Screenshots (captured on macOS; identical UI on Windows) -->
 <div class="section-header">
   <span class="section-tag">What it looks like</span>
-  <h2>The same app on Windows and Mac.</h2>
-  <p>Captured on macOS — Arc for Windows is the same codebase and interface, with <strong>Ctrl</strong> in place of <strong>⌃</strong>.</p>
+  <h2>The panel, the summary, the rewrite.</h2>
+  <p>These were captured on a Mac. The Windows build uses the same interface, with <strong>Ctrl</strong> in place of <strong>⌃</strong>.</p>
 </div>
 
 <div class="shot-gallery">
   <figure class="shot">
-    <img width="1200" height="715" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="Arc menu panel floating over a Chrome browser window, listing AI actions" loading="lazy">
-    <figcaption><strong>The Arc menu.</strong> Ctrl+Space opens it over whatever app you're in.</figcaption>
+    <img width="1200" height="715" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="The Arc panel open over a browser window, listing its built-in AI actions" loading="lazy">
+    <figcaption><strong>The panel.</strong> Seven built-in actions plus a prompt box, over whatever window has focus.</figcaption>
   </figure>
   <figure class="shot">
-    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="Arc AI Summary result panel showing numbered key points from a web article" loading="lazy">
-    <figcaption><strong>AI Summary.</strong> Numbered key points from the window Arc just read. Prefer listening? See <a href="{{ '/text-to-speech/' | relative_url }}">AI text to speech</a>.</figcaption>
+    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="An Arc summary with numbered key points from a long article" loading="lazy">
+    <figcaption><strong>A summary.</strong> Key points from a long Outlook thread or Edge article, with Listen underneath. More on <a href="{{ '/text-to-speech/' | relative_url }}">reading it aloud</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/08_chat_about_screen_panel.jpg' | relative_url }}" alt="Arc chat panel answering a question about the content on screen" loading="lazy">
-    <figcaption><strong>Chat about your screen.</strong> Follow-ups on the page in front of you.</figcaption>
-  </figure>
-  <figure class="shot">
-    <img width="1058" height="984" src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="Arc AI Writer ready to rewrite text in a Gmail reply field" loading="lazy">
-    <figcaption><strong>AI Writer.</strong> Rewrite, reply or fix grammar, and Arc writes the result back into the field. See <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a>.</figcaption>
-  </figure>
-  <figure class="shot">
-    <img width="1200" height="912" src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Custom global keyboard shortcut assigned to the AI Writer action in Arc settings" loading="lazy">
-    <figcaption><strong>Global hotkeys.</strong> Bind any action to a system-wide keystroke. See <a href="{{ '/ai-shortcuts/' | relative_url }}">AI shortcuts</a>.</figcaption>
-  </figure>
-  <figure class="shot">
-    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc custom action creation form with a prompt template field" loading="lazy">
-    <figcaption><strong>Your own actions.</strong> A prompt with a <code>{screen_text}</code> placeholder becomes a one-key command, or install one of 500+ community actions. More on <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
-  </figure>
-  <figure class="shot">
-    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/13_saved_items_library_list.jpg' | relative_url }}" alt="Arc saved items library listing captured screens with titles and categories" loading="lazy">
-    <figcaption><strong>Saved items.</strong> A searchable local library of every summary, with source app and URL.</figcaption>
-  </figure>
-  <figure class="shot">
-    <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/11_info_vault_with_entries.jpg' | relative_url }}" alt="Arc Info Vault storing reusable personal details for AI writing" loading="lazy">
-    <figcaption><strong>Info Vault.</strong> Reusable details for AI writing, stored on your PC. Pull dates and contacts with <a href="{{ '/smart-extract/' | relative_url }}">Smart Extract</a> or build <a href="{{ '/flashcards/' | relative_url }}">flashcards</a> too.</figcaption>
+    <img width="1058" height="984" src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="Arc AI Writer about to rewrite a draft in an email reply field" loading="lazy">
+    <figcaption><strong>A rewrite.</strong> Insert puts the new text back into the Word or Outlook field you were typing in. See <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a>.</figcaption>
   </figure>
 </div>
 
@@ -132,7 +138,7 @@ Same codebase, same features. Only these differ:
 | Permissions | Accessibility + Screen Recording prompts | No equivalent prompt; works as installed from the Store |
 | Background home | Menu bar | System tray |
 
-For sensitive work, see the [private AI assistant](/private-ai-assistant/) setup.
+Your own prompts with hotkeys are covered on [AI workflow automation]({{ '/ai-workflow-automation/' | relative_url }}); for sensitive work, see the [private AI assistant]({{ '/private-ai-assistant/' | relative_url }}) setup.
 
 </div>
 
@@ -156,9 +162,13 @@ For sensitive work, see the [private AI assistant](/private-ai-assistant/) setup
 
 ## Arc for Windows FAQ
 
-### Is there an AI assistant for Windows that works in every app?
+### Does Arc for Windows need administrator rights?
 
-Arc does. It reads the frontmost window through the Windows UI Automation APIs, so it works in Edge, Chrome, Word, Outlook, Slack, Teams, PDF readers and legacy Win32 apps without copy-pasting anything into a chatbot. It is a free download from the Microsoft Store.
+No. The Microsoft Store installs Arc per user, so it works on PCs where you can't install software as an administrator, as long as the Store is allowed.
+
+### What if Ctrl+Space is already taken on my PC?
+
+Some input methods use Ctrl+Space to switch languages. Open Arc's Settings, record a different key combination for the Arc menu, and the new shortcut takes over system-wide.
 
 ### Where can I download Arc for Windows?
 

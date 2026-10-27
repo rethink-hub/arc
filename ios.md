@@ -95,7 +95,7 @@ The iPhone version is in development, built around the entry points iOS allows (
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Smart Extract.</strong> Dates, contacts, codes and tasks pulled out with a button that acts on each. See <a href="{{ '/smart-extract/' | relative_url }}">Smart Extract</a>.</figcaption>
+    <figcaption><strong>Smart Extract.</strong> Dates, contacts, codes and tasks pulled out with a button that acts on each. See <a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary and extract</a>.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">

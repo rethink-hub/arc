@@ -197,7 +197,6 @@ last_modified_at: 2026-09-19
   <h2>Read further</h2>
   <p>If you are comparing options, these go deeper on the specific angles people weigh:</p>
   <ul>
-    <li><a href="{{ '/personal-ai-assistant/' | relative_url }}">Personal AI assistant</a> — what makes an assistant personal rather than generic</li>
     <li><a href="{{ '/private-ai-assistant/' | relative_url }}">Private AI assistant</a> — the privacy comparison in full</li>
     <li><a href="{{ '/macos/' | relative_url }}">Arc for Mac</a> — the desktop build, if you are comparing Mac tools</li>
     <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — the mobile build and its permissions</li>
