@@ -4,7 +4,7 @@ permalink: /contact/
 title: "Contact Arc Support | Arc"
 description: "Contact the developer of Arc for help with the app, billing, bug reports or feature ideas. Email everythingrethink@gmail.com."
 og_image: /assets/images/og-arc.png
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 ---
 
 <div class="content-section" markdown="1">
@@ -25,6 +25,7 @@ Arc is made by one developer, so every message reaches the person who writes the
 
 ## Elsewhere
 
+- Download Arc for [Android]({{ '/android/' | relative_url }}), [Mac]({{ '/macos/' | relative_url }}) or [Windows]({{ '/windows/' | relative_url }})
 - Updates on [X](https://x.com/rethink_hub)
 - Reviews and ratings on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc)
 - Who builds Arc: [about]({{ '/about/' | relative_url }})

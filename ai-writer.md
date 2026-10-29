@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "AI Writer & Reply Generator for Android and Mac | Arc"
-description: "Rewrite, fix grammar, translate and draft replies inside WhatsApp, Gmail, Slack or any app on Android and Mac. No copy-paste. 7 free requests a week."
+title: "AI Writer & Reply Generator for Android, Mac, Windows"
+description: "Rewrite, fix grammar, translate and draft replies inside WhatsApp, Gmail, Slack or any app on Android, Mac and Windows. No copy-paste. 7 free a week."
 keywords: "ai writer, ai reply generator, rewrite text ai"
 og_image: /assets/images/og-ai-writer.png
 product_page: true
@@ -22,18 +22,19 @@ faq:
     answer: "It reads the visible thread on your screen so the reply fits the context — who asked what, and how the conversation has gone. The expandable context preview shows exactly what was captured, and nothing is generated until you tap to generate."
   - question: "Can I fix grammar without opening the panel?"
     answer: "On desktop, yes — bind Fix Grammar (or Rephrase) to a global shortcut like Control+R. Cursor in the field, press the key, the text is corrected in place."
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 ---
 
-<!-- Hero: copy left, the same feature on Mac and Android right -->
+<!-- Hero: copy left, the same feature on Mac and Android right; Windows works the same way -->
 <section class="fhero">
   <div class="fhero-copy">
-      <span class="fhero-badge">Android &amp; Mac</span>
+      <span class="fhero-badge">Android, Mac &amp; Windows</span>
       <h1>AI Writer and Reply Generator</h1>
-      <p class="fhero-sub">Rewrite a draft, fix its grammar, translate it, or answer the message in front of you — inside WhatsApp, Gmail, Slack or any other text field, on Android and Mac. Arc writes the result back where your cursor was, so there's nothing to copy or paste.</p>
+      <p class="fhero-sub">Rewrite a draft, fix its grammar, translate it, or answer the message in front of you — inside WhatsApp, Gmail, Slack or any other text field, on Android, Mac and Windows. Arc writes the result back where your cursor was, so there's nothing to copy or paste.</p>
       <div class="home-hero-ctas fhero-ctas">
       <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="btn btn-primary btn-lg" data-cta="android" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>Get it on Google Play</a>
       <a href="{{ '/macos/' | relative_url }}" class="btn btn-secondary btn-lg" data-cta="mac"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>Download for Mac</a>
+      <a href="{{ site.windows_app.store }}" class="btn btn-secondary btn-lg" data-cta="windows" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>Get it from Microsoft</a>
       </div>
   </div>
   <div class="tab-media fhero-media">
@@ -47,11 +48,11 @@ last_modified_at: 2026-10-27
 
 ## How the AI Writer works
 
-Arc AI Writer lives in the floating sidebar on Android and behind **Control+Space** on Mac. It reads the text in the field you're in, rewrites it, and writes it back — no copy-paste into another app. Here is the real flow on a rough Gmail draft:
+Arc AI Writer lives in the floating sidebar on Android and behind **Control+Space** on Mac and **Ctrl+Space** on Windows. It reads the text in the field you're in, rewrites it, and writes it back — no copy-paste into another app. Here is the real flow on a rough Gmail draft:
 
 <div class="content-section">
   <h3>1. Invoke Arc over the draft</h3>
-  <p>Your draft: <em>"Hi, This is a test mail that i am writing to test AI Writer in Arc App on MacOS/Windows."</em> Press <strong>Control+Space</strong> (Mac) or swipe the edge (Android) and pick <strong>AI Writer</strong>. Arc auto-fetches the focused field's text into the <strong>SELECTED TEXT</strong> box without stealing focus.</p>
+  <p>Your draft: <em>"Hi, This is a test mail that i am writing to test AI Writer in Arc App on MacOS/Windows."</em> Press <strong>Control+Space</strong> (Mac), <strong>Ctrl+Space</strong> (Windows) or swipe the edge (Android) and pick <strong>AI Writer</strong>. Arc auto-fetches the focused field's text into the <strong>SELECTED TEXT</strong> box without stealing focus.</p>
   <img class="inline-shot" width="1058" height="984" src="/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg" alt="Gmail compose window with a rough draft email before invoking Arc" loading="lazy" decoding="async">
 
   <h3>2. Pick a tone and generate</h3>
@@ -60,6 +61,8 @@ Arc AI Writer lives in the floating sidebar on Android and behind **Control+Spac
 
   <h3>3. Insert</h3>
   <p>Tap <strong>Insert</strong> and the polished text replaces your draft exactly where the cursor was. Hit send.</p>
+  <p>The same flow on Windows, rewriting a mail draft:</p>
+  <img class="inline-shot" width="1600" height="845" src="/assets/images/screenshots/windows/03_ai_writer_rewrite_mail.jpg" alt="Arc AI Writer on Windows rewriting a rough email draft in a professional tone" loading="lazy" decoding="async">
 </div>
 
 ## What each mode returns
@@ -184,7 +187,7 @@ The free tier is 7 requests per week. Premium removes the cap and covers [Androi
 <div class="download-section">
   <h2>Try the AI Writer free</h2>
   <p style="font-size: 1.1em; color: var(--text-2); margin-bottom: 30px;">
-    Rewrite, reply, and polish text in any app on Android and Mac
+    Rewrite, reply, and polish text in any app on Android, Mac and Windows
   </p>
   <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" target="_blank" rel="noopener">
     <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Arc AI Writer App on Google Play" width="250" height="83" loading="lazy">

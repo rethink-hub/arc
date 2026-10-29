@@ -4,7 +4,7 @@ permalink: /about/
 title: "About Arc — Built by an Indie Developer | Arc"
 description: "Arc is an AI screen assistant for Android, Mac and Windows, built and supported by one indie developer under the Rethink name. Here's who and why."
 og_image: /assets/images/og-arc.png
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 ---
 
 <div class="content-section" markdown="1">
@@ -25,6 +25,8 @@ It's available on:
 - **[iPhone]({{ '/ios/' | relative_url }})**, in development
 
 One subscription covers every platform, and the free tier gives you 7 requests a week with no ads.
+
+<img src="{{ '/assets/images/screenshots/windows/01_arc_menu_over_edge.jpg' | relative_url }}" alt="The Arc menu open over a browser window, listing AI Summary, AI Writer, AI Read and other actions" width="1600" height="845" loading="lazy" decoding="async" style="max-width:100%;height:auto">
 
 ## Built accessibility-first
 

@@ -24,18 +24,19 @@ faq:
     answer: "Seven categories: events, reminders, deadlines, contacts, meeting links, locations, and OTP codes — plus plain text via OCR. Each has a matched one-tap action like Add to Calendar, Save Contact, or Copy Code."
   - question: "Does the calendar action create real events?"
     answer: "Yes — Smart Extract uses the platform's actual calendar APIs (EventKit on macOS, .ics files on Windows). One tap creates a genuine entry, not a link."
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 ---
 
-<!-- Hero: copy left, the same feature on Mac and Android right -->
+<!-- Hero: copy left, the same feature on Mac and Android right; Windows works the same way -->
 <section class="fhero">
   <div class="fhero-copy">
-      <span class="fhero-badge">Android &amp; Mac</span>
+      <span class="fhero-badge">Android, Mac &amp; Windows</span>
       <h1>AI Summarizer and Screen Text Extractor</h1>
       <p class="fhero-sub">Turn the article, email, PDF or web page you're already on into a concise <strong>AI summary</strong> in one tap — then listen to it, or pull out the text, codes, contacts and dates you need. No copy-paste, no upload.</p>
       <div class="home-hero-ctas fhero-ctas">
       <a href="https://play.google.com/store/apps/details?id=com.rethink.arc" class="btn btn-primary btn-lg" data-cta="android" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.3414c-.566 0-1.027-.478-1.027-1.068 0-.591.461-1.069 1.027-1.069.567 0 1.028.478 1.028 1.069 0 .59-.461 1.068-1.028 1.068zm-11.046 0c-.567 0-1.028-.478-1.028-1.068 0-.591.461-1.069 1.028-1.069.566 0 1.027.478 1.027 1.069 0 .59-.461 1.068-1.027 1.068zm11.4-6.12l1.997-3.459a.433.433 0 00-.158-.591.438.438 0 00-.593.156l-2.022 3.502c-1.515-.69-3.205-1.078-4.984-1.078-1.75 0-3.414.374-4.908 1.043L5.355 5.155a.437.437 0 00-.593-.156.433.433 0 00-.158.591l2.006 3.46C2.95 11.479.5 15.096.5 19.245h23c0-4.149-2.45-7.766-5.623-10.024z"/></svg>Get it on Google Play</a>
       <a href="{{ '/macos/' | relative_url }}" class="btn btn-secondary btn-lg" data-cta="mac"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.11-1.05.05-2.31.7-3.06 1.57-.67.78-1.25 2.04-1.09 3.27 1.17.09 2.37-.7 3.08-1.73z"/></svg>Download for Mac</a>
+      <a href="{{ site.windows_app.store }}" class="btn btn-secondary btn-lg" data-cta="windows" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>Get it from Microsoft</a>
       </div>
   </div>
   <div class="tab-media fhero-media">
@@ -53,13 +54,13 @@ last_modified_at: 2026-10-27
   <div class="step">
     <div class="step-number">1</div>
     <div class="step-title">Open Any Content</div>
-    <p class="step-description">An article, email thread, PDF, report or web page — in any app on Android, or any window on Mac</p>
+    <p class="step-description">An article, email thread, PDF, report or web page — in any app on Android, or any window on Mac and Windows</p>
   </div>
 
   <div class="step">
     <div class="step-number">2</div>
     <div class="step-title">Tap AI Summary</div>
-    <p class="step-description">From the floating sidebar on Android, or the Arc menu on Mac</p>
+    <p class="step-description">From the floating sidebar on Android, or the Arc menu on Mac (Control+Space) and Windows (Ctrl+Space)</p>
   </div>
 
   <div class="step">
@@ -70,6 +71,8 @@ last_modified_at: 2026-10-27
 </div>
 
 ---
+
+<img class="inline-shot" width="1600" height="845" src="/assets/images/screenshots/windows/02_ai_summary_over_edge.jpg" alt="Arc AI Summary on Windows summarizing a Wikipedia article in Edge into numbered key points" loading="lazy" decoding="async">
 
 ## What you get in a summary
 

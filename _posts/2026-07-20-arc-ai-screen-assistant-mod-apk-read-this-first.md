@@ -3,7 +3,7 @@ layout: blog
 title: "Is There an Arc Mod APK? Free vs Premium, Honestly"
 description: "Searching for an Arc AI Screen Assistant mod APK? The developer explains why a mod can't unlock the AI features, what's free, and what Premium costs."
 date: 2026-07-20
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 author: Mamata
 tags: ["mod-apk", "arc", "premium", "indie-developer", "android"]
 keywords: "arc ai screen assistant mod apk, arc ai premium, arc ai free"
@@ -19,8 +19,8 @@ faq:
     answer: "Summaries, chat and extraction are processed by cloud AI models that cost money per request. Those requests are checked on the server, so changing the app on your phone doesn't change what the server allows."
   - question: "Is it safe to install a modded APK?"
     answer: "It's risky. Modded APKs come from unofficial sources, aren't checked by Google Play Protect in the same way, and are a common way to spread malware. An app like Arc needs accessibility permission, so a tampered copy could read everything on your screen. Install Arc only from Google Play."
-  - question: "Does one subscription cover Mac too?"
-    answer: "Yes. The same Arc subscription covers Android and Mac."
+  - question: "Does one subscription cover Mac and Windows too?"
+    answer: "Yes. The same Arc subscription covers Android, Mac and Windows."
 ---
 
 If you searched for an "Arc AI Screen Assistant mod APK," here's the short answer: there isn't a working one, and installing one would be a bad idea. Arc's free tier is real, and Premium costs less than most people expect. I'm Mamata, the developer who builds Arc, so here's the full picture.
@@ -37,6 +37,8 @@ Modded APKs come from unofficial sites, aren't vetted the way Play Store apps ar
 
 Arc gives you **7 free requests per week** on basic features: summarizing screens, extracting text and AI chat. No ads, no watermarks, and no trial that expires. If you use Arc occasionally, you may never need to pay.
 
+<img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="A free Arc summary on Android with listen, save and ask buttons" width="800" height="1760" loading="lazy" />
+
 ## What Premium costs
 
 Premium unlocks unlimited use of everything, including summaries, text-to-speech, flashcards, AI Writer and workflow automation:
@@ -44,7 +46,7 @@ Premium unlocks unlimited use of everything, including summaries, text-to-speech
 - **Monthly:** $5.99/month (₹149/month in India, £5.99/month in the UK)
 - **Yearly:** $39.99/year (₹999/year in India, £39.99/year in the UK)
 
-The yearly plan works out to about **$3.33 a month**, or around **₹83 a month** in India. One plan, no higher tiers or upsells, and the same subscription covers Android and Mac.
+The yearly plan works out to about **$3.33 a month**, or around **₹83 a month** in India. One plan, no higher tiers or upsells, and the same subscription covers Android, Mac and Windows.
 
 ## Why it isn't free forever
 
@@ -58,11 +60,11 @@ What's left is what I live on. With a small app, every subscription makes a real
 
 ## What I'd suggest instead
 
-1. **Install Arc from Google Play.** It's free, with no credit card needed.
+1. **Install Arc from Google Play.** It's free, with no credit card needed. See [Arc for Android](/android/) for what it can do; it's also on [Mac](/macos/) and [Windows](/windows/).
 2. **Use the free tier** for a few weeks: 7 requests a week, no time limit.
 3. **Decide whether it's useful.** If it isn't, uninstall it. If it is, the yearly plan is the cheapest way to keep using it.
 
-To see what Premium includes before deciding, the feature pages go through it: [AI Summary & Reader](/ai-summary-reader/), [AI Writer](/ai-writer/), AI Workflow Automation and [Text to Speech](/text-to-speech/).
+To see what Premium includes before deciding, the feature pages go through it: [AI Summary & Reader](/ai-summary-reader/), [AI Writer](/ai-writer/) and [Text to Speech](/text-to-speech/).
 
 ## FAQ
 
@@ -86,9 +88,9 @@ Summaries, chat and extraction are processed by cloud AI models that cost money 
 
 It's risky. Modded APKs come from unofficial sources and are a common way to spread malware. An app like Arc needs accessibility permission, so a tampered copy could read everything on your screen. Install Arc only from Google Play.
 
-### Does one subscription cover Mac too?
+### Does one subscription cover Mac and Windows too?
 
-Yes. The same Arc subscription covers Android and Mac.
+Yes. The same Arc subscription covers [Android](/android/), [Mac](/macos/) and [Windows](/windows/).
 
 ---
 

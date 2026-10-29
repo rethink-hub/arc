@@ -3,7 +3,7 @@ layout: blog
 title: "How to Make Android Read the Screen Aloud (4 Ways)"
 description: "Four ways to have Android read text aloud: TalkBack, Select to Speak, Chrome Read Aloud and Arc. Covers PDFs, background playback and listening later."
 date: 2026-10-05
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 author: Mamata
 tags: ["android", "ai", "accessibility", "text-to-speech"]
 keywords: "read screen aloud android, android screen reader, read pdf aloud android, select to speak"
@@ -23,8 +23,8 @@ faq:
     answer: "Audio routes to the connected device. If nothing plays, either your headphones took over the output or media volume is at zero. Raise media volume (not ringer) or disconnect Bluetooth, then replay."
   - question: "Can I save what it read for later?"
     answer: "In Arc, saved items, summaries and extracts land in the built-in library. In the Unread Queue, tap the speaker icon on any saved item to hear it, with playback continuing in the background."
-  - question: "Does this work on Mac too?"
-    answer: "Arc's Mac app runs the same reading, summarizing and rewriting features behind a Control+Space overlay."
+  - question: "Does this work on Mac or Windows too?"
+    answer: "Yes. Arc for Mac and Arc for Windows run the same reading, summarizing and rewriting features behind a Control+Space (Mac) or Ctrl+Space (Windows) overlay."
 ---
 
 There are four realistic ways to make an Android phone read the screen aloud: **Select to Speak**, **Chrome's Read Aloud**, **TalkBack**, and a screen-aware app like **Arc**. Three are built in and free. They solve different problems, so here is which one fits which job and how to set each up in a couple of minutes.
@@ -142,7 +142,7 @@ They also combine well: plenty of people keep Select to Speak for quick taps and
 - **People with dyslexia, low vision or eye strain**, for whom adjustable speed and natural voices make long text manageable.
 - **Language learners and multilingual readers**, since automatic language detection handles mixed-language feeds without touching settings.
 
-If you'd rather rewrite text than read it, the same sidebar has an [AI Writer](/ai-writer/). On a Mac, the same reading features run behind Control+Space; see [Arc for Mac](/macos/).
+If you'd rather rewrite text than read it, the same sidebar has an [AI Writer](/ai-writer/). On a computer, the same reading features run behind Control+Space on [Mac](/macos/) and Ctrl+Space on [Windows](/windows/).
 
 ## FAQ
 
@@ -174,9 +174,11 @@ Audio routes to the connected device. If nothing plays, either your headphones t
 
 In Arc, saved items, summaries and extracts land in the built-in library. In the Unread Queue, tap the speaker icon on any saved item to hear it, with playback continuing in the background.
 
-### Does this work on Mac too?
+### Does this work on Mac or Windows too?
 
-Arc's Mac app runs the same reading, summarizing and rewriting features behind a Control+Space overlay. Details on [Arc for Mac](/macos/).
+Yes. [Arc for Mac](/macos/) and [Arc for Windows](/windows/) run the same reading, summarizing and rewriting features behind a Control+Space (Mac) or Ctrl+Space (Windows) overlay. Pick **AI Read** from the menu to hear the window aloud.
+
+<img src="{{ '/assets/images/screenshots/windows/01_arc_menu_over_edge.jpg' | relative_url }}" alt="The Arc menu on Windows with AI Read listed among the actions" width="1600" height="845" loading="lazy" />
 
 <!-- sources -->
 *Further reading: [Android text-to-speech settings](https://support.google.com/accessibility/android/answer/6006983) · [Android's Select to Speak](https://support.google.com/accessibility/android/answer/7349565).*

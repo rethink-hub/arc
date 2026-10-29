@@ -19,7 +19,7 @@ faq:
     answer: "Copilot answers questions in its own panel, so you paste content into it. Arc runs on whatever window is already in front of you — press Ctrl+Space and it reads that window directly. You can also bind your own prompts to global hotkeys, which Copilot does not offer."
   - question: "Does Arc for Windows need an internet connection?"
     answer: "Yes. AI summaries, chat and rewriting are processed by a hosted model, so Arc needs a connection for those. Your saved items, custom actions and Info Vault entries are stored locally on your PC."
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 ---
 
 <!-- Hero: text left, live interactive demo right (mirrors the macOS page) -->
@@ -45,7 +45,7 @@ last_modified_at: 2026-10-27
     </div>
     <div class="hero-demo-col hero-demo-col--arc">
       {% include arc-interactive-demo.html platform="windows" cta_label="Get Arc for Windows →" cta_href=site.windows_app.store %}
-      <img class="demo-mobile-fallback" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="The Arc panel open over a browser window, listing AI actions" width="1200" height="715" loading="lazy" decoding="async">
+      <img class="demo-mobile-fallback" src="{{ '/assets/images/screenshots/windows/01_arc_menu_over_edge.jpg' | relative_url }}" alt="The Arc menu open over Microsoft Edge on Windows 11, listing AI actions" width="1600" height="845" loading="lazy" decoding="async">
     </div>
   </div>
 </div>
@@ -104,16 +104,16 @@ The panel lists seven built-in actions — **AI Summary, AI Writer, Save Content
 
 <div class="shot-gallery">
   <figure class="shot">
-    <img width="1200" height="715" src="{{ '/assets/images/screenshots/macos/01_arc_menu_over_chrome.jpg' | relative_url }}" alt="The Arc panel open over a browser window, listing its built-in AI actions" loading="lazy">
+    <img width="1600" height="845" src="{{ '/assets/images/screenshots/windows/01_arc_menu_over_edge.jpg' | relative_url }}" alt="The Arc menu open over Microsoft Edge on Windows 11, listing its built-in AI actions" loading="lazy">
     <figcaption><strong>The panel.</strong> Seven built-in actions plus a prompt box, over whatever window has focus.</figcaption>
   </figure>
   <figure class="shot">
-    <img width="1200" height="710" src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="An Arc summary with numbered key points from a long article" loading="lazy">
-    <figcaption><strong>A summary.</strong> Key points from a long Outlook thread or Edge article, with Listen underneath. More on <a href="{{ '/text-to-speech/' | relative_url }}">reading it aloud</a>.</figcaption>
+    <img width="1600" height="845" src="{{ '/assets/images/screenshots/windows/02_ai_summary_over_edge.jpg' | relative_url }}" alt="An Arc summary on Windows with numbered key points from a Wikipedia article in Edge" loading="lazy">
+    <figcaption><strong>A summary.</strong> Key points from a long Edge article or Outlook thread, with a play button to listen. More on <a href="{{ '/text-to-speech/' | relative_url }}">reading it aloud</a>.</figcaption>
   </figure>
   <figure class="shot">
-    <img width="1058" height="984" src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="Arc AI Writer about to rewrite a draft in an email reply field" loading="lazy">
-    <figcaption><strong>A rewrite.</strong> Insert puts the new text back into the Word or Outlook field you were typing in. See <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a>.</figcaption>
+    <img width="1600" height="845" src="{{ '/assets/images/screenshots/windows/03_ai_writer_rewrite_mail.jpg' | relative_url }}" alt="Arc AI Writer on Windows rewriting a rough email draft in a professional tone" loading="lazy">
+    <figcaption><strong>A rewrite.</strong> Insert puts the new text back into the mail, Word or Outlook field you were typing in. See <a href="{{ '/ai-writer/' | relative_url }}">AI writer</a>.</figcaption>
   </figure>
 </div>
 

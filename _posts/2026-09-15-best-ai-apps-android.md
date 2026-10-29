@@ -5,7 +5,7 @@ description: "Nine AI apps for Android compared honestly: assistants, chatbots, 
 keywords: "best ai apps for android, android ai apps, best ai assistant android, gemini vs ai apps"
 og_image: /assets/images/og-post-best-ai-apps-android.png
 date: 2026-09-15
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-29
 author: Mamata
 tags: ["ai-apps", "android", "best-of", "productivity", "comparison"]
 faq:
@@ -49,9 +49,11 @@ Nothing here is sponsored. Prices are what I saw in September 2026; check before
 
 ## 1. Arc (best for working on what's already on screen)
 
-**Free / premium · Android, macOS, Windows**
+**Free / premium · [Android](/android/), [macOS](/macos/), [Windows](/windows/)**
 
 A floating AI sidebar that sits on top of every app. Swipe from the screen edge and it appears over whatever you're doing, so there's no switching apps or copy-pasting.
+
+<img src="{{ '/assets/images/screenshots/01_floating_sidebar_expanded_over_chrome.jpg' | relative_url }}" alt="Arc floating sidebar open over Chrome on Android" width="800" height="1760" loading="lazy" />
 
 **What it does:**
 - Summarizes articles, PDFs, emails — with read-aloud for commutes
@@ -61,6 +63,8 @@ A floating AI sidebar that sits on top of every app. Swipe from the screen edge 
 - Custom AI actions for your repetitive routines
 
 **Who it's for:** anyone who wants AI help without leaving their current app. Especially strong if you read a lot on your phone or handle lots of messages.
+
+<img src="{{ '/assets/images/screenshots/02_ai_summary_result.jpg' | relative_url }}" alt="An Arc summary of an article on Android, with listen, save and ask buttons" width="800" height="1760" loading="lazy" />
 
 **Honest limits:** it's a screen assistant, not a full chatbot, so for long research sessions ChatGPT or Perplexity are better. It needs accessibility permission to read the screen, which not everyone will want to grant, and the free tier is 7 requests per week on basic features.
 
