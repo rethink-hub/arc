@@ -143,7 +143,7 @@ A screen full of chat bubbles, sidebars and ads is noisy. Turn on **region selec
 - **Research:** summarize papers and articles for a literature review.
 - **Documents:** get the key points of contracts, reports and proposals before reading in full.
 - **News:** stay informed without spending an hour reading.
-- **Study:** condense a textbook chapter, then turn it into [flashcards]({{ '/flashcards/' | relative_url }}).
+- **Study:** condense a textbook chapter, then turn it into flashcards.
 - **Admin:** grab a phone number, address or deadline off a screenshot and save it in one tap.
 
 ---
@@ -209,8 +209,8 @@ A screen full of chat bubbles, sidebars and ads is noisy. Turn on **region selec
 ## Related features
 
 - **[AI Writer]({{ '/ai-writer/' | relative_url }})** - Rewrite, reply, and polish text in any app
-- **[AI Shortcuts &amp; Custom Actions]({{ '/ai-workflow-automation/' | relative_url }})** - Save your own prompts as one-tap actions
-- **[AI Note Taker]({{ '/ai-note-taker/' | relative_url }})** - Summaries and action items from your phone calls
+- **AI Shortcuts &amp; Custom Actions** - Save your own prompts as one-tap actions
+- **AI Note Taker** - Summaries and action items from your phone calls
 
 ## Available platforms
 
@@ -225,7 +225,6 @@ A screen full of chat bubbles, sidebars and ads is noisy. Turn on **region selec
   <p>Guides that go further on what's above:</p>
   <ul>
     <li><a href="{{ '/2026/10/03/best-ai-summarizer-app-android/' | relative_url }}">Best AI Summarizer: 7 Ranked and Tested (2026)</a></li>
-    <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>
     <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">Best AI App for Mac: What Arc Does Beyond ChatGPT</a></li>
   </ul>
 </div>

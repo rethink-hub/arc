@@ -159,7 +159,7 @@ Summaries in Arc land in a library you can search, reopen with the source screen
 
 <img src="{{ '/assets/images/screenshots/00_summary_library_with_items.jpg' | relative_url }}" alt="Arc summary library showing saved summaries with categories and sources" width="800" height="1760" loading="lazy" />
 
-If you summarize something and then always do the same next step, such as drafting a reply, [AI Writer](/ai-writer/) works from the same captured text, and [AI Workflow Automation](/ai-workflow-automation/) can turn the pair into a one-tap custom action.
+If you summarize something and then always do the same next step, such as drafting a reply, [AI Writer](/ai-writer/) works from the same captured text, and AI Workflow Automation can turn the pair into a one-tap custom action.
 
 ## The bottom line
 

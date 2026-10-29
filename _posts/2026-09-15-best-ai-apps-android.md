@@ -178,7 +178,7 @@ A few apps I tested and left off, since the omissions are usually the question:
 
 Start with what your phone already has: Gemini and Circle to Search cost nothing and cover a lot. Then add by the shape of your day. Meetings most days, add Otter. Research most days, add Perplexity. Long thinking sessions, add ChatGPT. Notes in Notion, add Notion AI. If you keep copying text out of one app into an AI and pasting the result back, that's the gap Arc fills; it's free to try on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc).
 
-For a head-to-head of screen assistants specifically, see [Arc vs. the alternatives](/alternatives/).
+For a head-to-head of screen assistants specifically, see Arc vs. the alternatives.
 
 *Written by Mamata, the indie developer building Arc. This page is updated as the apps change.*
 

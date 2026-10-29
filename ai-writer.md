@@ -78,7 +78,7 @@ Rewrite keeps your facts: it will turn "can't make 3pm" into "I'm unable to atte
 
 ### Save the rewrites you run every day
 
-The built-in tones cover most fixes, but daily users end up with a few instructions they repeat — "shorten to one line for a status update", "rewrite as a three-bullet update, lead with the outcome", "confident but not aggressive". Save each once as a [custom action]({{ '/ai-workflow-automation/' | relative_url }}) and it becomes a one-tap button, instead of a Custom instruction you retype.
+The built-in tones cover most fixes, but daily users end up with a few instructions they repeat — "shorten to one line for a status update", "rewrite as a three-bullet update, lead with the outcome", "confident but not aggressive". Save each once as a custom action and it becomes a one-tap button, instead of a Custom instruction you retype.
 
 <h2 id="replies">Replies: five intentions, one tap each</h2>
 
@@ -110,7 +110,7 @@ The **My Info Vault** stores your name and title, company, tone preferences and 
 
 ### Keyboard-speed fixes on desktop
 
-On Mac and Windows, bind any sub-action to a global shortcut — **Control+R** for Rephrase by default — and fix a text field without opening the Arc panel. It even works in terminals and Electron apps. More on that in [AI shortcuts and custom actions]({{ '/ai-workflow-automation/' | relative_url }}).
+On Mac and Windows, bind any sub-action to a global shortcut — **Control+R** for Rephrase by default — and fix a text field without opening the Arc panel. It even works in terminals and Electron apps. More on that in AI shortcuts and custom actions.
 
 | Works inside | Android | macOS / Windows |
 | --- | --- | --- |
@@ -196,8 +196,8 @@ The free tier is 7 requests per week. Premium removes the cap and covers [Androi
 ## Related features
 
 - **[AI Summary &amp; Reader]({{ '/ai-summary-reader/' | relative_url }})** - Summarize and listen to any content
-- **[AI Shortcuts &amp; Custom Actions]({{ '/ai-workflow-automation/' | relative_url }})** - Save your own prompts as one-tap actions
-- **[Private AI Assistant]({{ '/private-ai-assistant/' | relative_url }})** - Exactly what text goes where
+- **AI Shortcuts &amp; Custom Actions** - Save your own prompts as one-tap actions
+- **Private AI Assistant** - Exactly what text goes where
 
 ## Available platforms
 
@@ -213,7 +213,8 @@ The free tier is 7 requests per week. Premium removes the cap and covers [Androi
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/09/20/ai-writer-mac/' | relative_url }}">AI Writing Assistant for Mac: Rewrite in Any App</a></li>
+    <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">AI assistant for Mac: how Arc compares to ChatGPT</a></li>
+    <li><a href="{{ '/2026/09/15/best-ai-apps-android/' | relative_url }}">Best AI apps for Android, tested</a></li>
   </ul>
 </div>
 <!-- /related-posts -->

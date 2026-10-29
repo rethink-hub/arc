@@ -138,7 +138,7 @@ Same codebase, same features. Only these differ:
 | Permissions | Accessibility + Screen Recording prompts | No equivalent prompt; works as installed from the Store |
 | Background home | Menu bar | System tray |
 
-Your own prompts with hotkeys are covered on [AI workflow automation]({{ '/ai-workflow-automation/' | relative_url }}); for sensitive work, see the [private AI assistant]({{ '/private-ai-assistant/' | relative_url }}) setup.
+Your own prompts with hotkeys are covered on AI workflow automation; for sensitive work, see the private AI assistant setup.
 
 </div>
 

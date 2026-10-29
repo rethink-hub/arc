@@ -90,15 +90,15 @@ Nothing is copied or pasted into a chatbot, and the result comes back in the sam
   </figure>
   <figure class="shot">
     <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/06_arc_actions_create_form_empty.jpg' | relative_url }}" alt="Arc custom action creation form with a prompt template field on macOS" loading="lazy">
-    <figcaption><strong>Your own actions.</strong> A prompt with a <code>{screen_text}</code> placeholder becomes a permanent command, or install one of 500+ community actions. See <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
+    <figcaption><strong>Your own actions.</strong> A prompt with a <code>{screen_text}</code> placeholder becomes a permanent command, or install one of 500+ community actions. See AI workflow automation.</figcaption>
   </figure>
   <figure class="shot">
     <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/09_flashcards_decks_library.jpg' | relative_url }}" alt="Arc flashcard decks library on macOS" loading="lazy">
-    <figcaption><strong>Flashcards.</strong> Turn a page of study material into a deck. See <a href="{{ '/flashcards/' | relative_url }}">AI flashcards</a>.</figcaption>
+    <figcaption><strong>Flashcards.</strong> Turn a page of study material into a deck. See AI flashcards.</figcaption>
   </figure>
   <figure class="shot">
     <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/11_info_vault_with_entries.jpg' | relative_url }}" alt="Arc Info Vault storing reusable personal details for AI writing on macOS" loading="lazy">
-    <figcaption><strong>Info Vault.</strong> Reusable details Arc drops into what it writes, stored locally. See <a href="{{ '/private-ai-assistant/' | relative_url }}">private AI assistant</a>.</figcaption>
+    <figcaption><strong>Info Vault.</strong> Reusable details Arc drops into what it writes, stored locally. See private AI assistant.</figcaption>
   </figure>
 </div>
 
@@ -209,9 +209,6 @@ The [Privacy Policy]({{ '/privacy/' | relative_url }}#macos-permissions-explaine
   <p>Guides that go further on what's above:</p>
   <ul>
     <li><a href="{{ '/2026/09/17/ai-assistant-for-mac/' | relative_url }}">Best AI App for Mac: What Arc Does Beyond ChatGPT</a></li>
-    <li><a href="{{ '/2026/10/07/read-screen-aloud-mac/' | relative_url }}">AI Screen Reader for macOS: Read Any Window</a></li>
-    <li><a href="{{ '/2026/09/20/ai-writer-mac/' | relative_url }}">AI Writing Assistant for Mac: Rewrite in Any App</a></li>
-    <li><a href="{{ '/2026/09/16/ai-summarizer-mac/' | relative_url }}">Summarize a PDF on Mac in One Keystroke</a></li>
   </ul>
 </div>
 <!-- /related-posts -->

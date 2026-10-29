@@ -174,8 +174,6 @@ last_modified_at: 2026-09-19
   <p>Listening pairs with the reading features more than it replaces them:</p>
   <ul>
     <li><a href="{{ '/ai-summary-reader/' | relative_url }}">AI summary &amp; reader</a> — summarize first, then listen to the short version</li>
-    <li><a href="{{ '/ai-note-taker/' | relative_url }}">AI note taker</a> — keep what you heard as notes</li>
-    <li><a href="{{ '/alternatives/' | relative_url }}">Arc vs. the alternatives</a> — how this compares to dedicated TTS apps</li>
     <li><a href="{{ '/android/' | relative_url }}">Arc for Android</a> — listen to any app on your phone</li>
   </ul>
 </div>
@@ -186,7 +184,6 @@ last_modified_at: 2026-09-19
   <h2>More on this</h2>
   <p>Guides that go further on what's above:</p>
   <ul>
-    <li><a href="{{ '/2026/10/07/read-screen-aloud-mac/' | relative_url }}">Mac Text to Speech: 4 Ways to Hear Any Window</a></li>
     <li><a href="{{ '/2026/10/05/how-to-read-screen-aloud-android/' | relative_url }}">Screen Reader App for Android: Read Any Screen</a></li>
   </ul>
 </div>

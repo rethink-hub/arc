@@ -184,7 +184,6 @@ last_modified_at: 2026-10-27
           <li>Community library of ready-made actions</li>
           <li>A global shortcut for any action</li>
         </ul>
-        <a class="link-arrow" href="{{ '/ai-workflow-automation/' | relative_url }}">Explore Workflow Automation</a>
       </div>
       <div class="tab-media">
         <img width="1200" height="912" class="shot-mac" src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Arc for Mac settings with a global shortcut assigned to AI Writer" loading="lazy" decoding="async">
@@ -200,7 +199,6 @@ last_modified_at: 2026-10-27
           <li>Question and answer review mode</li>
           <li>Saved to your library across devices</li>
         </ul>
-        <a class="link-arrow" href="{{ '/flashcards/' | relative_url }}">Explore Flashcards</a>
       </div>
       <div class="tab-media">
         <img width="1200" height="712" class="shot-mac" src="{{ '/assets/images/screenshots/macos/09_flashcards_viewer_question.jpg' | relative_url }}" alt="Arc flashcard viewer showing a question card on a Mac" loading="lazy" decoding="async">
@@ -216,7 +214,6 @@ last_modified_at: 2026-10-27
           <li>Filter by category and language</li>
           <li>Share your own actions with the community</li>
         </ul>
-        <a class="link-arrow" href="{{ '/ai-workflow-automation/' | relative_url }}">Explore community actions</a>
       </div>
       <div class="tab-media">
         <img class="shot-mac" src="{{ '/assets/images/screenshots/macos/07_community_actions_browse_english_filter.jpg' | relative_url }}" alt="Arc for Mac community actions library filtered to English" width="1200" height="780" loading="lazy" decoding="async">
@@ -259,21 +256,21 @@ last_modified_at: 2026-10-27
       <h3>AI Reply Generator</h3>
       <p>Context-aware replies for chats and email, in your tone.</p>
     </a>
-    <a class="mini" href="{{ '/ai-note-taker/' | relative_url }}">
+    <div class="mini">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v4H9zM6 5H5v16h14V5h-1M9 12h6M9 16h4"/></svg></span>
       <h3>AI Note Taker</h3>
       <p>Call transcripts, summaries and action items.</p>
-    </a>
-    <a class="mini" href="{{ '/ai-workflow-automation/' | relative_url }}">
+    </div>
+    <div class="mini">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16v10H4zM8 11h.01M12 11h.01M16 11h.01M8 14h8"/></svg></span>
       <h3>AI Shortcuts</h3>
       <p>Bind any action to a global hotkey.</p>
-    </a>
-    <a class="mini" href="{{ '/ai-workflow-automation/' | relative_url }}">
+    </div>
+    <div class="mini">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
       <h3>Community Actions</h3>
       <p>Install actions other Arc users have shared.</p>
-    </a>
+    </div>
     <div class="mini">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></span>
       <h3>Remembers your context</h3>
@@ -289,11 +286,11 @@ last_modified_at: 2026-10-27
       <h3>10+ languages</h3>
       <p>English, Spanish, French, German, Hindi, Chinese and more.</p>
     </div>
-    <a class="mini" href="{{ '/private-ai-assistant/' | relative_url }}">
+    <div class="mini">
       <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10ZM9 12l2 2 4-4"/></svg></span>
       <h3>Private by design</h3>
       <p>On-demand only, and off by default in sensitive apps.</p>
-    </a>
+    </div>
     </div>
   </div>
 </section>
@@ -312,7 +309,6 @@ last_modified_at: 2026-10-27
       <div class="pv"><span class="pv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18M5 7v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7M9 7V4h6v3M10 11v6M14 11v6"/></svg></span><h3>Not stored on our servers</h3><p>Screen content is processed for the answer, then discarded. Saved items stay on your device unless you turn on Drive backup.</p></div>
     </div>
     <div class="pv-links">
-      <a class="link-arrow" href="{{ '/private-ai-assistant/' | relative_url }}">How Arc handles your data</a>
       <a class="link-arrow" href="{{ '/privacy/' | relative_url }}">Privacy policy</a>
     </div>
   </div>

@@ -116,7 +116,7 @@ Nothing is copied, nothing is pasted, and you never leave the app you're in. It 
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Custom actions.</strong> Your own prompts become one-tap sidebar buttons, plus 500+ community actions. See <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
+    <figcaption><strong>Custom actions.</strong> Your own prompts become one-tap sidebar buttons, plus 500+ community actions. See AI workflow automation.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">
@@ -126,7 +126,7 @@ Nothing is copied, nothing is pasted, and you never leave the app you're in. It 
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Flashcards.</strong> Any page of notes becomes a reviewable deck. See <a href="{{ '/flashcards/' | relative_url }}">AI flashcards</a>.</figcaption>
+    <figcaption><strong>Flashcards.</strong> Any page of notes becomes a reviewable deck. See AI flashcards.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">
@@ -156,7 +156,7 @@ Nothing is copied, nothing is pasted, and you never leave the app you're in. It 
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Call Insights.</strong> Call transcripts with speaker labels and action items — Android only. See <a href="{{ '/ai-note-taker/' | relative_url }}">AI note taker</a>.</figcaption>
+    <figcaption><strong>Call Insights.</strong> Call transcripts with speaker labels and action items — Android only. See AI note taker.</figcaption>
   </figure>
 </div>
 
@@ -181,7 +181,7 @@ Circle to Search is handy for one-off lookups and Gemini for open-ended research
 
 ## Privacy and Permissions
 
-Arc reads the screen you're on only when you tap an action — not in the background. Add your own app exclusions in Settings → Choose Apps; Google Drive backup is off by default. See the [private AI assistant](/private-ai-assistant/) page and the [privacy policy](/privacy/) for what's stored where.
+Arc reads the screen you're on only when you tap an action — not in the background. Add your own app exclusions in Settings → Choose Apps; Google Drive backup is off by default. See the private AI assistant page and the [privacy policy](/privacy/) for what's stored where.
 
 ## Android AI Assistant FAQ
 
@@ -232,7 +232,6 @@ Yes. Write a prompt once with a `{screen_text}` placeholder and it becomes a one
   <p>Guides that go further on what's above:</p>
   <ul>
     <li><a href="{{ '/2026/10/05/how-to-read-screen-aloud-android/' | relative_url }}">Read any screen aloud on Android</a></li>
-    <li><a href="{{ '/2026/10/01/ai-fact-checker-app-android/' | relative_url }}">AI Fact Checker: Verify Any Screen in One Tap</a></li>
     <li><a href="{{ '/2026/09/15/best-ai-apps-android/' | relative_url }}">Best AI apps for Android, tested</a></li>
   </ul>
 </div>

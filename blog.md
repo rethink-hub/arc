@@ -94,7 +94,7 @@ last_modified_at: 2026-10-27
     {%- if roundups.size > 0 %}
     <section class="blog-section">
         <h2>Comparisons and roundups</h2>
-        <p>Posts that put Arc next to something else — Google's own on-screen AI, the other apps in the category, and the modded builds people go looking for. Arc is on these lists because it wins at what it does, and where it loses, that's said out loud. See also the <a href="{{ '/alternatives/' | relative_url }}">Arc alternatives comparison</a>.</p>
+        <p>Posts that put Arc next to something else — Google's own on-screen AI, the other apps in the category, and the modded builds people go looking for. Arc is on these lists because it wins at what it does, and where it loses, that's said out loud. See also the Arc alternatives comparison.</p>
         <div class="blog-list">
             {%- for post in roundups %}
             <a href="{{ post.url | relative_url }}" class="blog-card-link">
@@ -149,8 +149,6 @@ last_modified_at: 2026-10-27
     <a href="{{ '/ai-summary-reader/' | relative_url }}">Summarize &amp; listen to a screen</a>
     <a href="{{ '/text-to-speech/' | relative_url }}">Read any screen aloud</a>
     <a href="{{ '/ai-writer/' | relative_url }}">Rewrite and reply</a>
-    <a href="{{ '/ai-workflow-automation/' | relative_url }}">Build a custom AI action</a>
-    <a href="{{ '/flashcards/' | relative_url }}">Turn a screen into flashcards</a>
 </div>
 
 <script type="application/ld+json">

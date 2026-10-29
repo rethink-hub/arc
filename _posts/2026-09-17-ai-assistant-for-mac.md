@@ -63,7 +63,7 @@ Each action can be reordered, hidden, or bound to its own global shortcut:
 
 ### Summarize any window
 
-Reading a long article, a dense docs page, or a long email thread? Press Control+Space and choose **AI Summary**. Arc reads the window directly and shows numbered key points with a title, the source URL for browser content, and buttons to share, copy, save, or ask follow-up questions. The play button hands the summary to **AI Read** if you'd rather listen. For a step-by-step walkthrough, see [how to summarize a PDF or any text on Mac](/2026/09/16/ai-summarizer-mac/).
+Reading a long article, a dense docs page, or a long email thread? Press Control+Space and choose **AI Summary**. Arc reads the window directly and shows numbered key points with a title, the source URL for browser content, and buttons to share, copy, save, or ask follow-up questions. The play button hands the summary to **AI Read** if you'd rather listen. For a step-by-step walkthrough, see how to summarize a PDF or any text on Mac.
 
 <img src="{{ '/assets/images/screenshots/macos/02_ai_summary_result_panel.jpg' | relative_url }}" alt="AI Summary result panel with numbered key points in Arc for Mac" width="1200" height="715" loading="lazy" />
 
@@ -82,7 +82,7 @@ The **AI Writer** reads the text field your cursor is in — a Gmail reply, a No
 - **Reply** — Yes/Agree, No/Decline, Thank, Ask for details, Acknowledge
 - **Create Post** — drafts for posts, reviews, and comments
 
-**Info Vault** lets you store short notes about yourself — your role, preferred tone, the products you work on — and attach them as chips so output sounds like you rather than a generic template. Entries stay local and are only sent when you tap the chip. More detail is in the [AI writing assistant for Mac guide](/2026/09/20/ai-writer-mac/).
+**Info Vault** lets you store short notes about yourself — your role, preferred tone, the products you work on — and attach them as chips so output sounds like you rather than a generic template. Entries stay local and are only sent when you tap the chip. More detail is in the AI writing assistant for Mac guide.
 
 <img src="{{ '/assets/images/screenshots/macos/03_ai_writer_gmail_before_invoke.jpg' | relative_url }}" alt="AI Writer ready to rewrite a Gmail reply field on macOS" width="1200" height="715" loading="lazy" />
 
@@ -92,7 +92,7 @@ Any action can get its own global keyboard shortcut, and bound actions run witho
 
 <img src="{{ '/assets/images/screenshots/macos/12_shortcut_assigned_ai_writer.jpg' | relative_url }}" alt="Custom global shortcut assigned to AI Writer in Arc for Mac" width="1200" height="715" loading="lazy" />
 
-If no built-in action fits, **Arc Actions** lets you write your own prompt with a `{screen_text}` placeholder, an optional screenshot region, and optional web search. The **Community Actions** catalog has 500+ shared prompts you can add and edit. See [AI automation on Mac](/2026/10/10/ai-automation-mac/) for worked examples.
+If no built-in action fits, **Arc Actions** lets you write your own prompt with a `{screen_text}` placeholder, an optional screenshot region, and optional web search. The **Community Actions** catalog has 500+ shared prompts you can add and edit. See AI automation on Mac for worked examples.
 
 ### Save now, read later
 

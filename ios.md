@@ -4,6 +4,7 @@ title: "AI Assistant for iPhone — Works in Any App | Arc"
 description: "An AI assistant for iPhone that works on the screen you're already on — summarize, listen, rewrite, automate. In development; Android ships today."
 keywords: "ai assistant for iphone, iphone ai assistant, ai assistant ios, ios ai screen assistant, iphone ai summary app, iphone text to speech ai"
 platform: ios
+robots: noindex, follow
 og_image: /assets/images/og-ios.png
 faq:
   - question: "Is there an AI assistant for iPhone that works inside other apps?"
@@ -105,7 +106,7 @@ The iPhone version is in development, built around the entry points iOS allows (
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Custom actions.</strong> Your own prompts as one-tap commands, plus 500+ community actions. See <a href="{{ '/ai-workflow-automation/' | relative_url }}">AI workflow automation</a>.</figcaption>
+    <figcaption><strong>Custom actions.</strong> Your own prompts as one-tap commands, plus 500+ community actions. See AI workflow automation.</figcaption>
   </figure>
   <figure class="shot">
     <div class="iphone-frame">
@@ -115,7 +116,7 @@ The iPhone version is in development, built around the entry points iOS allows (
         <div class="iphone-reflection"></div>
       </div>
     </div>
-    <figcaption><strong>Flashcards.</strong> Any page of study material becomes a reviewable deck. See <a href="{{ '/flashcards/' | relative_url }}">AI flashcards</a>.</figcaption>
+    <figcaption><strong>Flashcards.</strong> Any page of study material becomes a reviewable deck. See AI flashcards.</figcaption>
   </figure>
 </div>
 
@@ -146,7 +147,7 @@ An iPhone app cannot draw over another app or read its content in the background
 - **A custom keyboard** — rewrite, reply and fix grammar in place, in whatever field you're typing in.
 - **Widgets and App Intents** — surface the Saved Items library and one-tap actions without opening the app.
 
-It reaches the same features with one extra tap, and it can actually ship on the App Store. Saved items sync, so anything you capture with [Arc for Mac](/macos/) now will be there when the iPhone app arrives. For how content is handled, see [private AI assistant](/private-ai-assistant/).
+It reaches the same features with one extra tap, and it can actually ship on the App Store. Saved items sync, so anything you capture with [Arc for Mac](/macos/) now will be there when the iPhone app arrives. For how content is handled, see private AI assistant.
 
 ### What day one should look like
 

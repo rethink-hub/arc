@@ -62,7 +62,7 @@ What's left is what I live on. With a small app, every subscription makes a real
 2. **Use the free tier** for a few weeks: 7 requests a week, no time limit.
 3. **Decide whether it's useful.** If it isn't, uninstall it. If it is, the yearly plan is the cheapest way to keep using it.
 
-To see what Premium includes before deciding, the feature pages go through it: [AI Summary & Reader](/ai-summary-reader/), [AI Writer](/ai-writer/), [AI Workflow Automation](/ai-workflow-automation/) and [Text to Speech](/text-to-speech/).
+To see what Premium includes before deciding, the feature pages go through it: [AI Summary & Reader](/ai-summary-reader/), [AI Writer](/ai-writer/), AI Workflow Automation and [Text to Speech](/text-to-speech/).
 
 ## FAQ
 
