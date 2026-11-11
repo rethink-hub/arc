@@ -98,7 +98,7 @@ Nothing is copied or pasted into a chatbot, and the result comes back in the sam
   </figure>
   <figure class="shot">
     <img width="1200" height="780" src="{{ '/assets/images/screenshots/macos/11_info_vault_with_entries.jpg' | relative_url }}" alt="Arc Info Vault storing reusable personal details for AI writing on macOS" loading="lazy">
-    <figcaption><strong>Info Vault.</strong> Reusable details Arc drops into what it writes, stored locally. See private AI assistant.</figcaption>
+    <figcaption><strong>Info Vault.</strong> Reusable details Arc drops into what it writes, stored locally. See the <a href="{{ '/privacy/' | relative_url }}">privacy policy</a> for how it's stored.</figcaption>
   </figure>
 </div>
 

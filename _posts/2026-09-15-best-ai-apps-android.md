@@ -182,7 +182,23 @@ A few apps I tested and left off, since the omissions are usually the question:
 
 Start with what your phone already has: Gemini and Circle to Search cost nothing and cover a lot. Then add by the shape of your day. Meetings most days, add Otter. Research most days, add Perplexity. Long thinking sessions, add ChatGPT. Notes in Notion, add Notion AI. If you keep copying text out of one app into an AI and pasting the result back, that's the gap Arc fills; it's free to try on [Google Play](https://play.google.com/store/apps/details?id=com.rethink.arc).
 
-For a head-to-head of screen assistants specifically, see Arc vs. the alternatives.
+## FAQ
+
+### What is the best AI app for Android?
+
+There isn't one winner. Gemini is the best built-in assistant if you live in Google's apps, ChatGPT is the deepest general chatbot, Perplexity is best for sourced research, Otter for meetings, and Arc for working on whatever text is already on your screen. Most people end up with two or three.
+
+### Do I need an AI app if my phone has Gemini?
+
+Often not. Gemini covers Google's own apps well and keeps adding on-screen features. A separate app earns its place when you want something Gemini doesn't do: sourced research (Perplexity), meeting transcription (Otter), long chatbot sessions (ChatGPT), or custom one-tap actions that work the same in every app (Arc).
+
+### Which free AI apps for Android are worth installing?
+
+Circle to Search and Gemini are free and built in on supported phones. ChatGPT, Perplexity and Otter all have usable free tiers. Arc is free with 7 requests per week on basic features.
+
+### How did you test these apps?
+
+Each app ran on my main phone for at least two weeks doing real work: long reads, replies across several apps, screenshots and meetings. Apps were judged on whether I reached for them unprompted, how many taps a task took, and how they behaved when they were wrong. Nothing is sponsored.
 
 *Written by Mamata, the indie developer building Arc. This page is updated as the apps change.*
 

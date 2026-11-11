@@ -262,22 +262,6 @@
         </div>
     </footer>
 
-    <!-- FAQ Schema (homepage) -->
-    {% if page.url == "/" or page.url == "/index.html" %}
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "Do I need to create an account?", "acceptedAnswer": { "@type": "Answer", "text": "No! You can use Arc as a guest. Google Sign-In is optional and only needed for cloud backup and community features." }},
-      { "@type": "Question", "name": "Does Arc monitor my screen in the background?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely not. Arc only accesses screen content when you explicitly tap a button in the sidebar." }},
-      { "@type": "Question", "name": "Are screenshots automatically captured?", "acceptedAnswer": { "@type": "Answer", "text": "No. Screenshots require your explicit permission and are only taken when you initiate an action that needs them." }},
-      { "@type": "Question", "name": "Which apps work with Arc?", "acceptedAnswer": { "@type": "Answer", "text": "Arc works with virtually any app. However, it automatically disables itself in nearly 400 sensitive apps (banking, crypto, password managers) by default." }},
-      { "@type": "Question", "name": "Is my data private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Screen content is processed for AI responses but never stored on our servers. Your saved content stays on your device unless you choose Google Drive backup." }},
-      { "@type": "Question", "name": "What are Custom Actions?", "acceptedAnswer": { "@type": "Answer", "text": "Custom Actions let you create your own AI commands. Write a prompt and save it to your sidebar for one-tap access." }},
-      { "@type": "Question", "name": "What are Community Actions?", "acceptedAnswer": { "@type": "Answer", "text": "Community Actions are AI actions shared by other Arc users. Browse, search, and add them to your sidebar with one tap." }},
-      { "@type": "Question", "name": "How does Chat with AI work?", "acceptedAnswer": { "@type": "Answer", "text": "Chat lets you have conversations about content on your screen. Ask questions, get clarifications, or explore topics further." }}
-    ]}
-    </script>
-    {% endif %}
-
     <script>
     (function () {
         var navbar = document.getElementById('navbar');

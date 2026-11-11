@@ -94,7 +94,7 @@ last_modified_at: 2026-10-27
     {%- if roundups.size > 0 %}
     <section class="blog-section">
         <h2>Comparisons and roundups</h2>
-        <p>Posts that put Arc next to something else — Google's own on-screen AI, the other apps in the category, and the modded builds people go looking for. Arc is on these lists because it wins at what it does, and where it loses, that's said out loud. See also the Arc alternatives comparison.</p>
+        <p>Posts that put Arc next to something else — Google's own on-screen AI, the other apps in the category, and the modded builds people go looking for. Arc is on these lists because it wins at what it does, and where it loses, that's said out loud.</p>
         <div class="blog-list">
             {%- for post in roundups %}
             <a href="{{ post.url | relative_url }}" class="blog-card-link">

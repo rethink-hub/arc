@@ -181,7 +181,7 @@ Circle to Search is handy for one-off lookups and Gemini for open-ended research
 
 ## Privacy and Permissions
 
-Arc reads the screen you're on only when you tap an action — not in the background. Add your own app exclusions in Settings → Choose Apps; Google Drive backup is off by default. See the private AI assistant page and the [privacy policy](/privacy/) for what's stored where.
+Arc reads the screen you're on only when you tap an action — not in the background. Add your own app exclusions in Settings → Choose Apps; Google Drive backup is off by default. See the [privacy policy](/privacy/) for what's stored where.
 
 ## Android AI Assistant FAQ
 
